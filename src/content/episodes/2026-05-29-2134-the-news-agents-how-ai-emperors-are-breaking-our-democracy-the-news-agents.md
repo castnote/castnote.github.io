@@ -4,7 +4,7 @@ podcast: "The News Agents"
 podcast_slug: "the-news-agents"
 episode_slug: "how-ai-emperors-are-breaking-our-democracy-the-news-agents"
 episode_url: "https://www.youtube.com/watch?v=km22SQUgl20"
-summary: "AI 刚出现的时候是什么？它是一个非营利组织。一个非营利组织。听起来很荒唐。没错。AI 是一个政治项目。Meta，原本是一家社交媒体公司，现在成了一家 AI 公司。它目前在路易斯安那州建造的 AI 数据中心，占地面积几乎是当..."
+summary: "本期讨论 AI 巨头如何影响民主政治，围绕 OpenAI、xAI、科技领袖权力、政治游说和监管缺位，分析 AI 公司作为政治行为者的崛起。"
 hosts:
   - name: "Lewis Goodall"
 guests:

@@ -4,7 +4,7 @@ podcast: "Pod Save America"
 podcast_slug: "pod-save-america"
 episode_slug: "jd-vance-doesn-t-understand-the-constitution"
 episode_url: "https://www.youtube.com/watch?v=FrSJJ5E2fnA"
-summary: "欢迎收听 Pod Save America。我是 John Favro。在今天的节目中，我的好朋友、同为 Barack Obama 演讲撰稿人的 Ben Rhodes 来了。美国建国250周年这件事最近一直在我脑海里转，尤其..."
+summary: "本期围绕 JD Vance、宪法理解和美国政治修辞展开，结合奥巴马时代经验、林肯演讲和特朗普政治，讨论公共语言与民主制度。"
 hosts:
   - name: "John Favro"
 guests:

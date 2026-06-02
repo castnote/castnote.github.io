@@ -4,7 +4,7 @@ podcast: "The Rest Is Politics"
 podcast_slug: "rest-is-politics"
 episode_slug: "the-case-for-a-sealed-trump-indictment"
 episode_url: "https://www.youtube.com/watch?v=F_cXIGx3oc4"
-summary: "你完全有充分的理由准备一份针对特朗普的战争罪或腐败指控的案件。如果我们真的认真对待这个人违反了多项法律、而他又处于我们管辖范围内这一事实，美国公众会怎么反应？"
+summary: "本期讨论密封起诉特朗普的理由，并延伸到国际政治、以色列、古巴与美国外交，分析法律程序、政治风险和权力制衡。"
 hosts: []
 guests:
   - name: "Rory Stewart"

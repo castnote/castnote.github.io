@@ -4,7 +4,7 @@ podcast: "The Tucker Carlson Show"
 podcast_slug: "tucker-carlson"
 episode_slug: "the-secret-history-of-biblical-giants-demons-and-the-advanced-civilizations-before-the-great-flood"
 episode_url: "https://www.youtube.com/watch?v=5x9vR5sKHFI"
-summary: "感谢你来参加这次对话。 是的，非常乐意。 我这辈子断断续续读了好多遍《创世记》。直到大约四年前，有人跟我提起，我才注意到第六章开头关于拿非利人（Nephilim）的那段。此后几年里，我大概就拿非利人这个话题聊了至少二十五次..."
+summary: "本期访谈 Stephen De Young，讨论圣经巨人、恶魔、大洪水前文明、古代文本和现代神秘主义叙事之间的关系与争议。"
 hosts:
   - name: "Tucker Carlson"
   - name: "Fr. Stephen De Young"

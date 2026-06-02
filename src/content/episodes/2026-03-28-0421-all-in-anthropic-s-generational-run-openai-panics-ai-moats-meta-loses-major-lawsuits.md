@@ -4,7 +4,7 @@ podcast: "All-In Podcast"
 podcast_slug: "all-in"
 episode_slug: "anthropic-s-generational-run-openai-panics-ai-moats-meta-loses-major-lawsuits"
 episode_url: "https://www.youtube.com/watch?v=4Gmd5UTF4rk"
-summary: "好的，各位。欢迎回到全球第一播客。神奇四侠，原版阵容。 哦，原班人马回来了。 原班人马回来了。 战友。 兄弟战友。 走起，好兄弟们。这周新闻很多。David Sacks 回来了。他在伟大的得克萨斯州。Sacks，怎么样？得克..."
+summary: "本期围绕 Anthropic 的快速增长、OpenAI 的竞争压力、AI 公司的护城河与企业市场展开讨论，并延伸到 Meta 诉讼、监管策略和科技公司估值叙事。"
 hosts:
   - name: "Jason Calacanis"
   - name: "Chamath Palihapitiya"

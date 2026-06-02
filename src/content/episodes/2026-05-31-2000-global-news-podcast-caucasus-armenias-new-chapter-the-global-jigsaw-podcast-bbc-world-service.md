@@ -4,7 +4,7 @@ podcast: "Global News Podcast"
 podcast_slug: "global-news-podcast"
 episode_slug: "caucasus-armenias-new-chapter-the-global-jigsaw-podcast-bbc-world-service"
 episode_url: "https://www.youtube.com/watch?v=hMk62qoJmmM"
-summary: "苏联解体35年后，仍有国家在努力摆脱俄罗斯的轨道。其中一个例子就是南高加索的一个国家，它正在筹备选举。普京说的话确实让所有人感到不安——他说如果亚美尼亚想要加入欧盟，就应该以乌克兰为鉴。克里姆林宫的主要宣传人士之一 Vlad..."
+summary: "本期聚焦亚美尼亚在高加索地区的新处境，讨论纳戈尔诺-卡拉巴赫之后的国家认同、与俄罗斯关系降温、亲西方路线和国内政治张力。"
 hosts:
   - name: "Krassi Ivanova Twigg"
 guests:

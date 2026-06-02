@@ -4,7 +4,7 @@ podcast: "No Priors"
 podcast_slug: "no-priors"
 episode_slug: "no-priors-ep-80-with-andrej-karpathy-from-openai-and-tesla"
 episode_url: "https://www.youtube.com/watch?v=hM_h0UA7upI"
-summary: "掌声 大家好，欢迎回到 No Priors。今天我们和 Andrej Karpathy 在一起聊天，他不需要过多介绍。Andrej 是一位杰出的研究者、深受喜爱的 AI 教育者，也是 OpenAI 的早期团队成员，曾领导 T..."
+summary: "本期 Sarah Guo 与 Elad Gil 访谈 Andrej Karpathy，讨论 OpenAI、Tesla、教育、自动驾驶、机器人、模型训练与 AI 研究者如何看待技术演进。"
 hosts:
   - name: "Sarah Guo"
   - name: "Elad Gil"

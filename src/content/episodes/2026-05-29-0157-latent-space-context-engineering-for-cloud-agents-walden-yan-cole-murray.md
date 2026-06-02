@@ -4,7 +4,7 @@ podcast: "Latent Space"
 podcast_slug: "latent-space"
 episode_slug: "context-engineering-for-cloud-agents-walden-yan-cole-murray"
 episode_url: "https://www.youtube.com/watch?v=0fgJPhYcbVk"
-summary: "当人们想到 AI 能不能运行你的应用、帮你测试的时候，我觉得他们其实过于关注计算机使用（Computer Use）的部分了。因为在我看来，计算机使用本质上就是——你想点一个按钮，能不能输出正确的坐标去点那个按钮。我觉得测试其..."
+summary: "本期围绕云端 Agent 的上下文工程展开，讨论如何让背景智能体从规格到 PR 更自主地工作，以及评估、任务环境和工程协作方式的变化。"
 hosts:
   - name: "Swyx"
 guests:

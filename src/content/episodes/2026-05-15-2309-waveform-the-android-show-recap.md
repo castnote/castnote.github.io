@@ -4,7 +4,7 @@ podcast: "Waveform: The MKBHD Podcast"
 podcast_slug: "waveform"
 episode_slug: "the-android-show-recap"
 episode_url: "https://www.youtube.com/watch?v=2Ft0NWeznB4"
-summary: "我在推特上发了一张 Google 幻灯片的截图，上面写着\"预订两张这场演唱会的前排座位。\"然后视频里，那个人就点了一下，整个交互就结束了。他们就说：\"好的，&gt;&gt; 票买到了。\"&gt;&gt; 什么？不是，买票不是..."
+summary: "本期回顾 Android 发布会，讨论 Gemini 深度整合、系统交互、数字健康、Instagram 相机支持、车载体验和 Android 生态的新功能。"
 hosts:
   - name: "Marques Brownlee (MKBHD)"
   - name: "Adam"

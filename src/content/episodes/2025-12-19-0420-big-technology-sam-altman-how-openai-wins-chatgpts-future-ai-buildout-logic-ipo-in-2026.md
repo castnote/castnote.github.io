@@ -4,7 +4,7 @@ podcast: "Big Technology Podcast"
 podcast_slug: "big-technology"
 episode_slug: "sam-altman-how-openai-wins-chatgpts-future-ai-buildout-logic-ipo-in-2026"
 episode_url: "https://www.youtube.com/watch?v=2P27Ef-LLuQ"
-summary: "你提到的那 1.4 万亿美元，我们会在很长一段时间里分批投入。我希望能更快一些。我觉得一次性把这些数字背后的逻辑向所有人讲清楚会很好。指数增长（Exponential Growth）通常对大多数人来说很难直观理解。"
+summary: "本期 Alex Kantrowitz 访谈 Sam Altman，讨论 OpenAI 如何竞争、ChatGPT 的产品方向、算力和基础设施建设逻辑，以及外界关注的 IPO 与商业化问题。"
 hosts:
   - name: "Alex Kantrowitz"
 guests:

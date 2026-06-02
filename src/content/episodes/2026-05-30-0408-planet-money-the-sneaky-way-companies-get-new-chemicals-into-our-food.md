@@ -4,7 +4,7 @@ podcast: "Planet Money"
 podcast_slug: "planet-money"
 episode_slug: "the-sneaky-way-companies-get-new-chemicals-into-our-food"
 episode_url: "https://www.youtube.com/watch?v=_frJhN-oaRs"
-summary: "这里是 NPR 的 Planet Money。如果说 Carol Rei 一直以来对自己有一个定义，那就是——活力四射。 活力四射。活力四射。没错。就算是我最累的日子，我也是活力四射的。 不过，有些人可能会说她\"烦人\"。她自..."
+summary: "本期调查食品公司如何通过 GRAS 机制把新化学物质加入食品，结合塔拉粉事件、监管漏洞和法律争议解释食品安全体系的问题。"
 hosts:
   - name: "Sarah Gonzalez"
 guests:

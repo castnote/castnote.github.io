@@ -4,7 +4,7 @@ podcast: "The Cognitive Revolution"
 podcast_slug: "cognitive-revolution"
 episode_slug: "inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup"
 episode_url: "https://www.youtube.com/watch?v=AqxgBREOkNM"
-summary: "大家好，欢迎回到 Cognitive Revolution。今天我很高兴地欢迎 Daniel Miessler 回来，他是安全研究员和 Unsupervised Learning 的创始人，这是他第二次做客本播客。今年一月份..."
+summary: "本期 Daniel Miessler 审视 Nathan Labenz 的个人 AI 基础设施，讨论第二大脑、智能体工作流、上下文管理、安全边界和个人 AI 系统的可持续搭建方式。"
 hosts:
   - name: "Nathan Labenz"
 guests:

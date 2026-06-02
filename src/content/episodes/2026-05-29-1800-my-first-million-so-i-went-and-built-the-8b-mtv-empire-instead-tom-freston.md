@@ -4,7 +4,7 @@ podcast: "My First Million"
 podcast_slug: "my-first-million"
 episode_slug: "so-i-went-and-built-the-8b-mtv-empire-instead-tom-freston"
 episode_url: "https://www.youtube.com/watch?v=7_65wOSC0Cw"
-summary: "我介绍你的方式是这样想的。Tom 帮助创立了 MTV，那是我成长过程中最重要的电视频道之一。放学回家看 TRL，下午三点半左右，那简直是世界上最棒的事。而且你还拥有 VH1、喜剧中心频道（Comedy Central），这意..."
+summary: "本期 Tom Freston 回顾 MTV 帝国的创建过程，讲述媒体创业、文化判断、团队建设和娱乐产业如何从边缘频道成长为数十亿美元业务。"
 hosts:
   - name: "Sam Parr"
 guests:

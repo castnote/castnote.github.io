@@ -4,7 +4,7 @@ podcast: "Lex Fridman Podcast"
 podcast_slug: "lex-fridman"
 episode_slug: "biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-497"
 episode_url: "https://www.youtube.com/watch?v=1M3Vdl6DRkU"
-summary: "以下是与 Don Lincoln 的对话。Don Lincoln 是费米实验室（Fermilab）的粒子物理学家，在高能物理前沿工作了数十年。这是一次令人震撼又充满启发的对话。Don 是我最喜欢的物理对话伙伴之一。他真的是一..."
+summary: "本期 Don Lincoln 回顾物理学中的统一思想，讨论反物质、暗能量、标准模型、万物理论和基础科学如何改变人类对宇宙的理解。"
 hosts:
   - name: "Lex Fridman"
 guests:

@@ -4,7 +4,7 @@ podcast: "Acquired"
 podcast_slug: "acquired"
 episode_slug: "vanguard-the-communist-capitalist-who-saved-investors-a-trillion-dollars-audio"
 episode_url: "https://www.youtube.com/watch?v=ipiKIgdynZE"
-summary: "我跟我老婆说，你知道吗，我觉得今晚应该能赶上哄孩子睡觉，说不定连晚饭都能一起吃。她说：\"哦哦哦，别急，别太乐观了。咱别搞得太疯狂了。\" 笑声 能有多复杂啊？不就是指数基金嘛。还有主动基金、货币市场基金、经纪业务、投顾服务，还..."
+summary: "本期讲述 Vanguard 与 Jack Bogle 如何重塑美国投资业：从共同基金收费结构、指数基金的诞生，到客户所有制如何把巨额费用从华尔街转回普通投资者手中。"
 hosts:
   - name: "Ben Gilbert"
   - name: "David Rosenthal"

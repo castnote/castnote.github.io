@@ -4,7 +4,7 @@ podcast: "Pivot"
 podcast_slug: "pivot"
 episode_slug: "kenny-smith-nba-champ-tells-untold-mj-stories-inside-the-nba-secrets-and-life-lessons-the-pivot"
 episode_url: "https://www.youtube.com/watch?v=esQfMkjWJ38"
-summary: "我走到哪儿都有人跟我聊三分球的事，因为当时我在总决赛中打破了NBA三分球纪录，常规赛也是。你在季后赛中打出名堂，那才是你扬名立万的时候。对我来说，伟大不仅仅是某个瞬间，还在于你能坚持多久。我们那时候有句话，在第五场或第七场之..."
+summary: "本期 Kenny Smith 回顾 NBA 生涯、火箭冠军经历、与乔丹和奥拉朱旺的故事、Inside the NBA 幕后，以及竞技体育中的家庭、成长和人生经验。"
 hosts:
   - name: "Ryan Clark"
   - name: "Channing Crowder"

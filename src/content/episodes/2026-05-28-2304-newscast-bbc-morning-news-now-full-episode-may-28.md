@@ -4,7 +4,7 @@ podcast: "Newscast"
 podcast_slug: "newscast-bbc"
 episode_slug: "morning-news-now-full-episode-may-28"
 episode_url: "https://www.youtube.com/watch?v=Pfpfq1gmAq0"
-summary: "【音乐】正在为您跟踪报道的早间新闻直播，中东地区爆发新的冲突，令美国与伊朗之间的和平协议前景蒙上阴影。【音乐】特朗普总统顶住日益增长的结束战争压力，警告如果谈判失败，可能会发动更多袭击。"
+summary: "本期是早间新闻合集，覆盖中东局势、埃博拉防控、2026 世界杯票务调查、抗生素与肠道健康，以及美国政治和公共安全新闻。"
 hosts:
   - name: "Al Roker"
 guests:

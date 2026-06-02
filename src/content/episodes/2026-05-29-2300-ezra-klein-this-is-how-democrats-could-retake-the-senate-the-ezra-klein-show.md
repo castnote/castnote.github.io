@@ -4,7 +4,7 @@ podcast: "The Ezra Klein Show"
 podcast_slug: "ezra-klein"
 episode_slug: "this-is-how-democrats-could-retake-the-senate-the-ezra-klein-show"
 episode_url: "https://www.youtube.com/watch?v=-1vBIlE1cI8"
-summary: "我现在有个假说——唐纳德·特朗普并没有在努力赢得中期选举。我不是说他有意要输，只是我觉得他根本不在乎。他在乎的是控制共和党。共和党是他的权力基础，是他的保护伞，是他在总统任期结束后还能长期掌握权力的工具。因此，控制共和党才是..."
+summary: "本期分析民主党重新夺回参议院的路径，重点讨论中期选举环境、候选人选择、特朗普主义对共和党的影响，以及关键州的政治变量。"
 hosts:
   - name: "Ezra Klein"
 guests:

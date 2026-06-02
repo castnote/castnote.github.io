@@ -4,7 +4,7 @@ podcast: "The Rest Is Politics: US"
 podcast_slug: "rest-is-politics-us"
 episode_slug: "the-real-reason-trump-wants-venezuela"
 episode_url: "https://www.youtube.com/watch?v=irPOK5K-cH0"
-summary: "美国舰队的很大一部分现在停泊在拉丁美洲海域。这里有大格局的地缘政治博弈在上演。这是古巴导弹危机以来美国在加勒比地区最大规模的海军部署。显然，人们认为这与委内瑞拉有关。政府说是为了打击毒品。很多人认为，不，其实是为了石油。这是..."
+summary: "本期分析特朗普关注委内瑞拉的真实动机，讨论石油、移民、拉美右翼政治、美国外交路线，以及委内瑞拉内部权力结构。"
 hosts: []
 guests:
   - name: "Rory Stewart"

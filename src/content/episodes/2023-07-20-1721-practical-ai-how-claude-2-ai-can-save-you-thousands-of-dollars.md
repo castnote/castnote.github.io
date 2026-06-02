@@ -4,7 +4,7 @@ podcast: "Practical AI"
 podcast_slug: "practical-ai"
 episode_slug: "how-claude-2-ai-can-save-you-thousands-of-dollars"
 episode_url: "https://www.youtube.com/watch?v=zpVaY12xU0g"
-summary: "我认识一个百万富翁，他损失了超过十万美元。在这期视频里，我要告诉你怎么避免同样的事情发生在你身上，或者发生在你工作的公司，或者你拥有的公司身上。我会用一个超级强大而且免费的 AI 工具来做到这一点，它叫 Claude 2。我..."
+summary: "本期用保险合同纠纷案例演示 Claude 2 如何帮助比较文件、识别条款变化和降低损失，强调 AI 工具在普通人合同审查中的实用价值。"
 hosts: []
 guests:
   - name: "Thomas"

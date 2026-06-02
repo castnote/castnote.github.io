@@ -4,7 +4,7 @@ podcast: "The Vergecast"
 podcast_slug: "the-vergecast"
 episode_slug: "jony-ive-s-funky-ferrari-the-vergecast"
 episode_url: "https://www.youtube.com/watch?v=APYcWmjqBoI"
-summary: "本节目由 Ring 赞助播出。有一种安心来自于知道你的家是安全的，还有一种安心是知道你有能力成为一个接待英雄。Ring 视频门铃两者兼顾。无论身在何处都能迎接客人，用有线门铃 Pro 以清晰的 4K 视频查看前门的情况。现在..."
+summary: "本期讨论 Jony Ive 与 Ferrari 的设计合作、YouTube 与 AI 标签、科技产品发布和平台治理，延续 The Vergecast 对消费科技与设计文化的观察。"
 hosts:
   - name: "David Pierce"
 guests:

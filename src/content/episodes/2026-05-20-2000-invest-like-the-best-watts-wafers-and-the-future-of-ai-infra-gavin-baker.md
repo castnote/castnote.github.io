@@ -4,7 +4,7 @@ podcast: "Invest Like the Best"
 podcast_slug: "invest-like-the-best"
 episode_slug: "watts-wafers-and-the-future-of-ai-infra-gavin-baker"
 episode_url: "https://www.youtube.com/watch?v=Mmj_G9RlW-I"
-summary: "AI领域正在发生的事情，我认为是资本主义史上、美国商业史上最非凡的时刻。Anthropic新增了110亿美元的年化经常性收入（ARR）。过去十到十二年间成立的三家最高知名度的SaaS公司是Palantir、Snowflake..."
+summary: "本期 Patrick O'Shaughnessy 访谈 Gavin Baker，讨论 AI 基础设施的关键约束：电力、晶圆、GPU、资本开支、台积电产能和前沿模型公司的融资节奏。"
 hosts:
   - name: "Patrick O'Shaughnessy"
 guests:

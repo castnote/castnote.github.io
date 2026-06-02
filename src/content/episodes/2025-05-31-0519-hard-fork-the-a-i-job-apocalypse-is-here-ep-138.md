@@ -4,7 +4,7 @@ podcast: "Hard Fork"
 podcast_slug: "hard-fork"
 episode_slug: "the-a-i-job-apocalypse-is-here-ep-138"
 episode_url: "https://www.youtube.com/watch?v=nG_jGZuRBxs"
-summary: "也许在编程以外的领域训练这些 AI 系统要困难得多。但就目前科技行业和软件工程领域正在发生的事情而言，我认为我们必须认真对待这样一种可能性——我们即将看到初级白领工作者遭受一场真正的大屠杀。是的，绝对如此。我们还在纳闷为什么..."
+summary: "本期讨论 AI 是否已经开始冲击初级白领工作，并访谈 Anthropic 首席产品官 Mike Krieger，谈 Claude 4、智能体能力、就业风险和 Meta 反垄断案。"
 hosts:
   - name: "Kevin Roose"
   - name: "Casey Newton"

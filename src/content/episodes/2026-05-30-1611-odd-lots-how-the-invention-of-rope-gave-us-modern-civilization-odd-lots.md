@@ -4,7 +4,7 @@ podcast: "Odd Lots"
 podcast_slug: "odd-lots"
 episode_slug: "how-the-invention-of-rope-gave-us-modern-civilization-odd-lots"
 episode_url: "https://www.youtube.com/watch?v=JThQIaluXPg"
-summary: "既然你提到了把两段绳子接在一起，你最喜欢什么绳结？"
+summary: "本期从绳索这一基础发明讲起，解释纤维、捻制、航海、建筑和工业化之间的联系，展示一种看似普通的技术如何支撑现代文明。"
 hosts:
   - name: "Tracy Alloway"
   - name: "Joe Weisenthal"

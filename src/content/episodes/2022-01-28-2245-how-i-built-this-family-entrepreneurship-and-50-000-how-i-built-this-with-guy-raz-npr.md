@@ -4,7 +4,7 @@ podcast: "How I Built This"
 podcast_slug: "how-i-built-this"
 episode_slug: "family-entrepreneurship-and-50-000-how-i-built-this-with-guy-raz-npr"
 episode_url: "https://www.youtube.com/watch?v=uL7psQaJpkQ"
-summary: "大家好，我是 Guy，你们知道，过去几年里我见到的最令人振奋的事情之一，就是即便面对这么多的不确定性和怀疑，仍然有大量的人愿意迈出那一步去创办企业。我们 How I Built This 的所有人都想找到一种方式来帮助他们实..."
+summary: "本期是 How I Built This 的创业路演节目，围绕家庭、创业和早期融资展开，讲述创业者如何展示产品、接受评审，并争取五万美元奖金。"
 hosts:
   - name: "Guy Raz"
 guests:

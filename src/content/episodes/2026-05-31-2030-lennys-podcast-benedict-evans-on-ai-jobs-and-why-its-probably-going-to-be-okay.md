@@ -4,7 +4,7 @@ podcast: "Lenny's Podcast"
 podcast_slug: "lennys-podcast"
 episode_slug: "benedict-evans-on-ai-jobs-and-why-its-probably-going-to-be-okay"
 episode_url: "https://www.youtube.com/watch?v=BD3vLtWhT5A"
-summary: "我最有争议的观点是，我认为 AI 的重要程度跟互联网或移动互联网一样大，也仅仅跟互联网或移动互联网一样大。你对即将到来的就业末日怎么看？每次出现新技术，它都会自动化掉一批工作，然后这种自动化又会催生一批新工作，而你不知道新工..."
+summary: "本期 Benedict Evans 讨论 AI 对工作、软件、互联网平台和商业模式的影响，解释为什么就业变化可能剧烈但不一定走向最悲观结局。"
 hosts:
   - name: "Lenny"
 guests:

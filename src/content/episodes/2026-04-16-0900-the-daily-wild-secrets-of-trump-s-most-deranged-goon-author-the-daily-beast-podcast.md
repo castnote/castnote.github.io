@@ -4,7 +4,7 @@ podcast: "The Daily"
 podcast_slug: "the-daily"
 episode_slug: "wild-secrets-of-trump-s-most-deranged-goon-author-the-daily-beast-podcast"
 episode_url: "https://www.youtube.com/watch?v=-wR3Cr4mMDE"
-summary: "我甚至不知道该从哪里开始谈他和女性的关系。我觉得这是另一种成瘾，就像酒精和毒品一样。当然，这是他一直试图忍住、试图戒掉的东西。"
+summary: "本期围绕 RFK Jr. 与特朗普阵营中的争议人物展开，通过作者访谈梳理 Kennedy 家族、私人丑闻、政治角色和公共卫生政策争议。"
 hosts:
   - name: "Joanna Coles"
 guests:

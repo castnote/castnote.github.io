@@ -4,7 +4,7 @@ podcast: "The Journal."
 podcast_slug: "the-journal"
 episode_slug: "inside-the-multibillion-dollar-business-of-betting-on-everything-wsj-the-economics-of"
 episode_url: "https://www.youtube.com/watch?v=S2g0TwfecJE"
-summary: "在 Kalshi 和 Polymarket 上，你可以押注霍尔木兹海峡何时重新开放、上午 11 点整比特币的价格，甚至美国政府是否会确认外星生命的存在。预测市场（Prediction Markets）仍然备受追捧。热度之高..."
+summary: "本期走进预测市场和事件博彩生意，解释 Kalshi、Polymarket 等平台如何把政治、经济和社会事件变成可交易市场。"
 hosts: []
 guests:
   - name: "Frank Satlo"

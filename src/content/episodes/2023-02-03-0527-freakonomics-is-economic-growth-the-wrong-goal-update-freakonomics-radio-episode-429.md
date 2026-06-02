@@ -4,7 +4,7 @@ podcast: "Freakonomics Radio"
 podcast_slug: "freakonomics"
 episode_slug: "is-economic-growth-the-wrong-goal-update-freakonomics-radio-episode-429"
 episode_url: "https://www.youtube.com/watch?v=WAA405-6ZEg"
-summary: "各位播客听众大家好，在前两期节目中，我们讨论了私募股权行业的经济影响——它一直在将小企业整合成大集团，给成熟企业背上沉重的债务。这有时会带来积极的后果，有时则是负面的。我们一直在追问的核心问题是：私募股权投资者到底是在攫取价..."
+summary: "本期讨论经济增长是否应该继续作为社会目标，介绍甜甜圈经济学和去增长思想，并通过城市治理案例审视环境边界、分配正义与繁荣定义。"
 hosts:
   - name: "Stephen Dubner"
 guests:

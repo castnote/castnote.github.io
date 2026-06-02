@@ -4,7 +4,7 @@ podcast: "Americast"
 podcast_slug: "americast"
 episode_slug: "how-well-did-we-predict-the-us-in-2025-bbc-americast"
 episode_url: "https://www.youtube.com/watch?v=Ll5kqryc4Sc"
-summary: "我在想表情包的事，你知道的，我们一直在聊那个。表情包。Anthony 一如既往地拿了满分10分。我觉得你可能有个水晶球，Anthony。现在说到 Sarah，如果你当初预测的是 Donald Trump 会赢得首届 FIFA..."
+summary: "本期回顾 Americast 团队对 2025 年美国政治的年度预测，逐项检验哪些判断应验、哪些偏离，并讨论特朗普政府、共和党内斗与公共卫生争议。"
 hosts:
   - name: "Justin Webb"
   - name: "Mariana Spring"

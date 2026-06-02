@@ -4,7 +4,7 @@ podcast: "Dwarkesh Podcast"
 podcast_slug: "dwarkesh"
 episode_slug: "chip-design-from-the-bottom-up-reiner-pope"
 episode_url: "https://www.youtube.com/watch?v=oIk3R-sMX5o"
-summary: "我再次邀请到了 Reiner Pope，他是 Maddock 的 CEO，这是一家新的 AI 芯片公司。上次我们聊的是数据中心里面发生了什么，这次我想了解 AI 芯片内部是怎么回事。一颗芯片到底是怎么工作的？顺便声明一下，我..."
+summary: "本期从最底层理解 AI 芯片设计：逻辑门、乘累加、矩阵乘法、精度、缓存、互连、编译器和数据中心约束如何共同决定一颗芯片的架构。"
 hosts:
   - name: "Dwarkesh Patel"
 guests:
