@@ -8,7 +8,7 @@ const episodes = (await getCollection('episodes'))
   .sort((a, b) => b.data.published_at.getTime() - a.data.published_at.getTime());
 ---
 
-<BaseLayout title="文章" currentPath="/episodes/">
+<BaseLayout title="文章">
   <section class="section-head reader-index-head">
     <div>
       <h1>文章</h1>
