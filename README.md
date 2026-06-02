@@ -40,6 +40,20 @@ This repository should only contain public-safe article Markdown. Full transcrip
 
 Each public episode is a Markdown file in `src/content/episodes/`. The article body is standard Markdown and is rendered by Astro.
 
+Use a Beijing-time timestamp in the file name to avoid collisions:
+
+```text
+src/content/episodes/YYYY-MM-DD-HHMM-<podcast_slug>-<episode_slug>.md
+```
+
+Example:
+
+```text
+src/content/episodes/2026-06-02-1000-dwarkesh-chip-design-from-the-bottom-up-reiner-pope.md
+```
+
+The public URL is controlled by `podcast_slug` and `episode_slug`, not by the file name.
+
 ```md
 ---
 title: "从底层理解芯片设计 - Reiner Pope"
