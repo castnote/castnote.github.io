@@ -26,17 +26,25 @@ const formatDate = (date: Date) =>
     month: '2-digit',
     day: '2-digit'
   }).format(date);
+
+const participants = [
+  ...episode.data.hosts.map((person) => ({ ...person, label: '主持人' })),
+  ...episode.data.guests.map((person) => ({ ...person, label: '嘉宾' }))
+];
 ---
 
 <BaseLayout title={episode.data.title}>
-  <article class="prose">
+  <article class="episode-article">
     <header class="episode-header">
-      <div class="article-meta">
+      <div class="episode-meta">
         <a href={`/shows/${episode.data.podcast_slug}/`}>{episode.data.podcast}</a>
+        <span class="meta-separator" aria-hidden="true">·</span>
         <span>{formatDate(episode.data.published_at)}</span>
+        <span class="meta-separator" aria-hidden="true">·</span>
         <a href={episode.data.episode_url}>原始节目</a>
       </div>
       <h1>{episode.data.title}</h1>
+      {episode.data.summary && <p class="episode-summary">{episode.data.summary}</p>}
       {
         episode.data.tags.length > 0 && (
           <div class="tag-list">
@@ -49,6 +57,48 @@ const formatDate = (date: Date) =>
         )
       }
     </header>
-    <Content />
+
+    {
+      participants.length > 0 && (
+        <section class="people-section" aria-labelledby="participants-title">
+          <h2 id="participants-title">主持人和嘉宾</h2>
+          <div class="people-list">
+            {participants.map((person) => (
+              <div class="person-item">
+                <div class="person-heading">
+                  {person.url ? <a href={person.url}>{person.name}</a> : <span>{person.name}</span>}
+                  <span>{person.label}</span>
+                </div>
+                {person.role && person.role !== person.label && <p class="person-role">{person.role}</p>}
+                {person.description && <p>{person.description}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      episode.data.mentioned_people.length > 0 && (
+        <section class="people-section" aria-labelledby="mentioned-people-title">
+          <h2 id="mentioned-people-title">提到的人物</h2>
+          <div class="people-list">
+            {episode.data.mentioned_people.map((person) => (
+              <div class="person-item">
+                <div class="person-heading">
+                  {person.url ? <a href={person.url}>{person.name}</a> : <span>{person.name}</span>}
+                  {person.role && <span>{person.role}</span>}
+                </div>
+                {person.description && <p>{person.description}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section class="episode-body">
+      <Content />
+    </section>
   </article>
 </BaseLayout>

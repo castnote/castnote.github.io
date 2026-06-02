@@ -17,6 +17,53 @@ npm run build
 
 ## Publishing
 
-The site deploys through GitHub Actions to GitHub Pages. In the GitHub repository settings, set Pages source to **GitHub Actions**.
+The source lives on `main`. The published static files live on `gh-pages`.
+
+```bash
+npm run build
+rm -rf /tmp/podread-gh-pages
+mkdir -p /tmp/podread-gh-pages
+cp -R dist/. /tmp/podread-gh-pages/
+git -C /tmp/podread-gh-pages init
+git -C /tmp/podread-gh-pages checkout -b gh-pages
+git -C /tmp/podread-gh-pages add .
+git -C /tmp/podread-gh-pages commit -m "deploy: publish static site"
+git -C /tmp/podread-gh-pages remote add origin git@github.com:podread/podread.github.io.git
+git -C /tmp/podread-gh-pages push -f origin gh-pages
+```
 
 This repository should only contain public-safe article Markdown. Full transcripts or full translations require explicit public publishing authorization before export.
+
+## Episode Markdown
+
+Each public episode is a Markdown file in `src/content/episodes/`. The article body is standard Markdown and is rendered by Astro.
+
+```md
+---
+title: "从底层理解芯片设计 - Reiner Pope"
+podcast: "Dwarkesh Podcast"
+podcast_slug: "dwarkesh"
+episode_slug: "chip-design-from-the-bottom-up-reiner-pope"
+episode_url: "https://example.com"
+summary: "首页和文章页顶部显示的一段简介。"
+hosts:
+  - name: "Dwarkesh Patel"
+    role: "主持人"
+    description: "Dwarkesh Podcast 主持人。"
+guests:
+  - name: "Reiner Pope"
+    role: "Maddock CEO"
+    description: "AI 芯片公司创始人，本期嘉宾。"
+mentioned_people:
+  - name: "Ada Lovelace"
+    description: "可选的人物介绍。"
+content_type: "full_translation"
+rights_status: "public_full_authorized"
+published_at: "2026-06-02T00:00:00+08:00"
+tags: ["AI", "芯片"]
+---
+
+## 正文小标题
+
+这里开始写长正文。
+```

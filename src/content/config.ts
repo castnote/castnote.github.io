@@ -1,5 +1,12 @@
 import { defineCollection, z } from 'astro:content';
 
+const personSchema = z.object({
+  name: z.string(),
+  role: z.string().optional(),
+  description: z.string().optional(),
+  url: z.string().url().optional()
+});
+
 const episodeCollection = defineCollection({
   type: 'content',
   schema: z.object({
@@ -9,6 +16,9 @@ const episodeCollection = defineCollection({
     episode_slug: z.string(),
     episode_url: z.string().url(),
     summary: z.string().optional(),
+    hosts: z.array(personSchema).default([]),
+    guests: z.array(personSchema).default([]),
+    mentioned_people: z.array(personSchema).default([]),
     transcript_source: z.string().optional(),
     source_language: z.string().default('en'),
     article_language: z.string().default('zh-CN'),
