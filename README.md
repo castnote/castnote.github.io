@@ -18,18 +18,20 @@ npm run build
 ## Publishing
 
 The source lives on `main`. The published static files live on `gh-pages`.
+Keep existing `_astro` assets when publishing, because browsers or CDN caches can keep older HTML that references older hashed CSS files.
 
 ```bash
 npm run build
 rm -rf /tmp/podread-gh-pages
-mkdir -p /tmp/podread-gh-pages
+git clone --branch gh-pages --single-branch git@github.com:podread/podread.github.io.git /tmp/podread-gh-pages
+find /tmp/podread-gh-pages -mindepth 1 \
+  ! -path '/tmp/podread-gh-pages/.git*' \
+  ! -path '/tmp/podread-gh-pages/_astro*' \
+  -exec rm -rf {} +
 cp -R dist/. /tmp/podread-gh-pages/
-git -C /tmp/podread-gh-pages init
-git -C /tmp/podread-gh-pages checkout -b gh-pages
 git -C /tmp/podread-gh-pages add .
 git -C /tmp/podread-gh-pages commit -m "deploy: publish static site"
-git -C /tmp/podread-gh-pages remote add origin git@github.com:podread/podread.github.io.git
-git -C /tmp/podread-gh-pages push -f origin gh-pages
+git -C /tmp/podread-gh-pages push origin gh-pages
 ```
 
 This repository should only contain public-safe article Markdown. Full transcripts or full translations require explicit public publishing authorization before export.
