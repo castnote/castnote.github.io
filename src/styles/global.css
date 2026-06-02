@@ -196,7 +196,7 @@ h3 {
 .article-meta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   color: var(--soft);
   font-size: 12px;
@@ -291,35 +291,29 @@ h3 {
 
 .people-list {
   display: grid;
-  gap: 14px;
+  gap: 9px;
 }
 
-.person-item {
-  display: grid;
-  gap: 3px;
-}
-
-.person-heading {
+.person-line {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   align-items: baseline;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.person-name {
+  color: var(--text);
   font-size: 15px;
   font-weight: 700;
 }
 
-.person-heading span:last-child {
+.person-label {
   color: var(--soft);
   font-size: 12px;
   font-weight: 620;
-}
-
-.person-role,
-.person-item p {
-  margin: 0;
-  color: #4b5563;
-  font-size: 14px;
-  line-height: 1.65;
 }
 
 .person-role {
@@ -360,7 +354,7 @@ h3 {
 
 .episode-body :global(a),
 .episode-meta a,
-.person-heading a {
+.person-line a {
   color: var(--accent-dark);
   text-decoration: underline;
   text-underline-offset: 3px;

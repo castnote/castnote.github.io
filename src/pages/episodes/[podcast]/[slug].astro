@@ -27,10 +27,7 @@ const formatDate = (date: Date) =>
     day: '2-digit'
   }).format(date);
 
-const participants = [
-  ...episode.data.hosts.map((person) => ({ ...person, label: '主持人' })),
-  ...episode.data.guests.map((person) => ({ ...person, label: '嘉宾' }))
-];
+const hasParticipants = episode.data.hosts.length > 0 || episode.data.guests.length > 0;
 ---
 
 <BaseLayout title={episode.data.title}>
@@ -59,18 +56,21 @@ const participants = [
     </header>
 
     {
-      participants.length > 0 && (
+      hasParticipants && (
         <section class="people-section" aria-labelledby="participants-title">
           <h2 id="participants-title">主持人和嘉宾</h2>
           <div class="people-list">
-            {participants.map((person) => (
-              <div class="person-item">
-                <div class="person-heading">
-                  {person.url ? <a href={person.url}>{person.name}</a> : <span>{person.name}</span>}
-                  <span>{person.label}</span>
-                </div>
-                {person.role && person.role !== person.label && <p class="person-role">{person.role}</p>}
-                {person.description && <p>{person.description}</p>}
+            {episode.data.hosts.map((person) => (
+              <div class="person-line">
+                {person.url ? <a class="person-name" href={person.url}>{person.name}</a> : <span class="person-name">{person.name}</span>}
+              </div>
+            ))}
+            {episode.data.guests.map((person) => (
+              <div class="person-line">
+                {person.url ? <a class="person-name" href={person.url}>{person.name}</a> : <span class="person-name">{person.name}</span>}
+                <span class="person-label">嘉宾</span>
+                {person.role && <span class="person-role">{person.role}</span>}
+                {person.description && <span>{person.description}</span>}
               </div>
             ))}
           </div>
@@ -84,12 +84,10 @@ const participants = [
           <h2 id="mentioned-people-title">提到的人物</h2>
           <div class="people-list">
             {episode.data.mentioned_people.map((person) => (
-              <div class="person-item">
-                <div class="person-heading">
-                  {person.url ? <a href={person.url}>{person.name}</a> : <span>{person.name}</span>}
-                  {person.role && <span>{person.role}</span>}
-                </div>
-                {person.description && <p>{person.description}</p>}
+              <div class="person-line">
+                {person.url ? <a class="person-name" href={person.url}>{person.name}</a> : <span class="person-name">{person.name}</span>}
+                {person.role && <span class="person-label">{person.role}</span>}
+                {person.description && <span>{person.description}</span>}
               </div>
             ))}
           </div>
