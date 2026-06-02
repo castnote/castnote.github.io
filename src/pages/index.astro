@@ -5,8 +5,7 @@ import EpisodeList from '@components/EpisodeList.astro';
 
 const episodes = (await getCollection('episodes'))
   .filter((episode) => episode.data.rights_status !== 'local_only')
-  .sort((a, b) => b.data.published_at.getTime() - a.data.published_at.getTime())
-  .slice(0, 12);
+  .sort((a, b) => b.data.published_at.getTime() - a.data.published_at.getTime());
 ---
 
 <BaseLayout title="Podread">
