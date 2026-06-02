@@ -1,0 +1,67 @@
+---
+import '@styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  currentPath?: string;
+}
+
+const {
+  title = 'Podread',
+  description = 'Podread publishes public-safe Chinese podcast reading notes and articles.',
+  currentPath = Astro.url.pathname
+} = Astro.props;
+
+const navItems = [
+  { href: '/', label: '首页' },
+  { href: '/episodes/', label: '文章' },
+  { href: '/shows/', label: '节目' },
+  { href: '/tags/', label: '标签' },
+  { href: '/rights/', label: '版权' }
+];
+
+const pageTitle = title === 'Podread' ? title : `${title} | Podread`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/podread-mark.svg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="/" aria-label="Podread 首页">
+            <img class="brand-mark" src="/podread-mark.svg" alt="" width="36" height="36" />
+            <span>Podread</span>
+          </a>
+          <nav class="nav" aria-label="主导航">
+            {
+              navItems.map((item) => (
+                <a href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <span>Podread</span>
+          <span>公开文章只发布已确认可传播的内容。</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

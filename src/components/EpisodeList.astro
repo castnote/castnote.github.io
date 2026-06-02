@@ -1,0 +1,49 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  episodes: CollectionEntry<'episodes'>[];
+}
+
+const { episodes } = Astro.props;
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(date);
+---
+
+{
+  episodes.length > 0 ? (
+    <div class="article-list">
+      {episodes.map((episode) => {
+        const href = `/episodes/${episode.data.podcast_slug}/${episode.data.episode_slug}/`;
+        return (
+          <article class="article-card">
+            <div class="article-meta">
+              <span>{episode.data.podcast}</span>
+              <span>{formatDate(episode.data.published_at)}</span>
+            </div>
+            <h3>
+              <a href={href}>{episode.data.title}</a>
+            </h3>
+            {episode.data.tags.length > 0 && (
+              <div class="tag-list">
+                {episode.data.tags.map((tag) => (
+                  <a class="tag" href={`/tags/${encodeURIComponent(tag)}/`}>
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            )}
+          </article>
+        );
+      })}
+    </div>
+  ) : (
+    <div class="empty-state">还没有公开文章。导出脚本会把已授权内容写入站点内容目录。</div>
+  )
+}

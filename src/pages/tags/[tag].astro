@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import EpisodeList from '@components/EpisodeList.astro';
+
+export async function getStaticPaths() {
+  const episodes = (await getCollection('episodes')).filter(
+    (episode) => episode.data.rights_status !== 'local_only'
+  );
+  const tags = new Set<string>();
+
+  episodes.forEach((episode) => {
+    episode.data.tags.forEach((tag) => tags.add(tag));
+  });
+
+  return Array.from(tags).map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      episodes: episodes
+        .filter((episode) => episode.data.tags.includes(tag))
+        .sort((a, b) => b.data.published_at.getTime() - a.data.published_at.getTime())
+    }
+  }));
+}
+
+const { tag, episodes } = Astro.props;
+---
+
+<BaseLayout title={tag}>
+  <section class="section-head">
+    <div>
+      <p class="kicker">Tag</p>
+      <h1>{tag}</h1>
+    </div>
+  </section>
+
+  <EpisodeList episodes={episodes} />
+</BaseLayout>

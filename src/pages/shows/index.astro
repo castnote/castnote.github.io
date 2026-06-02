@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const episodes = (await getCollection('episodes')).filter(
+  (episode) => episode.data.rights_status !== 'local_only'
+);
+
+const shows = Array.from(
+  episodes.reduce((map, episode) => {
+    const key = episode.data.podcast_slug;
+    const current = map.get(key) ?? {
+      title: episode.data.podcast,
+      slug: key,
+      count: 0
+    };
+    current.count += 1;
+    map.set(key, current);
+    return map;
+  }, new Map<string, { title: string; slug: string; count: number }>())
+).map(([, show]) => show);
+---
+
+<BaseLayout title="节目" currentPath="/shows/">
+  <section class="section-head">
+    <div>
+      <p class="kicker">Shows</p>
+      <h1>节目</h1>
+      <p class="lede">按播客节目浏览已发布文章。</p>
+    </div>
+  </section>
+
+  {
+    shows.length > 0 ? (
+      <div class="grid">
+        {shows.map((show) => (
+          <a class="article-card" href={`/shows/${show.slug}/`}>
+            <h3>{show.title}</h3>
+            <div class="article-meta">
+              <span>{show.count} 篇文章</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">还没有节目索引。</div>
+    )
+  }
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const episodes = (await getCollection('episodes')).filter(
+  (episode) => episode.data.rights_status !== 'local_only'
+);
+
+const tags = Array.from(
+  episodes.reduce((map, episode) => {
+    episode.data.tags.forEach((tag) => {
+      map.set(tag, (map.get(tag) ?? 0) + 1);
+    });
+    return map;
+  }, new Map<string, number>())
+).sort((a, b) => a[0].localeCompare(b[0], 'zh-CN'));
+---
+
+<BaseLayout title="标签" currentPath="/tags/">
+  <section class="section-head">
+    <div>
+      <p class="kicker">Tags</p>
+      <h1>标签</h1>
+      <p class="lede">按主题浏览文章。</p>
+    </div>
+  </section>
+
+  {
+    tags.length > 0 ? (
+      <div class="tag-list">
+        {tags.map(([tag, count]) => (
+          <a class="tag" href={`/tags/${encodeURIComponent(tag)}/`}>
+            {tag} · {count}
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">还没有标签。</div>
+    )
+  }
+</BaseLayout>

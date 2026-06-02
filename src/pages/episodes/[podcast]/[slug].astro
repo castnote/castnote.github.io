@@ -1,0 +1,54 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const episodes = (await getCollection('episodes')).filter(
+    (episode) => episode.data.rights_status !== 'local_only'
+  );
+
+  return episodes.map((episode) => ({
+    params: {
+      podcast: episode.data.podcast_slug,
+      slug: episode.data.episode_slug
+    },
+    props: { episode }
+  }));
+}
+
+const { episode } = Astro.props;
+const { Content } = await render(episode);
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(date);
+---
+
+<BaseLayout title={episode.data.title}>
+  <article class="prose">
+    <header class="episode-header">
+      <div class="article-meta">
+        <a href={`/shows/${episode.data.podcast_slug}/`}>{episode.data.podcast}</a>
+        <span>{formatDate(episode.data.published_at)}</span>
+        <a href={episode.data.episode_url}>原始节目</a>
+      </div>
+      <h1>{episode.data.title}</h1>
+      {
+        episode.data.tags.length > 0 && (
+          <div class="tag-list">
+            {episode.data.tags.map((tag: string) => (
+              <a class="tag" href={`/tags/${encodeURIComponent(tag)}/`}>
+                {tag}
+              </a>
+            ))}
+          </div>
+        )
+      }
+    </header>
+    <Content />
+  </article>
+</BaseLayout>
