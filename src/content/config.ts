@@ -35,6 +35,7 @@ const showCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     slug: z.string(),
+    category: z.string().default('播客'),
     description: z.string().optional(),
     website: z.string().url().optional()
   })
