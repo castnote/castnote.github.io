@@ -104,13 +104,6 @@
       <description>本期节目邀请两届NBA总冠军、TNT Inside the NBA资深解说员Kenny Smith做客The Pivot。Kenny回顾了自己从纽约街头篮球到北卡罗来纳大学的成长历程，讲述了与Michael Jordan做队友时不为人知的故事，包括Jordan的竞争本能和离校决定的幕后细节。他详细分析了休斯顿火箭队1994-95赛季背靠背夺冠的经历，分享了球队在客场酒吧向菲尼克斯太阳队叫板的趣事，并解释了为何他认为火箭队能击败同时期的公牛队。Kenny还谈到了2020年NBA泡泡赛期间走下TNT演播台声援球员的决定背后的心路历程，以及从球员转型为解说员的职业转变。在个人生活方面，他分享了对两段婚姻的反思、女儿婚礼上的感动时刻，以及作为父亲如何影响女儿择偶观的思考。节目最后讨论了NBA比赛风格的演变，以及他为何看好Victor Wembanyama将成为联盟MVP。</description>
     </item>
     <item>
-      <title>从底层理解芯片设计 — Reiner Pope</title>
-      <link>https://castnote.github.io/episodes/dwarkesh/dwarkesh/</link>
-      <guid>https://castnote.github.io/episodes/dwarkesh/dwarkesh/</guid>
-      <pubDate>Fri, 22 May 2026 04:00:00 GMT</pubDate>
-      <description>本期节目中，Dwarkesh Patel 与 AI 芯片公司 MatX 的 CEO Reiner Pope 深入探讨了芯片设计的底层原理。对话从最基础的逻辑门和乘累加（MAC）运算开始，逐步搭建到全加器、阵列乘法器等电路结构，量化分析了计算与数据搬运的面积开销。随后讨论了从 CUDA 核心到脉动阵列（Systolic Array）的演化——如何通过将权重矩阵本地存储来大幅减少数据搬运成本。节目还涵盖了时钟周期与流水线寄存器插入的权衡、FPGA 与 ASIC 的商业和技术差异（包括查找表的工作原理）、CPU 缓存导致的非确定性延迟问题，以及 GPU 和 TPU 在顶层架构上的核心区别——GPU 是大量微小的类 TPU 单元平铺，而 TPU 使用更粗粒度的矩阵单元。最后简要对比了芯片与大脑在并行性、时钟速度和能耗模型上的异同。</description>
-    </item>
-    <item>
       <title>瓦特、晶圆与AI基础设施的未来 | Gavin Baker</title>
       <link>https://castnote.github.io/episodes/invest-like-the-best/invest-like-the-best/</link>
       <guid>https://castnote.github.io/episodes/invest-like-the-best/invest-like-the-best/</guid>
@@ -179,6 +172,13 @@
       <guid>https://castnote.github.io/episodes/smart-talks-ibm/smart-talks-ibm/</guid>
       <pubDate>Tue, 28 Oct 2025 04:00:00 GMT</pubDate>
       <description>本期节目中，Malcolm Gladwell 在 IBM 纽约办公室与 IBM CEO 兼董事长 Arvind Krishna 进行了一场面对面对话。Krishna 回顾了自己从1990年在 IBM 研究院做无线网络（即后来的 Wi-Fi）起步的职业经历，分享了他对技术趋势的早期预判——包括网络与计算融合、视频流媒体的兴起。他详细讲述了2018年力主收购 Red Hat 的决策过程，解释了为何选择成为云巨头的最佳合作伙伴而非直接竞争者。在 AI 话题上，Krishna 指出企业应聚焦可规模化的应用而非花哨实验，并认为大语言模型本身不太可能通向超级智能，关键在于将知识表征与 LLM 融合。他最热情的话题是量子计算，将其定位为继经典计算和 AI 之后的「第三种数学」，认为其重要性堪比半导体，并预计三到五年内将出现令人震惊的突破性成果，在金融定价、材料科学、物流优化等领域展现巨大价值。</description>
+    </item>
+    <item>
+      <title>Andrej Karpathy：AGI 仍需十年</title>
+      <link>https://castnote.github.io/episodes/dwarkesh/dwarkesh/</link>
+      <guid>https://castnote.github.io/episodes/dwarkesh/dwarkesh/</guid>
+      <pubDate>Fri, 17 Oct 2025 04:00:00 GMT</pubDate>
+      <description>本期节目中，Dwarkesh Patel 与前 Tesla AI 负责人、Eureka Labs 创始人 Andrej Karpathy 进行了一次深度对话。Karpathy 解释了为什么他认为通用人工智能至少还需要十年而非一年——当前的大语言模型虽然令人印象深刻，但在持续学习、多模态、计算机操作等方面仍有大量认知缺陷。两人回顾了 AI 领域 15 年来的重大转折（从 AlexNet 到强化学习再到 LLM），讨论了预训练与进化的类比、上下文学习的本质、强化学习的根本缺陷（「通过吸管吸取监督信号」）、模型坍缩与合成数据困境，以及认知核心应该有多大等前沿话题。Karpathy 还分享了他构建 NanoChat 的经验——为何编程模型在非模板化的创新代码上仍然力不从心，以及自动驾驶对 AI 部署时间线的启示。最后，Karpathy 谈到了他创办 Eureka Labs 的愿景——通过构建「知识坡道」来释放人类认知潜力，以及他作为教育者的教学方法论。</description>
     </item>
     <item>
       <title>AI 失业末日已经来临</title>
