@@ -10,7 +10,8 @@ try {
   const stat = fs.statSync(epubPath);
   sizeStr = `${Math.round(stat.size / 1024)} KB`;
   const d = stat.mtime;
-  updatedStr = `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+  const bj = new Date(d.getTime() + 8 * 3600_000);
+  updatedStr = `${bj.getUTCFullYear()}/${String(bj.getUTCMonth() + 1).padStart(2, '0')}/${String(bj.getUTCDate()).padStart(2, '0')} ${String(bj.getUTCHours()).padStart(2, '0')}:${String(bj.getUTCMinutes()).padStart(2, '0')}:${String(bj.getUTCSeconds()).padStart(2, '0')}`;
 } catch {
   sizeStr = '—';
   updatedStr = '—';
