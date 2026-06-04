@@ -1,9 +1,9 @@
 ---
 title: "Placeholder"
-podcast: "Podread"
-podcast_slug: "podread"
+podcast: "CastNote"
+podcast_slug: "castnote"
 episode_slug: "placeholder"
-episode_url: "https://podread.github.io"
+episode_url: "https://castnote.github.io"
 source_language: "en"
 article_language: "zh-CN"
 content_type: "summary"

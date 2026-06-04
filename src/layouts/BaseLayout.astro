@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-  title = 'Podread',
-  description = 'Podread publishes public-safe Chinese podcast reading notes and articles.'
+  title = '听阅',
+  description = '听阅 CastNote — 用中文读英文播客。'
 } = Astro.props;
 
 const socialLinks = [
@@ -29,7 +29,7 @@ const socialLinks = [
   }
 ];
 
-const pageTitle = title === 'Podread' ? title : `${title} | Podread`;
+const pageTitle = title === '听阅' ? title : `${title} | 听阅`;
 const pathname = Astro.url.pathname;
 const navLinks = [
   { href: '/', label: 'blog', active: pathname === '/' || pathname.startsWith('/episodes') },
@@ -45,15 +45,15 @@ const navLinks = [
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/podread-mark.svg" />
-    <link rel="alternate" type="application/rss+xml" title="Podread RSS" href="/rss.xml" />
+    <link rel="icon" type="image/svg+xml" href="/castnote-mark.svg" />
+    <link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml" />
     <title>{pageTitle}</title>
   </head>
   <body>
     <div class="site-shell">
       <header class="site-banner">
         <div class="banner-inner">
-          <a class="banner-brand" href="/">podread</a>
+          <a class="banner-brand" href="/">听阅</a>
           <nav class="banner-nav" aria-label="主导航">
             {
               navLinks.map((item) => (

@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
 
-const site = 'https://podread.github.io';
+const site = 'https://castnote.github.io';
 
 const escapeXml = (value: string) =>
   value
@@ -35,7 +35,7 @@ export const GET: APIRoute = async () => {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Podread</title>
+    <title>听阅 CastNote</title>
     <link>${site}/</link>
     <description>用中文读播客。</description>
     <language>zh-CN</language>${items}
