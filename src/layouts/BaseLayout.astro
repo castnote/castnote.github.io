@@ -4,12 +4,20 @@ import '@styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  ogType?: 'website' | 'article';
+  publishedAt?: Date;
+  tags?: string[];
 }
 
 const {
   title = '听阅',
-  description = '听阅 CastNote — 用中文读英文播客。'
+  description = '听阅 CastNote — 用中文读英文播客。',
+  ogType = 'website',
+  publishedAt,
+  tags = [],
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
 const socialLinks = [
   {
@@ -46,7 +54,19 @@ const navLinks = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/castnote-mark.svg" />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="听阅 CastNote" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    {publishedAt && <meta property="article:published_time" content={publishedAt.toISOString()} />}
+    {tags.map(tag => <meta property="article:tag" content={tag} />)}
     <title>{pageTitle}</title>
   </head>
   <body>

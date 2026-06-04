@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 const { tag, episodes } = Astro.props;
 ---
 
-<BaseLayout title={tag}>
+<BaseLayout title={tag} description={`标签「${tag}」下的播客文章合集。`}>
   <section class="section-head">
     <div>
       <p class="kicker">Tag</p>

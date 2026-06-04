@@ -32,9 +32,27 @@ const formatDate = (date: Date) =>
   }).format(date);
 
 const hasParticipants = episode.data.hosts.length > 0 || episode.data.guests.length > 0;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const authors = [...episode.data.hosts, ...episode.data.guests]
+  .filter(p => p.name)
+  .map(p => ({ "@type": "Person" as const, name: p.name }));
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: episode.data.title,
+  description: episode.data.summary || '',
+  datePublished: episode.data.published_at.toISOString(),
+  author: authors.length > 0 ? authors : undefined,
+  publisher: { "@type": "Organization", name: "听阅 CastNote" },
+  mainEntityOfPage: canonicalUrl,
+  isPartOf: { "@type": "PodcastSeries", name: episode.data.podcast },
+  inLanguage: "zh-CN",
+};
 ---
 
-<BaseLayout title={episode.data.title}>
+<BaseLayout title={episode.data.title} description={episode.data.summary} ogType="article" publishedAt={episode.data.published_at} tags={episode.data.tags}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <article class="episode-article">
     <header class="episode-header">
       <div class="episode-meta">
