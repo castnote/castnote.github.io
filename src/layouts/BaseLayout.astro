@@ -68,6 +68,13 @@ const navLinks = [
     {publishedAt && <meta property="article:published_time" content={publishedAt.toISOString()} />}
     {tags.map(tag => <meta property="article:tag" content={tag} />)}
     <title>{pageTitle}</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script>
   </head>
   <body>
     <div class="site-shell">
