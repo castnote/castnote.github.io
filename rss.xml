@@ -6,11 +6,18 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>史上最大的逼空行情 | Animal Spirits 第467期</title>
-      <link>https://castnote.github.io/episodes/animal-spirits/animal-spirits/</link>
-      <guid>https://castnote.github.io/episodes/animal-spirits/animal-spirits/</guid>
-      <pubDate>Wed, 03 Jun 2026 13:00:15 GMT</pubDate>
-      <description>本期节目讨论了当前市场的极度亢奋氛围：芯片股推动标普500创下1950年以来最好的两个月表现，纳斯达克走势与互联网泡沫时期惊人相似，美光成为史上最快达到万亿市值的公司。SpaceX IPO引发指数纳入争议，Matt Levine 分析了其如何制造针对指数基金的「逼空」效应。谷歌自2005年以来首次进行800亿美元股权融资，伯克希尔参与了100亿美元的私募配售。节目还探讨了AI收入的循环性问题、韩国市场的投机狂热、美国储蓄率下降的真实含义、房地产经纪人的困境，以及独立电影《Backrooms》和《Obsession》如何碾压星球大战系列的票房表现。Michael Saylor 的 Strategy 公司自2022年以来首次出售比特币。</description>
+      <title>精华回顾：迷幻药物与神经刺激如何重塑大脑 | Dr. Nolan Williams</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</guid>
+      <pubDate>Sun, 07 Jun 2026 01:18:54 GMT</pubDate>
+      <description>Stanford 精神科医生 Dr. Nolan Williams 与 Andrew Huberman 深入讨论了抑郁症治疗的新范式。Williams 提出「精神科 3.0」的概念——从早期的心理治疗（1.0）和化学失衡假说（2.0）转向聚焦大脑回路的治疗方法。他详细介绍了 Stanford Neuromodulation Therapy（SNT），一种利用 spaced learning theory 将六周 TMS 疗程压缩到五天的突破性方案，缓解率达 60-90%。对话还涵盖了 psilocybin 治疗抑郁症、MDMA 治疗 PTSD、ibogaine 用于特种部队退伍军人的道德创伤，以及 ayahuasca 的神经化学机制。Williams 强调这些 psychedelics 与 TMS 作用于相同的脑网络连接，暗示着一个趋同的治疗机制——即解耦负性情绪系统与自我表征之间的过度连接。</description>
+    </item>
+    <item>
+      <title>香槟与鱼子酱</title>
+      <link>https://castnote.github.io/episodes/money-stuff/money-stuff/</link>
+      <guid>https://castnote.github.io/episodes/money-stuff/money-stuff/</guid>
+      <pubDate>Sun, 07 Jun 2026 01:17:13 GMT</pubDate>
+      <description>本期 Money Stuff 播客围绕三个话题展开。首先是纽约酒吧 The Jeffrey 的创意促销：如果 Knicks 赢球客人免单，酒吧则通过在 Kalshi 上押注 Knicks 赢来对冲风险，Matt 对此表示这本质就是 sports betting 而非真正的商业风险对冲。第二个话题是 Google（Alphabet）宣布了高达 850 亿美元的巨额股权融资，其中包括 Berkshire Hathaway 的 100 亿美元 anchor order 和 400 亿美元的 ATM offering，反映出 AI 时代大型科技公司从轻资产回购股票转向重资产发行股票的根本性转变。Matt 还深入解释了 ATM program 中一个细节——Google 通过卖股票来支付员工股权授予产生的税务义务。最后，两人讨论了 activist short seller Andrew Left 本周被定罪 market manipulation 的案件，探讨了做空研究、快速平仓与市场操纵之间模糊的法律边界，以及这对整个 short selling 行业的寒蝉效应。</description>
     </item>
     <item>
       <title>非正规市场如何运作？</title>
@@ -25,27 +32,6 @@
       <guid>https://castnote.github.io/episodes/happiness-lab/happiness-lab/</guid>
       <pubDate>Tue, 02 Jun 2026 19:47:05 GMT</pubDate>
       <description>本期节目探讨了为什么很多人把运动变成了一种对身体的惩罚，而非快乐的源泉。主持人Laurie Santos与瑜伽教练、作家Jessamyn Stanley对话，Jessamyn分享了自己作为一个胖孩子从小恐惧运动、到成年后通过热瑜伽练习打破身体羞耻感的经历。她讲述了如何从最初无法忍受看到自己的身体，到通过在家练习和给自己拍照，逐渐认识到自我厌恶的根源在于自己而非外界。两人讨论了瑜伽如何不仅是身体锻炼，更是一条灵性道路——通过在体式中练习接纳不适、占据空间、倾听身体，这些能力可以迁移到生活的其他方面。Jessamyn还分享了她在教课中发现身体焦虑是所有人的普遍问题，而自我接纳能产生连锁反应、帮助他人也接纳自己。</description>
-    </item>
-    <item>
-      <title>羞耻的秘密心灵</title>
-      <link>https://castnote.github.io/episodes/money-stuff/money-stuff/</link>
-      <guid>https://castnote.github.io/episodes/money-stuff/money-stuff/</guid>
-      <pubDate>Mon, 01 Jun 2026 21:16:30 GMT</pubDate>
-      <description>本期讨论了四个话题：SpaceX IPO 文件的财务数据、估值逻辑（28万亿美元总可寻址市场主要来自企业级AI）、指数纳入争议及治理结构（Elon Musk 85%投票控制权、零约束先例）；Robinhood 推出 AI 代理交易功能，用户可用自然语言描述交易策略由机器人执行，讨论了免佣交易如何使此成为可能以及对市场结构的潜在影响；增强版运动会（Enhanced Games）在拉斯维加斯首次举办的结果——三名「干净」选手获胜、仅一项世界纪录被打破、公司股价暴跌40%；以及小联盟棒球手 Fernando Tatis Jr. 起诉 Big League Advance 的案件败诉——他17岁时以200万美元预付款换出未来收入10%，后签下3.4亿合同。</description>
-    </item>
-    <item>
-      <title>肽：科学、用途与安全性 | Dr. Abud Bakri</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</guid>
-      <pubDate>Mon, 01 Jun 2026 12:00:36 GMT</pubDate>
-      <description>本期节目中，Andrew Huberman 与内科医生 Dr. Abud Bakri 深入讨论了肽类物质的科学基础、临床应用与安全性。对话首先建立了肽的分类框架——有已知受体的肽（如 GLP-1 类药物）和无已知受体的肽（如 BPC-157）。随后详细探讨了 BPC-157 从巴甫洛夫时代胃液研究到现代的发展历程、其在动物模型中的组织修复效果、缺乏充分人体数据的现状，以及围绕灰色市场、调配药房和 FDA 监管的复杂法律环境。节目还涵盖了苏联研究者 Khavinson 发现的 Pinealon（EDR）对睡眠和认知的影响、Epithalon 与松果体功能恢复、胸腺退化与免疫老化的关系及相关胸腺肽、GHK-Cu 的胶原蛋白修复应用、生长激素促泌剂的利弊权衡，以及 GLP-1 类药物和 Retatrutide 对代谢健康的变革性影响。两人强调了在医生指导下使用肽的重要性，以及推进严格临床试验的迫切需求。</description>
-    </item>
-    <item>
-      <title>Mo Gawdat：距离 AI 真正冲击社会，你只剩三年时间</title>
-      <link>https://castnote.github.io/episodes/diary-of-a-ceo/diary-of-a-ceo/</link>
-      <guid>https://castnote.github.io/episodes/diary-of-a-ceo/diary-of-a-ceo/</guid>
-      <pubDate>Mon, 01 Jun 2026 07:00:07 GMT</pubDate>
-      <description>前 Google 高管 Mo Gawdat 与 Steven Bartlett 深度探讨 AI 对人类社会的多重冲击。Gawdat 预测 AGI 将在 2027 年前到来，届时知识工作者将首先受到冲击，部分行业可能面临高达 30% 的岗位流失。对话涵盖了 AI 军备竞赛、自主武器扩散、大国博弈下的伦理困境，以及科技巨头——尤其是 OpenAI 与 Anthropic 在伦理选择上的鲜明对比。Gawdat 提出了「第四必然」理论：当 AI 最终掌管所有决策时，基于物理学最小能量原则和进化生物学的扩展圈理论，超级智能将趋向良性。他呼吁公众以实际行动——包括用使用行为为伦理 AI 投票——来影响技术发展方向，同时坦言对未来十年的动荡持悲观态度，但对长远的人类命运保持信心。</description>
     </item>
     <item>
       <title>深入数十亿美元的「万物皆可赌」生意</title>
@@ -83,13 +69,6 @@
       <description>本期节目中，Lex Fridman 与费米实验室粒子物理学家 Don Lincoln 展开了一场关于物理学核心谜题的深度对话。对话从物理学的统一史出发，回顾了牛顿统一天体与地面引力、麦克斯韦统一电与磁、爱因斯坦的时空统一与广义相对论，一路讲到标准模型中的电弱统一与希格斯玻色子的发现。随后讨论转向当前物理学的前沿未解问题：大统一理论与万物理论的探索前景、弦理论与圈量子引力的现状、反物质的生产与应用潜力、物质-反物质不对称之谜、暗能量的本质及其与量子场论预测之间的巨大矛盾、暗物质的证据与探测困境。Lincoln 还分享了自己从小镇出身到成为前沿物理学家的个人经历，以及对科学探索中好奇心与毅力的看法。</description>
     </item>
     <item>
-      <title>我去建了一个价值80亿美元的MTV帝国 | Tom Freston</title>
-      <link>https://castnote.github.io/episodes/my-first-million/my-first-million/</link>
-      <guid>https://castnote.github.io/episodes/my-first-million/my-first-million/</guid>
-      <pubDate>Fri, 29 May 2026 10:00:02 GMT</pubDate>
-      <description>本期 Tom Freston 回顾 MTV 帝国的创建过程，讲述一个边缘音乐频道如何成长为影响全球青年文化、最终价值数十亿美元的媒体公司。对话不仅涉及节目、品牌、广告和有线电视商业模式，也谈到文化判断、团队搭建、国际扩张和娱乐产业的窗口期。MTV 的故事说明，商业机会有时来自技术分发渠道的变化，但真正决定规模的是能否抓住一代人的审美和身份表达，并把这种文化感转成组织能力。</description>
-    </item>
-    <item>
       <title>云端 Agent 的上下文工程 —— Walden Yan 与 Cole Murray</title>
       <link>https://castnote.github.io/episodes/latent-space/latent-space/</link>
       <guid>https://castnote.github.io/episodes/latent-space/latent-space/</guid>
@@ -125,13 +104,6 @@
       <description>本期节目回顾了 Google 的 Android 发布会。几位主持人讨论了 Android 17 的主要更新，包括 Gemini AI 深度整合、新的「暂停点」数字健康功能、屏幕反应相机模式、与 Instagram 的原生相机集成，以及 AirDrop 跨平台兼容。Android Auto 获得了重大升级，包括 3D 导航视图和车载视频播放。节目还讨论了 Gemini 的代理式功能演示（如自动订票和买教材）引发的信任问题，以及 Google Book 这个新产品类别的定位困惑。此外还聊了 Fitbit Air 无屏幕健身追踪器如何挑战 Whoop 的市场地位，并进行了一场以 Reddit 帖子为题的 Family Feud 游戏。</description>
     </item>
     <item>
-      <title>Andrej Karpathy：从氛围编程到智能体工程</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Wed, 29 Apr 2026 15:21:18 GMT</pubDate>
-      <description>本期节目邀请 Andrej Karpathy 深入讨论了 AI 编程工具的剧变。他分享了 2025 年 12 月以来智能体编码工具质的飞跃体验，提出了 Software 3.0（以提示词和上下文窗口为编程界面）的范式转变，用 MenuGen 等实例说明大量传统应用代码将被神经网络直接取代。他还阐述了可验证性如何决定 AI 能力的「参差不齐」分布，区分了「氛围编程」（提高所有人的下限）和「智能体工程」（在保持质量标准的前提下大幅提速）的不同定位，并探讨了在智能变得廉价的时代，人类的理解力、品味和系统设计能力为何仍是不可外包的核心竞争力。</description>
-    </item>
-    <item>
       <title>Anthropic 的世代级爆发、OpenAI 恐慌、AI 护城河、Meta 连输重大诉讼</title>
       <link>https://castnote.github.io/episodes/all-in/all-in/</link>
       <guid>https://castnote.github.io/episodes/all-in/all-in/</guid>
@@ -144,13 +116,6 @@
       <guid>https://castnote.github.io/episodes/no-priors/no-priors/</guid>
       <pubDate>Fri, 20 Mar 2026 13:27:35 GMT</pubDate>
       <description>本期节目邀请了 AI 领域知名研究者 Andrej Karpathy，围绕代码智能体的崛起展开深入对话。Karpathy 分享了自 2024 年 12 月以来他的工作流发生的根本性转变——从 80% 手写代码变为几乎完全委托给智能体，并将当前状态描述为一种持续的「AI 精神亢奋」。他详细介绍了自己搭建的家庭 AI 管家 Dobby，通过自然语言和 WhatsApp 统一控制灯光、空调、安防等六套系统。讨论深入到 Auto Research 的理念与实践——如何让研究完全自主运行、移除人类瓶颈，以及他在 GPT 训练优化上获得的意外成果。节目还探讨了模型的「锯齿感」问题（在可验证领域极强但在软性任务上仍有明显短板）、开源与闭源模型的动态平衡、独立研究者相对于前沿实验室的角色价值，以及数字世界将先于物理世界被 AI 大幅重构的预判。最后 Karpathy 分享了 Micro GPT 项目背后的教育理念转变——未来的教育不再是直接教人，而是教智能体，让智能体去做个性化教学。</description>
-    </item>
-    <item>
-      <title>2026 年值得关注的三大经济指标</title>
-      <link>https://castnote.github.io/episodes/the-indicator/the-indicator/</link>
-      <guid>https://castnote.github.io/episodes/the-indicator/the-indicator/</guid>
-      <pubDate>Fri, 06 Feb 2026 18:23:25 GMT</pubDate>
-      <description>本期节目中，三位主持人分别选择了一个他们认为将塑造 2026 年经济走向的关键指标。Wailin Wong 关注美联储基准利率，讨论了 Jerome Powell 任期即将结束、总统对利率政策的干预以及美联储内部的决策分歧。Stephen 聚焦电价上涨问题，指出 AI 数据中心的巨大电力需求、老化的电网基础设施和自然灾害等因素正在推高美国电价，涨幅远超整体通胀。Cooper Katz McKim 关注消费支出，分析了美国消费的 K 型分化现象——前 10% 高收入群体贡献了近半数消费支出，掩盖了其他群体面临的经济压力，而这种格局能否持续取决于股市表现。</description>
     </item>
     <item>
       <title>Sam Altman：OpenAI 如何赢得 AI 竞赛、ChatGPT 的未来、基础设施建设逻辑与 2026 年 IPO？</title>
