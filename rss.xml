@@ -6,13 +6,6 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>打造 RL Environment 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Sun, 07 Jun 2026 01:20:54 GMT</pubDate>
-      <description>Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann 做客 Training Data，深度讲解他们如何让前沿 AI 实验室级别的训练基础设施对所有人开放。对话围绕 reinforcement learning environment 展开：它与 eval 的本质统一、agent harness 在 RL 中的角色、产品-模型优化闭环为何是 Cursor 等公司的核心竞争力。两位创始人介绍了全栈研究平台 Lab 和社区化的 Environment Hub，展示了从 Wordle 这样的 hello world 到 cybersecurity、医疗等垂直领域 environment 的丰富生态。在前沿研究方面，对话涉及 RL 效率问题、recursive language model 对 context management 的突破潜力，以及 synthetic data 与 continual learning 的未来方向。最终回到创业愿景：让每家公司都能拥有自己的产品-模型优化闭环，让 institutional knowledge 随时间复利增长。</description>
-    </item>
-    <item>
       <title>精华回顾：迷幻药物与神经刺激如何重塑大脑 | Dr. Nolan Williams</title>
       <link>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</guid>

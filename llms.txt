@@ -12,7 +12,6 @@
 
 ## 文章列表
 
-- [打造 RL Environment 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann](/episodes/training-data/training-data/): Training Data · 2026-06-07 ([Markdown](/episodes/training-data/training-data.md))
 - [精华回顾：迷幻药物与神经刺激如何重塑大脑 | Dr. Nolan Williams](/episodes/huberman-lab/huberman-lab/): Huberman Lab · 2026-06-07 ([Markdown](/episodes/huberman-lab/huberman-lab.md))
 - [香槟与鱼子酱](/episodes/money-stuff/money-stuff/): Money Stuff: The Podcast · 2026-06-07 ([Markdown](/episodes/money-stuff/money-stuff.md))
 - [2026 年值得关注的三大经济指标](/episodes/the-indicator/the-indicator/): The Indicator from Planet Money · 2026-06-07 ([Markdown](/episodes/the-indicator/the-indicator.md))
