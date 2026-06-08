@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>打造 RL Environment 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
+      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
+      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
+      <pubDate>Sun, 07 Jun 2026 01:20:54 GMT</pubDate>
+      <description>Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann 做客 Training Data，深度讲解他们如何让前沿 AI 实验室级别的训练基础设施对所有人开放。对话围绕 reinforcement learning environment 展开：它与 eval 的本质统一、agent harness 在 RL 中的角色、产品-模型优化闭环为何是 Cursor 等公司的核心竞争力。两位创始人介绍了全栈研究平台 Lab 和社区化的 Environment Hub，展示了从 Wordle 这样的 hello world 到 cybersecurity、医疗等垂直领域 environment 的丰富生态。在前沿研究方面，对话涉及 RL 效率问题、recursive language model 对 context management 的突破潜力，以及 synthetic data 与 continual learning 的未来方向。最终回到创业愿景：让每家公司都能拥有自己的产品-模型优化闭环，让 institutional knowledge 随时间复利增长。</description>
+    </item>
+    <item>
       <title>精华回顾：迷幻药物与神经刺激如何重塑大脑 | Dr. Nolan Williams</title>
       <link>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</guid>
@@ -18,6 +25,13 @@
       <guid>https://castnote.github.io/episodes/money-stuff/money-stuff/</guid>
       <pubDate>Sun, 07 Jun 2026 01:17:13 GMT</pubDate>
       <description>本期 Money Stuff 播客围绕三个话题展开。首先是纽约酒吧 The Jeffrey 的创意促销：如果 Knicks 赢球客人免单，酒吧则通过在 Kalshi 上押注 Knicks 赢来对冲风险，Matt 对此表示这本质就是 sports betting 而非真正的商业风险对冲。第二个话题是 Google（Alphabet）宣布了高达 850 亿美元的巨额股权融资，其中包括 Berkshire Hathaway 的 100 亿美元 anchor order 和 400 亿美元的 ATM offering，反映出 AI 时代大型科技公司从轻资产回购股票转向重资产发行股票的根本性转变。Matt 还深入解释了 ATM program 中一个细节——Google 通过卖股票来支付员工股权授予产生的税务义务。最后，两人讨论了 activist short seller Andrew Left 本周被定罪 market manipulation 的案件，探讨了做空研究、快速平仓与市场操纵之间模糊的法律边界，以及这对整个 short selling 行业的寒蝉效应。</description>
+    </item>
+    <item>
+      <title>2026 年值得关注的三大经济指标</title>
+      <link>https://castnote.github.io/episodes/the-indicator/the-indicator/</link>
+      <guid>https://castnote.github.io/episodes/the-indicator/the-indicator/</guid>
+      <pubDate>Sun, 07 Jun 2026 01:15:53 GMT</pubDate>
+      <description>NPR 经济播客 The Indicator 展望 2026 年，三位主持人分别提出了各自最关注的经济指标。Wailin Wong 选择了 Federal Funds rate，聚焦美联储的独立性危机——随着 Jerome Powell 主席任期在五月结束，Trump 总统公开要求更低利率并寻求安排忠实支持者，美联储的决策走向充满不确定性。Stephen Paha 关注电价上涨，美国电费涨幅已达 7%，远超整体通胀的 3%，AI data center 的巨大电力需求、老化电网和自然灾害等多重因素将继续推高电价。Cooper Katz McKim 聚焦 consumer spending，指出尽管 consumer sentiment 大幅下滑，硬数据显示美国消费者仍具韧性——原因在于收入前 10% 的群体贡献了近半数消费支出，他们从房价上涨和股市繁荣中获益。然而汽车贷款违约率和信用卡债务均创新高，K 型经济分化日益明显，consumer spending 的可持续性高度依赖股市表现。</description>
     </item>
     <item>
       <title>非正规市场如何运作？</title>
