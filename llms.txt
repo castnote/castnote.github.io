@@ -12,6 +12,10 @@
 
 ## 文章列表
 
+- [Elon Musk 那套万能算法——全靠它赚了数十亿](/episodes/my-first-million/my-first-million/): My First Million · 2026-06-08 ([Markdown](/episodes/my-first-million/my-first-million.md))
+- [经济衰退信号全都错了 | TCAF 245](/episodes/animal-spirits/animal-spirits/): Animal Spirits · 2026-06-08 ([Markdown](/episodes/animal-spirits/animal-spirits.md))
+- [数学家的信仰之路：AI、超人类主义与基督教的对话 | John Lennox × Diary of a CEO](/episodes/diary-of-a-ceo/diary-of-a-ceo/): The Diary Of A CEO · 2026-06-07 ([Markdown](/episodes/diary-of-a-ceo/diary-of-a-ceo.md))
+- [为 RL 环境构建 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann](/episodes/training-data/training-data/): Training Data · 2026-06-07 ([Markdown](/episodes/training-data/training-data.md))
 - [精华回顾：迷幻药物与神经刺激如何重塑大脑 | Dr. Nolan Williams](/episodes/huberman-lab/huberman-lab/): Huberman Lab · 2026-06-07 ([Markdown](/episodes/huberman-lab/huberman-lab.md))
 - [香槟与鱼子酱](/episodes/money-stuff/money-stuff/): Money Stuff: The Podcast · 2026-06-07 ([Markdown](/episodes/money-stuff/money-stuff.md))
 - [2026 年值得关注的三大经济指标](/episodes/the-indicator/the-indicator/): The Indicator from Planet Money · 2026-06-07 ([Markdown](/episodes/the-indicator/the-indicator.md))

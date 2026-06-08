@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期 Training Data 邀请到 Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann，讨论他们的端到端后训练平台 Lab 和环境中心（Environment Hub）。对话从为什么需要让前沿训练基础设施对所有人开放开始，深入探讨了 RL 环境与评价基准（eval）之间的关系、智能体框架（agent harness）与环境在概念上的区分、以及环境抽象如何统一了强化学习训练、评估、数据生成和模型蒸馏等多种工作流。两位创始人还介绍了环境中心的社区生态、热门环境案例（Wordle、Wiki Search）、RL 研究的前沿方向（Recursive Language Model、合成数据、持续学习），以及 Prime Intellect 对 AI 未来的愿景——让每家公司都能拥有自己的产品-模型优化闭环。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/training-data/training-data/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="为 RL 环境构建 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann | 听阅"><meta property="og:description" content="本期 Training Data 邀请到 Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann，讨论他们的端到端后训练平台 Lab 和环境中心（Environment Hub）。对话从为什么需要让前沿训练基础设施对所有人开放开始，深入探讨了 RL 环境与评价基准（eval）之间的关系、智能体框架（agent harness）与环境在概念上的区分、以及环境抽象如何统一了强化学习训练、评估、数据生成和模型蒸馏等多种工作流。两位创始人还介绍了环境中心的社区生态、热门环境案例（Wordle、Wiki Search）、RL 研究的前沿方向（Recursive Language Model、合成数据、持续学习），以及 Prime Intellect 对 AI 未来的愿景——让每家公司都能拥有自己的产品-模型优化闭环。"><meta property="og:url" content="https://castnote.github.io/episodes/training-data/training-data/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="为 RL 环境构建 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann | 听阅"><meta name="twitter:description" content="本期 Training Data 邀请到 Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann，讨论他们的端到端后训练平台 Lab 和环境中心（Environment Hub）。对话从为什么需要让前沿训练基础设施对所有人开放开始，深入探讨了 RL 环境与评价基准（eval）之间的关系、智能体框架（agent harness）与环境在概念上的区分、以及环境抽象如何统一了强化学习训练、评估、数据生成和模型蒸馏等多种工作流。两位创始人还介绍了环境中心的社区生态、热门环境案例（Wordle、Wiki Search）、RL 研究的前沿方向（Recursive Language Model、合成数据、持续学习），以及 Prime Intellect 对 AI 未来的愿景——让每家公司都能拥有自己的产品-模型优化闭环。"><meta property="article:published_time" content="2026-06-07T01:20:54.000Z"><meta property="article:tag" content="播客"><title>为 RL 环境构建 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"为 RL 环境构建 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann","description":"本期 Training Data 邀请到 Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann，讨论他们的端到端后训练平台 Lab 和环境中心（Environment Hub）。对话从为什么需要让前沿训练基础设施对所有人开放开始，深入探讨了 RL 环境与评价基准（eval）之间的关系、智能体框架（agent harness）与环境在概念上的区分、以及环境抽象如何统一了强化学习训练、评估、数据生成和模型蒸馏等多种工作流。两位创始人还介绍了环境中心的社区生态、热门环境案例（Wordle、Wiki Search）、RL 研究的前沿方向（Recursive Language Model、合成数据、持续学习），以及 Prime Intellect 对 AI 未来的愿景——让每家公司都能拥有自己的产品-模型优化闭环。","datePublished":"2026-06-07T01:20:54.000Z","author":[{"@type":"Person","name":"Sonya Huang"},{"@type":"Person","name":"Will Brown"},{"@type":"Person","name":"Johannes Hagemann"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/training-data/training-data/","isPartOf":{"@type":"PodcastSeries","name":"Training Data"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/training-data/">Training Data</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/07 09:20:54</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.youtube.com/watch?v=SJc1y5z5wwM">原始节目</a> </div> <h1>为 RL 环境构建 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</h1> <p class="episode-summary">本期 Training Data 邀请到 Prime Intellect 联合创始人 Will Brown 和 Johannes Hagemann，讨论他们的端到端后训练平台 Lab 和环境中心（Environment Hub）。对话从为什么需要让前沿训练基础设施对所有人开放开始，深入探讨了 RL 环境与评价基准（eval）之间的关系、智能体框架（agent harness）与环境在概念上的区分、以及环境抽象如何统一了强化学习训练、评估、数据生成和模型蒸馏等多种工作流。两位创始人还介绍了环境中心的社区生态、热门环境案例（Wordle、Wiki Search）、RL 研究的前沿方向（Recursive Language Model、合成数据、持续学习），以及 Prime Intellect 对 AI 未来的愿景——让每家公司都能拥有自己的产品-模型优化闭环。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Sonya Huang</span> </div> <p class="person-description">Sequoia Capital 合伙人，Training Data 播客主持人</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Will Brown</span> </div> <p class="person-description">Prime Intellect 联合创始人</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Johannes Hagemann</span> </div> <p class="person-description">Prime Intellect 联合创始人</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Andrej Karpathy</span>  </div> <p class="person-description">AI 研究者，Prime Intellect 的天使投资人</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Alex Sherstinsky</span>  </div> <p class="person-description">Recursive Language Model（RLM）原作者</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开放前沿训练基础设施的使命">开放前沿训练基础设施的使命</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>今天我们的嘉宾是 Prime Intellect 的联合创始人 Will Brown 和 Johannes Hagemann。Prime Intellect 是 AI 领域最酷的新实验室之一，他们的使命是让前沿训练基础设施对所有人开放，这非常了不起。你们推出的 RL environment hub 也极为独特，大家都非常兴奋。我们来聊聊 post-training、reinforcement learning、agent harnesses，以及你们对未来的展望。</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>我们的平台覆盖从计算层到完整 post-training stack 的一切——包括大规模 RL 训练框架、以社区方式运作的 environment hub、安全代码执行沙箱和 evaluations。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>你们为什么追求把所有这些基础设施开放给所有人的使命？</p>
+<p><strong>Will Brown</strong></p>
+<p>首先，我们非常推崇开放科学——历史上重大科学发现都是大家讨论、分享，全世界在别人基础上继续构建。更实际地说，模型定制有巨大价值。那些胜出的应用把 AI 用在特定任务和 workflow 上，并且需要大规模、低成本地交付。</p>
+<p>端到端优化系统的方法就是直接访问模型权重，把模型塑造得最适合你的问题，而不是用 off-the-shelf 模型、只在 prompt 层面做定制。这比 prompt 层面的定制要深得多。</p>
+<h2 id="产品-模型优化循环">产品-模型优化循环</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>你们的未来愿景是每家公司都会 pre-train 和 post-train 自己的模型吗？</p>
+<p><strong>Will Brown</strong></p>
+<p>我们认为每家公司都会成为 AI 公司，大多数 AI 公司会想要自己的 AI research lab。研究可以是 pre-training，特别是当你的领域不只是 text-in text-out 时；在很多情况下，它会是 post-training 那种 agentic 的、聚焦特定任务和 workflow 的模型。</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>现在已经到了可以量产、成本可控的阶段，可以大规模地解决人们实际想要解决的问题了。</p>
+<p><strong>Will Brown</strong></p>
+<p>我们的平台叫 Lab，核心概念是 environment。RL environment 封装了做 reinforcement learning 所需的一切——模型通过试错来改进。但它不止于 RL。</p>
+<p>本质上，environment 跟新模型发布时报告的那些 eval 是一回事——SWE-bench、AMIE、Terminal Bench 都是 environment 的例子。它们有任务数据集、有 harness、有 rubric 或 reward function 给输出质量打分。你在 offline eval 里做 test set 用的东西，也可以在 RL 里当 training set 用。</p>
+<p>我们的平台强调社区概念，像 GitHub 那样——让人们有大量积木可以借鉴，展示他们如何使用不同工具和 workflow，让其他人也能 post-train 模型。</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>核心思路是给更多公司大实验室才有的产品-模型优化循环。ChatGPT 是 OpenAI 创造的，Claude Code 是 Anthropic 创造的——他们有能力针对自己的 scaffold 优化模型。这些产品越流行，大实验室就越没动力让模型在其他产品上也表现得好。</p>
+<p>Cursor 是个很好的例子——他们很早就意识到了，自己做了大规模 post-training，而那个 environment 就是 Cursor 本身。我们相信会有更多 startup 朝这个方向走，构建出之前不可能的产品。</p>
+<h2 id="environment-与-eval-的关系">Environment 与 Eval 的关系</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>你说 environments 就是 evals，但我认为 environment 是有状态的——你观察它，采取行动，观察状态变化，更新 world model。这跟 eval 显然不同，eval 像是你应该在这套题目上得到这个答案。你能帮我把这两种现实合并起来吗？</p>
+<p><strong>Will Brown</strong></p>
+<p>一两年以前，很多 eval 是问答形式，就是一大堆问题。同时人们对 environment 还有别的理解，比如老式 RL 和 Atari——长期运行的状态交互循环。但现在两者已经合为一体了，特别是大规模训练用的 environment，它们有复杂的状态，可能模拟一个 web 应用或完整的 coding platform。</p>
+<p>跟原始 RL 游戏一样，它们永远有一个 reward 和一个目标。你不需要让人拍脑袋说好不好，而是有东西可以衡量进度和表现——这就是我说它也是 eval 的意思。系统从某个状态开始，跟环境交互，总有一个目标，有办法衡量它做得好不好。</p>
+<h2 id="agent-harness-与-environment-的边界">Agent Harness 与 Environment 的边界</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>Agent harness 和 RL，这两个概念是正交的还是相互排斥的？它们怎么关联？</p>
+<p><strong>Will Brown</strong></p>
+<p>Harness 是 environment 的一部分。对任何 eval 或 environment 任务来说，有输入，中间一堆事情发生，然后输出某个状态被评分。environment 就是这个中间部分——跟 simulator 交互、跟 agent 交互、或者物理世界模拟。Harness 决定了模型如何跟系统其他部分交互。</p>
+<p>对 coding agent，可以说 harness 就是 CLI coding agent，terminal 就是 environment。但这不是通用的——有时 system prompt 加一些 tools 就是 harness，有时会 spawn 子 agent，子 agent 也有自己的 harness。我们认为 harnesses 会不断进化，有 Cambrian explosion 式的各种使用模型的方式。</p>
+<p>所以我们用 environment 作为抽象层——agent 太窄，harness 也太窄。任何类型的系统-模型交互都在 environment 的范畴里。</p>
+<h2 id="rl-与-post-training-的关系">RL 与 Post-training 的关系</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>是不是所有公司都应该用 environments 来 post-train 模型？有没有绝对需要用 environments 的场景，还是说可以用别的方法？</p>
+<p><strong>Will Brown</strong></p>
+<p>Environments 是工具，可以做所有这些事。它不把你绑死在 RL 上。比如小模型从大模型蒸馏——你把大模型放进 environment 跑很多次，得到同一交互协议的大量数据，用同一个 grader 筛选最好的例子做 SFT。你还可以做 prompt optimization、AB test 不同模型。</p>
+<p>我们把 eval 看作一种用于衡量性能但不用于训练的 environment。很多人做 eval 就是在衡量当前性能然后迭代。RL 就是把这种迭代规模化——自动化地改一点模型、改一点 prompt，然后 hill climb。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>你把 reinforcement learning 跟 post-training 看成同义词吗？</p>
+<p><strong>Will Brown</strong></p>
+<p>RL 是现在的主流，在大规模模型上你会花最多时间和算力在 RL 上。但它不是唯一要做的事——还包括 prompt tuning、SFT、在线 distillation。有很多算法都属于这个范畴，RL 是中间最大的一块，但周围还有很多东西。让用户有各种旋钮可以调，才是解锁的方式。</p>
+<h2 id="谁可以使用这些工具">谁可以使用这些工具</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>是那些特别聪明的 AI 研究者才能真正让这些东西落地，还是说普通 Fortune 500 企业也能学会用这个平台？</p>
+<p><strong>Will Brown</strong></p>
+<p>大多数公司都有能做的人。Fortune 500 公司很可能有一个 AI 工程师团队，有能力跟进最新工具，擅长用 Claude Code，对模型和 prompt 有很多见解。他们就是我们的目标客户。</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>尤其如果你给他们合适的工具的话。有些大公司里面没人能调试 TPU cluster 跑这种任务，缺少做大规模 agentic RL（带 tool use、代码执行）的组件。我们的目标就是把整个基础设施抽象掉。</p>
+<h2 id="客户案例">客户案例</h2>
+<p><strong>Johannes Hagemann</strong></p>
+<p>一个最爱的客户是 RCI，一家做前沿开放模型的新实验室。他们跟我们在整个 stack 上合作。我们过去也做过很多大规模 pre-training——那是我们的出身。跟他们一起训练了一些最大的 mixture of expert 模型，并成功开源了。</p>
+<p><strong>Will Brown</strong></p>
+<p>RCI 是我们的密切合作伙伴，大家在开放使命上很一致。他们的重点更偏向企业和终端用户，做端到端交付。我们的定位是专注于基础设施层的开发者体验。</p>
+<p>研究社区方面，很多研究生在用我们的平台。还有专注特定领域的实验室——比如医疗 AI，他们想创建 benchmark 评估模型的诊断、患者交互和医学文献问答能力。比如 OpenMed，他们的重点是赢得医疗专业人士的信任，想专注于领域本身而不是通用的 LM 基础设施。</p>
+<h2 id="从游戏入门到复杂环境">从游戏入门到复杂环境</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>有没有客户是拿你们做那种老派的 Atari 式学习的？</p>
+<p><strong>Will Brown</strong></p>
+<p>我们聚焦在 LLM 和类似 LLM 的 foundation model 上。但确实有很多研究人员用我们的平台做更像游戏的例子——比如 New York Times 的 Wordle，它成了很好的 hello world environment。基础设施简单但很有表现力，你会看到模型在学习如何思考这个游戏，给它奖励它就会做得更好。</p>
+<p>它在难度上正好处在 sweet spot——一两个 GPU 上跑一个小时，就能看到模型真正学会怎么做得更好。</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>那些玩具般的游戏例子通常是入门途径。我们还有 RL residency 项目，一开始 8 到 10 人，现在有 14 到 16 人了。有研究生也有全职或兼职的人在做 RL environment 并做前沿研究。他们构建了很棒的 environment——从可验证的软件工程、Lean、医疗物理环境到网络安全环境。</p>
+<h2 id="构建高质量-environment-的挑战">构建高质量 Environment 的挑战</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>我听说一些 foundation model 公司花了数百万美元在每个这样的 environment 上。你提到了网络安全——构建一个网络安全 environment 需要什么？</p>
+<p><strong>Will Brown</strong></p>
+<p>网络安全领域有很多 capture the flag 游戏——系统有隐藏的 bug，本来是给程序员 hackathon 用的。这些挑战可以适配给 LLM，变成一个完整的软件环境：agent 在 terminal 里，有 bash 工具，可以跟文件交互。然后标记 rollout 完成，用其他代码来评估状态。</p>
+<p>很多人用 RL 来评估数据质量——在一组任务、一组 rubric 上训练模型，可以发现 environment 里的 bug。因为 RL 中如果 environment 有 backdoor，模型可以钻空子。在 environment 上做小规模 run 可以帮助发现这些问题。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>人们构建的 toy example 能否真正扩展到真实世界的复杂性？有没有类似机器人领域的 sim-to-real gap？</p>
+<p><strong>Will Brown</strong></p>
+<p>复杂性上没有那么大障碍——任何在计算机或网络上的东西都可以是 environment。真正的瓶颈往往是模拟的成本。关键是找聪明的方法来 mock 系统里合适的部分，而不是每次都要完整的东西。</p>
+<p>就像地图游戏——有些部分是暗的，你走过去才照亮。如果你知道哪些部分会被探索，就可以决定哪些重要。比如 Tattoo Bench，关于客服 agent 涉及数据库——如果知道 agent 只会问某些类型的问题，你不需要几百万条记录的完整数据库，一个 mock 数据库就够了。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>那你们的平台在这方面有帮助吗？如果创建 environments 是瓶颈，那么高效创建 environments 就是平台的核心能力了。</p>
+<p><strong>Will Brown</strong></p>
+<p>是的，这是我们的设计核心。我们在 coding agent 方面深入了很多细节——沙箱、终端状态、快照、跟不同 agent harness 交互的协议。复杂性会无限增长，所以我们尽量保持开放，有基础层的通用 environments，然后按需分支。有些已经建好，有些准备好等需要时再建。</p>
+<p>我们也考虑如何做好的开发者体验——文档、agent skill files。做这类研究时会产生大量 institutional knowledge，我们把它设计成可以随着研究和最佳实践的演进而不断进化的东西。</p>
+<h2 id="environment-与数据标注时代">Environment 与数据标注时代</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>你们读过 Sutton 的 The Bitter Lesson 吧？经验的年代，Scale AI 时代的数据标注。你们觉得构建 environments 是不是那个时代的自然继承者？</p>
+<p><strong>Will Brown</strong></p>
+<p>看起来已经就是了。主要实验室的焦点已经转移了，但人类数据不会消失——创建 environment 本身就是针对模型还不够好的事情。识别哪些信息人类可以最独特地帮助模型提升技能是关键。</p>
+<p>现在 RL 是最有效的方式：有任务、有 prompt、用 LM judge 评分、有成功 rubrics。最直接的形式是一组 yes/no 问题——LM 的答案里有没有做到这个？然后转成 reward score。这仍然需要大量人类数据。</p>
+<h2 id="environment-hub-的社区与生态">Environment Hub 的社区与生态</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>为什么创建 environment hub？</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>之前很多开源 repo 里挤满了各种 environment 实现。在开始 hub 之前我们已经创建了 verifiers framework，它本身就是标准化整个过程的方法。更重要的是，hub 可以围绕 environments 构建大量基础设施——这是单纯上传到 GitHub repo 做不到的。</p>
+<p>我们有完善的 evaluations 集成在 environments 里，可以立即在所有前沿模型上测试。你可以轻松地在不同 trainer 里安装这些 environments。我们有自己的大规模 trainer Primer RL，但我们对开源很开放，可以集成多种不同的 trainer。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>社区行为是怎样的？人们 fork、修改这些 environments 吗？</p>
+<p><strong>Will Brown</strong></p>
+<p>很多合作方把 environment 保持私有，这可以理解。但 hub 的价值在于，他们可以用已知的 environment 做 ablation，把私有的跟公开的做比较。或者做 eval 时，有统一实现的主流 benchmark 可以插入 training run 来监控进度。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>现在 hub 上最受欢迎的 environments 是什么？</p>
+<p><strong>Will Brown</strong></p>
+<p>最受欢迎的往往是用作文档例子的那些。Wordle 是一个，但最受欢迎、大家 fork 和修改最多的叫 Wiki Search——在 Wikipedia 页面上搜索，被设计成可以广泛用于 agentic search 的模板。你只需要替换文档，其他都已设置好。</p>
+<h2 id="rl-的效率问题与未来方向">RL 的效率问题与未来方向</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>Andrej Karpathy 是你们的投资人之一。他有一句名言——RL 很棒但很低效，就像用吸管吸比特。你们同意吗？在研究方面，怎么让 RL 更高效？</p>
+<p><strong>Will Brown</strong></p>
+<p>RL 确实用了大量算力来获取相当小的信息信号，但在某种程度上那也是它的价值所在。很多实验室聚焦 RL 是因为高质量人类数据难以扩展，而 RL 允许你用算力换数据——用更多算力从更少数据中获得很大价值。</p>
+<p>在你不一定有 golden example 的情况下 RL 也很有用。如果你已经到了能访问的最大模型，就需要进入未知领域——探索是 RL 的核心。也许有人会发现比 RL 更高效的探索方法，但这就是目前用算力提升能力的前沿。</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>我不能替 Andrej 说话，但他在 Dwarkesh 播客后的看法可能会变化——特别是 Claude Code 在过去一个月变得更火了，他关于 RL 在 coding 领域有用性的看法可能会调整。不过我们不认为 RL 就是终点，在推动 agentic AI 能力方面还有很多低垂果实。</p>
+<p>一个明显的限制是 context 方面——现在 context 能放的 token 有硬上限，我们一直在思考如何改进。</p>
+<h2 id="open-weight-模型与定制化">Open-weight 模型与定制化</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>Open-weight 模型扮演什么角色？你们的基础设施只工作在 open-weight 模型上吗？能不能帮人用 closed-weight 模型做 post-training？</p>
+<p><strong>Will Brown</strong></p>
+<p>Trainer 本身需要访问权重，但 environment 的概念对各种优化都通用。我们可以在 environment 层面对 closed 模型做 eval、prompt tuning、model selection、评估 agent harnesses。不管 open 还是 closed，你都可以用 environment 作为数据引擎来蒸馏。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>那你能不能做 LoRA？</p>
+<p><strong>Will Brown</strong></p>
+<p>LoRA 是 fine-tuning 的一部分，我们也推荐很多人用 LoRA 做 RL。你不需要完整权重，但不能为 GPT-5 上传自己的 LoRA。但我可以把 environment 带到平台上。需要用 LoRA adapter 还是 full fine-tuning，取决于 training recipe 和优化目标。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>那你能不能在一个 closed 模型的 agent harness 上做 reinforcement learning？</p>
+<p><strong>Will Brown</strong></p>
+<p>这属于 prompt optimization 的领域——有人在做研究，某种程度上是 RL 在 prompt 空间的类比。比如 DSPy，GEPA 算法去年也得到很多关注。我们的 environments 也支持这个——你可以优化工具的 prompt、agent skill、system prompt。</p>
+<h2 id="recursive-language-models-与前沿研究">Recursive Language Models 与前沿研究</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>说到 DSPy，他们还有一个新东西——Recursive Language Models。你们怎么看？</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>我们对 longer horizon agent 很感兴趣。现在人们建了很多 scaffold 做 context management，但我们相信更有趣的方向是让模型自己学会管理自己的 context。RLM（Recursive Language Model）方向是我们认为最有前途的方向之一，Alex Sherstinsky 是原作者。</p>
+<p>基本思路是给语言模型一个 Python wrapper 里的持久变量，它不用把整个 context 作为输入，而是通过这个变量检索、转换、管理自己的 context，还可以调用子元素——这就是 recursive 的由来。它已经在很长的推理 benchmark 上显示显著提升。我们接下来几个月会做在其中的训练——让模型学会真正使用这个 harness。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>研究领域还有什么？你们觉得下一个前沿是什么？</p>
+<p><strong>Will Brown</strong></p>
+<p>我对 synthetic data 研究特别兴奋。感觉有很多我们应该能做到但还没看到的东西——创造性的 self-reflection 方式。很多人谈 continual learning，把我们已经知道的技巧用不同方式组合起来——prompt optimization、distillation——跟 synthetic data 结合。</p>
+<p>感觉有很大探索空间——让模型自己筛选训练数据、甚至自己筛选 environments，理解哪些方式对 lifelong learning 最有效。</p>
+<h2 id="让每家公司成为-ai-实验室">让每家公司成为 AI 实验室</h2>
+<p><strong>Sonya Huang</strong></p>
+<p>最后一个问题，以一个乐观的视角收尾。如果一切顺利，世界会是什么样子？Prime Intellect 在这个世界里扮演什么角色？</p>
+<p><strong>Johannes Hagemann</strong></p>
+<p>我们不希望所有垂直领域的 AI 未来价值都被大实验室独占。我们希望赋能创业者和企业，让他们不被碾压，优化自己的产品——比现在手中有的工具做得更好。让更多 Claude Code 时刻、更多 Cursor for X 式的创新通过这个平台实现。</p>
+<p><strong>Will Brown</strong></p>
+<p>每家公司都是 AI lab？某种程度上是的。如果数据是瓶颈，如果真正的专业知识是瓶颈——你是想让历史上最聪明的人为你工作，还是让一个在公司待了 30 年的人？有时候你需要那个待了 30 年的人。很多专业知识来自真正深入理解一个问题并长期与之互动，这在 training 中几乎不可能用一段短 prompt 复制。</p>
+<p>你真正想要的是 institutional knowledge 随时间累积，best practices 随时间累积。这就是机构变得强大的方式——站在过去成就的肩膀上，而不是每天重置。我们希望任何公司都能做到这一点。</p>
+<p><strong>Sonya Huang</strong></p>
+<p>这是一个非常鼓舞人心的愿景。感谢两位今天的参与，你们在 environments 和 environment hub 上真的开辟了新道路。谢谢你们花时间解释 environment 是什么，并分享对未来的愿景。</p>
+<p><strong>Will Brown</strong></p>
+<p>谢谢。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
