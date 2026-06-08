@@ -12,6 +12,11 @@
 
 ## 文章列表
 
+- [Indie Game Guildhall 访谈 Future Suit Games：在开发日常中寻找快乐](/episodes/indie-game-guildhall/indie-game-guildhall/): Indie Game Guildhall · 2026-06-08 ([Markdown](/episodes/indie-game-guildhall/indie-game-guildhall.md))
+- [2026 年最值得关注的商业大亨管理类模拟游戏](/episodes/business-of-video-games/business-of-video-games/): The Business of Video Games Podcast · 2026-06-08 ([Markdown](/episodes/business-of-video-games/business-of-video-games.md))
+- [PC 游戏发行：超越 Steam](/episodes/indie-game-business/indie-game-business/): IndieGameBusiness · 2026-06-08 ([Markdown](/episodes/indie-game-business/indie-game-business.md))
+- [GDC Side Quest：打造《Clair Obscur: Expedition 33》的哀婉故事](/episodes/game-developer/game-developer/): Game Developer Podcast · 2026-06-08 ([Markdown](/episodes/game-developer/game-developer.md))
+- [OpenAI 的 Dan Roberts：AI 为什么现在能做科学发现](/episodes/mad-podcast/mad-podcast/): The MAD Podcast with Matt Turck · 2026-06-08 ([Markdown](/episodes/mad-podcast/mad-podcast.md))
 - [Elon Musk 那套万能算法——全靠它赚了数十亿](/episodes/my-first-million/my-first-million/): My First Million · 2026-06-08 ([Markdown](/episodes/my-first-million/my-first-million.md))
 - [经济衰退信号全都错了 | TCAF 245](/episodes/animal-spirits/animal-spirits/): Animal Spirits · 2026-06-08 ([Markdown](/episodes/animal-spirits/animal-spirits.md))
 - [数学家的信仰之路：AI、超人类主义与基督教的对话 | John Lennox × Diary of a CEO](/episodes/diary-of-a-ceo/diary-of-a-ceo/): The Diary Of A CEO · 2026-06-07 ([Markdown](/episodes/diary-of-a-ceo/diary-of-a-ceo.md))

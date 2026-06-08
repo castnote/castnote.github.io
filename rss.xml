@@ -6,6 +6,41 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Indie Game Guildhall 访谈 Future Suit Games：在开发日常中寻找快乐</title>
+      <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</link>
+      <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</guid>
+      <pubDate>Mon, 08 Jun 2026 04:47:05 GMT</pubDate>
+      <description>本期 Indie Game Guildhall 邀请到了 Future Suit Games 的联合创始人 Abram 和 Christie，探讨独立游戏开发者在日常磨砺中寻找快乐的话题。Abram 讲述了自己从美工设计师到桌游设计、从失败 Kickstarter 到重拾创作热情、最终通过 Indie Game Academy 找到联合创始人的历程。Christie 分享了她从纽约学表演、做狗美容师到转向文案写作、最终回归游戏叙事设计的曲折道路。两位嘉宾与主持人 William Dalthal 和 Tim Wood 讨论了在多份兼职工作与游戏开发之间平衡时间的策略、面对 Steam 愿望单仅 324 的现实心态、以及在财务压力和外界挫折中保持动力的方法。节目后半段还回答了社区关于抑郁、财务焦虑和生产力工具的问题。</description>
+    </item>
+    <item>
+      <title>2026 年最值得关注的商业大亨管理类模拟游戏</title>
+      <link>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</link>
+      <guid>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</guid>
+      <pubDate>Mon, 08 Jun 2026 04:44:59 GMT</pubDate>
+      <description>Anthony Frasier 盘点了 2026 年即将上线的一批商业大亨管理类模拟游戏。从水上乐园经营的 Aqua Park Tycoon、奇幻军火锻造的 Magic Forge Tycoon，到备受期待的 Planet Zoo 2、深度商业模拟 Big Ambitions、中世纪铁匠铺 Blacksmith Master，再到快餐车管理 Food Truck Empire、Mars Attacks 主题公园模拟 Mars Attracts、Greenhart Games 新作 Tavern Keeper，以及 Hotel Architect、帮派管理 The Boss: Gangsters Nightlife、奇幻生物庇护所 Fantastic Haven、现象级爆款 Schedule I、赛博朋克生活模拟 Nivalis 等，逐一介绍了这些游戏的玩法特色、发布时间窗口和当前状态。</description>
+    </item>
+    <item>
+      <title>PC 游戏发行：超越 Steam</title>
+      <link>https://castnote.github.io/episodes/indie-game-business/indie-game-business/</link>
+      <guid>https://castnote.github.io/episodes/indie-game-business/indie-game-business/</guid>
+      <pubDate>Mon, 08 Jun 2026 04:44:27 GMT</pubDate>
+      <description>本期播客片段中，Rocky 探讨了独立开发者对 Steam 发行的三大常见误解。第一，品质至上——认为好产品会自动带来市场成功，但现实中品质已不再是充分条件；第二，Steam 之外的所有渠道都是灰色市场或不安全，但通过合适的合作伙伴完全可以管理风险；第三，跨平台发行会损害 Steam 页面曝光，但实际上第三方分销商销售 Steam 兑换码反而会将流量导回 Steam 页面，带来更多曝光，而非更少。Rocky 逐一驳斥了这些观点，强调在当今市场，主动营销和跨平台发行策略对游戏成功至关重要。</description>
+    </item>
+    <item>
+      <title>GDC Side Quest：打造《Clair Obscur: Expedition 33》的哀婉故事</title>
+      <link>https://castnote.github.io/episodes/game-developer/game-developer/</link>
+      <guid>https://castnote.github.io/episodes/game-developer/game-developer/</guid>
+      <pubDate>Mon, 08 Jun 2026 04:42:22 GMT</pubDate>
+      <description>在 GDC Side Quest 节目中，主持人 Bryant Francis 和 Beth Elder 与《Clair Obscur: Expedition 33》的主笔编剧 Jennifer Svæberen 深入对谈，探讨这款横扫各大奖项的法式 RPG 的创作幕后。从 Reddit 上偶然招兵买马、到受画作与梦境启发的叙事灵感，再到 relationship dialogues、双结局设计和本地化策略，Jennifer 分享了小团队如何以 narrative-first 的理念打磨出兼具宏大规模与细致情感的杰作。本期还探讨了好奇心、同理心与逻辑对叙事设计师的重要性。</description>
+    </item>
+    <item>
+      <title>OpenAI 的 Dan Roberts：AI 为什么现在能做科学发现</title>
+      <link>https://castnote.github.io/episodes/mad-podcast/mad-podcast/</link>
+      <guid>https://castnote.github.io/episodes/mad-podcast/mad-podcast/</guid>
+      <pubDate>Mon, 08 Jun 2026 04:40:18 GMT</pubDate>
+      <description>OpenAI 强化学习基础团队负责人 Dan Roberts 与主持人 Matt Turck 深入探讨了 AI 在科学发现领域的突破性进展。他们讨论了近期 OpenAI、DeepMind、Anthropic 在 Erdos 数学难题上的突破；RL（强化学习）的本质、威力与局限；RLHF 的工作原理；OpenAI 与 DeepMind 在数学推理上的方法差异；以及物理学视角如何帮助我们理解 AI 系统的 scaling laws。Dan Roberts 还分享了他从理论物理学（量子引力、黑洞信息）转向 AI 研究的经历，以及他对 AI 能否实现真正自主科学发现的看法。</description>
+    </item>
+    <item>
       <title>Elon Musk 那套万能算法——全靠它赚了数十亿</title>
       <link>https://castnote.github.io/episodes/my-first-million/my-first-million/</link>
       <guid>https://castnote.github.io/episodes/my-first-million/my-first-million/</guid>
