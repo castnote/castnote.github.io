@@ -6,53 +6,11 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>2026 年值得关注的三个经济指标</title>
-      <link>https://castnote.github.io/episodes/the-indicator/the-indicator/</link>
-      <guid>https://castnote.github.io/episodes/the-indicator/the-indicator/</guid>
-      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
-      <description>本期 The Indicator 中，主持人 Wayan Wong 与嘉宾 Steven Paha、制片人 Cooper Catz McKim 一同展望 2026 年，分享各自最关注的经济指标。第一个指标是联邦基金利率——美联储主席 Powell 任期届满在即，Trump 总统意图安插 loyalist，美联储独立性面临严峻考验。第二个指标是电价：受 AI 数据中心扩张、电网老化和自然灾害等多重因素推动，美国电价涨幅已远超整体通胀。第三个指标是消费支出——最顶层 10% 的高收入人群贡献了近半数消费，掩盖了其余 90% 消费者面临的债务和信心危机。三位讨论者共同探讨了这些趋势对 2026 年经济的潜在影响。</description>
-    </item>
-    <item>
       <title>富人家族停止购买的 8 样东西（你也应该这么做）</title>
       <link>https://castnote.github.io/episodes/money-stuff/money-stuff/</link>
       <guid>https://castnote.github.io/episodes/money-stuff/money-stuff/</guid>
-      <pubDate>Tue, 09 Jun 2026 09:30:00 GMT</pubDate>
+      <pubDate>Mon, 08 Jun 2026 14:00:06 GMT</pubDate>
       <description>Anthony O&apos;Neal 在 Money Stuff: The Podcast 中犀利指出 2026 年人们应该停止购买的 8 样东西，包括 TikTok Shop 冲动消费、每次只加少量油的加油习惯、过度沉迷电子游戏、新车贷款、外卖 App、身份消费、先买后付服务（Klarna/Affirm/Afterpay），以及花大价钱给孩子买名牌和玩具。他从个人经历出发，结合圣经经文和统计数据，剖析这些消费习惯如何偷走你的财富和时间，并给出每一条的解决方案——核心是培养财务自律、优先投资和储蓄，打破代代相传的贫穷循环。</description>
-    </item>
-    <item>
-      <title>在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路</title>
-      <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</link>
-      <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</guid>
-      <pubDate>Tue, 09 Jun 2026 04:00:00 GMT</pubDate>
-      <description>本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 &quot;no zero days&quot; 哲学和 Tim 的 &quot;eating the frog&quot; 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。</description>
-    </item>
-    <item>
-      <title>2026年商业大亨模拟游戏前瞻</title>
-      <link>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</link>
-      <guid>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</guid>
-      <pubDate>Tue, 09 Jun 2026 03:38:38 GMT</pubDate>
-      <description>本期节目盘点了 2026 年即将上线的一批商业大亨模拟游戏，涵盖水上乐园经营、奇幻武器锻造、动物园建造、酒馆经营、酒店设计、帮派管理、赛博朋克生活模拟等丰富题材。重点介绍的游戏包括 Aqua Park Tycoon、Magic Forge Tycoon、Planet Zoo 2、Big Ambitions、Blacksmith Master、Food Truck Empire、Mars Attracts、Tavern Keeper、Hotel Architect、The Boss: Gangsters Nightlife、Fantastic Haven、Schedule One 以及 Nivalis。节目对每款游戏的玩法特色、Early Access 进展和预计发布窗口进行了详细介绍，帮助玩家在大量模拟游戏中找到适合自己的作品。</description>
-    </item>
-    <item>
-      <title>构建 RL Environment 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Tue, 09 Jun 2026 03:38:16 GMT</pubDate>
-      <description>本期节目采访了 Prime Intellect 的联合创始人 Will Brown 和 Johannes Hagemann。Prime Intellect 致力于将前沿 AI 训练基础设施开放给所有公司，打破大实验室对 post-training 能力的垄断。他们详细介绍了全栈研究平台 Lab 的核心概念「environment」——一种将评估（eval）与强化学习训练集统一起来的抽象层。节目深入探讨了环境（environment）与代理框架（agent harness）的关系、产品-模型优化循环（以 Cursor 为例）、如何构建网络安全等专业领域的环境、以及从概念到可部署模型的 pipeline。他们还分享了关于 recursive language model、合成数据、开源与闭源模型策略的前沿思考，并对 AI 行业未来做出了「每家公司都成为 AI 实验室」的乐观展望。</description>
-    </item>
-    <item>
-      <title>Cliff Asness 谈过去10年市场如何变得更愚蠢</title>
-      <link>https://castnote.github.io/episodes/odd-lots/odd-lots/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/odd-lots/</guid>
-      <pubDate>Tue, 09 Jun 2026 03:36:39 GMT</pubDate>
-      <description>在 Odd Lots 播客十周年特别节目中，主持人 Tracy Alloway 和 Joe Weisenthal 邀请 AQR 联合创始人兼 CIO Cliff Asness，探讨市场效率在过去十年间的变化。Asness 分享了他提出的&quot;低效市场假说&quot;，阐述为什么市场比以往更容易出现极端偏离基本面的情况。他分析了被动投资的兴起、社交媒体对&quot;群众智慧&quot;的破坏、散户参与度提升（包括零日期权交易）等因素如何共同导致市场更易出现非理性波动。他还讨论了 AI 和机器学习在量化投资中的应用——如何在放弃部分直觉的同时获得更强的预测能力，以及多策略与多经理模式的差异。节目最后涉及体育博彩的兴起及其与金融市场游戏化的相似之处。</description>
-    </item>
-    <item>
-      <title>GLP-1、多肽，与万亿美元的健康革命</title>
-      <link>https://castnote.github.io/episodes/invest-like-the-best/invest-like-the-best/</link>
-      <guid>https://castnote.github.io/episodes/invest-like-the-best/invest-like-the-best/</guid>
-      <pubDate>Tue, 09 Jun 2026 03:36:25 GMT</pubDate>
-      <description>本期播客探讨了以GLP-1药物为代表的预防医学革命。嘉宾Alex Karnal提出了“健康栈”（health stack）的概念，涵盖五个关键防御层面：血脂优化、心脏代谢健康、神经认知健康、炎症健康和血压管理。他指出，科学界其实已经破解了大多数致命疾病的预防密码，真正的问题在于如何将这些现有药物从实验室推广到每个人手中。GLP-1药物展示了人们对主动健康管理的前所未有的需求，而PCSK9抑制剂则代表了接近“免费午餐”的药物——几乎没有副作用，却能大幅降低心血管疾病风险。在癌症领域，早期检测技术（如液体活检）和新型CAR-T疗法正在快速进步。最后，他讨论了AI在药物发现中的革命性作用，以及自己从MIT到Merrill Lynch到Deerfield再到创立Bridgewell的个人经历。</description>
     </item>
     <item>
       <title>PC 游戏发行：超越 Steam</title>
@@ -174,6 +132,20 @@
       <description>本期节目回顾了 Google 的 Android 发布会。几位主持人讨论了 Android 17 的主要更新，包括 Gemini AI 深度整合、新的「暂停点」数字健康功能、屏幕反应相机模式、与 Instagram 的原生相机集成，以及 AirDrop 跨平台兼容。Android Auto 获得了重大升级，包括 3D 导航视图和车载视频播放。节目还讨论了 Gemini 的代理式功能演示（如自动订票和买教材）引发的信任问题，以及 Google Book 这个新产品类别的定位困惑。此外还聊了 Fitbit Air 无屏幕健身追踪器如何挑战 Whoop 的市场地位，并进行了一场以 Reddit 帖子为题的 Family Feud 游戏。</description>
     </item>
     <item>
+      <title>在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路</title>
+      <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</link>
+      <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</guid>
+      <pubDate>Wed, 22 Apr 2026 16:02:45 GMT</pubDate>
+      <description>本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 &quot;no zero days&quot; 哲学和 Tim 的 &quot;eating the frog&quot; 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。</description>
+    </item>
+    <item>
+      <title>GLP-1、多肽，与万亿美元的健康革命</title>
+      <link>https://castnote.github.io/episodes/invest-like-the-best/invest-like-the-best/</link>
+      <guid>https://castnote.github.io/episodes/invest-like-the-best/invest-like-the-best/</guid>
+      <pubDate>Tue, 21 Apr 2026 12:00:58 GMT</pubDate>
+      <description>本期播客探讨了以GLP-1药物为代表的预防医学革命。嘉宾Alex Karnal提出了“健康栈”（health stack）的概念，涵盖五个关键防御层面：血脂优化、心脏代谢健康、神经认知健康、炎症健康和血压管理。他指出，科学界其实已经破解了大多数致命疾病的预防密码，真正的问题在于如何将这些现有药物从实验室推广到每个人手中。GLP-1药物展示了人们对主动健康管理的前所未有的需求，而PCSK9抑制剂则代表了接近“免费午餐”的药物——几乎没有副作用，却能大幅降低心血管疾病风险。在癌症领域，早期检测技术（如液体活检）和新型CAR-T疗法正在快速进步。最后，他讨论了AI在药物发现中的革命性作用，以及自己从MIT到Merrill Lynch到Deerfield再到创立Bridgewell的个人经历。</description>
+    </item>
+    <item>
       <title>Anthropic 的世代级爆发、OpenAI 恐慌、AI 护城河、Meta 连输重大诉讼</title>
       <link>https://castnote.github.io/episodes/all-in/all-in/</link>
       <guid>https://castnote.github.io/episodes/all-in/all-in/</guid>
@@ -188,11 +160,39 @@
       <description>本期节目邀请了 AI 领域知名研究者 Andrej Karpathy，围绕代码智能体的崛起展开深入对话。Karpathy 分享了自 2024 年 12 月以来他的工作流发生的根本性转变——从 80% 手写代码变为几乎完全委托给智能体，并将当前状态描述为一种持续的「AI 精神亢奋」。他详细介绍了自己搭建的家庭 AI 管家 Dobby，通过自然语言和 WhatsApp 统一控制灯光、空调、安防等六套系统。讨论深入到 Auto Research 的理念与实践——如何让研究完全自主运行、移除人类瓶颈，以及他在 GPT 训练优化上获得的意外成果。节目还探讨了模型的「锯齿感」问题（在可验证领域极强但在软性任务上仍有明显短板）、开源与闭源模型的动态平衡、独立研究者相对于前沿实验室的角色价值，以及数字世界将先于物理世界被 AI 大幅重构的预判。最后 Karpathy 分享了 Micro GPT 项目背后的教育理念转变——未来的教育不再是直接教人，而是教智能体，让智能体去做个性化教学。</description>
     </item>
     <item>
+      <title>构建 RL Environment 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
+      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
+      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
+      <pubDate>Tue, 10 Feb 2026 13:00:54 GMT</pubDate>
+      <description>本期节目采访了 Prime Intellect 的联合创始人 Will Brown 和 Johannes Hagemann。Prime Intellect 致力于将前沿 AI 训练基础设施开放给所有公司，打破大实验室对 post-training 能力的垄断。他们详细介绍了全栈研究平台 Lab 的核心概念「environment」——一种将评估（eval）与强化学习训练集统一起来的抽象层。节目深入探讨了环境（environment）与代理框架（agent harness）的关系、产品-模型优化循环（以 Cursor 为例）、如何构建网络安全等专业领域的环境、以及从概念到可部署模型的 pipeline。他们还分享了关于 recursive language model、合成数据、开源与闭源模型策略的前沿思考，并对 AI 行业未来做出了「每家公司都成为 AI 实验室」的乐观展望。</description>
+    </item>
+    <item>
+      <title>2026 年值得关注的三个经济指标</title>
+      <link>https://castnote.github.io/episodes/the-indicator/the-indicator/</link>
+      <guid>https://castnote.github.io/episodes/the-indicator/the-indicator/</guid>
+      <pubDate>Fri, 06 Feb 2026 18:23:25 GMT</pubDate>
+      <description>本期 The Indicator 中，主持人 Wayan Wong 与嘉宾 Steven Paha、制片人 Cooper Catz McKim 一同展望 2026 年，分享各自最关注的经济指标。第一个指标是联邦基金利率——美联储主席 Powell 任期届满在即，Trump 总统意图安插 loyalist，美联储独立性面临严峻考验。第二个指标是电价：受 AI 数据中心扩张、电网老化和自然灾害等多重因素推动，美国电价涨幅已远超整体通胀。第三个指标是消费支出——最顶层 10% 的高收入人群贡献了近半数消费，掩盖了其余 90% 消费者面临的债务和信心危机。三位讨论者共同探讨了这些趋势对 2026 年经济的潜在影响。</description>
+    </item>
+    <item>
+      <title>2026年商业大亨模拟游戏前瞻</title>
+      <link>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</link>
+      <guid>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</guid>
+      <pubDate>Sat, 20 Dec 2025 11:10:16 GMT</pubDate>
+      <description>本期节目盘点了 2026 年即将上线的一批商业大亨模拟游戏，涵盖水上乐园经营、奇幻武器锻造、动物园建造、酒馆经营、酒店设计、帮派管理、赛博朋克生活模拟等丰富题材。重点介绍的游戏包括 Aqua Park Tycoon、Magic Forge Tycoon、Planet Zoo 2、Big Ambitions、Blacksmith Master、Food Truck Empire、Mars Attracts、Tavern Keeper、Hotel Architect、The Boss: Gangsters Nightlife、Fantastic Haven、Schedule One 以及 Nivalis。节目对每款游戏的玩法特色、Early Access 进展和预计发布窗口进行了详细介绍，帮助玩家在大量模拟游戏中找到适合自己的作品。</description>
+    </item>
+    <item>
       <title>Sam Altman：OpenAI 如何赢得 AI 竞赛、ChatGPT 的未来、基础设施建设逻辑与 2026 年 IPO？</title>
       <link>https://castnote.github.io/episodes/big-technology/big-technology/</link>
       <guid>https://castnote.github.io/episodes/big-technology/big-technology/</guid>
       <pubDate>Thu, 18 Dec 2025 20:20:06 GMT</pubDate>
       <description>本期 Alex Kantrowitz 访谈 Sam Altman，集中讨论 OpenAI 在 AI 竞赛中的战略位置。话题包括 ChatGPT 的未来产品形态、消费者订阅和企业 API 的收入结构、算力基础设施建设、模型成本、数据中心和芯片供应，以及外界关注的 IPO 时间表。相比单纯谈愿景，这期更像一次商业和资本开支访谈，试图解释一家前沿模型公司如何在爆炸式需求、巨额投入和激烈竞争之间寻找可持续路径。</description>
+    </item>
+    <item>
+      <title>Cliff Asness 谈过去10年市场如何变得更愚蠢</title>
+      <link>https://castnote.github.io/episodes/odd-lots/odd-lots/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/odd-lots/</guid>
+      <pubDate>Thu, 13 Nov 2025 16:28:39 GMT</pubDate>
+      <description>在 Odd Lots 播客十周年特别节目中，主持人 Tracy Alloway 和 Joe Weisenthal 邀请 AQR 联合创始人兼 CIO Cliff Asness，探讨市场效率在过去十年间的变化。Asness 分享了他提出的&quot;低效市场假说&quot;，阐述为什么市场比以往更容易出现极端偏离基本面的情况。他分析了被动投资的兴起、社交媒体对&quot;群众智慧&quot;的破坏、散户参与度提升（包括零日期权交易）等因素如何共同导致市场更易出现非理性波动。他还讨论了 AI 和机器学习在量化投资中的应用——如何在放弃部分直觉的同时获得更强的预测能力，以及多策略与多经理模式的差异。节目最后涉及体育博彩的兴起及其与金融市场游戏化的相似之处。</description>
     </item>
     <item>
       <title>原始智能（对话 Angus Fletcher）</title>
