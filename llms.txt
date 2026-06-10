@@ -12,7 +12,7 @@
 
 ## 文章列表
 
-- [企业偷偷把新化学物质塞进我们食物的手段](/episodes/planet-money/u-ok-uk-the-indicator/): Planet Money · 2026-06-09 ([Markdown](/episodes/planet-money/u-ok-uk-the-indicator.md))
+- [你还好吗，英国？｜ The Indicator](/episodes/planet-money/planet-money/): Planet Money · 2026-06-09 ([Markdown](/episodes/planet-money/planet-money.md))
 - [Anthropic 的世代级爆发、OpenAI 恐慌、AI 护城河、Meta 连输重大诉讼](/episodes/all-in/bill-maris-how-google-could-crush-ai-competitors-why-small-funds-win-and-ai-s-atari-stage/): All-In Podcast · 2026-06-09 ([Markdown](/episodes/all-in/bill-maris-how-google-could-crush-ai-competitors-why-small-funds-win-and-ai-s-atari-stage.md))
 - [瓦特、晶圆与AI基础设施的未来 | Gavin Baker](/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/): Invest Like the Best · 2026-06-09 ([Markdown](/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started.md))
 - [GDC Side Quest：打造《Clair Obscur: Expedition 33》的哀婉故事](/episodes/game-developer/game-developer/): Game Developer Podcast · 2026-06-08 ([Markdown](/episodes/game-developer/game-developer.md))
