@@ -13,6 +13,7 @@
 ## 文章列表
 
 - [你还好吗，英国？｜ The Indicator](/episodes/planet-money/planet-money/): Planet Money · 2026-06-09 ([Markdown](/episodes/planet-money/planet-money.md))
+- [Bill Maris：Google 如何碾压 AI 竞争对手、为什么小型基金胜出，以及 AI 的 Atari 阶段](/episodes/all-in/all-in/): All-In Podcast · 2026-06-09 ([Markdown](/episodes/all-in/all-in.md))
 - [瓦特、晶圆与AI基础设施的未来 | Gavin Baker](/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/): Invest Like the Best · 2026-06-09 ([Markdown](/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started.md))
 - [GDC Side Quest：打造《Clair Obscur: Expedition 33》的哀婉故事](/episodes/game-developer/game-developer/): Game Developer Podcast · 2026-06-08 ([Markdown](/episodes/game-developer/game-developer.md))
 - [OpenAI 的 Dan Roberts：AI 为什么现在能做科学发现](/episodes/mad-podcast/mad-podcast/): The MAD Podcast with Matt Turck · 2026-06-08 ([Markdown](/episodes/mad-podcast/mad-podcast.md))
