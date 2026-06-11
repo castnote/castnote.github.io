@@ -146,6 +146,13 @@
       <description>本期节目回顾了 Google 的 Android 发布会。几位主持人讨论了 Android 17 的主要更新，包括 Gemini AI 深度整合、新的「暂停点」数字健康功能、屏幕反应相机模式、与 Instagram 的原生相机集成，以及 AirDrop 跨平台兼容。Android Auto 获得了重大升级，包括 3D 导航视图和车载视频播放。节目还讨论了 Gemini 的代理式功能演示（如自动订票和买教材）引发的信任问题，以及 Google Book 这个新产品类别的定位困惑。此外还聊了 Fitbit Air 无屏幕健身追踪器如何挑战 Whoop 的市场地位，并进行了一场以 Reddit 帖子为题的 Family Feud 游戏。</description>
     </item>
     <item>
+      <title>Anthropic 的 Boris Cherny：为什么 Coding 已经解决，接下来会怎样</title>
+      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/sequoia-ai-ascent/</link>
+      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/sequoia-ai-ascent/</guid>
+      <pubDate>Mon, 04 May 2026 17:28:44 GMT</pubDate>
+      <description>Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经&quot;解决&quot;，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。</description>
+    </item>
+    <item>
       <title>在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路</title>
       <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</link>
       <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</guid>
