@@ -33,6 +33,7 @@
 - [先锋集团：那位为投资者省下一万亿美元的"共产主义资本家"](/episodes/acquired/acquired/): Acquired · 2026-05-18 ([Markdown](/episodes/acquired/acquired.md))
 - [Android 发布会回顾！](/episodes/waveform/waveform/): Waveform: The MKBHD Podcast · 2026-05-15 ([Markdown](/episodes/waveform/waveform.md))
 - [在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路](/episodes/indie-game-guildhall/indie-game-guildhall/): Indie Game Guildhall · 2026-04-22 ([Markdown](/episodes/indie-game-guildhall/indie-game-guildhall.md))
+- [构建 RL Environments 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann](/episodes/training-data/training-data/): Training Data · 2026-02-10 ([Markdown](/episodes/training-data/training-data.md))
 - [2026年商业大亨模拟游戏前瞻](/episodes/business-of-video-games/business-of-video-games/): The Business of Video Games Podcast · 2025-12-20 ([Markdown](/episodes/business-of-video-games/business-of-video-games.md))
 - [Sam Altman：OpenAI 如何赢得 AI 竞赛、ChatGPT 的未来、基础设施建设逻辑与 2026 年 IPO？](/episodes/big-technology/big-technology/): Big Technology Podcast · 2025-12-18 ([Markdown](/episodes/big-technology/big-technology.md))
 - [原始智能（对话 Angus Fletcher）](/episodes/econtalk/econtalk/): EconTalk · 2025-11-03 ([Markdown](/episodes/econtalk/econtalk.md))

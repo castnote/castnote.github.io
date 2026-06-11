@@ -153,6 +153,13 @@
       <description>本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 &quot;no zero days&quot; 哲学和 Tim 的 &quot;eating the frog&quot; 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。</description>
     </item>
     <item>
+      <title>构建 RL Environments 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
+      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
+      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
+      <pubDate>Tue, 10 Feb 2026 13:00:54 GMT</pubDate>
+      <description>本期节目邀请到 Prime Intellect 的联合创始人 Will Brown 和 Johannes Hagemann，探讨如何将前沿 AI 实验室的 post-training 和 reinforcement learning 基础设施民主化。Johannes 介绍了他们的全栈平台 Lab 和 environment 概念——将 RL environment 与 eval 统一为同一抽象，让任何公司都可以构建自己的产品-模型优化循环。他们讨论了 Cursor 如何通过将产品本身作为 RL environment 来优化模型，分析了 agent harness 与 environment 的关系，以及何时应该构建自定义 environment 来训练模型。Will 分享了他们与 RCI 等实验室的合作经验，Johannes 则介绍了 environment hub 的社区生态、Wordle 和 Wiki Search 等流行环境、网络安全环境的 sim-to-real 挑战，以及他们如何看待 RL 的效率问题与 Recursive Language Models 等未来研究方向。两人最后以「每家公司都是 AI 实验室」的愿景收尾，强调 institutional knowledge 的积累和模型定制化的重要性。</description>
+    </item>
+    <item>
       <title>2026年商业大亨模拟游戏前瞻</title>
       <link>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</link>
       <guid>https://castnote.github.io/episodes/business-of-video-games/business-of-video-games/</guid>
