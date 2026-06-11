@@ -6,18 +6,53 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>你还好吗，英国？｜ The Indicator</title>
-      <link>https://castnote.github.io/episodes/planet-money/planet-money/</link>
-      <guid>https://castnote.github.io/episodes/planet-money/planet-money/</guid>
-      <pubDate>Tue, 09 Jun 2026 22:38:01 GMT</pubDate>
-      <description>英国经济正同时承受多重压力：伊朗战争冲击增长前景、政府借贷成本飙升至28年新高、百万年轻人失业。本期节目中，驻伦敦记者 Ilia Mirsky 走访经济智库 IFS，将负面新闻解读为低增长这一根本问题的症状；又北上 Sunderland 市，实地感受地域发展不均和普通民众的生活压力。从 Brexit、紧缩政策、疫情后的公共健康危机到长期投资不足，他逐一梳理英国经济乏力的四大主因，并与经济学家探讨「生活成本危机」这一说法为何可能是错误叙事。节目最后提出一个令人不安的问题：十年六任首相带来的政治不稳定，是否正在成为经济复苏的最大障碍？</description>
-    </item>
-    <item>
-      <title>Bill Maris：Google 如何碾压 AI 竞争对手、为什么小型基金胜出，以及 AI 的 Atari 阶段</title>
+      <title>参议员 John Fetterman 与 Dave McCormick：两党合作、政治金钱、数据中心之争</title>
       <link>https://castnote.github.io/episodes/all-in/all-in/</link>
       <guid>https://castnote.github.io/episodes/all-in/all-in/</guid>
-      <pubDate>Tue, 09 Jun 2026 15:30:54 GMT</pubDate>
-      <description>Google Ventures 创始 CEO 兼 Section 32 创始人 Bill Maris 分享了他从创建第一家数据中心公司到领导 GV 再到创办 Section 32 的四个人生教训。他阐述了为什么小型基金在数学上必然跑赢大型基金、Google 如何通过 token 价格战碾压 AI 竞争对手、AI 发展正处于 Atari 命令行阶段并将快速进化到 PlayStation 级别。讨论还涉及公司延后上市对公众的公平性问题、OpenAI 和 Anthropic 的商业模式脆弱性、风投激励结构的根本性扭曲，以及美国人才流失对中国科技崛起的助推效应。</description>
+      <pubDate>Wed, 10 Jun 2026 18:46:55 GMT</pubDate>
+      <description>All-In Podcast 主持人与两位宾夕法尼亚州参议员——民主党人 John Fetterman 和共和党人 Dave McCormick——展开了一场罕见的跨党派对话。两位参议员从各自的农村成长经历出发，讲述了如何在美国政治极化的环境中找到合作空间。他们讨论了 filibuster 的历史价值、AI 和能源转型中的中美竞争、数据中心争议背后的错误信息，以及蓝领就业繁荣对宾州经济的重塑。Fetterman 直言不讳地批评了民主党内的极端倾向和 TDS 现象，同时也坚持了自己在以色列、政府停摆等问题上的独立立场。McCormick 则分享了他领导的能源与创新论坛如何促成 920 亿美元投资，以及宾州正在经历的工业复兴。两位参议员还在金钱政治、初选制度等问题上交换了务实看法。</description>
+    </item>
+    <item>
+      <title>住房种族隔离为何持续存在？</title>
+      <link>https://castnote.github.io/episodes/capitalisnt/capitalisnt/</link>
+      <guid>https://castnote.github.io/episodes/capitalisnt/capitalisnt/</guid>
+      <pubDate>Wed, 10 Jun 2026 14:56:02 GMT</pubDate>
+      <description>芝加哥大学布斯商学院的 Milena Almagro 分享了她关于种族住房契约（racial covenants）的研究。她以1940年代的明尼阿波利斯为案例，利用 Mapping Prejudice 项目数字化后的历史数据，分析了种族契约对住房隔离的因果影响。Almagro 将供给侧限制（开发商通过契约决定谁能住在哪里）与需求侧偏好（同族偏好，即人们倾向于和同族裔住在一起）区分开来，发现观察到的隔离中约三分之一可由契约等法律限制解释，另外三分之二则来自偏好。她引入了潜在选择集（latent choice set）方法从城市经济学角度重新审视居住选择，并用城市化前沿指数（urbanization frontier index）识别契约的因果效应。她还对比了契约与红线标注（redlining）两种歧视工具的区别，指出今天的区划政策（如最低地块面积）虽然不直接针对种族，但通过影响住房可负担性产生了类似的隔离效果。最后她讨论了即使消除契约，偏好驱动的自我选择仍会维持一定程度的隔离。</description>
+    </item>
+    <item>
+      <title>CoreWeave 如何看待当前算力市场</title>
+      <link>https://castnote.github.io/episodes/odd-lots/odd-lots/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/odd-lots/</guid>
+      <pubDate>Wed, 10 Jun 2026 13:46:06 GMT</pubDate>
+      <description>本期 Odd Lots 邀请 CoreWeave 联合创始人 Brandon McB，深入探讨 AI 算力市场的供需格局。从 Uber 四个月烧光全年 AI 预算等热点切入，分析了 inference 需求爆发及其对基础设施的影响。Brandon 介绍了 CoreWeave 客户结构的多元化进程，强调 model routing 可延长 GPU 使用寿命。他指出当前最大瓶颈并非 GPU 供给，而是 powered shell（已通电数据中心的壳子）的稀缺。关于 GPU commoditization，他认为算力目前不具备 fungibility，短期内难成 commodity 市场。</description>
+    </item>
+    <item>
+      <title>Biohub：生物学的未来是开源的——对话马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯</title>
+      <link>https://castnote.github.io/episodes/no-priors/no-priors/</link>
+      <guid>https://castnote.github.io/episodes/no-priors/no-priors/</guid>
+      <pubDate>Wed, 10 Jun 2026 13:00:36 GMT</pubDate>
+      <description>马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯在本期 No Priors 中深入探讨了 Biohub 的愿景：将前沿 AI 与前沿生物学整合，构建开源的虚拟生物学计划。从 10 年前被诺贝尔奖得主嘲笑的「治愈所有疾病」目标，到今天折叠超过 11 亿个蛋白质结构、发布 ESM Fold 开源模型，他们讲述了从单细胞测序到人类细胞图谱再到 Cell by Gene 的演进之路。讨论涵盖分层建模策略（从蛋白质到细胞到系统）、开放科学的力量、罕见病社区的自组织力量，以及个性化医疗的未来。亚历克斯·里夫斯分享了 mechanistic interpretability 在蛋白质语言模型中的应用，以及 agentic 系统如何自动化药物设计流程。</description>
+    </item>
+    <item>
+      <title>不粘锅经济 | Animal Spirits 468</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/animal-spirits/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/animal-spirits/</guid>
+      <pubDate>Wed, 10 Jun 2026 12:58:13 GMT</pubDate>
+      <description>在本期 Animal Spirits 中，Michael Batnick 和 Ben Carlson 讨论了上周五的股市抛售、市场心理和叙事驱动效应。他们深入分析了美国经济的韧性——尽管面临通胀、加息、商业地产危机和 AI 威胁等多重挑战，经济仍然展现出惊人的&quot;不粘锅&quot;属性。此外，两位主持人还探讨了 SpaceX IPO 对市场的影响、AI 与就业市场的争论、科技板块集中度、年轻人投资趋势、财富不平等问题，以及 1970 年代与当今经济的对比。节目中还穿插了 Knicks 总决赛门票的疯狂故事、个人理财话题和文化讨论（电影 Obsession、Netflix 剧集、90 年代浪漫喜剧等）。</description>
+    </item>
+    <item>
+      <title>他管理80亿美元。这是他会如何构建你的投资组合</title>
+      <link>https://castnote.github.io/episodes/my-first-million/my-first-million/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/my-first-million/</guid>
+      <pubDate>Wed, 10 Jun 2026 12:05:16 GMT</pubDate>
+      <description>本期节目邀请到 Ritholtz Wealth Management 创始人 Barry Ritholtz，他管理着约80亿美元资产。Barry 用“圣诞树”比喻阐述了他的核心投资理念：大部分资金配置在低成本宽基指数基金中，少量用于个人偏好的“装饰品”投资。他深入分析了行为金融学如何影响投资决策——为什么绝大多数主动管理基金跑不赢指数、恐慌性抛售的长期代价、以及“没有人知道未来”这一核心教训。他还分享了与 Lloyd Blankfein、Elon Musk、David Rubenstein 等名人的有趣互动，并推荐了他认为值得关注的经济学家和投资思想家。节目最后，Barry 讲述了他成功预测2008年金融危机前后的经历，以及他对泡沫和技术周期的独到见解。</description>
+    </item>
+    <item>
+      <title>AI 保姆：Glean 的 Rebecca Hinds 谈工作中 AI 背后的隐形人力劳动</title>
+      <link>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</link>
+      <guid>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</guid>
+      <pubDate>Wed, 10 Jun 2026 09:08:02 GMT</pubDate>
+      <description>Glean 的 Work AI Institute 发布了 2026 年 Work AI Index 报告，调查 6000 名知识工作者后发现：87% 的员工在使用 AI，平均每周节省 13 小时，但只有 13% 认为组织绩效显著提升。报告提出了「botsitting」（喂养、监督、调试 AI 所需的人力劳动，每周 6.4 小时）和「botshit」（交付无法解释的 AI 产出，69% 的人承认做过）两个概念。主持人 Nathan Labenz 与负责人 Rebecca Hinds 深入探讨了这一 disconnect 的根源：从个人效率无法转化为组织成果，到 AI 工具缺乏上下文导致 exhaustion，再到员工因自动化失去工作意义而疏离。讨论还覆盖了企业文化转型、使命驱动、enterprise graph 的前景以及 AI 时代组织设计的未来方向。</description>
     </item>
     <item>
       <title>瓦特、晶圆与AI基础设施的未来 | Gavin Baker</title>
@@ -55,39 +90,11 @@
       <description>Stanford 精神科医生 Dr. Nolan Williams 与 Andrew Huberman 深入讨论了抑郁症治疗的新范式。Williams 提出「精神科 3.0」的概念——从早期的心理治疗（1.0）和化学失衡假说（2.0）转向聚焦大脑回路的治疗方法。他详细介绍了 Stanford Neuromodulation Therapy（SNT），一种利用 spaced learning theory 将六周 TMS 疗程压缩到五天的突破性方案，缓解率达 60-90%。对话还涵盖了 psilocybin 治疗抑郁症、MDMA 治疗 PTSD、ibogaine 用于特种部队退伍军人的道德创伤，以及 ayahuasca 的神经化学机制。Williams 强调这些 psychedelics 与 TMS 作用于相同的脑网络连接，暗示着一个趋同的治疗机制——即解耦负性情绪系统与自我表征之间的过度连接。</description>
     </item>
     <item>
-      <title>经济衰退信号全都错了 | TCAF 245</title>
-      <link>https://castnote.github.io/episodes/animal-spirits/animal-spirits/</link>
-      <guid>https://castnote.github.io/episodes/animal-spirits/animal-spirits/</guid>
-      <pubDate>Fri, 05 Jun 2026 13:00:05 GMT</pubDate>
-      <description>本期节目中，主持人 Michael Batnick 与嘉宾 Neil Dodd（Renaissance Macro Research 经济主管）和 Scanda Ammerath（Employee America 联合创始人）深入探讨了当前美国经济的独特格局。他们分析了 AI 投资热潮如何超越 2000 年代房地产泡沫和 90 年代互联网泡沫成为 GDP 占比最高的投资周期，讨论了通胀回升、劳动力市场分化、企业利润与工人薪酬之间的历史性鸿沟，以及 Kevin Warsh 被提名为美联储主席后的政策走向。节目还涉及纽约尼克斯队 NBA 总决赛门票经济背后的消费故事、科技资本支出对工业股的传导效应，以及传统经济指标为何在当前周期中失效。三位经济学家一致认为，当前的商业周期本质上是风险周期，AI 驱动的投资狂热是最大变量——关键在于何时企业的支出意愿会转向。</description>
-    </item>
-    <item>
-      <title>绳索的发明如何缔造了现代文明</title>
-      <link>https://castnote.github.io/episodes/odd-lots/inside-hudson-river-trading-s-blistering-token-burn-odd-lots/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/inside-hudson-river-trading-s-blistering-token-burn-odd-lots/</guid>
-      <pubDate>Fri, 05 Jun 2026 08:09:21 GMT</pubDate>
-      <description>本期从绳索这一基础发明讲起，解释一捆拧在一起的纤维如何支撑航海、建筑、运输、农业和工业化。Odd Lots 把看似普通的物件放回经济和文明史中观察：绳索并不显眼，却连接了材料科学、劳动组织、远洋贸易和机械系统。节目提醒我们，现代文明不只建立在蒸汽机、电力或芯片这些显性技术上，也依赖大量被低估的基础工具和长期积累的基础设施想象力。</description>
-    </item>
-    <item>
-      <title>Elon Musk 那套万能算法——全靠它赚了数十亿</title>
-      <link>https://castnote.github.io/episodes/my-first-million/my-first-million/</link>
-      <guid>https://castnote.github.io/episodes/my-first-million/my-first-million/</guid>
-      <pubDate>Thu, 04 Jun 2026 10:15:21 GMT</pubDate>
-      <description>本期节目从 Pat LaFrieda 家族肉铺的百年传奇故事切入，讲述了一个从 1909 年布鲁克林小肉摊成长为年营收近 3 亿美元的肉类帝国。透过 LaFrieda 的故事，两位主持人 Sam 和 Shaan 展开了一系列商业思维探讨：如何将 commodity 产品差异化、坚持品质（&quot;你没法把罪过藏在汉堡里&quot;）、在危机中做反直觉决策、为每位厨师打造专属品牌等。随后延伸到更广泛的商业话题——Elon Musk 的 &quot;idiot index&quot;（白痴指数）思维模型、Palmer Luckey 和 Anduril 如何颠覆国防承包商的 cost-plus 模式、Amazon 和 Costco &quot;不打广告&quot;的商业哲学、JD Power 从客户调研到估值 10 亿美元的奖项生意。最后讨论了一个创业 idea：创建一个属于天才少年 hacker/outcast 的社区和颁奖礼，以及 Sam 分享的 Sam&apos;s List（会计排名网站）的真实创业案例。整期节目贯穿着一个核心洞见——敏感度、胆识和第一性原理逻辑的组合，才是那些改变世界的人共有的特质。</description>
-    </item>
-    <item>
       <title>数学家的信仰之路：AI、超人类主义与基督教的对话 | John Lennox × Diary of a CEO</title>
       <link>https://castnote.github.io/episodes/diary-of-a-ceo/diary-of-a-ceo/</link>
       <guid>https://castnote.github.io/episodes/diary-of-a-ceo/diary-of-a-ceo/</guid>
       <pubDate>Thu, 04 Jun 2026 07:00:26 GMT</pubDate>
       <description>牛津大学数学家 John Lennox 与主持人 Steven Bartlett 展开了一场跨越信仰、科学与人工智能的深度对话。Lennox 从自己的学术生涯出发，探讨了为什么一位严谨的数学家会选择相信上帝——以及基督教信仰如何回应 AI 时代提出的根本问题。他指出，现代 AI 虽然带来了巨大的医疗价值，但其背后隐含的超人类主义愿景——通过科技让人成为神——与基督教关于人的尊严和救赎的教导形成了尖锐对立。Lennox 以自身的学术训练和 70 多年的信仰探索，论证了基督教并非盲目的跳跃，而是基于证据的信任。从死亡囚犯的归信到与 Richard Dawkins 的公开辩论，这场对话不仅触及关于苦难、自由意志和救赎的古老问题，更在 AI 正在重塑人类身份认同的当下，提出了一个关键追问：在一个越来越孤独、断裂的世界里，人类真正需要的是什么？</description>
-    </item>
-    <item>
-      <title>非正规市场如何运作？</title>
-      <link>https://castnote.github.io/episodes/capitalisnt/capitalisnt/</link>
-      <guid>https://castnote.github.io/episodes/capitalisnt/capitalisnt/</guid>
-      <pubDate>Wed, 03 Jun 2026 09:27:14 GMT</pubDate>
-      <description>本期节目邀请芝加哥大学布斯商学院的 Remy Tomy 教授，讨论她在印度东北部西隆约多集市（Yodo Bazaar）开展的非正规市场研究。非正规经济贡献了新兴市场高达 30% 的 GDP 和 70% 的就业，但学术关注远远不够。Tomy 的研究发现，尽管集市中的商贩大多维护着基本的会计记录，这些信息在信贷分配中却几乎不被使用。批发商更依赖社区归属、合作年限、店铺距离等非会计指标来决定是否放贷。实验表明批发商愿意为会计信息付费，但信任缺失——批发商不信零售商的数据，零售商也不愿分享——阻碍了会计信息的实际使用。节目还深入探讨了间接互惠机制：在缺乏正式保险的环境下，社区成员通过帮助彼此来构建一张非正规的保险网络，低资产批发商尤其依赖这一机制。新冠疫情的数据进一步印证了这一点。Tomy 建议引入第三方验证机制（如金融科技平台）来提升财务数据的可信度，从而扩大信贷获取。她的后续研究正在利用大语言模型来分析商贩访谈，以更深入地理解信任的具体含义。</description>
     </item>
     <item>
       <title>为什么运动像惩罚（以及如何改变它）</title>
@@ -104,13 +111,6 @@
       <description>本期节目覆盖了多个金融热点话题。首先是 SpaceX IPO 的深度讨论，包括其 2 万亿美元估值、企业 AI 转型策略、Elon Musk 溢价对估值的影响，以及指数基金被迫快速纳入 SpaceX 引发的争议。接着讨论 Robinhood 推出的 AI agent 经纪和信用卡功能，用户可以用自然语言指令让 AI 自动执行交易策略或购物；Matt 认为 agent 将成为未来交易的通用载体，取代结构化 ETF。然后话题转向 Enhanced Games（兴奋剂奥运会），首届赛事出现技术故障，三位「干净」选手夺冠，但有一项世界纪录被打破。最后讨论 Fernando Tatis Jr. 与 Big League Advance 的纠纷——他以未来 MLB 收入的 10% 换取 200 万美元预付款，如今签下 3.4 亿美元合同后试图推翻协议但败诉；节目探讨了这种投资模式的风险与回报本质。</description>
     </item>
     <item>
-      <title>走进 Nathan 的第二大脑：安全专家、PAI 创始人 Daniel Miessler 审视我的 AI 配置</title>
-      <link>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</link>
-      <guid>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</guid>
-      <pubDate>Sat, 30 May 2026 12:39:16 GMT</pubDate>
-      <description>本期节目中，主持人 Nathan Lebenz 向安全研究员 Daniel Miessler 展示了自己在过去四个月里搭建的个人 AI 基础设施，并接受全方位审视。Nathan 的系统分为两部分：一是运行在个人笔记本上的 Claude Code 实例，配备涵盖五年数字记录的 1GB 数据库作为「第二大脑」；二是运行在 Mac Mini 上的两个自主 AI 代理 Aid 和 Clay，具备独立的 Gmail、GitHub 和受限信用卡。两人深入探讨了数据采集与知识管理策略、AI 代笔的边界与社交规范、代理层级架构设计、安全防护措施（包括 Tailscale VPN、密码管理、提示注入防御和应急密钥轮换），以及 Daniel 提出的「从当前状态导航到理想状态」的 AI 核心理念。此外还讨论了苦涩教训工程的持续优化方法论、多模型协作策略，以及 AI 意识的可能性问题。</description>
-    </item>
-    <item>
       <title>物理学最大谜团：反物质、暗能量与万物理论</title>
       <link>https://castnote.github.io/episodes/lex-fridman/lex-fridman/</link>
       <guid>https://castnote.github.io/episodes/lex-fridman/lex-fridman/</guid>
@@ -125,13 +125,6 @@
       <description>本期围绕云端 Agent 的上下文工程展开，讨论背景智能体如何从规格说明走到可合并的代码变更。Walden Yan 与 Cole Murray 分享了 cloud agents、Devon、Open Inspect 和评估工具背后的实践，重点不在“让模型更聪明”这个抽象目标，而在如何组织上下文、任务环境、权限、反馈和测试。节目展示当智能体开始承担完整开发流程时，软件交付机制需要在提示词之外重新设计。</description>
     </item>
     <item>
-      <title>Kenny Smith：NBA冠军讲述从未公开的乔丹故事、Inside the NBA幕后秘闻与人生感悟</title>
-      <link>https://castnote.github.io/episodes/pivot/pivot/</link>
-      <guid>https://castnote.github.io/episodes/pivot/pivot/</guid>
-      <pubDate>Tue, 26 May 2026 16:00:06 GMT</pubDate>
-      <description>本期节目邀请两届NBA总冠军、TNT Inside the NBA资深解说员Kenny Smith做客The Pivot。Kenny回顾了自己从纽约街头篮球到北卡罗来纳大学的成长历程，讲述了与Michael Jordan做队友时不为人知的故事，包括Jordan的竞争本能和离校决定的幕后细节。他详细分析了休斯顿火箭队1994-95赛季背靠背夺冠的经历，分享了球队在客场酒吧向菲尼克斯太阳队叫板的趣事，并解释了为何他认为火箭队能击败同时期的公牛队。Kenny还谈到了2020年NBA泡泡赛期间走下TNT演播台声援球员的决定背后的心路历程，以及从球员转型为解说员的职业转变。在个人生活方面，他分享了对两段婚姻的反思、女儿婚礼上的感动时刻，以及作为父亲如何影响女儿择偶观的思考。节目最后讨论了NBA比赛风格的演变，以及他为何看好Victor Wembanyama将成为联盟MVP。</description>
-    </item>
-    <item>
       <title>先锋集团：那位为投资者省下一万亿美元的&quot;共产主义资本家&quot;</title>
       <link>https://castnote.github.io/episodes/acquired/acquired/</link>
       <guid>https://castnote.github.io/episodes/acquired/acquired/</guid>
@@ -144,13 +137,6 @@
       <guid>https://castnote.github.io/episodes/waveform/waveform/</guid>
       <pubDate>Fri, 15 May 2026 15:09:00 GMT</pubDate>
       <description>本期节目回顾了 Google 的 Android 发布会。几位主持人讨论了 Android 17 的主要更新，包括 Gemini AI 深度整合、新的「暂停点」数字健康功能、屏幕反应相机模式、与 Instagram 的原生相机集成，以及 AirDrop 跨平台兼容。Android Auto 获得了重大升级，包括 3D 导航视图和车载视频播放。节目还讨论了 Gemini 的代理式功能演示（如自动订票和买教材）引发的信任问题，以及 Google Book 这个新产品类别的定位困惑。此外还聊了 Fitbit Air 无屏幕健身追踪器如何挑战 Whoop 的市场地位，并进行了一场以 Reddit 帖子为题的 Family Feud 游戏。</description>
-    </item>
-    <item>
-      <title>Anthropic Boris Cherny：编码已解决，接下来是什么</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Mon, 04 May 2026 17:28:44 GMT</pubDate>
-      <description>这段现场访谈中，Claude Code 的创造者 Boris Cherny 分享了他对软件开发未来变革的洞察，讲述了产品从 2024 年底孵化器项目起步的偶然诞生过程。他阐述了“编码已被解决”的论断——自己已 100% 使用模型写代码，单日最高提交 150 个 PR。Boris 深入探讨了未来团队从工程通才到跨学科通才的转变，以及人人都会写代码的组织形态。他以印刷术类比软件开发民主化，分析了 AI 如何重塑商业竞争格局——Seven Powers 中哪些模式更重要、哪些被削弱。他还回答了关于产品与模型贡献比例、本地与云端 AI、MCP 与 Computer Use 等观众提问。</description>
     </item>
     <item>
       <title>在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路</title>
@@ -207,6 +193,13 @@
       <guid>https://castnote.github.io/episodes/revisionist-history/revisionist-history/</guid>
       <pubDate>Thu, 24 Apr 2025 15:11:08 GMT</pubDate>
       <description>Malcolm Gladwell 从一段 Joe Rogan 访谈 RFK Jr. 的播客片段出发，探讨了访谈作为一种艺术形式的意义。RFK Jr. 在节目中声称1918年西班牙流感并非由病毒引起，而是疫苗所致，并错误引用了一篇 Fauci 论文作为支撑。Gladwell 指出 Rogan 未能对这些荒谬言论提出任何质疑，并将其与 Oprah Winfrey 的访谈技巧形成鲜明对比——Oprah 在采访 Meghan Markle 时层层深入，引出了关于皇室种族偏见的关键信息。Gladwell 还分析了 Rogan 采访 Elon Musk 和 Matt Walsh 时的类似问题，揭示出一种模式：Rogan 选择做朋友式的闲聊，而非承担采访者的追问责任。随后 Gladwell 追溯了 RFK Jr. 错误信息的来源——一位长岛律师和一位佛罗里达脊椎治疗师的博客文章。节目最后，Gladwell 通过自己在巡回活动中被心理学家 Michael Gervais 采访的经历，展示了一次真正优秀的访谈如何引导受访者走出预设叙事，抵达意想不到的情感深处。</description>
+    </item>
+    <item>
+      <title>Barack Obama 分享个人故事与经历：家庭、领导力、体育与婚姻</title>
+      <link>https://castnote.github.io/episodes/pivot/pivot/</link>
+      <guid>https://castnote.github.io/episodes/pivot/pivot/</guid>
+      <pubDate>Tue, 29 Oct 2024 15:37:21 GMT</pubDate>
+      <description>Barack Obama 做客 The Pivot 播客，与主持人 Ryan Clark、Channing Crowder 和 Fred Taylor 进行了一场坦诚而深刻的对话。Obama 从 NFL 黑人四分卫的变迁谈起，讨论了体育领域种族偏见的变化如何反映更广泛的社会进步。他分享了担任总统期间平衡家庭与工作的方法——每晚 6 点半与家人在白宫共进晚餐的规矩，以及女儿们如何让他保持脚踏实地。Obama 还讲述了自己在夏威夷和印尼的成长经历如何塑造了他的世界观，强调人与人之间的共同点远超表面差异。在谈及 2024 年大选时，他对比了 Kamala Harris 和 Donald Trump 的价值观与政策取向，呼吁选民认真投票。节目最后，Obama 回顾了自己人生中最大的转折点——大学期间父亲的去世和南非反 apartheid 活动家的演讲如何促使他重新审视人生的方向，并分享了他追求妻子 Michelle 的趣事。整场对话融合了个人故事、政治见解和生活智慧。</description>
     </item>
     <item>
       <title>家庭、创业与五万美元</title>

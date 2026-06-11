@@ -1,221 +1,327 @@
 ---
-title: "Elon Musk 那套万能算法——全靠它赚了数十亿"
+title: "他管理80亿美元。这是他会如何构建你的投资组合"
 podcast: "My First Million"
 podcast_slug: "my-first-million"
 episode_slug: "my-first-million"
-episode_url: "https://www.youtube.com/watch?v=t3HWIey2lh8"
-summary: "本期节目从 Pat LaFrieda 家族肉铺的百年传奇故事切入，讲述了一个从 1909 年布鲁克林小肉摊成长为年营收近 3 亿美元的肉类帝国。透过 LaFrieda 的故事，两位主持人 Sam 和 Shaan 展开了一系列商业思维探讨：如何将 commodity 产品差异化、坚持品质（\"你没法把罪过藏在汉堡里\"）、在危机中做反直觉决策、为每位厨师打造专属品牌等。随后延伸到更广泛的商业话题——Elon Musk 的 \"idiot index\"（白痴指数）思维模型、Palmer Luckey 和 Anduril 如何颠覆国防承包商的 cost-plus 模式、Amazon 和 Costco \"不打广告\"的商业哲学、JD Power 从客户调研到估值 10 亿美元的奖项生意。最后讨论了一个创业 idea：创建一个属于天才少年 hacker/outcast 的社区和颁奖礼，以及 Sam 分享的 Sam's List（会计排名网站）的真实创业案例。整期节目贯穿着一个核心洞见——敏感度、胆识和第一性原理逻辑的组合，才是那些改变世界的人共有的特质。"
+episode_url: "https://www.youtube.com/watch?v=RP9uwr_WrQY"
+summary: "本期节目邀请到 Ritholtz Wealth Management 创始人 Barry Ritholtz，他管理着约80亿美元资产。Barry 用“圣诞树”比喻阐述了他的核心投资理念：大部分资金配置在低成本宽基指数基金中，少量用于个人偏好的“装饰品”投资。他深入分析了行为金融学如何影响投资决策——为什么绝大多数主动管理基金跑不赢指数、恐慌性抛售的长期代价、以及“没有人知道未来”这一核心教训。他还分享了与 Lloyd Blankfein、Elon Musk、David Rubenstein 等名人的有趣互动，并推荐了他认为值得关注的经济学家和投资思想家。节目最后，Barry 讲述了他成功预测2008年金融危机前后的经历，以及他对泡沫和技术周期的独到见解。"
 category: "商业"
 hosts:
   - name: "Sam Parr"
-    description: "My First Million 联合主持人，连续创业者，曾创办 The Hustle 并被 HubSpot 收购。"
+    description: "My First Million 联合主持人，连续创业者"
   - name: "Shaan Puri"
-    description: "My First Million 联合主持人，创业者兼投资者，曾担任 Bebo 和 Tiktok 产品负责人。"
-guests: []
+    description: "My First Million 联合主持人，连续创业者"
+guests:
+  - name: "Barry Ritholtz"
+    description: "Ritholtz Wealth Management 创始人兼CEO，管理约80亿美元资产，畅销书《How Not to Invest》作者"
 mentioned_people:
-  - name: "Pat LaFrieda"
-    description: "肉类供应商 LaFrieda Meats 的第三代掌门人，将家族肉铺打造成年营收近 3 亿美元的企业。"
-  - name: "Anthony LaFrieda"
-    description: "Pat LaFrieda 的祖父，1909 年从意大利移民到布鲁克林创办肉铺。"
-  - name: "Mario Batali"
-    description: "纽约名厨，早期与 LaFrieda 合作，以忠诚回报赊账支持。"
-  - name: "Danny Meyer"
-    description: "著名餐饮家，Shake Shack 的创始人。"
-  - name: "Justin Mares"
-    description: "Kettle & Fire 联合创始人，在 Austin 开设精品 butcher 店。"
-  - name: "James"
-    description: "Element（LMNT）电解质产品 CEO，以独特的三周一 sprint 管理方式闻名。"
+  - name: "Lloyd Blankfein"
+    description: "高盛前CEO"
   - name: "Elon Musk"
-    description: "Tesla 和 SpaceX 创始人，提出 \"idiot index\" 思维模型。"
-  - name: "Palmer Luckey"
-    description: "Oculus 和 Anduril 创始人，用硅谷方法论颠覆国防工业。"
-  - name: "Jason Cohen"
-    description: "企业家，提出 \"be king or be rich\" 的理念。"
-  - name: "Nick Sleep"
-    description: "传奇价值投资者，以极度集中的持仓策略闻名。"
-  - name: "Naval Ravikant"
-    description: "AngelList 联合创始人，知名投资者和思想家。"
-  - name: "Jason Calacanis"
-    description: "创业者兼投资人，创办 Silicon Alley 100 榜单。"
-  - name: "Brian Armstrong"
-    description: "Coinbase 联合创始人兼 CEO。"
-  - name: "Kevin Ryan"
-    description: "创业者，Gilt 创始人之一。"
-  - name: "Andrew Wilkinson"
-    description: "企业家，Tiny 创始人。"
-  - name: "James David Power"
-    description: "JD Power 创始人，开创客户满意度调研与奖项模式。"
-  - name: "Arianna Huffington"
-    description: "Huffington Post 创始人。"
-  - name: "Marc Andreessen"
-    description: "知名投资人，Andreessen Horowitz 联合创始人。"
-  - name: "Bill Packard"
-    description: "Hewlett-Packard 联合创始人。"
+    description: "Tesla、SpaceX 创始人，PayPal 联合创始人"
+  - name: "Warren Buffett"
+    description: "Berkshire Hathaway CEO，传奇投资者"
+  - name: "Peter Lynch"
+    description: "Fidelity Magellan 基金前经理，传奇投资者"
+  - name: "Howard Marks"
+    description: "Oaktree Capital 联合创始人"
+  - name: "Ray Dalio"
+    description: "Bridgewater Associates 创始人"
+  - name: "Monish Pabrai"
+    description: "Pabrai Investment Funds 创始人，价值投资者"
+  - name: "Morgan Housel"
+    description: "行为金融学作家，《The Psychology of Money》作者"
+  - name: "Cathie Wood"
+    description: "ARK Invest 创始人兼CEO"
+  - name: "Richard Barton"
+    description: "Expedia、Zillow、Glassdoor 创始人"
+  - name: "David Rubenstein"
+    description: "Carlyle Group 联合创始人"
+  - name: "Jim Simons"
+    description: "Renaissance Technologies 创始人，量化投资先驱"
+  - name: "Robert Kiyosaki"
+    description: "《Rich Dad Poor Dad》作者"
+  - name: "Michael Lewis"
+    description: "畅销书作家，《Moneyball》《The Big Short》作者"
+  - name: "Richard Thaler"
+    description: "诺贝尔经济学奖得主，行为经济学先驱"
+  - name: "Jim Chanos"
+    description: "著名做空投资者，Kynikos Associates 创始人"
+  - name: "Ed Yardeni"
+    description: "经济学家，Yardeni Research 总裁"
+  - name: "Sam Ro"
+    description: "市场分析师，TKer 创始人"
+  - name: "Jonathan Miller"
+    description: "房地产分析师，Miller Samuel 创始人"
+  - name: "Hendrik Bessembinder"
+    description: "亚利桑那州立大学金融学教授"
+  - name: "Alex Imas"
+    description: "芝加哥大学行为金融学教授"
+  - name: "Howard Lindzon"
+    description: "投资者，Robinhood 早期投资人"
+  - name: "Ben Carlson"
+    description: "Ritholtz Wealth Management 投资分析师，作家"
+  - name: "Josh Brown"
+    description: "Ritholtz Wealth Management CEO，作家"
+  - name: "Nicholas Brady"
+    description: "前美国财政部长"
+  - name: "Peter Boockvar"
+    description: "经济学家，Bleakley Financial Group 首席投资官"
+  - name: "Richard Wyckoff"
+    description: "早期技术分析师，著有《How I Trade and Invest in Stocks and Bonds》"
+  - name: "Carmen Reinhart"
+    description: "哈佛大学经济学家，合著《This Time is Different》"
+  - name: "Kenneth Rogoff"
+    description: "哈佛大学经济学家，合著《This Time is Different》"
 transcript_source: "youtube_auto_subtitle"
 source_language: "en"
 article_language: "zh-CN"
 content_type: "full_translation"
 rights_status: "public_full_authorized"
-published_at: "2026-06-04T18:15:21+08:00"
+published_at: "2026-06-10T20:05:16+08:00"
 tags: ["播客"]
 ---
 
 <!-- generated by podcast_local/scripts/export_podread_articles.py -->
 
-## 三亿美元的肉铺传奇
+## 开场：把手机放下
 
 **Shaan Puri**
 
-今天分享一个价值三亿美元的 butcher（肉商）的故事。这条故事的核心启示很简单——如果你在任何事情上做到最好，钱永远不会是问题。无论你是水管工还是 butcher，做最顶尖的那一个，财富自然会被吸引过来。迪拜有个人最会修剪分叉发梢，人们会专程飞过去找他。做到极致，钱就不是问题。
+如果接下来的15分钟要让我变成一个更好的投资者，你首先会把哪一点敲进我的脑袋？
 
-故事的主角是 Pat LaFrieda。他的祖先 Anthony LaFrieda 在 1909 年从意大利移民到布鲁克林，开了一家 butcher shop。他们的核心理念是不想跟其他店一样只做普通汉堡。在那个年代，汉堡和热狗基本就是把肉最差的部位搅碎——边角料、不能单独卖的 scraps。但 LaFrieda 说，我们只用整块肌肉的肉。他有句名言：「你没法把罪过藏在汉堡里。」其他 butcher 把坏的部分搅碎来隐藏缺陷，而他不这么做。
+**Barry Ritholtz**
 
-1950 年，纽约的 butcher 们罢工了，餐厅买不到肉。LaFrieda 抓住机会，开车去新泽西批发肉，开始直接卖给餐厅，在肉类加工区开了 LaFrieda Meats。但生意一直平平。到了 80 年代末，餐厅都转向 Sysco（餐厅界的 Costco），公司快不行了。儿子 Pat Jr. 从小不被允许接触家族生意，父亲希望他去上学、找份好工作——「别像我一样，你这辈子只能一分一分地抠钱。」Pat Jr. 去了好学校，当了 9 个月的华尔街股票经纪人，但他讨厌那份工作，回来求父亲让他进家族生意。父亲最终让步了。
-
-注意这个时间点——1994 年，《狮子王》上映那年。不算久远。当时的 LaFrieda 只有 44 个客户、5 个员工、2 个司机，妈妈管账，爸爸和爷爷是仅有的两个 butcher。这就是 Pat Jr. 接手时的全部家底。
-
-## 从 commodity 到品牌
+把手机放下，别交易了。
 
 **Shaan Puri**
 
-Pat Jr. 开始疯狂 reinvest——买新设备、走上纽约街头一家一家地签约餐厅。很多公司产品很强，但销售这块肌肉从来没练过。他的天才想法是为特定的肉品部位和配方做品牌标签，这是别人从来没做过的事。他在一个当时还没名的厨师 Mario Batali 身上下了赌注。Batali 急需 veal（小牛肉）但没钱，Pat 说服父亲赊账卖肉。Batali 用忠诚回报了这份信任——在他的整个职业生涯里只买 LaFrieda 的肉。随着 Batali 成为明星厨师，他在菜单上特别标注用的是 LaFrieda Meats，这反过来也帮 LaFrieda 提升了品牌形象。
+我们请过好几位价值投资流派的人来节目，但你的方法很不一样。是一种“aw shucks”常识型的投资法——不是教人怎么变聪明，而是教人怎么不要比原本更蠢。我就很期待跟你聊。你的经历很有意思，最早在GeoCities上写博客、做播客，后来建立了一个很大的投资咨询公司，用自己的名字命名。
 
-Pat Jr. 悟出的关键一课：不要卖 commodity，要创造品牌。而且不只是自己的品牌——他为每家热门餐厅都做了定制、独家配方，50 家餐厅拿到了签了 NDA 的专属配方。这就是生意增长的关键。
+**Barry Ritholtz**
 
-## Shake Shack 的诞生
+那个名字是临时起的，不是故意的。有人说先叫Ritholtz吧，以后找到更好的再换，然后就再也没换过。
 
-**Shaan Puri**
+## 背景：从法学院到交易台
 
-Danny Meyer，当时经营高档餐厅 Union Square Cafe，一直是 LaFrieda 的客户。他说想做更快餐式的汉堡店——Shake Shack。Pat 答应了，但有个问题：需要做成预制的肉饼，因为快餐必须这样。祖父和父亲强烈反对：「我们不干这个，这是亵渎。」但 Pat Jr. 偷偷地做了。他带着恰到好处的叛逆精神，知道什么该保密、什么神圣不可侵犯。
+**Barry Ritholtz**
 
-他带父亲去了第一家 Shake Shack，看到 200 人在排队，他说：「爸，那是我们的汉堡。」这是儿子想让父亲感到骄傲的经典一刻。
+我读了法学院，成绩很好，但讨厌当律师。当时有个客户在运营一个交易台，是E-Trade的前身，我就在交易台上开始了。那里完全是混乱和随机，波动剧烈。我更着迷的是为什么周围有些人有些天赚得飞起，有些天又亏得精光。这让我一头扎进了行为金融学的兔子洞。这是唯一能解释为什么同一个人用同样的策略，上一周表现很好，下一周就被打得鼻青脸肿。一切都是决策问题、情绪和认知偏差。
 
-## 28 美元的汉堡
-
-**Shaan Puri**
-
-2008 年金融危机，纽约一片惨淡，他做了一个反直觉的举措。有位厨师找他做终极汉堡——用 30% 干式熟成纽约客牛排做的汉堡，黑标汉堡，一个要 28 美元。所有人都觉得他疯了，但他们卖出了大约 15,000 个黑标汉堡，销量是更便宜汉堡的两倍。这种 premium 策略验证了一个道理：这个市场永远存在。
-
-今天，LaFrieda 一年做 2 亿 7 千万美元，每天供应约 10 万人的餐食。他们有世界最大的干式熟成室，一晚可以存放价值 1,000 万美元的肉。纽约市甚至总统令指定他们为 essential service，不能关闭。
-
-这个故事告诉我们：你可以把一个 commodity 产品完全差异化，建立数亿美元的生意。在 AI 热潮的今天，我反而觉得这类生意是好去处——我宁愿拥有这个肉类生意，也不想要今天那些科技公司。
-
-## 连锁反应的商业启示
+## 圣诞树投资法
 
 **Shaan Puri**
 
-类似的肉类生意还有很多。ButcherBox 是一家 bootstrapped（自力更生）的公司，年营收在中九位数。Omaha Steaks 已经存在了很长时间，但它们和 Stamps.com 是互联网营销最早期的创新者之一，年营收超过十亿美元。看到这些案例后，我学到的最简单策略就是：跟着成功的公司走，照抄它们的营销玩法。就像我们以前选餐厅位置时发现——Chipotle 有 300 人的地产团队做选址分析，我们为什么不直接开在 Chipotle 旁边？Burger King 就是这么选位置的——McDonald's 做调研，它们跟在旁边开。省不少力气。
+你能解释那个构建投资组合的圣诞树比喻吗？
 
-## Element（LMNT）——低调的 killer 业务
+**Barry Ritholtz**
 
-**Shaan Puri**
+从历史上看，很少有人能持续跑赢指数。任意一年不到一半的主动管理基金经理能跑赢指数，拉到五年是21%，拉到十年不到10%，二十年后只剩几个名字。如果你的组合核心是宽基指数，你至少有了beta。如果你连beta都没有，就不可能拿到alpha。所以至少50%到70%的资金应该是核心指数——美国宽基市场指数，比如Vanguard的VOO，第一个超过万亿美元的ETF，超低成本。也可以持有一部分海外指数。
 
-Element 是电解质和盐的小包装产品。四五年前刚开始时，我觉得很傻——谁会买这个？但他们的财务数据是公开的，年营收接近 2 亿美元，团队只有 30-50 人。CEO James 会写博客分享管理方法：三周 sprint，一周规划休息。大多数公司按季度规划，而他采用三周高强度、一周低强度的节奏。那一周每个人都自己待着——思考、休息、重新评估。他证明了给人时间和空间去思考，可以拥有一支高效团队，而不是靠 burnout 压榨。
+圣诞树的花环、装饰品、彩灯就是你想在组合上添加的个人风格。喜欢momentum就加，想多些科技股就加，这些都是装饰。我们看过各种不同的组合搭配，最终都差不多——有些好一点，有些差一点——但最终都跑不赢指数。
+
+如果你三分之二的钱在宽基指数里，至少有了那个基础。你觉得日本不错，就买EWJ；觉得印度是下一个大国，就买那个ETF。在树上加点装饰可以，但要清楚你是在试图跑赢大盘，而概率上你很可能会跑输。
 
 **Sam Parr**
 
-James 非常棒，我在篮球训练营见过他一次。他超级体贴、善良、聪明，篮球也打得好。他不仅建立了 killer 业务，portfolio 里还有其他业务。我从朋友 Esther 那里听说的，她说在他手下工作体验很好，全是好话。
+这有点像减肥时说的“星期天吃一顿cheat meal”。不是那顿饭对你有好处，而是它是唯一能让你在其他六天坚持在正轨上的东西。这就是你保留装饰品的原因吗？还是直接100%被动指数就得了？
 
-## Be King or Be Rich
+**Barry Ritholtz**
 
-**Shaan Puri**
+所以我的cheat meal就是那个牛仔账户。媒体、电视、网络从来不会报道“持有一个多元化的低成本指数组合，隔几年再平衡一次，几十年后再看看”。那些性感的新闻、刺激的内容占到了信息流的90%。最好的财经频道应该每个整点播一遍这句话，然后剩下的59分钟放《小鬼当家》重播——那些投资者反而会比看财经节目的人做得好得多。
 
-Jason Cohen 有篇博客文章说得很好：你是想当王，还是想变富？「王」通常是那些高调的人——融很多钱、做这个搞那个。而「be rich」是 bootstrapped，安静地做很长时间。这两条路要求的东西完全不同。Naval 有句名言：如果你想又富又有名，先试试变富，看看这招管不管用。
-
-## Nick Sleep 的安静投资哲学
+## 花园频道与树摄像头
 
 **Shaan Puri**
 
-Nick Sleep 是一位传奇价值投资者，属于 Warren Buffett、Charlie Munger 一脉。他在很长一段时间里做得非常出色，然后说「我们赢了」，就把基金关了。他的策略很简单：持有极少数几个明显的 winner——Costco、Amazon，可能还有 Berkshire Hathaway，加起来就四只股票。持有很长时间，这就是全部。他的信里有个观点很有意思：这种安静的态度也延伸到他所投资的公司——Amazon 和 Costco 不打广告，Berkshire Hathaway 和 Games Workshop 不做盈利指引。
+我有个比喻——一个小园艺频道装了树摄像头，种了一棵树，画面田园放松，大家都很开心。然后频道被私募收购了，得把内容搞刺激。于是全是假冲突——“这树不适合这里，水浇多了，种太深了”——而那棵树根本不在乎，只管自己静静地长。
 
-Bezos 有句名言：广告是你为产品平庸付出的代价。反观 General Motors，2008 年广告支出 53 亿美元，每卖一辆车花 630 美元——光这笔钱就可以偿还公司一半的债务。给 Madison Avenue 打电话，比造一辆能自己卖掉的车更容易。那个「空 vessel 叫得最响」的说法——我一直在想，如果回测这个想法，广告最多的公司是否恰恰是那些产品最没有 durability 的？因为它们是 commodity，moat 最小，才不得不一直打广告。
+**Barry Ritholtz**
+
+这就是媒体和宽基指数之间的关系。Vanguard和BlackRock两家合计管理25万亿美元资产，因为它们在低成本指数领域占据了主导地位。金融危机对散户投资者是最后一根稻草。40岁以上的人基本都经历过那次，然后说“我不玩了”，把钱放回BlackRock和Vanguard。2008年前Vanguard不到万亿，现在11到12万亿，BlackRock 13到14万亿。
+
+## 牛仔账户与卖出的难题
 
 **Sam Parr**
 
-但也要当 devil's advocate——Berkshire 旗下最大的公司 Geico 就是最大的广告主之一，Coca-Cola 也是。很多最好的公司在广告上都非常出色。不过这个观点本身确实很酷。
+你的客户在牛仔账户里获得的最大回报是多少？
 
-## Elon Musk 的 Idiot Index
+**Barry Ritholtz**
 
-**Shaan Puri**
+有些客户在Bitcoin暴涨时持有过，有些客户持有大量Tesla在2020到2021年爆发了。疫情前持有Teladoc、Zoom、Peloton的人也都暴涨了。但问题在于卖出太难了。大部分人的卖出操作都很糟糕。我自己持有过Apple，iPod刚出来时——不是iPhone而是iPod——股价15美元其中13美元是现金，没有下跌空间。涨了三倍到45美元，我以为了不起卖掉了，然后它又涨了9000%。
 
-Elon 有一个思维模型叫 idiot index（白痴指数）。做 Tesla 和 SpaceX 时，他从供应商那里买零件——比如一个阀门要 5,000 美元。他会问：这个阀门的原材料在伦敦金属交易所值多少钱？原材料成本和售价之间的倍数，就是 idiot index——你因为不会自己做这个零件而交的「白痴税」。他发现航天行业的 idiot index 是他见过最恐怖的——几乎所有零件都在 100 倍以上。这就是为什么他能用远低于 NASA 的资金搞定 SpaceX——因为 NASA 一直在按 idiot 价格买东西。
+书里我最喜欢的故事是Peloton的CEO。他账面一度值二三十亿美元，加满了杠杆。等疫苗推广、隧道尽头出现曙光时，Peloton暴跌。他不得不卖掉East Hampton六千万美元的房子，清算一切。我们到底要经历多少次灾难才能意识到任何股票都可能跌到零？Arizona State的Hendrik Bessembinder做过研究，市场的全部价值来自1%到2%的股票。你那么喜欢的一家今年暴涨的公司，还能再涨10年20年的概率是50比1甚至100比1。
 
-## Anduril 颠覆国防工业
-
-**Shaan Puri**
-
-Palmer Luckey 讲 Anduril 的故事同样惊人。传统国防承包商都采用 cost-plus（成本加成）模式：如果项目成本 1,000 万，承包商拿 10% 就是 100 万。那它有任何动力去降低成本吗？没有——恰恰相反，让成本越高越好，因为利润跟着涨。做快也没有动力，因为人工成本减半等于利润减半。结果就是军方从那些整个 incentive 就是让东西更贵、时间更长的供应商那里买东西。
-
-Anduril 的种子轮 pitch deck 第一页写着：「我们要为美国纳税人每年省下数千亿美元，同时自己赚数千亿美元。」他们的模式是——卖最好的产品、最低的价格、最快的交付，就像 Amazon 或 Costco。他们的 incentive 就是这么做，越做越好，越赢得合同。Lockheed Martin 把营收的 1% 投入 R&D，Anduril 每年把 100% 的营收投入 R&D。Amazon 也做过同样的事——说服投资人把全部利润 reinvest 20 年，创造了不可思议的 durable advantage。
-
-## 敏感、胆识与逻辑——伟大人物的三角
-
-**Shaan Puri**
-
-Eddie Murphy 说过：我是伟大的喜剧演员，因为我极度敏感。如果代客泊车的人把我的车开走有一丁点划痕，我会注意到，而且我足够好，能把它变成一个笑话。这跟 Elon 的 idiot tax 一样——你必须非常敏感才能注意到这些问题。然后要有胆识，敢于认为自己能解决。再加上第一性原理的逻辑推导能力，在纸上画出看起来很简单但 100% 的人都会说「这不可能」的方案。敏感度、胆识和逻辑——这个 formidable triangle 才是那些改变世界的人共有的特质。
-
-Palmer Luckey 身上就集成了这三者。他是 homeschooled 长大的，不太容易有从众思维。他的第一份工作是用 VR 帮助退伍军人缓解 PTSD——这后来成了他两家公司（Oculus 和 Anduril）的结合点。他注意到硅谷最聪明的人都去做广告和娱乐了，而国防被视为禁忌。但他发现，如果美国最聪明的科技人才都拒绝做国防，而别的国家的聪明人在全力搞武器系统，那结局不会好。所以他说：我们得改变这个。然后他就做了 Anduril。
-
-## 宏大的使命感
-
-**Shaan Puri**
-
-有意思的是，有时候难的事情比容易的事情更容易。因为当你有宏大使命时，可以更努力、可以激励别人、可以用更少的薪酬招募更好的人才。曼哈顿计划的科学家们本来在 Berkeley 教数学，那是他们的梦想工作，但他们为了赶在希特勒之前造出原子弹，搬到新墨西哥州疯狂工作。《模仿游戏》里 Alan Turing 破解 Enigma 密码机也是同样的故事——每多一天没破解，朋友和家人都可能丧命。这种 duty 和使命感让他们做出了不可能的事。而且破解之后，他们还不能让别人知道——因为如果阻止了一次攻击，敌人会问「你们怎么知道的？」然后换掉加密方式。这又是另一层 game theory。
-
-## 旅行打破框架
-
-**Shaan Puri**
-
-我 24 岁时骑摩托车 cross-country 旅行了六周。回来后，以前觉得正常的事情和 routine 全被打破了。每次去国外旅行，我都会获得更多 perspective，找到 frame-breaking moments。Kevin Ryan 当年去法国看到了某种商业模式，回来就在美国做了 Gilt。这就是一种很简单但有效的创新方式。
+## Lloyd Blankfein的日内交易
 
 **Sam Parr**
 
-Coinbase 某种程度上也是这样开始的。Brian Armstrong 在阿根廷工作时，看到当地货币恶性通胀，美元有巨大的实际购买力。如果你见过每年 20% 的通胀，你就理解了为什么这些人需要 Bitcoin——一个数学上无法通胀的货币体系。这种框架外的经历能让你连上 dots。
+想听件好玩的事吗？我们前几天跟Lloyd Blankfein做了一期播客。他是高盛前CEO，人很不错。我问他退休了在干嘛，他说他喜欢做日内交易。他说来录播客两个小时让他很焦虑，因为他总想拿手机看股票，所以提前把单都下好了。录完后我问他现在干嘛，他说市场收盘了没事干了，走回家吧。他净资产的70%在他的个股选择里。他说做得不错——如果有人能做得好，可能是他这样的人。但即便他是行业巨头，也很可能存在一个平行世界，他会犯一个18岁Robinhood交易者犯的每个错误。
 
-## Webby Awards 的商业模式
+**Barry Ritholtz**
 
-**Sam Parr**
+Lloyd，把手机放下，别交易了。净资产的70%应该在muni bond里给你提供巨大的免税收益。拿几百万美元瞎折腾可以，但如果70%的净资产——几十亿美元——在做日内交易，你正在犯职业生涯中最大的风险调整错误。那个曾经掌管高盛的傻瓜应该更懂才对。
 
-我前几天去了 Webby Awards。历史上它始于 1994 年的 Cool Site of the Day，后来变成了「互联网的奥斯卡」。早期的 Webbys 真的很酷——Larry 和 Sergey 穿着箔片斗篷在舞台上滑行，Kim Kardashian 还没出名的时候拿过「年度裸照」，David Bowie 和 Foo Fighters 都去过。每人获奖感言只能有五个词。
-
-但 Webby Awards 是一个完全的 pay-for-play scam——每年大约 13,000 个参赛作品，每个要花六七百美元。类别多到你需要一篇博客来教你选哪个。被 PE 收购后总部搬到了肯塔基，但去的全是布鲁克林 hipster 人群。
-
-## Kingmaker Move——用榜单掌控市场
+## 恐慌抛售与行为金融学
 
 **Shaan Puri**
 
-创建奖项、创建榜单，这我称之为 kingmaker move。你可以进入任何一个行业——只要制作赢家名单，你就能把自己插入任何网络或市场的中心。Jason Calacanis 在纽约做过：他创造了 Silicon Alley 100——纽约科技界 100 位权力人物。他故意把 Arianna Huffington 排在第四而不是第一，让她好奇「超过我的三个人是谁？」创造了 controversy，激发了口碑传播。
+你的书里有两个关于卖出的有趣观点，一个是恐慌性抛售的数据，另一个是对冲基金研究说买入不错但卖出很烂。
 
-赢了的人会分享，输了的人会生气想搞清楚——结果所有人都来了。我跟我姐夫说：你为什么不做一个 Vegas 100？在豪车展厅搞一个 black tie gala，给拉斯维加斯最有影响力的 100 人颁奖。你作为 host，所有人必须认识你——他们就会变成你的投资人。
+**Barry Ritholtz**
 
-**Sam Parr**
+人们在市场崩盘时恐慌性抛售，大约三分之一的人再也没有回到股市。拿2020年34%的疫情抛售或2008年57%的崩盘来说，在跌了57%的时候卖掉然后看着每年15%的复利增长，100万的投资组合出来只剩45万。如果没有卖掉现在值10倍。三个人里有一个再也回不来。
 
-顺便说一句，我有一个规矩：不去超过 50 层的建筑。Trent 的 black tie gala 在 Hudson Yards 的 100 层，我到 lobby 发现要坐电梯上去，直接说——不行，晚安。半小时就回家了。我老婆问怎么这么早回来，我说「在 100 层」，她说「明白」。我觉得这是有原则的表现。
+芝加哥大学的Alex Imas教授做过一个研究：与其卖基金经理想卖的那只股票，不如从组合里随机选一只卖掉。结果随机卖出比基金经理自己选的要好150到200个基点。买入是理性分析和数据驱动，卖出永远是情绪化的、不耐烦的。股票没有马上涨就卖，即使逻辑是对的；或者有更亮眼的新东西出现，需要卖点什么来筹钱。我们的多数决策都是糟糕的，解决方案是少做决策。
 
-## JD Power——奖项生意的教科书
-
-**Shaan Puri**
-
-JD Power 是奖项生意的教科书案例。James David Power 1969 年创办了这个生意。他之前在 Ford 做广告，发现没有人真正为消费者发声。于是他调查了大量客户对汽车的满意度，把研究卖给汽车公司。后来他创建了 JD Power Award，开始发奖。买了研究的汽车公司问：「为什么我排名不够高？」他说：「加钱，我教你怎么改善排名。」20 年后他做了那个家喻户晓的小拱形奖杯。公司卖给了 McGraw Hill，大约 5 亿美元，几年后以 10 亿美元转手，现在年营收超过十亿美元。这种模式可以适用于很多品类——尤其是那些你需要做大量研究才能决定购买的东西，比如养老院。
-
-## 天才少年的黄金窗口
+## 商业模式：劝你 DIY
 
 **Shaan Puri**
 
-我有一个想实现的 idea。你有没有注意到，现在 12 到 20 岁的青少年在做的事情比我们当年 amazing 太多了？他们被 Elon Musk、Naval、Marc Andreessen 这样的导师在远程影响着，有最好的知识和信息。但奇怪的是——那些创造世界级公司和改变世界的天才少年，十几岁时通常不是荣誉榜学生、不是班长、不是修六门 AP 课的那种人。
+你让人买低成本指数基金，我完全同意。但那我为什么要花钱请你来做这件事？
 
-他们可能是世界第一的 Yu-Gi-Oh 玩家，或者破解了 Google Maps，或者运营 sneaker 贩售生意，或者卖 Grand Theft Auto 皮肤赚钱。那些在十几岁时被认为「低 status」的事情上充满 passion 和 obsession——反而才是真正的信号。因为他们会被欺负，在学校不会得到 status points。
+**Barry Ritholtz**
 
-所以我想找到一百个这样的 hacker kid——outcast、misfit——把全世界这些孩子聚在一起。告诉他们两件事。第一：我看到你了。第二：你现在拥有的技能在父母老师那里不被认可，但我们认可。让 Red Hat 和 Airbnb 的创始人来给这些孩子时间、关注、mentorship，告诉他们——我小时候也做过这个，所以你可以像我一样。如果你把那种激光束从做傻事转向创造价值的东西——你也可以。这只需要一个名字、一个品牌，我有网络和资金，只差一个有能量的人来跟我一起搞。
+你不需要。我们的商业模式从第一天起就是公开说“你可以自己做，不需要任何人”，只需建立一个多元化低成本指数组合，管理好自己的行为，每年检查一两次。但有些人说“我喜欢建议但我有税务、遗产等问题需要帮助”。我们设置了两级数字平台，但一贯态度就是“自己动手”——结果0.01%的读者说“我没时间没自律，我找人报税找人割草，我也找你们管钱”。
 
-## Sam's List——一个意外开始的生意
+## Direct Indexing 与税务优化
 
-**Sam Parr**
+**Shaan Puri**
 
-说到榜单生意，我三年前需要找个会计，在 Twitter 上发了条消息，收到了 300 条回复。我打了 30 个电话问他们擅长什么、收费多少，然后觉得这个挺有意思但不想做完——在 Twitter 上问谁想要这个网站。一个叫 Kimmy 的女士接了过去。她不仅打完了全部 300 个电话，还说服他们把网站发给客户做评价。现在这个叫 Sam's List 的网站大约一年做 50 万美元营收，她在 TikTok 上采访书呆子型会计，还积累了一批粉丝。我跟她说，你还应该给会计办一个颁奖礼，同时把服务拓展到财务 planner——那个商业模式好得多。奖项生意是真的可以做大的。
-
-## 结束语
+Sam，你做direct indexing吗？你知道那是什么吧？
 
 **Sam Parr**
 
-我和 Shaan 已经做了几百集播客，聊了几千个小时。Andrew Wilkinson 曾经问我们，不担心会没东西聊了吗？我们说有点，但到时候再说吧。幸好到现在还没发生。
+我知道，但没做。Sean他们总拿这个开我玩笑——我的组合非常严格，基本上是90/10股债。
+
+**Barry Ritholtz**
+
+你还有30年才需要用这笔钱，连那10%都不需要。direct indexing就是不买指数基金，而是用程序购买指数成分股本身。两人都卖过创业公司，都有大量资本利得。即使市场在涨，每年总有20%到40%的股票在跌。你可以卖掉一只跌了40%的小盘生物科技股，换成另一只类似也在跌的股票，实现亏损收割，组合价值和行业分布都不变。每年这样操作可以获得75到85个基点。O’Shaughnessy的研究显示，在2020年Q1市场下跌34%时，通过direct indexing收割了400多个基点的亏损。
+
+## Richard Barton 与 David Rubenstein
+
+**Shaan Puri**
+
+你做内容这么多年，见过很多有趣的人。谁最值得我们的听众去深入了解？
+
+**Barry Ritholtz**
+
+除了Ray Dalio和Howard Marks这些显而易见的名字，Richard Barton——前微软员工，创立了Expedia、Zillow、Glassdoor。他的框架是“把混乱的数据组织起来，解放数据”，或者说“把权力交给人民”。让不透明的数据变得透明易获取。同一个主题在四家公司里反复验证。
+
+Carlyle Group的David Rubenstein可能是我这辈子遇到的最好的人。他在DC起步时就组织不公开的对话，邀请被国会辩论的议题专家，然后邀请两党国会议员参加——不是党派性的，只是为了让国会更好地获取信息。当时Carlyle只是家很小的电信公司。后来他变得非常富有，华盛顿纪念碑开裂时国会搞不定，他站出来说“我来修，你们看看能不能做永久修复，哪天能还我钱我会感激的”。他还买了Baltimore Orioles，承诺20年不搬走、啤酒热狗价格10年不变。这不是你对私募的一般印象。
+
+## 投资界的坏建议与 Sturgeon’s Law
+
+**Shaan Puri**
+
+金融和金钱也吸引了很多输出坏建议的人。你觉得谁对这个领域造成了伤害？
+
+**Barry Ritholtz**
+
+那些人不会收到上这个播客的邀请。我一直在和Zero Hedge干架——它介于Reddit和博客之间，后来搭上了Bitcoin和黄金的班车。科幻作家Sturgeon在50年代被问到为什么科幻作品大多不好，他的回答是：90%的一切都是垃圾。这就是Sturgeon’s Law。印刷品、电视、社交媒体、Substack上大部分东西不值得花时间获取。我妈妈教过我不要从陌生人那里拿糖果——这包括研究、写作、评论和观点。
+
+## Kiyosaki 与谦逊问题
+
+**Sam Parr**
+
+你对那个“富爸爸穷爸爸”的Kiyosaki有什么看法？
+
+**Barry Ritholtz**
+
+他在整个2010年代超级看空——卖股票、卖这个卖那个。我最喜欢他2018年的一条推文：离开美国房市，卖出单户住宅。讽刺的是那是近年买入美国单户住宅的最好时机。有人替他辩护说他不可能预知疫情——这正是问题所在。正因为不能预知未来，所以不要做预测。整个华尔街都有谦逊问题。我在书里写了自己最大的错误——2014年错过了Robinhood，当时估值8000万美元，我说“让千禧一代免费交易是我听过最蠢的主意，千禧一代根本没钱”，结果朋友Howard Lindzon在那笔投资上赚了一亿美元。我不是说别人傻我聪明——我跟别人一样傻，但至少我意识到了这一点。
+
+## 信息摄入：谁值得读
+
+**Shaan Puri**
+
+你说90%的信息是垃圾，那你的10%是什么？
+
+**Barry Ritholtz**
+
+我团队是重要部分——Josh Brown、Michael Batnick、Nick Maggiulli、Ben Carlson、Blair duQuesnay。其他方面：宏观分析Ed Yardeni，数据驱动做了40年。市场动态看Sam Ro。行为金融学看Morgan Housel。房地产看Jonathan Miller。做空看Jim Chanos，华尔街文化看Michael Lewis。硬核行为金融学看Richard Thaler。研究还发现神经多样性人群在市场时机把握上更好，不受社会压力和情绪交易影响。
+
+## Elon Musk 的金融实习
+
+**Shaan Puri**
+
+Elon传记里有个他短暂涉足金融行业的故事。他在加拿大上学时直接给投行CEO打cold call拿了一份工作，但开始深入研究南美石油公司。他看到类似Buffett式的机会——资产被错误定价，即使在最坏情况下也安全，还有上行空间。跟CEO提了方案，CEO让他去试试。他打电话说“我是Elon Musk，想下个交易订单”，对方说“你想要多大都行”，他说“那我能买500万吗？”，对方说“你可以买5000万”。他回去跟CEO说应该做这笔大交易，然后被否决了——仅仅因为厌恶风险。后来那笔交易确实表现很好。他就断定“这一切都很蠢，我永远不会再为别人工作了。我要去造东西而不是做金融工程”。他走了再也没有回来。
+
+他是个失败的零售股票经纪人。没有业绩记录、是个新手，凭什么听他的？回头看看Warren Buffett在1967年，一半年的人也说“我干嘛要听这家伙的”。我本科Stony Brook的数学系主任Jim Simons离开学校创立了Renaissance Technologies——历史上最成功的对冲基金。如果在1979年遇到他，他会看起来像个流浪汉。
+
+## Brady Bonds 与创业起点
+
+**Shaan Puri**
+
+拉丁美洲债务的故事：银行向巴西和墨西哥等提供了数十亿美元贷款——还不了。财政部长Nicholas Brady打包成Brady bonds，由美国政府担保，有些只卖到20美分。他想Scotiabank如果低价买入能赚数十亿。去找CEO，被否决了，因为银行已经有太多拉美债务。他说：这给了我一个健康的对金融行业的蔑视，那种蔑视给了我去创办后来成为PayPal的公司的胆量。
+
+## 实话实说的代价
+
+**Shaan Puri**
+
+你今天火力全开啊。有人在外面说那些废话导致人们亏钱，你会需要保镖吗？
+
+**Barry Ritholtz**
+
+如果有人想让我死我早就死了。在现代世界众声喧哗，没有哪个声音是主导的。Elon Musk买了Twitter，声音放大了。不管PayPal、Tesla还是SpaceX——他改变了世界，不需要吹捧。
+
+## 公司规模与增长
+
+**Sam Parr**
+
+你的公司到底有多大？能说一下数字吗？
+
+**Barry Ritholtz**
+
+最新ADV更新是12月31日——76亿美元。2013年启动时正好是历史上第三好的15年牛市开端。平均收费约70个基点。资产到10亿时我们35人，典型10亿规模的机构是4人——两个销售、一个助理、一个组合经理。我们几乎是他们的10倍。我们一直以增长率会持续为前提来建设，自成立以来每年增长约30%。
+
+## 成功预测金融危机
+
+**Barry Ritholtz**
+
+这件事很蠢。我妈妈是房地产经纪人，我们在03到05年经常聊房地产市场有多奇怪。我看到的所有数据都不符合正常周期——经济衰退后复苏、扩张。这是一个由房地产驱动的反常经济——不是房地产受益于经济扩张，而是反过来。人们买完房几年后以更低利率再融资，还有人用房屋净值提取现金补贴生活，因为中产阶级工资几十年来没跑赢通胀。
+
+2006年Reinhart和Rogoff发表了白皮书，后来成书《This Time is Different: 800 Years of Financial Folly》。白皮书说信贷驱动的泡沫平均会导致房地产下跌32%。我懒得研究S&P 500全部的500只股票，就看了看道琼斯30只成分股，大致猜了个6800点。
+
+我写的关于房地产、次贷、衍生品的内容都在博客上公开。我花了一整年当“华尔街最蠢的人”。2007年所有人都在说你显然是个傻瓜。即使那篇提到6800的文章也说了市场处于上升趋势、估值扩张，机构交易员在趋势线打破前不要做空离场。那条趋势线一年多都没打破。到了08年1月Kudlow开始每周邀请我上节目，然后一周两次，后来一片混乱——很少有人看到它来。我记得在CNBC上跟Peter Boockvar谈潜在下行空间时，他们真的在嘲笑我们。要么我们对了要么错了，没有中间地带。
+
+## Warren Buffett 的逆势押注
+
+**Shaan Puri**
+
+《Snowball》里Warren Buffett在Allen & Company会议上的场景——最热的新公司和老牌巨头在一个房间里，就像现在的AI公司。Buffett从不点名批评，但他基本说dot-com结局不会好。2000家汽车公司最后只活了三家。他甚至开玩笑说“你们现在可能都有情妇了，觉得你们最厉害，但该来的总会来”。当他看到那撮数据做出逆势押注时，他说“我知道我会对，但如果不能尽快兑现，我会显得很蠢”。这种做出判断的行为非常迷人。
+
+## 技术周期：没有新鲜事
+
+**Barry Ritholtz**
+
+20年代的Richard Wyckoff写了《How I Trade and Invest in Stocks and Bonds》。把AI替换成电报、dot-com替换成铁路，就像是去年写的。100年了还是新鲜的——阳光下没有新鲜事。新东西不是“可能”被过度炒作——而是“总是”会被过度炒作。这不是坏事，是feature不是bug。
+
+《POP: Why Bubbles Are Great for the Economy》这本书讲dot-com时代铺设了数亿数十亿美元的光纤，每英里1000多美元。泡沫破裂这些公司破产，传统有线电视和电话公司以几分钱一英里买下来。因为持有成本极低，后来的YouTube、Facebook、Instagram这些带宽密集型技术才变得可行。铁路是这样，电视、广播、互联网、半导体、移动、汽车都是这样。
+
+新技术公司的好处是不被历史沉没成本和遗留平台束缚，可以更快更便宜更好地前进。我不知道AI的赢家是谁。但20年后回头看——HP、Gateway这些曾经估值数十亿的公司归零了，手机也一样，Ericsson、Nokia、Motorola都被iPhone和Android取代了。
+
+## 结语：How Not to Invest
+
+**Shaan Puri**
+
+跟你聊天很愉快，Barry。你不藏着掖着。Sean和我看你的内容好几年了，很高兴能聊上。
+
+**Sam Parr**
+
+感谢你来。新书《How Not to Invest》精装版平装版都有。上一本《Bailout Nation》是15年前写的，那本是煎熬，但这本写起来很开心。
+
+**Barry Ritholtz**
+
+这些都是我多年来的对话和研究，发表的时候还没人知道我是谁。
+
+**Shaan Puri**
+
+你是个宝，我们非常感激你。
+
+**Barry Ritholtz**
+
+谢谢邀请。我很喜欢聊这些，这是我每天的动力来源。
+
+**Shaan Puri**
+
+好了，本期播客到此结束。
