@@ -19,6 +19,7 @@
 - [不粘锅经济 | Animal Spirits 468](/episodes/animal-spirits/animal-spirits/): Animal Spirits · 2026-06-10 ([Markdown](/episodes/animal-spirits/animal-spirits.md))
 - [他管理80亿美元。这是他会如何构建你的投资组合](/episodes/my-first-million/my-first-million/): My First Million · 2026-06-10 ([Markdown](/episodes/my-first-million/my-first-million.md))
 - [AI 保姆：Glean 的 Rebecca Hinds 谈工作中 AI 背后的隐形人力劳动](/episodes/cognitive-revolution/cognitive-revolution/): The Cognitive Revolution · 2026-06-10 ([Markdown](/episodes/cognitive-revolution/cognitive-revolution.md))
+- [两个降低房租的指标：企业房东并非万恶之源，消失的超廉价住房才是关键](/episodes/planet-money/planet-money/): Planet Money · 2026-06-10 ([Markdown](/episodes/planet-money/planet-money.md))
 - [瓦特、晶圆与AI基础设施的未来 | Gavin Baker](/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/): Invest Like the Best · 2026-06-09 ([Markdown](/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started.md))
 - [GDC Side Quest：打造《Clair Obscur: Expedition 33》的哀婉故事](/episodes/game-developer/game-developer/): Game Developer Podcast · 2026-06-08 ([Markdown](/episodes/game-developer/game-developer.md))
 - [OpenAI 的 Dan Roberts：AI 为什么现在能做科学发现](/episodes/mad-podcast/mad-podcast/): The MAD Podcast with Matt Turck · 2026-06-08 ([Markdown](/episodes/mad-podcast/mad-podcast.md))
