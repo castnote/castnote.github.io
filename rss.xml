@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>All-In 最佳创意 Pitch 大赛：四位投资人现场展示顶级交易</title>
+      <link>https://castnote.github.io/episodes/all-in/all-in/</link>
+      <guid>https://castnote.github.io/episodes/all-in/all-in/</guid>
+      <pubDate>Fri, 12 Jun 2026 01:36:11 GMT</pubDate>
+      <description>All-In Podcast 首届最佳创意 Pitch 大赛，四位顶级基金经理现场展示各自的最佳投资标的。Aaron Cowen 推荐 MGM，赌场业务之外隐藏着大阪赌场牌照和迪拜潜在机会，股价可能翻三倍。Dan Drafus 推荐 Talon Energy，AI 数据中心电力需求即将爆发，电力资产以低于重置成本交易。Oleg 推荐 Actis Oncology，放射性药物治疗实体肿瘤的新 modality，有真正护城河。Kyle Simmani 推荐 Geonet token，世界最大 RTK 精准定位网络，为 AI 机器人提供基础设施。最终 MGM 获得评委最高分，Dan Drafus 获得观众投票第二名。</description>
+    </item>
+    <item>
       <title>睡眠工具箱：优化睡眠与作息时间</title>
       <link>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</guid>
@@ -109,6 +116,13 @@
       <guid>https://castnote.github.io/episodes/latent-space/latent-space/</guid>
       <pubDate>Thu, 28 May 2026 17:57:06 GMT</pubDate>
       <description>本期围绕云端 Agent 的上下文工程展开，讨论背景智能体如何从规格说明走到可合并的代码变更。Walden Yan 与 Cole Murray 分享了 cloud agents、Devon、Open Inspect 和评估工具背后的实践，重点不在“让模型更聪明”这个抽象目标，而在如何组织上下文、任务环境、权限、反馈和测试。节目展示当智能体开始承担完整开发流程时，软件交付机制需要在提示词之外重新设计。</description>
+    </item>
+    <item>
+      <title>Cursor 如何在 Fireworks 上训练 Composer：高性能 RL 的分布式基础设施</title>
+      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
+      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
+      <pubDate>Tue, 26 May 2026 12:00:19 GMT</pubDate>
+      <description>本集对话 Cursor 的 Federico 和 Fireworks 的 Dima，深入讨论 Composer 2 训练背后的技术挑战与基础设施方案。Cursor 从一家应用公司转型为 foundation model 公司，核心逻辑是将模型权重的所有信息容量专注于单一任务——Cursor 内部的软件工程。Composer 2 的训练配方包含两个维度：continual pre-training（mid-training）和大规模 reinforcement learning。讨论重点包括：异步训练与 pipeline parallel 的效率权衡、全球分布式训练如何利用 delta compression 解决 1TB 模型权重的同步问题、MoE 模型（Kimi 2.5，1T 参数）的数值匹配挑战——浮点运算非确定性如何通过 router replay 等 trick 解决、offline RL 与 online RL（real-time RL）的不同适用场景、self-summarization 如何让 agent 超越 context window 限制实现长周期任务、以及 LLM as judge 在 reward 设计中的角色。最后讨论 RL environments 的构建——为何生产环境比 Docker container 更适合作为 RL training 的 world。</description>
     </item>
     <item>
       <title>先锋集团：那位为投资者省下一万亿美元的&quot;共产主义资本家&quot;</title>

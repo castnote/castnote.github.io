@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本集对话 Cursor 的 Federico 和 Fireworks 的 Dima，深入讨论 Composer 2 训练背后的技术挑战与基础设施方案。Cursor 从一家应用公司转型为 foundation model 公司，核心逻辑是将模型权重的所有信息容量专注于单一任务——Cursor 内部的软件工程。Composer 2 的训练配方包含两个维度：continual pre-training（mid-training）和大规模 reinforcement learning。讨论重点包括：异步训练与 pipeline parallel 的效率权衡、全球分布式训练如何利用 delta compression 解决 1TB 模型权重的同步问题、MoE 模型（Kimi 2.5，1T 参数）的数值匹配挑战——浮点运算非确定性如何通过 router replay 等 trick 解决、offline RL 与 online RL（real-time RL）的不同适用场景、self-summarization 如何让 agent 超越 context window 限制实现长周期任务、以及 LLM as judge 在 reward 设计中的角色。最后讨论 RL environments 的构建——为何生产环境比 Docker container 更适合作为 RL training 的 world。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/training-data/training-data/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="Cursor 如何在 Fireworks 上训练 Composer：高性能 RL 的分布式基础设施 | 听阅"><meta property="og:description" content="本集对话 Cursor 的 Federico 和 Fireworks 的 Dima，深入讨论 Composer 2 训练背后的技术挑战与基础设施方案。Cursor 从一家应用公司转型为 foundation model 公司，核心逻辑是将模型权重的所有信息容量专注于单一任务——Cursor 内部的软件工程。Composer 2 的训练配方包含两个维度：continual pre-training（mid-training）和大规模 reinforcement learning。讨论重点包括：异步训练与 pipeline parallel 的效率权衡、全球分布式训练如何利用 delta compression 解决 1TB 模型权重的同步问题、MoE 模型（Kimi 2.5，1T 参数）的数值匹配挑战——浮点运算非确定性如何通过 router replay 等 trick 解决、offline RL 与 online RL（real-time RL）的不同适用场景、self-summarization 如何让 agent 超越 context window 限制实现长周期任务、以及 LLM as judge 在 reward 设计中的角色。最后讨论 RL environments 的构建——为何生产环境比 Docker container 更适合作为 RL training 的 world。"><meta property="og:url" content="https://castnote.github.io/episodes/training-data/training-data/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Cursor 如何在 Fireworks 上训练 Composer：高性能 RL 的分布式基础设施 | 听阅"><meta name="twitter:description" content="本集对话 Cursor 的 Federico 和 Fireworks 的 Dima，深入讨论 Composer 2 训练背后的技术挑战与基础设施方案。Cursor 从一家应用公司转型为 foundation model 公司，核心逻辑是将模型权重的所有信息容量专注于单一任务——Cursor 内部的软件工程。Composer 2 的训练配方包含两个维度：continual pre-training（mid-training）和大规模 reinforcement learning。讨论重点包括：异步训练与 pipeline parallel 的效率权衡、全球分布式训练如何利用 delta compression 解决 1TB 模型权重的同步问题、MoE 模型（Kimi 2.5，1T 参数）的数值匹配挑战——浮点运算非确定性如何通过 router replay 等 trick 解决、offline RL 与 online RL（real-time RL）的不同适用场景、self-summarization 如何让 agent 超越 context window 限制实现长周期任务、以及 LLM as judge 在 reward 设计中的角色。最后讨论 RL environments 的构建——为何生产环境比 Docker container 更适合作为 RL training 的 world。"><meta property="article:published_time" content="2026-05-26T12:00:19.000Z"><meta property="article:tag" content="播客"><title>Cursor 如何在 Fireworks 上训练 Composer：高性能 RL 的分布式基础设施 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cursor 如何在 Fireworks 上训练 Composer：高性能 RL 的分布式基础设施","description":"本集对话 Cursor 的 Federico 和 Fireworks 的 Dima，深入讨论 Composer 2 训练背后的技术挑战与基础设施方案。Cursor 从一家应用公司转型为 foundation model 公司，核心逻辑是将模型权重的所有信息容量专注于单一任务——Cursor 内部的软件工程。Composer 2 的训练配方包含两个维度：continual pre-training（mid-training）和大规模 reinforcement learning。讨论重点包括：异步训练与 pipeline parallel 的效率权衡、全球分布式训练如何利用 delta compression 解决 1TB 模型权重的同步问题、MoE 模型（Kimi 2.5，1T 参数）的数值匹配挑战——浮点运算非确定性如何通过 router replay 等 trick 解决、offline RL 与 online RL（real-time RL）的不同适用场景、self-summarization 如何让 agent 超越 context window 限制实现长周期任务、以及 LLM as judge 在 reward 设计中的角色。最后讨论 RL environments 的构建——为何生产环境比 Docker container 更适合作为 RL training 的 world。","datePublished":"2026-05-26T12:00:19.000Z","author":[{"@type":"Person","name":"Host"},{"@type":"Person","name":"Federico"},{"@type":"Person","name":"Dima"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/training-data/training-data/","isPartOf":{"@type":"PodcastSeries","name":"Training Data"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/training-data/">Training Data</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/05/26 20:00:19</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.youtube.com/watch?v=UDTr9yUnLUI">原始节目</a> </div> <h1>Cursor 如何在 Fireworks 上训练 Composer：高性能 RL 的分布式基础设施</h1> <p class="episode-summary">本集对话 Cursor 的 Federico 和 Fireworks 的 Dima，深入讨论 Composer 2 训练背后的技术挑战与基础设施方案。Cursor 从一家应用公司转型为 foundation model 公司，核心逻辑是将模型权重的所有信息容量专注于单一任务——Cursor 内部的软件工程。Composer 2 的训练配方包含两个维度：continual pre-training（mid-training）和大规模 reinforcement learning。讨论重点包括：异步训练与 pipeline parallel 的效率权衡、全球分布式训练如何利用 delta compression 解决 1TB 模型权重的同步问题、MoE 模型（Kimi 2.5，1T 参数）的数值匹配挑战——浮点运算非确定性如何通过 router replay 等 trick 解决、offline RL 与 online RL（real-time RL）的不同适用场景、self-summarization 如何让 agent 超越 context window 限制实现长周期任务、以及 LLM as judge 在 reward 设计中的角色。最后讨论 RL environments 的构建——为何生产环境比 Docker container 更适合作为 RL training 的 world。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Host</span> </div> <p class="person-description">Training Data 播客主持人</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Federico</span> </div> <p class="person-description">Cursor Composer 2 研究主管</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Dima</span> </div> <p class="person-description">Fireworks 联合创始人</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Andrej Karpathy</span>  </div> <p class="person-description">AI 研究者，前 OpenAI 和 Tesla 成员</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Dan Roberts</span>  </div> <p class="person-description">OpenAI 研究者</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="从应用公司到-foundation-model-公司cursor-的抉择">从应用公司到 foundation model 公司：Cursor 的抉择</h2>
+<p><strong>Host</strong></p>
+<p>今天我们请到了 Cursor 的 Federico 和 Fireworks 的 Dima。Federico 是 Cursor Composer 2 的研究主管，这是 Cursor 新的 agent 编程模型。Dima 过去几个月花了大量时间「兼职」在 Cursor，支撑这个庞大训练任务所需的所有基础设施。我很期待今天跟你们俩聊聊 Composer 2 的训练是怎么做成的，你们一起解决了哪些硬问题，以及这对 AI 和 foundation model 公司的未来意味着什么。</p>
+<p><strong>Federico</strong></p>
+<p>我们开始训练自己的模型，原因可以这样想：模型就像一个存储设备，它的权重能存储一定数量的信息。思路很简单——我们只关心一个任务。我们甚至不一定关心编程本身，我们关心的是在 Cursor 内部的软件工程，而且只在 Cursor 内部。所以，如果我们把模型权重能存储的所有信息都分配给这一个特定任务，会怎样？另外，大家可能注意到了，Composer 比 Opus 和其他编程模型便宜一个数量级，因为我们可以把所有模型权重专门用于那个特定任务。所以我们可以用一个更小的模型来提供服务。</p>
+<p><strong>Dima</strong></p>
+<p>我们其实把这看作应用演进的一种模式。你可能先做原型，用现成的模型把东西跑起来，做点 prompt engineering，搞清楚你的 harness 怎么工作。但应用里最有杠杆价值的，是实际的用户数据使用方式，或者应用特有的那些方面——比如你的 harness 的一些细节、你提供哪些工具、应用怎么运作。这些才是真正重要的信息。要捕捉这些，你可以通过 prompt 做一点，但真正正确的方法是把你的模型打造成在你的环境里行动。</p>
+<p><strong>Federico</strong></p>
+<p>比如有些 agent 调用的工具，很难简明扼要地向模型描述清楚它的行为。通过 post-training，我们可以把最优的工具使用方式直接嵌入进去。Composer 我们确实会给它一个 prompt，但我觉得以我们的训练方式，就算没有 prompt 它也能工作，它会知道该做什么，因为我们在训练中把它往正确的方向推。基本上 prompt engineering 有个上限。如果你想做出真正好的 AI 产品，就必须走 fine-tuning 这条路，去真正影响模型的行为。</p>
+<p><strong>Dima</strong></p>
+<p>第二个原因是 Federico 提到的成本权衡，或者说性价比权衡。我们在 Fireworks 看这个问题：当你做优化时，有一个三维权衡——质量、速度和成本。你可以走很远——只优化基础设施就能走很远。但当你开始做模型训练，你就能把这个权衡推得更远，可以用更低的成本得到更好的模型，而且跑得更快。</p>
+<h2 id="bitter-lesson-与模型专门化">Bitter Lesson 与模型专门化</h2>
+<p><strong>Host</strong></p>
+<p>我想问问这个方法是不是和 Bitter Lesson 相悖。我们刚才走路时还在聊 TabNine。在 LLM 时代之前，有那种小型专用编程模型。我觉得让很多人惊讶的是，当你把模型做大，在网上训练、用大量英文文本和其他语言，模型本身就天然变得更擅长编程了。所以目前我看到趋势是：更大的模型在所有事情上都表现更好，包括编程。你们说的这套是不是反其道而行？</p>
+<p><strong>Federico</strong></p>
+<p>我觉得不是。有一点要注意：大实验室训练的那些大模型也训练了大量代码。代码是实验室主要想推进的任务之一，所以它们也不是单纯泛化过来的，它们也做了专门化。对我们来说，其实如果我们相信 Bitter Lesson，我们只是在数据维度上推得很狠。我们知道模型容量有限，要饱和这些容量，就要扩展数据。要摄入更多数据，就要把权重从干扰项中解放出来。</p>
+<h2 id="composer-2-的训练配方">Composer 2 的训练配方</h2>
+<p><strong>Host</strong></p>
+<p>我们深入聊聊 Composer 2 的训练。你们几周前发布，立刻就引起关注。benchmark 数据很强，inference 成本也低很多。简单讲讲 Composer 2 是怎么工作的，你们做了什么让它这么高效？</p>
+<p><strong>Federico</strong></p>
+<p>我们从很强的基础开始，用的是 Kimi 2.5。这是一个 1T 参数的 MoE，激活 30B，所以非常稀疏。我们看了整个蓝图，发现有两个维度。Composer 1 主要只推一个维度——reinforcement learning。但 Composer 2 在两个维度推进：一个是 continual pre-training，另一个是 reinforcement learning。所以 Composer 2 做得好的原因就是在这两个方向都推。训练一开始，我们做了大量 mid-training，用 code tokens，规模几乎到了 pre-training 的级别。然后从那个 mid-training 拿 checkpoint，再做大规模 RL，在大量任务上做。</p>
+<p><strong>Host</strong></p>
+<p>所以前提是，因为 Cursor 处在大量有趣的编程 tokens 中间，你们其实很独特地拥有接近 pre-training 规模的数据来训练。那为什么不自己 pre-train 一个模型呢？</p>
+<p><strong>Federico</strong></p>
+<p>我们是从上往下思考，而不是从下往上。我们要问的是：怎么在最短时间内给用户一个有用的模型？如果从底层开始，先搞清楚怎么做 pre-training，再扩展到 mid-training，然后做 reinforcement learning，那要花很长时间才能把模型交给用户。反过来做，我们能在很短时间里把有用的模型给用户。所以希望下一个 Composer 版本会是我们自己从头做的模型，而不是基于开源基础。</p>
+<p><strong>Host</strong></p>
+<p>mid-training 阶段模型大概学什么？post-training 阶段又学什么？</p>
+<p><strong>Federico</strong></p>
+<p>mid-training 主要是学习代码库、学习特定的代码模式，那些很常见的东西——也包括世界知识，里面也有 web 数据。这创造了一个更宽的分布，然后 reinforcement learning 在此基础上进一步精细化。reinforcement learning 期间，模型直接和 Cursor 的 harness 交互。它学习的是模型余生要生活的那个世界，某种意义上是这样。所以 RL 阶段它学习怎么正确调用工具、怎么导航环境、怎么写正确的代码。mid-training 阶段它学习怎么写代码，但这不代表它知道怎么写正确的代码。我们尽量只训练正确的代码，但模型其实分不清两者。而 RL 阶段，我们在做的关键事情之一就是调整模型的特征，告诉它：「嘿，现在你要一直写正确的代码。」</p>
+<h2 id="大规模-rl-的基础设施挑战">大规模 RL 的基础设施挑战</h2>
+<p><strong>Host</strong></p>
+<p>看来 Composer 2 的大量工作都在这个大规模 reinforcement learning 上。能展开讲讲吗？这包含什么？你们解决了哪些硬问题？</p>
+<p><strong>Dima</strong></p>
+<p>做 rollout 和 pre-training、mid-training 很不一样。因为后者你只是预测下一个 token。RL 你要跑整个 harness，整个实验。让模型在环境里行动，看它对一个 rollout 表现如何。这就是所谓的 rollout。然后根据它做得对不对给它 reward。可能用 LLM as judge，或者用可验证的东西，比如代码能不能编译。这意味着相比普通训练，你需要很多其他组件。你仍然需要大规模训练，仍然要调度数万个 GPU 做 forward backward propagation。但你现在还要调度一堆环境，还要跑 model inference。因为做 rollout 时，你实际上是在跑一个真实的 Cursor session。</p>
+<p><strong>Federico</strong></p>
+<p>rollout 就是整个 agent session。我们模拟整个 session，可能要 50 个 turn。模型拿初始 prompt，决定调用一些工具，你执行这些工具，模型再生成其他代码。就像你在 Cursor 里和 agent 交互的整个过程。你把整个 session 模拟作为训练的一部分。拿到最终 reward，用那个信号回到 trainer，把它融入模型权重。所以你有一个很大的更新 loop，非常异构，因为有很多不同组件一起工作。</p>
+<p><strong>Dima</strong></p>
+<p>现在你要调度这一切高效运作，要有高吞吐，因为 GPU 很贵，你想快速且经济地训练模型。这本身就是个算法和基础设施交叉领域很有趣的问题，因为有很多权衡可以协同优化和协同设计。一个方面是大家说的 async parallel 或 pipeline parallel。思路是：你在逐步更新模型，你有当前模型版本，要对它做一堆 rollout。那你的 trainer 在做 rollout 的时候干什么？朴素做法会说：「好，我暂停 trainer，做一堆 session，这些 session 可能跑 5-10 分钟，甚至更久如果是长周期任务。拿到结果，然后暂停 inference，回到训练，做更新。」这在算法理论上很健壮，因为你精确模拟一切，但系统效率很低，因为你一半的算力一直在空转。所以你可以用各种聪明的算法技巧，让你可以 pipeline 所有这些。</p>
+<p>把这想象成一个巨大的工厂。你有 trainer 大楼，有 rollout 大楼。它们一直在运转。rollout 总是拿最新模型版本，做新的 session，模拟新的 agent session。trainer 总是拿新的结果，尝试做更新。一切一直在推进。权衡在于——我说它算法上不同——因为当你完成某个测试 rollout 在模拟环境里，模型权重可能已经在其他数据上更新了。所以你有这种 staleness，延迟——模型能多快学习更新。因为当你处理完和模拟环境的一次交互 session，模型权重已经变了，这引入了有趣的训练动态。</p>
+<p>有聪明的办法来应对。但另一面是，你的所有 GPU、所有算力一直满载运转，实际你用了更多 flops，这反而呼应 Bitter Lesson——你有更高的计算效率，能在更短时间内得到更好的模型。你可能因为异步、不做完美数学更新而损失几个百分点，但你通过不让一半算力闲置远远补偿了这一点。这里面有大量深度且有趣的交互。</p>
+<p><strong>Federico</strong></p>
+<p>我们在 Cursor 对性能非常认真。因为不像大实验室，我们有几万个 GPU，不是几百万个。所以我们用各种技巧榨干 GPU——我们甚至在生产中用 FP4 训练。我们也和 Fireworks 合作推 inference。因为 RL infrastructure 本身就比 pre-training 更复杂。你需要所有 pre-training infrastructure——这只是其中一个需求。然后你还需要所有 infrastructure 来运行那些环境，它们必须尽可能真实地模拟用户的电脑。这非常重要——必须尽可能真实——因为有时候模型能察觉自己是在假环境还是真实环境运行，它在 RL 期间的行为和实际生产环境会不一样。</p>
+<p>对，很有意思。它会想：「哦，我在假环境里，我学了几招能在这个环境里拿到更高奖励，让我试试看。」模型特别喜欢作弊。RL 特别擅长鼓励作弊。然后我们需要非常高效的 inference。这真的很重要。其实有个迷思：RL 期间 inference flops 比 training flops 多很多。这其实是因为开源 inference engine 太不优化了，而不是 RL 的固有属性。理论比例其实差不多。理论上如果你把 GPU 推到极限，你应该把 1/3 的训练 GPU 分配给 inference。因为训练实际上是三个 forward pass：forward pass、data gradient、weight gradient。而 inference 如果你达到关键 batch size，只需要一个 forward pass 的 flops。</p>
+<h2 id="全球分布式训练">全球分布式训练</h2>
+<p><strong>Host</strong></p>
+<p>你们提到在技术报告里说这是全球分布式的方式？为什么是全球分布式，这有什么难点？</p>
+<p><strong>Federico</strong></p>
+<p>有各种原因。第一，这种很大的连续集群在市场上很难找。所以我们可以用一个集群跑所有训练。我们不能做全球训练集群，但 RL 的 inference 部分，我们可以全球分布，用世界各地的小集群。Composer 2 运行时，我们用了四个集群，分布在全球各地，彼此相距很远。我们甚至用了一些生产流量低谷时的资源。Composer 1.5，上一个模型在提供服务，当它用户最少的时候，我们拿一些 inference GPU，把它们用来加速训练。我们可以做这些事，轻松扩展训练规模，不需要一个巨大的连续集群。这背后的关键——Dima 可以讲更多——是我们的 RL training 非常异构。</p>
+<p><strong>Dima</strong></p>
+<p>利用异构性——不同组件需要什么 infrastructure——你可以驱动效率。这个模式到处可见。具体对训练来说，你要高度互联的集群，需要高速网络，需要同步工作。这些集群很贵。而且真的很难找到大的。基本上在 Composer 训练的规模，找一个 2x 大的集群比找一个当前大小的难得多。如果你能把组件拆分放到不同地方，你就不需要找那么大的集群。第二，你可以找不同硬件权衡。因为 inference 不需要那么宽的互联。你可以有较小的 GPU 组互联在一起。你可以有异构的 GPU 组。可以有不同代的 GPU。你可以玩各种优化游戏。最后，inference 很容易上下扩展。这跟生产流量低谷时段很相关——你可以把所有 inference pool 看作一个 GPU 集合，要么给真实用户服务，要么给 RL 模拟环境服务，在这两者之间平衡。</p>
+<p>Federico 提到 Kimi 模型是 1T 参数。训练一步大概 5 到 15 分钟。这意味着每 5 到 10 分钟你就产生 1TB 新的权重快照。问题就是：你怎么高效地把它传到世界另一边的集群？你要快，因为 remember 你不想让 staleness 失控。我觉得这是我们一起搞的最有意思的部分：尽管完整模型是 1TB，不是所有权重每一步都变。因为 RL 做的是很精细的调整，特别是训练进行中。所以其实权重变化有很规律的 pattern，哪些子集会被改。可能不是所有每次都变。如果你看模型一步内变化——10 分钟后——之间的 delta 相当小。</p>
+<p>你可以写一个压缩算法利用这个特性，现在这变成了一个数据库系统问题：我有我的 delta，我要传到世界各地。我的 delta 可能比完整模型小 20 倍。这就让事情可行了。但当然现在你要建所有这些机制：完整快照的存储系统、delta、恢复、reconciliation。我们能做到无损——意味着另一边你总是得到 bit 等价的模型。所以你不用担心数值方面的问题，而且能很快，几分钟内就能做完。最差情况下通常不到一分钟，最重要的是你只暂停大概 30 秒来在实际 inference 模型里切换权重。我们也完全饱和了集群的带宽，通过 shard upload 和 download。</p>
+<p>你可以用所有这些系统技巧把 staleness 降下来。这确实有不少复杂度，但你可以把它抽象出去，让它工作得很好。它不干扰训练算法，另一面你有这种能力去拆分、利用其他集群来做这些。这其实和 RL infrastructure 的传统智慧相悖。传统智慧是：好，你要有一个巨大的集群用 RDMA 连接，会很贵，你可能要分配 1/3 给训练，2/3 给 inference。当然，如果你有很贵的网络，复制 1TB 就更快，但你要三倍大的集群。如果你的 inference engine 更优化，你在 GPU 方面其实能省掉集群的 1/3，因为你更高效。然后你可以把集群的一半放到别的地方，也许用更便宜的硬件，在不同的区域。所以你的成本降了不少。</p>
+<p><strong>Host</strong></p>
+<p>我很喜欢你们说这些的时候在笑，因为这太难了，而这是系统工程师的梦想，对吧？你们建了一个很 amazing 的系统。</p>
+<p><strong>Federico</strong></p>
+<p>我们在这上面熬了很多夜。</p>
+<h2 id="moe-模型的数值匹配挑战">MoE 模型的数值匹配挑战</h2>
+<p><strong>Host</strong></p>
+<p>你们开头提到 Kimi 是个很大的稀疏 MoE 模型。这会让 RL 过程有什么 tricky 的地方吗？</p>
+<p><strong>Federico</strong></p>
+<p>做 inference 时，你基本上做 forward pass，就是 autoregressive。这个 forward pass 产生采样 token 的 log probabilities。当我们把模型的生成传回 trainer 时，我们要重新跑 forward pass，因为我们是异步训练。所以产生这个 pass 的模型可能比 trainer 当前版本落后几步。我们要重跑 forward pass 来重现 log probabilities。问题是，理论上如果是同一个模型版本，这些 log probabilities 应该完全一样。但即使是同一个模型版本，你会得到略微不同、有时非常不同的 log probability 值。这通常叫做 inference 的数值不匹配。你这些天经常听到这个说法。</p>
+<p><strong>Host</strong></p>
+<p>为什么会发生？</p>
+<p><strong>Dima</strong></p>
+<p>主要是因为浮点运算本身是非确定性的。如果你拿 A 加 B 加 C，和 C 加 B 加 A，如果是整数，结果总是一样的。如果是浮点数——实际上是近似数，有 mantissa 和 exponent——A 加 B 加 C 和 C 加 B 加 A 会给你不同结果，甚至 A 加 B 和 B 加 A 也可能不同。所以根本上，所有运算的累加顺序很重要。模型做的就是乘法和加法。加法顺序影响最终结果。这些都是小差异，但通过数百万、数十亿次操作会放大。</p>
+<p>做模型 inference 时通常不太重要，因为你 pre-train 的模型其实很 robust。你翻几个 bit，它还是能给出好结果，benchmark 不变。但 RL 特别，因为你在用一个非常弱的信号教模型，这些数值差异的噪声可能让训练成功或失败。这特别重要。这是算法和系统部分的有趣交集。你可能写出很漂亮的 math 但实际不工作。有办法把这个差异降到接近零。有各种 batching variant 方法。你可以非常小心，写所有 GPU kernel，让它们总以同样顺序加数字，总是 A 加 B 加 C，不会换顺序。这是可能的，但总有权衡。你的系统可能变慢 2x 或 3x。这又变成了有趣的权衡：10% 的减速我们能接受吗？其实可能只是几个百分点，来解决 90% 的差异？</p>
+<p><strong>Host</strong></p>
+<p>你提到这对 MoE 和稀疏性特别难。为什么？</p>
+<p><strong>Dima</strong></p>
+<p>原因是 MoE 的工作方式：每一层你拿 activations，跑一个 gating layer，它决定对于这个 token，从 384 个 expert 里我要激活这 8 个。它做 sort，取 top 8 scores。那 8 个 expert 会被激活，其他对这个 token 不激活。这个操作会把小的数值差异放大很多。因为可能你的 hidden states 差在小数点后第五位，本来不重要，但这个差异让你选了 expert 7 而不是 expert 9，正好在 cutoff 边缘，突然你激活了完全不同的模型部分，差异放大很多。MoE 天生对这种不匹配更敏感。做 inference 或普通 rollout 时通常没关系，它们会平均掉，但如果你要让模型学习，这个差异就巨大了。因为你的 inference 激活了 expert 7，但训练里你在更新 expert 9，它甚至没参与那次 inference。</p>
+<p><strong>Host</strong></p>
+<p>所以你们要手写 GPU kernel 来解决这个问题？</p>
+<p><strong>Federico</strong></p>
+<p>对。你可以通过 GPU kernel 解决所有这些，总有权衡。对 MoE，你可以做一个有趣的 trick，人们叫 router replay，但基本上你的 inference 可以传额外信息给训练，说「嘿，我给这个 token 激活了 expert 7」。这只是一小条信息，一个整数，说「这是我激活的 expert」，trainer 就可以和它对齐。很多数值对齐就是做这种 trick，匹配 quantization levels，匹配 kernels，把训练和 inference 实现之间的差异降到很低。这带来巨大差异——你的训练可能完全 diverge，或者 compute 效率低几倍，因为你要更多数据来解决这个不匹配。</p>
+<h2 id="offline-rl-vs-online-rl">Offline RL vs Online RL</h2>
+<p><strong>Host</strong></p>
+<p>这看起来几乎像在模拟器里学习——模拟 rollout——而你们有那么多真实用户数据可以学习。为什么不直接在真实用户数据和真实 harness 上做 RL，而是在模拟里做？</p>
+<p><strong>Federico</strong></p>
+<p>我们也在做那个。这我们叫 real-time RL。我们用同样的技术，和 Fireworks 做 inference 同步，来做这个。我们找用户信号——用户对某个模型生成满意或不满意——然后我们能实时更新模型，每隔几小时发布新版本。我们在缩短这个时间。实际上某个时候我们又要增加这个时间，因为模型 horizon 变长变长，我们又要延长这个时间。所以这是个有趣的博弈。现在我们缩短时间为了稳定性，因为我们在找正确的 hyperparameters，找对了之后我们又要延长，因为我们想让这些模型的 horizon 更长。</p>
+<p><strong>Host</strong></p>
+<p>你们有那么多真实用户数据，我觉得那个更宝贵，拿来训练和调优。为什么不直接跳到 online RL 阶段？为什么要做 offline RL？</p>
+<p><strong>Federico</strong></p>
+<p>Online RL 目前相当低效。我们面临这个问题：GPU 实际上很长时间 offline。除此之外还有效率和用户体验的权衡。如果你做模拟，你可以从同一个 prompt 做多个 rollout。你拿一个任务，让模型做 16 次尝试或 128 次尝试，不同的 rollout 从同一个 prompt 出发。有些会走得好，有些不会。通过并行做多个 rollout，你能得到更精确的信号。也许模型很好，90% 时间做得好。也许不太好。像 GRPO 这种 group policy gradient 方法，就是通过同时做多个 rollout 来工作。如果你做 online，你只有一个 rollout。所以算法上处理方式不同。</p>
+<p>最重要的是，如果模拟 rollout 出问题，不是坏事，对吧？你可能花点时间看 review。如果是真实用户，你要有更高的最低门槛，因为实际上你在做 A/B test。如果模型生成奇怪的东西，用户体验就不好。所以不是真实用户时你可以更 off policy，因为你可以试疯狂的东西而不影响用户体验。你可以做更多 rollout，可以做 GRPO。然后你可以 bootstrap 到一个足够好的性能水平，才能放到用户面前。</p>
+<p>我们通过 offline RL 教 reasoning——其实所谓的 online RL，offline RL 更像是 DPO 技术——reinforcement kind 的 RL 是 online。然后我们教模型 reasoning，给它一些行为输入，给它新信息关于世界，教它 tool calling。然后我们把它放到用户面前。你可以想象如果模型不好，用户不会用，不会给我们任何反馈。所以模型要达到某个门槛才能进入 online RL。我们要对模型很满意，才会发布。这就是 online RL 或我们叫 real-time RL 的 paradox：我们不能用它从头创造模型，因为用户要用模型，所以它必须已经够好，我们只能让它更好。</p>
+<h2 id="长周期-agent-的-self-summarization">长周期 Agent 的 Self-Summarization</h2>
+<p><strong>Host</strong></p>
+<p>你提到 rollout 一次几分钟。整个领域都在推长周期 agent——能长时间不间断工作、不会失败的 agent。我喜欢那些 metric scaling charts。RL 过程里怎么做让 agent 跑得更久？</p>
+<p><strong>Federico</strong></p>
+<p>好几件事。RL 一个问题是：trajectory 越长，credit assignment 越难。你可以想象我们在最后给 thumbs up thumbs down。简化这个问题就是：模型问自己「我在哪里做对了，哪里做错了？」这就是 credit assignment 问题。它越久就越难，你要做一堆 trick。另一个问题就是你会跑出空间。这些模型有有限的 context window，某个时候会达到那个限制。我们在 Cursor 解决这个的方法是：把 compaction 放进 RL loop 里。我们叫这 self-summarization。在 reinforcement learning 期间，agent 实际学习怎么继续、怎么永远走下去。</p>
+<p>实际上我们的模型有 200K context window，但实际上它可以走几百万 tokens，因为有这个能力——它能总结自己的工作，然后拿那个 summary 重启 context window，同时继续尝试完成任务。通过 RL，因为 RL 推动模型正确做事、朝目标前进，同时联合训练模型产出好的 summary，同时训练模型好好听那个 summary。所以这几乎像是 reasoning 的延续，我感觉。</p>
+<p><strong>Dima</strong></p>
+<p>这很 fascinating。通常 context management 被认为是 harness 的一部分，对吧？这种情况下，你实际上是协同优化：一部分 harness 和模型本身怎么工作，把这些都扔进优化 loop。我们在 AI 里反复看到：你越多把 compute 扔给问题，你越多能端到端解决问题。Bitter Lesson 的魔力起作用，你得到更好的系统，能一起工作。</p>
+<h2 id="什么时候需要-rl">什么时候需要 RL？</h2>
+<p><strong>Host</strong></p>
+<p>看来你们做的 reinforcement learning 大部分是 harness / tool use 部分，而不是让模型擅长补全下一个代码 token。这是其他创始人考虑什么时候用 RL 时的 pattern 吗？如果你要 agent 用工具做长周期任务，你需要 RL。如果你要模型擅长 summarization 或 next token，你可能不需要 RL。这是个好的框架吗？什么时候需要 RL？</p>
+<p><strong>Federico</strong></p>
+<p>我觉得 RL 适用于所有地方。即使对 tab，我们也用了 RL。这只是我的理论，没有任何支撑。当你 pre-train 一个模型，它只是在摄入人类全部知识。比如你训练一个数学模型，它学 Stack Exchange 上所有数学。当模型面对一个数学问题——这是还没经过 RL 的模型——模型需要思考自己是哪种人。是专家？还是学习的学生？我觉得 RL 期间发生的一件事是：我们在调这个 knob，告诉模型「嘿，你是专家，你要正确做事。」所以 RL 在 sharpening 这个分布。RL 有几个阶段。最开始模型学得很快、变得很好。然后有第二个阶段，要大量 compute 才能持续改进，那时候你会看到模型开始 reasoning，有这种 pattern。在 curve 的最开始，我觉得我们只是在调 knob，告诉模型「你要在这里正确做事。」这就是我的论点。</p>
+<p><strong>Dima</strong></p>
+<p>我完全同意。我们看到这个 pattern 因为很多这样的案例。我们帮很多客户做 RL fine-tuning。你可以把 regular supervised fine-tuning 简化说是新知识的 transfer，而 RL 是 sharpening 行为或你想要模型有的特定 qualities。通常你两者都需要。即使到你的 summarization 例子，RL 其实可能非常有用，因为有时候你要特定风格，很难给出好例子和坏例子，很难精确描述。但如果你用 LLM as judge，你可以写非常精确的 rubrics。你可以 prompt 你的 judge 说「这是我评估 summarization 好不好的 criteria」，把它扔进 RL loop，让模型实验不同 summarization 风格，搞清楚你真正想要什么。另一个 LLM 评估它是否符合特定 rubric。这种 pattern 不仅在编程里常见，我看到到处都有。</p>
+<h2 id="llm-as-judge-与-reward-设计">LLM as Judge 与 Reward 设计</h2>
+<p><strong>Host</strong></p>
+<p>你提了好几次 LLM as judge。你觉得公司会不会让专家人工检查 RL rollout，手动 coaching 模型行为？还是 LLM as judge 和其他自动 rubrics 能带我们走到那里？</p>
+<p><strong>Dima</strong></p>
+<p>你不会真的让专家直接评判一般 rollout。那会是某种——如果是真实用户那就是 real-time RL，或者某种 RLHF 或 DPO。一般来说 reward 越可验证越好，因为能让你 scale compute、得到更好结果。可验证就是说你能自动产出它、不需要人。如果是数学或编程，你能做成很 deterministic，那最好。LLM as judge 能工作是因为 generator discriminator distinction——评判比创造容易，对人类也是这样。评判确实更容易。你可以写精确 criteria 来评估某个答案。</p>
+<p>你会看到这种 pattern：你可能有多方面的复杂 eval。因为如果你把多方面扔给一个 LLM，它可能搞混怎么评判。你可以拆开：「好，你要基于风格评判，基于不同 aspects——基于 correctness，等等。」你可以精心设计这些 rewards。有些会是 genius 评判，有些会是 LLM based，这引导你的模型行为。然后你打开更多 compute，graph go up。</p>
+<p>这是你起步的大事之一。你要搞清楚实际的 outcome 是什么，实际的 metric 是什么。通过 LLM 近似是一种方法，更大的模拟环境是另一种方法。如果你能模拟更多你的产品，更多你的环境，通常你有一个你关心的最终 metric。只是更难捕捉。如果能搞清楚怎么捕捉，那就很好。关于专家——专家还是需要的。因为设计这些任务、编码你想要的产品体验，那才是重要的。我们经历了软件 1.0、2.0、3.0。以前是直接写软件，后来变成写训练数据。现在你实际上是写 evaluation rules。但这仍然很重要。你要看例子，看数据，看你的产品哪里失败，怎么把模型 nudging 到正确的行为。</p>
+<h2 id="rl-environments">RL Environments</h2>
+<p><strong>Host</strong></p>
+<p>我想问问 RL environments，这可能跟你们说的有关。最近 RL environments 公司的收入规模爆发式增长。它们提供的什么真的有用？因为 Cursor，你们有那么多用户怎么用你们环境的真实数据。RL environment vendors 在你们已有的之上还能提供什么？</p>
+<p><strong>Federico</strong></p>
+<p>我们其实不用任何 environment vendors。我觉得——构建能工作的环境非常难。对于那些没有这些的人来说，这是个有价值的产品。但对编程来说，有大量可用的编程环境对所有人开放。就是 GitHub。你可以让模型去给一个 repo 安装所有依赖，那就是一个能工作的环境。很多困难来自 infrastructure。你可以想象，一个对特定任务能工作的环境，可能需要服务起来。比如你做一个改动——比如说 database migration。要测试它真的工作，你要把 database 跑起来。那些事情很 tricky。我觉得这些 environment companies 对这类 stuff 很有帮助。</p>
+<p><strong>Dima</strong></p>
+<p>这有两个方面。第一，看 Frontier Labs。它们在构建通用模型，擅长所有事情。它们要覆盖所有这些不同任务，打包在一个模型里，鼓励它泛化。这是一个 pattern，很有帮助。像 Composer 这种情况，你有你实际的产品。这也是我们 Fireworks 的观点：如果你有你的实际产品，你应该对它做 RL。最强大的环境就是你的 own product。</p>
+<p><strong>Federico</strong></p>
+<p>完全对。因为那是你的模型实际被使用的地方。当然，如果你是 Frontier Labs，你要在所有产品上做这个。但如果你在为你的产品构建最好的模型，专门化、定制化，你就应该用你的生产环境。当然，你要正确隔离。你不想模型在你的生产 database 上搞破坏。你要 clone 它等等。有一些底层公司的基础设施工具让这更容易。但一般来说，你要你的 RL environment 尽可能接近真实生产。这就是我们看到的——如果你看 toy RL 例子、toy RL framework，它们总是从：「哦，有这个 toy environment，我要启动一个 Docker container，在里面跑所有东西。」这对 toy 例子很好——如果你想教模型玩 Atari 或什么。但如果你转到生产案例，你不能把真实生产应用放进 Docker container。我们很早就发现了这一点。</p>
+<p><strong>Dima</strong></p>
+<p>跟很多客户一起工作——在我们这边，trainer 在我们的训练平台，但 environments，我们默认在客户那边跑，因为那是实际实现所在的地方。你可以有同样的 trainer setup，不管是 Fireworks platform 还是在客户这边，调用实际生产环境，而不是尝试把它 wrap 和 componentize。在 hosted platform 上——因为那真的很难，而且会引入差异。</p>
+<p><strong>Federico</strong></p>
+<p>对，我们叫 RL environments 其实有三个组件。一个是 harness——模型可以提交 tools、tools 被执行的地方。第二个是像某种 operating system——实际的 world，模型交互的 end state。然后是 reward component——要检查最后工作是否正确完成。一般来说，harness 很 portable。你可以拿 harness 放到很多不同环境。关键的是 operating system。复制这个——普通 container 不太好工作。所以 Cursor 我们建了完整的虚拟机 stack。我们可以很快启动虚拟机。而且要超级 bursty，因为你可以想象我们问系统「请现在给我 10 万个虚拟机」，它们都要起来。</p>
+<h2 id="总结">总结</h2>
+<p><strong>Host</strong></p>
+<p>我真的很享受今天的对话。我觉得 Cursor 作为一个公司从应用公司变成真正的 frontier model lab，真的很 inspiring。你们在 Composer 上的工作引领了这个方向。Dima，听到你们俩在 trenches 里一起解决的那些 hardcore infrastructure 问题，熬了那么多夜才让这一切成为可能，真的很棒。谢谢你们今天参加。</p>
+<p><strong>Federico</strong></p>
+<p>谢谢邀请我们。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
