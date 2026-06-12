@@ -14,6 +14,7 @@
 
 - [All-In 最佳创意 Pitch 大赛：四位投资人现场展示顶级交易](/episodes/all-in/all-in/): All-In Podcast · 2026-06-12 ([Markdown](/episodes/all-in/all-in.md))
 - [睡眠工具箱：优化睡眠与作息时间](/episodes/huberman-lab/huberman-lab/): Huberman Lab · 2026-06-11 ([Markdown](/episodes/huberman-lab/huberman-lab.md))
+- [番茄价格四十年新高：一场霜冻如何引发全球供应链震荡](/episodes/odd-lots/odd-lots/): Odd Lots · 2026-06-11 ([Markdown](/episodes/odd-lots/odd-lots.md))
 - [SpaceX IPO 风波解析：Nasdaq 规则变化背后的争议](/episodes/planet-money/planet-money/): Planet Money · 2026-06-11 ([Markdown](/episodes/planet-money/planet-money.md))
 - [住房种族隔离为何持续存在？](/episodes/capitalisnt/capitalisnt/): Capitalisn't · 2026-06-10 ([Markdown](/episodes/capitalisnt/capitalisnt.md))
 - [Biohub：生物学的未来是开源的——对话马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯](/episodes/no-priors/no-priors/): No Priors · 2026-06-10 ([Markdown](/episodes/no-priors/no-priors.md))
