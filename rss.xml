@@ -6,11 +6,11 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>参议员 John Fetterman 与 Dave McCormick：两党合作、政治金钱、数据中心之争</title>
-      <link>https://castnote.github.io/episodes/all-in/all-in/</link>
-      <guid>https://castnote.github.io/episodes/all-in/all-in/</guid>
-      <pubDate>Wed, 10 Jun 2026 18:46:55 GMT</pubDate>
-      <description>All-In Podcast 主持人与两位宾夕法尼亚州参议员——民主党人 John Fetterman 和共和党人 Dave McCormick——展开了一场罕见的跨党派对话。两位参议员从各自的农村成长经历出发，讲述了如何在美国政治极化的环境中找到合作空间。他们讨论了 filibuster 的历史价值、AI 和能源转型中的中美竞争、数据中心争议背后的错误信息，以及蓝领就业繁荣对宾州经济的重塑。Fetterman 直言不讳地批评了民主党内的极端倾向和 TDS 现象，同时也坚持了自己在以色列、政府停摆等问题上的独立立场。McCormick 则分享了他领导的能源与创新论坛如何促成 920 亿美元投资，以及宾州正在经历的工业复兴。两位参议员还在金钱政治、初选制度等问题上交换了务实看法。</description>
+      <title>SpaceX IPO 风波解析：Nasdaq 规则变化背后的争议</title>
+      <link>https://castnote.github.io/episodes/planet-money/planet-money/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/planet-money/</guid>
+      <pubDate>Thu, 11 Jun 2026 07:13:50 GMT</pubDate>
+      <description>SpaceX 即将以史上最大规模 IPO 上市，但 Nasdaq 在 IPO 前一个月修改了指数规则：大幅缩短大公司加入 Nasdaq 100 的等待时间，并将流通股比例仅 4% 的公司按三倍权重计算。这些变化被质疑是为 Elon Musk 特殊量身定制，可能人为推高股价，让指数基金被迫按虚高比例买入。节目还探讨了更深层的结构性问题：普通投资者长期被排除在大型私人公司的高速增长之外，合格投资者门槛让富人独享早期入场机会，AI 时代这一矛盾更加突出。</description>
     </item>
     <item>
       <title>住房种族隔离为何持续存在？</title>
@@ -18,13 +18,6 @@
       <guid>https://castnote.github.io/episodes/capitalisnt/capitalisnt/</guid>
       <pubDate>Wed, 10 Jun 2026 14:56:02 GMT</pubDate>
       <description>芝加哥大学布斯商学院的 Milena Almagro 分享了她关于种族住房契约（racial covenants）的研究。她以1940年代的明尼阿波利斯为案例，利用 Mapping Prejudice 项目数字化后的历史数据，分析了种族契约对住房隔离的因果影响。Almagro 将供给侧限制（开发商通过契约决定谁能住在哪里）与需求侧偏好（同族偏好，即人们倾向于和同族裔住在一起）区分开来，发现观察到的隔离中约三分之一可由契约等法律限制解释，另外三分之二则来自偏好。她引入了潜在选择集（latent choice set）方法从城市经济学角度重新审视居住选择，并用城市化前沿指数（urbanization frontier index）识别契约的因果效应。她还对比了契约与红线标注（redlining）两种歧视工具的区别，指出今天的区划政策（如最低地块面积）虽然不直接针对种族，但通过影响住房可负担性产生了类似的隔离效果。最后她讨论了即使消除契约，偏好驱动的自我选择仍会维持一定程度的隔离。</description>
-    </item>
-    <item>
-      <title>CoreWeave 如何看待当前算力市场</title>
-      <link>https://castnote.github.io/episodes/odd-lots/odd-lots/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/odd-lots/</guid>
-      <pubDate>Wed, 10 Jun 2026 13:46:06 GMT</pubDate>
-      <description>本期 Odd Lots 邀请 CoreWeave 联合创始人 Brandon McB，深入探讨 AI 算力市场的供需格局。从 Uber 四个月烧光全年 AI 预算等热点切入，分析了 inference 需求爆发及其对基础设施的影响。Brandon 介绍了 CoreWeave 客户结构的多元化进程，强调 model routing 可延长 GPU 使用寿命。他指出当前最大瓶颈并非 GPU 供给，而是 powered shell（已通电数据中心的壳子）的稀缺。关于 GPU commoditization，他认为算力目前不具备 fungibility，短期内难成 commodity 市场。</description>
     </item>
     <item>
       <title>Biohub：生物学的未来是开源的——对话马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯</title>
@@ -55,13 +48,6 @@
       <description>Glean 的 Work AI Institute 发布了 2026 年 Work AI Index 报告，调查 6000 名知识工作者后发现：87% 的员工在使用 AI，平均每周节省 13 小时，但只有 13% 认为组织绩效显著提升。报告提出了「botsitting」（喂养、监督、调试 AI 所需的人力劳动，每周 6.4 小时）和「botshit」（交付无法解释的 AI 产出，69% 的人承认做过）两个概念。主持人 Nathan Labenz 与负责人 Rebecca Hinds 深入探讨了这一 disconnect 的根源：从个人效率无法转化为组织成果，到 AI 工具缺乏上下文导致 exhaustion，再到员工因自动化失去工作意义而疏离。讨论还覆盖了企业文化转型、使命驱动、enterprise graph 的前景以及 AI 时代组织设计的未来方向。</description>
     </item>
     <item>
-      <title>两个降低房租的指标：企业房东并非万恶之源，消失的超廉价住房才是关键</title>
-      <link>https://castnote.github.io/episodes/planet-money/planet-money/</link>
-      <guid>https://castnote.github.io/episodes/planet-money/planet-money/</guid>
-      <pubDate>Wed, 10 Jun 2026 07:24:28 GMT</pubDate>
-      <description>本期 Planet Money 从两个角度探讨降低房租的可能路径。第一部分研究了机构投资者（企业房东）对住房可负担性的影响。虽然政界两党都在指责大型企业抬高房价，但数据显示他们仅占全国购房量的不到 1%，真正推手是低建造成本和低利率。同时，企业房东通过 bring rental homes 进入市场和参与 build to rent 新房建设，反而可能压低租金。第二部分追溯了美国城市中曾经普遍存在的单间住宿（SRO）——一种超廉价住房形式的兴衰。1950 年代纽约有超过 20 万个 SRO 单位，但城市更新运动导致百万间此类房间被拆除或改造，被认为是无家可归问题加剧的重要因素。近年来部分城市开始尝试恢复这种住房形式。</description>
-    </item>
-    <item>
       <title>瓦特、晶圆与AI基础设施的未来 | Gavin Baker</title>
       <link>https://castnote.github.io/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/</link>
       <guid>https://castnote.github.io/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/</guid>
@@ -90,18 +76,11 @@
       <description>本期节目深入探讨了预测市场的运作机制与商业模式。节目介绍了 Kalshi 和 Polymarket 两大平台如何让用户对各种未来事件下注，解释了事件合约的定价原理，并采访了一位从传统体育博彩转向预测市场的职业玩家 Frank Satlo。节目还讨论了预测市场面临的核心争议：平台内部做市商的利益冲突、赢家与输家的悬殊比例、与各州博彩法规的法律冲突、CFTC 的监管权之争，以及日益受到关注的内幕交易风险。随着监管审查加强和多起诉讼推进，预测市场的未来仍充满不确定性。</description>
     </item>
     <item>
-      <title>精华回顾：迷幻药物与神经刺激如何重塑大脑 | Dr. Nolan Williams</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/huberman-lab/</guid>
-      <pubDate>Sun, 07 Jun 2026 01:18:54 GMT</pubDate>
-      <description>Stanford 精神科医生 Dr. Nolan Williams 与 Andrew Huberman 深入讨论了抑郁症治疗的新范式。Williams 提出「精神科 3.0」的概念——从早期的心理治疗（1.0）和化学失衡假说（2.0）转向聚焦大脑回路的治疗方法。他详细介绍了 Stanford Neuromodulation Therapy（SNT），一种利用 spaced learning theory 将六周 TMS 疗程压缩到五天的突破性方案，缓解率达 60-90%。对话还涵盖了 psilocybin 治疗抑郁症、MDMA 治疗 PTSD、ibogaine 用于特种部队退伍军人的道德创伤，以及 ayahuasca 的神经化学机制。Williams 强调这些 psychedelics 与 TMS 作用于相同的脑网络连接，暗示着一个趋同的治疗机制——即解耦负性情绪系统与自我表征之间的过度连接。</description>
-    </item>
-    <item>
-      <title>数学家的信仰之路：AI、超人类主义与基督教的对话 | John Lennox × Diary of a CEO</title>
-      <link>https://castnote.github.io/episodes/diary-of-a-ceo/diary-of-a-ceo/</link>
-      <guid>https://castnote.github.io/episodes/diary-of-a-ceo/diary-of-a-ceo/</guid>
-      <pubDate>Thu, 04 Jun 2026 07:00:26 GMT</pubDate>
-      <description>牛津大学数学家 John Lennox 与主持人 Steven Bartlett 展开了一场跨越信仰、科学与人工智能的深度对话。Lennox 从自己的学术生涯出发，探讨了为什么一位严谨的数学家会选择相信上帝——以及基督教信仰如何回应 AI 时代提出的根本问题。他指出，现代 AI 虽然带来了巨大的医疗价值，但其背后隐含的超人类主义愿景——通过科技让人成为神——与基督教关于人的尊严和救赎的教导形成了尖锐对立。Lennox 以自身的学术训练和 70 多年的信仰探索，论证了基督教并非盲目的跳跃，而是基于证据的信任。从死亡囚犯的归信到与 Richard Dawkins 的公开辩论，这场对话不仅触及关于苦难、自由意志和救赎的古老问题，更在 AI 正在重塑人类身份认同的当下，提出了一个关键追问：在一个越来越孤独、断裂的世界里，人类真正需要的是什么？</description>
+      <title>香槟鱼子酱：酒吧促销、Google 融资与做空者的命运</title>
+      <link>https://castnote.github.io/episodes/money-stuff/money-stuff/</link>
+      <guid>https://castnote.github.io/episodes/money-stuff/money-stuff/</guid>
+      <pubDate>Fri, 05 Jun 2026 15:51:00 GMT</pubDate>
+      <description>本期讨论三个话题：一是纽约 Bloomberg 酒吧 The Jeffrey 的尼克斯赢球免单促销，老板作为 activist hedge fund lawyer 用 Kalshi prediction market 对冲风险，体现了体育下注与真实经济风险对冲的交集；二是 Google/Alphabet 出售约850亿美元股票融资建设数据中心和支付 AI talent 工资，标志着美国大公司从 capital light、buybacks 主导转向 capital intensive、equity issuance 的时代变化；三是 activist short seller Andrew Left 被判 market manipulation 定罪，案件模糊了合法做空研究与操纵市场的界限，对 short selling 行业产生 chilling effect。</description>
     </item>
     <item>
       <title>为什么运动像惩罚（以及如何改变它）</title>
@@ -109,13 +88,6 @@
       <guid>https://castnote.github.io/episodes/happiness-lab/happiness-lab/</guid>
       <pubDate>Tue, 02 Jun 2026 19:47:05 GMT</pubDate>
       <description>本期节目探讨了为什么很多人把运动变成了一种对身体的惩罚，而非快乐的源泉。主持人Laurie Santos与瑜伽教练、作家Jessamyn Stanley对话，Jessamyn分享了自己作为一个胖孩子从小恐惧运动、到成年后通过热瑜伽练习打破身体羞耻感的经历。她讲述了如何从最初无法忍受看到自己的身体，到通过在家练习和给自己拍照，逐渐认识到自我厌恶的根源在于自己而非外界。两人讨论了瑜伽如何不仅是身体锻炼，更是一条灵性道路——通过在体式中练习接纳不适、占据空间、倾听身体，这些能力可以迁移到生活的其他方面。Jessamyn还分享了她在教课中发现身体焦虑是所有人的普遍问题，而自我接纳能产生连锁反应、帮助他人也接纳自己。</description>
-    </item>
-    <item>
-      <title>羞耻的秘密心愿</title>
-      <link>https://castnote.github.io/episodes/money-stuff/money-stuff/</link>
-      <guid>https://castnote.github.io/episodes/money-stuff/money-stuff/</guid>
-      <pubDate>Mon, 01 Jun 2026 21:16:30 GMT</pubDate>
-      <description>本期节目覆盖了多个金融热点话题。首先是 SpaceX IPO 的深度讨论，包括其 2 万亿美元估值、企业 AI 转型策略、Elon Musk 溢价对估值的影响，以及指数基金被迫快速纳入 SpaceX 引发的争议。接着讨论 Robinhood 推出的 AI agent 经纪和信用卡功能，用户可以用自然语言指令让 AI 自动执行交易策略或购物；Matt 认为 agent 将成为未来交易的通用载体，取代结构化 ETF。然后话题转向 Enhanced Games（兴奋剂奥运会），首届赛事出现技术故障，三位「干净」选手夺冠，但有一项世界纪录被打破。最后讨论 Fernando Tatis Jr. 与 Big League Advance 的纠纷——他以未来 MLB 收入的 10% 换取 200 万美元预付款，如今签下 3.4 亿美元合同后试图推翻协议但败诉；节目探讨了这种投资模式的风险与回报本质。</description>
     </item>
     <item>
       <title>物理学最大谜团：反物质、暗能量与万物理论</title>
@@ -139,13 +111,6 @@
       <description>本期节目完整讲述了先锋集团（Vanguard）及其创始人 Jack Bogle 的传奇故事。Bogle 出身于大萧条中破碎的家庭，凭借普林斯顿毕业论文进入共同基金行业，35 岁执掌威灵顿管理公司，却因推行基金共有制的理念与合伙人产生根本分歧而被解雇。他利用基金与管理公司之间的法律结构漏洞，于 1974 年创立先锋集团——一家由基金持有人共同所有、按成本运营、不产生利润的资产管理公司。1976 年他推出了第一只面向零售投资者的标普 500 指数基金，凭借低费率的复利优势，历经二十年缓慢积累后在 1990 年代迎来爆发式增长。节目深入探讨了先锋的规模经济共享模式如何持续降低费率、2008 金融危机如何成为被动投资的决定性验证时刻、ETF 争议导致 Bogle 二度离开董事会的始末，以及今天先锋面对富达和贝莱德竞争时共有制模式的优势与局限。节目最后的分析环节讨论了为何共有制结构如此罕见、先锋的七力模型，以及 Bogle 将公募基金定义为大宗商品市场的核心洞察。</description>
     </item>
     <item>
-      <title>Android 发布会回顾！</title>
-      <link>https://castnote.github.io/episodes/waveform/waveform/</link>
-      <guid>https://castnote.github.io/episodes/waveform/waveform/</guid>
-      <pubDate>Fri, 15 May 2026 15:09:00 GMT</pubDate>
-      <description>本期节目回顾了 Google 的 Android 发布会。几位主持人讨论了 Android 17 的主要更新，包括 Gemini AI 深度整合、新的「暂停点」数字健康功能、屏幕反应相机模式、与 Instagram 的原生相机集成，以及 AirDrop 跨平台兼容。Android Auto 获得了重大升级，包括 3D 导航视图和车载视频播放。节目还讨论了 Gemini 的代理式功能演示（如自动订票和买教材）引发的信任问题，以及 Google Book 这个新产品类别的定位困惑。此外还聊了 Fitbit Air 无屏幕健身追踪器如何挑战 Whoop 的市场地位，并进行了一场以 Reddit 帖子为题的 Family Feud 游戏。</description>
-    </item>
-    <item>
       <title>Anthropic 的 Boris Cherny：为什么 Coding 已经解决，接下来会怎样</title>
       <link>https://castnote.github.io/episodes/sequoia-ai-ascent/sequoia-ai-ascent/</link>
       <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/sequoia-ai-ascent/</guid>
@@ -158,13 +123,6 @@
       <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</guid>
       <pubDate>Wed, 22 Apr 2026 16:02:45 GMT</pubDate>
       <description>本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 &quot;no zero days&quot; 哲学和 Tim 的 &quot;eating the frog&quot; 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。</description>
-    </item>
-    <item>
-      <title>构建 RL Environments 的 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Tue, 10 Feb 2026 13:00:54 GMT</pubDate>
-      <description>本期节目邀请到 Prime Intellect 的联合创始人 Will Brown 和 Johannes Hagemann，探讨如何将前沿 AI 实验室的 post-training 和 reinforcement learning 基础设施民主化。Johannes 介绍了他们的全栈平台 Lab 和 environment 概念——将 RL environment 与 eval 统一为同一抽象，让任何公司都可以构建自己的产品-模型优化循环。他们讨论了 Cursor 如何通过将产品本身作为 RL environment 来优化模型，分析了 agent harness 与 environment 的关系，以及何时应该构建自定义 environment 来训练模型。Will 分享了他们与 RCI 等实验室的合作经验，Johannes 则介绍了 environment hub 的社区生态、Wordle 和 Wiki Search 等流行环境、网络安全环境的 sim-to-real 挑战，以及他们如何看待 RL 的效率问题与 Recursive Language Models 等未来研究方向。两人最后以「每家公司都是 AI 实验室」的愿景收尾，强调 institutional knowledge 的积累和模型定制化的重要性。</description>
     </item>
     <item>
       <title>2026年商业大亨模拟游戏前瞻</title>
