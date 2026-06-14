@@ -18,7 +18,6 @@
 - [非叙事游戏的叙事艺术](/episodes/game-developer/game-developer/): Game Developer Podcast · 2026-06-12 ([Markdown](/episodes/game-developer/game-developer.md))
 - [为什么致命一击永远不会来](/episodes/animal-spirits/animal-spirits/): Animal Spirits · 2026-06-12 ([Markdown](/episodes/animal-spirits/animal-spirits.md))
 - [SpaceX IPO 入门指南：史上最大上市公司的通俗解读](/episodes/my-first-million/my-first-million/): My First Million · 2026-06-12 ([Markdown](/episodes/my-first-million/my-first-million.md))
-- [All-In 最佳创意 Pitch 大赛：四位投资人现场展示顶级交易](/episodes/all-in/all-in/): All-In Podcast · 2026-06-12 ([Markdown](/episodes/all-in/all-in.md))
 - [睡眠工具箱：优化睡眠与作息时间](/episodes/huberman-lab/huberman-lab/): Huberman Lab · 2026-06-11 ([Markdown](/episodes/huberman-lab/huberman-lab.md))
 - [番茄价格四十年新高：一场霜冻如何引发全球供应链震荡](/episodes/odd-lots/odd-lots/): Odd Lots · 2026-06-11 ([Markdown](/episodes/odd-lots/odd-lots.md))
 - [住房种族隔离为何持续存在？](/episodes/capitalisnt/capitalisnt/): Capitalisn't · 2026-06-10 ([Markdown](/episodes/capitalisnt/capitalisnt.md))
