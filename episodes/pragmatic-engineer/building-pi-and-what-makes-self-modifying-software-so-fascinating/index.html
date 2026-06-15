@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目邀请 Mario Zechner（Pi 创建者）和 Armin Ronacher（Flask 创建者）探讨编码智能体的现状与未来。讨论涵盖了 Pi 的诞生故事——Mario 因不满现有智能体工具的复杂性和不稳定性，构建了一个极简但高度可扩展的编码智能体。核心话题包括：智能体如何因复杂性而自我削弱（添加的代码越多，context window 问题越严重）；AI 不感受代码库的痛苦，这导致缺乏重构动力；Armin 采访 30 多个工程团队的发现——PR 审查压力增大、代码质量下降、非工程师参与工程流程；MCP vs CLI 的权衡（MCP 适合企业认证，CLI 提供更好的可组合性）；以及「暗工厂」概念的批判——用大规模智能体军队生成软件可能带来垃圾代码洪流。两位嘉宾一致认为行业需要慢下来，把智能体用于自动化繁琐任务，而非追逐速度 KPI。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/pragmatic-engineer/building-pi-and-what-makes-self-modifying-software-so-fascinating/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="构建 Pi，以及为什么自我修改软件如此迷人 | 听阅"><meta property="og:description" content="本期节目邀请 Mario Zechner（Pi 创建者）和 Armin Ronacher（Flask 创建者）探讨编码智能体的现状与未来。讨论涵盖了 Pi 的诞生故事——Mario 因不满现有智能体工具的复杂性和不稳定性，构建了一个极简但高度可扩展的编码智能体。核心话题包括：智能体如何因复杂性而自我削弱（添加的代码越多，context window 问题越严重）；AI 不感受代码库的痛苦，这导致缺乏重构动力；Armin 采访 30 多个工程团队的发现——PR 审查压力增大、代码质量下降、非工程师参与工程流程；MCP vs CLI 的权衡（MCP 适合企业认证，CLI 提供更好的可组合性）；以及「暗工厂」概念的批判——用大规模智能体军队生成软件可能带来垃圾代码洪流。两位嘉宾一致认为行业需要慢下来，把智能体用于自动化繁琐任务，而非追逐速度 KPI。"><meta property="og:url" content="https://castnote.github.io/episodes/pragmatic-engineer/building-pi-and-what-makes-self-modifying-software-so-fascinating/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="构建 Pi，以及为什么自我修改软件如此迷人 | 听阅"><meta name="twitter:description" content="本期节目邀请 Mario Zechner（Pi 创建者）和 Armin Ronacher（Flask 创建者）探讨编码智能体的现状与未来。讨论涵盖了 Pi 的诞生故事——Mario 因不满现有智能体工具的复杂性和不稳定性，构建了一个极简但高度可扩展的编码智能体。核心话题包括：智能体如何因复杂性而自我削弱（添加的代码越多，context window 问题越严重）；AI 不感受代码库的痛苦，这导致缺乏重构动力；Armin 采访 30 多个工程团队的发现——PR 审查压力增大、代码质量下降、非工程师参与工程流程；MCP vs CLI 的权衡（MCP 适合企业认证，CLI 提供更好的可组合性）；以及「暗工厂」概念的批判——用大规模智能体军队生成软件可能带来垃圾代码洪流。两位嘉宾一致认为行业需要慢下来，把智能体用于自动化繁琐任务，而非追逐速度 KPI。"><meta property="article:published_time" content="2026-04-29T14:30:17.000Z"><meta property="article:tag" content="播客"><title>构建 Pi，以及为什么自我修改软件如此迷人 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"构建 Pi，以及为什么自我修改软件如此迷人","description":"本期节目邀请 Mario Zechner（Pi 创建者）和 Armin Ronacher（Flask 创建者）探讨编码智能体的现状与未来。讨论涵盖了 Pi 的诞生故事——Mario 因不满现有智能体工具的复杂性和不稳定性，构建了一个极简但高度可扩展的编码智能体。核心话题包括：智能体如何因复杂性而自我削弱（添加的代码越多，context window 问题越严重）；AI 不感受代码库的痛苦，这导致缺乏重构动力；Armin 采访 30 多个工程团队的发现——PR 审查压力增大、代码质量下降、非工程师参与工程流程；MCP vs CLI 的权衡（MCP 适合企业认证，CLI 提供更好的可组合性）；以及「暗工厂」概念的批判——用大规模智能体军队生成软件可能带来垃圾代码洪流。两位嘉宾一致认为行业需要慢下来，把智能体用于自动化繁琐任务，而非追逐速度 KPI。","datePublished":"2026-04-29T14:30:17.000Z","author":[{"@type":"Person","name":"Gergely Orosz"},{"@type":"Person","name":"Mario Zechner"},{"@type":"Person","name":"Armin Ronacher"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/pragmatic-engineer/building-pi-and-what-makes-self-modifying-software-so-fascinating/","isPartOf":{"@type":"PodcastSeries","name":"The Pragmatic Engineer Podcast"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/pragmatic-engineer/">The Pragmatic Engineer Podcast</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/04/29 22:30:17</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying">原始节目</a> </div> <h1>构建 Pi，以及为什么自我修改软件如此迷人</h1> <p class="episode-summary">本期节目邀请 Mario Zechner（Pi 创建者）和 Armin Ronacher（Flask 创建者）探讨编码智能体的现状与未来。讨论涵盖了 Pi 的诞生故事——Mario 因不满现有智能体工具的复杂性和不稳定性，构建了一个极简但高度可扩展的编码智能体。核心话题包括：智能体如何因复杂性而自我削弱（添加的代码越多，context window 问题越严重）；AI 不感受代码库的痛苦，这导致缺乏重构动力；Armin 采访 30 多个工程团队的发现——PR 审查压力增大、代码质量下降、非工程师参与工程流程；MCP vs CLI 的权衡（MCP 适合企业认证，CLI 提供更好的可组合性）；以及「暗工厂」概念的批判——用大规模智能体军队生成软件可能带来垃圾代码洪流。两位嘉宾一致认为行业需要慢下来，把智能体用于自动化繁琐任务，而非追逐速度 KPI。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Gergely Orosz</span> </div> <p class="person-description">The Pragmatic Engineer 播客主持人，前 Uber 工程经理</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Mario Zechner</span> </div> <p class="person-description">Pi 编码智能体创建者，奥地利独立开发者，曾在机器学习领域工作多年</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Armin Ronacher</span> </div> <p class="person-description">Flask Web 框架创建者，Sentry 前 10 年工程师，现从事 AI 相关创业</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Peter Steinberger</span>  </div> <p class="person-description">PSPDFKit 创建者，OpenClaw 和 Pi 早期使用者，奥地利开发者</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Nat Friedman</span>  </div> <p class="person-description">前 GitHub CEO，Xamarin 创始人，给 Mario 提供 GitHub Copilot 早期访问</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Miguel de Icaza</span>  </div> <p class="person-description">Xamarin 创始人，Gnome 项目发起人</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Linus Torvalds</span>  </div> <p class="person-description">Linux 内核创建者，开源协作模式的典范</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Cal Henderson</span>  </div> <p class="person-description">Slack CTO，提出「先做最笨方案」的工程哲学</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">David</span>  </div> <p class="person-description">Sentry 工程师，MCP 认证机制的支持者</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Charles Petzold</span>  </div> <p class="person-description">《Code》一书作者，Mario 推荐的计算机入门经典读物</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="嘉宾背景与入行经历">嘉宾背景与入行经历</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>Mario 和 Armin，很高兴能在播客上邀请到你们。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>谢谢邀请我们。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>谢谢。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>作为开场，Mario，你是怎么进入技术领域，最终开始做 AI 相关的东西的？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>这是个很长的故事，我们有多少时间？我是 90 年代的孩子，96 年有了第一台电脑。触发点是我喜欢电脑游戏。我们家算是工薪阶层，买不起 Game Boy、NES、超级 NES 这些东西。但我有个叔叔有一台 Amiga 500，我每隔一天就去他那里玩游戏。</p>
+<p>后来我父母跟我说，如果你去工作，攒钱就可以自己买一台电脑。实际上我爸会在正常工作之外去修车、去工地干活，这在欧洲很常见。两三年后他们说时机到了，带我到附近大城市的电脑店买了一台 486，就这样开始了。</p>
+<p>我一直很喜欢游戏，这也引导我接触了图形编程。后来在大学读书时很幸运地找到了一份工作，在一个应用科学组织做 NLP、机器学习相关工作，把研究成果应用到工业场景里。那就是我学到机器学习基础的地方，当时深度学习还没成为主流。</p>
+<p>2010 年左右我离开了这个领域，去旧金山加入了一家创业公司。后来又跟两个朋友在瑞典做了另一家创业公司，做的是 Java 到 iOS 的提前编译器，公司后来被卖掉了。之后我有了更多时间，但我一直关注机器学习的进展，因为确实很有意思。然后 GPT 出现了，就这样。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>Armin，你的起点是怎样的？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我的起点肯定不是工薪阶层。我父母经营一家建筑设计事务所，他们很早就采用电脑做 CAD 绘图，所以我最早的电脑是他们淘汰下来的旧机器。我第一台电脑虽然是更年轻的时候，但却是 386。很抱歉你听到这个。</p>
+<p>基本上我所有的电脑都没法正常运行游戏，因为他们用的是 Windows NT，当时什么都不支持。唯一的办法是在启动到 Windows 95 或 Windows 3.11 之前，先启动到 DOS，这样才能玩一些很老的 DOS 游戏，那时候已经有更好的东西了。正因为这样，我开始折腾 Quick Basic 和 Turbo Pascal，买了好多相关的书，这就是我学习的起点。</p>
+<p>说实话我一开始真的很不擅长，但我觉得很有趣。如果你持续做下去，就会变好。2002 或 2003 年时我经常用 Delphi，那是 Turbo Pascal 的可视化版本。有人给我展示了 Linux，但 Delphi 在 Linux 上用不了，于是我找到了 Python。</p>
+<p>Ubuntu 2004 年发布，它是风投支持的项目，但创建了本地社区。我跟朋友一起创办了德国 Ubuntu 协会，运营了一个叫 Ubuntu Users 的在线社区四五年的时间。因为 Ubuntu 很流行，社区增长很快，然后出现了扩展性问题，这就是我进入 Web 开发的原因。</p>
+<p>为了构建这个，我想做一个模板引擎、一个 Web 库，最终我把这些东西打包在一起，做了 Flask 框架。它很流行，现在也还是很多人喜欢用的东西。2013、2014 年我在伦敦做了几年游戏开发，之后回到开源领域，在 Sentry 工作了 10 年，去年四月离开去尝试其他事情。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你们两个人都来自奥地利，实际上你们现在也住在奥地利对吧？你之前在 Sentry 工作，也做过游戏。还有第三个人，Peter Steinberger，也来自奥地利，他刚刚也在这个播客上。你们是在哪里认识的？我最近看到你们在 OpenClaw 和 Pi 开始之前一起出去玩的照片，三个人在实验、玩 AI。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我觉得我们两个是在网上认识的，Reddit 上？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>实际上我大学时见过你一次，但那时候你没认出我，我当时还没出名。但我们算是抽象地在网上认识了。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>后来我们在维也纳见面，我们在网上互相大吼，但是以一种很可爱的方式，不怎么对立的方式。虽然我们在生活的很多领域想法不一样，但交流是有礼貌的。</p>
+<p>Peter 是六度 Steinberger 的概念。我在我住的城市有一个办公室，一个公司给我免费办公空间，条件是给 CEO 当导师。这个公司和 Peter 的公司 PSPDFKit 有业务往来。Peter 来 Graz 的办公室，那是我们第一次见面。同一年我们在伊斯坦布尔的一个会议上也碰到了，整晚待在一起，那就是一切开始的地方。</p>
+<h2 id="从怀疑-ai-到拥抱-ai">从怀疑 AI 到拥抱 AI</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>你们两位是怎么从最初对 AI 工具持怀疑态度，到最终认为这些东西真的很有意思的？在 2022 年时，你们都已经有十多年构建复杂软件的经验了。你们的第一反应是什么？然后是怎么转变到觉得这东西确实有意思的？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>对我来说，2022 年时 Copilot 已经出来了，比 GPT 更早。我之前创业公司的东西让我认识 Nat Friedman 和 Miguel de Icaza，因为他们收购了我们做 Java 编译器的公司。Nat 后来去了 GitHub。2022 年他私信问我要不要 GitHub Copilot 的早期访问权限。</p>
+<p>我当时说我不怎么在乎，觉得这东西不会有什么前途。他说这是未来，你得试试。所以我试了一下，确实很糟糕。但当 GPT 出现，尤其是他们开始提供 API 访问后，我做了很多项目，研究什么能做什么不能做，不一定是在编程领域。</p>
+<p>当他们有了 tool calling 或 function calling 功能后，变得很有意思。但要到 2024 年 10 月左右才真正有用。那是编码智能体开始变得有意思的时候。2025 年，Claude Code 团队发布了 Claude Code，引入了 agentic search，基本上就是给智能体一个方式去遍历你的文件系统、读取所有文件。</p>
+<p>这彻底改变了局面。之前像 Cursor 用索引、AST 相关的东西，这些都不重要了。这是给智能体访问你的文件的权限。对我来说，这才是关键点。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我的路径差不多。Copilot 出来更早一些，GitHub 有一个维护者计划，我有早期访问权限。我当时感觉到 Copilot 会很有意思，但不是现在这样的方式。</p>
+<p>我在开源领域很长时间，他们用开源数据做训练，这会很有争议。我没想到它会有生产力。我记得当时在试探它，比如问它会不会吐出 GPL 代码。有一次我让它吐出了 Carmack 的逆平方根函数，那个函数有很特别的名字所以很容易被召回。</p>
+<p>我发现如果用某种方式 tab，它会继续输出许可证文本，但完全是错的。它来自 GPL 的 Doom 源码，但它却标注了一个随机的 MIT 许可证。当时我发了一条推文说 Copilot 做错了事情，那条推文变得很火。</p>
+<p>通过这条推文和其他事情，我开始意识到实验室里确实有真正的 AI 进展。我没学过 AI，只知道有 AI 寒冬然后什么都没发生。但有些公司的 CEO 相信这会有发展。我开始用 API 尝试各种东西，比如能不能做 bug 修复，开始变得有兴趣，但还感觉不到世界会改变。</p>
+<p>关于吐出开源代码这件事，我改变了立场。我很多年的立场是希望大家分享东西，人类进步是建立在彼此之上。我喜欢这种海盗式的分享知识的做法。我的理想版本是版权几乎不存在或非常有限。所以我不在乎它吐出 GPL 代码且不标注来源。如果结果是版权被完全摧毁，我也没问题。</p>
+<p>但有趣的是它一开始确实创造了许可证违规的问题。我想看看会涌现出什么样的混乱。到目前为止，涌现出的是我们对版权系统的一些假设被挑战了，我们现在都在忽略这些问题，因为我们想先制造混乱然后再重新监管。</p>
+<h2 id="采访-30-多个工程团队的经验">采访 30 多个工程团队的经验</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>说到今天，你最近作为新创业公司的一部分，跟大约 30 个不同的工程团队聊了他们如何在公司内部、团队内部使用智能体。从大公司到创业公司，你学到了什么？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>很多发现其实并不意外，就是当人们有假期时会花更多时间尝试这些工具。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你跟了很多人聊对吧，从 Meta 这样的创业公司到各种不同的公司？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>各种各样的人，从欧洲的老牌企业比如 Siemens，到关键领域的公司。当人们有假期时他们才会真正去尝试，当技术负责人来说你现在得用 Cursor、用 Claude Code，其实你不真正理解。你需要花两到三周时间才能真正理解。</p>
+<p>我离开公司后有大量空闲时间，从四月到十月我可以深入这些东西。我觉得像猫薄荷一样让人上瘾。但在公司内部，感恩节、夏天、圣诞节期间，人们会尝试，而且那时候经常有免费额度。圣诞节之后，超过一半的公司里使用量爆炸了。</p>
+<p>使用量爆炸的方式就是质量下降了。不是因为人们想写更差的代码，而是因为这需要努力才能保持质量。去年夏天我们在创业公司生态里已经看到了。你看 YC 的创业公司，很多人把代码放在 GitHub 上，你能看到 plan.md 文件、所有代码都标注是 Claude 写的，那种 vibe coding 的方式。</p>
+<p>工程团队和公司现在对此的反应很有意思。挑战之一是审查 PR 变得更难了。PR 变得越来越大、越来越频繁，而且心理负担更重。PR 里的很多代码不是工程师会写的方式。作为工程师，你会想为未来的自己负责，但智能体不在乎。</p>
+<p>我讲一个故事。我在 Xbox One 发布时做了一个游戏，那是个固定发布日期的项目。我参与过 Halo Master Chief Collection，有个匹配组件。那是所有人上阵的情况，我们要去清理人工制造的垃圾代码。系统有太多状态，我们叫它 emergent state machine，16 个布尔变量组合成几何级数增长的可能状态。</p>
+<p>这就是智能体代码的感觉：理论上应该只有清晰定义的几个状态，但现实中它会做各种恢复处理，比如配置加载失败就捕获异常然后加载默认配置。这让代码变得更复杂，因为它不是正确失败而是在恢复并进入更多失败状态。这让代码更难工作，因为你也没办法让智能体反思，它会说这可能是需要的。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我觉得比你描述的人类制造的复杂系统还要糟糕。因为智能体有时会有令人惊叹的时刻，输出完美简洁的代码，就是你需要的代码。你作为驾驶员工程师看着觉得太棒了，我可以不用管了。</p>
+<p>两分钟后，另一个智能体在这个窗口里运行，输出最糟糕的垃圾。但你可能注意不到，因为你现在陷入了自动化偏见，觉得你的智能体工作得很好。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你觉得这可能是人类的偏见吗？因为入职新工程师、新毕业生，你会审查他们的代码。如果代码很差，你会仔细审查下一个直到他们写的代码跟你一样。这需要六个月或一年。然后你可以信任这个人。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>但智能体没有这种学习。智能体不会学习，你可以在 system prompt 里放很多东西、构建记忆系统，但那不是人类的学习。人类会学习，而且人类会感受痛苦。我认为这是人类的决定性特征。</p>
+<p>回到你说的事情，如果痛苦太大，人类就会被激励去解决痛苦的根源。在代码库中，根源通常是糟糕的接口、糟糕的复杂性，你想消除它因为你没法维护那个系统了。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这就是为什么资深工程师总是有需求的原因吧？CEO 认为资深工程师就是把事情搞定，但实际上，有效的资深工程师都有战伤，他们被烧伤过，他们感受过痛苦，他们看到过技术债务螺旋的结果。所以他们做出那些决策来避免问题。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我个人认为，一个好的工程师是经常说不的工程师。说我不需要这个、不需要那个。这能保持复杂性低。如果你用智能体，恰恰相反，你说是的我想要这个那个还有这个，因为我不需要自己打字、不需要思考。我只需要给机器一个提示，它就输出一个看起来差不多是我想要的东西。这就开始了所有问题。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>好的工程是知道你要做出的权衡。有时候正确的解决方案实际上是你大学里学到的你不应该做的那个。Cal Henderson 曾经说过，先做最笨的解决方案，直到它不行了再换。因为如果你一开始就做正确的、完美的方案，你创造的复杂性会在规模上杀死你。</p>
+<p>工程师通过战伤学到这些，但如果你没有那些经历，很难正确地论证。这个学习过程给你权威去说服其他工程师应该这样做。但智能体现在给你世界知识访问。资深工程师说不之后，48 小时后初级工程师说我问过智能体，我已经有证据为什么不应该这样做。</p>
+<p>现在产生了新的压力，这有点像人们带着 ChatGPT 打印输出去找医生说机器说了你得这样做。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>基于你观察到的，资深工程师可能更难对产品经理或初级工程师说不？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>更糟糕，因为产品经理现在会发送 pull request 并且自动合并。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>非工程师参与工程流程现在是个事情。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>问问 Gergely 这事怎么样。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>Armin，你的体验是什么？是你自己的公司还是跟别人聊天？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我们很小，我的联合创始人有时会给网站发博客文章。我跟别人聊过，营销团队突然在网站上做事，销售团队创建越来越复杂的销售演示，这些东西会落到 GitHub org 上。最有趣的一个例子是销售演示构建了一个不存在的产品功能，但没人发现。这是全新的东西。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>这很赋能。如果你的整个组织里每个人都能参与某种形式的软件创建，以前做不到这些。设计师能在 Figma 里设计东西，但可能没法把它变成可点击的演示。产品经理想尝试一个功能但又不想浪费工程师时间，现在可以做了。</p>
+<p>问题是人们现在太关注于所有人都能做所有事情了，忘记了你还需要流程来控制这些东西。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>整合部分是最难的。Peter 提出了 prompt request 的想法，我越来越喜欢这个想法。一旦你演示完，我不再需要你的代码。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>回顾一下，prompt request 是他说他不喜欢收到 pull request，宁愿看到提示，因为他会运行提示或调整它，生成符合他自己风格的代码。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>对我来说，不只是我想看到提示，我想知道它要做什么。实际上很多时候你并不完全知道你一开始想做什么。创造的行为本身会澄清你真正想做什么。这部分很有价值。</p>
+<p>很多时候方案和代码不是有足够经验的工程师会做的。所以我不是要你的提示以便重新让智能体生成稍好一点的版本。而是我们知道要构建什么之后，可能我更快从头开始。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我其实不完全同意 Peter 的我只需要你的提示。我确实觉得看到糟糕的实现有价值。如果收到一个 pull request，大部分 Pi 仓库的 pull request 是智能体写的没有太多人工干预。我知道这会是垃圾。但这是有价值的垃圾，因为有人至少花了一点时间指示智能体创建这个 pull request。</p>
+<p>我可以看到他们想要的东西的糟糕实现是什么样，我不需要浪费自己的时间去尝试。有人已经试过了，天真的智能体版本。这节省我的时间。不是说我喜欢智能体的 pull request，它们很糟糕我现在会自动关闭它们，但它们有价值。不只是提示。</p>
+<p>这是指数级的，一切的速度。当然最终是 sigmoid 因为热力学限制。但我觉得我们会比之前的循环更早发现这是个坏主意。这是好消息。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我觉得有趣的是，我读了一篇关于英国工业革命如何改变纺织业的精彩文章。核心观点是每次管道前端被优化，就会创造下游的激励去制造某些东西。一开始如果你能更快织布，最终你需要能以更快速度纺纱的纱线。最终整个链条的瓶颈都在移动。</p>
+<p>最终最大的瓶颈变成了我们工程领域下一个会遇到的瓶颈：以前你做一件衬衫，如果不喜欢，去找做的人他会帮你修。现在如果衬衫不好，没人关心过程中谁毁了衬衫。你直接换一件新的。责任从链条里的任何人转移到了整个工厂作为一个整体不再承担责任，因为我们把整个事情商品化到不需要这样做。</p>
+<p>如果你用工程的角度，运营公司和服务的一个重要部分是可靠地运营。所以你有事故复盘来搞清楚过程中哪里出错了。现在机器以 10 倍速度产出东西，责任机制没法以同样方式扩展，因为机器不能承担责任。</p>
+<p>我不确定有没有一个未来可以抽象掉人类失败，让我们运营工程的方式不再关心谁签批了 pull request。我们自动化创建衬衫的方式。我还没看到。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我们软件工程师或 IT 人低估的一点是世界有多复杂，每个角落里有多少人类的东西。我们想哦现在能自动化那件事了，现在能自动化每一个知识工作环节。但我们软件工程师太不擅长成为领域专家，看不到工作流里所有非机器的部分。我们又犯了同样的错误。</p>
+<p>我们看到模型在做惊人的事情，我不否认这一点。对我来说，这是惊叹。我 2000 年代的几乎所有研究现在都没用了，因为 Transformers 能做所有事情。但我们过度扩展到一切，像我们软件里总是做的那样。就像教育技术，我们把平板放到教室里，现在教育解决了因为有电脑了。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>实际上我听说瑞典把平板从教室里移走了。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>结果发现如果你做科学调查，把平板扔到教室里然后希望最好，结果是最好的情况也很糟糕。所以对我来说，过去两三年的最大教训是炒作很糟糕，因为它让一切去人性化。我不想参与那个马戏团。</p>
+<h2 id="pi-的诞生故事">Pi 的诞生故事</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>说到不想参与马戏团，让我们聊聊 Pi。这是一个很流行而且极简的编码智能体。能从背景故事开始吗？为什么在有其他智能体 harness 的时候你决定构建 Pi？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>因为它们不够好。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>展开说说。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>好的。我是 Claude Code 的信徒，因为他们通过发明 agentic search 创建了整个流派。他们不是第一个有先驱想法的，但他们第一个打包成真正有吸引力的产品。那时候很适合我的工作流。它简洁、可预测。LLM 本身有随机性但周围的东西干净整洁好理解。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你当时是 Claude Code 的快乐用户？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>超级快乐，我在传教推广它。但后来团队开始自己使用，获得更多 token，提高速度和团队规模。随之而来的是更多功能和更多 bug。我喜欢简单稳定的工具，可以依赖的。所有确定性部分应该尽可能稳定。但 2025 年夏天 Claude Code 不是这种体验。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>是 bug 还是意外行为？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>他们会拿走你对 context 的控制。会在背后注入东西，这是坏事。然后你之前能用的工作流停止工作，因为有个你在 UI 里看不到的系统提醒会修改模型行为。他们也会对 system prompt 做这个。</p>
+<p>我 reverse engineer 了 Claude Code，2025 年夏天我解混淆了一个 JavaScript 文件，构建了一个小服务来跟踪 Claude Code 里 system prompt 和工具定义的演变。每次发布都在改动东西。这干扰我的工作流，我不喜欢。如果我投入一个开发工具，我希望它像锤子一样稳定可靠，我不希望锤子每天都在不同地方坏掉。</p>
+<p>我不是批评团队，我觉得他们有些是我网上认识的好人。他们只是在快速迭代，这没问题。我们需要有人去走全速前进的路。但我不想用那样的工具工作。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>听起来像是快速前进和破坏东西的模式，破坏东西这部分不适合你。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>对。然后我看了替代方案，AMP 和 Droid 大概那时候出来，很早。我看了一下，它们很好，但也很贵。因为它们没法使用让 Claude Code 吸引人的一点——订阅模式。这在大企业里有用，但对车库里的折腾者没用。</p>
+<p>虽然我在财务上不再是车库里的折腾者，但我还是跟那个社区有共鸣，我想用我的订阅来做点什么。所以我看了开源替代方案，找到了 OpenCode。但它也在背后做我不喜欢的事情，比如在一定的工具结果 token 输出后裁剪结果，或者每次模型编辑后就问 LSP server 有没有错误。</p>
+<p>我们程序员怎么工作？我们进入一个或多个文件，一行一行编辑，然后才看错误结果。但 OpenCode 会在每次编辑调用后注入诊断信息。这不聪明，因为你一直在告诉模型你有错误你有错误你有错误。模型会说我知道我知道我还没做完。不太好。</p>
+<p>总之，OpenCode 也不适合我。我还得 fork 它来修改它，我觉得不应该需要这样做。所以我就想，有多难？我构建自己的小东西。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>然后你的小东西非常极简。Pi 用什么？基本组成部分是什么？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>基本组成部分是我自己对所有 LLM 提供商 API 的抽象，因为我不喜欢 Vercel AI SDK 的原因。Armin 后来也写了一篇博客文章说这个。它确实很多人用，但不符合我的老派抽象感觉。</p>
+<p>我构建了一个抽象，然后构建了一个通用智能体循环的小抽象，带工具调用和流式传输等等。构建了一个不会闪烁的 TUI，然后把所有东西组装成一个像 Claude Code 或 Codex 的编码智能体。就是这样。</p>
+<p>可扩展性来自这个极简核心有很多 hook 点，你可以用简单的 TypeScript 模块 hook 进去。这加载到同一个 node 进程里，让你做比如给 LLM 提供自定义工具、做自己的 compaction 实现、完全改造 TUI 本身。你可以修改 TUI 里的所有东西。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以你可以要求 Pi 修改自己，因为有扩展点，它可以写代码扩展自己。这就是你说的在 OpenCode 你需要 fork 来修改，但它没有这个？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>它有插件系统，但没有很多扩展点。很僵化。我想他们最近改了，现在可能更开放了。我没跟上，可能现在好了。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>Pi 很极简。我理解它有的工具是读、写、编辑、bash。这就是你需要的全部？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>就这些。然后你可以让它变成你自己的，比如人们会添加什么？</p>
+<p>Pi 没有 MCP。人们就让 Pi 把 MCP 支持构建进 Pi。Pi 没有 plan mode。Armin 去做他自己的绝妙定制 plan mode。我没有 plan mode。但他有大概五个 plan mode 的实现直到他意识到 plan mode 完全没用。</p>
+<p>其他人就是折腾 UI 让它变成自己的，比如编辑框的视觉风格，都是一些琐碎的东西，更多是装饰性的。还有人把它改造成一个用于开放权重模型的完整 RL 环境，把 Pi 作为智能体作为 RL 执行环境的一部分。你可以做任何事情。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>吸引我的是自定义工具部分。圣诞节期间我有了时间，我尝试构建其他东西。Peter 十一月跟我说他现在可以 vibe 着看代码了。我说我想构建一个我不看代码的东西，我想让它不像 slop，我想让它写出来像我自己写的。我想做一个游戏。</p>
+<p>我开始了基本的 Pi，我说我想做一个游戏，但实际上我们做一个游戏之前，我想让你把代码库设置成你能验证你做的改动，而且我也能看到。一个双轨的方式。我想在循环里，但也让智能体能自我验证。</p>
+<p>结果就是它给自己构建了一些调试工具到游戏里，可以截图、运行模拟、输出状态然后再读取。Pi 可以在 TUI 里显示图片。我添加了这些东西，可以快速点击截图，或者 Pi 的一个很好的功能是可以回退到对话里的早期状态然后在对话内分支。</p>
+<p>因为有截图这些很快变得 token 不高效。但 Pi 处理截图很好，因为 OpenClaw 的聊天里有很多截图，而 OpenClaw 用的是 Pi。拥有这个让我觉得很神奇，把问题当作我不知道正确的工程方法但很清楚部分是我应该在循环里，我们可以找出具体针对这个问题的做法。</p>
+<p>对于 Web 项目和电脑游戏以及其他东西，很多都归结为类似的东西：智能体现在跟我的程序交互，应该用最优的方式，我想跟它一起交互，整个体验应该对作为人类的我和对智能体都尽可能不困惑。我发现看着这个涌现出来很迷人。</p>
+<h2 id="通用工具与专用工具的权衡">通用工具与专用工具的权衡</h2>
+<p><strong>Mario Zechner</strong></p>
+<p>我在建筑工地赚了很多钱，你不会用一个锤子解决建筑工地上所有问题。你有螺丝刀、锤子、钻头等等。工程里也一样。我不会用同一个工具做每个任务。现在如果用智能体，我不想要一个通用智能体做每个任务。我想要一个专门的东西，我知道对于那个特定任务性能是最好的。</p>
+<p>因为 harness 的构建方式让智能体在那任务上最有效。这就是我想用 Pi 实现的。不过我可能是 Pi 上改动最少的人，我只有两个扩展，很琐碎。就是如果你看到一个 URL 像 GitHub issue 或 pull request，通过 GitHub API 拉下详情，在编辑器上方显示一个小 widget 给我 issue 标题、作者账号和链接。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>听起来你是为在 Pi mono repo 上工作做了自己的 Pi。如果你回去做游戏，你会有不同的……</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我没想到你可能想为不同任务用不同的 harness。我想我们一般假设大多数开发者在工作上做自己的主要事情，可能有一个副业项目随便实验。但也许这是一个新东西，我们以前不可能为项目定制工具。</p>
+<p>我的直觉是我们走向的软件会根据用户的愿望和需求自我修改。如果给智能体足够的自由度去修改自己，他们现在能做到。对我来说 Pi 是我进入这种自我可修改、可塑形东西的第一个尝试，只是编码智能体领域，但我觉得这可以扩展到所有知识工作。</p>
+<p>下一个计划是有一个替代 TUI 的用户界面，因为 TUI 明显有限。最好的替代栈是 Web，因为它无处不在可以做任何事。一旦构建出来，就变得有意思了，因为你不再受限于终端的基于行的渲染。可以做非常有趣的东西。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>我了解 Pi 的一个原因是 OpenClaw 怎么用 Pi。这是怎么开始的？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我们在一起、互相评审博客文章、交换想法。十月我开始构建 Pi，Peter 开始构建 VarRelay，他的 WhatsApp 助手。他需要一个智能体 harness 可以复用或复制。一开始他克隆了 Pi 叫它 Tau 然后修改。但后来他厌倦了维护那个，所以他说我就用你的东西。就这样。</p>
+<p>如果不是 OpenClaw 我就不会有 compaction。我专门构建了那个因为 Peter 在聊天里哭着说他需要 compaction。我说好吧你得到 compaction。但我会告诉所有用户不要用 compaction，对你不好。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这就是开源软件互相构建的美妙之处。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>有好处也有坏处。现在我要享受所有 OpenClaw 实例认为 OpenClaw 的 bug 是 Pi 的 bug。它们自主给我发一堆 issue 和 pull request，用户可能都不知道。我要在我的开源里处理这些。这是个负面副作用。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以你真的是这事的承受端。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>就像 OpenClaw 本身也是，他们面临这个问题更大。现在有几万个 issue，他们没法控制。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>作为维护者你怎么处理 OpenClaw AI 自主在你的 repo 上开东西？你构建工具来对抗并关闭它们？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我为 OpenClaw 的构建了一个工具，把 issue 和 pull request 嵌入到 3D 空间，这样我能看到智能体发送的相似东西的聚类。然后我可以批量选择并关闭。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你真的有 3D 可视化？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>OpenClaw 作为背景，十二月到二月中爆发，这个爆炸几乎直接转化到我刷新这个 repo 的 pull request 数量在涨。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我们尝试贡献帮助 Peter 一点，但我立刻放弃了。我不知道怎么在那里做有用的事情。我看着觉得这是我完全不习惯的软件工程类型。我会修两个东西花一小时，然后五分钟后另一个 Clanker 来把我修的东西恢复了。这不是我工作的方式。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>能聊聊 Clanker 这个名字吗？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>Clone Wars，星球大战。我从来没看过，但我朋友的孩子们在我们访问时会看很多，所以我通过渗透获得了知识。有一个机器人军队，Jedi 会叫它们 clankers，因为它们移动时会 clank clank clank。这就是这个名字的来源。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以 AI 就是 droid。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>回到怎么处理智能体 pull request 和 issue 的涌入，我就自动关闭每个 pull request。人类还是智能体不重要。如果我没跟你之前有接触，我的 GitHub workflow 知道这个，因为如果有的话，你的账号名会在我的 Git 仓库的一个文件里。</p>
+<p>如果你不在这个文件里而你发送 pull request，你的 pull request 会被自动关闭。然后我的小 workflow 在你的 pull request 下面发一条评论说非常感谢贡献，真的感谢。能不能请你用人类的声音开一个 issue，不超过一屏文字。如果我喜欢，我会打看起来不错，然后你的账号名会被加进文件。下次你发 pull request 就通过了。</p>
+<p>结果智能体看不到我的 GitHub workflow 在 pull request 下面发的评论。所以这是一个很好的过滤器来过滤智能体并保持人类安全。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>有意思。我想知道这会不会是一个不可避免的未来，我们需要一种方式来区分这是来自有意图的人类还是 AI。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>如果真的是一个好的 PR，来自机器其实没问题。有趣的是 Pi 和 OpenClaw 累积的 pull request 实际上背后没有意图性。发送机器的人其实没那么关心。或者根本不知道。</p>
+<p>我做了很多年开源，之前也有区别，有人发 pull request 或 issue 说请修这个，但其实没关心到回复问题的程度。这不罕见，你不需要真正修但你需要关闭它因为可能还有有用输入但那人不够关心。</p>
+<p>现在 pull request 更糟糕，来得太快很多都没法合并而不要人工解决冲突。而且没有背压机制，因为我作为人类看到有 500 个 pull request 打开我可能不会贡献这个了因为至少我会让情况更糟。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>之前开源里有人会发 issue 非常傲慢说如果你不修我的小问题你就是最糟糕的人，但那可以处理。Pull request 是特殊的因为需要人类投入相当多时间才能产出。现在没了。你只需要有人说这应该简单，智能体请做这件事不要犯错，发送到这个仓库。这不会发生。</p>
+<p>所以我们需要瓶颈。我不需要验证你是人类。我只需要一个瓶颈让我作为人类能处理涌入的东西。为了让 Pi 不退化成一堆垃圾，我还是相信需要我和其他有能力的人至少审查重要代码。为此我需要瓶颈，否则我处理不了。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>这是热力学第二定律。一切都会退化走向混乱，你需要投入额外能量来避免这个结局。如果你不再看代码库，人们不再感受痛苦或不再有克制，issue 也很有意思因为一方面有人做调查发你描述可以是好的也可以是坏的，但它们看起来很像。</p>
+<p>需要相当多能量来区分一个好的和坏的 AI 生成的 issue request。不幸的是大部分不太好但有些其实不错。这也很奇怪，所有都很奇怪。我真的不知道开源的未来会怎样。</p>
+<p>很多开源成功是因为人们在难题上合作，他们会聚在一起说我们需要一个好数据库，所以我们把所有能量投入到构建好数据库。开源的价值来自有一些难题我们把能量放在一起尝试解决。现在感觉开源变成扔东西上去了。</p>
+<p>让我特别生气的是人们，特别是很多现在的 authentic engineering 是构建更多东西给 authentic engineering。就像衔尾蛇。我看到这条推文说我解决了问题 XYZ，这是我的解决方案。你点进去，它才 48 小时老。那人可能从来没用过他们构建的东西。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我建议观众看看 Armin 过去一年的 GitHub 账户发生了什么。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我构建了很多这些东西，但我不会上 Twitter 说嘿我解决了问题。我的 GitHub 账户上有一堆 vibe slop，我希望我能标记得不一样因为可能有一些价值在里面。但除非这个代码库一年一年半后还在而且还有人用，这个效用实际上没有被验证。</p>
+<p>GitHub 有很多标记和指标显示这种爆炸性增长。如果你找一个其他数字来看有多少被创建的东西真的变成基础性的、能支撑开源社区的、能真正交付惊人规模价值的东西，我们实际上还没有创造很多 Vibe engineered 的项目变成那个。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>我喜欢你提到的能量和开源一直怎么运作。想想 AI 前的时代，Linux，最成功或最广泛使用的开源项目。它有能量和结构。人们带着意图进来想加东西。有一个流程。每一层有人类信任。有一个金字塔。最终每个改动请求上一层。最终 Linus 做裁剪。</p>
+<p>很多能量，很多意图，很多人类。总是关于人类能量。现在突然有这 AI，只是 token。现在谁知道补贴多少，只是机器在做事。然后它们创造看起来像人类能量的东西。很难区分。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我不同意。我不觉得开源改变了很多。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>数量变了。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>这只是数字。真正有用和维护的项目数量可能没怎么变。有特定比例的新开源项目存活超过两周，这一直是这样。现在我们只是有更多两天后就死的项目。但我们还是有同样数量的长期可行的项目，因为有真正关心维护东西的人、构建人类社区、围绕项目构建生态。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>你不是 mold book 的信徒？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>不是。Meta 搞出来的，超级有用。我觉得归根结底我们其实不需要恐慌，因为除了我现在能以光速生成代码这一点，对我来说构建开源项目不只是代码，还有周围的社区、精神、生态，什么都没变。变的是机械部分。</p>
+<p>我需要瓶颈来处理指数增长的智能体 pull request 等等。GitHub 本身压力很大，现在不只是人类锤他们的基础设施，现在是几百万 OpenClaw 实例锤他们的基础设施。每个人抱怨 GitHub 崩溃。我觉得他们做得相当好了。从圣诞节开始这就是基本就是 OpenClaw。</p>
+<p>所以我更乐观一点。我们只是处在乱搞然后发现的阶段，每个人都想让 token 变成 KPI 就像以前代码行数是 KPI。我们见过这个了。</p>
+<h2 id="复杂性是智能体最大的敌人">复杂性是智能体最大的敌人</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>说到不变的东西和乱搞然后发现，你写过一条推文或某处说你最大的敌人是复杂性，也是你智能体的最大敌人。聊聊这个？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>很简单。如果我有 600k 行代码，我的智能体最好能在大约 200k token 的 context window 里有效工作。它能看多少代码？三分之一吧。如果你能把任务相关的所有代码放进 context window，大概没问题。</p>
+<p>虽然那是另一个问题，信息检索问题，没有解决，agentic search 也没解决。就是，你确定智能体找到所有它需要找到的相关代码来完成任务吗？这也是垃圾代码来源之一，因为它没看到所有它需要看到的东西。</p>
+<p>假设最好情况信息检索解决了，所有东西放进 context，智能体做得好。这不是我们生活的现实，因为智能体现在输出这么多代码它们自己在新任务上都不可能读进 context 了。它们填满自己的 context window。它们添加的复杂性是它们自己最大的敌人，因为最终代码库会太大太复杂太互联，智能体技术层面上没法摄取所有它需要的 context 来做新任务。</p>
+<p>我要指出智能体从互联网和我们这里学到了所有这些垃圾，因为互联网上是我们所有的旧代码。虽然有明珠，但也有很多糟粕。我们有无数 GitHub 项目，那些非常精心维护和写得好的开源项目相比之下很少。机器学习模型会收敛到不是最简化而是平均值。平均值是什么？不是 handful 的优秀工程项目，而是互联网上所有的垃圾、cargo culting、追逐潮流的东西。这就是我们让智能体帮我们做所有事情时得到的。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以我们有这个问题：事情变得更复杂，拖慢智能体，影响质量。Armin 现在你构建自己的创业公司，用智能体工作，它们会有这些问题。你怎么处理生成代码、构建产品、平衡质量、技术债务、复杂性？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>很糟糕。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我们在应付，不是处理。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我确实有这个在博客里写过，肯定也在会议幻灯片上。四月到十月这段时间我非常享受，因为我觉得我能做那么多，而且世界还没有习惯一切都得以十倍速度移动。</p>
+<p>有一段时间我们做了 VibeTunnel，感觉非常有趣。我有时间陪孩子玩，我就在手机上提示一点，感觉很好。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>VibeTunnel 是你可以用手机设置，跟机器上的智能体对话，当时没那么容易？</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>基本上就是一个远程终端。我们没做太多东西，但它有一种快乐的氛围。我知道我在电脑上花太多时间，但没觉得有压力。现在感觉像我们集体感觉一切都得发货更快、迭代更快、期望的保真度和所有东西的基准都得更高。</p>
+<p>现在感觉非常有压力，即使在创业公司里，因为你不能做最斯多葛的人在世界上，它还是会影响到你。我正在慢慢学习处理自己的情绪来应对这些，但我发现非常困难，因为我习惯事情以某种方式工作，然后我感觉太陷入陷阱了，按照我通常不会做的方式给机器做事情。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>你后悔的。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>确实是智能体后悔。坦白说，现在有一点后知后觉的力量，我学到一些我希望在十一月就学到的东西。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>告诉我们。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>很多是认识到如果你正常情况下有一个背频道给你或其他工程师。有一种代码库不对劲的感觉。现在改动更难，复杂性你看到 pull request 的复杂性在涨，但如果你橡皮印章通过，那背频道在哪？这机制、这背压、这代码库里的摩擦，你跟智能体工作时感受不到。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我觉得有一种方法可以衡量。如果我扫描我从开始到现在在项目上的会话，我觉得脏话的频率在增加，因为智能体开始更多搞砸，因为它自己没法处理它添加到项目的复杂性。我真的想知道这是否可衡量，因为我在大多数项目里现在感觉到了，骂人变得很多。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你提到了软件里的摩擦。你没说技术债务，没说复杂性。什么是这个摩擦？因为我不记得我们 AI 前讨论过这个。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我发现这有点讽刺和悲伤，但我不会说名字。有一个我认为至少部分是工程相关的事件，一家公司推送了一个配置改动最终导致安全问题。事情总会发生，但我看到那个公司标签的社交预览，标签是 ship without friction。</p>
+<p>这让我停下来了。作为工程师我们以前说你要去掉所有东西让你开心地发货。但总有改动你要真正思考：你想删数据库吗？你想合并这个可能锁表的迁移吗？偶尔有些时刻你要真正思考，人们创建了清单、机械门槛你要确认某些东西。</p>
+<p>有某些东西我们过去会放进流程，特别是你运营 SaaS 公司，放东西进去来减慢事情。在一些最好的工程团队里，为了让一个服务成熟，你要定义 SLO、定义期望。如果你的服务应该是关键的，还有其他东西在这棵需求树上解锁。</p>
+<p>很多工程师觉得这是官僚主义。但现实是如果你正确做这个，它节省时间让你更快乐。你不会凌晨三点醒来。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所有这些都很有用，就是故意注入摩擦来减慢事情。最简单的例子是任何有一定规模的公司，你基于关键性的分层服务，最高层软件需要两三次代码审查或总监批准来做配置改动，这都减慢但是我们知道这是故意的。通过添加这摩擦我们想让你思考我要推进这摩擦在时间投入或努力或需要论证事情上吗，让你思考。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>如果我知道最终效果是要通过这整个链条的代码审查，我真的想加这东西到代码库吗？我们回到对自己说不来避免经历那个流程的痛苦。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>然后当你有信念、有支持、也有信心时承受那痛苦。所以最高层服务总监要签批时，你第一天加入不知道上下文，你知道那是很大的请求，你会先社交化、获得资深工程师认可说这是正确的事，你会跟他们一起走。回到人类动态。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>事情是有非常微妙的平衡。你不想摩擦只是偶然的糟糕开发者体验造成的。有些东西看起来一样，它们是故意但可能没有足够文档化。但现在有这种感觉去掉所有摩擦让智能体非常自主让你能同时运行很多个。很多来自这想法。这些东西其实相当慢。你真正节省的时间来自并行性。</p>
+<p>某处有这个陷阱。我觉得现在更有一点经验在管理这陷阱，但我也没有解决方案。我也不会说有一个例子代码库让我真的对构建的东西感觉很好，除了智能体前的预存库，我对它们还有强烈情感连接，我对这些比我们任何代码更小心，除了 Pi，我没有写权限。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>Pi 里有很多 slop，但我尝试避免在那些重要代码的部分。我们有个 HTML 导出功能把当前会话输出成 HTML 文件可以在 GitHub 上托管之类的。我没看过这功能的一行代码。我不在乎是否坏了，只要输出看起来对就行。但智能体循环本身或扩展加载机制那些东西，那是重要的。</p>
+<p>我处理确保质量的方式是无情地重构，因为这让我进入代码库。我需要理解我想结构性改什么，不只是逐行或语法上。我需要理解发生了什么才能做好重构。我时不时做这个，现在正在做，因为我想加一个当前架构不支持的新功能。进入代码是让代码库质量高复杂性低的一件事。但这跟行业智慧燃烧最多 token 是相反的。</p>
+<h2 id="我们都需要慢下来">我们都需要慢下来</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>你最近在同样主题上写了一篇博客叫 We All Need to Slow the F Down。能重述一些想法以及什么触发你把它写出来？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>基本是这样：你的智能体现在一天能吐出十倍于你的代码。也意味着吐出十倍的 booboo 错误。即使只有你一半的错误率，也还是五倍于你。所以你的代码库退化率增加了。然后你想 DAR 工厂，用 100 个智能体做这个到你的代码库。最终结果是什么？</p>
+<p>第一个问题：你需要某种方式审查所有生成的代码来修所有 booboo，但你作为人类做不到，因为人类习惯一天吐出 1.5k 行代码，那大概是你能好好审查的极限。如果你的智能体吐出十倍，没法好好审查。不是所有智能体的代码都重要像 HTML 导出功能，但即使智能体一天吐出三五 k，你没法有意义地审查。然后军队……</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>军队有意思，你叫它暗工厂，概念是几十几百几千智能体，给它们规格，它们去拆分，它们自我组织像 mayor 那些东西。它们有 QA 智能体，你给它们角色、给它们上下文，然后给它们大量 token 和支出。希望你的软件会在……</p>
+<p><strong>Mario Zechner</strong></p>
+<p>会有东西做完。肯定会有东西做完。首先你的钱包然后……我不觉得能做成功。原因是我还在乎我的产品质量。不管是手写还是智能体写，我只想要质量好。开发侧维护容易添加新东西，用户侧体验好。</p>
+<p>所有公司声称他们的代码全是智能体写的，是的我们知道。质量是垃圾。我们用你的产品时骨子里感觉到是垃圾。所以我不想要那个。基本上我觉得人们需要回过头来说我们在这干嘛？我们有这些神奇机器现在能帮我们做那么多我们讨厌做的事情而且做得很好。为什么不开始多给自己一些自由时间做有趣的部分，把我们知道它们能做的事情委托给它们？</p>
+<p>在整个组织里找到所有让你烦得要死的东西让智能体帮你自动化。然后你突然有时间思考我们实际想构建什么？用户需要什么？如果我们决定构建一个东西，再把智能体拉进来，我们来把这打磨得精彩绝伦。因为我们现在有时间、有方法、有工具做一个优秀的工作。但这不是我们现在工作的方式。</p>
+<p>我们构建智能体军队和实例舰队，做一个大规格希望产生惊人的东西。但有个问题：我们谈到智能体从哪里学到知识的，互联网。所以垃圾到平庸。现在你写规格……最好的规格是什么？</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>最好的规格是你定义它应该怎样工作，给它测试案例。最好的规格是软件本身。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我看你意思了。对的。你写一个不是软件本身的规格。所以有很多空隙需要填充。你觉得智能体会用什么填补这些空隙？</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>最可能从它的训练数据。我们已经识别了那训练数据的质量，垃圾到平庸。</p>
+<p>即使在 AI 前，别忘了 Stack Overflow 有很大批评，有 Ctrl+C Ctrl+V 从 Stack Overflow。很多时候第一答案不正确或不完全正确。regex for email 是好例子，你搜 email regex，第一页是 Stack Overflow，所有人复制第一个方案。下面第三条说漏了一些案例。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>但智能体也不解决那个问题。如果你不让一个已经比你十倍更能干的智能体做它不好的人类也不好的事情，而是 100 个那样的，你觉得结果是什么？很简单算术。</p>
+<h2 id="mcp-vs-cli-之争">MCP vs CLI 之争</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>聊聊另一个争议话题，MCP vs CLI。现在听到很多人说 CLI 是未来。我觉得我跟两个这样的人坐在一起。但 MCP 在大公司里也很流行，尤其是跟大公司工作的人聊时。MCP 在大企业里找到了真正的产品市场契合。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>尽管人们可能觉得，我其实没那么讨厌 MCP。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>等等我们有录音证据。我们不搞绝对的东西。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我对 MCP 的根本挑战是规格太复杂了，但这一般就是规格的样子。但如果你说它到底在做什么？是认证和调用一些东西。MCP 理论上有结构化响应，但大部分是运行一些东西、把东西放进 context 然后处理。它很快填满你的 context。</p>
+<p>Cloudflare 有 codemod MCP 我很喜欢。我有一个 MCP 用于测试，是一个 JavaScript 解释器给我 Google API 访问。在这种 MCP 和工具之间差别不大，因为工具也需要在 system prompt 里定义。但智能体非常非常擅长运行代码。MCP 不太像运行代码，基本就是 RAG。输入进去做些事情也许有些模型看不到的状态转换，但在这意义上是同样难的问题要解决。</p>
+<p>它解决了一堆东西。我希望它能工作。我只是还没能让它像我希望的那样工作。我的怀疑还是胶水需要是代码执行，但 MCP server 大部分没有定义成模型真正理解的方式。我没找到可靠组合 MCP 工具的方式。我找到让 MCP 本身可组合的方式，让 MCP 是一个工具运行代码，但没找到编排更大东西的方式。</p>
+<p>我希望它能工作。我觉得它找到了它的位置，我觉得它不会消失。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我觉得它只是自身成功的受害者。当这开始时，2024 年十月，它基本是一个方案把外部服务放进消费者聊天应用。连接你的邮件、OneDrive、等等。然后 IDE 也接过了因为它方便。Cursor、Windsurf 那些。</p>
+<p>我觉得起源是消费者侧不是开发者侧。那是很好的用例。我不想我妈在折腾 cogeneration 或其他东西时去调用一些 API。完美的用例。然后开发者侧也捡起来觉得这是给 LLM 提供工具的好方式。工具就是 system prompt 里说如果你想调用这个工具提供这个 JSON payload 你得到这个回来。</p>
+<p>当时感觉对的。Anthropic 文档说他们的模型能处理大约 30-40 个工具在 context。即使这也不对，12-20 就会崩，但这不重要。还是觉得这能工作如果你保持小和非常特定于你的用例。然后人们开始构建把整个 OpenAPI 规格映射成无数工具的 MCP server。这就崩了。</p>
+<p>第一个问题：大公司的非常糟糕的 MCP server 想我们得现在有这个，最快能建什么？我把 OpenAPI 推过去做成 MCP server。那是垃圾。第二个问题是它本质上不可组合。如果你想组合两个不同 server 的 MCP 工具输出，它们得经过 context。模型本身得做数据转换。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>对比 CLI，就是 pipe 对吧？模型只看最终结果。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>而且在怎么处理那些数据上超级自由。这也是 codemode 背后的想法。基本是个 hack。我们有 MCP，我们知道它不工作于这个特定用例。我们有多个数据源你想组合。不要通过 context 拉那些东西。所以构建 Codemode。Codemode 基本是我们把所有 MCP server 暴露成 TypeScript 函数，然后模型可以写代码调用 MCP server 然后在代码里做组合。</p>
+<p>我们多少层交互要这里？我们可以直接让模型写代码。我们不需要 MCP server。第三个部分是 David from Sentry 是 MCP 的支持者因为它是认证的东西。老实说这对我来说也超级有效。但模型本身不 make sense 了。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我觉得有 MCP2 的世界，讽刺地可能更多基于……有家公司叫 Stainless，基本从 OpenAPI 规格生成 SDK。我在接受这个想法：也许 MCP 完全基于认证加库或直接 HTTP 请求对认证规格，因为组合在一起时……</p>
+<p>我觉得 Pi 做它的东西时，因为它的工具调用透明，有时候很神奇，智能体对大输出多有创造力。比如 Pi 运行一个 Bash 程序产生太多行代码，它只读前面几行然后说如果你想要剩下的，文件有 20 megabytes 在这个文件里。智能体说 20 megabytes 太多了，我 grep 这文件。</p>
+<p>它们变得很聪明在怎么交互上。MCP 拿走那个。问题是怎么定义 MCP 不会拿走那个，还能有那些神奇和能力的？我不知道答案，我觉得很难，但认证需要解决，可组合性需要解决。我觉得那类东西有光明未来。</p>
+<p>也像 Mario 说，如果编码智能体没变得这么流行，为非代码相关问题生成代码运行代码的想法可能也没这么起飞。但最有能力的个人智能体，OpenClaw 是好例子，它们只是隐藏的编码智能体，然后自然地某个不是程序员的人会说怎么做这个，模型不会说安装这个 MCP，模型说我可以写 Python script 来做，你自然就在这疯狂空间里有更多代码执行的采用，在合规的企业空间你没有那条路径。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我个人觉得模型不会去别的方向除了代码生成对于任何 agentic 任务。我觉得这主要是因为代码生成有很多训练数据，而且代码生成是非常容易控制电脑的方式。我不看到模型实验室很快会有不同的范式出来。所以把这作为假设，未来走向哪里我们只需要搞定怎么让代码生成在企业设置里工作，带着认证和所有其他企业要求。</p>
+<h2 id="一年的预测">一年的预测</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>做个有趣的尝试预测一年后，这很难但 2027 年，从第一原则，你觉得这些编码智能体和软件工程工作流可能在哪里？基本就是推测，我们知道不能预测未来，但你觉得未来一年会有很多焦点在哪，乐观情况下可能会在工具和工作方式和工作什么不工作什么看到一些结果？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我一点都不知道。老实说我一点不知道。我可以编一些可能不会发生的东西。我觉得自我可塑形这东西显然是我相信的。我觉得我们会看到更多那个。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以自我可修改软件？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>包括我们构建软件的工具本身。我觉得这会扩展，不只科技行业，也到非科技领域的 agentic 工具应用。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>这是狗年吗？你时间 7？怎么工作的？这是我现在的模型。当你问我一年后是什么，就是七年。这使得对未来有任何预测变得非常困难，因为已经过去不只一年了，也许现在是从人们开始用 Claude Code 的一年，但感觉像更长更多的时间过去了。</p>
+<p>我觉得我能想象的最近的是我们知道代码执行和代码生成还有这 harness 包裹它的东西，这会是那个，因为强化学习得到更多那种数据。我的强假设是随着更多人开始意识到你能用智能体做有趣的事，会有一个社会的认知意识到你现在多么依赖基本两家公司。</p>
+<p>我觉得我们会有那个对话。我们应该有那个对话，特别作为欧洲人，因为我们这里没有这些实验室。我希望我们有那个对话。但我最好的猜测是我们会意识到工程团队已经告诉我他们有他们觉得没有机器就不能维护的代码库。我的猜测是其中一家公司会上市会很贵。我觉得那可能会主导或至少变成一个更大的对话，比你在用 Pi 还是用 Claude Code 更大。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我也看到，像新的 Claude 模型还是新的 GPT 模型？只给挑选的伙伴。现在我们看到谁能得到最好智能的分裂。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这会是有意思的动态。</p>
+<p>两位都在做流行的 AI 工具。你在构建创业公司，当然用 AI，也是围绕智能体的。你们怎么保持更新？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我只是看过了事情，让上炒作列车没那么容易像以前了。但这随着年纪来的。不在旧金山绝对更容易，我觉得在那边我会疯掉。我从那边的朋友那听到太多东西了，我不会去旧金山谢谢。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以有周围不全是科技的环境可能是有帮助的。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>有帮助的是有孩子。有帮助的是出去、爬树、滑冰，然后回头看半小时前你做的事说为什么我会那样做？那太蠢了。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我有不太利于试图跟我保持联系的人的方式。我变得很擅长不看通知、不读邮件。这在过去一年左右变得必要。但实际上时间的流逝有时候会澄清很多东西，因为如果真的必要它会再找你。我有不健康的 Twitter 成瘾我不特别自豪，但在有意思东西的来源上那还是个东西。但我现在尝试以一种方式消费：如果真的很重要，它会留在 discourse 里很长时间。我就等。如果三周后它还在，那可能有什么东西。我不需要那三周的先发优势。</p>
+<p>老实说真的很难处理这个，因为有真正的兴奋在里面。我感觉我的超过 20 年软件工程经验告诉我很多东西。但同时它会在某些方面打你，你感觉会有根基和有东西可以建立和强基础。现在感觉好像其他人不在乎那个基础了。也许你不需要基础。而且相当一段时间它工作。这很奇怪。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>我感觉自从我们 2025 年算是自由雇佣以来，我们有个先发。去年四月我们三个人有的兴奋，当时没人分享那个程度。然后圣诞假期来了，现在其他人有我们四月有的兴奋。所以他们现在在学习曲线。现在他们把自己猫薄荷到无数的失眠和糟糕代码库。我觉得会自我纠正因为不可持续。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>我们也看到了这个。我在三月初做了深入，很多人一月很兴奋开始用新模型、能做什么。他们全面投入工作或副业项目。大约两个月很多人会说等等，这引入了所有复杂性，有这些问题，我没想象那么快等等。所以有个自然的事情，任何新的东西， honeymoon 期你带着眼罩，你应该这样，然后你开始意识到可能过度纠正但有个自然的事情，需要时间看到你决策的结果。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>所以我不太担心暗工厂和软件死了 SaaS 死了那些。我真的相信这只是炒作机器的一部分，会自我纠正。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>作为结束，你会推荐什么书为什么？</p>
+<p><strong>Mario Zechner</strong></p>
+<p>Code by Charles Petzold。经典。我超级喜欢。很好读。也适合非技术人员，这是我第一个推荐的东西如果有人问我你的工作是什么，我指向那本书说这比你想的跟电脑的关系小得多。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>我最近读了 Breakneck，作者名字我忘了。它有点探索中国怎么运作、欧洲和美国怎么不同。我觉得至少引人思考。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>Mario、Armin，非常感谢这次对话。很高兴能面对面聊。</p>
+<p><strong>Mario Zechner</strong></p>
+<p>谢谢邀请我们。</p>
+<p><strong>Armin Ronacher</strong></p>
+<p>谢谢。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
