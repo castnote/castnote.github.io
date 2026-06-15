@@ -76,13 +76,6 @@
       <description>马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯在本期 No Priors 中深入探讨了 Biohub 的愿景：将前沿 AI 与前沿生物学整合，构建开源的虚拟生物学计划。从 10 年前被诺贝尔奖得主嘲笑的「治愈所有疾病」目标，到今天折叠超过 11 亿个蛋白质结构、发布 ESM Fold 开源模型，他们讲述了从单细胞测序到人类细胞图谱再到 Cell by Gene 的演进之路。讨论涵盖分层建模策略（从蛋白质到细胞到系统）、开放科学的力量、罕见病社区的自组织力量，以及个性化医疗的未来。亚历克斯·里夫斯分享了 mechanistic interpretability 在蛋白质语言模型中的应用，以及 agentic 系统如何自动化药物设计流程。</description>
     </item>
     <item>
-      <title>NVIDIA 的 Jensen Huang：打造智能时代的发电机</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Wed, 10 Jun 2026 12:00:18 GMT</pubDate>
-      <description>NVIDIA CEO Jensen Huang 在本次访谈中系统阐述了 AI 工厂的概念、智能革命的产业格局，以及个人和企业如何参与这场变革。他提出从能源、芯片、基础设施、模型到应用五层产业蛋糕的投资视角，并用放射科医生的例子反驳了 AI 消灭工作的叙事，强调 AI 是消除技术鸿沟的力量，会提升而非取代人类工作。</description>
-    </item>
-    <item>
       <title>AI 保姆：Glean 的 Rebecca Hinds 谈工作中 AI 背后的隐形人力劳动</title>
       <link>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</link>
       <guid>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</guid>
@@ -153,6 +146,13 @@
       <description>Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经&quot;解决&quot;，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。</description>
     </item>
     <item>
+      <title>Anthropic 的 Boris Cherny：为什么 Coding 已经解决，接下来会怎样</title>
+      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
+      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
+      <pubDate>Mon, 04 May 2026 17:28:44 GMT</pubDate>
+      <description>Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经&quot;解决&quot;，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。</description>
+    </item>
+    <item>
       <title>在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路</title>
       <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</link>
       <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall/</guid>
@@ -200,13 +200,6 @@
       <guid>https://castnote.github.io/episodes/revisionist-history/revisionist-history/</guid>
       <pubDate>Thu, 24 Apr 2025 15:11:08 GMT</pubDate>
       <description>Malcolm Gladwell 从一段 Joe Rogan 访谈 RFK Jr. 的播客片段出发，探讨了访谈作为一种艺术形式的意义。RFK Jr. 在节目中声称1918年西班牙流感并非由病毒引起，而是疫苗所致，并错误引用了一篇 Fauci 论文作为支撑。Gladwell 指出 Rogan 未能对这些荒谬言论提出任何质疑，并将其与 Oprah Winfrey 的访谈技巧形成鲜明对比——Oprah 在采访 Meghan Markle 时层层深入，引出了关于皇室种族偏见的关键信息。Gladwell 还分析了 Rogan 采访 Elon Musk 和 Matt Walsh 时的类似问题，揭示出一种模式：Rogan 选择做朋友式的闲聊，而非承担采访者的追问责任。随后 Gladwell 追溯了 RFK Jr. 错误信息的来源——一位长岛律师和一位佛罗里达脊椎治疗师的博客文章。节目最后，Gladwell 通过自己在巡回活动中被心理学家 Michael Gervais 采访的经历，展示了一次真正优秀的访谈如何引导受访者走出预设叙事，抵达意想不到的情感深处。</description>
-    </item>
-    <item>
-      <title>Barack Obama 分享个人故事与经历：家庭、领导力、体育与婚姻</title>
-      <link>https://castnote.github.io/episodes/pivot/pivot/</link>
-      <guid>https://castnote.github.io/episodes/pivot/pivot/</guid>
-      <pubDate>Tue, 29 Oct 2024 15:37:21 GMT</pubDate>
-      <description>Barack Obama 做客 The Pivot 播客，与主持人 Ryan Clark、Channing Crowder 和 Fred Taylor 进行了一场坦诚而深刻的对话。Obama 从 NFL 黑人四分卫的变迁谈起，讨论了体育领域种族偏见的变化如何反映更广泛的社会进步。他分享了担任总统期间平衡家庭与工作的方法——每晚 6 点半与家人在白宫共进晚餐的规矩，以及女儿们如何让他保持脚踏实地。Obama 还讲述了自己在夏威夷和印尼的成长经历如何塑造了他的世界观，强调人与人之间的共同点远超表面差异。在谈及 2024 年大选时，他对比了 Kamala Harris 和 Donald Trump 的价值观与政策取向，呼吁选民认真投票。节目最后，Obama 回顾了自己人生中最大的转折点——大学期间父亲的去世和南非反 apartheid 活动家的演讲如何促使他重新审视人生的方向，并分享了他追求妻子 Michelle 的趣事。整场对话融合了个人故事、政治见解和生活智慧。</description>
     </item>
     <item>
       <title>家庭、创业与五万美元</title>
