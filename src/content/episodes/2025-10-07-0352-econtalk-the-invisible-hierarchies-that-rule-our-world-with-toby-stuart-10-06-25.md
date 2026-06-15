@@ -2,7 +2,7 @@
 title: "原始智能（对话 Angus Fletcher）"
 podcast: "EconTalk"
 podcast_slug: "econtalk"
-episode_slug: "econtalk"
+episode_slug: "the-invisible-hierarchies-that-rule-our-world-with-toby-stuart-10-06-25"
 episode_url: "https://www.youtube.com/watch?v=-3mamE6vOSQ"
 summary: "本期节目邀请俄亥俄州立大学故事科学教授 Angus Fletcher，围绕其新书《原始智能》展开对话。Fletcher 认为现代社会对智能的定义过于偏重逻辑和数据驱动的决策，忽视了人脑在低信息、高不确定性环境中演化出的核心能力。他结合与美军特种作战部队多年合作的经历，探讨了制定计划的真正价值不在于计划本身而在于培养计划制定者、如何通过「释放新手」来突破专家瓶颈、为什么发现例外信息比识别模式更重要等主题。节目还深入讨论了情绪作为智能信号的角色——恐惧意味着没有计划、愤怒意味着只有一个计划，以及「可以成功」与「会成功」之间乐观主义的本质区别。Fletcher 分享了为特种作战人员提供婚姻咨询的经历，介绍了通过「不问为什么」来发现他人独特性的沟通技巧，并阐述了莎士比亚作品如何体现和训练这种原始智能。"
 category: "经济"

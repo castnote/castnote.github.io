@@ -2,7 +2,7 @@
 title: "深入数十亿美元的「万物皆可赌」生意"
 podcast: "The Journal."
 podcast_slug: "the-journal"
-episode_slug: "the-journal"
+episode_slug: "graham-platner-is-now-democrats-biggest-risk-these-people-handpicked-him-wsj"
 episode_url: "https://www.youtube.com/watch?v=S2g0TwfecJE"
 summary: "本期节目深入探讨了预测市场的运作机制与商业模式。节目介绍了 Kalshi 和 Polymarket 两大平台如何让用户对各种未来事件下注，解释了事件合约的定价原理，并采访了一位从传统体育博彩转向预测市场的职业玩家 Frank Satlo。节目还讨论了预测市场面临的核心争议：平台内部做市商的利益冲突、赢家与输家的悬殊比例、与各州博彩法规的法律冲突、CFTC 的监管权之争，以及日益受到关注的内幕交易风险。随着监管审查加强和多起诉讼推进，预测市场的未来仍充满不确定性。"
 category: "商业"

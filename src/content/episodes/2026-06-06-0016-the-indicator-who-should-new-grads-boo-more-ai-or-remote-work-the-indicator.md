@@ -2,7 +2,7 @@
 title: "应届毕业生该怪谁？AI 还是远程办公？"
 podcast: "The Indicator from Planet Money"
 podcast_slug: "the-indicator"
-episode_slug: "the-indicator"
+episode_slug: "who-should-new-grads-boo-more-ai-or-remote-work-the-indicator"
 episode_url: "https://www.youtube.com/watch?v=xZYpsh29RvU"
 summary: "本期节目解读 2026 年 5 月美国就业报告，重点关注三个议题：整体就业形势连续三个月强劲，失业率维持 4.3%，新增 172,000 个岗位；年轻劳动者（20-24 岁）求职困境的真正原因——两项新研究指向远程办公而非 AI 是主要因素；黑人劳动者失业率作为整体就业市场领先指标的实证意义。节目还讨论了通胀压力下美联储利率政策走向。"
 category: "经济"

@@ -2,7 +2,7 @@
 title: "家庭、创业与五万美元"
 podcast: "How I Built This"
 podcast_slug: "how-i-built-this"
-episode_slug: "how-i-built-this"
+episode_slug: "family-entrepreneurship-and-50-000-how-i-built-this-with-guy-raz-npr"
 episode_url: "https://www.youtube.com/watch?v=uL7psQaJpkQ"
 summary: "本期节目是 How I Built This 创业路演比赛的获奖者特辑。一位尼日利亚裔美国创业者讲述了她与联合创始人 Toby 共同创建 DEI 软件平台 Chessy 的故事。Chessy 旨在帮助少数族裔在求职过程中了解不同公司对多元身份群体的包容程度，同时为企业提供管理员工资源小组的工具。节目中她回顾了从尼日利亚拉各斯移民到北卡罗来纳州克莱蒙斯的成长经历，父母作为第一代移民如何在融入美国文化的同时保留尼日利亚价值观，以及在北卡大学走上篮球校队的励志故事。她强调了交叉性视角在 DEI 工作中的重要性，认为企业在推进多元化时不能只关注单一身份维度，而应全面审视员工的多重身份。她还分享了创业路上面对无数拒绝时韧性的重要性。"
 category: "商业"

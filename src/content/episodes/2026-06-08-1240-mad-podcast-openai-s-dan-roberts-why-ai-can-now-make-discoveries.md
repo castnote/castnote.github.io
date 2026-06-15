@@ -2,7 +2,7 @@
 title: "OpenAI 的 Dan Roberts：AI 为什么现在能做科学发现"
 podcast: "The MAD Podcast with Matt Turck"
 podcast_slug: "mad-podcast"
-episode_slug: "mad-podcast"
+episode_slug: "openai-s-dan-roberts-why-ai-can-now-make-discoveries"
 episode_url: "https://www.youtube.com/watch?v=oWOz2htozfI"
 summary: "OpenAI 强化学习基础团队负责人 Dan Roberts 与主持人 Matt Turck 深入探讨了 AI 在科学发现领域的突破性进展。他们讨论了近期 OpenAI、DeepMind、Anthropic 在 Erdos 数学难题上的突破；RL（强化学习）的本质、威力与局限；RLHF 的工作原理；OpenAI 与 DeepMind 在数学推理上的方法差异；以及物理学视角如何帮助我们理解 AI 系统的 scaling laws。Dan Roberts 还分享了他从理论物理学（量子引力、黑洞信息）转向 AI 研究的经历，以及他对 AI 能否实现真正自主科学发现的看法。"
 category: "科技"

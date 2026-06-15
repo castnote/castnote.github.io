@@ -2,7 +2,7 @@
 title: "为什么运动像惩罚（以及如何改变它）"
 podcast: "The Happiness Lab"
 podcast_slug: "happiness-lab"
-episode_slug: "happiness-lab"
+episode_slug: "why-exercise-feels-like-punishment-and-how-to-change-it-the-happiness-lab-podcast"
 episode_url: "https://www.youtube.com/watch?v=KPR3fn-zpuA"
 summary: "本期节目探讨了为什么很多人把运动变成了一种对身体的惩罚，而非快乐的源泉。主持人Laurie Santos与瑜伽教练、作家Jessamyn Stanley对话，Jessamyn分享了自己作为一个胖孩子从小恐惧运动、到成年后通过热瑜伽练习打破身体羞耻感的经历。她讲述了如何从最初无法忍受看到自己的身体，到通过在家练习和给自己拍照，逐渐认识到自我厌恶的根源在于自己而非外界。两人讨论了瑜伽如何不仅是身体锻炼，更是一条灵性道路——通过在体式中练习接纳不适、占据空间、倾听身体，这些能力可以迁移到生活的其他方面。Jessamyn还分享了她在教课中发现身体焦虑是所有人的普遍问题，而自我接纳能产生连锁反应、帮助他人也接纳自己。"
 category: "心理"

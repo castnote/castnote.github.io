@@ -2,7 +2,7 @@
 title: "番茄价格四十年新高：一场霜冻如何引发全球供应链震荡"
 podcast: "Odd Lots"
 podcast_slug: "odd-lots"
-episode_slug: "odd-lots"
+episode_slug: "why-tomatoes-are-the-most-expensive-they-ve-been-in-four-decades-odd-lots"
 episode_url: "https://www.youtube.com/watch?v=pUrIlUAo0kM"
 summary: "本期节目深入探讨番茄价格为何创下四十年新高。Baldor Specialty Foods 的采购副总裁 Jacob Kremple 拆解了番茄价格构成，揭示了佛罗里达霜冻、墨西哥反倾销关税、NAFTA 后的供应链重构如何共同造成这次价格暴涨。节目还讨论了零售商与餐厅在价格波动中的不同应对策略、高风味番茄品种的崛起，以及物流成本飙升对整个食品分销行业的影响。"
 category: "商业"

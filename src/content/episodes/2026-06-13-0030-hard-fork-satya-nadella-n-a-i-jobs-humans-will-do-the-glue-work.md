@@ -2,7 +2,7 @@
 title: "Satya Nadella 论 AI 与就业：人类将做「胶水工作」"
 podcast: "Hard Fork"
 podcast_slug: "hard-fork"
-episode_slug: "hard-fork"
+episode_slug: "satya-nadella-n-a-i-jobs-humans-will-do-the-glue-work"
 episode_url: "https://www.youtube.com/watch?v=zqEZyHkXgh0"
 summary: "本期节目专访 Microsoft CEO Satya Nadella，深入讨论 Microsoft 的 AI 战略与平台愿景。话题涵盖：从「单一模型」到「AI驱动经济体」的转变思路、Project Solara 与 agent-first 设备形态、Xbox 业务面临的硬件成本压力与商业模式调整、2023 年 OpenAI 动荡事件的回顾与反思、Microsoft 与 OpenAI 合作关系的重新谈判与 MAI 模型的推出、AI 反噬现象与数据中心的社区价值论证、软件开发领域的「认知覆盖率」概念与人类「胶水工作」的新定位、以及他对 AGI 真正落地所需的经济条件（10% GDP 增长）和政治经济平衡的审慎看法。"
 category: "科技"

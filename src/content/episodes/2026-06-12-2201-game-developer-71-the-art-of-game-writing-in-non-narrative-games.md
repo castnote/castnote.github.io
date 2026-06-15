@@ -2,7 +2,7 @@
 title: "非叙事游戏的叙事艺术"
 podcast: "Game Developer Podcast"
 podcast_slug: "game-developer"
-episode_slug: "game-developer"
+episode_slug: "71-the-art-of-game-writing-in-non-narrative-games"
 episode_url: "https://www.youtube.com/watch?v=92AoUogkRpE"
 summary: "本期节目讨论「非叙事游戏」——即故事并非体验核心的游戏——中的叙事设计艺术。资深叙事设计师 Harrison Pink（《暗黑破坏神 IV》《Tales from the Borderlands》）和游戏编剧 Emma Kidwell（《文明 7》《漫威暗夜之子》《Hindsight》）分享了在极短文本空间内写作的挑战、与跨部门协作的策略、以及如何在玩法优先的游戏中让叙事有价值。话题涵盖历史研究与虚构世界的参照、推文式写作技巧、玩家幻想的塑造、日常与低谷时刻的情感力量、以及角色创伤的延续处理。"
 category: "游戏"

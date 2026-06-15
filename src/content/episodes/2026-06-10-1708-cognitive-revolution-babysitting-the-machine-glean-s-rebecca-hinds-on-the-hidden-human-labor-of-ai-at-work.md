@@ -2,7 +2,7 @@
 title: "AI 保姆：Glean 的 Rebecca Hinds 谈工作中 AI 背后的隐形人力劳动"
 podcast: "The Cognitive Revolution"
 podcast_slug: "cognitive-revolution"
-episode_slug: "cognitive-revolution"
+episode_slug: "babysitting-the-machine-glean-s-rebecca-hinds-on-the-hidden-human-labor-of-ai-at-work"
 episode_url: "https://www.youtube.com/watch?v=YRCa1etqiFM"
 summary: "Glean 的 Work AI Institute 发布了 2026 年 Work AI Index 报告，调查 6000 名知识工作者后发现：87% 的员工在使用 AI，平均每周节省 13 小时，但只有 13% 认为组织绩效显著提升。报告提出了「botsitting」（喂养、监督、调试 AI 所需的人力劳动，每周 6.4 小时）和「botshit」（交付无法解释的 AI 产出，69% 的人承认做过）两个概念。主持人 Nathan Labenz 与负责人 Rebecca Hinds 深入探讨了这一 disconnect 的根源：从个人效率无法转化为组织成果，到 AI 工具缺乏上下文导致 exhaustion，再到员工因自动化失去工作意义而疏离。讨论还覆盖了企业文化转型、使命驱动、enterprise graph 的前景以及 AI 时代组织设计的未来方向。"
 category: "科技"

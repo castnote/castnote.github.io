@@ -2,7 +2,7 @@
 title: "住房种族隔离为何持续存在？"
 podcast: "Capitalisn't"
 podcast_slug: "capitalisnt"
-episode_slug: "capitalisnt"
+episode_slug: "why-is-housing-so-segregated"
 episode_url: "https://www.youtube.com/watch?v=W08u8H4MJoA"
 summary: "芝加哥大学布斯商学院的 Milena Almagro 分享了她关于种族住房契约（racial covenants）的研究。她以1940年代的明尼阿波利斯为案例，利用 Mapping Prejudice 项目数字化后的历史数据，分析了种族契约对住房隔离的因果影响。Almagro 将供给侧限制（开发商通过契约决定谁能住在哪里）与需求侧偏好（同族偏好，即人们倾向于和同族裔住在一起）区分开来，发现观察到的隔离中约三分之一可由契约等法律限制解释，另外三分之二则来自偏好。她引入了潜在选择集（latent choice set）方法从城市经济学角度重新审视居住选择，并用城市化前沿指数（urbanization frontier index）识别契约的因果效应。她还对比了契约与红线标注（redlining）两种歧视工具的区别，指出今天的区划政策（如最低地块面积）虽然不直接针对种族，但通过影响住房可负担性产生了类似的隔离效果。最后她讨论了即使消除契约，偏好驱动的自我选择仍会维持一定程度的隔离。"
 category: "经济"

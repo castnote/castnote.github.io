@@ -2,7 +2,7 @@
 title: "你从未听说过的最有权势的人"
 podcast: "Freakonomics Radio"
 podcast_slug: "freakonomics"
-episode_slug: "freakonomics"
+episode_slug: "633-the-most-powerful-people-you-ve-never-heard-of-freakonomics-radio"
 episode_url: "https://www.youtube.com/watch?v=k8ZZ3-Yq-O4"
 summary: "本期节目围绕 Javier Blas 和 Jack Farchy 合著的《The World for Sale》展开，深入探讨了大宗商品贸易商这一鲜为人知却极具影响力的群体。两位 Bloomberg 记者讲述了从「教父」Mark Rich 开创行业、深夜一通电话拯救牙买加经济，到利比亚内战中 Vitol 向叛军提供十亿美元信用额度等传奇故事。节目梳理了塑造这一行业的四大历史力量——石油国有化、苏联解体、金融化和中国崛起，并讨论了 Glencore 的合规转型、暗影贸易商绕过制裁的运作方式，以及 Trump 时代关税政策如何为大宗商品贸易商创造新的套利机会。两位作者指出，全球大宗商品消费正处于历史最高水平，西方政府对这一领域的忽视正在付出代价。"
 category: "商业"

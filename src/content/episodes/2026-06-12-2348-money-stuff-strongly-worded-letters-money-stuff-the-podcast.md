@@ -2,7 +2,7 @@
 title: "强烈措辞的信件"
 podcast: "Money Stuff: The Podcast"
 podcast_slug: "money-stuff"
-episode_slug: "money-stuff"
+episode_slug: "strongly-worded-letters-money-stuff-the-podcast"
 episode_url: "https://www.youtube.com/watch?v=ASYwt3T2K54"
 summary: "本期节目讨论 SpaceX IPO 的定价与认购情况，以及博彩市场对开盘价的预测。S&P 500 决定不豁免盈利要求让 SpaceX 入指数，与其他指数提供商形成对比，引发被动投资与主动决策的讨论。节目还涉及 SpaceX 的治理问题、散户投资者的 meme 股票心态，以及私有公司上市趋势的转变。后半部分讨论 CFTC 发布的联邦体育博彩监管拟议规则，包括对 Little League 博彩、伤病合约、打架合约的禁止，以及暗杀合约的灰色地带问题。最后讨论 Boaz Weinstein 在最高法院的败诉，涉及封闭式基金投票权与股东起诉权。"
 category: "经济"

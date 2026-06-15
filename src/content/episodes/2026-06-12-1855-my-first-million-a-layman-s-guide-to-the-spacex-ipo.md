@@ -2,7 +2,7 @@
 title: "SpaceX IPO 入门指南：史上最大上市公司的通俗解读"
 podcast: "My First Million"
 podcast_slug: "my-first-million"
-episode_slug: "my-first-million"
+episode_slug: "a-layman-s-guide-to-the-spacex-ipo"
 episode_url: "https://www.youtube.com/watch?v=Iy-O4-4w43Q"
 summary: "本期两位主持人以通俗易懂的方式解读 SpaceX IPO。他们分析了 SpaceX 的四大业务板块——火箭发射、Starlink 卫星互联网、X（Twitter）和 XAI，讨论了 1.75 万亿美元估值的争议性、Starlink 作为现金奶牛的商业模式、太空数据中心的未来愿景、Elon 的薪酬方案（Mars Award 和 AI CEO Award）等话题。两人还分享了历史投资案例、cap table 上的赢家（如 Antonio Gracias、Gigafund、Steve Jurvetson），以及对乐观主义投资哲学的反思。"
 category: "商业"

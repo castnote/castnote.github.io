@@ -2,7 +2,7 @@
 title: "先锋集团：那位为投资者省下一万亿美元的\"共产主义资本家\""
 podcast: "Acquired"
 podcast_slug: "acquired"
-episode_slug: "acquired"
+episode_slug: "vanguard-the-communist-capitalist-who-saved-investors-a-trillion-dollars-audio"
 episode_url: "https://www.youtube.com/watch?v=ipiKIgdynZE"
 summary: "本期节目完整讲述了先锋集团（Vanguard）及其创始人 Jack Bogle 的传奇故事。Bogle 出身于大萧条中破碎的家庭，凭借普林斯顿毕业论文进入共同基金行业，35 岁执掌威灵顿管理公司，却因推行基金共有制的理念与合伙人产生根本分歧而被解雇。他利用基金与管理公司之间的法律结构漏洞，于 1974 年创立先锋集团——一家由基金持有人共同所有、按成本运营、不产生利润的资产管理公司。1976 年他推出了第一只面向零售投资者的标普 500 指数基金，凭借低费率的复利优势，历经二十年缓慢积累后在 1990 年代迎来爆发式增长。节目深入探讨了先锋的规模经济共享模式如何持续降低费率、2008 金融危机如何成为被动投资的决定性验证时刻、ETF 争议导致 Bogle 二度离开董事会的始末，以及今天先锋面对富达和贝莱德竞争时共有制模式的优势与局限。节目最后的分析环节讨论了为何共有制结构如此罕见、先锋的七力模型，以及 Bogle 将公募基金定义为大宗商品市场的核心洞察。"
 category: "商业"

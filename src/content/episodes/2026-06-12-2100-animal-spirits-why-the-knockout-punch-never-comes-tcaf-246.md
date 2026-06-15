@@ -2,7 +2,7 @@
 title: "为什么致命一击永远不会来"
 podcast: "Animal Spirits"
 podcast_slug: "animal-spirits"
-episode_slug: "animal-spirits"
+episode_slug: "why-the-knockout-punch-never-comes-tcaf-246"
 episode_url: "https://www.youtube.com/watch?v=olbnxPdOWtM"
 summary: "本期节目邀请 Invesco 首席全球市场策略师 Brian Levit，讨论 2026 年上半年的市场格局。对话围绕 AI 对股市的驱动作用、市场集中度与拓宽的可能性展开，分析了油价飙升、通胀预期与美联储政策对市场的影响。嘉宾认为当前市场没有过度杠杆和信贷问题，所谓「致命一击」（knockout punch）的担忧源于投资者对历史熊市形成的心理记忆，而非基本面脆弱性。节目还讨论了 SpaceX 等 IPO、投资者风险敞口、消费者经济状况等话题，最后展望了 AI 投资的 ROI 可能如何推动市场拓宽。"
 category: "经济"

@@ -1,8 +1,8 @@
 ---
 title: "Anthropic 的 Boris Cherny：为什么 Coding 已经解决，接下来会怎样"
-podcast: "Sequoia AI Ascent"
-podcast_slug: "sequoia-ai-ascent"
-episode_slug: "sequoia-ai-ascent"
+podcast: "Training Data"
+podcast_slug: "training-data"
+episode_slug: "anthropic-s-boris-cherny-why-coding-is-solved-and-what-comes-next"
 episode_url: "https://www.youtube.com/watch?v=SlGRN8jh2RI"
 summary: "Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经\"解决\"，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。"
 category: "科技"

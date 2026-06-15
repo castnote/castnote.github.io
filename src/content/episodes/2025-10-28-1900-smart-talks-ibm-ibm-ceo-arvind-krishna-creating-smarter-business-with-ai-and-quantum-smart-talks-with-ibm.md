@@ -2,7 +2,7 @@
 title: "IBM CEO Arvind Krishna：用 AI 和量子计算打造更智能的商业"
 podcast: "Smart Talks with IBM"
 podcast_slug: "smart-talks-ibm"
-episode_slug: "smart-talks-ibm"
+episode_slug: "ibm-ceo-arvind-krishna-creating-smarter-business-with-ai-and-quantum-smart-talks-with-ibm"
 episode_url: "https://www.youtube.com/watch?v=8X7VYhHKbss"
 summary: "本期节目中，Malcolm Gladwell 在 IBM 纽约办公室与 IBM CEO 兼董事长 Arvind Krishna 进行了一场面对面对话。Krishna 回顾了自己从1990年在 IBM 研究院做无线网络（即后来的 Wi-Fi）起步的职业经历，分享了他对技术趋势的早期预判——包括网络与计算融合、视频流媒体的兴起。他详细讲述了2018年力主收购 Red Hat 的决策过程，解释了为何选择成为云巨头的最佳合作伙伴而非直接竞争者。在 AI 话题上，Krishna 指出企业应聚焦可规模化的应用而非花哨实验，并认为大语言模型本身不太可能通向超级智能，关键在于将知识表征与 LLM 融合。他最热情的话题是量子计算，将其定位为继经典计算和 AI 之后的「第三种数学」，认为其重要性堪比半导体，并预计三到五年内将出现令人震惊的突破性成果，在金融定价、材料科学、物流优化等领域展现巨大价值。"
 category: "科技"

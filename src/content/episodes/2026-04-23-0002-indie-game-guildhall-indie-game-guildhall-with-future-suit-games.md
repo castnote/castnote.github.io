@@ -2,7 +2,7 @@
 title: "在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路"
 podcast: "Indie Game Guildhall"
 podcast_slug: "indie-game-guildhall"
-episode_slug: "indie-game-guildhall"
+episode_slug: "indie-game-guildhall-with-future-suit-games"
 episode_url: "https://www.youtube.com/watch?v=h241bZzANDw"
 summary: "本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 \"no zero days\" 哲学和 Tim 的 \"eating the frog\" 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。"
 category: "游戏"

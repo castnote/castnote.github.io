@@ -2,7 +2,7 @@
 title: "这是我自己的树，为什么不能砍？"
 podcast: "Planet Money"
 podcast_slug: "planet-money"
-episode_slug: "planet-money"
+episode_slug: "it-s-my-tree-why-can-t-i-cut-it-down"
 episode_url: "https://www.youtube.com/watch?v=lb1cbrt879k"
 summary: "本期节目探讨了美国各地树木保护法律引发的产权争议。节目讲述两个案例：波特兰房主 Sarah Bond 的后院大树倾斜危及房屋，但城市拒绝批准砍树许可，最终树在风暴中倒塌砸穿房屋；密歇根州 Canton 镇开发商清砍 16 英亩树林被罚款约 50 万美元，引发诉讼。宪法律师 Chance Weldon 以征收条款为依据挑战树木许可制度，在第六巡回法院赢得部分胜利。节目讨论了分区法律的界限：何时政府规制走得太远，实际上剥夺了业主对财产的控制权。"
 category: "商业"

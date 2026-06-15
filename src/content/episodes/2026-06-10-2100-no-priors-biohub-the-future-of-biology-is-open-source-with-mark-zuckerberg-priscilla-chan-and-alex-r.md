@@ -2,7 +2,7 @@
 title: "Biohub：生物学的未来是开源的——对话马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯"
 podcast: "No Priors"
 podcast_slug: "no-priors"
-episode_slug: "no-priors"
+episode_slug: "biohub-the-future-of-biology-is-open-source-with-mark-zuckerberg-priscilla-chan-and-alex-r"
 episode_url: "https://www.youtube.com/watch?v=u8cYwaLzN-k"
 summary: "马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯在本期 No Priors 中深入探讨了 Biohub 的愿景：将前沿 AI 与前沿生物学整合，构建开源的虚拟生物学计划。从 10 年前被诺贝尔奖得主嘲笑的「治愈所有疾病」目标，到今天折叠超过 11 亿个蛋白质结构、发布 ESM Fold 开源模型，他们讲述了从单细胞测序到人类细胞图谱再到 Cell by Gene 的演进之路。讨论涵盖分层建模策略（从蛋白质到细胞到系统）、开放科学的力量、罕见病社区的自组织力量，以及个性化医疗的未来。亚历克斯·里夫斯分享了 mechanistic interpretability 在蛋白质语言模型中的应用，以及 agentic 系统如何自动化药物设计流程。"
 category: "科技"

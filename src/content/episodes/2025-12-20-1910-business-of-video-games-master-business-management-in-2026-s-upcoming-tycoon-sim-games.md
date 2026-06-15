@@ -2,7 +2,7 @@
 title: "2026年商业大亨模拟游戏前瞻"
 podcast: "The Business of Video Games Podcast"
 podcast_slug: "business-of-video-games"
-episode_slug: "business-of-video-games"
+episode_slug: "master-business-management-in-2026-s-upcoming-tycoon-sim-games"
 episode_url: "https://www.youtube.com/watch?v=hyF5RSwH-aU"
 summary: "本期节目盘点了 2026 年即将上线的一批商业大亨模拟游戏，涵盖水上乐园经营、奇幻武器锻造、动物园建造、酒馆经营、酒店设计、帮派管理、赛博朋克生活模拟等丰富题材。重点介绍的游戏包括 Aqua Park Tycoon、Magic Forge Tycoon、Planet Zoo 2、Big Ambitions、Blacksmith Master、Food Truck Empire、Mars Attracts、Tavern Keeper、Hotel Architect、The Boss: Gangsters Nightlife、Fantastic Haven、Schedule One 以及 Nivalis。节目对每款游戏的玩法特色、Early Access 进展和预计发布窗口进行了详细介绍，帮助玩家在大量模拟游戏中找到适合自己的作品。"
 category: "游戏"

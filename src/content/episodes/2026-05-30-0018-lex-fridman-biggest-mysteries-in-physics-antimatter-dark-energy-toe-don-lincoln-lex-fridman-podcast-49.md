@@ -2,7 +2,7 @@
 title: "物理学最大谜团：反物质、暗能量与万物理论"
 podcast: "Lex Fridman Podcast"
 podcast_slug: "lex-fridman"
-episode_slug: "lex-fridman"
+episode_slug: "biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49"
 episode_url: "https://www.youtube.com/watch?v=1M3Vdl6DRkU"
 summary: "本期节目中，Lex Fridman 与费米实验室粒子物理学家 Don Lincoln 展开了一场关于物理学核心谜题的深度对话。对话从物理学的统一史出发，回顾了牛顿统一天体与地面引力、麦克斯韦统一电与磁、爱因斯坦的时空统一与广义相对论，一路讲到标准模型中的电弱统一与希格斯玻色子的发现。随后讨论转向当前物理学的前沿未解问题：大统一理论与万物理论的探索前景、弦理论与圈量子引力的现状、反物质的生产与应用潜力、物质-反物质不对称之谜、暗能量的本质及其与量子场论预测之间的巨大矛盾、暗物质的证据与探测困境。Lincoln 还分享了自己从小镇出身到成为前沿物理学家的个人经历，以及对科学探索中好奇心与毅力的看法。"
 category: "科技"
