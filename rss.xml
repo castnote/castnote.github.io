@@ -76,6 +76,13 @@
       <description>马克·扎克伯格、普莉希拉·陈和亚历克斯·里夫斯在本期 No Priors 中深入探讨了 Biohub 的愿景：将前沿 AI 与前沿生物学整合，构建开源的虚拟生物学计划。从 10 年前被诺贝尔奖得主嘲笑的「治愈所有疾病」目标，到今天折叠超过 11 亿个蛋白质结构、发布 ESM Fold 开源模型，他们讲述了从单细胞测序到人类细胞图谱再到 Cell by Gene 的演进之路。讨论涵盖分层建模策略（从蛋白质到细胞到系统）、开放科学的力量、罕见病社区的自组织力量，以及个性化医疗的未来。亚历克斯·里夫斯分享了 mechanistic interpretability 在蛋白质语言模型中的应用，以及 agentic 系统如何自动化药物设计流程。</description>
     </item>
     <item>
+      <title>NVIDIA 的 Jensen Huang：打造智能时代的发电机</title>
+      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
+      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
+      <pubDate>Wed, 10 Jun 2026 12:00:18 GMT</pubDate>
+      <description>NVIDIA CEO Jensen Huang 在本次访谈中系统阐述了 AI 工厂的概念、智能革命的产业格局，以及个人和企业如何参与这场变革。他提出从能源、芯片、基础设施、模型到应用五层产业蛋糕的投资视角，并用放射科医生的例子反驳了 AI 消灭工作的叙事，强调 AI 是消除技术鸿沟的力量，会提升而非取代人类工作。</description>
+    </item>
+    <item>
       <title>AI 保姆：Glean 的 Rebecca Hinds 谈工作中 AI 背后的隐形人力劳动</title>
       <link>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</link>
       <guid>https://castnote.github.io/episodes/cognitive-revolution/cognitive-revolution/</guid>
@@ -132,13 +139,6 @@
       <description>本期围绕云端 Agent 的上下文工程展开，讨论背景智能体如何从规格说明走到可合并的代码变更。Walden Yan 与 Cole Murray 分享了 cloud agents、Devon、Open Inspect 和评估工具背后的实践，重点不在“让模型更聪明”这个抽象目标，而在如何组织上下文、任务环境、权限、反馈和测试。节目展示当智能体开始承担完整开发流程时，软件交付机制需要在提示词之外重新设计。</description>
     </item>
     <item>
-      <title>Cursor 如何在 Fireworks 上训练 Composer：高性能强化学习的分布式基础设施</title>
-      <link>https://castnote.github.io/episodes/training-data/training-data/</link>
-      <guid>https://castnote.github.io/episodes/training-data/training-data/</guid>
-      <pubDate>Tue, 26 May 2026 12:00:19 GMT</pubDate>
-      <description>本期节目深入探讨 Cursor 如何与 Fireworks 合作完成 Composer 2 模型的大规模强化学习训练。Federico 和 Dima分享了为什么 Cursor 决定从应用公司转向自训练模型，以及他们如何通过持续预训练加强化学习两条轴线打造高性能编码模型。讨论涵盖了分布式训练基础设施的设计难题，包括异步流水线、全球分布推理集群、权重增量压缩传输、MoE 模型的数值对齐挑战、Router Replay 技术，以及长跨度智能体的上下文自我总结机制。两位嘉宾还探讨了实时强化学习与模拟 rollout 的权衡、LLM 作为评判者的角色、以及强化学习环境应该尽可能接近生产环境的理念。</description>
-    </item>
-    <item>
       <title>先锋集团：那位为投资者省下一万亿美元的&quot;共产主义资本家&quot;</title>
       <link>https://castnote.github.io/episodes/acquired/acquired/</link>
       <guid>https://castnote.github.io/episodes/acquired/acquired/</guid>
@@ -174,18 +174,18 @@
       <description>本期 Alex Kantrowitz 访谈 Sam Altman，集中讨论 OpenAI 在 AI 竞赛中的战略位置。话题包括 ChatGPT 的未来产品形态、消费者订阅和企业 API 的收入结构、算力基础设施建设、模型成本、数据中心和芯片供应，以及外界关注的 IPO 时间表。相比单纯谈愿景，这期更像一次商业和资本开支访谈，试图解释一家前沿模型公司如何在爆炸式需求、巨额投入和激烈竞争之间寻找可持续路径。</description>
     </item>
     <item>
-      <title>原始智能（对话 Angus Fletcher）</title>
-      <link>https://castnote.github.io/episodes/econtalk/econtalk/</link>
-      <guid>https://castnote.github.io/episodes/econtalk/econtalk/</guid>
-      <pubDate>Mon, 03 Nov 2025 13:00:00 GMT</pubDate>
-      <description>本期节目邀请俄亥俄州立大学故事科学教授 Angus Fletcher，围绕其新书《原始智能》展开对话。Fletcher 认为现代社会对智能的定义过于偏重逻辑和数据驱动的决策，忽视了人脑在低信息、高不确定性环境中演化出的核心能力。他结合与美军特种作战部队多年合作的经历，探讨了制定计划的真正价值不在于计划本身而在于培养计划制定者、如何通过「释放新手」来突破专家瓶颈、为什么发现例外信息比识别模式更重要等主题。节目还深入讨论了情绪作为智能信号的角色——恐惧意味着没有计划、愤怒意味着只有一个计划，以及「可以成功」与「会成功」之间乐观主义的本质区别。Fletcher 分享了为特种作战人员提供婚姻咨询的经历，介绍了通过「不问为什么」来发现他人独特性的沟通技巧，并阐述了莎士比亚作品如何体现和训练这种原始智能。</description>
-    </item>
-    <item>
       <title>IBM CEO Arvind Krishna：用 AI 和量子计算打造更智能的商业</title>
       <link>https://castnote.github.io/episodes/smart-talks-ibm/smart-talks-ibm/</link>
       <guid>https://castnote.github.io/episodes/smart-talks-ibm/smart-talks-ibm/</guid>
       <pubDate>Tue, 28 Oct 2025 11:00:18 GMT</pubDate>
       <description>本期节目中，Malcolm Gladwell 在 IBM 纽约办公室与 IBM CEO 兼董事长 Arvind Krishna 进行了一场面对面对话。Krishna 回顾了自己从1990年在 IBM 研究院做无线网络（即后来的 Wi-Fi）起步的职业经历，分享了他对技术趋势的早期预判——包括网络与计算融合、视频流媒体的兴起。他详细讲述了2018年力主收购 Red Hat 的决策过程，解释了为何选择成为云巨头的最佳合作伙伴而非直接竞争者。在 AI 话题上，Krishna 指出企业应聚焦可规模化的应用而非花哨实验，并认为大语言模型本身不太可能通向超级智能，关键在于将知识表征与 LLM 融合。他最热情的话题是量子计算，将其定位为继经典计算和 AI 之后的「第三种数学」，认为其重要性堪比半导体，并预计三到五年内将出现令人震惊的突破性成果，在金融定价、材料科学、物流优化等领域展现巨大价值。</description>
+    </item>
+    <item>
+      <title>原始智能（对话 Angus Fletcher）</title>
+      <link>https://castnote.github.io/episodes/econtalk/econtalk/</link>
+      <guid>https://castnote.github.io/episodes/econtalk/econtalk/</guid>
+      <pubDate>Mon, 06 Oct 2025 19:52:08 GMT</pubDate>
+      <description>本期节目邀请俄亥俄州立大学故事科学教授 Angus Fletcher，围绕其新书《原始智能》展开对话。Fletcher 认为现代社会对智能的定义过于偏重逻辑和数据驱动的决策，忽视了人脑在低信息、高不确定性环境中演化出的核心能力。他结合与美军特种作战部队多年合作的经历，探讨了制定计划的真正价值不在于计划本身而在于培养计划制定者、如何通过「释放新手」来突破专家瓶颈、为什么发现例外信息比识别模式更重要等主题。节目还深入讨论了情绪作为智能信号的角色——恐惧意味着没有计划、愤怒意味着只有一个计划，以及「可以成功」与「会成功」之间乐观主义的本质区别。Fletcher 分享了为特种作战人员提供婚姻咨询的经历，介绍了通过「不问为什么」来发现他人独特性的沟通技巧，并阐述了莎士比亚作品如何体现和训练这种原始智能。</description>
     </item>
     <item>
       <title>你从未听说过的最有权势的人</title>
