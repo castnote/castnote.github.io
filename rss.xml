@@ -6,6 +6,27 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>为下一个信贷损失周期做准备</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/preparing-for-the-next-capital-loss-cycle-tcaf/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/preparing-for-the-next-capital-loss-cycle-tcaf/</guid>
+      <pubDate>Mon, 15 Jun 2026 21:40:30 GMT</pubDate>
+      <description>本期节目对话 PIMCO 集团首席投资官 Dan Iverson，探讨当前全球宏观经济格局与固定收益投资机遇。讨论涵盖地缘政治破裂、全球化逆转、AI 基础设施投资浪潮（预计未来五年近 10 万亿美元）、信贷损失周期的回归、美联储新主席的沟通风格等议题。Iverson 认为尽管不确定性上升，但美国经济韧性强劲，高质量债券在当前利率环境下具有吸引力，AI 数据中心融资为债券投资者提供了结构性参与机会。</description>
+    </item>
+    <item>
+      <title>Carmen Li 的算力期货市场构想</title>
+      <link>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</guid>
+      <pubDate>Mon, 15 Jun 2026 08:06:24 GMT</pubDate>
+      <description>本期节目采访了 Compute Exchange 和 Silicon Data 的 CEO Carmen Li，探讨 GPU 算力能否像石油一样成为可交易的大宗商品。Carmen Li 详细介绍了她正在构建的算力交易市场：从 GPU 指数定价、现货采购平台到与 CME 合作推出的现金结算期货合约。讨论涵盖了算力市场的参与者结构、GPU 价格波动特征、数据采集方法、基准指数的构建逻辑、芯片翻新业务，以及对 AI 泡沫的讨论。她指出 GPU 每日波动率在 20-30% 区间，属于健康的大宗商品波动范围，而算力期货的核心功能是帮助 NeoCloud（多头）和算力消费者（空头）对冲价格风险。</description>
+    </item>
+    <item>
+      <title>肌酸：抗衰老专家揭秘医生不会告诉你的减脂秘密</title>
+      <link>https://castnote.github.io/episodes/diary-of-a-ceo/anti-aging-expert-creatine-is-the-fat-loss-secret-doctors-don-t-tell-you-dr-darren-candow/</link>
+      <guid>https://castnote.github.io/episodes/diary-of-a-ceo/anti-aging-expert-creatine-is-the-fat-loss-secret-doctors-don-t-tell-you-dr-darren-candow/</guid>
+      <pubDate>Mon, 15 Jun 2026 07:00:19 GMT</pubDate>
+      <description>本期对话肌酸研究专家 Dr. Darren Candow，系统讲解肌酸补充的科学依据与应用。节目逐一辟谣了肌酸损害肾脏、导致水肿、只适合男性、引发脱发、造成肌肉抽筋五大常见误解；详细阐释肌酸在骨骼肌中的能量货币功能、对训练容量与肌肉表现的提升机制，以及从三至五克基础剂量到八至十二克骨骼剂量再到二十克压力脑剂量阶梯式调整的「剂量困境」。同时延伸讨论了肌酸对绝经后女性骨骼密度保护、睡眠剥夺与高压力情境下大脑认知表现改善、在阿尔茨海默病、抑郁症辅助治疗中的早期证据，以及儿童青少年服用的安全性。嘉宾强调肌酸只是健康工具箱中的一个配件，重量训练才是优先级最高的干预手段，营养与运动需协同推进健康老龄化。</description>
+    </item>
+    <item>
       <title>这是我自己的树，为什么不能砍？</title>
       <link>https://castnote.github.io/episodes/planet-money/it-s-my-tree-why-can-t-i-cut-it-down/</link>
       <guid>https://castnote.github.io/episodes/planet-money/it-s-my-tree-why-can-t-i-cut-it-down/</guid>
@@ -109,6 +130,13 @@
       <guid>https://castnote.github.io/episodes/the-indicator/who-should-new-grads-boo-more-ai-or-remote-work-the-indicator/</guid>
       <pubDate>Fri, 05 Jun 2026 16:16:18 GMT</pubDate>
       <description>本期节目解读 2026 年 5 月美国就业报告，重点关注三个议题：整体就业形势连续三个月强劲，失业率维持 4.3%，新增 172,000 个岗位；年轻劳动者（20-24 岁）求职困境的真正原因——两项新研究指向远程办公而非 AI 是主要因素；黑人劳动者失业率作为整体就业市场领先指标的实证意义。节目还讨论了通胀压力下美联储利率政策走向。</description>
+    </item>
+    <item>
+      <title>AI 先驱 Geoffrey Hinton：AI 有意识、超级智能正在来临、我们应该担忧</title>
+      <link>https://castnote.github.io/episodes/big-technology/ai-pioneer-geoffrey-hinton-ai-is-conscious-superintelligence-is-coming-and-we-should-be-wo/</link>
+      <guid>https://castnote.github.io/episodes/big-technology/ai-pioneer-geoffrey-hinton-ai-is-conscious-superintelligence-is-coming-and-we-should-be-wo/</guid>
+      <pubDate>Thu, 04 Jun 2026 16:30:06 GMT</pubDate>
+      <description>本期节目对话 AI 先驱、诺贝尔物理学奖得主 Geoffrey Hinton，探讨 AI 的当前状态、未来发展轨迹及其潜在风险。Hinton 认为 AI 已经具备理解能力甚至意识，超级智能将在 20 年内到来。他担忧公司竞争而非智能设计正在塑造这些新存在，导致安全问题被忽视。讨论涵盖就业影响、自我保存目标、信息崩溃风险、情感依恋问题等，并反思人类自我认知的历史教训。</description>
     </item>
     <item>
       <title>为什么运动像惩罚（以及如何改变它）</title>
@@ -223,11 +251,32 @@
       <description>Malcolm Gladwell 从一段 Joe Rogan 访谈 RFK Jr. 的播客片段出发，探讨了访谈作为一种艺术形式的意义。RFK Jr. 在节目中声称1918年西班牙流感并非由病毒引起，而是疫苗所致，并错误引用了一篇 Fauci 论文作为支撑。Gladwell 指出 Rogan 未能对这些荒谬言论提出任何质疑，并将其与 Oprah Winfrey 的访谈技巧形成鲜明对比——Oprah 在采访 Meghan Markle 时层层深入，引出了关于皇室种族偏见的关键信息。Gladwell 还分析了 Rogan 采访 Elon Musk 和 Matt Walsh 时的类似问题，揭示出一种模式：Rogan 选择做朋友式的闲聊，而非承担采访者的追问责任。随后 Gladwell 追溯了 RFK Jr. 错误信息的来源——一位长岛律师和一位佛罗里达脊椎治疗师的博客文章。节目最后，Gladwell 通过自己在巡回活动中被心理学家 Michael Gervais 采访的经历，展示了一次真正优秀的访谈如何引导受访者走出预设叙事，抵达意想不到的情感深处。</description>
     </item>
     <item>
+      <title>阵亡将士纪念日，2020 — 第一部分</title>
+      <link>https://castnote.github.io/episodes/revisionist-history/memorial-day-2020-part-1-revisionist-history-malcolm-gladwell/</link>
+      <guid>https://castnote.github.io/episodes/revisionist-history/memorial-day-2020-part-1-revisionist-history-malcolm-gladwell/</guid>
+      <pubDate>Thu, 13 Mar 2025 16:58:54 GMT</pubDate>
+      <description>本期节目深入分析 2020 年 George Floyd 事件，从 911 接线员 Jenna Scurry 的视角出发，探讨警官 Derek Chauvin 为何在长达 9 分钟的时间里持续压制 Floyd 直至其死亡。节目引入心理学家 Gary Klein 的「固着」理论和 Ken Dodge 的「敌意意图归因」理论，解释 Chauvin 的行为模式。节目还揭露了 2017 年 Chauvin 对一名 14 岁少年的类似暴力事件，提出一个系统性的问题：为何一个在录像中显示出无法区分威胁与非威胁行为的人能继续留在警队。</description>
+    </item>
+    <item>
+      <title>多任务处理真的有效吗？为什么我们还在不断尝试？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/601-multitasking-doesn-t-work-so-why-do-we-keep-trying-freakonomics-radio/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/601-multitasking-doesn-t-work-so-why-do-we-keep-trying-freakonomics-radio/</guid>
+      <pubDate>Thu, 05 Sep 2024 12:31:56 GMT</pubDate>
+      <description>本期节目探讨多任务处理的科学真相。研究表明，绝大多数人并不具备真正的多任务处理能力——我们只是在任务之间快速切换注意力，这会带来切换成本、错误增加和压力上升。节目中介绍了「超级任务处理者」这一罕见群体（仅约 2.5% 人口），以及注意力跨度从 2003 年的 2.5 分钟下降到 2012 年的 75 秒的惊人数据。节目还探讨了 Zeigarnik 效应（未完成任务的心理焦虑）以及现代协作工具如 Slack 如何加剧注意力分散问题，最后从个人、组织和社会三个层面提出了解决方案建议。</description>
+    </item>
+    <item>
       <title>No Priors Ep. 80 | 对话 Andrej Karpathy：从特斯拉自动驾驶到 AI 教育的未来</title>
       <link>https://castnote.github.io/episodes/no-priors/ep80-hm-h0ua7upi/</link>
       <guid>https://castnote.github.io/episodes/no-priors/ep80-hm-h0ua7upi/</guid>
       <pubDate>Thu, 05 Sep 2024 04:00:00 GMT</pubDate>
       <description>本期 No Priors 邀请到 Andrej Karpathy——OpenAI 早期成员、前特斯拉 Autopilot 负责人——就自动驾驶、人形机器人、Transformer 架构、合成数据和 AI 教育展开对话。Karpathy 认为 Tesla 走的是软件路线，Waymo 走的是硬件路线，端到端深度学习的策略更有规模化优势；从汽车到 Optimus 人形机器人，大量技术栈可直接迁移。他指出 Transformer 的 scaling law 由几项关键创新的组合驱动，当前架构不再是瓶颈，真正的战场在数据集和 loss function，合成数据是必经之路但须警惕「静默崩塌」。在教育方面，他阐述 Eureka Labs 愿景：教师退居后端设计课程，AI 作为前端与学生交互，让 80 亿人都能获得优质教育。</description>
+    </item>
+    <item>
+      <title>Mark Rober：从 NASA 工程师到 YouTube 科学传播者</title>
+      <link>https://castnote.github.io/episodes/how-i-built-this/mark-rober-how-i-built-this-with-guy-raz-wondery-means-business/</link>
+      <guid>https://castnote.github.io/episodes/how-i-built-this/mark-rober-how-i-built-this-with-guy-raz-wondery-means-business/</guid>
+      <pubDate>Mon, 22 Apr 2024 19:35:47 GMT</pubDate>
+      <description>本期节目访谈 YouTube 科学传播者 Mark Rober，讲述他从 NASA JPL 喷气推进实验室工程师到全职 YouTuber 再到创业者的转型之路。他分享了在好奇号火星车项目中担任「门」工程师的经历、早期 YouTube 视频创作的心路历程、自动靶心 dartboard 和 glitter bomb 等爆款视频背后的工程思维、以及最终创立 CrunchLabs 做儿童科学订阅盒的故事。整个对话展现了工程师思维如何应用于内容创作和商业决策，以及他对科学教育和下一代的影响力愿景。</description>
     </item>
     <item>
       <title>家庭、创业与五万美元</title>
