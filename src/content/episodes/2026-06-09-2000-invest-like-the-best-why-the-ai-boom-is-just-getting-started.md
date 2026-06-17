@@ -4,7 +4,7 @@ podcast: "Invest Like the Best"
 podcast_slug: "invest-like-the-best"
 episode_slug: "why-the-ai-boom-is-just-getting-started"
 episode_url: "https://www.youtube.com/watch?v=DZt1DDmMNGk"
-summary: "本期 Patrick O'Shaughnessy 访谈科技投资人 Gavin Baker，讨论 AI 基础设施投资中最硬的约束。话题从 GPU、晶圆、先进封装和台积电产能讲到电力、数据中心、资本开支和模型公司的融资节奏。节目不只讨论模型会不会更强，而是把物理供应链、算力瓶颈、资本市场定价和数据中心建设放在一起，分析哪些限制会决定 AI 基础设施公司的竞争格局。"
+summary: "AI领域正在发生的事情，我认为是资本主义史上、美国商业史上最非凡的时刻。Anthropic新增了110亿美元的年化经常性收入（ARR）。过去十到十二年间成立的三家最高知名度的SaaS公司是Palantir、Snowflake和Databricks，这三家公司花了十年时间来建立各自的业务。而Anthropic在一个月内就增加了它们的业务总和。这种事情在资本主义的历史上从未发生过。不只是我的职业生涯，而是整个资本主义的历史，整个商业的历史。"
 category: "商业"
 hosts:
   - name: "Patrick O'Shaughnessy"
