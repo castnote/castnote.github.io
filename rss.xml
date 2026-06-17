@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Warren Buffett 50亿美元握手交易：Goldman Sachs 前CEO Lloyd Blankfein 谈投资、风险与人生</title>
+      <link>https://castnote.github.io/episodes/my-first-million/warren-buffett-committed-5-billion-faster-than-you-read-this-title/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/warren-buffett-committed-5-billion-faster-than-you-read-this-title/</guid>
+      <pubDate>Tue, 16 Jun 2026 11:16:43 GMT</pubDate>
+      <description>Goldman Sachs 高级主席、前CEO Lloyd Blankfein 与 Sam Parr 进行了一场关于投资、风险管理与人生经历的深度对话。从 Warren Buffett 在金融危机期间仅凭握手和电话就向 Goldman Sachs 投资50亿美元的传奇故事，到顶级交易员与普通人差距有多小；从个人投资组合98%集中在风险资产，到童年贫困如何塑造了一生的金钱焦虑。Blankfein 还分享了关于婚姻、抗压能力、历史阅读的见解，以及对美国梦和移民精神的思考。</description>
+    </item>
+    <item>
       <title>为下一个信贷损失周期做准备</title>
       <link>https://castnote.github.io/episodes/animal-spirits/preparing-for-the-next-capital-loss-cycle-tcaf/</link>
       <guid>https://castnote.github.io/episodes/animal-spirits/preparing-for-the-next-capital-loss-cycle-tcaf/</guid>
@@ -108,7 +115,7 @@
       <link>https://castnote.github.io/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/</link>
       <guid>https://castnote.github.io/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/</guid>
       <pubDate>Tue, 09 Jun 2026 12:00:33 GMT</pubDate>
-      <description>本期 Patrick O&apos;Shaughnessy 访谈科技投资人 Gavin Baker，讨论 AI 基础设施投资中最硬的约束。话题从 GPU、晶圆、先进封装和台积电产能讲到电力、数据中心、资本开支和模型公司的融资节奏。节目不只讨论模型会不会更强，而是把物理供应链、算力瓶颈、资本市场定价和数据中心建设放在一起，分析哪些限制会决定 AI 基础设施公司的竞争格局。</description>
+      <description>AI领域正在发生的事情，我认为是资本主义史上、美国商业史上最非凡的时刻。Anthropic新增了110亿美元的年化经常性收入（ARR）。过去十到十二年间成立的三家最高知名度的SaaS公司是Palantir、Snowflake和Databricks，这三家公司花了十年时间来建立各自的业务。而Anthropic在一个月内就增加了它们的业务总和。这种事情在资本主义的历史上从未发生过。不只是我的职业生涯，而是整个资本主义的历史，整个商业的历史。</description>
     </item>
     <item>
       <title>OpenAI 的 Dan Roberts：AI 为什么现在能做科学发现</title>
@@ -132,6 +139,13 @@
       <description>本期节目解读 2026 年 5 月美国就业报告，重点关注三个议题：整体就业形势连续三个月强劲，失业率维持 4.3%，新增 172,000 个岗位；年轻劳动者（20-24 岁）求职困境的真正原因——两项新研究指向远程办公而非 AI 是主要因素；黑人劳动者失业率作为整体就业市场领先指标的实证意义。节目还讨论了通胀压力下美联储利率政策走向。</description>
     </item>
     <item>
+      <title>Apple Silicon 遇到竞争对手！</title>
+      <link>https://castnote.github.io/episodes/waveform/apple-silicon-has-competition/</link>
+      <guid>https://castnote.github.io/episodes/waveform/apple-silicon-has-competition/</guid>
+      <pubDate>Fri, 05 Jun 2026 14:05:19 GMT</pubDate>
+      <description>本期节目在 WWDC 2026 前讨论了 Apple Siri 助手的预期更新及其与 iPhone 的深度整合；回顾了 Fitbit Air 和 Garmin 等健身追踪设备的使用体验；介绍了 Google 新推出的网站退出 AI 概览功能；分析了 Nvidia RTX Spark 芯片如何挑战 Apple Silicon 在 ARM 笔记本领域的主导地位；探讨了 Microsoft 的 Project Solara Agent 操作系统以及禁用员工 Claude 订阅的决策；最后解释了 SpaceX 通过收购 XAI 和 Twitter 实现的复杂 IPO 财务操作及其对指数基金投资者的影响。</description>
+    </item>
+    <item>
       <title>AI 先驱 Geoffrey Hinton：AI 有意识、超级智能正在来临、我们应该担忧</title>
       <link>https://castnote.github.io/episodes/big-technology/ai-pioneer-geoffrey-hinton-ai-is-conscious-superintelligence-is-coming-and-we-should-be-wo/</link>
       <guid>https://castnote.github.io/episodes/big-technology/ai-pioneer-geoffrey-hinton-ai-is-conscious-superintelligence-is-coming-and-we-should-be-wo/</guid>
@@ -146,6 +160,13 @@
       <description>本期节目探讨了为什么很多人把运动变成了一种对身体的惩罚，而非快乐的源泉。主持人Laurie Santos与瑜伽教练、作家Jessamyn Stanley对话，Jessamyn分享了自己作为一个胖孩子从小恐惧运动、到成年后通过热瑜伽练习打破身体羞耻感的经历。她讲述了如何从最初无法忍受看到自己的身体，到通过在家练习和给自己拍照，逐渐认识到自我厌恶的根源在于自己而非外界。两人讨论了瑜伽如何不仅是身体锻炼，更是一条灵性道路——通过在体式中练习接纳不适、占据空间、倾听身体，这些能力可以迁移到生活的其他方面。Jessamyn还分享了她在教课中发现身体焦虑是所有人的普遍问题，而自我接纳能产生连锁反应、帮助他人也接纳自己。</description>
     </item>
     <item>
+      <title>畅销书作家 Jason Wilson 重新定义男子气概、疗愈以及为什么脆弱是力量</title>
+      <link>https://castnote.github.io/episodes/pivot/jason-wilson-best-selling-author-redefines-masculinity-healing-and-why-vulnerability-is-st/</link>
+      <guid>https://castnote.github.io/episodes/pivot/jason-wilson-best-selling-author-redefines-masculinity-healing-and-why-vulnerability-is-st/</guid>
+      <pubDate>Fri, 29 May 2026 19:30:06 GMT</pubDate>
+      <description>本期 Pivot 播客邀请畅销书作家、武术教练 Jason Wilson 深入探讨男性心理健康与全面男子气概。Wilson 提出「全面男子气概」概念，认为男性不应被单一的「阳刚」定义所束缚，而应同时具备勇气与同情心、强大与敏感、战士与培育者的特质。他分享了在底特律创立 Cave of Adullam 的经历，通过武术训练帮助年轻男孩学会表达情绪、处理创伤，强调情绪表达不是软弱，而是释放内心负担的必要过程。Wilson 还谈及母亲去世的亲身经历、男性自杀率居高不下的现实，以及文化（特别是嘻哈音乐）对年轻一代的影响，呼吁男性打破「面具」，从内心善意而非恐惧出发生活。</description>
+    </item>
+    <item>
       <title>物理学最大谜团：反物质、暗能量与万物理论</title>
       <link>https://castnote.github.io/episodes/lex-fridman/biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49/</link>
       <guid>https://castnote.github.io/episodes/lex-fridman/biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49/</guid>
@@ -158,6 +179,13 @@
       <guid>https://castnote.github.io/episodes/latent-space/context-engineering-for-cloud-agents-walden-yan-cole-murray/</guid>
       <pubDate>Thu, 28 May 2026 17:57:06 GMT</pubDate>
       <description>本期围绕云端 Agent 的上下文工程展开，讨论背景智能体如何从规格说明走到可合并的代码变更。Walden Yan 与 Cole Murray 分享了 cloud agents、Devon、Open Inspect 和评估工具背后的实践，重点不在“让模型更聪明”这个抽象目标，而在如何组织上下文、任务环境、权限、反馈和测试。节目展示当智能体开始承担完整开发流程时，软件交付机制需要在提示词之外重新设计。</description>
+    </item>
+    <item>
+      <title>Kenny Smith：NBA 冠军讲述未曝光的 MJ 故事、Inside the NBA 秘密与人生 lessons</title>
+      <link>https://castnote.github.io/episodes/pivot/kenny-smith-nba-champ-tells-untold-mj-stories-inside-the-nba-secrets-and-life-lessons-the/</link>
+      <guid>https://castnote.github.io/episodes/pivot/kenny-smith-nba-champ-tells-untold-mj-stories-inside-the-nba-secrets-and-life-lessons-the/</guid>
+      <pubDate>Tue, 26 May 2026 16:00:06 GMT</pubDate>
+      <description>本期节目邀请了两届 NBA 冠军、Inside the NBA 资深分析师 Kenny Smith。他分享了许多从未公开的 Michael Jordan 故事，包括在北卡时期与 MJ 的相处细节、对 MJ 竞争性的观察，以及他对 Scottie Pippen 的「嫉妒」。Kenny 回顾了自己的篮球生涯——从纽约街头篮球的 rough 环境到北卡蓝血名校，再到火箭队的两连冠，特别是 1995 年以六号种子身份创造季后赛传奇。他还谈到了在 Inside the NBA 三十年的解说经历、2020 年在节目现场离场声援球员抗议的决定、两段婚姻和作为父亲的人生感悟，以及他对新一代球员 Victor Wembanyama 的评价。</description>
     </item>
     <item>
       <title>从底层理解芯片设计 — Reiner Pope</title>
@@ -207,6 +235,13 @@
       <guid>https://castnote.github.io/episodes/no-priors/ep-kwsvtq7dziu/</guid>
       <pubDate>Fri, 20 Mar 2026 13:27:35 GMT</pubDate>
       <description>本期节目邀请了 AI 领域知名研究者 Andrej Karpathy，围绕代码智能体的崛起展开深入对话。Karpathy 分享了自 2024 年 12 月以来他的工作流发生的根本性转变——从 80% 手写代码变为几乎完全委托给智能体，并将当前状态描述为一种持续的「AI 精神亢奋」。他详细介绍了自己搭建的家庭 AI 管家 Dobby，通过自然语言和 WhatsApp 统一控制灯光、空调、安防等六套系统。讨论深入到 Auto Research 的理念与实践——如何让研究完全自主运行、移除人类瓶颈，以及他在 GPT 训练优化上获得的意外成果。节目还探讨了模型的「锯齿感」问题（在可验证领域极强但在软性任务上仍有明显短板）、开源与闭源模型的动态平衡、独立研究者相对于前沿实验室的角色价值，以及数字世界将先于物理世界被 AI 大幅重构的预判。最后 Karpathy 分享了 Micro GPT 项目背后的教育理念转变——未来的教育不再是直接教人，而是教智能体，让智能体去做个性化教学。</description>
+    </item>
+    <item>
+      <title>Alison Roman 的番茄酱市场征服计划</title>
+      <link>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</guid>
+      <pubDate>Mon, 23 Feb 2026 09:13:30 GMT</pubDate>
+      <description>本期 Odd Lots 播客邀请食品界知名人物 Alison Roman，探讨她从食谱作者到创立番茄酱品牌「a very good tomato sauce」的创业历程。讨论了消费品行业的高端定价困境（38美元一罐的理想 vs 12美元的现实）、配方如何从厨房走向规模化生产、与合作制造商的磨合过程、供应链采购决策、分销与货架空间的「先有鸡还是先有蛋」难题、融资选择（自筹 vs VC），以及如何利用已有的媒体影响力（newsletter、食谱书）来降低营销成本并实现产品快速售罄。Alison 还分享了她对 ghost kitchen 模式的质疑、食品媒体的美学化倾向，以及她作为「不 bet 人生于此」的创业者如何在质量与规模之间保持平衡。</description>
     </item>
     <item>
       <title>2026年商业大亨模拟游戏前瞻</title>
