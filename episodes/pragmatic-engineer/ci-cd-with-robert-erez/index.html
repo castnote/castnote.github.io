@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期播客对话 Octopus Deploy 工程师 Robert Erez，深入探讨 CI/CD 的成熟度阶梯、GitOps 的四大支柱及其在实际应用中的误区、Kubernetes 在本地部署中的多样化场景（包括零售门店和研究船只）、平台团队的兴起与 DevOps 的演进、AI 对 CI/CD 流程的影响、渐进式交付策略（金丝雀部署、蓝绿部署、功能开关）以及「向前回滚而非向后回滚」的实践哲学。Robert 强调，大多数团队真正关心的只是发布软件，而非追逐术语或绝对化的实践。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/pragmatic-engineer/ci-cd-with-robert-erez/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="CI/CD：从持续集成到渐进式交付 | 听阅"><meta property="og:description" content="本期播客对话 Octopus Deploy 工程师 Robert Erez，深入探讨 CI/CD 的成熟度阶梯、GitOps 的四大支柱及其在实际应用中的误区、Kubernetes 在本地部署中的多样化场景（包括零售门店和研究船只）、平台团队的兴起与 DevOps 的演进、AI 对 CI/CD 流程的影响、渐进式交付策略（金丝雀部署、蓝绿部署、功能开关）以及「向前回滚而非向后回滚」的实践哲学。Robert 强调，大多数团队真正关心的只是发布软件，而非追逐术语或绝对化的实践。"><meta property="og:url" content="https://castnote.github.io/episodes/pragmatic-engineer/ci-cd-with-robert-erez/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CI/CD：从持续集成到渐进式交付 | 听阅"><meta name="twitter:description" content="本期播客对话 Octopus Deploy 工程师 Robert Erez，深入探讨 CI/CD 的成熟度阶梯、GitOps 的四大支柱及其在实际应用中的误区、Kubernetes 在本地部署中的多样化场景（包括零售门店和研究船只）、平台团队的兴起与 DevOps 的演进、AI 对 CI/CD 流程的影响、渐进式交付策略（金丝雀部署、蓝绿部署、功能开关）以及「向前回滚而非向后回滚」的实践哲学。Robert 强调，大多数团队真正关心的只是发布软件，而非追逐术语或绝对化的实践。"><meta property="article:published_time" content="2026-06-17T16:41:01.000Z"><meta property="article:tag" content="播客"><title>CI/CD：从持续集成到渐进式交付 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"CI/CD：从持续集成到渐进式交付","description":"本期播客对话 Octopus Deploy 工程师 Robert Erez，深入探讨 CI/CD 的成熟度阶梯、GitOps 的四大支柱及其在实际应用中的误区、Kubernetes 在本地部署中的多样化场景（包括零售门店和研究船只）、平台团队的兴起与 DevOps 的演进、AI 对 CI/CD 流程的影响、渐进式交付策略（金丝雀部署、蓝绿部署、功能开关）以及「向前回滚而非向后回滚」的实践哲学。Robert 强调，大多数团队真正关心的只是发布软件，而非追逐术语或绝对化的实践。","datePublished":"2026-06-17T16:41:01.000Z","author":[{"@type":"Person","name":"Gergely Orosz"},{"@type":"Person","name":"Robert Erez"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/pragmatic-engineer/ci-cd-with-robert-erez/","isPartOf":{"@type":"PodcastSeries","name":"The Pragmatic Engineer Podcast"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/pragmatic-engineer/">The Pragmatic Engineer Podcast</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/18 00:41:01</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://newsletter.pragmaticengineer.com/p/cicd-with-robert-erez">原始节目</a> </div> <h1>CI/CD：从持续集成到渐进式交付</h1> <p class="episode-summary">本期播客对话 Octopus Deploy 工程师 Robert Erez，深入探讨 CI/CD 的成熟度阶梯、GitOps 的四大支柱及其在实际应用中的误区、Kubernetes 在本地部署中的多样化场景（包括零售门店和研究船只）、平台团队的兴起与 DevOps 的演进、AI 对 CI/CD 流程的影响、渐进式交付策略（金丝雀部署、蓝绿部署、功能开关）以及「向前回滚而非向后回滚」的实践哲学。Robert 强调，大多数团队真正关心的只是发布软件，而非追逐术语或绝对化的实践。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Gergely Orosz</span> </div> <p class="person-description">The Pragmatic Engineer 播客主持人，前 Uber、Skype 工程经理，软件工程深度内容作者</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Robert Erez</span> </div> <p class="person-description">Octopus Deploy 工程师，CI/CD 领域十年从业者，曾在 Skype 工作，专注于部署工具和渐进式交付实践</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Kat Cosgrove</span>  </div> <p class="person-description">Kubernetes 团队成员，曾在 Pragmatic Engineer 播客讨论 Kubernetes 起源</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Kelsey Hightower</span>  </div> <p class="person-description">CoreOS 工程师，曾开发 Fleet 容器编排工具</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Paul Stovell</span>  </div> <p class="person-description">Octopus Deploy CEO，工程师出身</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Abdel</span>  </div> <p class="person-description">Robert 和 Gergely 在 Skype 时的共同经理</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Gene Kim</span>  </div> <p class="person-description">《Phoenix Project》作者，DevOps 实践推广者</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Kim Scott</span>  </div> <p class="person-description">《Radical Candour》作者，沟通与组织管理专家</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Greg Egan</span>  </div> <p class="person-description">澳大利亚科幻作家，硬科幻和数学背景著称</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="cicd-的成熟度阶梯">CI/CD 的成熟度阶梯</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>CI/CD 仍然是软件工程中最难做好的一件事。为什么？</p>
+<p><strong>Robert Erez</strong></p>
+<p>你是对的，人们经常把 CI 和 CD 当作可以互换的概念，或者直接把它们连在一起叫 CI/CD。对我来说，很难想象没有 CI（持续集成）的 CD（持续交付）。</p>
+<p>看待这个问题的方式是，软件团队在发展过程中会经历多个成熟度阶段。最初是 YOLO——你直接部署到生产环境，或者 SSH 到服务器上手动操作。我们都在这样的地方工作过，这是起点。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>YOLO 是第一阶段。第二阶段是持续集成。</p>
+<p><strong>Robert Erez</strong></p>
+<p>持续集成这个概念是：你要持续地将代码变更合并到一个主分支上，并且持续地对它运行测试。</p>
+<p>持续交付是下一阶段。我们说要测试代码，有单元测试、集成测试等等。但你还真正需要测试的是你的部署流程本身。持续交付的理念是：在任意时刻，当我点击部署按钮时，我要确保它能顺利到达生产环境。</p>
+<p>再往下一阶段——并非所有公司都能达到——是持续部署。这意味着你的所有变更不仅被合并、准备好发布，而且会自动被部署到生产环境。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以我们有四个阶段：YOLO、持续集成、持续交付、持续部署。持续交付和持续部署的区别是什么？</p>
+<p><strong>Robert Erez</strong></p>
+<p>最大的区别在于：你的变更是否会自动发布到生产环境？是否会无需人工干预就自动流转？对于持续交付，变更会发布，但不一定到生产环境，而是到开发环境、测试环境、预发布环境等。可能某些环节仍然是手动的，比如你可能每周只更新一次测试环境让测试人员使用。但关键原则是：你如果有需要，可以让它自动走完整个流程。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>什么样的团队不想做持续部署？持续交付似乎是大家想要的，因为能获得更多反馈。但问题是，是否应该立即发布到生产环境？</p>
+<p><strong>Robert Erez</strong></p>
+<p>每个人都会问这个问题：既然已经准备好了，为什么不直接推到生产环境？作为工程师，你当然想尽快发布。现实是，这对每家公司并不都适用。有些公司仍然有审查委员会，需要验证是否可以发布。特别是在有大量监管和合规要求的行业，他们需要确保发布时有合适的人员在场，在正确的时间进行。不能简单地说每个人都应该做持续部署，因为有时候这根本不可行。但如果你至少能达到持续交付阶段——看到变更通过所有测试、在不同环境中推广——你只需要每周点一次按钮发布到生产环境，那也没问题。你已经做了大量工作，降低了风险，这正是这个流程的核心目的：尽早发现问题，去风险化。</p>
+<h2 id="kubernetes-与-gitops">Kubernetes 与 GitOps</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>当我在 Octopus Deploy 网站上看到，它写着部署、持续部署、持续交付，但也写着 Kubernetes。Kubernetes 是怎么进入 CI/CD 和基础设施话题的？</p>
+<p><strong>Robert Erez</strong></p>
+<p>Kubernetes 是当下主流的平台。回顾一下，Kubernetes 诞生于 Google。他们最初有 Borg 系统，用来托管和运行基础设施。Kubernetes 的发布，部分是为了在他们和其他云服务商之间拉平竞争场地。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>在 Kubernetes 出现之前，AWS 是明显的领导者。我和曾在 Kubernetes 团队工作的 Kat Cosgrove 谈过，她推测通过发布 Kubernetes，可以更容易地在 AWS 和 Google Cloud 之间迁移工作负载。这拉平了竞争场地，选择 Google Cloud 或 Azure 不再是那么大的风险。</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错，它让在不同服务商之间迁移变得简单。作为平台客户，如果你想从 AWS 迁移，使用容器的话，无非就是把东西放到新地方。Kubernetes 出现时，市面上还有 Nomad、Docker Swarm 等容器编排工具。CoreOS 的 Kelsey Hightower 还做了 Fleet。这些都在 2012 到 2014 年左右，然后 Kubernetes 出来并开始赢得市场份额。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>为什么 Kubernetes 会赢？</p>
+<p><strong>Robert Erez</strong></p>
+<p>它提供的机制吸引了工程师和 DevOps 团队。加上它跨平台使用的便利性，以及云服务商的采用，它最终成为了这个领域的赢家。就连非容器编排工具如 Azure Service Fabric 也是试图处理微服务托管的问题——如何编排、处理依赖等。但 Kubernetes 已经成为明显的赢家。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>当你说赢家时，我理解的是，比如你有后端服务器集群，你会用 Kubernetes 来管理。但你说的基础设施，甚至包括构建服务器？</p>
+<p><strong>Robert Erez</strong></p>
+<p>有意思的是，我们说 Kubernetes 是云原生的——这是你常听到的词。看看那些采用它的服务商：Azure、AWS 都在平台上提供它。但实际上，很多客户在本地（on-premise）运行 Kubernetes。我们相当一部分做 Kubernetes 的客户，是在自己的虚拟机、自己的服务器农场上运行，或者是在 AWS 或 Azure 上运行虚拟机但自己维护 Kubernetes 本身。这样他们可以更精确地控制正在运行的东西。这在金融行业特别常见，他们想完全控制和管理整个基础设施，同时利用 Kubernetes 提供的声明式定义能力。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以他们选择 Kubernetes 作为管理本地基础设施的最佳工具，说：我有这些物理机器，我要这么多虚拟机，在这个节点上运行数据库，在那边运行内部 Web 服务器。它也赢了这个领域。</p>
+<p><strong>Robert Erez</strong></p>
+<p>是的。差不多 Kubernetes 出现的同时，其实更早，就有很多声明式工具了。Terraform 就是很流行的一个，你可以定义想要什么基础设施，工具会应用它。Puppet 等也是。Kubernetes 有类似概念：你定义基础设施应该是什么样，内部的控制器和操作器会确保你要求的状态始终生效。你说要三个副本，它就会确保有三个副本。如果某个 Pod 死了，它会启动新的。这简化了声明式定义的过程。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你提到 Kubernetes 在本地部署中有一些有趣的用例，能分享一些吗？</p>
+<p><strong>Robert Erez</strong></p>
+<p>这是我们工作中有趣的地方。我们和那么多不同的客户打交道，每个人都有稍微不同的需求和问题。有时候你会迷失在会议讨论和博客文章里，大家说都要上云、这是最佳实践。现实是，每个人都有自己的问题，他们用自己需要的方式解决。</p>
+<p>很多客户在所谓的「本地」运行 Kubernetes。比如，我们的一个客户，在他们的销售点系统里运行 Kubernetes 集群。他们有几百上千家门店，每家都有独立的小型 Kubernetes 集群。在规模很大的时候，他们会有几千个集群，用各种 GitOps 实践从 Git 仓库拉取实际状态——这时候 Git 仓库本身变成了瓶颈，他们会被限流，需要用其他机制来缓解。</p>
+<p>前两天在 KubeCon，我还和一个客户聊，他们的 Kubernetes 集群运行在研究船上——就是海洋上的船。他们有 Kubernetes 集群在海上运行。这些船可能出海几周甚至几个月。当船回到港口时，它需要获取更新。我们讨论如何实现这个流程。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这太有趣了。你通过和客户交流部署方式，能看到各种不同的团队和他们的挑战。你看到哪些行业趋势？</p>
+<p><strong>Robert Erez</strong></p>
+<p>现在一个重要趋势是 GitOps 的关注度很高。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>什么是 GitOps？</p>
+<p><strong>Robert Erez</strong></p>
+<p>这是个好问题。我们先回顾一下前面谈到的 Kubernetes。它有内部持续协调流程：你对集群说「请启动五个 Pod」，它会确保这个期望状态在现实中始终成立。很多产品都在做类似的事，比如 Terraform 对基础设施也是如此。于是人们开始想：能不能把这个流程再往前推，直接从 Git 拉取？作为工程师，我可以修改 Git 里的定义、期望状态，然后有某个流程把它推送到集群并保持同步。</p>
+<p>GitOps 这个词是 Weaveworks 在 2017 年左右提出的。作为实践，它和 Kubernetes 一同流行起来，因为 Kubernetes 本身就是声明式的。到 2020 年代初期，它被更正式地定义，有四大支柱。</p>
+<p>第一是声明式。你希望状态是声明式的——定义基础设施应该是什么样，这让部署时的状态更容易理解。命令式的部署是一个流程的结果，是多步骤的产物，但声明式在更新基础设施时效果很好，特别是在 Kubernetes 环境下。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>在 GitOps 中，期望状态描述的是：我要多少节点、多少数据库副本、多少 Web 服务器、负载均衡器怎么连接之类的？</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错。这是说「我想要基础设施有这样状态」的方式，然后 GitOps 代理和产品会确保它保持这个状态。它们会持续应用到 Kubernetes 上。所以 Kubernetes 保持内部状态与现实同步，GitOps 工具让 Git 里的声明式配置与 Kubernetes 的状态同步。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>所以它们会把我放在 Git 里的内容——不管我用什么格式——翻译成 Kubernetes 能理解的东西，然后 Kubernetes 去应用。</p>
+<p><strong>Robert Erez</strong></p>
+<p>理想情况下，应该尽可能接近 Kubernetes 期望的格式。这就是持续协调的概念——GitOps 应用会取那个状态并应用。如果有任何偏离，比如有人用 kubectl 删除了 Pod 或部署，因为你的期望状态存储在 Git 里，它会自动修复。</p>
+<p>GitOps 的第二支柱是：你定义的期望状态应该存储在不可变且版本化的地方。这是说，我想要一个指针——可能是 tag 或 commit hash——来定义实际状态，而且我不希望它能被改变。通过版本化和不可变，审计也变得更简单，你可以看到期望状态的演变过程。有趣的是，很多人会指着说：版本化且不可变，我知道，那就是 Git。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>我正要说，Git 确实给你版本历史。但我不确定它是否给你版本化和不可变——历史不能被改变，对吧？或者其实可以？</p>
+<p><strong>Robert Erez</strong></p>
+<p>你说得对。取决于你怎么配置 GitOps 代理，你确实可以重写历史。如果用 tag，你可以改变 tag。所以最佳实践会说用 tag 管理状态不太好。有趣的是，这四大支柱里，包括第三支柱「拉而非推」——GitOps 代理会从 Git 拉取状态放到集群里，第四支柱是持续协调——但实际上没有任何一个支柱提到 Git。</p>
+<p>GitOps 这个名字让人们产生了「一切都必须在 Git 里」的预期。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>为什么不把所有东西都放 Git 里？</p>
+<p><strong>Robert Erez</strong></p>
+<p>这正是我假设的。但问题是，并非所有东西都应该在 Git 里。比如秘密（secrets）放哪里？不在 Git 里。我们知道这一点，不要把秘密放 Git 里。所以有各种解决方案尝试把加密的秘密放 Git 里，但这实际上是在强调一个现实：有些东西不需要在 Git 里，只要你能控制版本化和不可变性，那就完全可以。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>GitOps 的趋势是什么？我看到很多基础设施团队从几年前只写 Kubernetes 定义，现在转向 GitOps，说：我们想用版本控制工具来管理基础设施。</p>
+<p><strong>Robert Erez</strong></p>
+<p>趋势更多是 GitOps 在企业中的增长。不是每家公司都在用 Kubernetes，当他们开始接触 Kubernetes，考虑如何部署、如何管理流程时，GitOps 成为默认做法。某种程度上，这也在推动用它管理 Kubernetes 外的东西。有些项目和实验会使用 Terraform，有持续协调服务保持外部实际状态同步。目前核心焦点还是在 Kubernetes 上。Kubernetes 本身的增长带着 GitOps 一起发展。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你提到企业，我想到的是大公司、几千人、受监管的环境。小团队也在用 GitOps 吗？还是说只有某些类型的团队更感兴趣？</p>
+<p><strong>Robert Erez</strong></p>
+<p>好问题。有时候我们看到，很多人去会议、看博客，听说 GitOps 是你应该做的。我想指出的是，GitOps 对所有地点、所有团队可能并非必要。它有一些好处，但现实是，你需要在 GitOps 之外做一些事情。你可能在某些流程部分使用 GitOps 原则，但这种绝对主义有时候可能没必要。</p>
+<p>你实际部署前后会有一堆其他流程。比如冒烟测试、完成后发通知、数据库更新等。这些步骤不太适合声明式、一切都在 Git 里的流程。所以会有 Argo Workflows、Rollouts 等工具出来尝试 GitOps 化这些流程。这对一些人有用。但现实是，有些人被「一切都在 Git 里」这个观念困住了，找到了锤子就觉得一切都是钉子。这不对。</p>
+<p>当我和客户交流，我们讨论 Octopus 里可以用 GitOps、我们有各种支持 Kubernetes 和 Argo 的集成机制时，他们会意识到，他们真正想做的最终就是发布软件。你在会议上听到的一切都必须某种格式的说法，现实是大多数客户只是想发布软件，不在乎你叫它什么名字。如果 GitOps 能端到端解决问题，好。如果他们想用 GitOps 作为流程一部分，然后用其他更命令式的机制，也好。这是现实：世界上有数万万家公司在做软件交付，不是所有都在会议前沿。</p>
+<h2 id="平台团队的兴起">平台团队的兴起</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>另一个趋势是平台团队的兴起。你看到什么？</p>
+<p><strong>Robert Erez</strong></p>
+<p>平台团队在过去几年成为新的标准组织结构，帮助团队管理部署流程和基础设施。这是 DevOps 演变的产物。过去，2010 年代、2000 年代，你写代码然后扔给运维团队——开发团队和运维团队分开。</p>
+<p>然后 DevOps 成为大家意识到的实践：工程师团队要参与并拥有部分运营流程。理念是：更快反馈循环，感受到痛苦就去修复。这就是「你构建，你发布」的说法。很多团队采纳了，是好实践。</p>
+<p>但当规模扩大，你会发现又出现一个 DevOps 团队，有时候和另一个运维团队分开。开发和 DevOps 分离，这违背了 DevOps 要打破的一些原则。不仅如此，这些团队各自有略微不同的部署方式。一堆应用团队各有不同需求，从头构建。你会得到大量不同的做事方式，这在规模化时变得困难。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>规模化是指有很多团队的时候？</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错。如果有大量团队，每个都端到端拥有流程，你会得到流程分化。不仅如此，应用团队本身开始有「上下文过载」。他们现在要考虑不同云工具的最佳实践。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>开发者通常不想配置部署脚本和测试它们。测试部署很难，不能像单元测试那样测。这变成了另一份工作。我记得早期团队里，比如移动团队五个人，其中一个必须专注于 Jenkins 配置，因为 Jenkins 曾经是移动 CI/CD。这相当于半个专职。</p>
+<p><strong>Robert Erez</strong></p>
+<p>这更像是抽签决定谁去做，因为……</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你想写代码，对吧？</p>
+<p><strong>Robert Erez</strong></p>
+<p>你想专注于写代码。花大量时间管理基础设施、管道这些，对谁都没意思。平台团队就是解决这个问题的新方式。不同于那种拥有整个流程的 DevOps 团队或运维团队，他们更多是定义最佳实践，提供理想的自服务机制——通常叫 IDP（内部开发门户）。应用团队可以自服务，也许想启动新项目，可以用平台团队生成的模板。</p>
+<p>平台团队可以在整个公司创建标准，负责流程定义和最佳实践。但实际运行运营部分的所有权仍在团队内部——他们仍然有 DevOps 的好处：靠近真实代码、有问题能感受痛苦等。但他们不需要花时间成为所有部署方式的专家。这在组织变大时非常普遍。不是说每家公司都需要平台团队——小公司可能就是应用团队做 DevOps。但当你有多个团队、多个项目，平台团队是给整个领域带来秩序、控制和聚焦的方式。</p>
+<h2 id="ai-对-cicd-的影响">AI 对 CI/CD 的影响</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>行业趋势当然是 AI。很难看到有团队的开发者不在用 AI agent 写代码，产品经理也在用。我们产生了更多代码。CI/CD 系统正在发生什么变化？</p>
+<p><strong>Robert Erez</strong></p>
+<p>这是房间里的大象。老实说，现在还很早期。CI/CD 的影响和开发团队如何使用 AI 紧密相关。会有一个滞后过程。我们看到很多团队开始在开发流程中使用 AI，我们正在走出去和客户交流，了解他们如何在团队中处理 AI，然后看 CI 端如何最好支持，以及在管道中适当位置使用 AI。</p>
+<p>在 Octopus，我们对这件事很谨慎。在 KubeCon，我们可能是少数没有到处贴 AI 的公司之一。我们在 Octopus 里确实有 AI，但我们在思考如何以真正有用的方式使用它。我们慢慢增加 AI 能力支持，比如 MCP 服务器、可以审查日志和任务的恢复代理等。这是在产品内部。</p>
+<p>更大的变化取决于应用团队如何使用 AI。我们会看到更多流速（velocity），这是重大变化之一：会有更多代码通过管道。问题是，这对你的管道意味着什么？</p>
+<p>当管道有人类元素时，我们常说加快周期来更快获得反馈。如果工程师在等代码跑测试，能尽快回到工作修复问题。反馈循环越短越好，因为不需要上下文切换。在代码主要由 AI 开发的世界里，这可能变得不那么重要。如果构建测试流程要 30 分钟而不是 20 分钟，工程师已经离开去做下一个问题了，AI agent 本身可以照看流程、审查问题、发新修复。</p>
+<p>我认为管道速度会变得不那么重要，重点更多在降低风险——AI agent 生成代码带来的风险。具体流程会怎样，还有待观察。我认为我们会更多使用渐进式交付，特别是功能开关（feature toggles）会成为应用团队工具箱里很常见的工具。部分原因是可以让你尽可能快地发布代码，但独立于部署来管理功能集或变更的发布。它把部署和发布解耦了。</p>
+<p>在 AI agent 生成代码并可能参与构建流程的世界里，这些 agent 自己能够用开关快速响应，我认为会变得比今天更重要。</p>
+<h2 id="渐进式交付">渐进式交付</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>什么是渐进式交付？最常见的降低代码发布风险的方式是什么？</p>
+<p><strong>Robert Erez</strong></p>
+<p>渐进式交付是持续交付之后的下一阶段演进。持续交付是：我做了系统变更，要发布到开发、预发布或生产环境，通常是整体一次性发布。渐进式交付是以更受控的方式发布变更，典型做法是金丝雀部署（canary deployment）。</p>
+<p>什么是金丝雀部署？基本上就是新西兰。新西兰就是我们的金丝雀。这个概念是：你选择一部分客户或用户，用网络流量管理器把一定比例流量路由到新实例。你逐渐增加比例。在这个过程中，你应该有相当成熟的可观测性机制，能看到是否可以继续增加或需要回退。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这整个概念来自煤矿里的金丝雀？</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错。过去在煤矿里挖掘时会释放各种有毒气体，金丝雀对此更敏感。他们带个小笼子里的金丝雀，如果金丝雀死了或不叫了，你需要赶紧撤离。这是提前获得警告，而不是自己被毒气熏倒。同样的原则被带到软件里。</p>
+<p>还有其他机制，比如蓝绿部署（blue-green deployment）。你的第一版本还在接收流量，第二版本已经启动运行。你可以对新版本做测试、验证，也许有 IP 可以直接访问。完成验证准备好后，可以切换流量——所有新流量去另一个版本。某种程度上，这是金丝雀但直接到 100%，不过你在切换到客户之前做了旁边验证。</p>
+<p>在我看来，可能更有用的渐进式交付策略是功能开关（feature toggles）——也叫 feature flags，经常互换使用。这是系统里有某个变量，通常链接到某个外部服务，通过这个变量的状态——真或假、开或关——你可以让不同代码路径生效。</p>
+<p>功能开关相比金丝雀发布有一些好处，特别是对应用交付。用功能开关，变更单位非常细粒度，可以是单行代码。其他一切保持一样，你只改动那一行。用金丝雀或任何版本化部署机制，变更单位是整个应用。如果你自上次发布后有 20 个 commit，你本质上是一次性测试所有 20 个东西。</p>
+<p>功能开关对目标客户的精确度更高。可以用各种复杂规则说：德国所有在购物车里有这个产品的用户有某种体验——这用网络流量规则很难做到。</p>
+<p>还有回退能力。从金丝雀回退，希望你还在过程中，可以回退——可能要几分钟，可能要重新部署旧版本。用功能开关，你可以几秒钟完成——按一个按钮立即发生。不仅如此，你还可以控制何时做这个操作。</p>
+<p>用标准版本发布，新功能何时可用取决于部署何时发生。作为应用团队，你需要知道确切时间，确保当时看日志。也许你和另外十个同时发布东西的团队都在做同样的事。用功能开关，你可以控制何时发生：你可能周一发布代码组装，周二你准备好了，有日志、回顾了下一步计划时才发布功能。这让发布功能和部署软件变得更容易解耦。</p>
+<p>版本部署、金丝雀等对基础设施变更很有用——这种场景没有相关应用开关。或者涉及 schema 变更——数据库 schema 变更是任何渐进式交付的大问题。这就是为什么问「你准备好渐进式交付了吗？」时，应用团队需要相当成熟——理解所有问题，知道如何以渐进受控方式发布这些变更，分多阶段进行。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>有趣的是，Octopus 既提供 SaaS 也提供本地部署版本。你们有两边，有最好和最坏的情况。</p>
+<p><strong>Robert Erez</strong></p>
+<p>在云端系统，如果你有 SaaS 产品，你完全控制版本去向。如果你想做扩展收缩（expand and contract），可以安排整个过程。你知道一切都更新了再进入下一阶段。另一方面，对于自托管应用，客户在自己基础设施上安装，你不知道他们运行什么版本、从什么版本升级。他们可能从版本 1 直接升级到版本 6。你没法强制他们经过扩展收缩阶段。但另一方面，他们有更多控制权——可以做备份、管理迁移、接受比 SaaS 产品更多停机时间。</p>
+<h2 id="回滚策略向前而非向后">回滚策略：向前而非向后</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>当问题出现，大家想回滚。你看到好的回滚方式是什么？真正的回滚策略需要什么？很多团队谈论 CI/CD、功能开关，但我不太听到关于回滚的讨论。</p>
+<p><strong>Robert Erez</strong></p>
+<p>回滚总是个有争议的话题。很多客户问：能有多难？问题就在这。在完全无状态系统里，这很简单。GitOps 很擅长这个：你在仓库里有定义，完全无状态，做个 Git revert 再推送，它会回去。</p>
+<p>现实是，大多数系统有状态。数据库、任何你不能简单撤销的信息。如果你回滚代码，现在代码和数据库 schema 不匹配了。在部署里，你可以提供 schema 迁移，也可以提供反迁移来撤销变更。但这不总是可行。你需要处理数据状态。这很大量工作。</p>
+<p>我们已经走到相当远的地步，基本上建议客户：你想避免谈论回滚。永远向前滚（roll forward）。如果有 bug，向前滚。尽快把修复放进。这就是为什么快速反馈循环很重要，这就是热修复流程的目的。</p>
+<p>如果有一个重大 bug，有时候最安全的是做热修复然后尽快推出去。你的瓶颈可能是构建管道，但取决于风险承受度，可以更快解决。如果失败本身来自部署流程或更后面的环节，恢复时间会更快。但这理念是：如果版本 2 有问题，回滚不是去版本 1，而是去版本 3，确保版本 3 里修复了问题。</p>
+<p>有些客户说「有问题就回滚」。当你问他们「有 schema 变更怎么办」，他们会停顿，意识到只是运气好没遇到那种情况。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>可以这样说：如果涉及业务逻辑或非无状态的东西，你想向前滚？如果是无状态或应用逻辑——代码里 if-else 逻辑有 bug——你可以直接撤销，只要不碰 schema 或数据？</p>
+<p><strong>Robert Erez</strong></p>
+<p>理想世界里，撤销就是通过功能开关——点击就改变代码路径。这就是为什么我说功能开关是渐进式交付的好工具——发布功能和回退功能一样简单。你仍然会有 schema 问题，如果代码路径期望一个而不是另一个，需要考虑。但你甚至可以在功能开关内部考虑这个问题，让开关本身和数据库 schema 保持自洽。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>功能开关用越多，意外越少。但有点额外工作——构建和移除。如果用多了，代码里到处都是功能开关。</p>
+<p><strong>Robert Erez</strong></p>
+<p>我在 Uber 看到这情况。是的，一百次是的。给应用加功能开关时，我们 Octopus 在代码里用很多功能开关。我们用 Open Feature 作为 SDK 框架，但我们建了一个包装器——开关本身在代码里提供细节，包括哪个团队拥有它，那个团队设置过期时间。</p>
+<p>过期时间过了之后不会出坏事，但通过 CI 流程部分，如果时间过了，我们发通知给团队说：这个开关看起来不再使用了。具体机制不重要，重要的是确保：如果加功能开关，很容易忘记它——开始发布后你忘记它，想留着以防需要回退。能知道开关存在多久，是保持卫生的关键。</p>
+<p>现实是，就算在 Octopus 我们也有一堆开关。我如果登进去可能收到一堆移除通知。我们用园艺隐喻——这是除草，需要持续维护。</p>
+<p>如果你用功能开关，你可能有可观测性、指标和日志。有些工具可以追踪上次开关被评估是什么时候，给你信号。类似地，你可能先从代码里移除——典型你想先从代码移除再碰开关系统。从代码移除后，可能要两周才到生产环境，所以不想在那之前删除——那时候你可能忘了你移除了。有机制追踪那个变更在系统里的流转，当它到达生产环境，可以说：代码出去了，可以移除开关配置了。因为功能开关信息在两个地方：代码里和平台里。</p>
+<h2 id="开发环境的演进">开发环境的演进</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>开发环境怎么演进的？从只有一个环境，后来有预发布之类的。你看到什么演进模式？</p>
+<p><strong>Robert Erez</strong></p>
+<p>我不确定有没有一个特定模式。最常见是开发、测试、生产这三个环境。但这可能是对所有不同机制的过度简化。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>开发是指本地机器？</p>
+<p><strong>Robert Erez</strong></p>
+<p>在 CD 里，开发往往是第一个集成点。测试环境，客户通常让它和生产或某个清洗数据源保持相当同步，让 QA 测试人员或产品团队去审查代码。开发几乎是部署流程的第一个点——核心部署流程是否工作，有没有根本性的损坏。</p>
+<p>现在我觉得开发在这个意义上越来越不有用，我们看到更多临时环境（ephemeral environments）的增长。这是说：作为工程师，我在功能分支上运行某个功能，想评估它是否做预期的事。但不仅如此，我想让团队其他人能看到它工作。如果在我机器上跑，给其他人访问不太容易。然后我可能完全上下文切换，做别的事。</p>
+<p>临时环境是：从我的分支（预合并）启动整个环境，理想情况下带有运行这个组件所需的依赖。然后我把应用部署进去，仿佛是一个完整环境。一旦可用，我有 URL，可以 poking around，分发给别人评估。PR 合并那一刻，我就拆除它。</p>
+<p>很常见有多个测试环境，因为管道里有很多东西在跑，有三个测试人员，可能让每人有一个。或者经常看到一个测试环境和一堆测试人员需要协作看谁当下有系统访问权。用临时环境，可以每个功能都有完整部署。这是加速反馈流程——所有这些流程都是关于加速反馈，更早发现问题。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>几年前云开发环境讨论很多——开发者有云端环境，VS Code 连上去或在线登录，用容器启动所有依赖。还有预览环境。但这两个讨论似乎都淡了。技术都在，容器可以打包东西。为什么？</p>
+<p><strong>Robert Erez</strong></p>
+<p>这确实会变复杂。对于简单情况，这很容易说。当你不只一个应用在所谓「环境」里，如何确保有需要的数据来验证？或者如果你有一堆有状态的服务。这些都有复杂性。但作为应用团队，特别是还有工程师写代码的团队，好处是加速反馈流程。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>现在到处是 AI agent，这更好了。如果验证代码工作最好的方式不只是看代码——AI agent 生成你看代码，但确认它工作——特别是有 UI 的时候？</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错。在 AI agent 构建和验证代码的世界里，任何你想让 AI agent 验证它做了什么的场景，本质上就是临时环境——就算不暴露给人，因为它自己做测试和 poking。那仍然是某种环境：临时的，启动，有某种配置流程，工作完成后拆除。</p>
+<h2 id="运营大型基础设施平台">运营大型基础设施平台</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>运营大型基础设施平台的实际情况是什么样的？Octopus Deploy 的 SaaS 产品是一个例子。运行这些部署流程、CD，有什么挑战？</p>
+<p><strong>Robert Erez</strong></p>
+<p>目前我不在那个构建团队上，但可以从历史和上下文角度分享。最初我们决定提供 Octopus SaaS 时，大概是 2012 年左右，全是虚拟机。每个客户获得一个 VM，Octopus 自安装版本安装到那个 VM 上，他们有整个 VM 来运行工作负载。这非常不经济，每个客户每月成本大概 100 美元，但他们可能只付 20 美元。这更多是实验看是否有需求。Paul 愿意用信用卡走这个流程，看这是不是公司可行的方向。</p>
+<p>从构建自托管软件到提供托管服务是很大一步。需求是存在的。不久后那个实验，我们从零开始重做。我和其他几个工程师开始在 Kubernetes 上构建。Octopus 在那领域有我们叫 reef 的东西——我们所有东西都用航海相关命名。Reef 是细胞架构方式，包含那个客户实例需要的所有资源。有些共享，但分解成单个细胞。Reef 包含集群和 Azure 数据库等。每个客户实例现在运行在那个集群里的 Pod 里。</p>
+<p>那个项目里，我在做转换让它能跑 Linux 和容器，另一个人建动态 worker 基础设施。我们几个人把它跑起来，开始往前走，不再亏钱。</p>
+<p>今天有一个完整团队支持它，我们有几千个客户在上面，每月跑成千上万次部署。现在我们正努力让 Octopus 部署流程本身更健壮。目前部署启动时，很多流程存储在内存里——这意味着每次升级，我们需要暂停运行任务一段时间，让它杀掉实例再启动新的。Octopus 目前升级间有少量停机时间。我们想减少这个，尽可能接近零。意识到从五分钟停机到一分钟只是工作，但从十秒到零是更大的跨越。我不确定是否何时能达到，但确实有大量努力让整个流程更健壮，减少升级时的停机。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>有意思的是你们有 SaaS 和本地部署两种。有什么工程挑战？很多公司决定只做 SaaS 因为可以集中控制一切。Jira 在做或计划这样做。显然两种都有工作量更大。</p>
+<p><strong>Robert Erez</strong></p>
+<p>我们前面提到一个大问题。当我们想推任何更新到云端，因为控制整个流程，可以用渐进发布流程——每个客户在自己的实例上，可以单独部署，可能花几天时间发布一个变更。但本地部署是另一回事。前段时间我查看数据，今天发布新变更，平均需要 200 天才有 50% 本地客户获取它。然后是指数衰减，400 多天才有 75%。这条曲线意味着我们有客户还在运行五年、六年、七年前版本的 Octopus。</p>
+<p>每次发新变更，我们需要确保 Octopus 能从 2023.1 版本工作到 2026.4 版本。我们有更多包袱——schema 升级、确保那个流程可实现。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>为什么这么做？很多初创会说：不支持所有版本。移动应用也这样。有什么好处？</p>
+<p><strong>Robert Erez</strong></p>
+<p>我们多数客户仍是本地部署。这是银行、金融机构、政府等——他们想完全控制系统，想在自己硬件上运行。他们可能用自己的云来跑，但想管理整个流程、控制升级和停机时间。这不罕见，短期内不会消失。至于升级支持，过去几年我们越来越敢于废弃功能和移除旧能力，部分来自完全拥抱功能开关作为这个过程的一部分。我们更敢于移除可能老客户会怀念的能力。但长期来看，自托管不会消失。</p>
+<p>这又是一个常见说法「都在云里，我们都上云」——现实是很多公司出于合规要求或其他原因，云端不适合或不可行。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这也是提醒：如果你建同时能本地运行的基础设施软件，可能竞争更少。听起来有需求——公司愿意付钱来本地运行。如果没有其他选择，他们可能也做 SaaS，但 SaaS 构建更容易，竞争更多。如果你是创业者或软件工程师想做业务，这可能给你优势。</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错。你那些好几年没升级的客户，一方面可能想「他们在干什么」，但他们可能就是满意。如果他们继续付钱，那是你最忠实的客户。</p>
+<p>我记得在上一份用 Octopus 的工作，或者任何我们有本地运行软件的经历，如果它工作，为什么要碰它？这某种程度上是我们的存在之痛——想给他们新功能，但另一方面，对于像部署系统这样关键的东西，很多客户一旦让它运行就退后说「让它继续工作吧」。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>AI 也出现类似情况。Cursor 的编码模型每五小时更新，这很惊人。但有些客户一旦有工作正常的 LLM，调好了指令，大版本出来可能就停止工作了。会有更多团队、公司、企业愿意付钱来固定版本或自己运行，自己决定何时变更。只要不坏就不修。</p>
+<p><strong>Robert Erez</strong></p>
+<p>没错。Octopus 值得称赞的是，我们有很好的历史帮助那些在旧版本上的客户——有时候支持团队会在旧实例上帮他们，告诉他们要修复得升级，但支持团队愿意帮助。如你所说，如果他们愿意付钱，我为什么要说不？</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>这是商业策略，也是提醒：不止一种模式。虽然 SaaS 在吃世界，我们听到看到，但看到不止那种模式很好。</p>
+<h2 id="给软件工程师的建议">给软件工程师的建议</h2>
+<p><strong>Gergely Orosz</strong></p>
+<p>如果我是软件工程师，想从持续交付、持续部署进入渐进式交付，你有什么建议？</p>
+<p><strong>Robert Erez</strong></p>
+<p>就从某个东西开始。加一个功能开关。可能一开始害怕：它在生产环境，如果我开关它，会不会破坏生产。舒服的是知道你在运行系统的左边，如果发布代码测试会捕捉。但我开关它会发生什么？这某种程度上像药物——一旦开始你就不想停。这就是为什么我们有功能开关的卫生问题——很容易添加，最终变成相反问题：如何控制自己、如何停止。所以我说：就开始做，加一个，留意发布过程和结果。</p>
+<p>现实是，我在功能开关上发布了很多功能，有时候发布了 bug。发布功能打开让客户有它是一回事，但相反的情况——发布了有问题——你可以立即伸手开关把它关掉。过去多少次你有这种恐慌：我知道发布了有问题，特别在那种状态下，可能凌晨两点被叫起来值班，不知道下一步做什么，恐慌中想：我要构建新东西还是强制重新部署？有那个能力拨开关，让你冷静下来：我止住了出血，现在回来重新分析理解哪里错了。一旦你体验那种能力——不只是发布东西，而是能回退那个单独功能——你会想在一切上用它。</p>
+<p><strong>Gergely Orosz</strong></p>
+<p>你推荐一两本书？为什么？</p>
+<p><strong>Robert Erez</strong></p>
+<p>给两本技术相关和一本有趣的。Phoenix Project 仍然是好的一本。Gene Kim 写的。我记得 Skype 时我们的经理 Abdella 给每个人这本书。某些部分可能有点过时，一些实践变了，但核心——作为工程师参与运营端、这对公司和你自己的价值——是惊人的。这是奠定我们今天讨论所有内容上下文的核心基础书。</p>
+<p>另一本从组织和沟通角度：Kim Scott 的 Radical Candour（绝对坦诚）。让你更高效、更有同理心和同事及周围人沟通。作为工程师，我有时候回头看自己说的话，感觉可能有点直率。Radical Candour 教我们要思考：你想有那种既表达关心和同理心、又直接的沟通，以及它的好处。反面就是你可能很直率、诚实但缺少同理心。这书作为工程师、也作为和他人工作的人非常有用。</p>
+<p>有趣方面，Greg Egan 的任何书。他是澳大利亚科幻作者，写很疯狂的硬科幻。如果你喜欢，读 Diaspora 或 Charles’ Letter。这些书我读了两遍才理解。他是数学家，有大量数学背景解释故事某些部分为什么那样发展。他写过整个故事基于一个前提：如果光速不是绝对的——然后展开：能量会怎样、分子如何工作等等。作为技术爱好者，那种科学内容很吸引人。科幻里有真正的科学，我觉得更有趣。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

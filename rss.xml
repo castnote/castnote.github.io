@@ -6,6 +6,41 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>AI 在科学中的局限——为什么我们需要自动驾驶实验室</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-limits-of-ai-in-science-why-we-need-self-driving-labs-joseph-krause-radical-ai/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-limits-of-ai-in-science-why-we-need-self-driving-labs-joseph-krause-radical-ai/</guid>
+      <pubDate>Wed, 17 Jun 2026 17:28:06 GMT</pubDate>
+      <description>本期节目对话 Radical AI CEO Joseph Kraus，探讨 AI 在材料科学领域的局限性以及自动驾驶实验室如何突破这些瓶颈。讨论涵盖了生物领域与材料领域的根本差异——生物分子可以用 SMILES/SELFIES 字符串表示，但合金材料涉及供应链、成本、微观结构、加工方式等多维数据，无法简单编码。Kraus 解释了材料从发现到产品化的漫长周期（15-30 年），以及认证、规模化等关键瓶颈。Radical AI 通过自建自动驾驶实验室，在过去六个月合成了 1200 个合金、其中 300 个为全新材料，展示了 AI 科学家如何通过多智能体架构实现人类科学家无法企及的并行处理能力。讨论还涉及开源策略、与中国竞争、以及对 AI 工程师的建议——坚持专业化而非试图成为科学家。</description>
+    </item>
+    <item>
+      <title>CI/CD：从持续集成到渐进式交付</title>
+      <link>https://castnote.github.io/episodes/pragmatic-engineer/ci-cd-with-robert-erez/</link>
+      <guid>https://castnote.github.io/episodes/pragmatic-engineer/ci-cd-with-robert-erez/</guid>
+      <pubDate>Wed, 17 Jun 2026 16:41:01 GMT</pubDate>
+      <description>本期播客对话 Octopus Deploy 工程师 Robert Erez，深入探讨 CI/CD 的成熟度阶梯、GitOps 的四大支柱及其在实际应用中的误区、Kubernetes 在本地部署中的多样化场景（包括零售门店和研究船只）、平台团队的兴起与 DevOps 的演进、AI 对 CI/CD 流程的影响、渐进式交付策略（金丝雀部署、蓝绿部署、功能开关）以及「向前回滚而非向后回滚」的实践哲学。Robert 强调，大多数团队真正关心的只是发布软件，而非追逐术语或绝对化的实践。</description>
+    </item>
+    <item>
+      <title>如何在 AI 世界阻止大规模监控？</title>
+      <link>https://castnote.github.io/episodes/hard-fork/how-do-we-stop-mass-surveillance-in-an-a-i-world/</link>
+      <guid>https://castnote.github.io/episodes/hard-fork/how-do-we-stop-mass-surveillance-in-an-a-i-world/</guid>
+      <pubDate>Wed, 17 Jun 2026 14:00:29 GMT</pubDate>
+      <description>本期节目邀请 EFF 前 Executive Director Cindy Cohn，回顾她 30 年来为数字隐私和言论自由抗争的经历。讨论涵盖加密技术从 90 年代至今的持续战斗、科技公司从与用户并肩到与用户对立的转变、AI 加速大规模监控对民主的威胁、签证申请人的社交媒体审查诉讼，以及为何隐私战斗从未结束。Cohn 解释了 EFF 离开 X 平台的决定，强调言论自由包括离开的权利。</description>
+    </item>
+    <item>
+      <title>一万亿美元是多少？</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/how-much-is-1-trillion-animal-spirits-469/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/how-much-is-1-trillion-animal-spirits-469/</guid>
+      <pubDate>Wed, 17 Jun 2026 13:00:23 GMT</pubDate>
+      <description>本期节目讨论了 AI 泡沫的可能性与「不令人满意的结局」——市场可能经历洗盘但不会是世界末日级崩盘；SpaceX IPO 的疯狂交易量与市值飙升；科技股表现分化与新兴市场在 AI 时代的意外崛起；石油市场再次证明其预测能力；消费者韧性背后的低房贷利率因素；Ben 分享尼克斯夺冠的个人经历与情绪；1973 年以来通胀对各商品价格的影响；Anthropic 开始被美国政府监管；AI 对就业市场的争议观点；房地产市场回暖迹象；Elon Musk 成为首位万亿富翁引发的财富不平等讨论；以及电视节目推荐。</description>
+    </item>
+    <item>
+      <title>黑客能入侵你的大脑吗？</title>
+      <link>https://castnote.github.io/episodes/planet-money/can-computer-hackers-get-inside-your-mind-planet-money/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/can-computer-hackers-get-inside-your-mind-planet-money/</guid>
+      <pubDate>Wed, 17 Jun 2026 10:51:16 GMT</pubDate>
+      <description>本期节目讲述网络安全研究员 Juan Andres Guerrero Saade（Jags）如何发现一个名为 Fast 16 的神秘恶意软件。这个恶意软件似乎针对伊朗核科学家使用的物理建模软件，通过在高精度数学计算中植入错误来破坏核武器研发。Jags 和同事 Vitaly Kamluk 经过多年研究，终于揭示了这款网络武器的复杂机制：它不是窃取数据或让设备失控，而是让计算机在核爆炸压力模拟中给出「正确的错误答案」，让科学家质疑自己的能力而非怀疑计算机。Jags 将这种攻击称为「认识论战争」——一种侵蚀我们对现实把握的新型武器。</description>
+    </item>
+    <item>
       <title>Warren Buffett 50亿美元握手交易：Goldman Sachs 前CEO Lloyd Blankfein 谈投资、风险与人生</title>
       <link>https://castnote.github.io/episodes/my-first-million/warren-buffett-committed-5-billion-faster-than-you-read-this-title/</link>
       <guid>https://castnote.github.io/episodes/my-first-million/warren-buffett-committed-5-billion-faster-than-you-read-this-title/</guid>
@@ -25,6 +60,13 @@
       <guid>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</guid>
       <pubDate>Mon, 15 Jun 2026 08:06:24 GMT</pubDate>
       <description>本期节目采访了 Compute Exchange 和 Silicon Data 的 CEO Carmen Li，探讨 GPU 算力能否像石油一样成为可交易的大宗商品。Carmen Li 详细介绍了她正在构建的算力交易市场：从 GPU 指数定价、现货采购平台到与 CME 合作推出的现金结算期货合约。讨论涵盖了算力市场的参与者结构、GPU 价格波动特征、数据采集方法、基准指数的构建逻辑、芯片翻新业务，以及对 AI 泡沫的讨论。她指出 GPU 每日波动率在 20-30% 区间，属于健康的大宗商品波动范围，而算力期货的核心功能是帮助 NeoCloud（多头）和算力消费者（空头）对冲价格风险。</description>
+    </item>
+    <item>
+      <title>Torsten Slok 展示 AI 如何正在吞噬整个美国经济</title>
+      <link>https://castnote.github.io/episodes/odd-lots/torsten-slok-shows-us-how-ai-is-eating-the-entire-us-economy-odd-lots/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/torsten-slok-shows-us-how-ai-is-eating-the-entire-us-economy-odd-lots/</guid>
+      <pubDate>Mon, 15 Jun 2026 08:02:15 GMT</pubDate>
+      <description>Apollo 首席经济学家 Torsten Slok 通过一系列图表展示，AI 正在深刻影响美国经济的各个方面。目前美国约有 4000 个数据中心，另有约 3000 个正在建设，数据中心建设及相关能源支出、AI 带来的生产率提升预计将为 2026 年 GDP 增长贡献约 1 个百分点。此外，工业复兴（芯片和制药回流）以及「大美法案」减税政策也是重要增长引擎。他指出这些增长动力不受美联储利率政策影响。在金融市场方面，AI 因子已渗透到股票和债券组合中——标普 500 前 10 大股票占指数 39%，投资级债券发行中 49% 来自超大规模科技公司，87% 的风投投向 AI。传统的 60/40 资产配置不再有效分散风险，投资者需要重新思考组合中的 AI 和非 AI 部分。</description>
     </item>
     <item>
       <title>肌酸：抗衰老专家揭秘医生不会告诉你的减脂秘密</title>
@@ -230,6 +272,20 @@
       <description>本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 &quot;no zero days&quot; 哲学和 Tim 的 &quot;eating the frog&quot; 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。</description>
     </item>
     <item>
+      <title>数码产品价格越来越离谱</title>
+      <link>https://castnote.github.io/episodes/waveform/gadget-prices-are-getting-ridiculous/</link>
+      <guid>https://castnote.github.io/episodes/waveform/gadget-prices-are-getting-ridiculous/</guid>
+      <pubDate>Fri, 17 Apr 2026 14:04:01 GMT</pubDate>
+      <description>本期节目回顾了多个科技话题与新闻。小米手机全球版被发现存在摄氏度/华氏度显示 bug；三位主播分享了 iPhone Air 的实际使用体验，讨论轻薄机身与相机、电池续航之间的取舍；三星悄然提高多款手机和 tablet 价格，最高涨幅达 280 美元；谷歌终于着手整治搜索结果中的「返回按钮劫持」问题；GoPro 发布全新的 Mission One 相机，配备一英寸传感器和可换镜头系统；Allbirds 宣布从鞋业转型为 AI 算力服务公司，股价暴涨 700%。回顾更新环节涵盖 Khaby Lame 近十亿美元交易背后的股价操控争议、NZXT 电脑租赁诉讼和解、美国国防部路由器禁令的最新进展，以及 John Deere 维修权诉讼的 9900 万美元和解。</description>
+    </item>
+    <item>
+      <title>如果我在 2026 年开一个游戏频道，我会这样做</title>
+      <link>https://castnote.github.io/episodes/business-of-video-games/if-i-started-a-gaming-channel-in-2026-i-d-do-this/</link>
+      <guid>https://castnote.github.io/episodes/business-of-video-games/if-i-started-a-gaming-channel-in-2026-i-d-do-this/</guid>
+      <pubDate>Mon, 23 Mar 2026 12:45:00 GMT</pubDate>
+      <description>本期讨论如何在 2026 年建立成功的游戏 YouTube 频道。通过与拥有 250 万订阅的资深游戏创作者 Austin John 的访谈，总结出五个关键决策：角色定位（你是攻略创作者、彩蛋发现者还是打破规则的人）、如何扩展内容范围而不掉粉、如何在新游戏发布中脱颖而出（最快、最好或最频繁）、长视频与短视频的取舍、以及根据游戏周期而非固定时间来规划发布节奏。核心观点是：观众订阅的是你这个人，而不是你玩的游戏。</description>
+    </item>
+    <item>
       <title>技能问题：Andrej Karpathy 谈代码智能体、自动研究与 AI 的循环时代</title>
       <link>https://castnote.github.io/episodes/no-priors/ep-kwsvtq7dziu/</link>
       <guid>https://castnote.github.io/episodes/no-priors/ep-kwsvtq7dziu/</guid>
@@ -242,6 +298,13 @@
       <guid>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</guid>
       <pubDate>Mon, 23 Feb 2026 09:13:30 GMT</pubDate>
       <description>本期 Odd Lots 播客邀请食品界知名人物 Alison Roman，探讨她从食谱作者到创立番茄酱品牌「a very good tomato sauce」的创业历程。讨论了消费品行业的高端定价困境（38美元一罐的理想 vs 12美元的现实）、配方如何从厨房走向规模化生产、与合作制造商的磨合过程、供应链采购决策、分销与货架空间的「先有鸡还是先有蛋」难题、融资选择（自筹 vs VC），以及如何利用已有的媒体影响力（newsletter、食谱书）来降低营销成本并实现产品快速售罄。Alison 还分享了她对 ghost kitchen 模式的质疑、食品媒体的美学化倾向，以及她作为「不 bet 人生于此」的创业者如何在质量与规模之间保持平衡。</description>
+    </item>
+    <item>
+      <title>重播：Cliff Asness</title>
+      <link>https://castnote.github.io/episodes/money-stuff/re-run-cliff-asness-money-stuff-the-podcast/</link>
+      <guid>https://castnote.github.io/episodes/money-stuff/re-run-cliff-asness-money-stuff-the-podcast/</guid>
+      <pubDate>Fri, 13 Feb 2026 19:31:33 GMT</pubDate>
+      <description>本期节目采访 AQR Capital Management 联合创始人 Cliff Asness，深入探讨量化投资的核心哲学、市场效率假说的现实挑战、动量因子的行为学解释、择时策略的可行性，以及机器学习在投资中的应用前景。Asness 分享了从 1999-2000 年科技泡沫到 2018-2020 年再次出现的估值极端分化中获得的感悟，认为行为偏差在市场中的作用比 30 年前他估计的要大得多。他还讨论了与学术界的关系——何时发表研究成果、何时作为交易秘密保留，并对私募股权行业的「波动率清洗」现象提出尖锐批评。</description>
     </item>
     <item>
       <title>2026年商业大亨模拟游戏前瞻</title>
@@ -284,6 +347,13 @@
       <guid>https://castnote.github.io/episodes/revisionist-history/the-joe-rogan-intervention-malcolm-gladwell-s-revisionist-history-podcast/</guid>
       <pubDate>Thu, 24 Apr 2025 15:11:08 GMT</pubDate>
       <description>Malcolm Gladwell 从一段 Joe Rogan 访谈 RFK Jr. 的播客片段出发，探讨了访谈作为一种艺术形式的意义。RFK Jr. 在节目中声称1918年西班牙流感并非由病毒引起，而是疫苗所致，并错误引用了一篇 Fauci 论文作为支撑。Gladwell 指出 Rogan 未能对这些荒谬言论提出任何质疑，并将其与 Oprah Winfrey 的访谈技巧形成鲜明对比——Oprah 在采访 Meghan Markle 时层层深入，引出了关于皇室种族偏见的关键信息。Gladwell 还分析了 Rogan 采访 Elon Musk 和 Matt Walsh 时的类似问题，揭示出一种模式：Rogan 选择做朋友式的闲聊，而非承担采访者的追问责任。随后 Gladwell 追溯了 RFK Jr. 错误信息的来源——一位长岛律师和一位佛罗里达脊椎治疗师的博客文章。节目最后，Gladwell 通过自己在巡回活动中被心理学家 Michael Gervais 采访的经历，展示了一次真正优秀的访谈如何引导受访者走出预设叙事，抵达意想不到的情感深处。</description>
+    </item>
+    <item>
+      <title>幸福实验室播客：与 Laurie Santos 博士的现场录制</title>
+      <link>https://castnote.github.io/episodes/happiness-lab/the-happiness-lab-podcast-live-taping-with-dr-laurie-santos/</link>
+      <guid>https://castnote.github.io/episodes/happiness-lab/the-happiness-lab-podcast-live-taping-with-dr-laurie-santos/</guid>
+      <pubDate>Fri, 04 Apr 2025 11:00:07 GMT</pubDate>
+      <description>本期节目是在 SXSW 大会现场录制的一期《幸福实验室》播客。主持人 Laurie Santos 博士与嘉宾 DJ D 探讨了休假的意义、益处以及如何克服休假障碍。DJ D 是哈佛商学院高级讲师，也是「休假项目」创始人，他分享了自己的休假经历——从一次意外的「冰淇淋时刻」开始，经历了日本朝圣之旅和家庭照顾等转变。讨论涵盖了休假与假期的本质区别、休假对个人和组织的多重益处（疗愈、创造力、信心、韧性、忠诚度）、常见的误解和障碍（外界看法、责任、成本），以及企业和个人如何推动休假成为常态。节目强调，休假不应等到退休才进行，人生脆弱短暂，应主动规划并克服惯性，让休假成为人生故事的组成部分。</description>
     </item>
     <item>
       <title>阵亡将士纪念日，2020 — 第一部分</title>
