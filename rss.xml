@@ -6,6 +6,118 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>全球首位万亿美元富豪、Anthropic 神话封禁、新寡头崛起与伊朗和平协议</title>
+      <link>https://castnote.github.io/episodes/all-in/world-s-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal/</link>
+      <guid>https://castnote.github.io/episodes/all-in/world-s-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal/</guid>
+      <pubDate>Fri, 19 Jun 2026 22:22:20 GMT</pubDate>
+      <description>节目前半讨论美国政治语境下“新寡头”叙事与个人自由边界：主持人认为社会福利与国家权力扩张会削弱个体经济流动性、学习型意志与创业机会，并以 SpaceX 首次上市、Cursor 并购为案例解释“纸面财富”与可持续价值。中段聚焦 Anthropic 近期 Mythos/Fable 风波，逐段梳理从预览扩展、国安担忧到限制模型发布的过程，围绕公司沟通不足、政府反应是否政治化以及 AI 行业是否应以自律测试替代高压监管进行辩论。尾段讨论伊朗停火协议，比较了持续地面作战与谈判退出的代价与风险，并围绕核材料管理、制裁安排、军费与中东稳定性评估和平协议的边界与可行性。</description>
+    </item>
+    <item>
+      <title>《异形》的真实恐惧与当代劳动市场：我们为什么工资长期停滞</title>
+      <link>https://castnote.github.io/episodes/planet-money/the-real-horror-of-alien-and-how-it-explains-why-we-re-not-paid-enough-planet-money/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/the-real-horror-of-alien-and-how-it-explains-why-we-re-not-paid-enough-planet-money/</guid>
+      <pubDate>Fri, 19 Jun 2026 21:41:12 GMT</pubDate>
+      <description>本期节目通过《Alien》与《The Wage Standard》（Aaron Dube）为线索，讨论劳动市场中看似隐形却长期存在的权力失衡。节目先回顾电影情节中对合同责任与风险外包的描写，指出工作中的负外部性并不一定会被工资合理补偿。接着引入 monopsony（单买方垄断）概念，说明当雇主在某一行业或地区集中度过高、岗位更替成本高、且存在非竞争协议时，工人即便表面有多家雇主可选，也难以实现有效择业。随后讨论降低这种力量的制度手段，包括最低工资、反垄断执法与工会。最后与《Alien Romulus》导演 Fede Álvarez 交流，强调《异形》系列持久吸引人的核心之一在于“劳工无力感”的叙事张力，而这种无力感在现实劳动关系中同样常见。</description>
+    </item>
+    <item>
+      <title>AI 中心的数据黑洞</title>
+      <link>https://castnote.github.io/episodes/dwarkesh/the-data-black-hole-at-the-center-of-ai/</link>
+      <guid>https://castnote.github.io/episodes/dwarkesh/the-data-black-hole-at-the-center-of-ai/</guid>
+      <pubDate>Fri, 19 Jun 2026 17:17:05 GMT</pubDate>
+      <description>本期节目围绕“样本效率”展开，核心问题是 AI 要达到类人能力时需要的训练数据为什么远超人类经验。主持人以强化学习（RL）为切口，解释当前模型进步更多依赖大规模数据与算力扩展，而非单纯架构技巧。节目进一步以具体数字类比，指出 AI 训练 token 数与人类在生命周期内接触信息之间是数量级差距，并逐一回应关于进化先验、多模态输入以及参数规模可否弥补差距的常见反驳。最后讨论了该议题对行业的影响：尽管新技能学习仍需大量增量数据，白领自动化和 AI 研究自动化仍可能通过分布内任务规模化训练带来价值。</description>
+    </item>
+    <item>
+      <title>灵魂书卷</title>
+      <link>https://castnote.github.io/episodes/money-stuff/book-of-souls-money-stuff-the-podcast/</link>
+      <guid>https://castnote.github.io/episodes/money-stuff/book-of-souls-money-stuff-the-podcast/</guid>
+      <pubDate>Fri, 19 Jun 2026 14:36:50 GMT</pubDate>
+      <description>本期节目从一段 NBA 与 World Cup 的轻松开场，转入 Ken Griffin 相关的 New Yorker 报道解读，讨论其如何把 Citadel 从传统投资决策逻辑逐步塑造为偏市场服务型的 repeatable 收益业务。节目进一步比较 Bridgewater 在新任 CEO 下的转型路径，聚焦管理费稳定性与绩效费波动之间的矛盾，说明外部资本与员工激励如何推动治理变化。最后讨论 Reg NMS 与市场结构：best execution 规则对交易所碎片化的影响、IEX speed bump 的争议，以及加密市场下 tokenization（代币化）与上币规则的可能演化。整个讨论聚焦金融机构的收益质量、组织治理和监管结构之间的长期博弈。</description>
+    </item>
+    <item>
+      <title>Figma CEO Dylan Field：关于 AI、品味与创意工作未来</title>
+      <link>https://castnote.github.io/episodes/hard-fork/figma-s-ceo-dylan-field-on-ai-taste-and-the-future-of-creative-work/</link>
+      <guid>https://castnote.github.io/episodes/hard-fork/figma-s-ceo-dylan-field-on-ai-taste-and-the-future-of-creative-work/</guid>
+      <pubDate>Fri, 19 Jun 2026 14:20:14 GMT</pubDate>
+      <description>本期邀请 Figma CEO Dylan Field 讨论 AI 如何改变创意工作。节目一开始，主持人回顾 Dylan 年少时写给 Kevin 的书信，并快速切入他当前的 AI 实践与创业习惯。Dylan 解释了他把 AI 当作实验工具来探索边界、验证问题的方式，并将 AI 在可验证领域与设计这类主观领域区分开。双方围绕“设计是否消失”展开讨论，认为 AI 让第一稿更快生成，但真正决定价值的依旧是创作者的判断力、风格和品味。Dylan 进一步谈到广告、设计语言和 App 市场中的同质化压力，以及未来更多岗位将兼具设计能力。后段节目转向 AI 实验室和企业软件市场，讨论 OpenAI、Anthropic 的扩张节奏、企业级产品是否会继续放大，以及市场对企业 SaaS 的评估方式。最后，Dylan 用“hyperstition”解释技术叙事如何反向塑造现实，认为除了技术安全与竞争之外，行业也需要持续生成“AI 与人类共赢”的故事。</description>
+    </item>
+    <item>
+      <title>我们是否正进入一个永久更高物价的新时代？</title>
+      <link>https://castnote.github.io/episodes/the-indicator/are-we-in-a-new-era-of-permanently-higher-prices-the-indicator/</link>
+      <guid>https://castnote.github.io/episodes/the-indicator/are-we-in-a-new-era-of-permanently-higher-prices-the-indicator/</guid>
+      <pubDate>Fri, 19 Jun 2026 13:04:13 GMT</pubDate>
+      <description>本集讨论美联储维持利率不变后，通胀是否会长期偏高。节目以《The Indicator》主持人访谈布朗大学政治经济学者 Mark Blyth 为主线，围绕凯文·沃什（Kevin Warsh）上任背景，分析过去三十年低通胀并非自然常态，而是全球化、劳动力供给扩张和供应链压制价格的历史阶段。Mark 认为这些因素正在逆转，供给冲击更常见的格局下，长期高通胀可能更容易出现。内容进一步拆解赢家与输家：持固定利率贷款、持股和部分大型企业更容易受益；银行也可能提高贷款利率而未同步回馈储户。负担低，替代选择更少的低收入与低薪家庭是首要受害者，节目还给出以 Aldi 等低价超市比价的应对经验。</description>
+    </item>
+    <item>
+      <title>不再会回来的世界｜TCAF 247</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/the-world-you-knew-is-never-coming-back-tcaf-247/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/the-world-you-knew-is-never-coming-back-tcaf-247/</guid>
+      <pubDate>Fri, 19 Jun 2026 13:00:33 GMT</pubDate>
+      <description>本期节目录音以 Morgan Stanley 的 Michael Zezas 作为首位嘉宾，围绕美国政治与宏观研究展开。节目先回顾其从市政债研究转向公共政策与全球宏观的路径，指出过去十年美国政治偏好与贸易政策转变已让“回到旧常态”越来越难。嘉宾解释了贸易壁垒、地缘风险与多极化对资本市场和供应链的推动作用，强调欧洲、日本在再工业化、能源和防务投入上的结构性机会。随后讨论 AI 作为新的资本支出浪潮，分析企业如何在早期阶段承担投资与产出不匹配、并观察收益从龙头向更广泛资产扩散的问题。节目还补充了中期选举、预测市场、霍尔木兹地缘风险、AI 对研究流程的颠覆，以及未来就业结构与企业软件投资节奏。结尾时，Michael 提醒投资决策仍需人类判断而非完全依赖模型，AI 只是放大能力但也放大噪音。</description>
+    </item>
+    <item>
+      <title>请进工匠</title>
+      <link>https://castnote.github.io/episodes/capitalisnt/bring-in-the-craftsman/</link>
+      <guid>https://castnote.github.io/episodes/capitalisnt/bring-in-the-craftsman/</guid>
+      <pubDate>Fri, 19 Jun 2026 11:05:27 GMT</pubDate>
+      <description>本期节目围绕 Oxford Clothes 品牌展开，讨论在自动化与大规模量产时代，手工制造如何仍有生存空间。主持人与嘉宾 Warwick Jones 先介绍公司坚持手工的工序与成本结构：从口袋、线衬、纽扣到整件西装，仅有约15%可由机器完成。节目随后追溯手工理念在19世纪的思想谱系，分析 Arts and Crafts 运动、Thomas Carlyle、John Ruskin、William Morris 等人如何把工艺与反工业化伦理连接起来。最后回到当代市场，节目指出需求转向、企业追求更高效率与品牌传承之间存在张力，并讨论工艺是否能在更富足但审美更快变化的资本主义环境中继续扩展其受众与价值。</description>
+    </item>
+    <item>
+      <title>前沿 AI 的隐性瓶颈</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp/</guid>
+      <pubDate>Thu, 18 Jun 2026 17:25:22 GMT</pubDate>
+      <description>本期节目讨论了前沿 AI 赛道中“有算力却难以持续交付”的根因。Anjney Midha 认为核心瓶颈在组织文化与激励对齐，而不仅是技术问题，强调在 Google 和资本市场经验中，资源浪费往往来自协同链路失衡、目标脱节和执行纪律不足。节目进一步拆解了 Amp 的算力策略：Amp Grid 借鉴电网运转模型，通过横向层与共享调度把算力碎片化管理为可调度资源，并重视社区、数据中心合作与可持续供给。嘉宾还讨论了与 Foundry/投资协同的组织模型、研究产出外溢的重要性，以及 Anthropic 等案例显示长期安全文化和优先级框架对前沿研发和交付稳定性的重要作用。最后他以个人经历补充创业者面对资金与成长时的价值观约束，提醒听众把“有愿景”转化为长期可执行机制。</description>
+    </item>
+    <item>
+      <title>GPU 神话：2026 年 AI 算力现状</title>
+      <link>https://castnote.github.io/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban/</link>
+      <guid>https://castnote.github.io/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban/</guid>
+      <pubDate>Thu, 18 Jun 2026 12:30:36 GMT</pubDate>
+      <description>本期节目讨论了 AI 基础设施为何仍在高速扩张，嘉宾 Steven Balaban 指出 neo cloud 并非单纯商品服务，而是涵盖土地、供电、网络、软件编排、存储与融资全链条。双方围绕 GPU 价格与指数口径、算力瓶颈、社区对数据中心的担忧、可持续建厂与透明沟通展开讨论。节目还深入讲了训练与推理在大模型下如何共享设施，NVIDIA 生态与软件栈如何形成护城河，以及 Lambda 从人脸识别创业到 AI 云服务的融资、建站与组织演进路径。最后，Steven 进一步分享神经软件、代理化工作流和 gigawatt 级 AI 工厂、长期“每人一 GPU”愿景的判断。</description>
+    </item>
+    <item>
+      <title>新云浪潮：2026 年 AI 计算现状 | Stephen Balaban</title>
+      <link>https://castnote.github.io/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/</link>
+      <guid>https://castnote.github.io/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/</guid>
+      <pubDate>Thu, 18 Jun 2026 12:30:36 GMT</pubDate>
+      <description>本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。</description>
+    </item>
+    <item>
+      <title>如何创造出强大自我形象，让现实不得不顺从</title>
+      <link>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</guid>
+      <pubDate>Thu, 18 Jun 2026 12:18:12 GMT</pubDate>
+      <description>节目以“重建自我身份”为主线，讨论创业者如何通过持续一致的内容与生活方式塑造品牌。主讲人先分析 Hannah Neilman 与 Ballerina Farms，指出高关注的关键不只是产品本身，而是围绕生活方式建立可识别叙事与社群。接着延展到从个人兴趣出发做内容生意的方法，强调“任务型内容”与“逃逸式生活方式”都能转化为产品机会，但都应以真实可执行的行动链支撑。全程穿插 World Cup 期间、市场转型、职业改变与自我叙事实例，强调先定义词汇与身份，再通过环境与行动系统执行。最后给出“game of more”框架：人们追求的不只是财富增长，而是更高层次的问题——你要的更多是什么，以及如何避免陷入模仿与伪装，最终实现以时间与价值为先的财务与人生自由。</description>
+    </item>
+    <item>
+      <title>彻底重塑自己：MrBeast 方法的启示</title>
+      <link>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</guid>
+      <pubDate>Thu, 18 Jun 2026 12:18:12 GMT</pubDate>
+      <description>节目以“重建自我身份”为主线，讨论创业者如何通过持续一致的内容与生活方式塑造品牌。主讲人先分析 Hannah Neilman 与 Ballerina Farms，指出高关注的关键不只是产品本身，而是围绕生活方式建立可识别叙事与社群。接着延展到从个人兴趣出发做内容生意的方法，强调“任务型内容”与“逃逸式生活方式”都能转化为产品机会，但都应以真实可执行的行动链支撑。全程穿插 World Cup 期间、市场转型、职业改变与自我叙事实例，强调先定义词汇与身份，再通过环境与行动系统执行。最后给出“game of more”框架：人们追求的不只是财富增长，而是更高层次的问题——你要的更多是什么，以及如何避免陷入模仿与伪装，最终实现以时间与价值为先的财务与人生自由。</description>
+    </item>
+    <item>
+      <title>研究支持的拉伸方案：提升灵活性 | Huberman Lab Essentials</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials/</guid>
+      <pubDate>Thu, 18 Jun 2026 12:00:18 GMT</pubDate>
+      <description>本集围绕如何在安全前提下提高身体柔韧性展开，先从神经-肌肉-结缔组织系统的基础机制说起：运动神经元驱动收缩，肌梭和高尔基腱器官提供反馈并限制危险幅度。随后他解释了静态、动态、弹道和PNF 四种拉伸分类与其神经肌肉差异，指出静态持位对长期增加活动范围更具一致优势。节目引用综述与对照研究，强调每周累计至少约5分钟的静态拉伸、以30秒持位为单位、频次偏高但时长不必很长。主持人还讨论了预热、训练前后时序、强度应低于疼痛阈值、以及安德森方法对“当日可达范围”更客观的理解，并进一步将拉伸与压力调节、疼痛耐受（例如瑜伽实践中的神经可塑性）联系起来，给出兼顾表现与安全的实践框架。</description>
+    </item>
+    <item>
+      <title>杰里米·格兰瑟姆：如何判断泡沫是否即将破裂 | Odd Lots</title>
+      <link>https://castnote.github.io/episodes/odd-lots/jeremy-grantham-on-how-to-tell-if-a-bubble-s-about-to-burst-odd-lots/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/jeremy-grantham-on-how-to-tell-if-a-bubble-s-about-to-burst-odd-lots/</guid>
+      <pubDate>Thu, 18 Jun 2026 08:11:29 GMT</pubDate>
+      <description>本期节目讨论了 AI 是否构成新一轮系统性市场泡沫，以及投资者如何在高波动与高估值环境下保持决策纪律。主持人与嘉宾 Jeremy Grantham 回顾了铁路、互联网、Dot-com 及 2000 年和 2021 年市场案例，指出领涨资产先失速是泡沫尾声的重要信号。节目还涉及 Mag 7 在 AI 资本争夺中的角色、市场估值与市盈率问题、利率和债务增长对长期增长的有限解释力，以及从环境与人口结构看来的长期系统风险。节目最后将AI机会与资本效率、能耗与生育率压力放在同一框架中，强调长期风险管理的重要性。</description>
+    </item>
+    <item>
+      <title>《Indie Game Guildhall》第四季开场</title>
+      <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall-season-4-start/</link>
+      <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall-season-4-start/</guid>
+      <pubDate>Thu, 18 Jun 2026 05:31:52 GMT</pubDate>
+      <description>本期为《Indie Game Guildhall》第 4 季开场。节目先因 StreamYard 试播失败改为 Discord 旧流程后正式开录，随后讨论 2026 年上半年的游戏行业状态。Willem 与 Tim 认为招聘数据有轻微回升，但裁员和就业压力仍重，行业正处于后繁荣调整期；AAA 与大型平台节奏放缓反而给独立开发留出机会。节目给出增长路径：愿望单（wishlist）测试、短视频传播、社区与创作者驱动、Patreon/会员订阅、与主播合作等，并强调别执着单一“完美点子”，先做可验证试验。结尾提出持续迭代、审慎签约、强化用户获取（user acquisition），并预告下周做 Crimson Desert 深度讨论。</description>
+    </item>
+    <item>
       <title>AI 在科学中的局限——为什么我们需要自动驾驶实验室</title>
       <link>https://castnote.github.io/episodes/latent-space/the-limits-of-ai-in-science-why-we-need-self-driving-labs-joseph-krause-radical-ai/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-limits-of-ai-in-science-why-we-need-self-driving-labs-joseph-krause-radical-ai/</guid>
@@ -39,6 +151,13 @@
       <guid>https://castnote.github.io/episodes/planet-money/can-computer-hackers-get-inside-your-mind-planet-money/</guid>
       <pubDate>Wed, 17 Jun 2026 10:51:16 GMT</pubDate>
       <description>本期节目讲述网络安全研究员 Juan Andres Guerrero Saade（Jags）如何发现一个名为 Fast 16 的神秘恶意软件。这个恶意软件似乎针对伊朗核科学家使用的物理建模软件，通过在高精度数学计算中植入错误来破坏核武器研发。Jags 和同事 Vitaly Kamluk 经过多年研究，终于揭示了这款网络武器的复杂机制：它不是窃取数据或让设备失控，而是让计算机在核爆炸压力模拟中给出「正确的错误答案」，让科学家质疑自己的能力而非怀疑计算机。Jags 将这种攻击称为「认识论战争」——一种侵蚀我们对现实把握的新型武器。</description>
+    </item>
+    <item>
+      <title>J.R. Smith 揭开 NBA 总决赛出场、尼克斯、抑郁与勒布朗生活方式真相</title>
+      <link>https://castnote.github.io/episodes/pivot/jr-smith-reveals-truth-about-nba-finals-play-knicks-depression-and-lebron-s-lifestyle-the/</link>
+      <guid>https://castnote.github.io/episodes/pivot/jr-smith-reveals-truth-about-nba-finals-play-knicks-depression-and-lebron-s-lifestyle-the/</guid>
+      <pubDate>Tue, 16 Jun 2026 16:00:06 GMT</pubDate>
+      <description>本期节目以 J.R. Smith 的成长轨迹为主线，先回溯他从多项运动天赋到被迫走向篮球、重分级与再入学的过程，讨论学习障碍、种族与早期环境如何塑造其人格和信任模式。节目深入到职业生涯里被误读的公共叙事、心理健康与抑郁、受伤后用药与联盟支持不足等议题，延展到退役后家庭压力、吸烟与情绪管理。后半段围绕总决赛经验、克利夫兰体系中的角色分工、泡沫赛场心理，以及尼克斯情结和“汤碗事件”反思，最终落到他将人生重心从运动身份转向持续学习与自我重建。</description>
     </item>
     <item>
       <title>Warren Buffett 50亿美元握手交易：Goldman Sachs 前CEO Lloyd Blankfein 谈投资、风险与人生</title>
@@ -293,6 +412,13 @@
       <description>本期节目邀请了 AI 领域知名研究者 Andrej Karpathy，围绕代码智能体的崛起展开深入对话。Karpathy 分享了自 2024 年 12 月以来他的工作流发生的根本性转变——从 80% 手写代码变为几乎完全委托给智能体，并将当前状态描述为一种持续的「AI 精神亢奋」。他详细介绍了自己搭建的家庭 AI 管家 Dobby，通过自然语言和 WhatsApp 统一控制灯光、空调、安防等六套系统。讨论深入到 Auto Research 的理念与实践——如何让研究完全自主运行、移除人类瓶颈，以及他在 GPT 训练优化上获得的意外成果。节目还探讨了模型的「锯齿感」问题（在可验证领域极强但在软性任务上仍有明显短板）、开源与闭源模型的动态平衡、独立研究者相对于前沿实验室的角色价值，以及数字世界将先于物理世界被 AI 大幅重构的预判。最后 Karpathy 分享了 Micro GPT 项目背后的教育理念转变——未来的教育不再是直接教人，而是教智能体，让智能体去做个性化教学。</description>
     </item>
     <item>
+      <title>德米特里乌斯·约翰逊：MMA 历史级蝇量级冠军的 UFC 风波、职业选择与人生转折</title>
+      <link>https://castnote.github.io/episodes/pivot/demetrious-johnson-mma-s-greatest-flyweight-opens-up-on-ufc-drama-fighting-his-journey-the/</link>
+      <guid>https://castnote.github.io/episodes/pivot/demetrious-johnson-mma-s-greatest-flyweight-opens-up-on-ufc-drama-fighting-his-journey-the/</guid>
+      <pubDate>Tue, 10 Mar 2026 16:00:06 GMT</pubDate>
+      <description>本期《The Pivot》围绕前 UFC 蝇量级冠军 Demetrious Johnson 展开。节目从他失聪母亲的成长环境与童年创伤谈起，延展到在艰难家庭结构中走向 MMA、建立心理韧性和职业身份的过程。节目重点讲述他后期才与生父重建关系的过程，以及婚姻、父亲与丈夫身份如何重塑其价值观。随后 Johnson 讨论了在 UFC 与 One Championship 间转换、冠军时期的待遇争议、体重与技战术变化、对外宣传与个人风格之间的平衡，提出“技术与理性比单纯暴力更重要”的观点。后半段他将话题转向儿女成长，分享如何以诚实方式进行家庭教育、处理文化身份与种族经历，并谈及原谅与内心修复。</description>
+    </item>
+    <item>
       <title>Alison Roman 的番茄酱市场征服计划</title>
       <link>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</link>
       <guid>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</guid>
@@ -382,6 +508,13 @@
       <guid>https://castnote.github.io/episodes/how-i-built-this/mark-rober-how-i-built-this-with-guy-raz-wondery-means-business/</guid>
       <pubDate>Mon, 22 Apr 2024 19:35:47 GMT</pubDate>
       <description>本期节目访谈 YouTube 科学传播者 Mark Rober，讲述他从 NASA JPL 喷气推进实验室工程师到全职 YouTuber 再到创业者的转型之路。他分享了在好奇号火星车项目中担任「门」工程师的经历、早期 YouTube 视频创作的心路历程、自动靶心 dartboard 和 glitter bomb 等爆款视频背后的工程思维、以及最终创立 CrunchLabs 做儿童科学订阅盒的故事。整个对话展现了工程师思维如何应用于内容创作和商业决策，以及他对科学教育和下一代的影响力愿景。</description>
+    </item>
+    <item>
+      <title>通往大马士革之路 | Revisionist History | Malcolm Gladwell</title>
+      <link>https://castnote.github.io/episodes/revisionist-history/the-road-to-damascus-revisionist-history-malcolm-gladwell/</link>
+      <guid>https://castnote.github.io/episodes/revisionist-history/the-road-to-damascus-revisionist-history-malcolm-gladwell/</guid>
+      <pubDate>Mon, 24 Apr 2023 14:45:51 GMT</pubDate>
+      <description>Malcolm Gladwell 从个人经验切入，讨论了 CIA 前法律顾问 John Rizzo 的自传《Company Man》中的一个核心人物：被称为 Al Pacino 的前恐怖组织线人。节目复盘了该线人如何以“悔罪”动机进入 CIA，帮助抓捕 Carlos the Jackal 等目标，却因机构清查失误与程序缺失，被卷入后续道德与司法争议。Gladwell 进一步以记者 Tim Weiner 为中心，梳理了新闻自由在国家安全中的边界，讲解《纽约时报》记者与 CIA 之间的反复博弈。结尾他回到这个故事的伦理难题：制度应如何处理悔悟与安全之间的冲突，以及如何在公开透明与保护知情者生命之间取得平衡。</description>
     </item>
     <item>
       <title>家庭、创业与五万美元</title>

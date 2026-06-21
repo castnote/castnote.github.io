@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="新云浪潮：2026 年 AI 计算现状 | Stephen Balaban | 听阅"><meta property="og:description" content="本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。"><meta property="og:url" content="https://castnote.github.io/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="新云浪潮：2026 年 AI 计算现状 | Stephen Balaban | 听阅"><meta name="twitter:description" content="本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。"><meta property="article:published_time" content="2026-06-18T12:30:36.000Z"><meta property="article:tag" content="播客"><title>新云浪潮：2026 年 AI 计算现状 | Stephen Balaban | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"新云浪潮：2026 年 AI 计算现状 | Stephen Balaban","description":"本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。","datePublished":"2026-06-18T12:30:36.000Z","author":[{"@type":"Person","name":"Matt Turk"},{"@type":"Person","name":"Steven Balaban"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/","isPartOf":{"@type":"PodcastSeries","name":"The MAD Podcast with Matt Turck"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/mad-podcast/">The MAD Podcast with Matt Turck</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/18 20:30:36</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.youtube.com/watch?v=0NttU4CbyVs">原始节目</a> </div> <h1>新云浪潮：2026 年 AI 计算现状 | Stephen Balaban</h1> <p class="episode-summary">本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Matt Turk</span> </div> <p class="person-description">MAD Podcast 主持人，负责访谈并推动对话聚焦 AI 基础设施与行业趋势</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Steven Balaban</span> </div> <p class="person-description">Lambda 联合创始人兼 CTO，AI 基础设施与数据中心领域企业家</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Steve Jobs</span>  </div> <p class="person-description">苹果联合创始人，节目中被用于类比计算普及路径</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="ai-计算为何不是普通商品服务">AI 计算为何不是普通商品服务</h2>
+<p><strong>Matt Turk</strong></p>
+<p>今天很明显，我们已经有了一套能把资本转化为软件产出的系统。很多唱反调的人认为五年后 GPU 会被淘汰，但这完全是误判。过去很长一段时间里，市场整体仍在供给不足，尤其是在大模型可用于从助手到代码生成等一系列任务后，需求仍在持续扩张。</p>
+<p>我是 Matt Turck，欢迎来到 Mad Podcast。今天的嘉宾是 Lambda 联合创始人兼 CTO Steven Balaban。节目将聚焦 AI 全栈底层：为什么 GPU 计算不是传统商品，如何筹集数十亿美元建设数据中心与芯片，为什么 2023 年购入的 H100 现在可能更贵，及建设千兆瓦级 AI 工厂的真实难度。</p>
+<p>你提到过，几年前硅谷很多人预言 NeoCloud 会变成商品，因为他们觉得 GPU 计算会被标准化。但今天几乎恰恰相反。为什么大家看错了？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>关键是：云计算本身不是单一商品。它是一个覆盖土地获取、建设、HPC、高性能计算、架构设计、软件编排、虚拟化到上层云服务的高度垂直整合系统。像 Amazon、Microsoft、Google、Oracle 这类巨头都在做云，正因为这是一个能持续盈利的深层业务。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你是说，虽然 GPU 租价下跌，但这只是一层，核心并非如此？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>是的。GPU 租价下行不能代表整体市场。Bloomberg 的 H100 指数有两个不同口径：公网按需和长期租赁。它们的混合比例变化会让人误读价格趋势，所以看上去像下降，其实只是计价结构变化。长期租赁的强度并没有消失。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你觉得 NeoCloud 的竞争优势主要来自技术，还是更偏向资本博弈？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>两个层面都在发生。比如我们在云软件编排层的投入很大，能把大规模 GPU 集群按需切分给客户。Lambda 的一键建群产品支持从 16 到 4000 块 GPU，能直接在网页里完成。很多 NeoCloud 连网站启动集群都做不到，更别提 4000 GPU。</p>
+<p>同时我们在数据中心设计、交付速度上持续创新，也在融资结构上不断进化。整个系统每一层都在做差异化，因此它不是拼硬件堆叠，而是复杂协调型业务。</p>
+<p><strong>Matt Turk</strong></p>
+<p>NeoCloud 未来会不会演变成‘赢家通吃’，还是允许多个巨头并存？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我认为会有多个巨头。传统云就证明了这一点。一般来说，行业里同时存在技术范式、资本形成与经济模型时，市场更偏向寡头；而真正强网络效应明显的领域才更容易单一赢家。</p>
+<p><strong>Matt Turk</strong></p>
+<p>从你视角看，我们会不会建得太多、或还在欠缺？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我仍然认为整体偏向‘供给不足’。无论是研发、服务还是应用层，LLM 需求都在持续上升。只要 scaling laws 这条规律——算力越多，模型能力越强——还在成立，地址空间就会扩张，算力需求就不会自己消失。</p>
+<p>大模型从客服替代、搜索增强到软件工程辅助手段，场景在不断外延。可用市场更大，需求增长被我们长期低估了。</p>
+<p><strong>Matt Turk</strong></p>
+<p>如果将来模型推理和训练变得更省算力，比如提升 10 倍，会不会改变这个结论？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>就算算力效率提升十倍，也只是让世界上每个人能处理十倍 token。总算力并未消失。早年我们也担心过‘突变模型’会像随机森林那样颠覆当前架构，但目前并未出现。Scaling laws 仍然是核心。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你认为当前建设 Lambda 的主要瓶颈是什么？是 GPU 本身、供电，还是别的？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>瓶颈通常先在某一站点局部暴露：发电机、UPS、场地供电等。产业层面更普遍的瓶颈是‘土地电力承诺能力’。你能拿到多大兆瓦级别的电力接入权，决定了能建到什么规模，后面才是设备、MEP 等。</p>
+<p><strong>Matt Turk</strong></p>
+<p>各地对数据中心的抵触情绪很真实，你怎么看？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>确实是现实问题。社区有合理诉求：就业、税收和参与决策。很多反对不是‘反 AI’，而是希望被纳入讨论。我们要把决策透明化，让当地人听得见、看得见。</p>
+<p>还有一个误解很常见：把新建 AI 数据中心和高耗水误解绑在一起。Blackwell、Rubin 等 GPU 部署更多是直接液冷到芯片，再经过干冷却器，几乎没有蒸发。很多人不了解技术细节，就放大了错误印象。</p>
+<p><strong>Matt Turk</strong></p>
+<p>那你们如何回应这些误解？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>说清楚成本与收益：一方面给出明确收益（就业、税收、网侧支撑），另一方面说明对电网的增益，如旁路储能与后续成本稳定化。沟通要可量化、可复用，不靠空泛口号。</p>
+<h2 id="从能量到-token算力单位怎么理解">从能量到 token：算力单位怎么理解</h2>
+<p><strong>Matt Turk</strong></p>
+<p>有人经常提 flops、GPU 小时、token、MFU，这些到底怎么串起来？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我习惯用物理量链路来理解：左边是能量生产（光子、天然气分子每秒），中间是电力转换（瓦特），再到数据中心耗能与制冷。PUE 是核心效率指标。最后是服务器层生成 FLOPS，变成训练/推理时的 token 吞吐，最后再看应用把 token 转化为实际智能的效率。</p>
+<p><strong>Matt Turk</strong></p>
+<p>如果两家公司同一块 GPU，怎样提取更多价值？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>成本里最大一块通常是折旧。你用 GPU 小时 50% 利用率，就等于 50% 在闲置。提高用户体验驱动的高利用率是核心。零售按需和长期批量租赁结构差异很大，软件层把按需弹性卖出来才是关键。</p>
+<p>没有云软件，你不能稳定按小时出租，也无法实现高频弹性。很多 NeoCloud 其实只有 GPU，没有把它们变成‘可编排网络’。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你能展开讲讲这种网络化吗？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>核心在于把大量 GPU 组成训练级集群，比如 NVL72 每柜 72 卡的机架，再用 NVLink、InfiniBand 或高速以太形成 spine-leaf 拓扑，做到每个端口与每个端口都能通信。训练和推理都离不开模型分片和高速互联。</p>
+<p>无论推理模型还是训练，算力任务都在大量 GPU 间并行分发。尤其在 frontier inference 场景下，模型分片策略比单卡能力更决定延迟和吞吐。</p>
+<p><strong>Matt Turk</strong></p>
+<p>那成本最终主要被什么拉高？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>最大的驱动仍是折旧与材料成本。按资本栈看，1-3 亿每兆瓦的发电端、10-15 亿每吉瓦建厂成本，再到 35-45 亿每吉瓦的服务器端，其中最大头通常是 GPU 集群。HBM 供应少、价格波动大也会放大波动。</p>
+<p><strong>Matt Turk</strong></p>
+<p>芯片选择上，Lambda 如何权衡？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我们几乎是全系 Nvidia，覆盖从 V100、A100 到 H100/H200、GB200、B200、B300。Nvidia 不止是硬件供货，也是完整开发生态。对我们来说，单看芯片价格不够，要看 CUDA、cuDNN、NCCL 这些完整软件栈。</p>
+<p><strong>Matt Turk</strong></p>
+<p>能再解释一下 cuDNN、NCCL 的差异吗？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>cuDNN 就像做矩阵乘法的高度优化引擎，NCCL 则做分布式通信优化，像 reduce-all、broadcast。它们让模型训练和推理的内核、通信路径自动被优化，其他新入场厂商很难短期复制。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你还提到 AI 时代的存储、网络也很关键，具体是怎么一回事？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我们提供的是 AI 优化文件系统，读写特征为主的高性能并行存储，不完全是传统 NFS。大部分组件要么自研增强、要么与成熟合作方结合，目的都是把 I/O 变成训练和推理的常量型加速路径。</p>
+<p>在网络层，除了 in-band 数据平面，还要有 out-of-band 管理平面、RDMA 直存取能力，以及 CPU、存储、GPU 的协同分区。想把 1 万张 GPU 切成稳定子集，控制面和数据面必须同时可编排。</p>
+<h2 id="数据中心资产与资本结构">数据中心、资产与资本结构</h2>
+<p><strong>Matt Turk</strong></p>
+<p>你们会把数据中心拿来租给别人吗？还是主要自用？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>起步时更多是租赁，后来逐步走向全流程：自己开发选址、设计、建设、融资和长期供电安排，并通过长期购电协议绑定优质算力需求方。这样可以降低摩擦、提升交付速度。</p>
+<p>目前许多中心我们是唯一租户，先不做通用出租平台。先把容量用好、把服务稳定性做到位，是当下更优先的阶段。</p>
+<p><strong>Matt Turk</strong></p>
+<p>国际布局上你们更偏向哪边？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>重心在北美：美国、加拿大、墨西哥。目前也和 SK Telecom 在韩国有合作并在首尔运营项目，但扩张暂时主要集中北美市场。</p>
+<p><strong>Matt Turk</strong></p>
+<p>延迟是否会倒逼你们建更多区域？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>对很多新 AI 应用来说，延迟不像传统云那么敏感，很多是异步工作流，关键指标是每 token 成本。唯一要考虑的是数据主权和监管：很多国家希望关键模型算力留在国内。</p>
+<p><strong>Matt Turk</strong></p>
+<p>能讲讲你们的融资方式吗？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>可以分两类：按需云和长期 offtake。按需更多看 Lambda 的信用；长期更多看终端客户信用。我们把 GPU 资产打包进 SPV，用资产支持贷款、并结合已验证现金流来定价，私募信贷市场对这类资产类信用现在更成熟。</p>
+<p>一些 2023 年买入的 H100，现在可租出的市场价反而更高，说明资产贬值节奏没想象中快，资本市场对这种资产的估值开始正向变化。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你提过算力资产化交易市场会不会出现？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>先有现货后有期货，这个逻辑对。市场还在成熟阶段，但我看到迹象：越来多人愿意把算力当作可定价资产来管理风险。派生工具会来，但不是今天必须出现。</p>
+<h2 id="从创业到大厂lambda-的起源与增长">从创业到大厂：Lambda 的起源与增长</h2>
+<p><strong>Matt Turk</strong></p>
+<p>先回到你的创业起点，这段背景很关键。</p>
+<p><strong>Steven Balaban</strong></p>
+<p>Lambda 2012 年起步于人脸识别。那时深度学习还没被主流资本认可。我和团队从 Google Code 下载 CUDA 的开源代码起步，在 GTX580 上训练卷积网络，紧跟 ImageNet/ AlexNet 热潮。</p>
+<p>早期我们推出 API 获得少量用户，但现金流有限。我同时支持 Percepio 的创业团队，帮他们在 iPhone 上做早期 convnet，这和后来的面部识别积累形成了研发闭环。</p>
+<p>那段时间我后来还做过 Lambda Hat、DreamScope。DreamScope 一度有上千万级图片处理量，结果 AWS 成本高企。我们用 6 万美元自建工作站集群替代云，账面上很快回本，反而带出‘为何不直接卖算力服务’的思路。</p>
+<p>2019 年前后我们从工作站和服务器业务转向云，营收从几百万到上亿美元，再到近十亿美元跑道。硬件业务逐步退出，核心变成 AI 基础设施和算力交付。</p>
+<p><strong>Matt Turk</strong></p>
+<p>早期团队结构怎样？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>四位创始团队成员大多留在公司，后来又有成员去成立 Posatron 等公司。对 Lambda 来说，团队延展性很重要。我们并不追求炫技，而是把一群人长期绑定在同一目标上。</p>
+<p>2022 年后资本环境波动很大，我们经历过很硬核的现金流冲击。那时我的思路很简单：坚持把资源聚焦到用户价值，把‘把客户留住、让他们爱上体验’放在一切决策之前。</p>
+<p>例如我们做 Lambda 101 入门培训时，用 Linux 小企鹅训练 GPT-2 的例子让用户直观看到计算体验，再到出货盒里的 T 恤、白色机架等小细节，目标都是让客户觉得被重视。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你最近引入了新 CEO，为什么做这个决定？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>不是 ego 问题。我对技术方向更有兴趣，管理职责本身并非我的唯一热情。引入 Michelle，是为了让公司在资本、组织管理和业务执行上进入更成熟阶段。</p>
+<p>我转到 CTO 后，重点变成如何把站点建设和交付进一步压缩周期。目标是让 Lambda 在高频部署上接近‘高速度量产’，与传统 Hyperscaler 的慢节奏形成差异。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你提到他们上线很快，能再说些细节吗？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>这主要是流程优化：选址、MEP 评审、建设节点、交付路径都做了自动化和压缩。很多传统项目团队本质上是地产公司式交付，缺少 AI 数据中心的设计视角；我们要把这一层一层剥离掉。</p>
+<p>至于站点设计，不同于传统云的百项功能堆叠，我们偏向 AI 第一性原理：更高利用率、可扩展性和可交付性。</p>
+<h2 id="神经软件与下一代计算需求">神经软件与下一代计算需求</h2>
+<p><strong>Matt Turk</strong></p>
+<p>你反复提到‘AI 不再编写软件，而是成为软件本身’，能再展开？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>这就是我所谓 neural software 或 neural operating system。你给模型提示词，它像操作系统那样即时响应，用户看到的更多是行为而不是静态代码。vibe coding 还输出文本代码，编译后固定不变；而神经软件是模型参数和上下文实时调整界面行为。</p>
+<p>我还认为这类形态在 10 到 15 年进入大规模采用，今天的例子已经有端到端系统：自动驾驶就是一种神经软件。大脑里并没有传统程序代码在运行，而是模型映射到行为。</p>
+<p><strong>Matt Turk</strong></p>
+<p>这会改变你们面向算力提供商的产品吗？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>会。随着 vibe coding 普及，时间并不全部花在推理上，而是放在测试、查数据、改代码、迭代。过去偏向纯 GPU 密集型的假设会变成‘GPU + 大量 CPU + 安全与开发环境’的组合。</p>
+<p>在内部我们已经有一批 agent-driven 工作流。用户反馈不是只在发版前做，而是持续收敛：提交 bug/需求后，代理先执行，再让人类处理外部动作。未来会出现‘自组装软件’（self-assembling software）式的闭环。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你前面说过 gigawatt scale AI 工厂，这个概念该如何理解？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>它是把土地、数据中心和服务器视为一个持续产 token 的系统。1 吉瓦约等于 10 亿瓦，规模非常大。我会用纽约市一年几吉瓦负载做对比，方便理解。</p>
+<p><strong>Matt Turk</strong></p>
+<p>你曾提出 one person, one GPU，这个想法现在看更有说服力。</p>
+<p><strong>Steven Balaban</strong></p>
+<p>是的。类似 1984 年苹果‘one person, one computer’需要十几年才接近普及，LLM 对日常工作渗透也会经历更长周期。我的判断是，美国每个人未来都可能日常至少配备一块 GPU 级算力来支撑工作、娱乐和创造。</p>
+<h2 id="结尾快问快答">结尾快问快答</h2>
+<p><strong>Matt Turk</strong></p>
+<p>给一个快速观点，AI 哪个方向你认为被高估？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>一些非软件工程的 agentic 工作流常被高估。它们依赖明确反馈回路与可验证结果。买网站、谈合作这类任务缺乏高频自动验证，就不适合纯粹的代理闭环。</p>
+<p><strong>Matt Turk</strong></p>
+<p>哪个方向最被低估？</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我更看好神经软件和自组装软件。很多人以为听懂了术语，实际上没真正体验过。先把最小版本跑起来，多次 agent 协作、持续验证，才能看到它在软件开发上的真正潜力。</p>
+<p><strong>Matt Turk</strong></p>
+<p>今天非常精彩，感谢你来聊这么深入的内容。</p>
+<p><strong>Steven Balaban</strong></p>
+<p>我也很享受这次对话，感谢邀请。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
