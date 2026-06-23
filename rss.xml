@@ -6,6 +6,34 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>金融行业中最“抗冲击”的职业路径 | LFTC</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc/</guid>
+      <pubDate>Mon, 22 Jun 2026 21:00:26 GMT</pubDate>
+      <description>本期节目以访谈 Rick Edelman 讨论了家庭教育与职业选择的结构性困境。双方先指出传统“考上大学”叙事的问题：录取并不难，真正难的是在高成本环境下毕业和就业匹配，且学生转专业、转学导致的学分与时间损失会放大负担。Rick 提出在不取消大学价值的前提下，应把大学视为可设计的路径，包括成本控制与生涯规划。随后讨论了高等教育中的招生激励失衡，及州立大学和社区学院免费化趋势。节目后半段转向财务规划行业，解读人才严重供不应求的结构性原因：大众对财务规划职业认知不足、课程设置偏科和职业路径不清。最后，双方讨论 AI 与财务顾问关系，认为长期竞争优势仍在信任与关系，而非单纯交易执行。加密部分则聚焦“crypto winter”多重压力、监管不确定性与 tokenization 可能重塑机构投资入口的逻辑。</description>
+    </item>
+    <item>
+      <title>首个重大 AI 安全事件即将到来：Zico Kolter 与 Matt Fredrikson（Gray Swan）</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-first-major-ai-breach-is-coming-zico-kolter-matt-fredrikson-gray-swan/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-first-major-ai-breach-is-coming-zico-kolter-matt-fredrikson-gray-swan/</guid>
+      <pubDate>Mon, 22 Jun 2026 20:45:21 GMT</pubDate>
+      <description>本期节目聚焦人工智能模型和 Agent 的安全风险，讨论 Grey Swan 如何通过红队体系（Arena、Shade）与防护层（Signal）应对。嘉宾指出，AI 与传统软件有本质差异，模型可能被提示注入、工具调用链劫持并引发越权或数据泄露。节目先讲解自动化红队如何发现超出常规训练分布的漏洞，再解释企业如何通过策略过滤、工具级监控、权限治理与身份建模降低风险。随后两位嘉宾展望了 2026 年：AI 安全能力将从大模型实验室扩散到更多企业，行业开始把风险评估、保险与合规（如 AIC）结合起来。整体结论是，不追求“零风险”，而是持续推进可部署的安全—可用性平衡。</description>
+    </item>
+    <item>
+      <title>俄乌仍在谈判的最后几件事之一</title>
+      <link>https://castnote.github.io/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj/</guid>
+      <pubDate>Mon, 22 Jun 2026 17:00:19 GMT</pubDate>
+      <description>本期节目聚焦俄乌战争中仍在持续运作的囚犯交换机制。节目先交代和平谈判受阻下，交换已成为双方维持有限合作的人道通道，并记录了乌克兰家庭对释放消息长期反复等待的现实。随后梳理了被释放乌克兰战俘面临的虐待创伤与回国后治疗压力，以及俄罗斯战俘在乌克兰营区的处境差异。内容进一步说明交换协商流程的保密性与不透明争议：尽管5月曾达成大规模交换，俄军仍有被送回前线作战、禁止投降的风险，双方公开数据仍不完整。节目指出，基辅的家庭抗议与协调组织的申诉反映，仍有大量乌方被扣留者，返回后如何适应生活与心理创伤，也成为交换后的长期挑战。</description>
+    </item>
+    <item>
+      <title>城市规划师、无限滚动与“公共物品”到底是什么？</title>
+      <link>https://castnote.github.io/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/</guid>
+      <pubDate>Mon, 22 Jun 2026 07:07:34 GMT</pubDate>
+      <description>本期《Indicator Quiz》邀请听友 Jim Umbach 参加十余道题目，回顾近半年的内容重点。节目围绕社交媒体界面设计对行为的影响、公共物品的非排他性定义、小企业融资压力、财务异常与痴呆早期信号等问题展开。后半段以数字题形式，涉及 Pokémon 卡估值、GLP-1 报销比例等案例，用问答方式复盘节目核心观点，帮助听众在轻松氛围中强化对政策、金融与商业资讯的理解。</description>
+    </item>
+    <item>
       <title>未来所有产品都将成为“活体系统”——Trajectory.ai 的 Ronak Malde</title>
       <link>https://castnote.github.io/episodes/latent-space/every-product-of-the-future-will-be-a-living-system-ronak-malde-trajectory-ai/</link>
       <guid>https://castnote.github.io/episodes/latent-space/every-product-of-the-future-will-be-a-living-system-ronak-malde-trajectory-ai/</guid>
@@ -116,6 +144,13 @@
       <guid>https://castnote.github.io/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials/</guid>
       <pubDate>Thu, 18 Jun 2026 12:00:18 GMT</pubDate>
       <description>本集围绕如何在安全前提下提高身体柔韧性展开，先从神经-肌肉-结缔组织系统的基础机制说起：运动神经元驱动收缩，肌梭和高尔基腱器官提供反馈并限制危险幅度。随后他解释了静态、动态、弹道和PNF 四种拉伸分类与其神经肌肉差异，指出静态持位对长期增加活动范围更具一致优势。节目引用综述与对照研究，强调每周累计至少约5分钟的静态拉伸、以30秒持位为单位、频次偏高但时长不必很长。主持人还讨论了预热、训练前后时序、强度应低于疼痛阈值、以及安德森方法对“当日可达范围”更客观的理解，并进一步将拉伸与压力调节、疼痛耐受（例如瑜伽实践中的神经可塑性）联系起来，给出兼顾表现与安全的实践框架。</description>
+    </item>
+    <item>
+      <title>重塑英特尔与半导体供应链：与 Intel CEO Lip Bu Tan 的对话</title>
+      <link>https://castnote.github.io/episodes/no-priors/re-engineering-the-semiconductor-supply-chain-with-intel-ceo-lip-bu-tan/</link>
+      <guid>https://castnote.github.io/episodes/no-priors/re-engineering-the-semiconductor-supply-chain-with-intel-ceo-lip-bu-tan/</guid>
+      <pubDate>Thu, 18 Jun 2026 10:00:05 GMT</pubDate>
+      <description>本期节目邀请 Intel CEO Lip Bu Tan 讨论其接任后对公司和行业的主导思路。节目围绕 Intel 的修复路径展开：他先从文化与决策机制入手，通过缩短响应链路、强化客户反馈与工程复盘，推动产品线聚焦，并把 CPU 与全栈解决方案结合起来。访谈进一步覆盖了 TerraFab 合作、与 Elon Musk 的合作逻辑，以及美国及全球半导体供应链在 AI 需求下的再平衡问题。来宾指出未来瓶颈会转向电力、氦气、内存与高端制程材料和封装，而不仅是单一芯片性能。最后他分享了资本策略：重视耐心资本、跨周期投资和平台型能力，强调以应用为导向、以高质量执行匹配 AI 与物理 AI 的长周期增长。</description>
     </item>
     <item>
       <title>杰里米·格兰瑟姆：如何判断泡沫是否即将破裂 | Odd Lots</title>
@@ -363,6 +398,13 @@
       <description>本期节目邀请了两届 NBA 冠军、Inside the NBA 资深分析师 Kenny Smith。他分享了许多从未公开的 Michael Jordan 故事，包括在北卡时期与 MJ 的相处细节、对 MJ 竞争性的观察，以及他对 Scottie Pippen 的「嫉妒」。Kenny 回顾了自己的篮球生涯——从纽约街头篮球的 rough 环境到北卡蓝血名校，再到火箭队的两连冠，特别是 1995 年以六号种子身份创造季后赛传奇。他还谈到了在 Inside the NBA 三十年的解说经历、2020 年在节目现场离场声援球员抗议的决定、两段婚姻和作为父亲的人生感悟，以及他对新一代球员 Victor Wembanyama 的评价。</description>
     </item>
     <item>
+      <title>OpenAI 是否准备好 IPO？太空数据中心神话与年轻人“嘘”AI 的舆论信号</title>
+      <link>https://castnote.github.io/episodes/big-technology/is-openai-ready-to-ipo-the-datacenters-in-space-myth-the-kids-boo-ai/</link>
+      <guid>https://castnote.github.io/episodes/big-technology/is-openai-ready-to-ipo-the-datacenters-in-space-myth-the-kids-boo-ai/</guid>
+      <pubDate>Mon, 25 May 2026 18:00:06 GMT</pubDate>
+      <description>本期节目围绕 OpenAI 与 Anthropic 的季度财报、亏损与上市时机进行讨论，重点比较其营收、经营口径和增长逻辑，并分析双方为何在尚未完全盈利时加快 IPO 动作。节目随后解读 SpaceX 的上市文件，质疑“太空数据中心”与 28.5 万亿美元总可服务市场叙事的落地性，并延伸到近期毕业典礼上 AI 被公开嘘声所反映的公众信任问题。内容进一步涉及 Meta 的打字监控争议、AI 企业沟通方式与政治化风险。</description>
+    </item>
+    <item>
       <title>从底层理解芯片设计 — Reiner Pope</title>
       <link>https://castnote.github.io/episodes/dwarkesh/reiner-pope-oik3r-smx5o/</link>
       <guid>https://castnote.github.io/episodes/dwarkesh/reiner-pope-oik3r-smx5o/</guid>
@@ -389,6 +431,13 @@
       <guid>https://castnote.github.io/episodes/training-data/anthropic-s-boris-cherny-why-coding-is-solved-and-what-comes-next/</guid>
       <pubDate>Mon, 04 May 2026 17:28:44 GMT</pubDate>
       <description>Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经&quot;解决&quot;，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。</description>
+    </item>
+    <item>
+      <title>Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan）</title>
+      <link>https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/</link>
+      <guid>https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/</guid>
+      <pubDate>Wed, 29 Apr 2026 15:21:18 GMT</pubDate>
+      <description>本期节目围绕 Andrej Karpathy 与主持人讨论 AI 编程范式的演化。嘉宾回顾了他从 LLM 辅助编程到“vibe coding”的经历，指出软件开发已从写明确定义的代码，逐步转向以提示词与上下文驱动的“软件 3.0”模式，并以 OpenClaw 安装和 MenuGen 案例说明新范式如何减少手工流程。随后双方深入可验证性（verifiability）与模型能力锯齿化：模型在数学与代码等可验证任务上提升最快，而在数据分布外表现可能薄弱，因此创业与工程实践应重视任务环境、数据与微调。节目进一步讨论了 agentic engineering 的核心：在加速的同时维持工程质量、安全和可维护性；未来招聘需要更关注完整项目能力。最后，Karpathy 强调未来代理时代仍需人类的方向判断和审美监督，尤其是系统设计、规格定义与知识理解。</description>
     </item>
     <item>
       <title>构建 Pi，以及为什么自我修改软件如此迷人</title>

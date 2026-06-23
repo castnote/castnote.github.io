@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目围绕 Andrej Karpathy 与主持人讨论 AI 编程范式的演化。嘉宾回顾了他从 LLM 辅助编程到“vibe coding”的经历，指出软件开发已从写明确定义的代码，逐步转向以提示词与上下文驱动的“软件 3.0”模式，并以 OpenClaw 安装和 MenuGen 案例说明新范式如何减少手工流程。随后双方深入可验证性（verifiability）与模型能力锯齿化：模型在数学与代码等可验证任务上提升最快，而在数据分布外表现可能薄弱，因此创业与工程实践应重视任务环境、数据与微调。节目进一步讨论了 agentic engineering 的核心：在加速的同时维持工程质量、安全和可维护性；未来招聘需要更关注完整项目能力。最后，Karpathy 强调未来代理时代仍需人类的方向判断和审美监督，尤其是系统设计、规格定义与知识理解。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan） | 听阅"><meta property="og:description" content="本期节目围绕 Andrej Karpathy 与主持人讨论 AI 编程范式的演化。嘉宾回顾了他从 LLM 辅助编程到“vibe coding”的经历，指出软件开发已从写明确定义的代码，逐步转向以提示词与上下文驱动的“软件 3.0”模式，并以 OpenClaw 安装和 MenuGen 案例说明新范式如何减少手工流程。随后双方深入可验证性（verifiability）与模型能力锯齿化：模型在数学与代码等可验证任务上提升最快，而在数据分布外表现可能薄弱，因此创业与工程实践应重视任务环境、数据与微调。节目进一步讨论了 agentic engineering 的核心：在加速的同时维持工程质量、安全和可维护性；未来招聘需要更关注完整项目能力。最后，Karpathy 强调未来代理时代仍需人类的方向判断和审美监督，尤其是系统设计、规格定义与知识理解。"><meta property="og:url" content="https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan） | 听阅"><meta name="twitter:description" content="本期节目围绕 Andrej Karpathy 与主持人讨论 AI 编程范式的演化。嘉宾回顾了他从 LLM 辅助编程到“vibe coding”的经历，指出软件开发已从写明确定义的代码，逐步转向以提示词与上下文驱动的“软件 3.0”模式，并以 OpenClaw 安装和 MenuGen 案例说明新范式如何减少手工流程。随后双方深入可验证性（verifiability）与模型能力锯齿化：模型在数学与代码等可验证任务上提升最快，而在数据分布外表现可能薄弱，因此创业与工程实践应重视任务环境、数据与微调。节目进一步讨论了 agentic engineering 的核心：在加速的同时维持工程质量、安全和可维护性；未来招聘需要更关注完整项目能力。最后，Karpathy 强调未来代理时代仍需人类的方向判断和审美监督，尤其是系统设计、规格定义与知识理解。"><meta property="article:published_time" content="2026-04-29T15:21:18.000Z"><meta property="article:tag" content="播客"><title>Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan） | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan）","description":"本期节目围绕 Andrej Karpathy 与主持人讨论 AI 编程范式的演化。嘉宾回顾了他从 LLM 辅助编程到“vibe coding”的经历，指出软件开发已从写明确定义的代码，逐步转向以提示词与上下文驱动的“软件 3.0”模式，并以 OpenClaw 安装和 MenuGen 案例说明新范式如何减少手工流程。随后双方深入可验证性（verifiability）与模型能力锯齿化：模型在数学与代码等可验证任务上提升最快，而在数据分布外表现可能薄弱，因此创业与工程实践应重视任务环境、数据与微调。节目进一步讨论了 agentic engineering 的核心：在加速的同时维持工程质量、安全和可维护性；未来招聘需要更关注完整项目能力。最后，Karpathy 强调未来代理时代仍需人类的方向判断和审美监督，尤其是系统设计、规格定义与知识理解。","datePublished":"2026-04-29T15:21:18.000Z","author":[{"@type":"Person","name":"Stephanie Zhan"},{"@type":"Person","name":"Andrej Karpathy"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/","isPartOf":{"@type":"PodcastSeries","name":"Training Data"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/training-data/">Training Data</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/04/29 23:21:18</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.youtube.com/watch?v=96jN2OCOfLs">原始节目</a> </div> <h1>Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan）</h1> <p class="episode-summary">本期节目围绕 Andrej Karpathy 与主持人讨论 AI 编程范式的演化。嘉宾回顾了他从 LLM 辅助编程到“vibe coding”的经历，指出软件开发已从写明确定义的代码，逐步转向以提示词与上下文驱动的“软件 3.0”模式，并以 OpenClaw 安装和 MenuGen 案例说明新范式如何减少手工流程。随后双方深入可验证性（verifiability）与模型能力锯齿化：模型在数学与代码等可验证任务上提升最快，而在数据分布外表现可能薄弱，因此创业与工程实践应重视任务环境、数据与微调。节目进一步讨论了 agentic engineering 的核心：在加速的同时维持工程质量、安全和可维护性；未来招聘需要更关注完整项目能力。最后，Karpathy 强调未来代理时代仍需人类的方向判断和审美监督，尤其是系统设计、规格定义与知识理解。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Stephanie Zhan</span> </div> <p class="person-description">Training Data 的主播，负责引导访谈并持续追问技术与工程实践细节。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Andrej Karpathy</span> </div> <p class="person-description">AI 科研与工程先行者，曾共同创办 OpenAI 并参与特斯拉 Autopilot 的早期开发。</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Sam Altman</span>  </div> <p class="person-description">OpenAI CEO，提出不同世代用户对 AI 使用方式差异的观点。</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<p><strong>Stephanie Zhan</strong></p>
+<p>我们非常兴奋地邀请到第一位特别嘉宾。你帮助打造了现代人工智能，又帮助解释现代 AI，甚至还替它改了新名字。你也共同创办了 OpenAI，并在当年让特斯拉的 Autopilot 落地。你能把最复杂的技术变化讲得既易懂又顺势而来。你们都知道你去年提出了 ‘vibe coding’，但最近几个月你又说自己作为程序员前所未有地落后了。今天我们就从这点开始。</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>谢谢你们邀请我，我很开心来到这里，也很期待今天的对话。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>几个月前你说你自己从未感到自己在编程上更落后过，这对你来说很不寻常。是更多令人兴奋，还是更令人不安？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>两种情绪都有。先说来龙去脉：过去一年我一直在用像 AlphaCode 这类代理式工具，最开始它能写一些代码块，偶尔出错我再修一修，确实有帮助。</p>
+<p>到了去年十二月我有一段空档期，时间相对多一些。随着模型更新，我发现大多数代码片段一次就能直接跑得很好，我越来越少改错。记不得上次我认真修代码是哪次了。于是我开始更信任系统，终于进入了一种持续『vibe coding』的状态。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你之前常说 LLM 更像一台新式计算机：软件 1.0 是显式规则，软件 2.0 是学习到的权重，那软件 3.0 又是什么？如果团队真把这点当真，工作方式会怎么变？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>可以这样看。软件 1.0 是我们直接写代码；软件 2.0 是通过构建数据集和训练神经网络来编程，重点在目标函数与网络结构。软件 3.0 则更像是把提示词和上下文当作指令界面，模型在上下文里执行推理，完成数字信息空间中的计算。</p>
+<p>以前安装 OpenClaw 这种工具你通常会写一堆 bash 脚本。不同平台和配置会让脚本复杂到失控，仍然停留在软件 1.0。后来你只需给代理一段文本，它会读取环境、安装、调试、修复。你再也不必精确写下所有步骤细节。</p>
+<p>MenuGen 的例子也很典型：我曾写了一个应用，用户拍菜单照片后先 OCR 提取菜名，再用图像模型生成示意图。后来想到更简单的思路——直接把照片给 Gemini，要求它在原图上叠加菜品图像。</p>
+<p>它几乎会返回与原菜单对应的渲染图像，直接在每道菜位里画出内容。那时我意识到，自己原来的 MenuGen 在新范式下几乎失去存在必要了。软件 3.0 不只是旧流程加速，而是出现此前做不到的新能力。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你在说的不是‘同样的任务更快’而是更深层的变化，对吧？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>没错。自动化的并不只是代码。过去代码处理的是结构化数据；现在可以把大量文档直接当作输入，重组事实并生成新的知识表述。以前不可能完成的知识基建任务，现在开始变得可行。</p>
+<p>所以我反复强调，真正兴奋的是：能做的事情不只是旧事物的加速，而是全新的可实现工作。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你最近提到从去年十月到今年一月的转变。那如果再往前类比，八十、九十年代是建站，2010 年代是移动应用，云时代是 SaaS，那么 2026 这种时代的显著新范式可能是什么？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>继续用 MenuGen 的思路：很多旧代码会消失，神经网络承担主要工作。想象一个装置输入原始视频或音频，模型用扩散直接渲染一个当下专属 UI。很像早期并不确定电脑最终会像传统计算器还是像神经网络，后来我们走进了经典路线，但神经网络也许会反向成为宿主。</p>
+<p>未来 CPU 可能像协处理器一样辅助神经网络。你会看到模型在大量场景里是主控，而工具调用只是少量确定性任务的历史性附属。这会很异质、很陌生，但我觉得会逐步到来。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>再来聊可验证性。你说 AI 会更快自动化可验证域，这会让哪些被认为‘安全’的职业突然提速？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>传统软件擅长的是能在代码里明确指定的任务。LLM 又加了‘可验证’这一层：训练本身是强化学习环境，奖励函数推动它在数学、代码这类可评测任务上形成尖刺式优势。</p>
+<p>但这种能力会忽高忽低。除了训练机制，一部分来自实验投入分布。若某个领域虽可验证却商业价值低，它就可能没被放进训练分布，能力上限也就受限。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你还举了个有趣反差：模型能重构十万行代码，却可能建议你步行去 50 米外的洗车店。这种现象说明什么？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>这说明模型仍然锯齿化。它在某些任务上极强，在另一部分却失真，因为你可能不在它的回路内。你的职责之一就是判断是否处在适配分布内，并保留人工在场。</p>
+<p>如果不在，就要通过微调或自建数据和强化学习环境来扩展能力。总之我写这类文章的目的就是理解：可验证性与训练偏好共同塑造了模型的高低。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>如果你是创业者，面前是看起来‘可做可赚’的方向，怎样判断该投什么？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>把关键放在可验证场景：你是否能围绕它搭建大量高质量 RL 环境。如果可以，便能更好做定制化微调。它看起来复杂，但核心是定义任务、数据和评测闭环。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>那反过来，哪些工作还只能远距离观察而难以直接交给代理？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>我更倾向于说：几乎所有事情都能被某种程度验证和自动化。连写作也能通过多模型评审体系获得可接受结果。差别在于成本、边界和可靠性，更多是难易不同，而非绝对不可行。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>今天我们把 vibe coding 也提到了。你认为它与 agentic engineering 的边界是什么？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>vibe coding 把门槛下放，让更多人能编程；agentic engineering 则是保留专业质量标准。代理很强，但仍会有漏洞，关键是如何在加速的同时不牺牲质量与安全。</p>
+<p>我更喜欢把它当作工程学科：用策略协调多个有点随机、可犯错的代理。你能让系统更快，但也要能对风险和边界负责。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你也提到 AI 原生开发者和一般开发者的区别。更直接一点，差别体现在哪里？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>不是会不会会一点命令，而是是否把工具链用透。过去每个工程师都要把 Vim、VS Code 这类工具玩透；现在要把 Cloud Code、Codex 等协作起来，建成完整的环境、提示词和执行链路。</p>
+<p>很多招聘仍在用旧指标。你会更偏向让候选人做一个完整项目，比如做并加固一个推文平台，再让代理持续地尝试入侵。看得懂的人是看整体是否稳。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>随着代理越来越多地接管实现，人类最重要的能力还剩下什么？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>仍然是“总导演”。我给过个例子：Stripe 和 Google 邮箱可能不一致，代理还会硬把它们当唯一 key 去对齐，导致用户资产没正确绑定。人必须负责规格设计和边界规则。</p>
+<p>API 细节也许它们能记得更好，如 keepdim、axis 这些写法，但你还是要懂底层语义，知道何时共享张量视图、何时发生额外拷贝，否则会影响性能和工程正确性。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>那种审美与判断力未来会淡化吗，还是会继续重要？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>希望它会改善，但目前这不是强化学习优化目标，所以很大一部分判断仍要靠人。你会发现模型写出的代码能跑，但常常冗长、拷贝重复、抽象尴尬，离优雅还有距离。</p>
+<p>我在 microGPT 上尝试反复让它极简化却做不到，这不代表基础能力没进步，只说明我们仍在学习它的外部回路。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你写过‘动物与幽灵’，你能再展开一下吗？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>因为它们不是有内在动机的‘动物智能’，你给它越多情绪化指令越无效。它更像统计仿真电路：预训练给出基底，强化学习叠加在上面。</p>
+<p>所以你不能假设它会‘自己想明白’。在熟悉分布里效果好，不熟悉的地方就会出错。更稳妥的方法是持续怀疑、持续试验、持续观察。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>如果代理不仅聊天还会执行动作，那世界会怎样？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>我觉得大家容易误以为一切都得重写，其实目前文档和产品仍写给人类。你总被指着去点某个 URL、某个设置项。真正关键是把世界描述成传感器和执行器：它先看世界，再操作世界。</p>
+<p>理想状态是代理理解你的目标并直接把应用跑起来。比如 MenuGen，如果我给 prompt 就能完整构建并部署到网络，不必再逐个配置服务，那才是代理原生基础设施。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>你在教育上的直觉也很有意思。信息会越便宜，学习还要学什么？</p>
+<p><strong>Andrej Karpathy</strong></p>
+<p>我很认同‘思考可以外包，理解不能外包’。你必须保留理解，否则不清楚自己在建什么、为什么值得建、该如何指挥代理。</p>
+<p>这也是我喜欢知识库、再提问的原因。把读到的材料逐步转成你的模型，反复提问、重组，会持续提升洞察。但这不是‘让代理替你理解’，而是你自己依然承担方向盘。</p>
+<p><strong>Stephanie Zhan</strong></p>
+<p>我们今天就到这里，感谢 Andre 的分享。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
