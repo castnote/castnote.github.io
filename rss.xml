@@ -6,6 +6,27 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>在 Kalshi 和 Polymarket 出现之前，曾有爱荷华电子市场</title>
+      <link>https://castnote.github.io/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets/</guid>
+      <pubDate>Wed, 24 Jun 2026 00:38:34 GMT</pubDate>
+      <description>节目围绕预测市场展开，先由 Planet Money 的 Erica 开场，引入一个关于政治与商业博弈的历史问题。内容回顾 1988 年 Iowa Electronic Markets 的实验起点：三位经济学者在爱荷华发起候选人“股票”交易，用市场价格来检验民意，从而优于传统民调预测美国总统选举。随后节目结合监管脉络，说明 CFTC 在 1988 年授予有限的豁免与上限规则，确保其低规模运行。通过历史学家 Coleman Strum 的专访，节目再往前追到赛马场和早期选举押注，解释预测市场在二十世纪中期为何淡出：媒体更偏好民调、公开交易机制处于灰色地带、可持续交易场景不足。最后，节目指出 IEM 的复兴在1988年重燃了人们对该机制的信心，并推动后来更大规模的预测市场形态出现。</description>
+    </item>
+    <item>
+      <title>Ryan Cohen 的 560 亿美元收购 eBay 计划</title>
+      <link>https://castnote.github.io/episodes/all-in/gamestop-ceo-ryan-cohen-s-56b-plan-to-take-over-ebay/</link>
+      <guid>https://castnote.github.io/episodes/all-in/gamestop-ceo-ryan-cohen-s-56b-plan-to-take-over-ebay/</guid>
+      <pubDate>Tue, 23 Jun 2026 21:13:14 GMT</pubDate>
+      <description>本期节目中，主持人与 Ryan Cohen 回顾了他从创业到收购的完整脉络。节目先从 Chewy 创业开始，解释他为何从不懂的珠宝转向宠物用品，靠供应链效率、重复购买模型和密集用户服务，在与亚马逊激烈竞争下实现快速增长并完成高估值出售。随后他转向投资与激进治理，先后参与 GameStop 董事会与管理，经历最初套用 Chewy 模式失败后，改以二手与收藏品为主线重构业务并显著改善规模与现金表现。接着，Ryan 说明为何把视野转向 eBay：其全球用户与品牌基础存在潜在价值，却长期受困于卖家体验和执行迟缓。讨论中他披露了拟议收购的逻辑，包括成本压降、直播电商与数字藏品扩张、以及“所有者型”治理主张。节目后半段转入要约被拒后的博弈与结构选择，Ryan 认为核心问题不只是融资，而是权责激励与经营能力。</description>
+    </item>
+    <item>
+      <title>为何一副1000美元麻将牌需要十天才能做完｜WSJ Coveted</title>
+      <link>https://castnote.github.io/episodes/the-journal/why-a-1-000-mahjong-set-can-take-10-days-to-make-wsj-coveted/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/why-a-1-000-mahjong-set-can-take-10-days-to-make-wsj-coveted/</guid>
+      <pubDate>Tue, 23 Jun 2026 19:00:30 GMT</pubDate>
+      <description>本期节目围绕一位麻将爱好者对高端麻将牌的长期追踪展开。主播先讲到麻将在触感、声音与外观上的沉浸体验，随后解释了麻将牌的结构、牌面分类和在美国流行版本中对规则的延伸。节目指出，随着产业标准化，机器化与大规模生产正在挤压传统手工雕刻的空间，导致手工牌在稀缺性与细节表现上逐渐成为例外。人物转而分享了自己从线上调研到联络香港匠人、完成香港手工牌订制的过程，并讨论美国麻将文化中“本土审美更新”与传统识别之间的张力。最后，他说明创立 Karen Aruba Arts 的初衷与传承难题：如何在家族层面恢复工具与技能，既保留传统工艺又让这种兴趣和制作链条持续到下一代。</description>
+    </item>
+    <item>
       <title>金融行业中最“抗冲击”的职业路径 | LFTC</title>
       <link>https://castnote.github.io/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc/</link>
       <guid>https://castnote.github.io/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc/</guid>
@@ -494,6 +515,13 @@
       <guid>https://castnote.github.io/episodes/money-stuff/re-run-cliff-asness-money-stuff-the-podcast/</guid>
       <pubDate>Fri, 13 Feb 2026 19:31:33 GMT</pubDate>
       <description>本期节目采访 AQR Capital Management 联合创始人 Cliff Asness，深入探讨量化投资的核心哲学、市场效率假说的现实挑战、动量因子的行为学解释、择时策略的可行性，以及机器学习在投资中的应用前景。Asness 分享了从 1999-2000 年科技泡沫到 2018-2020 年再次出现的估值极端分化中获得的感悟，认为行为偏差在市场中的作用比 30 年前他估计的要大得多。他还讨论了与学术界的关系——何时发表研究成果、何时作为交易秘密保留，并对私募股权行业的「波动率清洗」现象提出尖锐批评。</description>
+    </item>
+    <item>
+      <title>为强化学习环境打造 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann</title>
+      <link>https://castnote.github.io/episodes/training-data/building-the-github-for-rl-environments-prime-intellect-s-will-brown-johannes-hagemann/</link>
+      <guid>https://castnote.github.io/episodes/training-data/building-the-github-for-rl-environments-prime-intellect-s-will-brown-johannes-hagemann/</guid>
+      <pubDate>Tue, 10 Feb 2026 13:00:54 GMT</pubDate>
+      <description>本期围绕“让强化学习与后训练更可复用、更可扩展”展开，主持人 Dwarkesh Patel 采访 Prime Intellect 的 Will Brown，讨论如何把强化学习环境和评测体系搭建成像 GitHub 一样可共享的工程平台。对话先区分 eval 与 environment 的关系，再延展到平台如何连接训练链路的算力调度、代码执行、harness、评分与闭环优化。Will 解释了为什么企业要把知识与最佳实践版本化，降低后训练门槛，使创业公司和非头部实验室也能快速迭代。节目还覆盖了安全沙箱、客户应用场景、开源与闭源模型适配，以及未来方向如合成数据、长期上下文管理、sim-to-real 取舍与下一代 RL 工程实践。</description>
     </item>
     <item>
       <title>2026年商业大亨模拟游戏前瞻</title>

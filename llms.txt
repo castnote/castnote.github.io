@@ -12,6 +12,9 @@
 
 ## 文章列表
 
+- [在 Kalshi 和 Polymarket 出现之前，曾有爱荷华电子市场](/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets/): Planet Money · 2026-06-24 ([Markdown](/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets.md))
+- [Ryan Cohen 的 560 亿美元收购 eBay 计划](/episodes/all-in/gamestop-ceo-ryan-cohen-s-56b-plan-to-take-over-ebay/): All-In Podcast · 2026-06-23 ([Markdown](/episodes/all-in/gamestop-ceo-ryan-cohen-s-56b-plan-to-take-over-ebay.md))
+- [为何一副1000美元麻将牌需要十天才能做完｜WSJ Coveted](/episodes/the-journal/why-a-1-000-mahjong-set-can-take-10-days-to-make-wsj-coveted/): The Journal. · 2026-06-23 ([Markdown](/episodes/the-journal/why-a-1-000-mahjong-set-can-take-10-days-to-make-wsj-coveted.md))
 - [金融行业中最“抗冲击”的职业路径 | LFTC](/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc/): Animal Spirits · 2026-06-22 ([Markdown](/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc.md))
 - [首个重大 AI 安全事件即将到来：Zico Kolter 与 Matt Fredrikson（Gray Swan）](/episodes/latent-space/the-first-major-ai-breach-is-coming-zico-kolter-matt-fredrikson-gray-swan/): Latent Space · 2026-06-22 ([Markdown](/episodes/latent-space/the-first-major-ai-breach-is-coming-zico-kolter-matt-fredrikson-gray-swan.md))
 - [俄乌仍在谈判的最后几件事之一](/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj/): The Journal. · 2026-06-22 ([Markdown](/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj.md))
@@ -82,6 +85,7 @@
 - [德米特里乌斯·约翰逊：MMA 历史级蝇量级冠军的 UFC 风波、职业选择与人生转折](/episodes/pivot/demetrious-johnson-mma-s-greatest-flyweight-opens-up-on-ufc-drama-fighting-his-journey-the/): Pivot · 2026-03-10 ([Markdown](/episodes/pivot/demetrious-johnson-mma-s-greatest-flyweight-opens-up-on-ufc-drama-fighting-his-journey-the.md))
 - [Alison Roman 的番茄酱市场征服计划](/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/): Odd Lots · 2026-02-23 ([Markdown](/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots.md))
 - [重播：Cliff Asness](/episodes/money-stuff/re-run-cliff-asness-money-stuff-the-podcast/): Money Stuff: The Podcast · 2026-02-13 ([Markdown](/episodes/money-stuff/re-run-cliff-asness-money-stuff-the-podcast.md))
+- [为强化学习环境打造 GitHub：Prime Intellect 的 Will Brown 与 Johannes Hagemann](/episodes/training-data/building-the-github-for-rl-environments-prime-intellect-s-will-brown-johannes-hagemann/): Training Data · 2026-02-10 ([Markdown](/episodes/training-data/building-the-github-for-rl-environments-prime-intellect-s-will-brown-johannes-hagemann.md))
 - [2026年商业大亨模拟游戏前瞻](/episodes/business-of-video-games/master-business-management-in-2026-s-upcoming-tycoon-sim-games/): The Business of Video Games Podcast · 2025-12-20 ([Markdown](/episodes/business-of-video-games/master-business-management-in-2026-s-upcoming-tycoon-sim-games.md))
 - [Sam Altman：OpenAI 如何赢得 AI 竞赛、ChatGPT 的未来、基础设施建设逻辑与 2026 年 IPO？](/episodes/big-technology/sam-altman-how-openai-wins-chatgpts-future-ai-buildout-logic-ipo-in-2026/): Big Technology Podcast · 2025-12-18 ([Markdown](/episodes/big-technology/sam-altman-how-openai-wins-chatgpts-future-ai-buildout-logic-ipo-in-2026.md))
 - [IBM CEO Arvind Krishna：用 AI 和量子计算打造更智能的商业](/episodes/smart-talks-ibm/ibm-ceo-arvind-krishna-creating-smarter-business-with-ai-and-quantum-smart-talks-with-ibm/): Smart Talks with IBM · 2025-10-28 ([Markdown](/episodes/smart-talks-ibm/ibm-ceo-arvind-krishna-creating-smarter-business-with-ai-and-quantum-smart-talks-with-ibm.md))
