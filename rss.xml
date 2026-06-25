@@ -6,6 +6,37 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Databricks 对未来 AI 的押注：Agent Cloud（Matei Zaharia 与 Reynold Xin）</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/</guid>
+      <pubDate>Wed, 24 Jun 2026 18:40:29 GMT</pubDate>
+      <description>本期节目以 Databricks 推出 Agent Cloud 为主线，讨论数据与代理协同在 AI 应用中的核心地位。Swyx 与 Matei Zaharia 回顾 Databricks 从早期 Data AI Summit 到现在 Omnigents、Databricks Genie、统一的 Agent API 与云沙盒服务的路线，解释数据治理、上下文记忆与工具调用如何连接大模型与企业数据流程。双方也讨论了安全策略、访问控制、成本预算和监控的工程化要求，以及企业采用 AI 系统时常见的审计与可靠性约束。后续节目延伸到 Dream Engine 与数据库方向：OLTP/OLAP 融合、CDC 维护、以及单一数据层下的动态执行能力如何降低运维负担。最终，嘉宾认为 Databricks 的优势不只是模型能力，而在于把基础设施、数据协作和代理工作流打通，形成可扩展、可管理的 AI 企业系统。</description>
+    </item>
+    <item>
+      <title>与 NeetCode 的技术访谈</title>
+      <link>https://castnote.github.io/episodes/pragmatic-engineer/tech-interviews-with-neetcode/</link>
+      <guid>https://castnote.github.io/episodes/pragmatic-engineer/tech-interviews-with-neetcode/</guid>
+      <pubDate>Wed, 24 Jun 2026 17:32:34 GMT</pubDate>
+      <description>本期节目是 The Pragmatic Engineer 与 NeetCode 创始人 Navdeep Singh 的对谈，围绕 AI 时代软件工程招聘、技术面试和职业成长做了长篇讨论。
+主线问题是：当代码生成和 AI 辅助越来越普及时，传统数据结构与算法面试为何依然不易被替代。Navdeep 认为企业在人才评估上没有找到稳定、可扩展、又不引入巨大偏差的替代方案。
+他回顾了从大学阶段转向编程、在 Amazon 的早期经历到后来持续创作和创业的路径，强调“深入思考、持续学习、能执行、愿意做得更好”是工程师区别于他人的关键。
+节目结尾给出的建议是：不以写代码速度为唯一标准，不走捷径，持续和团队保持沟通与反馈，用更系统的方法定义问题并迭代输出结果，这在 AI 时代反而更重要。</description>
+    </item>
+    <item>
+      <title>Salesforce 与 Adobe 能否在 SaaS 末日中存活？</title>
+      <link>https://castnote.github.io/episodes/capitalisnt/will-salesforce-and-adobe-survive-the-saas-apocalypse/</link>
+      <guid>https://castnote.github.io/episodes/capitalisnt/will-salesforce-and-adobe-survive-the-saas-apocalypse/</guid>
+      <pubDate>Wed, 24 Jun 2026 09:25:42 GMT</pubDate>
+      <description>本期节目由 Hal Weitzman 采访 Mark Kenneally，核心讨论是软件即服务（SaaS）在 AI 时代是否会经历一场结构性“末日”。主持人先回顾 SaaS 形成背景：从打包软件高成本部署转向云端单一代码库和订阅模式，形成了更低采纳门槛与更强规模经济。Mark 进一步指出 AI 的两重影响：其一，生成式工具降低了软件开发门槛；其二，AI 代理正在替代人工在多个应用间反复执行的重复流程，让企业更容易集中在统一界面而非逐应用操作。由此，按席位计费的订阅模式面临压缩风险，尤其是可被快速复制或内化的专用应用更脆弱。节目结论认为，SaaS 并非即刻崩塌，而是进入 3 到 5 年的重定价与商业模型重构期；其中 Salesforce 因平台深度与流程依赖可能更具韧性，Adobe 因可替代性更高则面临更大挑战。</description>
+    </item>
+    <item>
+      <title>这位仅凭 3 支股票就赚到数十亿美元：他是怎么做到的</title>
+      <link>https://castnote.github.io/episodes/my-first-million/this-guy-made-billions-from-just-3-stocks-here-s-how/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/this-guy-made-billions-from-just-3-stocks-here-s-how/</guid>
+      <pubDate>Wed, 24 Jun 2026 09:00:02 GMT</pubDate>
+      <description>本期节目围绕‘用三只股票赚到数十亿’这一话题展开。Sam Parr 与 Shaan Puri 先从个人经历切入，把‘购物行为变化’与创业机会关联起来，讨论了先把想法先做出来再持续迭代的执行逻辑。接着借 Kevin Ryan 的案例、Nick Sleep 关于消费者剩余与网络效应的观点，深入讨论品牌、规模经济、共享模式与护城河。节目还延展到 Lloyd Blankfein 和 David Rubenstein 的实践，探讨税制博弈、财富积累和资本配置在长期成功中的作用。最后两位主持人聚焦信用评分等场景，讨论当业务模型不局限于单一产品时，如何形成更高复用性和可扩展性。</description>
+    </item>
+    <item>
       <title>在 Kalshi 和 Polymarket 出现之前，曾有爱荷华电子市场</title>
       <link>https://castnote.github.io/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets/</link>
       <guid>https://castnote.github.io/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets/</guid>
@@ -25,6 +56,13 @@
       <guid>https://castnote.github.io/episodes/the-journal/why-a-1-000-mahjong-set-can-take-10-days-to-make-wsj-coveted/</guid>
       <pubDate>Tue, 23 Jun 2026 19:00:30 GMT</pubDate>
       <description>本期节目围绕一位麻将爱好者对高端麻将牌的长期追踪展开。主播先讲到麻将在触感、声音与外观上的沉浸体验，随后解释了麻将牌的结构、牌面分类和在美国流行版本中对规则的延伸。节目指出，随着产业标准化，机器化与大规模生产正在挤压传统手工雕刻的空间，导致手工牌在稀缺性与细节表现上逐渐成为例外。人物转而分享了自己从线上调研到联络香港匠人、完成香港手工牌订制的过程，并讨论美国麻将文化中“本土审美更新”与传统识别之间的张力。最后，他说明创立 Karen Aruba Arts 的初衷与传承难题：如何在家族层面恢复工具与技能，既保留传统工艺又让这种兴趣和制作链条持续到下一代。</description>
+    </item>
+    <item>
+      <title>为什么$250纸币会对犯罪活动有利？| The Indicator</title>
+      <link>https://castnote.github.io/episodes/planet-money/why-the-250-bill-would-be-good-for-criminals-the-indicator/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/why-the-250-bill-would-be-good-for-criminals-the-indicator/</guid>
+      <pubDate>Tue, 23 Jun 2026 07:06:05 GMT</pubDate>
+      <description>本期节目讨论美国是否应发行刻有唐纳德·特朗普头像的$250新钞票。主播先说明提案涉及美联储、财政部、国会与现行肖像法规等程序门槛。节目随后聚焦高面额现金的实际用途，指出美国现金流通量持续增加、许多大额钞票流向境外持有，与其在普通支付中的使用率很低并不矛盾。两位专家Ken Rogoff与Oliver Bullough的观点显示，大面额现金在走私、洗钱和税务逃避场景中更易运输、隐藏和匿名交易。节目也解释了美国未取消$100钞票的财政动机：纸币可为政府提供“零利率借款”。但从税基流失与执法难度看，若引入$250面额，短期财政收益可能被更高的税收损失和监管风险抵消。</description>
     </item>
     <item>
       <title>金融行业中最“抗冲击”的职业路径 | LFTC</title>
@@ -53,6 +91,13 @@
       <guid>https://castnote.github.io/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/</guid>
       <pubDate>Mon, 22 Jun 2026 07:07:34 GMT</pubDate>
       <description>本期《Indicator Quiz》邀请听友 Jim Umbach 参加十余道题目，回顾近半年的内容重点。节目围绕社交媒体界面设计对行为的影响、公共物品的非排他性定义、小企业融资压力、财务异常与痴呆早期信号等问题展开。后半段以数字题形式，涉及 Pokémon 卡估值、GLP-1 报销比例等案例，用问答方式复盘节目核心观点，帮助听众在轻松氛围中强化对政策、金融与商业资讯的理解。</description>
+    </item>
+    <item>
+      <title>自我与群体：《The One and the 99》的身份视角</title>
+      <link>https://castnote.github.io/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26/</link>
+      <guid>https://castnote.github.io/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26/</guid>
+      <pubDate>Mon, 22 Jun 2026 06:00:05 GMT</pubDate>
+      <description>本期与 Luke Burgis 讨论《The One and the 99》：节目从“one 与 99”入手，指出人总想加入群体以逃离孤立感，但真正成熟的挑战是既保有归属感又不丧失自我。节目把家庭、工作、宗教和政治放在同一框架中，分析情感融合如何塑造我们对观点、关系和冲突的反应。接着讨论教育，反对把学习仅当作证书与功利训练，强调形成稳定自我、辨识注意力方向的能力。后半部分转向 mimetic desire：成人的选择常受具体他人的示范而非纯理性推导。最后借圣本笃修道传统的谦逊与“forge 而非 fountain”讨论稳定共同体如何在贡献与被塑造间完成增长，并以 Luke 照护患阿尔茨海默病父亲的经历做收束。</description>
     </item>
     <item>
       <title>未来所有产品都将成为“活体系统”——Trajectory.ai 的 Ronak Malde</title>
