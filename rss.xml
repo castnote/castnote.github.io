@@ -6,6 +6,48 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws</title>
+      <link>https://castnote.github.io/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/</guid>
+      <pubDate>Thu, 25 Jun 2026 21:32:27 GMT</pubDate>
+      <description>本期节目邀请 OpenAI 研究负责人 Mark Chen，围绕韩式豆腐汤烹饪展开访谈。对话从职业起点与研究者成长切入，讨论非博士背景如何靠复现建立研究直觉、交易背景对研究的迁移价值。Mark 解释了强化学习更适合客观任务与主观任务的差异，指出模型在 real-world 研究中的突围与 scaling laws 的持续适用性。节目继续讨论 o1 的战略意义、如何在稳定路线图下分配 compute、顶层管理与下层证据反馈的机制，以及复用估评体系去防止 benchmark 过拟合。后半段重点讨论评测分离、长上下文的成本与信息压缩、单模型统一模态架构、vibe researcher 的未来，以及高风险研究的失败复盘与长期期望。最终他们完成试吃，得出结论是研究要兼顾速度与能落地的真实价值。</description>
+    </item>
+    <item>
+      <title>Cloudflare CEO：机器人已在互联网上先行领先</title>
+      <link>https://castnote.github.io/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet/</link>
+      <guid>https://castnote.github.io/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet/</guid>
+      <pubDate>Thu, 25 Jun 2026 12:30:39 GMT</pubDate>
+      <description>本期节目围绕 Matthew Prince 在 Cloudflare 的核心观点展开，核心议题是机器人与 AI Agent 流量已在互联网上突破真人规模，并可能在未来五年放大一千倍，迫使互联网基础设施与商业逻辑发生重构。主持人与嘉宾先回顾了 Cloudflare 从早期创业到全球网络平台的演进：从“免费防护 + 逐步产品化”的生长逻辑，到边缘网络、根服务器、DDoS 与安全防御能力如何塑造其网络效应。中段详细讨论 AI 相关产品线，包括 Workers、AI Gateway、WordPress Rust 重写、模型路由、成本控制与安全治理机制。后半部分聚焦组织层面，讨论 AI 工具驱动下的效率提升、人才转型压力、裁员与组织展平，以及为什么先行改革比等待更能降低市场冲击。最后讨论互联网下一代商业模型：从依赖流量点击向内容价值支付转移，强调版权与创作者激励、微支付、以及如何让高质量知识和本地化媒体在 AI 时代重新可持续。</description>
+    </item>
+    <item>
+      <title>《科学饮食：健康减脂与增肌》要点：Layne Norton 对话</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton/</guid>
+      <pubDate>Thu, 25 Jun 2026 12:00:33 GMT</pubDate>
+      <description>节目围绕能量平衡展开，主持人与 Dr. Layne Norton 先从卡路里如何转化为 ATP 讲起，指出热量摄入与消耗并非“卡路里进出”这么简单。讨论涉及食物标注误差、可代谢能、食物热效应（TEF）、基础代谢率、NEAT 以及称重波动，强调以趋势而非单日数据判断体重。随后聚焦蛋白质在饱腹、瘦体重与肌蛋白合成中的作用，比较总量、分配、动物蛋白与植物蛋白吸收效率、亮氨酸策略，并延伸到超加工食品、人工甜味剂、籽油争议。最后覆盖肌酸补剂证据与使用方式，结论都指向“以长期可持续执行和证据层级为先”。</description>
+    </item>
+    <item>
+      <title>AI 写书成群？它们到底值不值得买？｜The Indicator</title>
+      <link>https://castnote.github.io/episodes/planet-money/ai-is-pumping-out-books-are-they-any-good-the-indicator/</link>
+      <guid>https://castnote.github.io/episodes/planet-money/ai-is-pumping-out-books-are-they-any-good-the-indicator/</guid>
+      <pubDate>Thu, 25 Jun 2026 07:08:55 GMT</pubDate>
+      <description>本期节目讨论 AI 在出版业的影响。节目以 Stephen King、Isaac Asimov、Barbara Cartland 的高产背景开场，提出 LLM 使“单年巨量出书”成为现实。Imke Reimers 与 Joel Waldfogel 以亚马逊电子书月度新增量为样本，发现 2022 到 2025 年新增书量从约10万涨到约30万，并且 AI 检测样本显示增长几乎同步。接着他们用评分和公开销量排名评估质量：AI 书的星级更低、销量更弱，短期内缺少“黑马”级别的成功案例。节目后半段转向旅行类内容，采访 Fodor&apos;s Travel 的 Jeremy Tarr，指出 AI 旅行书规模增速快但可信度与制作门槛争议仍在，Fodor&apos;s 计划推出自有聊天工具 Eugene 以提升推荐质量和控制力。</description>
+    </item>
+    <item>
+      <title>亿万富翁的警告：我在减持，崩盘已然来临</title>
+      <link>https://castnote.github.io/episodes/diary-of-a-ceo/billionaire-s-warning-i-m-selling-the-crash-is-already-here/</link>
+      <guid>https://castnote.github.io/episodes/diary-of-a-ceo/billionaire-s-warning-i-m-selling-the-crash-is-already-here/</guid>
+      <pubDate>Thu, 25 Jun 2026 07:00:32 GMT</pubDate>
+      <description>本集访谈中，主持人 Steven Bartlett 与投资者 Jeremy Grantham 讨论了当下美国科技和人工智能热潮是否进入泡沫末端，以及由此带来的资产回撤风险。嘉宾回顾了铁路、互联网和日本资产泡沫等历史案例，指出市场情绪、估值扩张与资本流入会放大脆弱性，并强调普通人应以分散、债券和现金为核心先保命。谈话还延展到 AI 的技术伦理风险、模型偏见、企业激励与资本竞争，认为平台与市场叙事与真实基本面可能分离。进一步，他们讨论了房地产高估、税制与不平等、就业与创业者应对策略，以及生育率下滑与环境毒性问题。后半场嘉宾主张从制度与生活方式同时入手：减少高风险化学暴露、重建社区与社会契约、提升家庭和职业韧性。结尾重申：宏观泡沫可能已至，投资者应提前应对，而非等待救援。</description>
+    </item>
+    <item>
+      <title>《Indie Game Guildhall：Crimson Desert》深度解析</title>
+      <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall-crimson-desert-deep-dive/</link>
+      <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall-crimson-desert-deep-dive/</guid>
+      <pubDate>Thu, 25 Jun 2026 05:18:16 GMT</pubDate>
+      <description>本期节目以 Pearl Abyss 的《Crimson Desert》为对象，先从玩法结构切入，讨论其角色战斗、探索开放世界和系统设计为何适合不同类型玩家。随后结合销量与愿望单表现，分析其发行成效与市场传播链路，提出视觉打磨、长期技术演示和持续沟通如何形成复合口碑。节目后半段梳理其从 Black Desert 2 演化到单机化的漫长研发过程，重点讨论延期沟通中的信任建立，并为独立开发者提炼出可复用的创作与社区管理经验，强调透明交付与玩家归属感的重要性。</description>
+    </item>
+    <item>
       <title>Databricks 对未来 AI 的押注：Agent Cloud（Matei Zaharia 与 Reynold Xin）</title>
       <link>https://castnote.github.io/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/</guid>

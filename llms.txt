@@ -12,6 +12,12 @@
 
 ## 文章列表
 
+- [与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/): Latent Space · 2026-06-25 ([Markdown](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen.md))
+- [Cloudflare CEO：机器人已在互联网上先行领先](/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet/): The MAD Podcast with Matt Turck · 2026-06-25 ([Markdown](/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet.md))
+- [《科学饮食：健康减脂与增肌》要点：Layne Norton 对话](/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton/): Huberman Lab · 2026-06-25 ([Markdown](/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton.md))
+- [AI 写书成群？它们到底值不值得买？｜The Indicator](/episodes/planet-money/ai-is-pumping-out-books-are-they-any-good-the-indicator/): Planet Money · 2026-06-25 ([Markdown](/episodes/planet-money/ai-is-pumping-out-books-are-they-any-good-the-indicator.md))
+- [亿万富翁的警告：我在减持，崩盘已然来临](/episodes/diary-of-a-ceo/billionaire-s-warning-i-m-selling-the-crash-is-already-here/): The Diary Of A CEO · 2026-06-25 ([Markdown](/episodes/diary-of-a-ceo/billionaire-s-warning-i-m-selling-the-crash-is-already-here.md))
+- [《Indie Game Guildhall：Crimson Desert》深度解析](/episodes/indie-game-guildhall/indie-game-guildhall-crimson-desert-deep-dive/): Indie Game Guildhall · 2026-06-25 ([Markdown](/episodes/indie-game-guildhall/indie-game-guildhall-crimson-desert-deep-dive.md))
 - [Databricks 对未来 AI 的押注：Agent Cloud（Matei Zaharia 与 Reynold Xin）](/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/): Latent Space · 2026-06-24 ([Markdown](/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin.md))
 - [与 NeetCode 的技术访谈](/episodes/pragmatic-engineer/tech-interviews-with-neetcode/): The Pragmatic Engineer Podcast · 2026-06-24 ([Markdown](/episodes/pragmatic-engineer/tech-interviews-with-neetcode.md))
 - [Salesforce 与 Adobe 能否在 SaaS 末日中存活？](/episodes/capitalisnt/will-salesforce-and-adobe-survive-the-saas-apocalypse/): Capitalisn't · 2026-06-24 ([Markdown](/episodes/capitalisnt/will-salesforce-and-adobe-survive-the-saas-apocalypse.md))
