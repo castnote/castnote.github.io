@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>下一个重大突破可能是 AI 的在岗学习能力</title>
+      <link>https://castnote.github.io/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/</link>
+      <guid>https://castnote.github.io/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/</guid>
+      <pubDate>Fri, 26 Jun 2026 15:51:34 GMT</pubDate>
+      <description>本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。</description>
+    </item>
+    <item>
       <title>与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws</title>
       <link>https://castnote.github.io/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/</link>
       <guid>https://castnote.github.io/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/</guid>
@@ -63,6 +70,20 @@
 主线问题是：当代码生成和 AI 辅助越来越普及时，传统数据结构与算法面试为何依然不易被替代。Navdeep 认为企业在人才评估上没有找到稳定、可扩展、又不引入巨大偏差的替代方案。
 他回顾了从大学阶段转向编程、在 Amazon 的早期经历到后来持续创作和创业的路径，强调“深入思考、持续学习、能执行、愿意做得更好”是工程师区别于他人的关键。
 节目结尾给出的建议是：不以写代码速度为唯一标准，不走捷径，持续和团队保持沟通与反馈，用更系统的方法定义问题并迭代输出结果，这在 AI 时代反而更重要。</description>
+    </item>
+    <item>
+      <title>1.5百万美元能退休吗？</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/can-you-retire-on-1-5-million/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/can-you-retire-on-1-5-million/</guid>
+      <pubDate>Wed, 24 Jun 2026 17:00:06 GMT</pubDate>
+      <description>节目围绕现金入场时机与资产配置展开，核心讨论了在 AI 热潮下市场修正是否构成买入机会。Ben 先回应观众提出的“市场回撤时是否应将新增资金回归美国股票”问题，指出需区分非衰退型与衰退型熊市，并提醒别追求精准择时，而应以风险预算和再平衡管理回撤。接着他回答了如何处理150,000美元现金入场，强调先设定并长期执行多资产比例，再用再平衡替代猜测。节目还讨论了低利率按揭下的住房升级抉择，认为财务上与生活质量要权衡，而非只等待利率反弹。随后解释了社保在1.5百万退休目标中的作用，社保本质上兼具支付与长寿保障属性。最后针对高净值投资者是否全仓股票，给出需求、能力、意愿三维风险框架：回撤会带来绝对心理压力，重点是能否长期执行策略而非盲目追求极端收益。</description>
+    </item>
+    <item>
+      <title>放弃2.9%按揭是否太激进？</title>
+      <link>https://castnote.github.io/episodes/animal-spirits/is-it-crazy-to-give-up-a-2-9-mortgage/</link>
+      <guid>https://castnote.github.io/episodes/animal-spirits/is-it-crazy-to-give-up-a-2-9-mortgage/</guid>
+      <pubDate>Wed, 24 Jun 2026 17:00:06 GMT</pubDate>
+      <description>本期节目围绕投资时点与资产配置展开。第一部分讨论美国市场若出现下行是否应从海外再转回美股：主持人指出AI与通胀阶段都可能让市场出现过热与回撤，建议以再平衡替代硬性择时。第二部分回答现金入市方式，强调先确定多元配置比例，再按比例分批部署，可降低对‘猜底’的心理压力。第三部分聚焦北卡家庭是否放弃2.9%按揭换更大房子，提出居住质量与家庭阶段可高于账面利率优势。后续讨论1.5百万退休是否足够以及500万以上是否可全投指数，强调社保覆盖与现金流稳定、风险承受力与行为纪律比纯收益追求更关键。</description>
     </item>
     <item>
       <title>Salesforce 与 Adobe 能否在 SaaS 末日中存活？</title>

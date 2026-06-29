@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [下一个重大突破可能是 AI 的在岗学习能力](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/): Dwarkesh Podcast · 2026-06-26 ([Markdown](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job.md))
 - [与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/): Latent Space · 2026-06-25 ([Markdown](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen.md))
 - [Cloudflare CEO：机器人已在互联网上先行领先](/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet/): The MAD Podcast with Matt Turck · 2026-06-25 ([Markdown](/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet.md))
 - [《科学饮食：健康减脂与增肌》要点：Layne Norton 对话](/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton/): Huberman Lab · 2026-06-25 ([Markdown](/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton.md))
@@ -20,6 +21,8 @@
 - [《Indie Game Guildhall：Crimson Desert》深度解析](/episodes/indie-game-guildhall/indie-game-guildhall-crimson-desert-deep-dive/): Indie Game Guildhall · 2026-06-25 ([Markdown](/episodes/indie-game-guildhall/indie-game-guildhall-crimson-desert-deep-dive.md))
 - [Databricks 对未来 AI 的押注：Agent Cloud（Matei Zaharia 与 Reynold Xin）](/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/): Latent Space · 2026-06-24 ([Markdown](/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin.md))
 - [与 NeetCode 的技术访谈](/episodes/pragmatic-engineer/tech-interviews-with-neetcode/): The Pragmatic Engineer Podcast · 2026-06-24 ([Markdown](/episodes/pragmatic-engineer/tech-interviews-with-neetcode.md))
+- [1.5百万美元能退休吗？](/episodes/animal-spirits/can-you-retire-on-1-5-million/): Animal Spirits · 2026-06-24 ([Markdown](/episodes/animal-spirits/can-you-retire-on-1-5-million.md))
+- [放弃2.9%按揭是否太激进？](/episodes/animal-spirits/is-it-crazy-to-give-up-a-2-9-mortgage/): Animal Spirits · 2026-06-24 ([Markdown](/episodes/animal-spirits/is-it-crazy-to-give-up-a-2-9-mortgage.md))
 - [Salesforce 与 Adobe 能否在 SaaS 末日中存活？](/episodes/capitalisnt/will-salesforce-and-adobe-survive-the-saas-apocalypse/): Capitalisn't · 2026-06-24 ([Markdown](/episodes/capitalisnt/will-salesforce-and-adobe-survive-the-saas-apocalypse.md))
 - [这位仅凭 3 支股票就赚到数十亿美元：他是怎么做到的](/episodes/my-first-million/this-guy-made-billions-from-just-3-stocks-here-s-how/): My First Million · 2026-06-24 ([Markdown](/episodes/my-first-million/this-guy-made-billions-from-just-3-stocks-here-s-how.md))
 - [在 Kalshi 和 Polymarket 出现之前，曾有爱荷华电子市场](/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets/): Planet Money · 2026-06-24 ([Markdown](/episodes/planet-money/before-kalshi-and-polymarket-there-was-the-iowa-electronic-markets.md))

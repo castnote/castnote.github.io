@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="下一个重大突破可能是 AI 的在岗学习能力 | 听阅"><meta property="og:description" content="本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。"><meta property="og:url" content="https://castnote.github.io/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="下一个重大突破可能是 AI 的在岗学习能力 | 听阅"><meta name="twitter:description" content="本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。"><meta property="article:published_time" content="2026-06-26T15:51:34.000Z"><meta property="article:tag" content="播客"><title>下一个重大突破可能是 AI 的在岗学习能力 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"下一个重大突破可能是 AI 的在岗学习能力","description":"本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。","datePublished":"2026-06-26T15:51:34.000Z","author":[{"@type":"Person","name":"Dwarkesh Patel"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/","isPartOf":{"@type":"PodcastSeries","name":"Dwarkesh Podcast"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/dwarkesh/">Dwarkesh Podcast</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/26 23:51:34</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.dwarkesh.com/p/the-next-paradigm">原始节目</a> </div> <h1>下一个重大突破可能是 AI 的在岗学习能力</h1> <p class="episode-summary">本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Dwarkesh Patel</span> </div> <p class="person-description">Dwarkesh Podcast 的主持人，内容主要解读者与论述者</p> </div> </div> </div>  </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Lyndon Johnson</span>  </div> <p class="person-description">美国前总统，节目中被用于比较政治决策能力的参考人物</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Elon Musk</span>  </div> <p class="person-description">技术企业家，以 SpaceX 与 Tesla 的成长路径为案例</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Sam Walton</span>  </div> <p class="person-description">沃尔玛创始人，节目中用于说明创业与运营能力的类比</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Henry Ford</span>  </div> <p class="person-description">汽车工业先驱，以快速规模化建设体系化组织而闻名</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="实验室押注-rlvr-的核心猜想">实验室押注 RLVR 的核心猜想</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>这是当下各大实验室都在押注的一条路线。</p>
+<p>他们的观点是：若用 AI 在成千上万种强化学习（Reinforcement Learning，RL）环境中完成数百万个可验证任务，就能基本构建出人工通用智能（AGI）。</p>
+<p>这种训练会形成问题求解智能体，能够在出错、歧义和开放任务中持续迭代前进，甚至能在数周甚至更长周期里持续推进目标。</p>
+<p>乐观派会说，当前训练范式里那些看似根本的缺陷，比如样本低效、缺乏持续学习，都会被继续放大训练规模所“压平”。</p>
+<p>他们类比自然语言处理的发展历程：当时很多关键问题在模型参数和算力扩展后都被一次性解决。</p>
+<p>我在前一篇文章中提到，这些模型的样本效率只有人类大约一百万分之一。支持当前范式的人会回应：这只在训练阶段成立，而不是结论性的限制。</p>
+<p>训练是一次性成本，会被未来海量会话所摊薄。真正更重要的是，模型在单次会话里是否足够聪明、够通用、够样本高效。</p>
+<p>随着更充分的 RLVR 训练，这一点确实在改善。</p>
+<p>很多公司也说得实事求是：员工往往在岗位上工作六个月以后才开始明显贡献产出。</p>
+<p>因此“在岗学习”显然是能力形成的关键。</p>
+<p>很多人会问：能不能把六个月的经验塞进上下文窗口？答案并不是简单地扩大窗口就能解决。</p>
+<p>确实有大量架构创新能显著扩展 Transformer 的上下文或信息承载量。也许几年后，我们会觉得上下文几乎“无限大”。</p>
+<h2 id="为什么计算机使用进展较慢">为什么计算机使用进展较慢</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>在讨论 RLVR 的下一步前，我先问一个长期困惑我自己的问题：为什么 AI 在计算机使用上的进展这么慢？</p>
+<p>计算机使用明显可验证。比如你可以核对订单是否送达、活动场地是否预约成功、税务是否按时提交。</p>
+<p>这看似是最理想的可检验任务，为什么仍然落后于其他领域？原因之一是预训练里可用的高质量多模态数据少。</p>
+<p>但更核心的一点是，领域不仅要可验证，还要可重复、可并行、可重放。也就是你得有可确定性的模拟器，且能从同一起点做成千上万次 rollout。</p>
+<h2 id="可复现实验比可验证更难">可复现实验比可验证更难</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>在代码任务里，这个条件容易满足。你可以固定一个仓库和缺失需求，让大量并行智能体在相同起点上竞赛。</p>
+<p>但网站操作无法如此处理。你不能让一千个智能体重复同一条亚马逊结账流程，否则网站会识别并封禁这些机器人。</p>
+<p>理论上可以先复制 Slack、Gmail 等常见应用和网站再训练，但当前这是一条高成本、难规模化的路线。</p>
+<p>如果未来代码能力足够强，AI 能高保真重建应用后，计算机使用进展会加快。同时这也是一种很好的 RL 任务，因为它本身就是复杂工程任务。</p>
+<p>目前的经验提示：只要无法建立可复用的训练目标，模型在该域学习到的进步会受到明显限制。</p>
+<h2 id="现实世界任务为何难以模拟">现实世界任务为何难以模拟</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>所以，构建可复用仿真器只能帮助部分领域。对于许多关键任务，比如创业、诉讼、交易或竞选，并不能简单迁移到数据中心重建。</p>
+<p>外部评估往往需要数月甚至数年的现实行为才能显现，无法在上千条平行 rollout 上通过轻微扰动去复现实验。</p>
+<p>这类现实环境是非平稳且不可重置的，也是强化学习已知的开放难题。</p>
+<p>当世界中的数据既稀疏又非结构化，无法稳定复现时，想要取得熟练能力就必须显著提高样本效率。</p>
+<p>如果 AI 最终要像人一样，甚至超越人类拥有更多技能，它需要从有限真实交互中学会从模糊、不可验证的信号中提炼知识。</p>
+<h2 id="rlvr-泛化是否足够强">RLVR 泛化是否足够强</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>问题在于，实验室期望 RLVR 能推广到非常不同的任务，比如成为像林登·约翰逊（Lyndon Johnson）般精通政治的人，或像埃隆·马斯克（Elon Musk）般搭建航天企业的能力。</p>
+<p>他们假设足够多的容器化训练会产生通用智能体，能够在单次会话里快速制定计划，并快速学习新技能。</p>
+<p>但这是否成立仍是经验问题。即便把预算从百亿美元提高到一万亿美元，是否真的能在上下文窗口中得到真正的人类级智能仍不确定。</p>
+<p>前段时间 Dario 在我们播客里提到，训练上下文和服务时上下文不同会带来明显退化。</p>
+<p>这意味着短视野训练并不必然泛化到长视野，进而引发一个问题：从白领任务转向陌生真实场景，模型是否能持续发挥？</p>
+<p>即便单次会话里 AI 像山姆·沃尔顿（Sam Walton）或亨利·福特（Henry Ford）那样思考得很快，如果学到的经验无法写回权重，也只是瞬时“会话内天赋”。</p>
+<h2 id="推理算力与部署数据的问题">推理算力与部署数据的问题</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>许多实验室的 30%到 50%算力都用在推理上，但这并不直接提升模型本身。</p>
+<p>更关键的是，最有价值的信息通常在部署时才出现：用户真实组织里发生了什么、模型被用于什么任务、现实中它最容易犯哪些错。</p>
+<p>模型已经参与很多工作流并掌握大量组织特定的隐性知识，却难以真正变成更强能力，因为它尚未完成持续学习。</p>
+<p>持续学习不能只在上下文里堆缓存。人类不会靠“活着的记忆库”无限膨胀解决问题，学习后会把关键结构压缩进更稳固的表征。</p>
+<p>我在前文讲过，人类的学习更像压缩与抽象。极端细节记忆并不自动意味着更强理解。</p>
+<p>一旦你要把经验迁移到权重，梯度更新就出现新的瓶颈：它样本效率低得多，不适合为每个用户学习完全不同的行为。</p>
+<p>现有能上线的在线学习系统，必须在大量用户身上不断学习同一类目标，比如代码模型通过数亿次请求学习哪些建议更容易被接受。</p>
+<p>所以在线学习目前适用于任务非常窄的场景；现实世界里每个公司、岗位、问题都不同，差异化信息不能都放进单一共享训练。</p>
+<h2 id="组织内隐藏知识与流程自动化">组织内隐藏知识与流程自动化</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>这也是我常用“账单流程”举例的原因。播客规模扩大后，人工处理发票会变得繁琐。</p>
+<p>以前我得手动拉取邮件里的发票、逐一归档和付款；如今只要把邮件进一个入口，就能自动提取供应商、金额、编号、到期日并生成草稿。</p>
+<p>我再复核即可。这里的问题不是“有没有工具”，而是如何把组织流程中的环境知识持续吸收进模型能力里。</p>
+<h2 id="架构与目标函数的边界">架构与目标函数的边界</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>模型可在上下文里利用注意力形成临时权重，确实提高了会话内学习效率，但它的内存扩展代价很高。</p>
+<p>我们已经有诸如稀疏保留、KV cache 压缩等思路，且每周都有新论文提出架构改进。</p>
+<p>我逐渐更愿意认为，真正瓶颈不一定在架构本身，而在于如何从单次会话中更新损失与参数。</p>
+<h2 id="opsd会话经验的蒸馏方案">OPSD：会话经验的蒸馏方案</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>当前一个热门方向是 on-policy self-distillation（OPSD）。核心思想很直接：让基础模型学习，在真实任务里模仿同场景下的“教师模型”。</p>
+<p>教师模型表示在长会话中积累上下文后的表现；学生模型要把教师模型学到的结论压缩到自身参数。</p>
+<p>这是比 RLVR 更有吸引力的原因之一：你不必依赖严格可验证的外环奖励，只要上下文里能判断对错，就能训练。</p>
+<p>第二，监督信号更密集。与其只给完整轨迹一个奖励，不如对教师与学生逐 token 的分布偏差进行对齐。</p>
+<p>与直接监督微调（SFT）相比，OPSD 更像过滤掉无关内容。你不应该仅复述会话文本，而应抽取真正能让真实任务结果变好的知识。</p>
+<p>RL 的一个优点在于更新更集中，能避免大规模修改模型参数，降低遗忘。那种每个样本都学很多内容的方式并不一定更好。</p>
+<p>OPSD 试图在两个方向之间平衡：它要保留 RL 的“只更新必要部分”的特性，又能让模型在会话后真正进步。</p>
+<h2 id="更激进的设想让模型做梦训练">更激进的设想：让模型“做梦”训练</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>我还有一个更 speculative 的方向叫做 dreaming。模型如果先构建现实的近似模拟，再在其中反复推演策略，就能在同样真实时间内获得远更多样本。</p>
+<p>这种想法可类比于过去 EfficientZero 的思路：面对一个新 Atari 游戏，模型在每一步都会在“脑内”模拟大量对局，因此看起来很节省现实样本。</p>
+<p>如果未来 LLM 也能生成并训练这类自建环境，或许可在小规模真实数据下快速提升表现。</p>
+<p>但它比围棋模拟困难得多，因为“整个世界”模拟器远比游戏规则复杂。</p>
+<p>若这条路可行，它会与预训练、RL、推理算力一起，成为第四条扩展轴：测试时训练（test-time training）或“内在梦境”训练。</p>
+<p>这时模型会为特定用户建模、训练，再把这些技能在下一次交互中用于现实生产。</p>
+<h2 id="2027-2028-的持续学习情景">2027-2028 的持续学习情景</h2>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>我预计未来两三年会出现一个阶段：RLVR 把模型带到一个“能在陌生问题上起步”的水平，能够试错、迭代。</p>
+<p>当它被派到现实任务后，即便是超出训练分布的工作，也能逐步产出价值。</p>
+<p>设想 AI 与人类协同工作一周后，人类给反馈（比如点赞或差评），基础模型再通过 OPSD、dreaming 等手段把经验蒸馏。</p>
+<p>它接着会在原本训练过的邻域外继续扩展，下一轮又能覆盖更远的邻域任务，能力边界逐步外推。</p>
+<p>这样，预训练带来的基础智能只是起点，而真正成长来自广泛部署后与真实世界共生式积累。</p>
+<p>每次交互都在强化这一过程：模型会越来越像一个会从全局经验中学习的协作者，而不是只背诵训练语料的工具。</p>
+<p>这也是这次讨论最令人兴奋也最令人警惕的地方，因为能力增长会从“发布即完结”变成“部署即进化”。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
