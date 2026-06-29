@@ -13,6 +13,8 @@
 ## 文章列表
 
 - [下一个重大突破可能是 AI 的在岗学习能力](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/): Dwarkesh Podcast · 2026-06-26 ([Markdown](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job.md))
+- [为什么范德比尔特大学总在取胜？](/episodes/freakonomics/why-does-vanderbilt-keep-winning/): Freakonomics Radio · 2026-06-26 ([Markdown](/episodes/freakonomics/why-does-vanderbilt-keep-winning.md))
+- [记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin](/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/): Training Data · 2026-06-25 ([Markdown](/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin.md))
 - [与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/): Latent Space · 2026-06-25 ([Markdown](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen.md))
 - [Cloudflare CEO：机器人已在互联网上先行领先](/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet/): The MAD Podcast with Matt Turck · 2026-06-25 ([Markdown](/episodes/mad-podcast/cloudflare-ceo-bots-have-already-won-the-internet.md))
 - [《科学饮食：健康减脂与增肌》要点：Layne Norton 对话](/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton/): Huberman Lab · 2026-06-25 ([Markdown](/episodes/huberman-lab/essentials-the-science-of-eating-for-health-fat-loss-lean-muscle-dr-layne-norton.md))
@@ -34,6 +36,7 @@
 - [俄乌仍在谈判的最后几件事之一](/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj/): The Journal. · 2026-06-22 ([Markdown](/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj.md))
 - [城市规划师、无限滚动与“公共物品”到底是什么？](/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/): Planet Money · 2026-06-22 ([Markdown](/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good.md))
 - [自我与群体：《The One and the 99》的身份视角](/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26/): EconTalk · 2026-06-22 ([Markdown](/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26.md))
+- [华特·迪士尼公司](/episodes/acquired/the-walt-disney-company/): Acquired · 2026-06-22 ([Markdown](/episodes/acquired/the-walt-disney-company.md))
 - [未来所有产品都将成为“活体系统”——Trajectory.ai 的 Ronak Malde](/episodes/latent-space/every-product-of-the-future-will-be-a-living-system-ronak-malde-trajectory-ai/): Latent Space · 2026-06-21 ([Markdown](/episodes/latent-space/every-product-of-the-future-will-be-a-living-system-ronak-malde-trajectory-ai.md))
 - [Epic Games 的 2026 全新计划](/episodes/business-of-video-games/epic-games-has-a-new-plan-for-2026/): The Business of Video Games Podcast · 2026-06-20 ([Markdown](/episodes/business-of-video-games/epic-games-has-a-new-plan-for-2026.md))
 - [全球首位万亿美元富豪、Anthropic 神话封禁、新寡头崛起与伊朗和平协议](/episodes/all-in/world-s-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal/): All-In Podcast · 2026-06-19 ([Markdown](/episodes/all-in/world-s-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal.md))

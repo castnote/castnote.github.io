@@ -13,6 +13,20 @@
       <description>本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。</description>
     </item>
     <item>
+      <title>为什么范德比尔特大学总在取胜？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/why-does-vanderbilt-keep-winning/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/why-does-vanderbilt-keep-winning/</guid>
+      <pubDate>Fri, 26 Jun 2026 10:00:30 GMT</pubDate>
+      <description>本期以范德比尔特大学的经验为主线，Stephen Dubner 采访校长 Daniel Diermeier，讨论美国高等教育在政治和财政压力下的分化。Diermeier认为大学应以‘institutional neutrality（制度中立）’和‘开放辩论’应对意识形态竞争，不把校方当成政治行动者。节目先分析经费压力、信任流失与高校治理短板，再比较课程内容、学术标准和校园言论环境如何被长期重塑。中段他借由德国统一经历解释‘国家间建立信任’的机制。后半场转向战略管理：Vanderbilt的三大支柱、区域扩张（西棕榈滩、查塔努加、旧金山、纽约）与人才吸引，说明学校如何在争议环境下维持创新、招生和品牌增长。</description>
+    </item>
+    <item>
+      <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
+      <link>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
+      <guid>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
+      <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
+      <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
+    </item>
+    <item>
       <title>与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws</title>
       <link>https://castnote.github.io/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/</link>
       <guid>https://castnote.github.io/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/</guid>
@@ -161,6 +175,13 @@
       <guid>https://castnote.github.io/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26/</guid>
       <pubDate>Mon, 22 Jun 2026 06:00:05 GMT</pubDate>
       <description>本期与 Luke Burgis 讨论《The One and the 99》：节目从“one 与 99”入手，指出人总想加入群体以逃离孤立感，但真正成熟的挑战是既保有归属感又不丧失自我。节目把家庭、工作、宗教和政治放在同一框架中，分析情感融合如何塑造我们对观点、关系和冲突的反应。接着讨论教育，反对把学习仅当作证书与功利训练，强调形成稳定自我、辨识注意力方向的能力。后半部分转向 mimetic desire：成人的选择常受具体他人的示范而非纯理性推导。最后借圣本笃修道传统的谦逊与“forge 而非 fountain”讨论稳定共同体如何在贡献与被塑造间完成增长，并以 Luke 照护患阿尔茨海默病父亲的经历做收束。</description>
+    </item>
+    <item>
+      <title>华特·迪士尼公司</title>
+      <link>https://castnote.github.io/episodes/acquired/the-walt-disney-company/</link>
+      <guid>https://castnote.github.io/episodes/acquired/the-walt-disney-company/</guid>
+      <pubDate>Mon, 22 Jun 2026 05:15:00 GMT</pubDate>
+      <description>本期节目以《The Walt Disney Company》为主题，重点讨论这家企业从 Walt 时代的高风险实验向全球娱乐帝国转型的历程。节目概述称，迪士尼并非天然以“稳态盈利”起步，而是在不断押注高不确定性项目中积累优势，既输出《Snow White》《Fantasia》这类核心内容资产，也以模型列车灵感推动 Disneyland 这样的重资产布局。节目试图说明的是一种更长期的商业机制：如何把文化想象与工程执行、资本纪律与叙事资产结合，形成可持续滚雪球式增长。页面还列出大量公开出处与研究资料，帮助听众向纵深追踪其动画技术、乐园扩张和版权治理等关键节点。节目末尾的风险提示也再次强调了投资讨论中的信息非投资建议属性。</description>
     </item>
     <item>
       <title>未来所有产品都将成为“活体系统”——Trajectory.ai 的 Ronak Malde</title>
