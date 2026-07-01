@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目围绕材料科学中 AI 与自动化的边界展开，Joseph Krause 解释了 Radical AI 为什么强调实验数据闭环，而不是只做理论预测。讨论从化合物发现与表征延伸到量产可行性、合规验证、制造工艺和供应链约束，指出材料领域最大的难点是数据碎片化与反馈周期长。节目进一步拆解了 self-driving lab 的系统架构：AI 生成候选、实验执行、表征分析、数据回流与迭代；并强调人类在实验判断与直觉知识中的必要作用。Joseph 还分享了在高熵合金、半导体、航空航天等领域的应用尝试与规模化挑战。最后他解释了为何坚持开源和公共-私营协作，以及如何通过人才培养与基础设施建设应对全球竞争。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/latent-space/the-self-driving-lab-joseph-krause-radical-ai/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="自驱实验室：Joseph Krause 与 Radical AI | 听阅"><meta property="og:description" content="本期节目围绕材料科学中 AI 与自动化的边界展开，Joseph Krause 解释了 Radical AI 为什么强调实验数据闭环，而不是只做理论预测。讨论从化合物发现与表征延伸到量产可行性、合规验证、制造工艺和供应链约束，指出材料领域最大的难点是数据碎片化与反馈周期长。节目进一步拆解了 self-driving lab 的系统架构：AI 生成候选、实验执行、表征分析、数据回流与迭代；并强调人类在实验判断与直觉知识中的必要作用。Joseph 还分享了在高熵合金、半导体、航空航天等领域的应用尝试与规模化挑战。最后他解释了为何坚持开源和公共-私营协作，以及如何通过人才培养与基础设施建设应对全球竞争。"><meta property="og:url" content="https://castnote.github.io/episodes/latent-space/the-self-driving-lab-joseph-krause-radical-ai/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="自驱实验室：Joseph Krause 与 Radical AI | 听阅"><meta name="twitter:description" content="本期节目围绕材料科学中 AI 与自动化的边界展开，Joseph Krause 解释了 Radical AI 为什么强调实验数据闭环，而不是只做理论预测。讨论从化合物发现与表征延伸到量产可行性、合规验证、制造工艺和供应链约束，指出材料领域最大的难点是数据碎片化与反馈周期长。节目进一步拆解了 self-driving lab 的系统架构：AI 生成候选、实验执行、表征分析、数据回流与迭代；并强调人类在实验判断与直觉知识中的必要作用。Joseph 还分享了在高熵合金、半导体、航空航天等领域的应用尝试与规模化挑战。最后他解释了为何坚持开源和公共-私营协作，以及如何通过人才培养与基础设施建设应对全球竞争。"><meta property="article:published_time" content="2026-06-17T17:58:06.000Z"><meta property="article:tag" content="播客"><title>自驱实验室：Joseph Krause 与 Radical AI | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"自驱实验室：Joseph Krause 与 Radical AI","description":"本期节目围绕材料科学中 AI 与自动化的边界展开，Joseph Krause 解释了 Radical AI 为什么强调实验数据闭环，而不是只做理论预测。讨论从化合物发现与表征延伸到量产可行性、合规验证、制造工艺和供应链约束，指出材料领域最大的难点是数据碎片化与反馈周期长。节目进一步拆解了 self-driving lab 的系统架构：AI 生成候选、实验执行、表征分析、数据回流与迭代；并强调人类在实验判断与直觉知识中的必要作用。Joseph 还分享了在高熵合金、半导体、航空航天等领域的应用尝试与规模化挑战。最后他解释了为何坚持开源和公共-私营协作，以及如何通过人才培养与基础设施建设应对全球竞争。","datePublished":"2026-06-17T17:58:06.000Z","author":[{"@type":"Person","name":"Brandon"},{"@type":"Person","name":"RJ"},{"@type":"Person","name":"Joseph Krause"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/latent-space/the-self-driving-lab-joseph-krause-radical-ai/","isPartOf":{"@type":"PodcastSeries","name":"Latent Space"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/latent-space/">Latent Space</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/18 01:58:06</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.latent.space/p/radical-ai">原始节目</a> </div> <h1>自驱实验室：Joseph Krause 与 Radical AI</h1> <p class="episode-summary">本期节目围绕材料科学中 AI 与自动化的边界展开，Joseph Krause 解释了 Radical AI 为什么强调实验数据闭环，而不是只做理论预测。讨论从化合物发现与表征延伸到量产可行性、合规验证、制造工艺和供应链约束，指出材料领域最大的难点是数据碎片化与反馈周期长。节目进一步拆解了 self-driving lab 的系统架构：AI 生成候选、实验执行、表征分析、数据回流与迭代；并强调人类在实验判断与直觉知识中的必要作用。Joseph 还分享了在高熵合金、半导体、航空航天等领域的应用尝试与规模化挑战。最后他解释了为何坚持开源和公共-私营协作，以及如何通过人才培养与基础设施建设应对全球竞争。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Brandon</span> </div> <p class="person-description">Latent Space 播客主持人，负责访谈与引导主题讨论。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">RJ</span> </div> <p class="person-description">Latent Space 播客联合主持人，负责追问和补充关键问题。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Joseph Krause</span> </div> <p class="person-description">Radical AI CEO，专注于自驱动实验室和材料科学中 AI for science 的企业级应用。</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Charles Kuhlman</span>  </div> <p class="person-description">SpaceX 材料副总裁，Joseph 提及其“并发工程（concurrent engineering）”观点。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Heather Kulik</span>  </div> <p class="person-description">材料与计算科学研究者，节目中被提及“材料领域缺少 AlphaFold 瞬时成就”。</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<p><strong>Brandon</strong></p>
+<p>欢迎来到《Latent Space》。我是 Brandon，也想先介绍一下，I’m RJ。我们这次采访的嘉宾是 Joseph Krauss，Radical AI 的 CEO。</p>
+<p>Joseph，你好。你所在的市场变化非常快：现在 Lila、Cusp、Periodic 等都在做材料方向的 AI，竞争和资本都很激烈。你们的差异化策略是什么，如何在这些重资本玩家中胜出？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>很高兴到场，节目我很喜欢。每天通勤去纽约时我都听你们，真是日常学习的好来源。很高兴能用你们的 show 学到东西，也谢谢你们接待我。</p>
+<p>我们和很多团队不同的核心是：坚信实验数据才是材料科学的根基。材料行业需要的不只是新组合预测，而是把实验闭环完整跑完。</p>
+<p>最早我们在这条赛道上时，很多人觉得我们想法太激进，因为材料实验投入（capex）高、数据采集难、现有模型也不是为了这类数据而生。也正因为如此，我们才更执着于闭环系统。</p>
+<p>材料是从“发现”到“制造”再到“应用验证”才能真正落地，我们把这整条线称为自驱实验室（self-driving lab）。它要能真实地跑实验、采集数据，再把反馈喂给 AI 科学家，让模型学习并预测对产业有用的材料。</p>
+<p><strong>Brandon</strong></p>
+<p>明白了。一个核心问题是：为什么你们选择先把后半段问题（制造、规模化）也包进来，而不是只做大规模假设搜索？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>因为材料到底可不可以做出来、能否放大生产、性能是否可达、能不能进入终端系统，都是在后半段决定的。模型现在解决不了从机理到量产的完整流程。</p>
+<p>比如我们在合金里看到的是供应链、原材料成本、微观结构、铸造或增材成形差异。很多关键问题不是化学公式能描述完的，靠一段字符串也表达不全。</p>
+<p>这也是为什么你看生物分子可以用序列描述，但材料（尤其是高熵合金、结构金属）要加入工艺和制造变量，难度完全不同。</p>
+<p>我们认为产业里最大问题之一是数据高度碎片化。学术界负责很多早期发现，小公司做轻量测试，很多时候依靠 DOE、DOD、NSF 等项目支撑，传统大公司只做既有体系优化并只拿到 5%或 10% 的改进。</p>
+<p>行业缺少从发现到制造端的共享连接。Radical 的机会就在于把这些环节重新连接成一个闭环，通过真实数据驱动模型，覆盖从实验设计到材料验证更完整的链路。</p>
+<p><strong>Brandon</strong></p>
+<p>我总会问规模问题：从发现到商业化，数据量级变化很大。你们怎么跨越这个“数量级跳变”？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>用微观结构举例：合金一旦被合成，就要看组织是否均匀、是否树枝晶、是否单相，直接影响强度、延展性和热辐射等关键性能。AI 擅长先预测候选成分，但制造后仍可能出现大量偏差。</p>
+<p>所以我们把实验链路分为生成、成分假设、合成、表征、热处理和工艺路径评估。每一步都会影响最终是否可放大使用。第一步我们用模型建议成分，但后续靠数据再来决定是否可制造。</p>
+<p><strong>RJ</strong></p>
+<p>我刚才听到好多缩写，SCM、EDS、XRD、XRF、TGA 等，听众可能会有点抽象，先解释一遍吧？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>可以，后面会详细展开。先说结论：现在我先给你一个框架。材料测试里我们会做拉伸测试、显微压痕、维氏硬度等，再配合氧化和微观形貌观察，判断方向。</p>
+<p>我们现在在第一阶段主要做的是小规模实验与表征，已经能形成稳定闭环。第三方实验平台也能补齐一部分，比如风洞、喷焰试验这类行业强相关能力。</p>
+<p>制造端我们目前还没完全切入。我们现在关注的是可加工性：材料能否成形、在铸造时能否稳定进入目标形状。现在主要是克级到几百克量级验证，下一步才会往十几公斤、几十斤规模拉长。</p>
+<p><strong>Brandon</strong></p>
+<p>那你们现在是在优化已有成分空间里找新组合，还是更激进地去探索新科学前沿？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>我们做的是前沿探索。以高熵合金为例，系统中常常有五到七种几乎等比例元素，性能在极端环境（2000 到 3000 摄氏度、极端压力、核中子辐照、氧化环境）非常重要。传统体系用几十年都在同一套成分附近打转。</p>
+<p>我们希望在不改变已有行业边界前提下，设计出更好的材料性能。Concur rent engineering 这个概念其实是边设计边建材：先有目标性能再回到材料设计，而不是等发现好再强行适配。</p>
+<p>我也想回应一个关键点：像航天、涡轮等领域，行业现有材料有近几十年历史。我们要做的是在不推翻行业链的情况下，把以前不可能做的成分空间拿出来做高通量验证。</p>
+<p><strong>RJ</strong></p>
+<p>你刚才提到药物研发也有 15 到 30 年周期。材料领域也有类似‘管线断层’，你如何处理这些瓶颈？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>瓶颈确实存在，尤其在合格流程。像航空器里要上人飞行，FAA、军用 Mil-Spec 都有严格标准，审核流程通常要十年，得做大量标准化测试与试验锭样。</p>
+<p>所以我们最关注的是如何提前把“会出问题的点”捕获进 discovery loop，减少后续惊喜。DARPA 之类在做层层增材的快速验证尝试，希望从根本上改造资格认证流程。</p>
+<p>但很多环节仍是监管主导，我们不可能绕开。AI 能做的是让试验和证据链更高效、更可追溯，而不是替代全部监管。</p>
+<p><strong>RJ</strong></p>
+<p>对比药物，材料验证不像临床试验那样按固定阶段线性展开。你如何定义材料领域的流程？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>你说得对，药物有明显阶段边界和生命安全优先级；材料更多是预算和工艺约束。你不能一下子做完全部，反而是连续投入、逐步淘汰。</p>
+<p>例如我们在新材料里会把高成本元素（比如铪）尽量降掉，既看供应链可得性也看性能。航天可容忍更高成本，但消费电子和医疗器件几乎不能带来同样的价格溢价。</p>
+<p>这也是为什么我们一再回到材料与 AI 的根本差异：生物分子可以通过字符串表征到位，材料的宏观性能和工艺响应却必须靠真实实验闭环去捕获。</p>
+<p><strong>Brandon</strong></p>
+<p>你刚提到的闭环到底是怎样运行？人工和自动化分别在哪个环节？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>人没被替代，而是嵌在训练环节。我们通过 SEM 图像给 AI 提供人类标签，把经验知识‘下载’到系统里，AI 学会像冶金师一样看形貌与缺陷。</p>
+<p>实验室自动化本身有挑战：像取放样品、工具接口、传感器接入、样品追踪都要自己做。即使工具可以自动化，系统层和调度逻辑依然很复杂。</p>
+<p>我们把工作分成三层：第一层是工具供应商与软件兼容性（很多设备没有 SDK）；第二层是采集与状态系统；第三层是自动化编排和机器臂连接，把实验、取样、上机、下机串起来。</p>
+<p>这也是和纯自动化实验室的区别。自动化实验室只是按脚本执行动作，自驱动实验室要自己生成方案、跑 campaign、选择下一步实验，相当于“我连左转都不用想”的 Waymo。</p>
+<p>在合金里，我们还会遇到人类非常擅长的样品处理，比如小按钮状熔块常粘到托盘，需要机械臂技巧处理。机器要具备这些细节能力，不是拿到一台机械臂就完事。</p>
+<p>所以我们也在建设实验室操作系统：把 SEM、XRD、拉伸、显微和传感器状态统一；机器人负责把结果带回、关停样本、保存失败样本并转给下一个流程。</p>
+<p>我们现在有些部件还在完善，比如装卸 XRD 的复杂几何、定制抓手、反应路径控制。氧化腔、合成模块已按合金领域深度定制，但还未大规模拓展到陶瓷、聚合物。</p>
+<p><strong>Brandon</strong></p>
+<p>你们会直接先做垂直闭环，还是未来先横向扩展？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>起步时最容易的是先把单一领域做到很深，但客户一提 scale、量产、批次稳定性，我们就知道需要扩展。垂直和横向都要做，但要按时间线分阶段。</p>
+<p>我们做合金并非只做科学好奇，而是想在汽车、航空航天、防务、能源、半导体、电子等卡脖子行业带来突破。很多体系已经被老材料体系卡住三十年。</p>
+<p><strong>Brandon</strong></p>
+<p>你给个最具体的产业应用例子？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>半导体后端互连材料是很好的例子。现在的 interconnect 制程效率和能耗代价都很高，一旦换到新材料可能大幅改善。我们内部有实验性方向，但部分技术细节还不便展开。</p>
+<p><strong>RJ</strong></p>
+<p>这些新材料能带来多大提升？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>短期里有些系统我觉得可以带来 2 到 5 倍提升，某些关键界面工程如果突破可看到十倍级别的收益，但真正的规模化转化仍受限于验证节奏。</p>
+<p><strong>RJ</strong></p>
+<p>那验证到消费电子里要多久？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>对于半导体，研发周期长，因为从零开始要重建标准。芯片供应链也有瓶颈，ASML、晶圆厂、设备窗口都约束了节奏。通常是长路径，短期不可能一夜之间落地。</p>
+<p>在合金端，尤其防务和太空系统，三到五年就可能看到有意义的应用示例。我们不希望第一应用就是载人飞行，先从边界要求稍低但高价值的场景验证起。</p>
+<p><strong>Brandon</strong></p>
+<p>如果你把它当作 active learning，错误会不会不断放大？你们如何控制？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>我们有完整反馈回路，而且不是盲跑每一次实验。系统先给一个可置信 campaign，跑一批候选，收集数据后再更新。失败结果也算有用数据，关键是别把噪声放大。</p>
+<p>当前版本主要在合成、表征、早期性能上做闭环，制造链尚未完全纳入。每个 campaign 由 AI 科学家生成，数据库里全量沉淀，下一轮会反过来指导新实验。</p>
+<p><strong>RJ</strong></p>
+<p>人类今天具体会做什么？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>合成环节仍有人工冶金博士在看熔化和浇注细节，工具自动化在优化中。科学家仍会对复杂工艺做最终判断，而表征端已经大部分自动化。</p>
+<p>我们的目标是让系统在常规场景达到更高自主水平，比如未来 100 批次每天的吞吐，当前先是 8 到 20。自动化会把人从机械执行中解放出来，留给高价值决策。</p>
+<p>另外我们会做红队式测试，偶尔让科学家故意给出“反直觉”成分。很多时候 AI 会发现没人尝试过但可行的区域，这能打破既有偏见。</p>
+<p>这类探索很有意思：文献能给你“安全区”，但 AI 结合高通量会帮你去看很偏、没人尝试的组合。即使只跑几个样品，也能积累新的直觉边界。</p>
+<p><strong>RJ</strong></p>
+<p>但这听上去像只是一个很强的并行搜索器，不是某种“本质突破”。你怎么看？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>并行搜索只是底层能力，还要靠领域知识来约束和解释。文献学习给你可行先验，模型再在高维空间尝试。人类要做的是判断风险和价值。</p>
+<p>我在读研时一年大约 50 个实验，现在我们希望单个 scientist 在同样时间内做上百次 campaign 级别的决策。不是替代人，而是放大人的认知带宽。</p>
+<p><strong>Brandon</strong></p>
+<p>你前面说过实验成本和吞吐，这块更具体点？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>实验成本按元素差异大，贵一点的金属可能 60 到 300 美元不等。当前单批次吞吐和材料体系强相关，部分体系可能 8 个实验一天，标准体系可到 20。</p>
+<p>我们目标是几个月内把全实验室吞吐推到日均 100 批左右。人类思维是序列化：提出假设、跑实验、复盘、再决策。AI 则是并行阅读文献、图像和实验数据。</p>
+<p>但我并不认为“更多数据”就是更好。材料领域有效数据本身并非必须千万级，关键是信息密度和高质量闭环。</p>
+<p><strong>Brandon</strong></p>
+<p>你提到 DARPA 做过 500 合金计划，公开规模上你们和别人比有什么变化？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>DARPA 的 NGE Aerospace 标杆项目一年做了 500 个合金，算是业内公开的上限之一。我们目标是把这个能力显著放大，已经在几个月内跑过 1200 个样本，说明闭环效率在爬坡。</p>
+<p>真正难点是搜索空间。合金组合可能达到 10^40 级别，人工穷举不现实。即使 30,000 样本/年也覆盖极小片段，但模型加实验设计能抓住高价值区域。</p>
+<p>行业核心瓶颈是缺数据，而不是算力。很多场景下实验约束是第一约束，关键不是模型算力不够，而是如何快速执行、测到正确的数据。</p>
+<p>我在 GTC 的讨论里也强调过这个点：我们不是模型瓶颈，是真实实验吞吐瓶颈。这也是为什么我们围绕自驱动实验室和数据采集投入很重。</p>
+<p><strong>RJ</strong></p>
+<p>你前面说没有 alpha fold 级别的材料预报？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>没错，材料领域没有像蛋白那样单一决定性模型。我们可能在某个子问题上有‘alpha-like’突破，比如图像分割能读出 SEM 特征，但把化学式到完整工程化性质还非常困难。</p>
+<p>另一个挑战是你总会遗漏要测量的指标，到大规模时才发现新失效模式。数据集要覆盖多传感器、多工艺与多场景并不容易。</p>
+<p>我们在 SEM 分割上已经有较大规模优势。模型识别树枝晶、裂纹、缺陷并关联力学性能，能自动给出很多线索，这在以前需要大量人工经验。</p>
+<p>但要注意这只覆盖部分环节。制造端的参数选择仍高度依赖经验直觉，比如设备要“拧哪个旋钮”，而这类人类技能目前还难完全离线复现。</p>
+<p>所以我们保留人类在回路中，尤其在采样、表征判读和工艺判断上逐步搭桥，目标是把这些经验也量化、编码进下一代系统。</p>
+<p>我们的策略是与成熟制造公司建立伙伴关系，先用他们的工业经验补齐端到端流程。我们在发现和测试端走得更快，制造端通过合作加速验证。</p>
+<p><strong>RJ</strong></p>
+<p>能分享些实验室里“踩坑”故事吗？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>最早接设备时，很多仪器没法程序化接口，我们花了两周反编译、逆向理解运行路径才能自动化。后来才意识到工具集成难度非常高。</p>
+<p>那段时间最重要的经验是：这家公司不是单学科。我们需要材料、机械、软件、机器人、计算机视觉和机电人才共同工作。每个方向都比想象中复杂。</p>
+<p>机械工程做了自研工具，软件团队做实验室操作系统和图像抽取，机器人方向负责路径规划与感知。我们最初以为开源工具足够，结果要自己实现很多关键模块。</p>
+<p>这反而变成了护城河。很多人只是给设备加一只机器人手臂，但自驱动实验室在材料科学里要求的是工艺—数据—调度的一体化系统。</p>
+<p>现在行业的节奏也在变化：AI for science 不是观点争议了，而是开始变成有真实工程产出的方向。我们看到 Google DeepMind、Microsoft、Meta、DOE 等都在不同层面投入。</p>
+<p>我经常和政策端对话，认为这是国家级基础设施问题。国防、能源、国安和工业政策都在往这个方向集火，国家级和私营资本正在形成同步推力。</p>
+<p>在竞争上，中国在制造规模和执行上有真实优势，这不是靠否认来解决。我们更应该构建一个更快的知识与工程训练系统，不是照搬他们‘一刀切’的模式。</p>
+<p>核心是要缩短从想法到验证的年限，改变长期主义下的 25 年周期。一个直观方式是大幅提高人才效率，让科研人员能并行管理更多 campaign。</p>
+<p>在公共-私营合作方面也很关键。企业、国家实验室和高校已经在建自驱动平台。我们看到 Genesis 计划、DOE、国家实验室、SBIR/STTR 等层级都在推动基础设施建设。</p>
+<p>更广义上说，科学基础设施需要三角闭环：高性能算力、科研人员、和大规模实验数据。国家实验室的数据规模巨大，但如何和私营企业结合起来形成真正可用模型是未来关键。</p>
+<p>只要我们在方法和组织层改造得当，不靠不道德压价、不靠粗放劳动，而靠研发机制和团队能力，就有机会在产业竞争上赢。</p>
+<p><strong>Brandon</strong></p>
+<p>那回到你刚才那个行业瓶颈问题：如果必须回答一个可以移除的瓶颈，你会选哪一个？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>坦率说，反馈环路长度本身是根本属性，未必能完全消除。数学里也有类似现象：有些实验流程需要天量时间。我们能做的是把一部分放大，靠大规模自动化硬件来“横向跳”某些耗时环节。</p>
+<p>如果工具从面向人改成面向智能体（agent）和机器人，门槛会下降。你不用培养每个人去读 SEM，反而要培养“让系统正确执行并解释结果的人”。</p>
+<p>这条路成本不低，但会改变科学生产力。人类研究者需要重心转移到方法设计和问题定义，而不是重复机器操作。</p>
+<p>我也想鼓励 AI 工程师关注材料、化学、物理等科学方向。你不必成为材料专家，关键是成为一个能把工具和思维方法带入科学问题的人。</p>
+<p>也别再生硬追求“成为某个学科专家”了。跨学科协作比单点深挖更重要：你是 ML 工程师也能在材料科学里产生乘数效应。</p>
+<p><strong>Brandon</strong></p>
+<p>能展开讲讲你们 AI stack？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>从高层看，我们的 AI Scientist 是多智能体协同。最上层 orchestrator 负责假设生成和实验策略；底层还有文献检索、数据管理、表征解读等多个模型。</p>
+<p>我们会对接行业数据集、付费数据库（例如 CalFAD）、公开文献与实验影像，再通过专有模型抽取证据。比如从 SEM 图像直接提取可用特征，形成机器可读知识。</p>
+<p>模型除了在实验设计上有效，还在于逐步学会“科学直觉”：能判断某种图像特征与性能之间的关系。我们在论文中看到，相关模型在一般科学推理上有 5% 到 16% 的提升。</p>
+<p>数学推理上可能还有短板，但把这种方法迁移到生物空间依然有希望。核心是体系化地让 AI 在推理时参考历史实验、文献和已验证知识。</p>
+<p>真正有意思的是，我们能看见每个新假设背后召回的历史实验链路。AI 会告诉你依据哪些样本、哪些指标做出判断，这提升了可解释性，也方便团队复核。</p>
+<p>最终目标是用多模型集成，在不同任务上各有专长，再通过协作形成比单一 scientist 更强的“总体科学家”。不是一个万能模型，而是智能体化协作。</p>
+<p><strong>Brandon</strong></p>
+<p>那你为什么坚持开源？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>第一，社区推动。AI for science 想形成新范式，需要共享而不是各自闭门造车。第二，开源能让我们接收更多反馈，形成更快的迭代。</p>
+<p>第三，我认为模型不是护城河，实验体系和数据才是。我们自己在做开源的 TorchSim、模型方法与数据工作就是为了生态共建。</p>
+<p>我们相信未来几年开源模型会成为常态。我们会继续把更多高质量基础模型、工具和基准对外公开，同时保留自有商业数据层作为核心竞争力。</p>
+<p>你可以把它理解为：行业里每个人做得更好，大家的增长更快；Radical 也受益，社区也受益。真正的边界不在模型参数上，而在端到端实验能力。</p>
+<p><strong>Brandon</strong></p>
+<p>最后一个，给 AI 科学家或 AI 工程师的一句话建议是什么？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>把实验问题交给 AI，让 AI 与人类共同迭代，但别把专业工具当成目的。你应该用第一性原理去看问题，保持自己独有的判断力，把自动化和数学当放大器。</p>
+<p>我们今天讨论了材料科学本质复杂：不是少数人能做的‘黑盒应用’，而是一个要跨越组织、人才、工艺、资本和政策的系统工程。</p>
+<p><strong>RJ</strong></p>
+<p>谢谢你今天的分享，最后有一句给听众的话吗？</p>
+<p><strong>Joseph Krause</strong></p>
+<p>谢谢你们。AI for Science 会显著改变材料创新速度。只要我们把实验、数据、模型和产业结合好，AI 科学的社会影响会非常大。</p>
+<p><strong>Brandon</strong></p>
+<p>我们也很期待下次再聊。我们今晚希望你能再来纽约见面。</p>
+<p>那我们再找个更合适的时间继续聊，也期待节目再见。谢谢你，Joseph，今天辛苦。</p>
+<p><strong>Joseph Krause</strong></p>
+<p>感谢你们邀请，期待下次把实验室带到全自动层级。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

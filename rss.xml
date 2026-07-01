@@ -69,6 +69,13 @@
       <description>本期节目以 Pearl Abyss 的《Crimson Desert》为对象，先从玩法结构切入，讨论其角色战斗、探索开放世界和系统设计为何适合不同类型玩家。随后结合销量与愿望单表现，分析其发行成效与市场传播链路，提出视觉打磨、长期技术演示和持续沟通如何形成复合口碑。节目后半段梳理其从 Black Desert 2 演化到单机化的漫长研发过程，重点讨论延期沟通中的信任建立，并为独立开发者提炼出可复用的创作与社区管理经验，强调透明交付与玩家归属感的重要性。</description>
     </item>
     <item>
+      <title>前沿生态为何必须开放：Databricks 的 Matei Zaharia 与 Reynold Xin</title>
+      <link>https://castnote.github.io/episodes/latent-space/why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-reynold-xin-databricks/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-reynold-xin-databricks/</guid>
+      <pubDate>Wed, 24 Jun 2026 18:53:16 GMT</pubDate>
+      <description>本集围绕 Databricks 的 Databricks 在 AI 时代的基础设施化转向展开。Swyx 与 Matei Zaharia、Reynold Xin 先梳理 Databricks 由社区峰会增长到推出 Omnigents、统一云沙盒和统一 API 的动机：企业内 coding agent 与定制 agent 需要可共享会话、工具与上下文，否则难协作。随后讨论安全和成本控制，核心是把单次“允许/拒绝”升级为会话级上下文策略、可追踪预算与事件语义化治理。节目还延展到 LTAP/Dream Engine 的数据库思路：从 OLTP/OLAP 分离与 CDC 脆弱点出发，主打统一存储层和渐进式发布，避免大规模重构风险。最后两位也解释了为何不追逐单一 frontier model，而是更看重 Genie、专用子代理与可组合 API，以数据与上下文驱动企业 AI 落地。</description>
+    </item>
+    <item>
       <title>Databricks 对未来 AI 的押注：Agent Cloud（Matei Zaharia 与 Reynold Xin）</title>
       <link>https://castnote.github.io/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-agent-cloud-databricks-bet-on-the-future-of-ai-matei-zaharia-and-reynold-xin/</guid>
@@ -121,6 +128,13 @@
       <description>节目围绕预测市场展开，先由 Planet Money 的 Erica 开场，引入一个关于政治与商业博弈的历史问题。内容回顾 1988 年 Iowa Electronic Markets 的实验起点：三位经济学者在爱荷华发起候选人“股票”交易，用市场价格来检验民意，从而优于传统民调预测美国总统选举。随后节目结合监管脉络，说明 CFTC 在 1988 年授予有限的豁免与上限规则，确保其低规模运行。通过历史学家 Coleman Strum 的专访，节目再往前追到赛马场和早期选举押注，解释预测市场在二十世纪中期为何淡出：媒体更偏好民调、公开交易机制处于灰色地带、可持续交易场景不足。最后，节目指出 IEM 的复兴在1988年重燃了人们对该机制的信心，并推动后来更大规模的预测市场形态出现。</description>
     </item>
     <item>
+      <title>世界仍在淤泥中窒息</title>
+      <link>https://castnote.github.io/episodes/freakonomics/the-world-is-still-drowning-in-sludge/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/the-world-is-still-drowning-in-sludge/</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:16 GMT</pubDate>
+      <description>本期围绕“sludge”这一概念展开：当流程被设计得更难、花更长时间，消费者在看似小事上被迫付出更高代价。节目先以车牌更新经历切入，说明预约与现实排队之间的落差，并追溯到 Richard Thaler 对‘sludge’的定义，区分无意的设计失误与刻意设置退出摩擦。核心讨论转向医疗体系，Ben Handel 说明私人保险体系下的医生网络搜索、定价与授权规则导致的高摩擦、透明度低、行政负担和慢性信息失真，如何推高费用并损害就诊体验。随后节目通过听众与专家观点分析订阅陷阱：当主动取消成本高于默认续费时，用户会在注意力不足下持续付费。Neale Mahoney 的研究进一步给出数据：每月自动续费服务在信用卡更新时退订率会显著上升，显示大量消费并非由需求推动，而是由决策架构故意延迟。最后讨论了 drippayment（分段加价）、平台化“enshittification”、以及监管和监管失败下对市场与消费者福利的长期伤害。</description>
+    </item>
+    <item>
       <title>Ryan Cohen 的 560 亿美元收购 eBay 计划</title>
       <link>https://castnote.github.io/episodes/all-in/gamestop-ceo-ryan-cohen-s-56b-plan-to-take-over-ebay/</link>
       <guid>https://castnote.github.io/episodes/all-in/gamestop-ceo-ryan-cohen-s-56b-plan-to-take-over-ebay/</guid>
@@ -140,6 +154,13 @@
       <guid>https://castnote.github.io/episodes/planet-money/why-the-250-bill-would-be-good-for-criminals-the-indicator/</guid>
       <pubDate>Tue, 23 Jun 2026 07:06:05 GMT</pubDate>
       <description>本期节目讨论美国是否应发行刻有唐纳德·特朗普头像的$250新钞票。主播先说明提案涉及美联储、财政部、国会与现行肖像法规等程序门槛。节目随后聚焦高面额现金的实际用途，指出美国现金流通量持续增加、许多大额钞票流向境外持有，与其在普通支付中的使用率很低并不矛盾。两位专家Ken Rogoff与Oliver Bullough的观点显示，大面额现金在走私、洗钱和税务逃避场景中更易运输、隐藏和匿名交易。节目也解释了美国未取消$100钞票的财政动机：纸币可为政府提供“零利率借款”。但从税基流失与执法难度看，若引入$250面额，短期财政收益可能被更高的税收损失和监管风险抵消。</description>
+    </item>
+    <item>
+      <title>Mythos 后的红队演练：Zico Kolter 与 Matt Fredrikson（Gray Swan）</title>
+      <link>https://castnote.github.io/episodes/latent-space/red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan/</guid>
+      <pubDate>Mon, 22 Jun 2026 21:06:55 GMT</pubDate>
+      <description>本期节目围绕 AI Agent 的安全治理展开，Gray Swan 的两位创始人讨论了为什么传统软件安全方法已不足以保护 AI 系统。节目指出：AI 模型是有天然脆弱面的软件，尤其在大模型主流化和“工具调用”场景下，提示注入、模型越权、数据外泄和供应链化的共同风险会被放大。两位嘉宾解释了从 Mythos 到更大规模部署的红队方法：一方面依赖社区和竞赛驱动的 Arena 获取多样化攻击向量，另一方面训练像 Shade 这类专门的自动红队模型发现高频漏洞；随后通过 Signal 等过滤器做策略约束与异常防护。节目还讨论了自动红队并非天然可靠于规模，合规与保险框架、企业级身份与权限建模、以及从研究场景向非 AI 企业落地扩展所带来的新挑战。整体观点是：与其追求“零风险”，更现实的是把发现、评估和缓解能力工程化前置到产品和企业工作流中。</description>
     </item>
     <item>
       <title>金融行业中最“抗冲击”的职业路径 | LFTC</title>
@@ -247,6 +268,20 @@
       <description>本期节目围绕 Oxford Clothes 品牌展开，讨论在自动化与大规模量产时代，手工制造如何仍有生存空间。主持人与嘉宾 Warwick Jones 先介绍公司坚持手工的工序与成本结构：从口袋、线衬、纽扣到整件西装，仅有约15%可由机器完成。节目随后追溯手工理念在19世纪的思想谱系，分析 Arts and Crafts 运动、Thomas Carlyle、John Ruskin、William Morris 等人如何把工艺与反工业化伦理连接起来。最后回到当代市场，节目指出需求转向、企业追求更高效率与品牌传承之间存在张力，并讨论工艺是否能在更富足但审美更快变化的资本主义环境中继续扩展其受众与价值。</description>
     </item>
     <item>
+      <title>谁有权选择“善终”？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/who-gets-to-choose-a-good-death/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/who-gets-to-choose-a-good-death/</guid>
+      <pubDate>Fri, 19 Jun 2026 10:00:02 GMT</pubDate>
+      <description>本集以丹尼尔·卡尼曼临终选择为引子，讨论在衰老与不确定中如何定义“善终”。节目通过阿尔·罗斯解释市场设计和“有嫌恶交易”，把肾脏交换制度的经验延展到医学辅助死亡。随后聚焦纽约州立法与保守—支持双方拉锯，州长强调严格“护栏”与个人自治，反方强调医学伦理和“控制焦虑”风险。接着从最高法院法理、宗教立场与文化价值观探讨“自由意志与道德”的底层张力。最后转向临终照护现实：在临终护理体系中的空缺与压力下，是否应更多投入陪伴与支持，而非只讨论终结生命。</description>
+    </item>
+    <item>
+      <title>输出最大化教授：Anjney Midha，AMP</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-professor-of-outputmaxxing-anjney-midha-amp/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-professor-of-outputmaxxing-anjney-midha-amp/</guid>
+      <pubDate>Thu, 18 Jun 2026 17:30:00 GMT</pubDate>
+      <description>本期节目由 Swyx 访谈 Amp CEO Anjney Midha，讨论前沿 AI 的算力困境与组织瓶颈。Anjney 先从集群利用率切入，指出 node utilization 与 MFU utilization 低时会造成系统性浪费，并认为“先有供应后有创新”的幻觉是误区，真正要有负责任的基础设施治理。节目进一步聚焦 AMP Grid：把算力当作可共享池做调度，借鉴电网中独立系统运营商（ISO）的模式，通过基线容量与峰值弹性降低碎片化。随后他解释了为何研究成果在组织内部易出现外溢停滞，资本结构、激励与传播机制决定了前沿研究能否释放社会价值。受访者还回到医疗健康方向，讲述其在生物信息学背景下长期研究的“end-of-life prediction”愿景，强调终末照护决策、风险文化与政策监管的关系。最后转到“Outputmaxxing”与企业文化：优先级、对齐、先做少而对的投入，以及确信科学规律不能被短期增长替代，真正可持续的竞争来自稳定文化和长期执行纪律。</description>
+    </item>
+    <item>
       <title>前沿 AI 的隐性瓶颈</title>
       <link>https://castnote.github.io/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp/</guid>
@@ -310,6 +345,13 @@
       <description>本期为《Indie Game Guildhall》第 4 季开场。节目先因 StreamYard 试播失败改为 Discord 旧流程后正式开录，随后讨论 2026 年上半年的游戏行业状态。Willem 与 Tim 认为招聘数据有轻微回升，但裁员和就业压力仍重，行业正处于后繁荣调整期；AAA 与大型平台节奏放缓反而给独立开发留出机会。节目给出增长路径：愿望单（wishlist）测试、短视频传播、社区与创作者驱动、Patreon/会员订阅、与主播合作等，并强调别执着单一“完美点子”，先做可验证试验。结尾提出持续迭代、审慎签约、强化用户获取（user acquisition），并预告下周做 Crimson Desert 深度讨论。</description>
     </item>
     <item>
+      <title>自驱实验室：Joseph Krause 与 Radical AI</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-self-driving-lab-joseph-krause-radical-ai/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-self-driving-lab-joseph-krause-radical-ai/</guid>
+      <pubDate>Wed, 17 Jun 2026 17:58:06 GMT</pubDate>
+      <description>本期节目围绕材料科学中 AI 与自动化的边界展开，Joseph Krause 解释了 Radical AI 为什么强调实验数据闭环，而不是只做理论预测。讨论从化合物发现与表征延伸到量产可行性、合规验证、制造工艺和供应链约束，指出材料领域最大的难点是数据碎片化与反馈周期长。节目进一步拆解了 self-driving lab 的系统架构：AI 生成候选、实验执行、表征分析、数据回流与迭代；并强调人类在实验判断与直觉知识中的必要作用。Joseph 还分享了在高熵合金、半导体、航空航天等领域的应用尝试与规模化挑战。最后他解释了为何坚持开源和公共-私营协作，以及如何通过人才培养与基础设施建设应对全球竞争。</description>
+    </item>
+    <item>
       <title>AI 在科学中的局限——为什么我们需要自动驾驶实验室</title>
       <link>https://castnote.github.io/episodes/latent-space/the-limits-of-ai-in-science-why-we-need-self-driving-labs-joseph-krause-radical-ai/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-limits-of-ai-in-science-why-we-need-self-driving-labs-joseph-krause-radical-ai/</guid>
@@ -359,13 +401,6 @@
       <description>Goldman Sachs 高级主席、前CEO Lloyd Blankfein 与 Sam Parr 进行了一场关于投资、风险管理与人生经历的深度对话。从 Warren Buffett 在金融危机期间仅凭握手和电话就向 Goldman Sachs 投资50亿美元的传奇故事，到顶级交易员与普通人差距有多小；从个人投资组合98%集中在风险资产，到童年贫困如何塑造了一生的金钱焦虑。Blankfein 还分享了关于婚姻、抗压能力、历史阅读的见解，以及对美国梦和移民精神的思考。</description>
     </item>
     <item>
-      <title>为下一个信贷损失周期做准备</title>
-      <link>https://castnote.github.io/episodes/animal-spirits/preparing-for-the-next-capital-loss-cycle-tcaf/</link>
-      <guid>https://castnote.github.io/episodes/animal-spirits/preparing-for-the-next-capital-loss-cycle-tcaf/</guid>
-      <pubDate>Mon, 15 Jun 2026 21:40:30 GMT</pubDate>
-      <description>本期节目对话 PIMCO 集团首席投资官 Dan Iverson，探讨当前全球宏观经济格局与固定收益投资机遇。讨论涵盖地缘政治破裂、全球化逆转、AI 基础设施投资浪潮（预计未来五年近 10 万亿美元）、信贷损失周期的回归、美联储新主席的沟通风格等议题。Iverson 认为尽管不确定性上升，但美国经济韧性强劲，高质量债券在当前利率环境下具有吸引力，AI 数据中心融资为债券投资者提供了结构性参与机会。</description>
-    </item>
-    <item>
       <title>Carmen Li 的算力期货市场构想</title>
       <link>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</link>
       <guid>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</guid>
@@ -392,6 +427,13 @@
       <guid>https://castnote.github.io/episodes/planet-money/it-s-my-tree-why-can-t-i-cut-it-down/</guid>
       <pubDate>Fri, 12 Jun 2026 22:12:59 GMT</pubDate>
       <description>本期节目探讨了美国各地树木保护法律引发的产权争议。节目讲述两个案例：波特兰房主 Sarah Bond 的后院大树倾斜危及房屋，但城市拒绝批准砍树许可，最终树在风暴中倒塌砸穿房屋；密歇根州 Canton 镇开发商清砍 16 英亩树林被罚款约 50 万美元，引发诉讼。宪法律师 Chance Weldon 以征收条款为依据挑战树木许可制度，在第六巡回法院赢得部分胜利。节目讨论了分区法律的界限：何时政府规制走得太远，实际上剥夺了业主对财产的控制权。</description>
+    </item>
+    <item>
+      <title>Google DeepMind 的 Logan Kilpatrick：模型为何“吞并”代理框架</title>
+      <link>https://castnote.github.io/episodes/training-data/google-deepmind-s-logan-kilpatrick-why-the-model-eats-the-harness/</link>
+      <guid>https://castnote.github.io/episodes/training-data/google-deepmind-s-logan-kilpatrick-why-the-model-eats-the-harness/</guid>
+      <pubDate>Fri, 12 Jun 2026 20:56:05 GMT</pubDate>
+      <description>本期节目讨论 Google 在 I/O 后对 Agentic AI 的落地路径：Logan Kilpatrick 解释了 Antigravity Agent Harness 如何把 Gemini 与 AI Studio、Search、Gemini 应用等产品串联为更“可执行”的代理系统，并阐明了 Google 现阶段仍以 crawl 为主，优先平衡用户控制与自动化。对编码代理的价值、长时任务能力、以及长跑效应是否会加速模型进步也进行了讨论，认为 coding 已经成为最重要的加速器之一。节目还延伸到 vibe coding 的市场变化、世界模型与 Omni 的边界模糊、以及“模型是否会内化外部框架”这一核心命题，最后结合其在 DeepMind 的工作观察，讨论了在模型竞争加速下独立公司仍可通过领域专注与生态协同获得机会。</description>
     </item>
     <item>
       <title>Satya Nadella 论 AI 与就业：人类将做「胶水工作」</title>
@@ -429,11 +471,11 @@
       <description>本期两位主持人以通俗易懂的方式解读 SpaceX IPO。他们分析了 SpaceX 的四大业务板块——火箭发射、Starlink 卫星互联网、X（Twitter）和 XAI，讨论了 1.75 万亿美元估值的争议性、Starlink 作为现金奶牛的商业模式、太空数据中心的未来愿景、Elon 的薪酬方案（Mars Award 和 AI CEO Award）等话题。两人还分享了历史投资案例、cap table 上的赢家（如 Antonio Gracias、Gigafund、Steve Jurvetson），以及对乐观主义投资哲学的反思。</description>
     </item>
     <item>
-      <title>睡眠工具箱：优化睡眠与作息时间</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/essentials-sleep-toolkit-for-optimizing-sleep-sleep-wake-timing/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/essentials-sleep-toolkit-for-optimizing-sleep-sleep-wake-timing/</guid>
-      <pubDate>Thu, 11 Jun 2026 12:00:33 GMT</pubDate>
-      <description>Andrew Huberman 教授系统讲解了优化睡眠的三阶段工具箱。第一阶段（醒来后 0-3 小时）包括：清晨阳光观看（5-30 分钟，触发 cortisol 峰值）、冷水淋浴或运动（提高核心体温）、推迟 caffeine 摄入（醒来后 90-120 分钟）、适量进食设定 circadian clock。第二阶段（白天到傍晚）包括：控制 caffeine 摄入（下午 4 点后不超过 100mg）、适度午睡（不超过 90 分钟）、下午高强度运动会延迟 circadian clock、傍晚阳光观看作为第二个锚点。第三阶段（傍晚到夜间）包括：调暗人工光源（晚 10 点-凌晨 4 点避免明亮光源）、热水浴后补偿性降温（体温下降 1-3°C）、保持睡眠环境凉爽、避免酒精和 THC 打乱睡眠结构。补充剂组合包括 magnesium threonate（145mg）、apigenin（50mg）、theanine（100-400mg），睡前 30-60 分钟服用。Temperature minimum 工具帮助应对 jet lag 和倒班工作：在 temperature minimum 前 2-4 小时接受光线/运动/caffeine 会延迟时钟，之后接受则会相位提前时钟。周末保持作息一致性（不超过正常起床时间 1 小时）对睡眠质量至关重要。</description>
+      <title>双陆棋能否拯救我们于自己？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/can-backgammon-save-us-from-ourselves/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/can-backgammon-save-us-from-ourselves/</guid>
+      <pubDate>Fri, 12 Jun 2026 10:00:55 GMT</pubDate>
+      <description>本期节目从一次在泽西城公开赛之后的现场对弈切入，讨论双陆棋如何把“概率决策”与情绪管理带入现实。节目先采访 Masayuki Mochizuki（Mochy），再由 Frank Frigo 讲解基础规则、双倍方块（doubling cube）和赛制中的风险控制，进而比较技能与运气在双陆棋中的边界。核心转向到 Frigo 的职业生涯与心理素质：他如何在 1994 年与 2023 年两次夺冠中保持竞争力，并将比赛方法迁移到商业、体育场景。节目随后解析了 Marc Olsen 的 AI 与平台化经验，涵盖 Backgammon Galaxy、强化学习（Reinforcement Learning）和 TD-Gammon 对行业的重塑。后半段回看 20 世纪七八十年代的双陆棋热潮与“高风险吸引新手”的历史，神经网络如何淘汰大量投机玩家。最后以 Remi Davenport 为代表，聚焦线上与线下社交俱乐部复兴：从纽约社区建设、女性参与、联赛机制、活动传播，到当前双陆棋从边缘爱好走向更主流生活方式的可能性。</description>
     </item>
     <item>
       <title>番茄价格四十年新高：一场霜冻如何引发全球供应链震荡</title>
@@ -464,6 +506,13 @@
       <description>Glean 的 Work AI Institute 发布了 2026 年 Work AI Index 报告，调查 6000 名知识工作者后发现：87% 的员工在使用 AI，平均每周节省 13 小时，但只有 13% 认为组织绩效显著提升。报告提出了「botsitting」（喂养、监督、调试 AI 所需的人力劳动，每周 6.4 小时）和「botshit」（交付无法解释的 AI 产出，69% 的人承认做过）两个概念。主持人 Nathan Labenz 与负责人 Rebecca Hinds 深入探讨了这一 disconnect 的根源：从个人效率无法转化为组织成果，到 AI 工具缺乏上下文导致 exhaustion，再到员工因自动化失去工作意义而疏离。讨论还覆盖了企业文化转型、使命驱动、enterprise graph 的前景以及 AI 时代组织设计的未来方向。</description>
     </item>
     <item>
+      <title>污染与大脑（更新版）</title>
+      <link>https://castnote.github.io/episodes/freakonomics/this-is-your-brain-on-pollution-update/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/this-is-your-brain-on-pollution-update/</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:31 GMT</pubDate>
+      <description>本期节目以“空气污染是否会损害认知”为核心，重访一档旧节目并加入近年新证据。节目先说明 PM2.5 与传统污染指标，比较美国与全球污染现状后，讨论为何即便在美国这种低污染环境中，也不能忽视认知风险。嘉宾先后从历史环境学与自然实验切入：从工业革命时期英国城市污染导致的居住分层，再到美国清洁空气法的健康成效。核心证据来自多项研究，表明短期污染波动即可影响成年人在线上认知任务表现，而长期高暴露则与教育、收入和生命年损失相关。节目还加入一段现场脑力小游戏与嘉宾实测，作为对短期认知冲击的补充体验。最后节目把讨论延伸到政策层面，指出颗粒物治理不仅是公共健康议题，也是提升认知资本和经济效率的关键。</description>
+    </item>
+    <item>
       <title>瓦特、晶圆与AI基础设施的未来 | Gavin Baker</title>
       <link>https://castnote.github.io/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/</link>
       <guid>https://castnote.github.io/episodes/invest-like-the-best/why-the-ai-boom-is-just-getting-started/</guid>
@@ -478,11 +527,11 @@
       <description>OpenAI 强化学习基础团队负责人 Dan Roberts 与主持人 Matt Turck 深入探讨了 AI 在科学发现领域的突破性进展。他们讨论了近期 OpenAI、DeepMind、Anthropic 在 Erdos 数学难题上的突破；RL（强化学习）的本质、威力与局限；RLHF 的工作原理；OpenAI 与 DeepMind 在数学推理上的方法差异；以及物理学视角如何帮助我们理解 AI 系统的 scaling laws。Dan Roberts 还分享了他从理论物理学（量子引力、黑洞信息）转向 AI 研究的经历，以及他对 AI 能否实现真正自主科学发现的看法。</description>
     </item>
     <item>
-      <title>深入数十亿美元的「万物皆可赌」生意</title>
-      <link>https://castnote.github.io/episodes/the-journal/graham-platner-is-now-democrats-biggest-risk-these-people-handpicked-him-wsj/</link>
-      <guid>https://castnote.github.io/episodes/the-journal/graham-platner-is-now-democrats-biggest-risk-these-people-handpicked-him-wsj/</guid>
-      <pubDate>Sun, 07 Jun 2026 17:52:36 GMT</pubDate>
-      <description>本期节目深入探讨了预测市场的运作机制与商业模式。节目介绍了 Kalshi 和 Polymarket 两大平台如何让用户对各种未来事件下注，解释了事件合约的定价原理，并采访了一位从传统体育博彩转向预测市场的职业玩家 Frank Satlo。节目还讨论了预测市场面临的核心争议：平台内部做市商的利益冲突、赢家与输家的悬殊比例、与各州博彩法规的法律冲突、CFTC 的监管权之争，以及日益受到关注的内幕交易风险。随着监管审查加强和多起诉讼推进，预测市场的未来仍充满不确定性。</description>
+      <title>持续洞察用户：Listen Labs 与 Alfred Wahlforss 的访谈</title>
+      <link>https://castnote.github.io/episodes/training-data/knowing-what-your-customers-want-all-the-time-listen-labs-alfred-wahlforss/</link>
+      <guid>https://castnote.github.io/episodes/training-data/knowing-what-your-customers-want-all-the-time-listen-labs-alfred-wahlforss/</guid>
+      <pubDate>Fri, 05 Jun 2026 17:39:24 GMT</pubDate>
+      <description>本期节目聚焦 AI 如何重塑客户研究的全流程。Alfred Wahlforss 介绍了 Listen Labs 从传统问卷、焦点小组过渡到 AI 语音访谈再到规模化模拟的闭环模式，解释了在异步访谈、情绪识别和可追溯数据支持下，如何在更低成本下更快收集客户反馈。节目还讨论了咨询公司与创业公司角色边界：即使 AI 提效明显，战略判断和最终决策仍需人类参与。随后双方深入探讨了 simulation 的边界、可预测问题与不可预测问题，以及未来从 Market Research 2.0 到 3.0 的演进方向，并给出 P&amp;G、Tide Pods、M&amp;M 等案例与护城河建设的思路。最终共识是 AI 更擅长放大“能听见用户”的能力，但其价值来源仍在更高频、可持续的用户输入循环。</description>
     </item>
     <item>
       <title>应届毕业生该怪谁？AI 还是远程办公？</title>
@@ -499,11 +548,25 @@
       <description>本期节目在 WWDC 2026 前讨论了 Apple Siri 助手的预期更新及其与 iPhone 的深度整合；回顾了 Fitbit Air 和 Garmin 等健身追踪设备的使用体验；介绍了 Google 新推出的网站退出 AI 概览功能；分析了 Nvidia RTX Spark 芯片如何挑战 Apple Silicon 在 ARM 笔记本领域的主导地位；探讨了 Microsoft 的 Project Solara Agent 操作系统以及禁用员工 Claude 订阅的决策；最后解释了 SpaceX 通过收购 XAI 和 Twitter 实现的复杂 IPO 财务操作及其对指数基金投资者的影响。</description>
     </item>
     <item>
+      <title>美国迷失了吗？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/has-america-lost-the-plot/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/has-america-lost-the-plot/</guid>
+      <pubDate>Fri, 05 Jun 2026 10:00:50 GMT</pubDate>
+      <description>本期节目以 Fareed Zakaria 作为主访谈对象，讨论了美国在地缘政治上从第二任特朗普时期出现的“即兴式决策”特征，并围绕伊朗战争、美国是否再次陷入“帝国干预”惯性展开。对话追问了伊朗为何能在压力下持续抵抗、沙特与阿联酋角色如何重组、以色列与中东对手关系的长期结构。节目进一步讨论了美国是否在退出全球化、是否衰退、美国财政与贸易政策如何重塑全球市场，以及选举初选与政治体制改革的可行替代。Fareed 认为美国短期仍具韧性，但制度腐败和财政风险是长期关键变量。</description>
+    </item>
+    <item>
       <title>AI 先驱 Geoffrey Hinton：AI 有意识、超级智能正在来临、我们应该担忧</title>
       <link>https://castnote.github.io/episodes/big-technology/ai-pioneer-geoffrey-hinton-ai-is-conscious-superintelligence-is-coming-and-we-should-be-wo/</link>
       <guid>https://castnote.github.io/episodes/big-technology/ai-pioneer-geoffrey-hinton-ai-is-conscious-superintelligence-is-coming-and-we-should-be-wo/</guid>
       <pubDate>Thu, 04 Jun 2026 16:30:06 GMT</pubDate>
       <description>本期节目对话 AI 先驱、诺贝尔物理学奖得主 Geoffrey Hinton，探讨 AI 的当前状态、未来发展轨迹及其潜在风险。Hinton 认为 AI 已经具备理解能力甚至意识，超级智能将在 20 年内到来。他担忧公司竞争而非智能设计正在塑造这些新存在，导致安全问题被忽视。讨论涵盖就业影响、自我保存目标、信息崩溃风险、情感依恋问题等，并反思人类自我认知的历史教训。</description>
+    </item>
+    <item>
+      <title>AGI 之后，什么仍然稀缺？</title>
+      <link>https://castnote.github.io/episodes/dwarkesh/alex-imas-and-phil-trammell-what-remains-scarce-after-agi/</link>
+      <guid>https://castnote.github.io/episodes/dwarkesh/alex-imas-and-phil-trammell-what-remains-scarce-after-agi/</guid>
+      <pubDate>Thu, 04 Jun 2026 16:14:49 GMT</pubDate>
+      <description>节目以 AGI 时代劳动、资本与财富分配为主线，主持人与两位嘉宾先从历史视角回溯技术替代争论，再建立“任务可替代性、劳动份额与资本份额、需求弹性”三类框架判断未来稀缺品来源。对话重点比较了白领岗位自动化边界、计算与软件需求为何可能继续扩张、以及如何将人际关系型价值与资本化价值区分。围绕再分配，嘉宾评估了 UBI、普惠资本、财富税和消费税等机制的可行性，并讨论其政治经济风险与实施难点。后半段延伸到发展中国家在 AI 产业链之外如何分享增长、资本集中与开源路线、以及技术叙事对公共认知与政策的影响，结论是多问题高度耦合，需持续用数据与场景方法更新政策。</description>
     </item>
     <item>
       <title>为什么运动像惩罚（以及如何改变它）</title>
@@ -518,20 +581,6 @@
       <guid>https://castnote.github.io/episodes/pivot/jason-wilson-best-selling-author-redefines-masculinity-healing-and-why-vulnerability-is-st/</guid>
       <pubDate>Fri, 29 May 2026 19:30:06 GMT</pubDate>
       <description>本期 Pivot 播客邀请畅销书作家、武术教练 Jason Wilson 深入探讨男性心理健康与全面男子气概。Wilson 提出「全面男子气概」概念，认为男性不应被单一的「阳刚」定义所束缚，而应同时具备勇气与同情心、强大与敏感、战士与培育者的特质。他分享了在底特律创立 Cave of Adullam 的经历，通过武术训练帮助年轻男孩学会表达情绪、处理创伤，强调情绪表达不是软弱，而是释放内心负担的必要过程。Wilson 还谈及母亲去世的亲身经历、男性自杀率居高不下的现实，以及文化（特别是嘻哈音乐）对年轻一代的影响，呼吁男性打破「面具」，从内心善意而非恐惧出发生活。</description>
-    </item>
-    <item>
-      <title>物理学最大谜团：反物质、暗能量与万物理论</title>
-      <link>https://castnote.github.io/episodes/lex-fridman/biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49/</link>
-      <guid>https://castnote.github.io/episodes/lex-fridman/biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49/</guid>
-      <pubDate>Fri, 29 May 2026 16:18:31 GMT</pubDate>
-      <description>本期节目中，Lex Fridman 与费米实验室粒子物理学家 Don Lincoln 展开了一场关于物理学核心谜题的深度对话。对话从物理学的统一史出发，回顾了牛顿统一天体与地面引力、麦克斯韦统一电与磁、爱因斯坦的时空统一与广义相对论，一路讲到标准模型中的电弱统一与希格斯玻色子的发现。随后讨论转向当前物理学的前沿未解问题：大统一理论与万物理论的探索前景、弦理论与圈量子引力的现状、反物质的生产与应用潜力、物质-反物质不对称之谜、暗能量的本质及其与量子场论预测之间的巨大矛盾、暗物质的证据与探测困境。Lincoln 还分享了自己从小镇出身到成为前沿物理学家的个人经历，以及对科学探索中好奇心与毅力的看法。</description>
-    </item>
-    <item>
-      <title>云端 Agent 的上下文工程 —— Walden Yan 与 Cole Murray</title>
-      <link>https://castnote.github.io/episodes/latent-space/context-engineering-for-cloud-agents-walden-yan-cole-murray/</link>
-      <guid>https://castnote.github.io/episodes/latent-space/context-engineering-for-cloud-agents-walden-yan-cole-murray/</guid>
-      <pubDate>Thu, 28 May 2026 17:57:06 GMT</pubDate>
-      <description>本期围绕云端 Agent 的上下文工程展开，讨论背景智能体如何从规格说明走到可合并的代码变更。Walden Yan 与 Cole Murray 分享了 cloud agents、Devon、Open Inspect 和评估工具背后的实践，重点不在“让模型更聪明”这个抽象目标，而在如何组织上下文、任务环境、权限、反馈和测试。节目展示当智能体开始承担完整开发流程时，软件交付机制需要在提示词之外重新设计。</description>
     </item>
     <item>
       <title>Kenny Smith：NBA 冠军讲述未曝光的 MJ 故事、Inside the NBA 秘密与人生 lessons</title>
@@ -555,27 +604,6 @@
       <description>本期节目中，Dwarkesh Patel 与 AI 芯片公司 MatX 的 CEO Reiner Pope 深入探讨了芯片设计的底层原理。对话从最基础的逻辑门和乘累加（MAC）运算开始，逐步搭建到全加器、阵列乘法器等电路结构，量化分析了计算与数据搬运的面积开销。随后讨论了从 CUDA 核心到脉动阵列（Systolic Array）的演化——如何通过将权重矩阵本地存储来大幅减少数据搬运成本。节目还涵盖了时钟周期与流水线寄存器插入的权衡、FPGA 与 ASIC 的商业和技术差异（包括查找表的工作原理）、CPU 缓存导致的非确定性延迟问题，以及 GPU 和 TPU 在顶层架构上的核心区别——GPU 是大量微小的类 TPU 单元平铺，而 TPU 使用更粗粒度的矩阵单元。最后简要对比了芯片与大脑在并行性、时钟速度和能耗模型上的异同。</description>
     </item>
     <item>
-      <title>先锋集团：那位为投资者省下一万亿美元的&quot;共产主义资本家&quot;</title>
-      <link>https://castnote.github.io/episodes/acquired/vanguard-the-communist-capitalist-who-saved-investors-a-trillion-dollars-audio/</link>
-      <guid>https://castnote.github.io/episodes/acquired/vanguard-the-communist-capitalist-who-saved-investors-a-trillion-dollars-audio/</guid>
-      <pubDate>Mon, 18 May 2026 20:44:21 GMT</pubDate>
-      <description>本期节目完整讲述了先锋集团（Vanguard）及其创始人 Jack Bogle 的传奇故事。Bogle 出身于大萧条中破碎的家庭，凭借普林斯顿毕业论文进入共同基金行业，35 岁执掌威灵顿管理公司，却因推行基金共有制的理念与合伙人产生根本分歧而被解雇。他利用基金与管理公司之间的法律结构漏洞，于 1974 年创立先锋集团——一家由基金持有人共同所有、按成本运营、不产生利润的资产管理公司。1976 年他推出了第一只面向零售投资者的标普 500 指数基金，凭借低费率的复利优势，历经二十年缓慢积累后在 1990 年代迎来爆发式增长。节目深入探讨了先锋的规模经济共享模式如何持续降低费率、2008 金融危机如何成为被动投资的决定性验证时刻、ETF 争议导致 Bogle 二度离开董事会的始末，以及今天先锋面对富达和贝莱德竞争时共有制模式的优势与局限。节目最后的分析环节讨论了为何共有制结构如此罕见、先锋的七力模型，以及 Bogle 将公募基金定义为大宗商品市场的核心洞察。</description>
-    </item>
-    <item>
-      <title>Anthropic 的 Boris Cherny：为什么 Coding 已经解决，接下来会怎样</title>
-      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/anthropic-s-boris-cherny-why-coding-is-solved-and-what-comes-next/</link>
-      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/anthropic-s-boris-cherny-why-coding-is-solved-and-what-comes-next/</guid>
-      <pubDate>Mon, 04 May 2026 17:28:44 GMT</pubDate>
-      <description>Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经&quot;解决&quot;，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。</description>
-    </item>
-    <item>
-      <title>Anthropic 的 Boris Cherny：为什么 Coding 已经解决，接下来会怎样</title>
-      <link>https://castnote.github.io/episodes/training-data/anthropic-s-boris-cherny-why-coding-is-solved-and-what-comes-next/</link>
-      <guid>https://castnote.github.io/episodes/training-data/anthropic-s-boris-cherny-why-coding-is-solved-and-what-comes-next/</guid>
-      <pubDate>Mon, 04 May 2026 17:28:44 GMT</pubDate>
-      <description>Claude Code 的创造者 Boris Cherny 分享了这款工具的诞生历程——从一个意外的内部项目成长为改变软件开发方式的产品。他认为 coding 已经&quot;解决&quot;，model 现在写 100% 的代码。他展示了惊人的个人 setup：从手机同时运行几百个 agent，使用 /loop 自动化日常任务。讨论了团队未来会变成跨领域 generalist，以及 SaaS 行业面临的颠覆——startup 数量将 10 倍增长，但 network effects 等 moat 依然重要。类比印刷机革命，他预言软件将完全民主化，成为人人都能做的技能。</description>
-    </item>
-    <item>
       <title>Andrej Karpathy：从 Vibe Coding 到 Agentic Engineering（专访 Stephanie Zhan）</title>
       <link>https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/</link>
       <guid>https://castnote.github.io/episodes/training-data/andrej-karpathy-from-vibe-coding-to-agentic-engineering-w-stephanie-zhan/</guid>
@@ -588,13 +616,6 @@
       <guid>https://castnote.github.io/episodes/pragmatic-engineer/building-pi-and-what-makes-self-modifying-software-so-fascinating/</guid>
       <pubDate>Wed, 29 Apr 2026 14:30:17 GMT</pubDate>
       <description>本期节目邀请 Mario Zechner（Pi 创建者）和 Armin Ronacher（Flask 创建者）探讨编码智能体的现状与未来。讨论涵盖了 Pi 的诞生故事——Mario 因不满现有智能体工具的复杂性和不稳定性，构建了一个极简但高度可扩展的编码智能体。核心话题包括：智能体如何因复杂性而自我削弱（添加的代码越多，context window 问题越严重）；AI 不感受代码库的痛苦，这导致缺乏重构动力；Armin 采访 30 多个工程团队的发现——PR 审查压力增大、代码质量下降、非工程师参与工程流程；MCP vs CLI 的权衡（MCP 适合企业认证，CLI 提供更好的可组合性）；以及「暗工厂」概念的批判——用大规模智能体军队生成软件可能带来垃圾代码洪流。两位嘉宾一致认为行业需要慢下来，把智能体用于自动化繁琐任务，而非追逐速度 KPI。</description>
-    </item>
-    <item>
-      <title>在 Grind 中寻找快乐——Future Suit Games 创始人的独立游戏开发之路</title>
-      <link>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall-with-future-suit-games/</link>
-      <guid>https://castnote.github.io/episodes/indie-game-guildhall/indie-game-guildhall-with-future-suit-games/</guid>
-      <pubDate>Wed, 22 Apr 2026 16:02:45 GMT</pubDate>
-      <description>本期 Indie Game Guildhall 邀请了 Future Suit Games 的联合创始人 Abram 和 Christie，围绕「在 grind 中找到快乐」这一主题展开深入对话。两位嘉宾分享了各自进入游戏行业的曲折经历：Abram 从平面设计师起步，经历 Kickstarter 惨败后放弃艺术又重拾创作，最终通过 Indie Game Academy 的 Level Three 和 Foundry 项目与 co-founders 走到一起；Christie 则从儿童教育转向表演，在纽约打拼多年后回归写作，最终通过 IGA 将写作与游戏 passion 结合。节目中还坦诚讨论了他们的首个商业化游戏 Daughter of the Rift 在 Steam 上仅有 324 个 wishlist 的现实，以及如何在财务压力、外部打击和繁琐的日常开发工作中保持动力。主持人 William Dalthal 和 Tim Wood 也分享了对时间管理、任务优先级和心理 resilience 的见解，包括 Abram 的 &quot;no zero days&quot; 哲学和 Tim 的 &quot;eating the frog&quot; 方法。节目最后宣布将从 5 月 6 日起进入正式的 12 周季节性播出。</description>
     </item>
     <item>
       <title>数码产品价格越来越离谱</title>
@@ -623,13 +644,6 @@
       <guid>https://castnote.github.io/episodes/pivot/demetrious-johnson-mma-s-greatest-flyweight-opens-up-on-ufc-drama-fighting-his-journey-the/</guid>
       <pubDate>Tue, 10 Mar 2026 16:00:06 GMT</pubDate>
       <description>本期《The Pivot》围绕前 UFC 蝇量级冠军 Demetrious Johnson 展开。节目从他失聪母亲的成长环境与童年创伤谈起，延展到在艰难家庭结构中走向 MMA、建立心理韧性和职业身份的过程。节目重点讲述他后期才与生父重建关系的过程，以及婚姻、父亲与丈夫身份如何重塑其价值观。随后 Johnson 讨论了在 UFC 与 One Championship 间转换、冠军时期的待遇争议、体重与技战术变化、对外宣传与个人风格之间的平衡，提出“技术与理性比单纯暴力更重要”的观点。后半段他将话题转向儿女成长，分享如何以诚实方式进行家庭教育、处理文化身份与种族经历，并谈及原谅与内心修复。</description>
-    </item>
-    <item>
-      <title>Alison Roman 的番茄酱市场征服计划</title>
-      <link>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/alison-roman-s-plan-to-conquer-the-tomato-sauce-market-odd-lots/</guid>
-      <pubDate>Mon, 23 Feb 2026 09:13:30 GMT</pubDate>
-      <description>本期 Odd Lots 播客邀请食品界知名人物 Alison Roman，探讨她从食谱作者到创立番茄酱品牌「a very good tomato sauce」的创业历程。讨论了消费品行业的高端定价困境（38美元一罐的理想 vs 12美元的现实）、配方如何从厨房走向规模化生产、与合作制造商的磨合过程、供应链采购决策、分销与货架空间的「先有鸡还是先有蛋」难题、融资选择（自筹 vs VC），以及如何利用已有的媒体影响力（newsletter、食谱书）来降低营销成本并实现产品快速售罄。Alison 还分享了她对 ghost kitchen 模式的质疑、食品媒体的美学化倾向，以及她作为「不 bet 人生于此」的创业者如何在质量与规模之间保持平衡。</description>
     </item>
     <item>
       <title>重播：Cliff Asness</title>
@@ -679,13 +693,6 @@
       <guid>https://castnote.github.io/episodes/freakonomics/633-the-most-powerful-people-you-ve-never-heard-of-freakonomics-radio/</guid>
       <pubDate>Fri, 23 May 2025 12:50:12 GMT</pubDate>
       <description>本期节目围绕 Javier Blas 和 Jack Farchy 合著的《The World for Sale》展开，深入探讨了大宗商品贸易商这一鲜为人知却极具影响力的群体。两位 Bloomberg 记者讲述了从「教父」Mark Rich 开创行业、深夜一通电话拯救牙买加经济，到利比亚内战中 Vitol 向叛军提供十亿美元信用额度等传奇故事。节目梳理了塑造这一行业的四大历史力量——石油国有化、苏联解体、金融化和中国崛起，并讨论了 Glencore 的合规转型、暗影贸易商绕过制裁的运作方式，以及 Trump 时代关税政策如何为大宗商品贸易商创造新的套利机会。两位作者指出，全球大宗商品消费正处于历史最高水平，西方政府对这一领域的忽视正在付出代价。</description>
-    </item>
-    <item>
-      <title>给乔·罗根的一次干预</title>
-      <link>https://castnote.github.io/episodes/revisionist-history/the-joe-rogan-intervention-malcolm-gladwell-s-revisionist-history-podcast/</link>
-      <guid>https://castnote.github.io/episodes/revisionist-history/the-joe-rogan-intervention-malcolm-gladwell-s-revisionist-history-podcast/</guid>
-      <pubDate>Thu, 24 Apr 2025 15:11:08 GMT</pubDate>
-      <description>Malcolm Gladwell 从一段 Joe Rogan 访谈 RFK Jr. 的播客片段出发，探讨了访谈作为一种艺术形式的意义。RFK Jr. 在节目中声称1918年西班牙流感并非由病毒引起，而是疫苗所致，并错误引用了一篇 Fauci 论文作为支撑。Gladwell 指出 Rogan 未能对这些荒谬言论提出任何质疑，并将其与 Oprah Winfrey 的访谈技巧形成鲜明对比——Oprah 在采访 Meghan Markle 时层层深入，引出了关于皇室种族偏见的关键信息。Gladwell 还分析了 Rogan 采访 Elon Musk 和 Matt Walsh 时的类似问题，揭示出一种模式：Rogan 选择做朋友式的闲聊，而非承担采访者的追问责任。随后 Gladwell 追溯了 RFK Jr. 错误信息的来源——一位长岛律师和一位佛罗里达脊椎治疗师的博客文章。节目最后，Gladwell 通过自己在巡回活动中被心理学家 Michael Gervais 采访的经历，展示了一次真正优秀的访谈如何引导受访者走出预设叙事，抵达意想不到的情感深处。</description>
     </item>
     <item>
       <title>幸福实验室播客：与 Laurie Santos 博士的现场录制</title>
