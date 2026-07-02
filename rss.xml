@@ -13,6 +13,13 @@
       <description>本期节目围绕一篇博客主张展开，核心是讨论 AI 发展是否会迈向“在岗学习”。节目首先说明实验室押注 RLVR（Reinforcement Learning with Verifiable Rewards）的逻辑：通过在大量可验证任务和环境中训练，模型可在更高规模下弥补样本效率不足，并逐步提升在更长时段里解决开放任务的能力。然后指出计算机操作进展偏慢的关键原因：很多现实场景难以构建可复现、可重置的高保真模拟器，商业、法律、交易和政治这类任务更依赖稀疏且难验证的数据。接着讨论“部署即学习”：在线推理阶段暴露大量组织与用户信息，才是真正的学习素材；若只能留在会话内，能力难以长期积累。文章提出 OPSD、梦境式训练（dreaming）等方案，希望把会话经验高效压缩进参数，并展望 2027-2028 年 AI 可能从持续部署中快速扩展到更广泛技能。</description>
     </item>
     <item>
+      <title>《每天》与《观点》：AI 如何改变孤独感与品味</title>
+      <link>https://castnote.github.io/episodes/hard-fork/the-daily-and-the-opinions-how-a-i-is-changing-loneliness-and-taste/</link>
+      <guid>https://castnote.github.io/episodes/hard-fork/the-daily-and-the-opinions-how-a-i-is-changing-loneliness-and-taste/</guid>
+      <pubDate>Fri, 26 Jun 2026 11:00:00 GMT</pubDate>
+      <description>本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。</description>
+    </item>
+    <item>
       <title>为什么范德比尔特大学总在取胜？</title>
       <link>https://castnote.github.io/episodes/freakonomics/why-does-vanderbilt-keep-winning/</link>
       <guid>https://castnote.github.io/episodes/freakonomics/why-does-vanderbilt-keep-winning/</guid>

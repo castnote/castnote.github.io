@@ -13,6 +13,7 @@
 ## 文章列表
 
 - [下一个重大突破可能是 AI 的在岗学习能力](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/): Dwarkesh Podcast · 2026-06-26 ([Markdown](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job.md))
+- [《每天》与《观点》：AI 如何改变孤独感与品味](/episodes/hard-fork/the-daily-and-the-opinions-how-a-i-is-changing-loneliness-and-taste/): Hard Fork · 2026-06-26 ([Markdown](/episodes/hard-fork/the-daily-and-the-opinions-how-a-i-is-changing-loneliness-and-taste.md))
 - [为什么范德比尔特大学总在取胜？](/episodes/freakonomics/why-does-vanderbilt-keep-winning/): Freakonomics Radio · 2026-06-26 ([Markdown](/episodes/freakonomics/why-does-vanderbilt-keep-winning.md))
 - [记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin](/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/): Training Data · 2026-06-25 ([Markdown](/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin.md))
 - [与 OpenAI 研究负责人 Mark Chen 的对话：AGI、o1、Evals 与 Scaling Laws](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen/): Latent Space · 2026-06-25 ([Markdown](/episodes/latent-space/cooking-with-openai-s-research-chief-agi-o1-evals-and-scaling-laws-mark-chen.md))
