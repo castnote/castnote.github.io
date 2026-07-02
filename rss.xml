@@ -6,12 +6,33 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Kent Beck 如何塑造科技行业</title>
+      <link>https://castnote.github.io/episodes/pragmatic-engineer/how-kent-beck-shapes-the-tech-industry/</link>
+      <guid>https://castnote.github.io/episodes/pragmatic-engineer/how-kent-beck-shapes-the-tech-industry/</guid>
+      <pubDate>Wed, 01 Jul 2026 16:57:46 GMT</pubDate>
+      <description>本期节目中，Gergely Orosz 与 Kent Beck 回顾了 Beck 从 20 世纪 70 年代接触计算机、在 University of Oregon 学习计算机和音乐、加入 Tektronix 与 Apple，到参与 Smalltalk、CRC 卡、设计模式、SUnit、测试驱动开发、极限编程和敏捷宣言形成过程的经历。访谈还讨论了他在 Facebook 观察到的工程文化、规模化组织如何保持创新、软件工程中的信任与人际沟通，以及 AI 编程工具带来的变化。Beck 认为代码生成速度正在超过信任积累速度，新的 AI 开发范式仍处于探索期，行业还没有成熟 playbook。</description>
+    </item>
+    <item>
+      <title>Anthony Kaldellis：罗马帝国、拜占庭帝国与帝国的兴衰 | Lex Fridman Podcast #498</title>
+      <link>https://castnote.github.io/episodes/lex-fridman/anthony-kaldellis-roman-empire-byzantine-empire-rise-fall-of-empires-lex-fridman-podcast-4/</link>
+      <guid>https://castnote.github.io/episodes/lex-fridman/anthony-kaldellis-roman-empire-byzantine-empire-rise-fall-of-empires-lex-fridman-podcast-4/</guid>
+      <pubDate>Tue, 30 Jun 2026 20:39:13 GMT</pubDate>
+      <description>本期 Lex Fridman 与历史学家 Anthony Kaldellis 讨论罗马国家从王政、共和国、帝国到东罗马延续两千余年的历史脉络。对话重点澄清“拜占庭帝国”与罗马帝国的关系，分析罗马政治共同体、法律、公民身份、税制、军队、皇帝权力与内战之间的张力，并围绕卡拉卡拉敕令、三世纪危机、君士坦丁、基督教化、西罗马衰亡、查士丁尼征服、阿拉伯征服和帝国长期存续的原因展开。节目最后也把这些历史经验同现代国家治理、精英责任、社会韧性和对未来的希望联系起来。</description>
+    </item>
+    <item>
       <title>Grant Sanderson——AI 与数学的未来</title>
       <link>https://castnote.github.io/episodes/dwarkesh/grant-sanderson-ai-and-the-future-of-math/</link>
       <guid>https://castnote.github.io/episodes/dwarkesh/grant-sanderson-ai-and-the-future-of-math/</guid>
       <pubDate>Tue, 30 Jun 2026 15:53:19 GMT</pubDate>
       <description>本期节目邀请 3Blue1Brown 创始人 Grant Sanderson，与 Dwarkesh 探讨 AI 在数学中的突破与边界。主持人回到三年前提出的“数学里出现 AI 黄金奖是否意味着 AGI”问题，讨论当前 AI 在 IMO 等竞赛上的显著突破是否只是新基准，还是会持续推高通用白领劳动替代能力。Grant 指出数学发展具有“波峰”性质：某些方向会突变式领先，而真正关键可能是 AI 能否生成新概念、提出新定义与新问题。
 双方从黎曼猜想、费马大定理到组合数学、群论、椭圆曲线、模形式、Navier–Stokes 等话题展开，认为未来价值不在于机器解题速度，而在于其跨领域连接与研究方向重构。 在职业层面，Grant 认为当 AI 能够承担“证明与计算”任务时，教师、解释者、判断研究方向和经济价值的人才会更关键，数学研究仍需人类负责定义问题和放大应用场景。</description>
+    </item>
+    <item>
+      <title>Comcast 拆分、OpenAI 权衡推迟 IPO，以及 Buttigieg 遭针对</title>
+      <link>https://castnote.github.io/episodes/pivot/comcast-splits-openai-weighs-ipo-delay-and-buttigieg-targeted/</link>
+      <guid>https://castnote.github.io/episodes/pivot/comcast-splits-openai-weighs-ipo-delay-and-buttigieg-targeted/</guid>
+      <pubDate>Tue, 30 Jun 2026 10:00:00 GMT</pubDate>
+      <description>本期 Pivot 中，Kara Swisher 和 Scott Galloway 先从 AP 对 Kara 的人物报道、潜在总统人选和欧洲热浪聊起，随后重点讨论 Comcast 将 NBCUniversal 和 Sky 拆分上市的商业逻辑，以及媒体、主题公园、有线电视和连接业务各自可能的走向。两人还分析 OpenAI 可能推迟 IPO 的原因，认为 Anthropic 的动能、资本开支压力和上市文件对比会影响 OpenAI 的估值叙事。节目后半段讨论 Pete Buttigieg 家庭遭虚假儿童保护举报的事件、匿名问责机制、住房法案与 Trump 的政治交换条件，并在 wins and fails 环节谈到 Om Malik、Ed Daly、E. Jean Carroll 案、共和党议员的领导力问题、Bill Maher 获 Mark Twain 奖，以及 Scott Wiener 遭遇的反犹攻击。</description>
     </item>
     <item>
       <title>下一个重大突破可能是 AI 的在岗学习能力</title>
@@ -38,6 +59,13 @@
       <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
       <link>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
       <guid>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
+      <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
+      <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
+    </item>
+    <item>
+      <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
+      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
+      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
       <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
       <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
     </item>
@@ -120,6 +148,13 @@
       <guid>https://castnote.github.io/episodes/animal-spirits/is-it-crazy-to-give-up-a-2-9-mortgage/</guid>
       <pubDate>Wed, 24 Jun 2026 17:00:06 GMT</pubDate>
       <description>本期节目围绕投资时点与资产配置展开。第一部分讨论美国市场若出现下行是否应从海外再转回美股：主持人指出AI与通胀阶段都可能让市场出现过热与回撤，建议以再平衡替代硬性择时。第二部分回答现金入市方式，强调先确定多元配置比例，再按比例分批部署，可降低对‘猜底’的心理压力。第三部分聚焦北卡家庭是否放弃2.9%按揭换更大房子，提出居住质量与家庭阶段可高于账面利率优势。后续讨论1.5百万退休是否足够以及500万以上是否可全投指数，强调社保覆盖与现金流稳定、风险承受力与行为纪律比纯收益追求更关键。</description>
+    </item>
+    <item>
+      <title>用科技术语解释 NBA</title>
+      <link>https://castnote.github.io/episodes/waveform/explaining-the-nba-in-tech-terms/</link>
+      <guid>https://castnote.github.io/episodes/waveform/explaining-the-nba-in-tech-terms/</guid>
+      <pubDate>Wed, 24 Jun 2026 14:17:16 GMT</pubDate>
+      <description>本期 Waveform 主持人用科技行业的概念解释 NBA：他们把球队比作科技公司，把球员和教练类比为高管、工程师、运营和营销角色，把得分称作发布产品，把罚球、犯规、裁判回放和选秀分别对应到软件 bug、监管处罚、法律审查和招聘机制。节目围绕 Knicks、Warriors、Spurs、Pacers 等球队展开，穿插 Apple、Google、Tesla、Nokia、OnePlus 等科技案例，讨论现代篮球的三分潮、球星影响力、球队建设、历史归属和球迷文化，最后让不太熟悉篮球的主持人选择自己的 NBA 主队。</description>
     </item>
     <item>
       <title>Salesforce 与 Adobe 能否在 SaaS 末日中存活？</title>
@@ -213,6 +248,20 @@
       <description>本期节目聚焦俄乌战争中仍在持续运作的囚犯交换机制。节目先交代和平谈判受阻下，交换已成为双方维持有限合作的人道通道，并记录了乌克兰家庭对释放消息长期反复等待的现实。随后梳理了被释放乌克兰战俘面临的虐待创伤与回国后治疗压力，以及俄罗斯战俘在乌克兰营区的处境差异。内容进一步说明交换协商流程的保密性与不透明争议：尽管5月曾达成大规模交换，俄军仍有被送回前线作战、禁止投降的风险，双方公开数据仍不完整。节目指出，基辅的家庭抗议与协调组织的申诉反映，仍有大量乌方被扣留者，返回后如何适应生活与心理创伤，也成为交换后的长期挑战。</description>
     </item>
     <item>
+      <title>吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
+      <description>本期节目中，Andrew Huberman 与心理学家 Paul Eastwick 讨论吸引、择偶、约会应用、兼容性和长期关系的实证研究。Eastwick 解释了“配偶价值”和市场化择偶模型只适合描述初次接触的一部分情境；随着人们在小群体和共同活动中反复相处，个体化评价、共同故事和被理解的体验会显著改变吸引力。节目还讨论了性别差异的常见误解、男性社会支持网络、经济与年龄偏好、相似性的主观建构、社交媒体对替代伴侣的放大作用，以及性吸引和身体亲密在关系稳定中的重要性。整体结论强调，线下反复互动、共同社群、可靠支持和对伴侣独特性的感受，是形成和维持健康浪漫关系的重要条件。</description>
+    </item>
+    <item>
+      <title>吸引力、契合度与浪漫关系的科学｜Paul Eastwick 博士</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
+      <description>本期 Huberman Lab 访谈 UC Davis 心理学教授 Paul Eastwick，围绕吸引力、伴侣选择、约会应用、兼容性和长期关系稳定性展开讨论。节目梳理了“市场价值”模型在初次相遇中的作用及其局限，解释为什么熟人相处会增加个人化偏好，让并非大众眼中最有吸引力的人也能形成强烈互相吸引。对话还讨论了依恋焦虑与回避、朋友和外界评价对关系的影响、约会软件筛选机制的缺陷、年龄与资源偏好的数据结果，以及身体亲密、共同活动、边界感和线下社交对稳定关系的重要性。</description>
+    </item>
+    <item>
       <title>城市规划师、无限滚动与“公共物品”到底是什么？</title>
       <link>https://castnote.github.io/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/</link>
       <guid>https://castnote.github.io/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/</guid>
@@ -295,6 +344,13 @@
       <guid>https://castnote.github.io/episodes/hard-fork/figma-s-ceo-dylan-field-on-ai-taste-and-the-future-of-creative-work/</guid>
       <pubDate>Fri, 19 Jun 2026 14:20:14 GMT</pubDate>
       <description>本期邀请 Figma CEO Dylan Field 讨论 AI 如何改变创意工作。节目一开始，主持人回顾 Dylan 年少时写给 Kevin 的书信，并快速切入他当前的 AI 实践与创业习惯。Dylan 解释了他把 AI 当作实验工具来探索边界、验证问题的方式，并将 AI 在可验证领域与设计这类主观领域区分开。双方围绕“设计是否消失”展开讨论，认为 AI 让第一稿更快生成，但真正决定价值的依旧是创作者的判断力、风格和品味。Dylan 进一步谈到广告、设计语言和 App 市场中的同质化压力，以及未来更多岗位将兼具设计能力。后段节目转向 AI 实验室和企业软件市场，讨论 OpenAI、Anthropic 的扩张节奏、企业级产品是否会继续放大，以及市场对企业 SaaS 的评估方式。最后，Dylan 用“hyperstition”解释技术叙事如何反向塑造现实，认为除了技术安全与竞争之外，行业也需要持续生成“AI 与人类共赢”的故事。</description>
+    </item>
+    <item>
+      <title>这是史上最好的 Android 更新</title>
+      <link>https://castnote.github.io/episodes/waveform/this-is-the-best-android-update-ever/</link>
+      <guid>https://castnote.github.io/episodes/waveform/this-is-the-best-android-update-ever/</guid>
+      <pubDate>Fri, 19 Jun 2026 14:05:33 GMT</pubDate>
+      <description>本期 Waveform 围绕近期消费科技新闻展开。三位主持人先从 YouTube 界面细节、订阅数与观看量等可扫读指标聊起，随后重点讨论 Snap 新一代 AR Spectacles 的硬件规格、佩戴体验、定价和产品定位，并与 Xreal 的 Android XR 眼镜作对比。节目还讨论 Matter 1.6、Thread Direct 与智能家居设置痛点，分析 Gemini 驱动的新 Google Home 音箱、Google Home Premium 订阅和 Android 17 的多项更新。后半段延伸到电动车模拟换挡声浪、Ferrari 命名、英国拟议的未成年人社交媒体限制，以及 Anthropic 模型因政府访问限制被下线的争议。结尾保留两道 trivia，涉及 Snapchat 产品和 Android 17 代号。</description>
     </item>
     <item>
       <title>我们是否正进入一个永久更高物价的新时代？</title>
@@ -486,6 +542,13 @@
       <description>Goldman Sachs 高级主席、前CEO Lloyd Blankfein 与 Sam Parr 进行了一场关于投资、风险管理与人生经历的深度对话。从 Warren Buffett 在金融危机期间仅凭握手和电话就向 Goldman Sachs 投资50亿美元的传奇故事，到顶级交易员与普通人差距有多小；从个人投资组合98%集中在风险资产，到童年贫困如何塑造了一生的金钱焦虑。Blankfein 还分享了关于婚姻、抗压能力、历史阅读的见解，以及对美国梦和移民精神的思考。</description>
     </item>
     <item>
+      <title>成功所需的心理框架与具体日常行动 | Andy Stumpf</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/the-mental-frame-specific-daily-actions-to-succeed-andy-stumpf/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/the-mental-frame-specific-daily-actions-to-succeed-andy-stumpf/</guid>
+      <pubDate>Mon, 15 Jun 2026 12:00:23 GMT</pubDate>
+      <description>本期 Andrew Huberman 与 Andy Stumpf 围绕如何在日常生活和重大困境中建立更有效的心理框架展开讨论。Andy 先介绍“担忧圈与影响圈”练习，说明如何把注意力从不可控议题转向可行动的选择；随后两人讨论社交媒体、酒精、大麻、冷暴露、翼装飞行与 BASE 跳伞如何影响自控、风险判断和时间感知。节目中段聚焦 Andy 在离婚、亲子关系、剧烈身体疼痛和朋友离世中的经验，强调说出痛苦、接受帮助和持续做稍难一点的小事。最后，两人讨论退伍军人自杀、创伤、身份丧失、金钱与目标代价，以及如何通过微纪律、出汗、提前准备和能量分配来改善生活。</description>
+    </item>
+    <item>
       <title>Carmen Li 的算力期货市场构想</title>
       <link>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</link>
       <guid>https://castnote.github.io/episodes/odd-lots/carmen-li-s-plan-to-build-a-futures-market-for-compute-odd-lots/</guid>
@@ -540,6 +603,13 @@
       <guid>https://castnote.github.io/episodes/money-stuff/strongly-worded-letters-money-stuff-the-podcast/</guid>
       <pubDate>Fri, 12 Jun 2026 15:48:34 GMT</pubDate>
       <description>本期节目讨论 SpaceX IPO 的定价与认购情况，以及博彩市场对开盘价的预测。S&amp;P 500 决定不豁免盈利要求让 SpaceX 入指数，与其他指数提供商形成对比，引发被动投资与主动决策的讨论。节目还涉及 SpaceX 的治理问题、散户投资者的 meme 股票心态，以及私有公司上市趋势的转变。后半部分讨论 CFTC 发布的联邦体育博彩监管拟议规则，包括对 Little League 博彩、伤病合约、打架合约的禁止，以及暗杀合约的灰色地带问题。最后讨论 Boaz Weinstein 在最高法院的败诉，涉及封闭式基金投票权与股东起诉权。</description>
+    </item>
+    <item>
+      <title>WWDC 2026：Siri 现在真的好用了吗？</title>
+      <link>https://castnote.github.io/episodes/waveform/wwdc-2026-is-siri-actually-good-now/</link>
+      <guid>https://castnote.github.io/episodes/waveform/wwdc-2026-is-siri-actually-good-now/</guid>
+      <pubDate>Fri, 12 Jun 2026 14:15:01 GMT</pubDate>
+      <description>本期 Waveform 讨论 Apple WWDC 2026。节目先聊 YouTube 与 YouTube TV 图标混淆、Keynote 制作风格变化、Tim Cook 最后一次 WWDC 和 John Ternus 线下亮相，随后梳理 iOS 27、macOS Golden Gate、iPadOS、watchOS、VisionOS、AirPods 与 Apple 生态更新，涵盖液态玻璃滑块、性能提升、Genmoji、照片空间重构、Wallet、Passwords、Safari、显示器布局记忆和家长控制。后半部分重点分析新 Siri AI 的个人上下文、屏幕感知、App Intents、Apple Foundation Models、Private Cloud Compute 与生态绑定，并补充 Xbox 纪念版、Nintendo 重制、Anthropic 模型和 OpenAI IPO。</description>
     </item>
     <item>
       <title>非叙事游戏的叙事艺术</title>
@@ -673,6 +743,20 @@
       <guid>https://castnote.github.io/episodes/dwarkesh/alex-imas-and-phil-trammell-what-remains-scarce-after-agi/</guid>
       <pubDate>Thu, 04 Jun 2026 16:14:49 GMT</pubDate>
       <description>节目以 AGI 时代劳动、资本与财富分配为主线，主持人与两位嘉宾先从历史视角回溯技术替代争论，再建立“任务可替代性、劳动份额与资本份额、需求弹性”三类框架判断未来稀缺品来源。对话重点比较了白领岗位自动化边界、计算与软件需求为何可能继续扩张、以及如何将人际关系型价值与资本化价值区分。围绕再分配，嘉宾评估了 UBI、普惠资本、财富税和消费税等机制的可行性，并讨论其政治经济风险与实施难点。后半段延伸到发展中国家在 AI 产业链之外如何分享增长、资本集中与开源路线、以及技术叙事对公共认知与政策的影响，结论是多问题高度耦合，需持续用数据与场景方法更新政策。</description>
+    </item>
+    <item>
+      <title>Kubernetes 与在巅峰退役：Kelsey Hightower 访谈</title>
+      <link>https://castnote.github.io/episodes/pragmatic-engineer/kubernetes-and-retiring-at-the-top-with-kelsey-hightower/</link>
+      <guid>https://castnote.github.io/episodes/pragmatic-engineer/kubernetes-and-retiring-at-the-top-with-kelsey-hightower/</guid>
+      <pubDate>Wed, 03 Jun 2026 17:59:17 GMT</pubDate>
+      <description>本期节目中，Gergely Orosz 采访 Kelsey Hightower，回顾他从麦当劳兼职、DSL 安装和自学认证进入技术行业，到数据中心、金融服务、Puppet、CoreOS、Kubernetes 和 Google Cloud 的职业路径。Kelsey 讲述了容器生态早期的技术分歧、开源社区如何塑造机会、在 Google 建立影响力和理解晋升的方式，也谈到他对财富、退休、顾问工作和个人自由的看法。节目后半部分讨论 AI 对软件工程的影响，强调工具会改变工作方式，但理解系统、硬件、抽象和基本功仍然决定工程师能否创造新东西。</description>
+    </item>
+    <item>
+      <title>物理学最大的谜团：反物质、暗能量与万物理论 - Don Lincoln | Lex Fridman Podcast #497</title>
+      <link>https://castnote.github.io/episodes/lex-fridman/biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49/</link>
+      <guid>https://castnote.github.io/episodes/lex-fridman/biggest-mysteries-in-physics-antimatter-dark-energy-toe-don-lincoln-lex-fridman-podcast-49/</guid>
+      <pubDate>Wed, 03 Jun 2026 17:19:09 GMT</pubDate>
+      <description>本期节目中，Lex Fridman 与 Fermilab 粒子物理学家 Don Lincoln 围绕现代物理的核心谜题展开长谈。对话从 Newton、Maxwell、Einstein 到电弱统一，梳理物理学作为“统一史”的发展脉络，并解释粒子对撞机如何把能量转化为新粒子、Higgs boson 的发现为何补齐标准模型的重要拼图。随后他们讨论大统一理论、万物理论、弦论、圈量子引力、真空与虚粒子、反物质不对称、暗能量、暗物质及未来实验路径。节目最后，Don Lincoln 回顾自己的成长经历、科学启蒙、在 Fermilab 的早期工作强度，以及他投入科普写作的原因。</description>
     </item>
     <item>
       <title>为什么运动像惩罚（以及如何改变它）</title>

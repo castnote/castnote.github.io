@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期 Waveform 讨论 Apple WWDC 2026。节目先聊 YouTube 与 YouTube TV 图标混淆、Keynote 制作风格变化、Tim Cook 最后一次 WWDC 和 John Ternus 线下亮相，随后梳理 iOS 27、macOS Golden Gate、iPadOS、watchOS、VisionOS、AirPods 与 Apple 生态更新，涵盖液态玻璃滑块、性能提升、Genmoji、照片空间重构、Wallet、Passwords、Safari、显示器布局记忆和家长控制。后半部分重点分析新 Siri AI 的个人上下文、屏幕感知、App Intents、Apple Foundation Models、Private Cloud Compute 与生态绑定，并补充 Xbox 纪念版、Nintendo 重制、Anthropic 模型和 OpenAI IPO。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/waveform/wwdc-2026-is-siri-actually-good-now/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="WWDC 2026：Siri 现在真的好用了吗？ | 听阅"><meta property="og:description" content="本期 Waveform 讨论 Apple WWDC 2026。节目先聊 YouTube 与 YouTube TV 图标混淆、Keynote 制作风格变化、Tim Cook 最后一次 WWDC 和 John Ternus 线下亮相，随后梳理 iOS 27、macOS Golden Gate、iPadOS、watchOS、VisionOS、AirPods 与 Apple 生态更新，涵盖液态玻璃滑块、性能提升、Genmoji、照片空间重构、Wallet、Passwords、Safari、显示器布局记忆和家长控制。后半部分重点分析新 Siri AI 的个人上下文、屏幕感知、App Intents、Apple Foundation Models、Private Cloud Compute 与生态绑定，并补充 Xbox 纪念版、Nintendo 重制、Anthropic 模型和 OpenAI IPO。"><meta property="og:url" content="https://castnote.github.io/episodes/waveform/wwdc-2026-is-siri-actually-good-now/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="WWDC 2026：Siri 现在真的好用了吗？ | 听阅"><meta name="twitter:description" content="本期 Waveform 讨论 Apple WWDC 2026。节目先聊 YouTube 与 YouTube TV 图标混淆、Keynote 制作风格变化、Tim Cook 最后一次 WWDC 和 John Ternus 线下亮相，随后梳理 iOS 27、macOS Golden Gate、iPadOS、watchOS、VisionOS、AirPods 与 Apple 生态更新，涵盖液态玻璃滑块、性能提升、Genmoji、照片空间重构、Wallet、Passwords、Safari、显示器布局记忆和家长控制。后半部分重点分析新 Siri AI 的个人上下文、屏幕感知、App Intents、Apple Foundation Models、Private Cloud Compute 与生态绑定，并补充 Xbox 纪念版、Nintendo 重制、Anthropic 模型和 OpenAI IPO。"><meta property="article:published_time" content="2026-06-12T14:15:01.000Z"><meta property="article:tag" content="播客"><title>WWDC 2026：Siri 现在真的好用了吗？ | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"WWDC 2026：Siri 现在真的好用了吗？","description":"本期 Waveform 讨论 Apple WWDC 2026。节目先聊 YouTube 与 YouTube TV 图标混淆、Keynote 制作风格变化、Tim Cook 最后一次 WWDC 和 John Ternus 线下亮相，随后梳理 iOS 27、macOS Golden Gate、iPadOS、watchOS、VisionOS、AirPods 与 Apple 生态更新，涵盖液态玻璃滑块、性能提升、Genmoji、照片空间重构、Wallet、Passwords、Safari、显示器布局记忆和家长控制。后半部分重点分析新 Siri AI 的个人上下文、屏幕感知、App Intents、Apple Foundation Models、Private Cloud Compute 与生态绑定，并补充 Xbox 纪念版、Nintendo 重制、Anthropic 模型和 OpenAI IPO。","datePublished":"2026-06-12T14:15:01.000Z","author":[{"@type":"Person","name":"Marques Brownlee"},{"@type":"Person","name":"Andrew"},{"@type":"Person","name":"David"},{"@type":"Person","name":"Adam"},{"@type":"Person","name":"Rufus"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/waveform/wwdc-2026-is-siri-actually-good-now/","isPartOf":{"@type":"PodcastSeries","name":"Waveform: The MKBHD Podcast"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/waveform/">Waveform: The MKBHD Podcast</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/12 22:15:01</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.youtube.com/watch?v=N36yb-X1LN0">原始节目</a> </div> <h1>WWDC 2026：Siri 现在真的好用了吗？</h1> <p class="episode-summary">本期 Waveform 讨论 Apple WWDC 2026。节目先聊 YouTube 与 YouTube TV 图标混淆、Keynote 制作风格变化、Tim Cook 最后一次 WWDC 和 John Ternus 线下亮相，随后梳理 iOS 27、macOS Golden Gate、iPadOS、watchOS、VisionOS、AirPods 与 Apple 生态更新，涵盖液态玻璃滑块、性能提升、Genmoji、照片空间重构、Wallet、Passwords、Safari、显示器布局记忆和家长控制。后半部分重点分析新 Siri AI 的个人上下文、屏幕感知、App Intents、Apple Foundation Models、Private Cloud Compute 与生态绑定，并补充 Xbox 纪念版、Nintendo 重制、Anthropic 模型和 OpenAI IPO。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Marques Brownlee</span> </div> <p class="person-description">科技视频创作者，MKBHD 主理人，Waveform 播客主播</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Andrew</span> </div> <p class="person-description">Waveform 播客主播，参与科技新闻讨论与节目策划</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">David</span> </div> <p class="person-description">Waveform 播客主播，长期报道消费科技与影像技术</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Adam</span> </div> <p class="person-description">Waveform 节目制作人，参与节目现场讨论</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Rufus</span> </div> <p class="person-description">Waveform 节目制作团队成员，参与节目现场讨论</p> </div> </div> </div>  </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Tim Cook</span>  </div> <p class="person-description">Apple CEO，本期围绕其最后一次 WWDC 亮相展开讨论</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">John Ternus</span>  </div> <p class="person-description">Apple 硬件工程负责人，被节目讨论为 Apple 未来领导层的重要人物</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Craig Federighi</span>  </div> <p class="person-description">Apple 软件工程负责人，WWDC Keynote 的主要演示者之一</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Elon Musk</span>  </div> <p class="person-description">科技企业家，节目在儿童科技环境和 Neuralink 玩笑中提及</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开场与本期主题">开场与本期主题</h2>
+<p><strong>Marques Brownlee</strong></p>
+<p>我先说一句：透明绿色的 Xbox 二十五周年版 Xbox Series X25，这个名字本身就很离谱。他们真把它叫 Xbox Series X25，我刚才像绕口令一样说了好几遍 Xbox。大家好，欢迎回到 Waveform Podcast，我们的主播是 Marques、Andrew 和 David。</p>
+<p>这一周是 Apple 的 WWDC 周，所以我们会花很多时间聊新软件、新 AI、很多想法，可能还有一些偏激观点，尤其是老问题 Siri。当然也会聊一些怀旧游戏新闻。</p>
+<p><strong>Andrew</strong></p>
+<p>我们知道怀旧总会出现，比如 Backyard Baseball。你得挑着怀旧，但它总会回来的。音频版本通常凌晨五点左右上线，通勤时随时都能听。</p>
+<h2 id="did-they-even-test-thisyoutube-与-youtube-tv-图标">Did They Even Test This：YouTube 与 YouTube TV 图标</h2>
+<p><strong>Andrew</strong></p>
+<p>先来「他们真的测试过吗？」这次轮到我。我觉得如果你跟我一样同时有 Apple TV、YouTube 和 YouTube TV，就会遇到一个几乎普遍的问题：两个 app 图标太像了。</p>
+<p>我习惯把相关 app 放在一起，所以会整理图标，把 YouTube 和 YouTube TV 放到一起。问题是它们几乎长得一模一样，一个像浅色模式，一个像深色模式，YouTube TV 只是底部多了 TV 字样。</p>
+<p>结果我未婚妻坐下来想打开 YouTube，经常误点 YouTube TV；我想看 YouTube TV 时也会下意识点到 YouTube。它们真的需要更明显的图标差异。</p>
+<p><strong>David</strong></p>
+<p>或者听我说，YouTube 里直接做一个 TV 标签页。我记得在 Roku 之类平台上好像有过类似情况，因为平台和服务之间的协议不同。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>Apple TV 上确实是两个独立 app。iPad 上的 YouTube 和 YouTube TV 图标也几乎一样，只是底部有小小的 TV，所以我也会按错。这可能不是 Apple TV 的问题，而是 app 图标设计太接近。</p>
+<p><strong>David</strong></p>
+<p>他们应该把 YouTube TV 图标改成老 iOS 原生 YouTube app 的那个电视图标，直接复古回去。</p>
+<p><strong>Andrew</strong></p>
+<p>怀旧能卖货。说到这个，有听众创建了一个「Did They Even Test This」subreddit。我们不会管理它，但会去看，大家可以把自己的例子发进去。</p>
+<h2 id="wwdc-keynote-的制作变化">WWDC Keynote 的制作变化</h2>
+<p><strong>Marques Brownlee</strong></p>
+<p>今年是 Tim Cook 最后一次在 WWDC 开场说 good morning。Keynote 本身挺有意思，我觉得有很多微小但以前没见过的变化。</p>
+<p>比如第一次看到 Apple Park 里，演讲者背后真的有人走过。Craig 从树林里走出来时，背景虚化里有两个人拿着文件夹聊天。以往 Apple Keynote 几乎是完全无菌的，背景没人。</p>
+<p><strong>David</strong></p>
+<p>我也注意到了。人数不多，反而让校园看起来既像是活着的，又不像真的全员开放。有一幕在反射池旁边，一个穿黑衣服的人和另一个人说话，看起来差点像一个人在自言自语。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>这种规模的制作不可能是随机的。他们大概想让校园更有人气。今年很多镜头也更像手持拍摄，我们一开始都在猜这是真的手持，还是故意做出的假手持。</p>
+<p><strong>Andrew</strong></p>
+<p>有些效果很好，有些挺分散注意力。但它显然是有意选择：少一点宏大、横扫、慢动作，多一点摇晃和动态。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>他们今年甚至没有那些典型的无人机镜头，宣布新 macOS 名称时也没有去对应地点取景。这让我怀疑视频制作可能更赶。</p>
+<p><strong>David</strong></p>
+<p>还有光线。以前 Apple 会把日光打得特别柔和，这次明显是白天硬光，没有那么强的柔化，所以整体没那么超精致，更自然一点。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我的理论是，因为他们要讲一小时 AI，所以想让整场看起来更有人味。以前是干净、机器式、漂亮的大扫镜头；这次是手持、背景有人、低帧率转场和 match cut。</p>
+<p><strong>Andrew</strong></p>
+<p>然后结尾那个 rap 又把气氛毁了。也可以说它很神奇，像是公司给开发者的点名感谢，把各种 app 喊出来。</p>
+<p><strong>David</strong></p>
+<p>那有点像 YouTuber 在视频末尾把所有 Patreon 会员名字放上去。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我们总把 Apple Keynote 当成科技发布会的标杆，所以这些细节变化会显得很值得注意。</p>
+<h2 id="john-ternus-与-tim-cook-的最后一次-wwdc">John Ternus 与 Tim Cook 的最后一次 WWDC</h2>
+<p><strong>Marques Brownlee</strong></p>
+<p>我看到现场有一堆和 John Ternus 的自拍。John Ternus 没出现在视频里，这反而有点意外。但媒体活动里 Apple 把他带出来了，他像快速巡场一样走了一圈，大概待了半小时就离开。</p>
+<p>那感觉像是在传递一个信号：他是人，是可接触的，也很酷。所以我一度以为他会在发布会视频里出现，结果完全没有。</p>
+<p><strong>Andrew</strong></p>
+<p>Tim Cook 现在仍是 CEO，Craig 仍负责软件，所以这次 WWDC 还是正常阵容。John 通常不出现在 WWDC，因为他负责硬件。我原本以为会有某种交接或者致敬。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>致敬发生在线下。直播开始前，Craig 会出来讲几分钟，他提到这是 Tim 最后一次 WWDC、15 年领导之类。Tim 出来后，现场一直鼓掌，他连续说了很多次 thank you，然后讲几分钟这是他一生的荣幸，祝大家享受发布会。</p>
+<p><strong>David</strong></p>
+<p>我有点惊讶他们没把那段放进直播。如果我是 Tim Cook，可能也不希望用这种方式让焦点变成自己。他大概希望焦点是 Apple、开发者和产品。</p>
+<p><strong>Andrew</strong></p>
+<p>直播末尾好像只轻轻提到过去 15 年很棒，没有真正告别。毕竟他到 9 月 1 日才交接。之后他可能坐在观众席像粉丝一样看。</p>
+<h2 id="平台更新总览snow-leopard-式发布">平台更新总览：Snow Leopard 式发布</h2>
+<p><strong>David</strong></p>
+<p>进入实际发布内容。今年小更新非常多，所以我们按平台拆：Apple Watch、iPhone、iPad、Mac 等，然后再单独讲家长安全功能，最后把 Siri 单独拿出来讲。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>很多人把这次称为 Apple 软件的 Snow Leopard 时刻：不是大改设计，也不是塞一堆巨型新功能，而是梳理细节、提升性能、修掉背后的烂摊子。</p>
+<p><strong>David</strong></p>
+<p>他们反复提到 app 打开更快、文件加载更快、索引更快。我最喜欢的是演示里那个滚动清单，我一开始以为按字母排到 F 了，后来发现每一项都以 faster 开头。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>如果一切都更跟手，我很欢迎。AirDrop 最高快 80%，当然是「最高」。顺便 Rufus 今天也在，Ellis 休假。</p>
+<p><strong>David</strong></p>
+<p>Snow Leopard 是 OS X Leopard 后的版本，它当年的口号接近「零新功能」，很 Steve Jobs：你已经知道并喜欢的东西，现在只是更好用了。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>他们还提到更清晰的图标、匹配的圆角半径等细节。我特别希望 AirDrop 选择联系人时图标突然位移的问题也修了，因为我经常点到错误的人。</p>
+<h2 id="ios-27液态玻璃性能和连接">iOS 27：液态玻璃、性能和连接</h2>
+<p><strong>David</strong></p>
+<p>新 iPhone 或 Mac 首次启动 iOS 27 时，会有液态玻璃透明度滑块。你可以选择更通透、中间状态或者更不透明。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我试了。新的中间状态大概介于最初特别透明的版本和后来更不透明的版本之间。很多人几个月来都在 Twitter 上 mockup 这个滑块，现在 Apple 真给了。</p>
+<p><strong>David</strong></p>
+<p>他们还做了一个全局改动：液态玻璃界面的边缘更锐利，半透明区域和底下内容的边界更清楚，所以可读性普遍更好。</p>
+<p>app 启动最高快 30%，在老 iPhone 上尤其明显。iOS 27 支持到 iPhone 11，这很不错。让 7 年前的手机在没有大新功能的情况下明显变快，是很好的软件更新。</p>
+<p><strong>Andrew</strong></p>
+<p>新的 CPU 调度器也支持到 iPhone 11。它对新机有帮助，但对老机应该更明显。</p>
+<p><strong>David</strong></p>
+<p>Wi-Fi 到蜂窝网络的自动切换也更快。比如你从家走到车库，Wi-Fi 已经很弱但手机又不切蜂窝，以前音乐可能半天播不出来；现在检测到弱 Wi-Fi 会更快切到蜂窝。</p>
+<h2 id="genmoji-与图像编辑">Genmoji 与图像编辑</h2>
+<p><strong>David</strong></p>
+<p>Genmoji 这次彻底改了界面。以前要先选一个人作基础，再混合一个表情，流程很怪，而且手机会很烫。现在可以用任何图片生成类似 Genmoji 的东西。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我喜欢 Gboard 的 Emoji Kitchen，但它们发出去常常是大图，破坏那种表情包式的喜剧效果。Genmoji 介于贴纸和 emoji 之间，技术上像可缩放图像，但发送体验仍有点像贴纸。</p>
+<p><strong>David</strong></p>
+<p>现在还能指定修改，比如去掉某个皇冠、换个表情、用照片生成风格化头像。它仍然有「slop generator」的味道，但比以前可控很多。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>照片里还加入了扩展画幅。你可以把照片往外扩，让系统生成缺失背景。这对把照片改成不同纵横比很有用，比如想发 Instagram 正方形但不想裁掉主体。</p>
+<p><strong>David</strong></p>
+<p>我试过一张 The Verge 的 Vong 的照片，她的手臂和椅背上的毛衣被切掉一部分。扩展之后它补出了手臂像素，也把毛衣沿着椅背补了出来，看起来很真实。</p>
+<p><strong>Andrew</strong></p>
+<p>这肯定会很好玩。比如如果照片只拍到小腿，系统会不会一直把腿补长，直到它决定该画脚和鞋？我们必须试一下。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>还有 Spatial Reframe。它能让你像在 3D 空间里稍微移动拍摄位置，系统结合生成填充和空间重建来改变视角。</p>
+<p><strong>David</strong></p>
+<p>这很诡异。如果一个人原本看向镜头旁边，你把视角移动到他的视线方向，照片里突然像是在和你对视。它会重建背景和脸部角度。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>Vision Pro 和 iPhone 的做法是高斯泼溅（Gaussian Splatting）：先用高斯点云重建 3D 场景，再在需要的地方做生成填充。极端测试肯定会露馅，但用于一两度的构图校正可能很实用。</p>
+<p><strong>David</strong></p>
+<p>他们说任何相机拍的照片都能用，不限最近几代 iPhone。我用富士 X100 的照片试过，效果甚至比一张 iPhone 照片更好，可能因为分辨率和清晰度更高。</p>
+<h2 id="相机钱包和账单拆分">相机、钱包和账单拆分</h2>
+<p><strong>David</strong></p>
+<p>相机 UI 又改了。顶部有三个更直接的设置：格式、闪光灯、Live Photo。更多选项从右上角移到了快门附近。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>相机里现在还有 Siri 模式，主要用于视觉智能。以前必须用 Camera Control 进入 Visual Intelligence，现在可以在相机 app 内直接用，Camera Control 也仍然可用。</p>
+<p><strong>David</strong></p>
+<p>Wallet 新增创建 pass 的功能。你可以扫描现实里的实体票卡，生成数字版本放进 Apple Wallet；如果票卡支持 NFC，也可以变成数字 NFC pass。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>还有收据功能。你用 Siri 相机拍一张账单，它会识别每个项目，按人分配，加上小费比例，最后通过 Apple Cash 向每个人收钱。</p>
+<p><strong>David</strong></p>
+<p>我昨晚试了，UI 很好。它会语义化拆出每一项，问谁点了这个、谁点了那个，然后计算总额。问题是并不是每个人都用 Apple Cash，不过即使不用支付功能，它也能告诉你每个人该付多少。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>这类功能肯定会 Sherlock 一批 app，比如 Splitwise 或专门拍收据拆账的工具。</p>
+<p><strong>Andrew</strong></p>
+<p>他们还展示了拍食物估算卡路里，这种东西我很怀疑。你看不出用了多少油，也很难从一张照片准确估算份量。一个封口的 burrito 更是什么都看不出来。</p>
+<h2 id="passwords-的自动修复">Passwords 的自动修复</h2>
+<p><strong>Marques Brownlee</strong></p>
+<p>我觉得最大的新功能是 Passwords 能自动修复弱密码或泄露密码。Passwords 多年来会提示你哪些密码重复、脆弱或被泄露，但用户通常不会去处理。</p>
+<p>现在如果你授权，它会像智能体一样逐个登录网站，把密码改成更安全的长密码，并保存起来，之后帮你登录。</p>
+<p><strong>Andrew</strong></p>
+<p>这很两极。一方面它让密码更安全；另一方面它需要代表你登录网站并完成操作，也会让你更依赖 Apple 的密码管理器。</p>
+<p><strong>David</strong></p>
+<p>理论上你仍然可以导出到 1Password 等工具。但这个设计很聪明。如果网站要求邮箱一次性验证码，它就需要读你的邮件，把验证码填回网页。</p>
+<p><strong>Andrew</strong></p>
+<p>如果碰到 CAPTCHA 呢？比如 Megaphone 每六个月要求改密码，我每次都忘。遇到验证码时它大概只能告诉你这个网站无法自动处理，让你自己去改。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>演示里有一个列表，你选择要修复的密码，它会逐个变绿表示成功。失败的可能就留在那里。Google 多次推出自动退订邮件功能，但很多时候也会失败，因为最终还是取决于对方网站是否正确执行退订。</p>
+<p><strong>David</strong></p>
+<p>我本来想做一期「unsubscribe 按钮到底有没有用」的加更，最后答案很无聊：法律规定是一回事，执行取决于发邮件的公司。有些公司就是不做。</p>
+<h2 id="地图健康carplay-和系统细节">地图、健康、CarPlay 和系统细节</h2>
+<p><strong>David</strong></p>
+<p>Apple Maps 也用了高斯泼溅，看起来质量更高。地图里的数据主要来自卫星和航拍，再生成 3D 表现。</p>
+<p>Health 加入围绝经期和绝经期追踪。CarPlay 新增视频 app，这点 Android Auto 最近也有类似更新。</p>
+<p>你现在可以在两台 iPhone 之间共享一个电话号码，前提是运营商支持。大家立刻开始想象一台工作日 Pro、一台周末 Air 的用法。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>音量也终于更细分了。闹钟、计时器、媒体等可以有独立音量。iPhone 用户常见抱怨就是因为上次看视频把音量调低，结果错过闹钟。Android 很早就有类似设计，现在终于补上。</p>
+<p><strong>David</strong></p>
+<p>Shortcuts 也可以用自然语言创建。你描述想要的快捷指令，它会在 Shortcuts 编辑器里搭出来，之后你还能手动修改、同步到 Mac 或分享给别人。</p>
+<p>Dictation 也据说被重做，能更好处理拼写、标点和大小写。但更先进的本地模型只在有 12GB 内存的新 iPhone 上完整可用，比如 iPhone Air 和 iPhone 17 系列。</p>
+<p>App Store 允许开发者做订阅捆绑包。一个开发者可以把多个 app 组合订阅，也可以和另一个开发者合作，把两个 app 做成一个 bundle。</p>
+<p>Calendar 支持自然语言创建日程，比如「下午三点和 James 在 Sopernica 吃午饭」，它会填好地点和时间。这同样会 Sherlock 很多新日历 app。</p>
+<p>Find My 终于允许自定义共享位置的时长。以前只能一小时、当天结束或无限期，现在可以自己设多久。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>Photos 可以把任意视频帧保存成照片，Android 很早就有。共享相册现在支持全分辨率照片，Android 和 Windows 用户也能贡献照片，还可以给共享相册设过期时间。</p>
+<p><strong>Andrew</strong></p>
+<p>FaceTime 支持双摄像头画面，一边显示你的脸，一边显示你面前的东西。以前只能来回切换，这个改动很合理。</p>
+<p><strong>David</strong></p>
+<p>Apple Pay 在线支付时选择银行卡的 UI 也更清楚。Health 和 Fitness 的步数统计也同步了，以前 Apple Watch 和手机会记录出不同步的步数，非常 Snow Leopard 式的修修补补。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>Call Context 类似 Pixel 的 Magic Cue。你打给航空公司时，系统会从邮件里找确认号显示在屏幕上。Apple 的说法很微妙：它会理解上下文，但不会监听你的电话。</p>
+<h2 id="macos-golden-gate-与-safari">macOS Golden Gate 与 Safari</h2>
+<p><strong>David</strong></p>
+<p>新的 macOS 名字是 Golden Gate。过去 macOS 从大型猫科动物转向加州地点，这次从国家公园、州立公园之类扩展到地标。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>很多 iPhone 的改进也会来到 Mac：更快 app 打开、透明度滑块、更快 AirDrop、圆角修正等等。</p>
+<p><strong>David</strong></p>
+<p>Safari 有几个有趣更新。你可以用自然语言要求它创建一个 Safari 扩展。如果已有类似扩展，它会先推荐现有扩展；但你仍然可以要求它继续为你生成。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>这很 Apple：别人说「用终端 vibe code 一个 Chrome 扩展」，Apple 会说「在 Safari 里描述你想要的浏览器功能，然后 Safari 帮你做」。对普通用户可能更合适。</p>
+<p><strong>David</strong></p>
+<p>Safari 还能用 AI 把标签页按主题整理成 Tab Group，并在你继续浏览时继续分类。不过如果一个页面同时属于两个主题，它到底会放到哪一组，还不清楚。</p>
+<p><strong>Andrew</strong></p>
+<p>我希望分组能解释为什么这样分。比如它到底是按 favicon、页面内容还是搜索主题来判断。</p>
+<p><strong>David</strong></p>
+<p>Safari 还可以监控网页变化，但每天只能检查一次，所以不能用来抢票。它更像一个提醒工具，而不是帮你全自动买到演唱会票的智能体。</p>
+<p>Finder 侧边栏现在延伸到屏幕边缘，更好利用空间。另一个没有重点提但很重要的改动是，macOS 更会记住外接显示器的方向和窗口位置。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>如果你是笔记本用户，经常接多组显示器，这非常大。以前拔掉再接上，窗口位置和显示器排列经常乱掉。现在它应该能记住一屏、两屏、三屏的不同配置。</p>
+<h2 id="ipadoswatchos-和-vision-pro">iPadOS、watchOS 和 Vision Pro</h2>
+<p><strong>David</strong></p>
+<p>iPadOS 27 获得 iPhone 的大部分更新。外接硬盘和 iPad 之间传文件最高快五倍，也能获得 Mac 上 Safari 的部分改进。</p>
+<p>Apple Watch 变化不多。按下数码表冠时，现在先显示六个最常用 app，再进入全部 app。还有更好的 Workout Buddy、睡眠追踪、Wi-Fi 连接、音乐播放和电池效率。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>但 watchOS 27 砍掉了很多旧表支持。发布会里一度说只支持 Series 10 及以上，后来 Apple 说口误，实际是 Series 9 及以上，但这仍然只覆盖最近三代。Apple Watch Ultra 1 不支持也挺惊讶。</p>
+<p><strong>David</strong></p>
+<p>Vision Pro 是我的更新。VisionOS 27 最大变化之一是，你以前可以把照片空间化，现在可以把全景照片变成环境。</p>
+<p>Vision Pro 原本只有 Apple 精心拍摄的几个环境，比如 Yosemite、Mount Hood、Maui、Joshua Tree、White Sands 和月球。现在可以用自己的全景照片做环境。我的网站上有 60 个环境，所以 Apple 如果想买可以找我。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>Apple 可能就是想让 Waveform 聊 Vision Pro，所以加了这个功能。Vision Pro 这次没太多更新，可能也因为以前负责 Vision Pro 的人现在去负责 Siri 了。</p>
+<p><strong>Adam</strong></p>
+<p>我最喜欢的是漂浮的 Siri 球，而且你还能把它移动到不同位置。它本来应该是 Finder 小人。</p>
+<p><strong>David</strong></p>
+<p>Vision Pro 还能让你看着现实里的东西直接问 Siri，这像现实世界版 Circle to Search。Safari 也有新的 app kit，可以在 Vision Pro 里打开 3D 网页环境。Apple 还加入了 Iceland 环境，刚好可以带 Marques 去 Iceland。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>HomePod 基本被忘了。这个 Siri 盒子反而不能运行新 Siri，因为没有足够内存。那些最可能偶尔用 Siri 的 HomePod 用户，反而得不到这些升级。</p>
+<h2 id="airpods-自定义-eq">AirPods 自定义 EQ</h2>
+<p><strong>David</strong></p>
+<p>更新后设置里会有持续通知，告诉你索引正在进行。这和新 Siri 很相关，因为 Siri 会有更多个人上下文，要先索引你的内容。</p>
+<p>AirPods 终于有可自定义 EQ。Rufus 当场欢呼。这功能应该十年前 AirPods 1 就有，现在才来。虽然只有高、中、低三段，但总比没有好。</p>
+<p><strong>Andrew</strong></p>
+<p>问题是 AirPods Pro 本来就有自适应 EQ，会根据耳朵、环境和播放内容调整声音。为什么还需要手动 EQ？</p>
+<p><strong>David</strong></p>
+<p>Apple 过去的论点大概就是这个：AirPods 是耳朵里的电脑，会一直动态调整。这个 EQ 也不像传统精确 EQ，但至少给用户一点调音空间。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我评测耳机时总会说出厂声音如何，但也会说很多耳机能调到自己喜欢的声音。以前 AirPods 不能这么说，现在终于可以了。</p>
+<p><strong>David</strong></p>
+<p>有人觉得 AirPods Pro 2 比 Pro 3 好听。Pro 3 对键盘声在 600 到 2000Hz 附近有奇怪共振，关车门时像耳朵里爆炸，降噪也强到让我和环境隔绝。Pro 2 的整体平衡我更喜欢。</p>
+<p>我有 Pro 3，但仍然主要用 Pro 2，因为我太熟悉它的声音，混音检查也靠它。三段 EQ 解决不了我对 Pro 3 高频和中高频的细节不满。</p>
+<h2 id="家长控制与儿童账号">家长控制与儿童账号</h2>
+<p><strong>David</strong></p>
+<p>接下来聊家长控制。Apple 先讲这些，某种程度上也是在讲 AI 前先强调安全和隐私。最大的变化是儿童账号设置流程被重新设计，更容易加入限制、屏幕时间等功能。</p>
+<p><strong>Andrew</strong></p>
+<p>如果孩子已经有普通账号，可以转换成新的儿童账号。新的设置助手里还有预设组，比如 essentials only，只允许 FaceTime、电话、信息、地图和设置。</p>
+<p>之后可以逐步开放 app。孩子能通过 App Store 或设备上的 app 请求下载或使用某个 app，家长批准后再开放。过去电脑和手机上也有家长控制，但设置更麻烦，这次粒度更细。</p>
+<p>我上七年级才有第一台手机，因为开始打运动比赛，有个其他学校的孩子被落在学校，父母找不到。所以我妈觉得我需要一种紧急联系方式。最开始孩子只需要能打给家长，之后表现负责了再逐步放开。</p>
+<p>浏览器也有网站请求，孩子想访问某个网站可以向家长申请。屏幕时间重新设计，可以按 app 分类或时间段设置允许时长，尤其适合限制上学时间。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>你可以想象孩子考试考得好，就给今晚多 30 分钟 YouTube。Andrew 开玩笑说自己女儿永远不会有手机，但又觉得到她长大时，范式可能已经是智能眼镜了。</p>
+<p><strong>Andrew</strong></p>
+<p>我经常想起自己小时候能偷偷做很多事，而我的孩子以后可能逃不过这些监控。你们说新一代会找到新办法，但她们的爸爸在科技播客上班，知道这些设置。</p>
+<p>我比较关心的是「批准新联系人」能否扩展到 app 内，比如 Roblox、WhatsApp 或线上游戏。FaceTime、信息和电话很明显，但真正让家长担心的陌生联系往往发生在这些 app 里。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>这一直是家长控制的难点：系统能决定孩子能不能进某个 app，但一旦进入 YouTube 或游戏，里面的内容和社交就是另一个世界。</p>
+<p><strong>David</strong></p>
+<p>Apple 增加了开发者可用的年龄 API，也许是他们处理这类问题的一步。总体来说，最重要的是流程足够简单，父母才会真的用。Apple 还上线了面向家长的专门网站，解释这些工具。</p>
+<p><strong>Andrew</strong></p>
+<p>我的另一个解读是：这也是在说服家长给孩子买 iPhone。孩子越早习惯 iPhone，长大后越可能继续买 iPhone。在美国，孩子本来就想要 iPhone，现在家长有了一个更好的理由。</p>
+<h2 id="siri-ai个人上下文与生态绑定">Siri AI：个人上下文与生态绑定</h2>
+<p><strong>David</strong></p>
+<p>现在轮到两年等待、最受期待的 Siri 和 Siri AI。高层面看，新 Siri 能力并没有夸张到超预期，大致就是大家预想的样子。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>Apple 推新东西时，总会把它做成最适合 iPhone 和生态系统的版本。你已经能在 iPhone 上用 Gemini、Claude、ChatGPT，那 Siri 的理由是什么？它能深入接入你的个人上下文和手机里的东西。</p>
+<p><strong>David</strong></p>
+<p>这意味着它可以读 iMessage、看日历、理解群聊、备忘录和邮件里的信息，并基于这些内容搜索或执行动作，比如发送信息、添加日程、创建提醒和笔记，尤其是 Apple 第一方 app。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我的第一反应是：如果我不用 Apple 的这些 app 呢？我用 WhatsApp、Google Calendar、Spotify 或别的播客 app，它还能工作吗？</p>
+<p><strong>David</strong></p>
+<p>理论上，如果你指定某个支持的 app，比如 Pocket Casts，并且开发者实现了相关能力，你可以让 Siri 找到 Kevin 一周前推荐的播客并播放。但默认很可能走 Apple Podcasts。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>默认 app 设置里有邮件、信息、通话、浏览器、翻译和密码等选项，但那主要影响点击行为，不一定影响 Siri。我们试着让 Siri 用 Gmail 给 Adam 发邮件，它最后还是打开了 Apple Mail。</p>
+<p><strong>David</strong></p>
+<p>所以现在还不行。对很多 iPhone 用户来说，如果日历用 Google、提醒用 TickTick、地图用 Google Maps、邮件用 Gmail，这些新 Siri 功能能不能好用会是核心问题。</p>
+<p><strong>Andrew</strong></p>
+<p>开发者需要支持 App Intents。Apple 说可以，但 Google 这类 app 是否会积极支持是另一回事，因为双方有很多微妙的生态摩擦。</p>
+<h2 id="apple-foundation-models-与私有云">Apple Foundation Models 与私有云</h2>
+<p><strong>David</strong></p>
+<p>另一个问题是哪些东西在设备端，哪些需要云端。Apple 介绍了几个模型，但没有清楚说明每个 app 的数据边界。</p>
+<p>Apple 据说以每年约 10 亿美元授权一个 1.2 万亿参数的 Gemini 模型作为 Apple Foundation Models 的老师。听起来像是在用 Gemini 教自己的模型，也就是某种蒸馏。</p>
+<p><strong>Andrew</strong></p>
+<p>如果一家汽车公司每年花 10 亿美元请另一家汽车公司教自己造车，最后造出来的车可能很像老师，但它仍然可以说轮胎和材料是自己的。</p>
+<p><strong>David</strong></p>
+<p>Apple 说他们用自己的数据集，但用 Gemini 帮模型学会如何成为一个模型。这里面有很多财务往来，毕竟 Google 还付 Apple 巨额费用做默认搜索。</p>
+<p>模型分成两类。设备端有 AFM3 Core，约 30 亿参数，处理简单任务；还有 AFM3 Core Advanced，约 200 亿参数，但用类似混合专家的方式每次只激活 10 到 40 亿参数。</p>
+<p>高级本地模型大概只在最新 Pro 或 Air 这类 12GB 内存设备上完整工作。那些买了「为 Apple Intelligence 从零打造」的 iPhone 16 用户，现在可能又要关注补偿了。</p>
+<p>云端有 AFM3 Cloud、AFM3 Cloud Image 和 AFM3 Cloud Pro。Cloud Pro 是最重的模型，Apple 特别提到它使用 Google Cloud 基础设施和 Nvidia GPU。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>这让人困惑，因为像自动更改密码这种功能非常隐私，按理说希望走 Apple 的 Private Cloud Compute。但最重的任务如果走 Google Cloud，Apple 只说仍有 Private Cloud Compute 的益处，表述很谨慎。</p>
+<h2 id="siri-的三大能力与新-app">Siri 的三大能力与新 app</h2>
+<p><strong>David</strong></p>
+<p>Siri 现在主要有三大能力：个人上下文、屏幕感知和 app 内动作。个人上下文让它从信息、照片、邮件、日历等内容中找答案，比如问妈妈的航班什么时候落地。</p>
+<p>屏幕感知就是 Siri 能分析你屏幕上的东西，有点像 Circle to Search，可以把屏幕里的信息加入日历，或者回答你关于当前内容的问题。</p>
+<p>app 内动作则是 Siri 可以跨 app 执行和串联任务，比如把照片拉进邮件、根据备忘录生成日程等。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>为此 Apple 还做了独立 Siri app。它像一个记忆库，保存你和 Siri 的一些上下文查询，不一定保存所有问天气这类简单问题，但会保存值得回看的对话，并在设备间同步。</p>
+<p><strong>David</strong></p>
+<p>iPhone 上的交互挺有意思：你问 Siri 后，它先给一个高层回答，然后你可以把弹出的 orb 往下拉，像液体一样打开成 app。</p>
+<p><strong>Adam</strong></p>
+<p>它会 splat 开，像高斯泼溅一样。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>视觉上一致性不错，Siri 总是作为覆盖层出现在当前任务上方，类似 Gemini 在屏幕上的悬浮层。Mac 和 iPad 上也是小窗口感。</p>
+<p>我不喜欢的一点是，它不会在你说话时实时显示转写。它只是听着，显示一个小球，等你说完才把文字弹出来。Google 这类实时转写会让我更有信心，能看到它有没有听错。</p>
+<p><strong>David</strong></p>
+<p>如果你说了很长一段，开头就识别错了，等说完才发现就很烦。希望之后能改。</p>
+<h2 id="siri-实测能用但边界明显">Siri 实测：能用但边界明显</h2>
+<p><strong>David</strong></p>
+<p>我还没在主力机上完全测试，主要来自 Keynote 和 Apple Park 上手。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我试到过一些令人高兴的场景，也遇到一些彻底失败。比如 Apple 活动的 briefing 日程会先给我们一个隐藏标题的版本，Keynote 后再给具体标题。</p>
+<p>我让 Siri 把我的 WWDC briefing 日程做成备忘录，它从邮件里找出来了，但先用了旧版本，只写 briefing。然后我让它换成最新详细版本，它成功更新了。</p>
+<p>接着我让它加到日历，它先加了前两个；我让它加剩下三个，又只加了两个；最后我再让它加最后一个。它能做，但有奇怪的分块，而且只加到了 Apple Calendar，不能去 Google Calendar。</p>
+<p><strong>David</strong></p>
+<p>这正是 Apple 生态的诱惑。如果你全用 Apple 的墙内服务，它就都能工作：Apple Reminders、Apple Podcasts、Apple Calendar、iMessage。墙很闪亮。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>我还试过让 Siri 找去机场前能吃 burrito、能坐户外后院的位置。它找到了一些地方，其中一个不是墨西哥餐厅，但大部分还行。大家会不断推它边界，像当年 Bing 一样试图把它弄坏。</p>
+<p>关键是失败时它怎么失败：是自信地胡说，还是坦白说做不了。我问它我的航班几点登机，它查了很久，然后说无法给出确切时间，但大多数航班提前 40 分钟登机。这不是很准确，但至少不是旧 Siri 那种「我帮不了你」。</p>
+<p><strong>David</strong></p>
+<p>Mac 上 Siri 和 Spotlight 结合起来。Command-Space 打开 Spotlight 后，如果系统判断这是一个问题或动作，会出现「用 Siri 执行」按钮。截图工具里也有 Siri 选项，可以圈选屏幕内容并执行动作。</p>
+<p><strong>Adam</strong></p>
+<p>Vision Pro 上还有我最喜欢的漂浮 Siri 球，像 Lord of the Rings 里的 Palantir。</p>
+<p><strong>David</strong></p>
+<p>iPhone 上的新 Siri 暂时不会在欧盟或中国推出，因为 DMA 等原因；Mac 在欧盟可以，因为法规覆盖的是智能手机。它目前也只有英文。Siri 声音可以调表现力和速度，但语音模型听起来不是行业领先，只能说还行。</p>
+<h2 id="wwdc-问答与游戏怀旧">WWDC 问答与游戏怀旧</h2>
+<p><strong>David</strong></p>
+<p>WWDC 问答里，第一题是 Siri AI 演示时弹出的通知说 Golden Gate Bridge 官方涂装颜色叫什么。答案是 International Orange。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>那是我居然记住的细节。它和 Apple Watch Ultra 的按钮颜色类似，只是桥的年代更久。</p>
+<p><strong>David</strong></p>
+<p>第二题是 Vision Pro 演示里，用户看着一个要买去旅行的背包，问这个背包能不能带上航班。那趟航班要去哪里？答案是 Iceland。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>他们还聊了 Xbox 二十五周年透明绿色 Series X25。名字很绕，但机身确实好看，是对老透明 Xbox 的怀旧。</p>
+<p><strong>Andrew</strong></p>
+<p>Nintendo 又公布了 Ocarina of Time 和 Star Fox 的重制。问题是它现在走写实风，而 Nintendo 过去最强的是不同艺术风格。写实画面总会过时，像 Wind Waker 这种卡通渲染反而更永恒。</p>
+<p>Ocarina of Time 是我最喜欢的游戏之一，所以看到 Link 被做成那种半写实风格，我觉得像把我喜欢的东西毁了。当然正式游戏还没展示玩法，我会保留一点判断。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>如果玩家一直买同一个游戏的重制版，公司就会继续做。Andrew 不完全同意，因为 Backyard Baseball 如果加线上多人，那至少是新东西。</p>
+<p><strong>Andrew</strong></p>
+<p>Kingdom Hearts 4 又有新预告，上一支预告已经是三年前。这个系列故事非常疯狂，虽然叫 4，但中间还有 2.5、移动游戏和一堆正史内容。你最好看 YouTube 超长剧情汇总。</p>
+<h2 id="anthropicopenai-与-ai-公司商业化">Anthropic、OpenAI 与 AI 公司商业化</h2>
+<p><strong>David</strong></p>
+<p>最后还有一个 AI 新闻：Anthropic 终于发布了那个之前说太危险、不能发布的模型。之前我们聊过 Mythos，它像是一个很强的网络安全模型，Anthropic 说不能给大家，后来还是给了。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>这成了一种营销角度：这个东西你们承受不了，太烫手。但他们现在说做得更安全了。</p>
+<p><strong>David</strong></p>
+<p>他们让所有付费订阅用户试用一个月，之后会从普通模型列表撤掉，只能通过 API 付费使用。这有点 bait and switch，但他们的理由是需要观察坏人如何绕过限制，再训练对齐模型。</p>
+<p><strong>Andrew</strong></p>
+<p>就像让模型变得不那么容易被「扮演我去世的奶奶给我念国家机密」这类提示骗到。</p>
+<p><strong>David</strong></p>
+<p>显然他们也希望用户转向按 token 付费，因为 20 美元月费套餐对这些公司成本很高。先开放一个月，再撤到 API，商业动机很明显。</p>
+<p><strong>Marques Brownlee</strong></p>
+<p>同一天还有消息说 OpenAI confidentially filed to IPO，但这个 confidential 显然不太 confidential。</p>
+<p><strong>David</strong></p>
+<p>Apple 和 ChatGPT 的关系似乎也淡了一点。以前 Siri 经常问要不要把问题交给 ChatGPT，现在如果 Apple 自己的模型能处理，就不一定需要这么做。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
