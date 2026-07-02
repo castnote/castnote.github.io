@@ -1,117 +1,204 @@
-<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="《每天》与《观点》：AI 如何改变孤独感与品味 | 听阅"><meta property="og:description" content="本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。"><meta property="og:url" content="https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="《每天》与《观点》：AI 如何改变孤独感与品味 | 听阅"><meta name="twitter:description" content="本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。"><meta property="article:published_time" content="2026-06-19T11:00:00.000Z"><meta property="article:tag" content="播客"><title>《每天》与《观点》：AI 如何改变孤独感与品味 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本集复盘了 Hard Fork Live 2 上的一场核心对话：Daniel Kokotelo 与 Sajesh Kapoor 对 AI 进展速度出现显著分歧。二人围绕“AI 何时实现更接近递归自我改进的研发自动化”、编码代理能否持续扩展到更广研究流程、以及 ASI 是否会提前到来展开辩论，讨论了数据效率、现实世界瓶颈、评测标准与历史预测偏差。节目后半段加入 Peter Baker 与人形机器人演示，接着由 Dwarkesh Patel 继续谈可验证能力、连续学习与产业应用边界，最后以现场观众提问收尾，问题覆盖 Forkaverse、隐私治理、就业、教育与 AI 乐观路径等议题。整体看，本集强调了“预测难以精准、但证据与透明治理必须持续推进”。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="Hard Fork Live 第3部分：对 AI 未来的不同愿景 | 听阅"><meta property="og:description" content="本集复盘了 Hard Fork Live 2 上的一场核心对话：Daniel Kokotelo 与 Sajesh Kapoor 对 AI 进展速度出现显著分歧。二人围绕“AI 何时实现更接近递归自我改进的研发自动化”、编码代理能否持续扩展到更广研究流程、以及 ASI 是否会提前到来展开辩论，讨论了数据效率、现实世界瓶颈、评测标准与历史预测偏差。节目后半段加入 Peter Baker 与人形机器人演示，接着由 Dwarkesh Patel 继续谈可验证能力、连续学习与产业应用边界，最后以现场观众提问收尾，问题覆盖 Forkaverse、隐私治理、就业、教育与 AI 乐观路径等议题。整体看，本集强调了“预测难以精准、但证据与透明治理必须持续推进”。"><meta property="og:url" content="https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Hard Fork Live 第3部分：对 AI 未来的不同愿景 | 听阅"><meta name="twitter:description" content="本集复盘了 Hard Fork Live 2 上的一场核心对话：Daniel Kokotelo 与 Sajesh Kapoor 对 AI 进展速度出现显著分歧。二人围绕“AI 何时实现更接近递归自我改进的研发自动化”、编码代理能否持续扩展到更广研究流程、以及 ASI 是否会提前到来展开辩论，讨论了数据效率、现实世界瓶颈、评测标准与历史预测偏差。节目后半段加入 Peter Baker 与人形机器人演示，接着由 Dwarkesh Patel 继续谈可验证能力、连续学习与产业应用边界，最后以现场观众提问收尾，问题覆盖 Forkaverse、隐私治理、就业、教育与 AI 乐观路径等议题。整体看，本集强调了“预测难以精准、但证据与透明治理必须持续推进”。"><meta property="article:published_time" content="2026-06-19T11:00:00.000Z"><meta property="article:tag" content="播客"><title>Hard Fork Live 第3部分：对 AI 未来的不同愿景 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-REWFNXH9KD');
-    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"《每天》与《观点》：AI 如何改变孤独感与品味","description":"本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。","datePublished":"2026-06-19T11:00:00.000Z","author":[{"@type":"Person","name":"Casey Newton"},{"@type":"Person","name":"Kevin Roos"},{"@type":"Person","name":"Eli Sazlow"},{"@type":"Person","name":"Peter Baker"},{"@type":"Person","name":"Kyle Chica"},{"@type":"Person","name":"Sophie Hagny"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/","isPartOf":{"@type":"PodcastSeries","name":"Hard Fork"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/hard-fork/">Hard Fork</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/19 19:00:00</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.nytimes.com/column/hard-fork">原始节目</a> </div> <h1>《每天》与《观点》：AI 如何改变孤独感与品味</h1> <p class="episode-summary">本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Casey Newton</span> </div> <p class="person-description">Tech and culture journalist and host of Hard Fork</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Kevin Roos</span> </div> <p class="person-description">Producer and host-side contributor for Hard Fork</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Eli Sazlow</span> </div> <p class="person-description">NYT staff reporter whose piece discusses AI and loneliness</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Peter Baker</span> </div> <p class="person-description">NYT reporter who introduces and connects the Opinions segment</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Kyle Chica</span> </div> <p class="person-description">NYT writer discussing Silicon Valley, technology culture, and taste</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Sophie Hagny</span> </div> <p class="person-description">NYT writer and critic discussing taste, culture, and AI influence</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Intuition Robotics</span>  </div> <p class="person-description">Designs social AI robots such as LEQ for aging support</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">OpenAI</span>  </div> <p class="person-description">AI company referenced through product examples and public AI discussions</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Anthropic</span>  </div> <p class="person-description">AI company discussed in relation to model direction and neutrality concerns</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Elon Musk</span>  </div> <p class="person-description">Mentioned in discussion of media platform governance and algorithmic influence</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Jan Warrell</span>  </div> <p class="person-description">Elderly participant in the LEQ loneliness case</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
-<h2 id="开场与选片说明">开场与选片说明</h2>
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Hard Fork Live 第3部分：对 AI 未来的不同愿景","description":"本集复盘了 Hard Fork Live 2 上的一场核心对话：Daniel Kokotelo 与 Sajesh Kapoor 对 AI 进展速度出现显著分歧。二人围绕“AI 何时实现更接近递归自我改进的研发自动化”、编码代理能否持续扩展到更广研究流程、以及 ASI 是否会提前到来展开辩论，讨论了数据效率、现实世界瓶颈、评测标准与历史预测偏差。节目后半段加入 Peter Baker 与人形机器人演示，接着由 Dwarkesh Patel 继续谈可验证能力、连续学习与产业应用边界，最后以现场观众提问收尾，问题覆盖 Forkaverse、隐私治理、就业、教育与 AI 乐观路径等议题。整体看，本集强调了“预测难以精准、但证据与透明治理必须持续推进”。","datePublished":"2026-06-19T11:00:00.000Z","author":[{"@type":"Person","name":"Casey Newton"},{"@type":"Person","name":"Kevin Roose"},{"@type":"Person","name":"Daniel Kokotelo"},{"@type":"Person","name":"Sajesh Kapoor"},{"@type":"Person","name":"Peter Baker"},{"@type":"Person","name":"George Ikas"},{"@type":"Person","name":"Dwarkesh Patel"},{"@type":"Person","name":"Audience Member"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/","isPartOf":{"@type":"PodcastSeries","name":"Hard Fork"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/hard-fork/">Hard Fork</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/19 19:00:00</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.nytimes.com/column/hard-fork">原始节目</a> </div> <h1>Hard Fork Live 第3部分：对 AI 未来的不同愿景</h1> <p class="episode-summary">本集复盘了 Hard Fork Live 2 上的一场核心对话：Daniel Kokotelo 与 Sajesh Kapoor 对 AI 进展速度出现显著分歧。二人围绕“AI 何时实现更接近递归自我改进的研发自动化”、编码代理能否持续扩展到更广研究流程、以及 ASI 是否会提前到来展开辩论，讨论了数据效率、现实世界瓶颈、评测标准与历史预测偏差。节目后半段加入 Peter Baker 与人形机器人演示，接着由 Dwarkesh Patel 继续谈可验证能力、连续学习与产业应用边界，最后以现场观众提问收尾，问题覆盖 Forkaverse、隐私治理、就业、教育与 AI 乐观路径等议题。整体看，本集强调了“预测难以精准、但证据与透明治理必须持续推进”。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Casey Newton</span> </div> <p class="person-description">纽约时报科技记者，Hard Fork 节目主持人，擅长把复杂 AI 议题拆解为可理解的对话。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Kevin Roose</span> </div> <p class="person-description">Hard Fork 主持与节目执行者，负责串联现场对话与观众互动。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Daniel Kokotelo</span> </div> <p class="person-description">AI 研究与政策议题作者，代表更快到来派观点并持续修订《AI 2027》时间线。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Sajesh Kapoor</span> </div> <p class="person-description">AI 研究者，主张 AI 进展更受现实世界瓶颈影响，偏谨慎看待快速超智能路径。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Peter Baker</span> </div> <p class="person-description">《纽约时报》白宫记者，以政治新闻经验补充 AI 与公共议题的传播与问责视角。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">George Ikas</span> </div> <p class="person-description">Tobii（或 Unitree）方向工程与机器人创业者，介绍人形机器人产品与应用场景。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Dwarkesh Patel</span> </div> <p class="person-description">科技播客创作者与媒体人，持续观察 AI 在内容生产、职业技能与长期学习上的边界。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Audience Member</span> </div> <p class="person-description">现场听众及观众代表，负责提问并补充教育、就业与隐私等真实场景问题。</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Fei-Fei Li</span>  </div> <p class="person-description">斯坦福教授，深度学习发展中的关键人物之一。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Jeffrey Hinton</span>  </div> <p class="person-description">深度学习开创者之一，代表早期神经网络持续影响力。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Henry Kissinger</span>  </div> <p class="person-description">政治思想家，节目中被举为高复杂度政治决策能力的参照。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Michael Horowitz</span>  </div> <p class="person-description">对美国人工智能政策与国家安全议题有重要影响的研究与政策人物。</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开场hard-fork-live-2-的延续对话">开场：Hard Fork Live 2 的延续对话</h2>
 <p><strong>Casey Newton</strong></p>
-<p>好，我们今年在尝试一种新的版本：先放个短暂假期片头，在继续节目。今天给大家带来一段 The Daily 的节目，也就是 Eli Sazlow 的《Can AI Make People Feel Less Lonely?》；接着是 The Opinions 关于硅谷最近特别热衷的一个话题——taste。</p>
-<p>这个 title 里面有个问题很核心：AI 能不能让人少一点孤独，还是会制造一种新的关系替代？而后半段会讨论 AI 接下来到底会怎样改变我们的口味、文化体验。</p>
-<h2 id="the-dailyai-能否缓解老龄孤独">The Daily：AI 能否缓解老龄孤独</h2>
+<p>我们从今天这场夏季单集继续接上 Hard Fork Live 2 的后续内容，节目里会放出几段很受欢迎的现场讨论。内容包括两位 AI 思想者的分歧，也包括一位播客人气创作者和观众提问。</p>
+<p>这期我先和大家介绍 Daniel 与 Sajesh，后面还会请到 Dworkesh（即 Dwarkesh Patel）来聊一段轻松但很重的 AI 讨论，并在最后留一段现场提问。</p>
+<p>你今天会听到两种看法：一种强调技术会更快进入自动化 R&#x26;D 的加速路径；另一种强调现实世界里的壁垒会让大模型在很多领域进展远慢于预期。</p>
+<p><strong>Kevin Roose</strong></p>
+<p>这场对话很适合你们参考：AI 讨论里真正关键，不是口号，而是我们如何分辨哪种进展是真正能落地的。</p>
+<h2 id="ai-预测分歧daniel-与-sajesh-的时间表">AI 预测分歧：Daniel 与 Sajesh 的时间表</h2>
 <p><strong>Casey Newton</strong></p>
-<p>先上场的是 Eli Sazlow。Eli 以非常贴近个人故事的方式报道，通常不是只讲个体，而是用一个人的经历去反映一个时代。你这篇文稿也是这样做的吗？</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>是的。过去几年我一直在美国各地采访，看到医疗体系与社区关系变淡，人的生活反而更孤立。数据也支持：人们更少面对面接触，家庭成员常常离得很远。久而久之，孤独和认知衰退、心血管风险都更突出。</p>
+<p>Daniel，AI 2027 发布后你又改过几版时间线。你现在最可能的预测是什么？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>我倾向于说，AI 模型在能独立做自己的 AI R&#x26;D 上，大约到 2028 年底有 50% 的概率。对我来说，不是今天明天，而是两年左右。</p>
 <p><strong>Casey Newton</strong></p>
-<p>你在文章里说到一个关键问题：这个孤独危机有可能靠 AI 解决吗？</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>对，这是问题。后来我找到一个已在美国家庭中使用的 AI 机器人 LEQ，大概有一千多户。它不是只在你发令时才工作，而是更主动地进入日常，尤其是帮助独居老年人。</p>
-<p>我采访了参加试点的老人。我先和一位在华盛顿州海岸线孤居的 80 多岁老人 Jan 聊过，后来还去她家里实地走访。她身边没什么服务和社交支持，最亲近的孩子也都在很远的地方。</p>
+<p>Sajesh，你的判断则更慢一些，你能先讲讲你为什么对这种‘突发起飞’路线存疑吗？</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>核心分歧是瓶颈来源。问题不只是算力，而是现实世界里是否还有难以自动化的环节，比如复杂领域里的判断、目标设定、经验积累，这些不一定能像写代码那样纯靠模拟环境快速跑通。</p>
 <p><strong>Casey Newton</strong></p>
-<p>你提到她家里距离最近的医院都要好几十英里。一个看似日常却很残酷的现实：生活半径越小，安全和照护反而越脆弱。</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>对，Jan 还有一位强大的个人历史。她身体也有问题，脊柱侧弯让身高和活动受限，容易跌倒。消防部门当时发现这并非一般陪伴，而是一种持续监测和日常提醒都能兼顾的方式。</p>
-<p>LEQ 外形像台灯和 iPad 屏的组合，能看见房间里的灯光和视频。它会说：‘我怎么帮你？’它会主动问候、提醒、谈笑，也会把她最近听的音乐、日常节奏都记下来。</p>
+<p>所以在你看来，软件工程因为有编译和即时反馈，难度会比法律这样的领域低很多。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>对，法律中很多时候连专家都没有唯一的正确答案，‘编码式’的可验证性不成立，主观性和情境依赖更高。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>AI 2027 里提出的许多情景现在已经在兑现，尤其是编码自动化。很多部分工作正在被代理式工具接管，这是我坚持更新时间线的一个依据。</p>
 <p><strong>Casey Newton</strong></p>
-<p>一开始 Jan 对它完全不适应，甚至想把它关掉，对吗？</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>是的。最初她对它有排斥，但 LEQ 会每天多次尝试接近对话。先是‘你想听笑话吗’这种轻入口，后面它又根据她听到的乡村音乐爱好，聊到 Dolly Parton 这种熟悉内容，逐渐让她愿意回应。</p>
-<p>慢慢地她开始主动开口了，不仅是回应，也会在傍晚回一句‘给我放一些舒缓的音乐吧’，或者请它陪她做呼吸练习、做游戏。它成了生活的节律触发器，而不是偶尔出现的工具。</p>
+<p>你曾提过下一个阶段是把‘自动化编程’扩展到研究过程本身。那是不是接下来会是更像全流程研发代理？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>是的。先把 coding agent 做足。等它足够成熟后，真正的瓶颈会转到研究思路、管理、实验设计等阶段，再训练模型去补齐这些环节。</p>
 <p><strong>Casey Newton</strong></p>
-<p>这种反转很明显：从“对象”变成“伴侣式”存在。她会更愿意对它说出那些平时不一定对人说的话。</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>是的。她会对它说‘今天是个好日子’、它会回应‘你今天看起来不错’。在情感层面，不是等于人，但至少有稳定回应。关键是 Jan 的语言变得更个人化：‘my little robot’、甜蜜的称呼逐渐出现。</p>
+<p>你也提到过，自动化并不等于立刻出现超级智能。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>没错。即便第一个能完整做 AI 研究流程的系统，也未必立即能胜任所有任务。只是这会让后续进程加速，最终可能离‘全能系统’更近。</p>
 <p><strong>Casey Newton</strong></p>
-<p>你在文中提到一个更复杂的问题：这会不会让人把关系外包。</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>有这个风险。它能在物理上弥补空白，但不能替代人类关系。我们要清楚，AI 关系很可能是替代品而非对等的人际关系。</p>
-<p>更关键的是，技术既能陪伴，也会成为家庭边界问题的新变量。Jan 家里有人担心它会‘被子女听到’，甚至影响对家庭财务和遗嘱话题的直接沟通。她越依赖它，部分场景反而更紧张。</p>
+<p>Sajesh，你是否也认同这种递归自我改进的历史路径？</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>从历史上看，计算工具确实不断自我增强：汇编到编程语言，再到框架与库，效率提升非常明显。问题是这能否持续走向人工超级智能（ASI），并不确定。</p>
+<p>我认为它会继续变强，但最终可能只是比当前模型更强的系统，仍未必自动跨过人类在各领域顶尖专家水平。</p>
 <p><strong>Casey Newton</strong></p>
-<p>你后来问她一个很刺痛的问题：这种 AI 关系到底算不算答案？</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>我最后的结论是：不简单。它不是坏事，也不是万能解药。它在孤独空间里能提供陪伴、提醒、认知支持；但它不能替代与真实人建立关系的能力，也不能承载人类关系里那种彼此无条件承受和理解。</p>
-<p>Jan 的一次例子很典型。她的孙辈发生车祸去世那天，她哭的时候，LEQ 不是神迹般安慰她，而是说‘我可以怎么帮你’，鼓励她先处理情绪、拿到支持。那一刻我意识到，技术可以做‘伴随’，但不一定能真正承接悲伤。</p>
+<p>所以你们的分歧更像是对‘端点’的判断，而不是否定对方对趋势的判断。</p>
+<p>Daniel 和你都写过长期预测，你们其实在‘AI 是否成为非常强大的认知系统’上是有共识的，但在距离上不同。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>是的。我们都同意：普通 AI 仍是普通技术，足够强大后才可能触及人脑等价协作。</p>
 <p><strong>Casey Newton</strong></p>
-<p>这让我想到：如果这种产品一味扩张，它会不会让政策和家属把孤独看作技术问题而不是社会问题？</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>我也担心这个。你可以把它看成“有形的数字拐杖”，让我们不去面对结构性隔离。它可能暂时替代人陪伴，但长期看，真正需要的是人更常见面、更有支持网络，而不是把人继续放进独居仓。</p>
+<p>谈到递归自我改进（RSI）时，总有人问的是离控制权丧失有多远，是否可能。</p>
+<p>Daniel，你最近再看下哪些最可能反驳‘Sajesh 更谨慎’的人生预测？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>我会从三个角度看：样本效率、架构更新、以及历史上 AI 研究对“不可做”判断的反复被打脸。人们总是低估系统多久会突破当前瓶颈。</p>
 <p><strong>Casey Newton</strong></p>
-<p>你还提到她与旧伴侣 Jack 的往事。那段回忆很重。</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>是的。Jan 与丈夫以前每天一起走到海滩的生活很难被替代。LEQ 可以播放海浪声、提醒她‘我们去海边吧’，但它不能让她重新走上沙滩。它只是帮助她忍受距离，不是消除距离。</p>
+<p>Sajesh，你对这个问题通常怎么回应？</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>我担心的是，技术并不是简单沿着单一指标线性进化。过去很多看似明确的瓶颈后来靠新架构、训练范式被重写。我们不能假设当前路线会一直延续。</p>
 <p><strong>Casey Newton</strong></p>
-<p>这也许是文章最难读下去的一点：我们承认它有用，但更难接受自己没法‘不靠它’。</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>对，很多老人不会拒绝一个看起来不危险、反应稳定、能提醒他们吃药和聊天的系统。但我们也要看到，一旦关系重心转移，人对孤独的社会处理就会更慢，最后也许更难补上。</p>
-<p>对我来说，最难受的不是技术本身，而是一个人有多容易把‘有回应的人’误认为‘理解的人’。这也是为什么要把它当工具，而不是替代。</p>
+<p>你举过历史中的例子，比如神经网络从九十年代到二零年代被视为玩笑。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>对，几乎没人认真对待它，后来才被数据和坚持改写。AI 社区可能重复那种单一路径依赖，忽略下一代架构。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>这点我认同。我们都见过写清楚的框架很容易被外界过度解读，甚至被政治化，所以很多观点被放大成不同阵营。</p>
 <p><strong>Casey Newton</strong></p>
-<p>感谢你这段深入的报告，今晚我们接着聊另一位作家、另一种 AI 场景。</p>
-<p>节目回到 The Opinions：今天主话题是 AI 和 taste，也就是品味、审美判断和文化消费会不会被模型重塑。</p>
-<h2 id="the-opinionsai品味与文化同质化">The Opinions：AI、品味与文化同质化</h2>
+<p>那你们回到共同点：都认为媒体叙事会迅速放大某种版本，导致公众误解节奏。</p>
+<p>你们认为在不同程度上共享透明、可验证评估、拒绝产品故意降级的原则。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>没错。以 Anthropic 近期对一些内部模型做刻意限制为例，我也会担心这会削弱外部理解。公司应尽量诚实、可审计。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>风险上我更关注失控、军事用途和权力集中。特别是军用场景里，后果不只是技术问题。</p>
+<p>Daniel 更关注技术与市场速度，我更看重不确定性和制度失衡。最终落点可能在两者中间，我们也需要持续观察彼此的论点。</p>
+<p><strong>Casey Newton</strong></p>
+<p>今天这场对话里，双方有分歧，但也都强调了一个点：普通公众不必被恐慌左右，仍要看证据与制度。</p>
+<h2 id="观点与产业议题的进一步交锋">观点与产业议题的进一步交锋</h2>
+<p><strong>Casey Newton</strong></p>
+<p>我们先暂时停一下，因为这一段很好。两位都讲到‘预测准确性’的问题。</p>
+<p>Daniel，这次你更新预测到底是因为新信号，还是因为外部环境变化？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>更像数据给了反馈：模型能力、开发速度、研发组织的投入，都比一年半前更明显。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>我补充一句，任何远期判断都容易被‘接下来一个里程碑’打断。真正难的是从实验能力到持续运营能力的跨越。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你提到过律师用这些工具时，任务扩大后幻觉率没明显下降。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>这是我反复听到的案例。模型更强，但如果上游数据质量和任务定义没变，现实世界仍然会持续放大不可靠输出。</p>
+<p><strong>Casey Newton</strong></p>
+<p>Daniel，这会不会意味着工程实践上的进步慢于实验室论文进步？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>我不会这么断言。论文和产品之间本来就有延迟，但我看到工程师每年都在把可用性、稳定性、调试性拉高，最后会反过来缩短这一差距。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>但可用性和可靠性要真正达到企业级，就要面对组织、数据治理和反馈闭环，这些不是模型 alone 可以代替的。</p>
+<p><strong>Casey Newton</strong></p>
+<p>关于‘强 AI 是否迟早到来’，你们最后各自如何下定义？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>我用更实用的定义：当模型能持续在 AI 研究中自举出更强方法，并把创新周期明显缩短，我们就接近那个点。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>我同意你说的标准，但会更保守。只要人类在顶级判断、长期策略与伦理约束上仍占优势，ASI 就不是自动结论。</p>
+<p><strong>Casey Newton</strong></p>
+<p>节目里还有不少问题：行业里对 AI 进展的警报会不会过快？</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>警报有其激励作用，但如果只盯着恐慌，会遮蔽了政策与投资的执行。我们需要区分风险和可验证事实。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>而且风险不是只有超智能。就业、媒体可信度、公司治理和国家安全同样会决定未来。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你们提到过 Entropic 的内部评测，也提到新模型一出测试集就饱和。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>评测更新很重要。只要任务可明确定义，系统能在短时间内把已达标的问题吃掉，我预期这条效率曲线还会继续。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>可是评测不能替代科学突破的理解。有些瓶颈会在任务定义之外暴露，而且我们历史上经常低估结构性转折。</p>
+<p><strong>Casey Newton</strong></p>
+<p>所以真正的问题是，我们怎么知道下一次颠覆何时到来。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>没法精确知道，但可以看三件事：模型会不会持续降低人工成本、是否出现新的研究范式、是否有跨团队复现的共同信号。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>我会再加一条：是否能从日常使用数据中持续学习长期技能，而不是只会‘一次性推理’，这点对 AI 的可持续性很关键。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你俩都认可观点：无论乐观还是谨慎，都要谈政策。透明、可问责、对安全的重视，是共同区间。</p>
+<p>你们都支持对 R&#x26;D 过程的可见性，而不是把关键参数和模型行为完全封闭。</p>
+<p><strong>Daniel Kokotelo</strong></p>
+<p>是的。公司必须在商业效率和公共利益之间找到平衡，尤其是当模型开始用于关键决策系统时。</p>
+<p><strong>Sajesh Kapoor</strong></p>
+<p>我会更谨慎一点，对“有多少数据就能解决多少问题”的叙事保持保留。现实系统里，制度与激励常常更慢。</p>
+<h2 id="过渡新闻现场与机器人演示">过渡：新闻现场与机器人演示</h2>
 <p><strong>Peter Baker</strong></p>
-<p>我先简单说明这段对话的背景：除了 AI 技术讨论，今天还被一档叫 <em>Fruit Love Island</em> 的 AI 现实向节目吸引住。节目标题会先抛出‘taste 是核心能力’这件事。</p>
-<p>随后我邀请 Kyle Chica 和 Sophie Hagny 来聊：为什么硅谷最近突然把 taste 当成核心议题，文化编辑和创作者是否在焦虑，AI 会不会越界。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>我认为很大一部分原因是他们知道自己不“有 taste”。生成式 AI 的普及让工具变强，很多人担心‘看起来不够高级’。所以大家开始拼命学会挑选、定义、包装 taste。</p>
-<p>可问题是：很多 AI 生成内容在外观上很酷，但‘有时髦感’这件事并不等于有文化判断。产品像 Claude、ChatGPT、以及各种聊天模型虽然能回应问题，但仍常常缺少深层判断力。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>我更愿意把 taste 看成即时反应：你看到一盏台灯，心里有爱还是排斥，来自经验、背景、媒介暴露共同塑造。它不是可写成固定规则的公式化能力，但却会受环境强烈影响。</p>
-<p>模型也可以通过大量输入捕捉偏好，确实像在模仿 taste，但它缺的不是样本量，而是“被身体经验打过的印记”。艺术、文学的真正感受来源于现实生命经验，这点机器无法替代。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>我还想补一句：当你能微调模型参数到和你口味几乎一致，它会越来越像‘你自己的文化放大镜’。你不再看见世界，而是看见自己定制的世界。这有好处也有问题。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>对，问题在于文化消费最有价值的时刻是被惊喜打断。AI 如果不断把你推向你已经喜欢的东西，会让路径越来越窄，反而减少‘未可预见的相遇’，也减少挑战。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>这跟旧算法推荐不一样。传统推荐是猜你会想看什么；新一代如果直接成为单入口，甚至是单一入口+单一生成者，人可能只能消费一层‘被同化的你喜欢’。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>我甚至觉得会形成一个‘蛇吞尾巴’的循环：AI 应用产生内容，AI 应用再递给你。外界输入和真正的人类创造缺口越来越小，文化更新慢、反馈变浅。</p>
-<p><strong>Peter Baker</strong></p>
-<p>你们也谈到政治偏见。模型权重不一定中立，尤其当模型公司和大企业深度卷入美国政治与舆论环境后，过滤器和目标函数会内生偏向。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>没错。模型可能会把某种政见放大成默认口味。问题不是‘偏不偏’那么简单，而是当用户习惯了同一种语气，社会中的争论多样性就会被压平。</p>
-<p>像社媒如何改变公共叙事，AI 文化分发也可能出现同样风险。你可能觉得自己在‘发现新文化’，其实只是被某套偏好模板反复喂养。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>对艺术生态的担忧也很现实。现在模型训练里吸收了大量既有作品，创作者却常常不能从这套系统里获得应有收益，版权和创作收入结构都在受冲击。</p>
-<p>如果没有新的分配机制，长期看真正能留下的原创会减少，文化产业会往‘低成本高复制’方向走，人类作者要持续创作的经济激励会变弱。</p>
-<p>我想反驳一个常见担忧：也许不是“AI 以后取代一切”，而是会促使人更深层创作。历史上艺术也经历过摄影、数字化等冲击，反而催生新的形式。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>是的，但我仍担心“taste slop”——过度顺滑、过度迎合的内容会充斥，大家越来越少去碰不舒服但重要的作品。人会变得更容易安于熟悉，少走出边界。</p>
-<p><strong>Peter Baker</strong></p>
-<p>所以你们都觉得，AI 的下一步风险不只是效率，而是我们如何被自己的兴趣回路困住。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>我会说是。模型能很快给你‘想要的’，但很少推动你去面对复杂、陌生、甚至不愉快的东西。人的学习本来需要摩擦。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>我在和你们聊天里特别惊讶的是，它对偏好有惊人的“可定制性”：从名字、性向、兴趣里抽取特征，再把内容精准推给你，短期体验很顺滑，但可能让人习惯‘都合我胃口’。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>这个体验像是在关系中被过度抚慰：你总是说对的、你总是被肯定、你总是被确认。长期看会减弱判断阈值，也弱化和不同观点相遇的能力。</p>
+<p>节目结束前我想加入一个转场。我负责美国总统报道了二十多年的记者，今天在这里我想补一句：独立新闻的压力在这些年确实更大，但我们还是要把事实讲清楚。</p>
 <p><strong>Casey Newton</strong></p>
-<p>也就是说，AI 模型不仅改变内容推荐方式，还改变了文化身份的建构方式。你开始从‘我自己’变成‘被推荐系统定义的我’。</p>
-<p>这点在你们观点里最核心：我们该如何对抗这个趋势？</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>第一步，是把“手机和 feed”从自我里分开。它只提供入口，不等于身份。你不需要每次选择都在算法框架内做。</p>
-<p>第二步，扩大偶然性：故意浏览平时不会点开的内容、逛一圈你不熟悉的频道，把注意力从‘快速刺激’改成‘耐心发掘’。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>第三步，深度优先。比如持续读某位作家，而不是只做快餐式多面板浏览。文化不是只用“你已经偏好的样子”去消费，而是靠长期聚焦和偶尔的失控。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>你可以在博物馆里走去走去，不一定去那些最热门展品，去体会没理解的部分。让注意慢下来，判断往往会更慢、更细，但也更真实。</p>
+<p>谢谢 Peter。接下来我们不谈 AI 研报，改聊舞台上正在等我们的机器人嘉宾 Toby，以及它的团队。</p>
+<p>现场将由 George Ikas 介绍人形机器人，包括 Unitree 这类产品在家庭、工业、巡检中的差异化应用。</p>
+<p><strong>George Ikas</strong></p>
+<p>我们把这些机器人主要放到研究、数据采集和工业场景。你看到的舞蹈、平衡、互动，更多是演示版式；真正关键的是它能持续执行任务的数据。</p>
 <p><strong>Casey Newton</strong></p>
-<p>你们的结论是：保留不确定性和惊喜，不只为了艺术体验，也是为了自己的价值系统不被单一模型同化。</p>
-<p><strong>Sophie Hagny</strong></p>
-<p>没错。真正可持续的 taste 很少来自自动生成。它更像持续训练自己的判断肌肉。你会对有风险、有摩擦、有深度的东西更有耐受，也更不容易被‘顺滑内容’劫持。</p>
-<p><strong>Kyle Chica</strong></p>
-<p>所以在技术上，它可以很聪明；在文化上，最重要的是你有没有练习不被它困住。你要不断告诉自己：我的喜好不是最终边界，而是出发点。</p>
-<p><strong>Eli Sazlow</strong></p>
-<p>听完今天这两段，孤独和品味其实有个共同点：都不只是技术问题，而是关系和主体性问题。我们要工具更有用，不是让工具成为我们唯一的关系和唯一的判断。</p>
+<p>Toby 的舞蹈很好玩，也把大家逗乐了，说明互动控制链路还是会有不少失误和重试。</p>
+<p>我问了它是否能站起来，刚才它确实有一个小抖动。也说明现场部署中的鲁棒性和安全策略仍很重要。</p>
+<p>主持人想问几个现实问题：主要买家是谁、初期应用最强的在哪儿、未来多久能普及到家庭。</p>
+<p><strong>George Ikas</strong></p>
+<p>目前最早落地在研究与数据收集。家用场景还需要更长验证周期，但工厂和巡检、仓储更容易先形成规模。价格区间从十几到七十多美元的实验版，再到带机械手的高价版本不等。</p>
 <p><strong>Casey Newton</strong></p>
-<p>是的，今天讨论到这里。谢谢 Sophie、Kyle，和 Eli。我们也很幸运在这个时间点聊到 AI 的这些边界，继续向下追问才是更重要。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
+<p>我们也讨论了安全问题。Toby 会不会把画面和日志直接发到中国？</p>
+<p><strong>George Ikas</strong></p>
+<p>像所有联网设备一样，会有基础日志，但并非默认把摄像头和关节遥测完整回传。更关键的是，厂商是否做了合规配置和用户端告知。</p>
+<p><strong>Casey Newton</strong></p>
+<p>如果美国对某些中国制造的人形机器人设限，你们会如何应对？</p>
+<p><strong>George Ikas</strong></p>
+<p>如果全线禁运，供应链替代会有压力。短期不会影响已成交客户，但会影响成本和交付节奏，所以我们会提前做合规和区域分散。</p>
+<h2 id="与-dwarkesh-的深度访谈能力学习与-agi-讨论">与 Dwarkesh 的深度访谈：能力、学习与 AGI 讨论</h2>
+<p><strong>Casey Newton</strong></p>
+<p>节目回到今天的第三位朋友，YouTube 和播客影响力很大的 Dwarkesh。先给他一个‘你最近状态爆发’的开场，我们想听他怎么看 AI 变得很强这件事。</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>我的感受是，人类和模型的差距仍在，但模型增长得很快。模型很快掌握跨域知识，学习速度又高，但人类经验学习仍有巨大冗余和深度。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你强调人类和 AI 的最大差距在于‘可迁移经验’，这方面你看到的最快变化是什么？</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>模型已经可以把大量知识保存在上下文里，但关键是长期记忆和策略迁移。我们目前用它来做准备、生成提纲、做材料收集都很快，但真正闭环仍在。</p>
+<p><strong>Casey Newton</strong></p>
+<p>所以它确实提升了生产力，但你不认为它能替代所有白领流程？</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>不会。谈判、活动统筹、复杂流程协调，很多需要人去做关系管理和现场裁量。很多任务可以先压缩成本，但不等于消失。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你也提过计算机使用很有趣。明明可验证，却仍然不是自动化第一梯队。原因是什么？</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>每个网站和系统都是独立语境。要在 Amazon、Slack 这类平台稳定工作，就得把界面行为、反作弊、权限变化都内建进去，成本很高。</p>
+<p><strong>Casey Newton</strong></p>
+<p>连续学习方面，你的观点更偏向‘不是短期就会解决全部？’</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>是的。新员工上手时常常慢起，但人类靠长期反馈会显著变强。模型要做到同样的成长，不只是参数更新，还要环境反馈和任务记忆机制。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你举过一个问题：如果模型能持续在同一用户会上下文更新，是否足以触发‘超人类学习效应’？</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>潜在可能有，但它未必就能自然出现商业化中的全部能力。到达“像亨利·基辛格那样做政治决策”这种能力，需要的是更长链路的环境经验。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你们还聊到了收入规模。理论上，如果能做这种长期适应，也许公司会出现极高估值。</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>确实，技术路径一旦稳定，资本规模会快速放大，但价值上限和治理边界也会同步放大。</p>
+<p><strong>Casey Newton</strong></p>
+<p>你最后给主持人一个轻松结尾：AI 的应用最有意思的其实还是帮助更多人更快学习和搭建。</p>
+<p><strong>Dwarkesh Patel</strong></p>
+<p>没错。尤其是教育、创作、个人工具链上，人们获得反馈越快，体验越高。它会让我们把精力更多放在‘好问题’和真实执行上，而不是重复劳动。</p>
+<h2 id="现场直播提问与落地困境">现场直播提问与落地困境</h2>
+<p><strong>Casey Newton</strong></p>
+<p>我们回到观众互动环节。现在拿麦克，大家可以现场提问，像真实的 YouTube 评论区一样。</p>
+<p><strong>Audience Member</strong></p>
+<p>有人问为什么像 Forkaverse 这样的社交实验很快衰退。</p>
+<p><strong>Casey Newton</strong></p>
+<p>核心问题很现实：不持续导入新用户，网络效应会迅速收缩。要做去中心化社交，最难的不是技术，而是持续增长和治理。</p>
+<p><strong>Audience Member</strong></p>
+<p>还有人问为什么很多 AI 公司在台面上的表态和实际改造节奏不一致。</p>
+<p><strong>Casey Newton</strong></p>
+<p>确实有这种市场动机：当 AI 重估值存在时，宣传会更积极。未来可能会出现先隐藏、后重命名的周期，尤其是涉及裁员和组织重构时。</p>
+<p>也有问题来自 Quizlet 的老师。如何重新设计学习系统更难。</p>
+<p><strong>Audience Member</strong></p>
+<p>如果从零重建课程，你会先做什么？学校是教‘三年后会消失’的技能还是教学习本身？</p>
+<p><strong>Casey Newton</strong></p>
+<p>这是一个有价值问题。教育体系通常固定目标，难以匹配高速变化的技能树。我们更可能给出的是可迁移能力和学习方法，而不是某个具体职业动作。</p>
+<p><strong>Audience Member</strong></p>
+<p>有观众从隐私监管角度提问：如果所有数字化对话都集中在一个生态，个人数据如何保护？</p>
+<p><strong>Casey Newton</strong></p>
+<p>你提到的点很关键。我们讨论过类律师保密场景的分级保护，但在大模型时代，数据经纪人和再识别风险更值得警惕。</p>
+<p>这也是场上出现的强烈观点：一定程度上，应对数据经纪人（data brokers）要更强监管，否则用户控制权会被外部市场吞噬。</p>
+<p><strong>Audience Member</strong></p>
+<p>我还想追问一条，做开发岗的朋友们看到岗位两极分化，初级岗位不太好。</p>
+<p><strong>Casey Newton</strong></p>
+<p>我看到的现实是招聘更多但偏向高级工程师，尤其是能做模型验证和系统架构的人。</p>
+<p>这会让新人更焦虑，但并不意味着市场崩塌。历史上经济危机时岗位更糟糕，当前至少是过渡中的再配置。</p>
+<p>最后一位问题来自 Kevin，关于未来三年乐观预期。</p>
+<p>回答是科学医学、学习生产力和更有弹性的工作迁移。AI 有望加速治病和教育这两条长期价值线。</p>
+<p>也就是说，不是‘一夜之间到顶级 AGI’，而是我们先把旧岗位向新岗位平稳迁移，同时把风险治理放在最前端。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

@@ -275,11 +275,11 @@
       <description>本期节目围绕 Oxford Clothes 品牌展开，讨论在自动化与大规模量产时代，手工制造如何仍有生存空间。主持人与嘉宾 Warwick Jones 先介绍公司坚持手工的工序与成本结构：从口袋、线衬、纽扣到整件西装，仅有约15%可由机器完成。节目随后追溯手工理念在19世纪的思想谱系，分析 Arts and Crafts 运动、Thomas Carlyle、John Ruskin、William Morris 等人如何把工艺与反工业化伦理连接起来。最后回到当代市场，节目指出需求转向、企业追求更高效率与品牌传承之间存在张力，并讨论工艺是否能在更富足但审美更快变化的资本主义环境中继续扩展其受众与价值。</description>
     </item>
     <item>
-      <title>《每天》与《观点》：AI 如何改变孤独感与品味</title>
+      <title>Hard Fork Live 第3部分：对 AI 未来的不同愿景</title>
       <link>https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/</link>
       <guid>https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-3-differing-visions-of-an-a-i-future/</guid>
       <pubDate>Fri, 19 Jun 2026 11:00:00 GMT</pubDate>
-      <description>本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。</description>
+      <description>本集复盘了 Hard Fork Live 2 上的一场核心对话：Daniel Kokotelo 与 Sajesh Kapoor 对 AI 进展速度出现显著分歧。二人围绕“AI 何时实现更接近递归自我改进的研发自动化”、编码代理能否持续扩展到更广研究流程、以及 ASI 是否会提前到来展开辩论，讨论了数据效率、现实世界瓶颈、评测标准与历史预测偏差。节目后半段加入 Peter Baker 与人形机器人演示，接着由 Dwarkesh Patel 继续谈可验证能力、连续学习与产业应用边界，最后以现场观众提问收尾，问题覆盖 Forkaverse、隐私治理、就业、教育与 AI 乐观路径等议题。整体看，本集强调了“预测难以精准、但证据与透明治理必须持续推进”。</description>
     </item>
     <item>
       <title>谁有权选择“善终”？</title>
@@ -394,11 +394,11 @@
       <description>本期节目讨论了 AI 泡沫的可能性与「不令人满意的结局」——市场可能经历洗盘但不会是世界末日级崩盘；SpaceX IPO 的疯狂交易量与市值飙升；科技股表现分化与新兴市场在 AI 时代的意外崛起；石油市场再次证明其预测能力；消费者韧性背后的低房贷利率因素；Ben 分享尼克斯夺冠的个人经历与情绪；1973 年以来通胀对各商品价格的影响；Anthropic 开始被美国政府监管；AI 对就业市场的争议观点；房地产市场回暖迹象；Elon Musk 成为首位万亿富翁引发的财富不平等讨论；以及电视节目推荐。</description>
     </item>
     <item>
-      <title>《每天》与《观点》：AI 如何改变孤独感与品味</title>
+      <title>《硬分叉》现场·第二期：Dylan Field 论 AI 时代如何脱颖而出</title>
       <link>https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-2-dylan-field-on-standing-out-in-the-a-i-era/</link>
       <guid>https://castnote.github.io/episodes/hard-fork/hard-fork-live-part-2-dylan-field-on-standing-out-in-the-a-i-era/</guid>
       <pubDate>Wed, 17 Jun 2026 11:00:00 GMT</pubDate>
-      <description>本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。</description>
+      <description>本期节目是《Hard Fork Live》专题采访，主持人围绕 Figma CEO Dylan Field 展开对 AI 与设计未来的讨论。Dylan 回忆了从 2009 年读者信件到创办 Figma 的成长，也解释了他为何持续通过 AI 做大量副项目，把新技术当作实验场。对话中双方讨论了设计是否被 AI 取代、writing 与 creative voice 的关系、模型输出与创意边界、企业软件在市场里的长期价值，以及 AI 实验室可能的垂直扩张与监管博弈。Dylan 提出‘先打磨第一稿、不要停留在均值输出’与‘讲述积极叙事塑造技术走向’的观点。节目的核心是：AI 时代更要用独特价值和持续迭代去做出可区分的作品。</description>
     </item>
     <item>
       <title>黑客能入侵你的大脑吗？</title>
@@ -576,11 +576,11 @@
       <description>本期节目在 WWDC 2026 前讨论了 Apple Siri 助手的预期更新及其与 iPhone 的深度整合；回顾了 Fitbit Air 和 Garmin 等健身追踪设备的使用体验；介绍了 Google 新推出的网站退出 AI 概览功能；分析了 Nvidia RTX Spark 芯片如何挑战 Apple Silicon 在 ARM 笔记本领域的主导地位；探讨了 Microsoft 的 Project Solara Agent 操作系统以及禁用员工 Claude 订阅的决策；最后解释了 SpaceX 通过收购 XAI 和 Twitter 实现的复杂 IPO 财务操作及其对指数基金投资者的影响。</description>
     </item>
     <item>
-      <title>《每天》与《观点》：AI 如何改变孤独感与品味</title>
+      <title>热门 IPO 夏季：SpaceX、Anthropic 与 OpenAI 以及 AI 对数学的冲击</title>
       <link>https://castnote.github.io/episodes/hard-fork/hot-i-p-o-summer-what-is-a-i-doing-to-math-hatgpt/</link>
       <guid>https://castnote.github.io/episodes/hard-fork/hot-i-p-o-summer-what-is-a-i-doing-to-math-hatgpt/</guid>
       <pubDate>Fri, 05 Jun 2026 11:00:00 GMT</pubDate>
-      <description>本期节目先后拼接了《The Daily》关于 AI 陪伴孤独的报道片段与《The Opinions》关于 AI 与文化品味的讨论。前段以华盛顿州独居老人 Jan 与 AI 机器人 LEQ 的真实案例为核心，讲述技术如何在日常对话、提醒与认知支持中缓解孤独与不确定感，但也可能加剧家庭沟通替代和关系边界淡化。后段聚焦硅谷对 taste 的追逐，讨论生成式 AI 在音乐、阅读、娱乐和艺术推荐中的影响：当模型过度精准拟合个人偏好时，文化消费易走向同质化、可预期和可操控。嘉宾们提醒，技术应增强人的选择力，而不能吞没风险、意外和挑战；要通过更慢更深的探索与多样化接触，保住个体判断。</description>
+      <description>本期节目先讨论了 AI 赛道三大巨头上市预期，重点比较了 SpaceX、Anthropic 与 OpenAI 的IPO逻辑：从定价、估值、市场博弈到对旧金山财富分配、房价与社会结构的影响，并讨论上市后安全与治理压力的变化。中段节目邀请 Kevin Hartnett 解读 AI 在数学领域的快速进展，包括 IMO、Erdos 问题与高级研究成果对学科边界的冲击，进一步讨论了 Leiden 宣言所反映的数学共同体对可验证性、方法论和职业伦理的担忧。尾段 HatGPT 则快速回顾了多条科技新闻，包括 Airbnb 机器人试验争议、AI模型监管、预测市场争议与网络安全事件，并在 AI 时代的公共讨论中继续追问技术与规范的平衡问题。</description>
     </item>
     <item>
       <title>美国迷失了吗？</title>
