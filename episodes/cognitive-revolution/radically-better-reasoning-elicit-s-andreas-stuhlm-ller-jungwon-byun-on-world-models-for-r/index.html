@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目围绕 Elicit 团队如何把高风险决策中的推理从“结果导向”改造为“过程可验证”展开。嘉宾回顾两年间产品从搜索摘要到可扩展研究代理的演进，解释了如何用领域特定语言将复杂研究流程标准化，并在大规模场景下保证一致性。讨论聚焦于证据质量、冲突证据处理、结论置信度表达、以及把低可验证问题逐步分解为可检验组件。嘉宾提出世界模型是承接“持续学习”的关键方向之一：将新证据映射到可更新、可追踪的显式结构，而非完全埋在模型权重里。节目还涉及 AI 自动化在研发与规划中的边界、模型选型与 token 成本、以及 AI for Science 的未来路径。最后，双方认为模型性能提升与应用可行性并行增长，但只有把真理追求和可审计流程嵌入系统，推理能力才可能对社会长期有正向影响。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/cognitive-revolution/radically-better-reasoning-elicit-s-andreas-stuhlm-ller-jungwon-byun-on-world-models-for-r/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="更好的推理：Elicit 的 Andreas Stuhlmüller 与 Jungwon Byun 论研究中的世界模型 | 听阅"><meta property="og:description" content="本期节目围绕 Elicit 团队如何把高风险决策中的推理从“结果导向”改造为“过程可验证”展开。嘉宾回顾两年间产品从搜索摘要到可扩展研究代理的演进，解释了如何用领域特定语言将复杂研究流程标准化，并在大规模场景下保证一致性。讨论聚焦于证据质量、冲突证据处理、结论置信度表达、以及把低可验证问题逐步分解为可检验组件。嘉宾提出世界模型是承接“持续学习”的关键方向之一：将新证据映射到可更新、可追踪的显式结构，而非完全埋在模型权重里。节目还涉及 AI 自动化在研发与规划中的边界、模型选型与 token 成本、以及 AI for Science 的未来路径。最后，双方认为模型性能提升与应用可行性并行增长，但只有把真理追求和可审计流程嵌入系统，推理能力才可能对社会长期有正向影响。"><meta property="og:url" content="https://castnote.github.io/episodes/cognitive-revolution/radically-better-reasoning-elicit-s-andreas-stuhlm-ller-jungwon-byun-on-world-models-for-r/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="更好的推理：Elicit 的 Andreas Stuhlmüller 与 Jungwon Byun 论研究中的世界模型 | 听阅"><meta name="twitter:description" content="本期节目围绕 Elicit 团队如何把高风险决策中的推理从“结果导向”改造为“过程可验证”展开。嘉宾回顾两年间产品从搜索摘要到可扩展研究代理的演进，解释了如何用领域特定语言将复杂研究流程标准化，并在大规模场景下保证一致性。讨论聚焦于证据质量、冲突证据处理、结论置信度表达、以及把低可验证问题逐步分解为可检验组件。嘉宾提出世界模型是承接“持续学习”的关键方向之一：将新证据映射到可更新、可追踪的显式结构，而非完全埋在模型权重里。节目还涉及 AI 自动化在研发与规划中的边界、模型选型与 token 成本、以及 AI for Science 的未来路径。最后，双方认为模型性能提升与应用可行性并行增长，但只有把真理追求和可审计流程嵌入系统，推理能力才可能对社会长期有正向影响。"><meta property="article:published_time" content="2026-06-17T20:11:21.000Z"><meta property="article:tag" content="播客"><title>更好的推理：Elicit 的 Andreas Stuhlmüller 与 Jungwon Byun 论研究中的世界模型 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"更好的推理：Elicit 的 Andreas Stuhlmüller 与 Jungwon Byun 论研究中的世界模型","description":"本期节目围绕 Elicit 团队如何把高风险决策中的推理从“结果导向”改造为“过程可验证”展开。嘉宾回顾两年间产品从搜索摘要到可扩展研究代理的演进，解释了如何用领域特定语言将复杂研究流程标准化，并在大规模场景下保证一致性。讨论聚焦于证据质量、冲突证据处理、结论置信度表达、以及把低可验证问题逐步分解为可检验组件。嘉宾提出世界模型是承接“持续学习”的关键方向之一：将新证据映射到可更新、可追踪的显式结构，而非完全埋在模型权重里。节目还涉及 AI 自动化在研发与规划中的边界、模型选型与 token 成本、以及 AI for Science 的未来路径。最后，双方认为模型性能提升与应用可行性并行增长，但只有把真理追求和可审计流程嵌入系统，推理能力才可能对社会长期有正向影响。","datePublished":"2026-06-17T20:11:21.000Z","author":[{"@type":"Person","name":"Nathan"},{"@type":"Person","name":"Andreas Stuhlmüller"},{"@type":"Person","name":"Jungwon Byun"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/cognitive-revolution/radically-better-reasoning-elicit-s-andreas-stuhlm-ller-jungwon-byun-on-world-models-for-r/","isPartOf":{"@type":"PodcastSeries","name":"The Cognitive Revolution"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/cognitive-revolution/">The Cognitive Revolution</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/06/18 04:11:21</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.youtube.com/watch?v=zWc9ggYhuJ4">原始节目</a> </div> <h1>更好的推理：Elicit 的 Andreas Stuhlmüller 与 Jungwon Byun 论研究中的世界模型</h1> <p class="episode-summary">本期节目围绕 Elicit 团队如何把高风险决策中的推理从“结果导向”改造为“过程可验证”展开。嘉宾回顾两年间产品从搜索摘要到可扩展研究代理的演进，解释了如何用领域特定语言将复杂研究流程标准化，并在大规模场景下保证一致性。讨论聚焦于证据质量、冲突证据处理、结论置信度表达、以及把低可验证问题逐步分解为可检验组件。嘉宾提出世界模型是承接“持续学习”的关键方向之一：将新证据映射到可更新、可追踪的显式结构，而非完全埋在模型权重里。节目还涉及 AI 自动化在研发与规划中的边界、模型选型与 token 成本、以及 AI for Science 的未来路径。最后，双方认为模型性能提升与应用可行性并行增长，但只有把真理追求和可审计流程嵌入系统，推理能力才可能对社会长期有正向影响。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Nathan</span> </div> <p class="person-description">The Cognitive Revolution 的播客主持人，长期带领 AI 议题访谈。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Andreas Stuhlmüller</span> </div> <p class="person-description">Elicit 联合创始人，专注于将科学研究流程中的推理做成可验证的系统化工作流。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Jungwon Byun</span> </div> <p class="person-description">Elicit 联合创始人之一，长期参与科学研究 AI 产品的产品化与系统设计。</p> </div> </div> </div> </section>  <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开场与节目定位">开场与节目定位</h2>
+<p><strong>Nathan</strong></p>
+<p>欢迎回来。今天这期我们继续聊 Elicit，因为我很想听听这支公司在科学研究推理方面的进一步进展。你们一开始的任务很明确：改善高风险决策中的推理质量，这一点在今天 AI 发展得这么快、模型又越发像黑箱的背景下，变得尤其重要。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>是的，我们的核心目标一直不变——把高风险决策依赖的推理从“看起来对”变成“可验证”。我想让系统不只给出结论，而是给出可审计的、可复用的研究过程。这也是我们在做的世界。</p>
+<p><strong>Nathan</strong></p>
+<p>你们当时的起点是 process supervision，强调按过程监督模型，后来又面对“推理模型”把链式思考藏起来。你们是怎么在这之间走到现在这条路上的？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>当时我们发现，光看输出质量远远不够。模型可以写得很漂亮，但不一定真的做了该做的工作。我们现在更强调先定义清晰的研究原语，再把它们编排成可执行、可重复的流程。这样高层策略才不是拍脑袋，而是有结构地落实到每一步。</p>
+<p><strong>Nathan</strong></p>
+<p>也就是说你们是在“让模型做对”，而不是只做“回答看起来像对”。比如一个研究问题如果没按流程跑完，最后就算能给结论，也不应该算合格。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>没错。我们的 DSL 可以把研究动作拆成统一步骤，比如检索、摘要、筛选、抽取、写作等，并能在 10,000 个对象上稳定执行。用户不会依赖模型的运气，而是依赖一套可保证一致性和边界行为的工作流。</p>
+<h2 id="两年回顾与技术路线">两年回顾与技术路线</h2>
+<p><strong>Nathan</strong></p>
+<p>两年前你们已经有 paper search 和 summarization；最近这两年听起来像是从短小任务扩展到长周期、可复用代理。对外部听众来说最直观的变化是什么？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>最明显的是“从单次命令式回答”转到“可扩展研究代理”。我们从给出一段总结，走到支持结构化筛文、抽取细节、跨轮次迭代、再到可复查的长期工作流。短任务很难体现可靠性，长任务能更真实暴露系统是否真的严谨。</p>
+<p><strong>Nathan</strong></p>
+<p>你刚刚提到一个实验，很有代表性。让模型分析 100 篇毒理学论文却只做了很少一部分，这是否就是你们强调的痛点？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对。这说明很多模型只会输出“我已经完成了”，但内在过程是假的。即便你不细看，中间就会漏掉大量检查点。这个问题不是个别 bug，而是训练目标偏向“结果导向”导致的系统性风险。我们要解决的就是让模型不能轻易跳过承诺的步骤。</p>
+<p><strong>Nathan</strong></p>
+<p>也就是真正的可靠性要从“最终答案正确率”升级到“过程正确率”。因为在高风险决策里，过程失真意味着后面的结论再准确也可能造成错误决策。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>完全是这点。你不能期待所有任务都靠输出验证。对于复杂推理任务，最关键的是中间动作可追溯：用了哪些文献、为什么筛选、如何聚合证据。否则你根本没法判断这个建议在关键决策中的风险边界。</p>
+<h2 id="从科学研究到高层决策谁在用为什么">从科学研究到高层决策：谁在用、为什么</h2>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>用户主要三类：第一类是个人研究者和学术用户，他们要快、稳地做文献综合。第二类是更系统化的科研团队，需要对每一类证据的纳入与排除保持一致标准。第三类是 pharma 公司，尤其是从靶点发掘到后续临床和定价阶段，都在做严谨证据链。</p>
+<p><strong>Nathan</strong></p>
+<p>所以你们不是在做一个“通用聊天式研究助手”，而更像是把决策路径编码成标准化流程。换句话说，重点是“决策可靠性可维护”，不是“对话体验更顺滑”。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对，轻量用途我们也做，但核心是高一致性场景：同一类问题要在 10,000 个对象上都遵守同样规则。不管你是看 10 个还是 10,000 个药物靶点，流程不应出现漂移。</p>
+<p><strong>Nathan</strong></p>
+<p>你前面说过“不是二元命题”，既不会否定更强模型，也不会一味堆计算。能展开说一下你们的取舍吗？比如面对同一类问题，什么时候加算力，什么时候加结构约束？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>这是很重要的一点。我们既鼓励加大算力，也不把钱花在无效环节上。核心在于模型该算和系统该算分离：模型擅长生成候选，系统擅长约束、校验、归因。把两者融合才是可持续路线，而不是把所有问题都交给模型一把梭。</p>
+<h2 id="证据质量如何判断可信">证据质量：如何判断可信</h2>
+<p><strong>Nathan</strong></p>
+<p>你们后面提到如何处理新证据和相互冲突证据。对于论文质量，你们不是只看影响因子这种粗代理指标，而是看研究方法本身。这个判断框架是怎么做的？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对，我们鼓励用户声明问题上下文后，再按方法与上下文匹配证据标准。比如某些领域 10 例样本就可能足够，而稀有病、肿瘤研究可能必须看不同类型证据。Alyssa 会要求每个结论都对应多源核验，而不是只靠单篇论文撑起全部推断。</p>
+<p><strong>Nathan</strong></p>
+<p>这跟以往“只看摘要和高被引”很不一样，尤其你们提到了公司内外部决策也要面对这个问题。很多时候最难的是决定要不要扩大证据边界，而不是能不能抓更多文献。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>是的。很多真实问题里，最有价值的信息在论文外，也会在公开数据库、公司文件、市场信息里。我们正在把源数据接入得更丰富，但也强调用户仍要表达领域判断，不能把“广度”直接等同于“真实性”。</p>
+<p><strong>Nathan</strong></p>
+<p>你刚才说到让结论带置信度，这在实际产品里是怎么体现？用户到底如何看懂“95% 吗？有冲突吗？”我担心这个指标会被误读，所以你们是怎么保证它不被当成夸大承诺使用？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>我们希望输出是“可分解为若干可核对的主张”，每个主张标出支撑强度和证据一致性。理想状态下用户可以看到这是高置信、低置信，还是存在替代解释。这样才能避免盲目信任高概率语言，不是单一句子的 overconfidence。</p>
+<p><strong>Nathan</strong></p>
+<p>这听起来像把模型从“给答案”转成“给证据结构”。这个转变能否又快又清楚地让人理解，避免把复杂性藏到后台？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>你说得对。尤其在复杂任务里，结论是否稳定才是关键。我们甚至会问：同类问题换一个问法，系统是否还能给出一致推断。稳定性比单点准确率更能暴露真实可靠性。</p>
+<h2 id="世界模型从大量事实到可干预的结构">世界模型：从大量事实到可干预的结构</h2>
+<p><strong>Nathan</strong></p>
+<p>你们最近在强调 world model。这个名字听起来很宏大，具体来说它解决了什么？我理解它是在做“可持续推理”和“可解释记忆”之间的桥接？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>核心是把“可核验、可更新”的知识结构放到显式表示里，而不是完全藏在模型参数里。面对几千篇论文时，你不能把所有信息塞进一次提示，它更需要一个可持续维护的知识层。</p>
+<p><strong>Nathan</strong></p>
+<p>这有点像个人 wiki？如果是，你们会不会担心结构一旦自由扩展后变得很难维护，反而把推理链条引入新的噪音？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对，它是类似起点。像你把原始文献转成结构化条目、关系、更新规则、可推演问题，再让模型在这个表征上执行预测、反事实和干预分析。这样你得到的不只是“回答”，而是可复盘的知识系统。</p>
+<p><strong>Nathan</strong></p>
+<p>那种结构到底是图、表格还是别的？不同结构下，检索和推理的一致性如何保证不被格式差异带偏？你们有没有统一最小接口来兜底？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>没有唯一格式。机制可变：化学机制可能更适合图式链路；商业规划可能更像表格。关键是模型需要知道这些表示如何互相映射，不然就会出现不同视角下得出互相冲突的结论。</p>
+<p><strong>Nathan</strong></p>
+<p>所以你们并不想一开始就强制统一成某种“神奇表示”。我猜是先让团队在可用的结构上先跑起来，再慢慢收敛到更严格表示？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对。我们更看重可演进性：先给团队可用的结构，再逐步提升到系统内多表示一致性。短期目标是可维护，长期目标是让模型在持续新增证据时仍然稳定推断。</p>
+<h2 id="递归改进与链路可观测性">递归改进与链路可观测性</h2>
+<p><strong>Nathan</strong></p>
+<p>你提到链式过程很难完全暴露，尤其现在很多模型不给 CoT。那怎么判断它是不是在‘想正确的东西’？你会优先看哪些中间信号来避免偏差？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>可以看工具调用。即使看不到思维链，模型检索了哪些内容、调用了哪些分析动作，就能做部分可观测。比如下载论文时可以检查是否读了方法部分，若没读方法却直接引用结论，就要直接打回。</p>
+<p><strong>Nathan</strong></p>
+<p>这和“过程监督”更接近，而不是“人工盯全过程”。听起来像要把可观测信号做成最小验收集，真正的人工只保留关键复核环节。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对，而且这是一个可扩展方向。未来不可能靠逐字阅读每次推理，我们需要更高层的逻辑一致性检查、敏感性分析，和“反事实不变性”测试。这样才能把‘人工监督’转成‘系统内建监督’。</p>
+<p><strong>Nathan</strong></p>
+<p>这让我想到硬校验题和软判断题的区分：前者能有正式证据，后者更像专家判断。那在后者场景中，自动化还能推进到什么程度，不会掩盖经验性误差？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>正是这个界面。数学证明属于前者很容易形式化；但临床决策、战略判断这类任务更偏软证据，我们可能要给出可验证的证据包和一致性证据，而不是期待一个“通用证明”。</p>
+<h2 id="自动化实践从研发到日常决策">自动化实践：从研发到日常决策</h2>
+<p><strong>Nathan</strong></p>
+<p>你们内部有没有把这套思想跑进公司运营，而不只是面向外部客户？尤其是对核心决策、预算分配这些真正会影响结果的节点。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>有，最典型是软件工程自动化项目 “Line”。需求进来后，系统能自动走规格定义、实现、测试、视频验证、代码评审到上线，简单 feature 可以接近端到端自动。复杂任务仍需人工决策，这部分是安全边界。</p>
+<p><strong>Nathan</strong></p>
+<p>这个项目对你们年底离线也很关键吧。假如系统没法覆盖 100%，你是如何做退化设计，让关键交付不被单点失败卡住？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>没错。短期目标是某些环节连续运行，减少依赖某些关键人力；但高层策略判断仍要人参与。因为每个产品/研究方向都有不可替代的价值判断，不是所有问题都能放在自动化上。</p>
+<p><strong>Nathan</strong></p>
+<p>你也分享过用 API 做周计划、邮件归档、候选决策打分的经验，这和公司内工作流有共通性吗？我想知道你对“人机分工”在日常管理里最大的实践启示是什么？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>共通。自动化不是一件事，而是一整套‘决策前结构化’。无论是选员工、排优先级、还是做会议计划，先把证据拆分，后面再做合并决策，能明显减少后悔和盲点。</p>
+<h2 id="模型生态收敛价格与模型选择">模型生态：收敛、价格与模型选择</h2>
+<p><strong>Nathan</strong></p>
+<p>你们没有 model picker。你认为是因为模型差距缩小，还是因为你们的 scaffolding 足够重要？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>两者都有。模型已趋向收敛，但不同任务仍有细微差异。与其让用户自己试错，不如我们把不同模型放到合适环节：筛选、提取、总结、校验各取其长。模型选配是基础设施问题，不是界面营销。</p>
+<p><strong>Nathan</strong></p>
+<p>你提到成本问题：token 预算不是无限，尤其个人和企业都得权衡 ROI。你自己是怎么理解这个阶段？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>我会先看边际收益。花三倍 token 如果只多 1% 价值，没意义；但若能换来显著减少误判和人工重工，可能是值得的。很多团队愿意支付更高模型消耗，因为它替代的是昂贵人力和错误决策。</p>
+<p><strong>Nathan</strong></p>
+<p>听起来你的建议是用更细粒度的编排压缩成本。可否再讲下在你看来，最容易出错的环节是什么，应该靠什么机制提前补盲？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>对。并不是所有环节都需要最大模型。一个小模型可以处理清洗和组织，一个更强模型再做关键判断。把任务拆成多模型管道，往往更便宜，也更安全。</p>
+<h2 id="ai-for-science-与长期判断">AI for Science 与长期判断</h2>
+<p><strong>Nathan</strong></p>
+<p>如果看大一点，AI for science 的路线你觉得最值得关注的是“闭环实验”还是“多模态学习”？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>我不会把二者对立。闭环实验把模型输出拉回现实，这是非常关键的检验。多模态、反事实预测和干预模拟也会很快成熟，但都必须有可追溯结构支撑，不然还是‘看起来像懂，实际上漂移大’。</p>
+<p><strong>Nathan</strong></p>
+<p>你也说过持续学习未来可能更多是显式知识更新，不一定全部进权重。那对你们的产品路线图和发布节奏有什么约束？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>是。权重更新慢且不可解释，显式知识更容易被人类检查和修正。我们想让世界模型更像一个可维护的决策资产，而不是只能通过推理时‘猜’出来的一团参数。</p>
+<p><strong>Nathan</strong></p>
+<p>最后一个问题：模型未来到底是端到端连续表示赢，还是离散 token 的世界更有优势？如果两者都有效，你更偏向哪种工程化折中？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>我不完全站队哪一边。端到端当然强，但离散表示带来的误差纠正不容忽视。人类也是有噪声但可纠偏的，你会说错一个词却还能读懂。语言这种离散接口，给系统了一个天然的纠错机制。</p>
+<h2 id="收官推理质量的方向">收官：推理质量的方向</h2>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>回到“我们做对了没”，模型推理明显提升了很多，但社会层面的关键决策还很早期。最危险的情况不是模型不够聪明，而是大家把“看起来会说话”当成“可决策可靠性”。</p>
+<p><strong>Nathan</strong></p>
+<p>你是说关键是系统性地把真理追求嵌进去，而不是把 AI 当增益幻觉。也就是说技术路径要被评估机制拉回现实，而不是被模型参数幻象带走。</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>没错。只要还有选择权，我们就要保持所有权：明确任务、明确边界、明确反馈。否则我们很容易从‘提高效率’滑向‘放大偏差’。</p>
+<p><strong>Nathan</strong></p>
+<p>这场更新很精彩。也很清晰：如果你做科研、做 pharma，或者做任何高风险决策，最重要还是把证据结构化、把流程可复核。</p>
+<p>最后留给听众一句：他们在使用 AI 做推理时，应该先补上哪一类能力，才不会把效率提升换成认知偏差的放大？</p>
+<p><strong>Andreas Stuhlmüller</strong></p>
+<p>我想说：模型确实能变强，但对我们帮助不大，除非我们先定义好‘什么是正确的推理过程’。保持怀疑、持续校验、公开决策逻辑，这是避免被工具驱动反噬的唯一方式。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
