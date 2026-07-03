@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [Dylan Patel of SemiAnalysis：为什么硬件-软件协同设计是 AI 的真实 100x](/episodes/training-data/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ai-s-real-100x/): Training Data · 2026-07-02 ([Markdown](/episodes/training-data/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ai-s-real-100x.md))
 - [Kent Beck 如何塑造科技行业](/episodes/pragmatic-engineer/how-kent-beck-shapes-the-tech-industry/): The Pragmatic Engineer Podcast · 2026-07-01 ([Markdown](/episodes/pragmatic-engineer/how-kent-beck-shapes-the-tech-industry.md))
 - [Anthony Kaldellis：罗马帝国、拜占庭帝国与帝国的兴衰 | Lex Fridman Podcast #498](/episodes/lex-fridman/anthony-kaldellis-roman-empire-byzantine-empire-rise-fall-of-empires-lex-fridman-podcast-4/): Lex Fridman Podcast · 2026-06-30 ([Markdown](/episodes/lex-fridman/anthony-kaldellis-roman-empire-byzantine-empire-rise-fall-of-empires-lex-fridman-podcast-4.md))
 - [Grant Sanderson——AI 与数学的未来](/episodes/dwarkesh/grant-sanderson-ai-and-the-future-of-math/): Dwarkesh Podcast · 2026-06-30 ([Markdown](/episodes/dwarkesh/grant-sanderson-ai-and-the-future-of-math.md))

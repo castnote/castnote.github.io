@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Dylan Patel of SemiAnalysis：为什么硬件-软件协同设计是 AI 的真实 100x</title>
+      <link>https://castnote.github.io/episodes/training-data/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ai-s-real-100x/</link>
+      <guid>https://castnote.github.io/episodes/training-data/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ai-s-real-100x/</guid>
+      <pubDate>Thu, 02 Jul 2026 23:50:53 GMT</pubDate>
+      <description>本期节目以 SemiAnalysis 创始人 Dylan Patel 的成长经历为起点，讲述他如何从家庭环境中的论坛参与者，经过线上匿名写作与职业波动，逐步转向半导体研究品牌建设，并借助持续公开研究建立行业口碑。节目重点解析 AI 推理基准体系变化：模型、软件和硬件持续快速迭代使传统一次性基准失效。Dylan 进一步解释 inference 成本-吞吐-延迟之间的权衡、软件硬件协同设计带来的非线性效率收益，以及大模型与数据中心扩张下的供应链与资本关系。访谈最后讨论了 TPU 与 GPU、Neocloud 与 hyperscaler、以及未来十年中基础设施多元化与执行速度竞争。节目结论是：AI 的优势不在单点突破，而在持续更新系统能力。</description>
+    </item>
+    <item>
       <title>Kent Beck 如何塑造科技行业</title>
       <link>https://castnote.github.io/episodes/pragmatic-engineer/how-kent-beck-shapes-the-tech-industry/</link>
       <guid>https://castnote.github.io/episodes/pragmatic-engineer/how-kent-beck-shapes-the-tech-industry/</guid>
