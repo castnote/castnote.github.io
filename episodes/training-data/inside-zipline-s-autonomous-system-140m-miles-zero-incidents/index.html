@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="节目回顾了 Zipline 从卢旺达医疗场景起步到成为全球最大商业级自动化飞行网络之一的演进。嘉宾围绕如何交付“生命线级”物流展开：为何先做医疗需求、为何选择在监管下推进、以及将单一飞行器思路扩展为包含库存、调度、导航、测试与维护的整体系统。讨论还覆盖了双飞控冗余、太阳活动与导航异常、软件与硬件一体化测试、空域协同和监管沟通机制，说明其如何在美国形成商业化落地模型。后半段聚焦规模化：从年均百万次到目标每日百万次交付，强调制造、供应链和运营效率成为新瓶颈。节目认为成本下降到与道路配送可比后，自动化配送将重塑城市生活、供应结构和基础设施投资逻辑。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/training-data/inside-zipline-s-autonomous-system-140m-miles-zero-incidents/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="Zipline 的自动驾驶系统：1.4 亿英里，零事故 | 听阅"><meta property="og:description" content="节目回顾了 Zipline 从卢旺达医疗场景起步到成为全球最大商业级自动化飞行网络之一的演进。嘉宾围绕如何交付“生命线级”物流展开：为何先做医疗需求、为何选择在监管下推进、以及将单一飞行器思路扩展为包含库存、调度、导航、测试与维护的整体系统。讨论还覆盖了双飞控冗余、太阳活动与导航异常、软件与硬件一体化测试、空域协同和监管沟通机制，说明其如何在美国形成商业化落地模型。后半段聚焦规模化：从年均百万次到目标每日百万次交付，强调制造、供应链和运营效率成为新瓶颈。节目认为成本下降到与道路配送可比后，自动化配送将重塑城市生活、供应结构和基础设施投资逻辑。"><meta property="og:url" content="https://castnote.github.io/episodes/training-data/inside-zipline-s-autonomous-system-140m-miles-zero-incidents/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Zipline 的自动驾驶系统：1.4 亿英里，零事故 | 听阅"><meta name="twitter:description" content="节目回顾了 Zipline 从卢旺达医疗场景起步到成为全球最大商业级自动化飞行网络之一的演进。嘉宾围绕如何交付“生命线级”物流展开：为何先做医疗需求、为何选择在监管下推进、以及将单一飞行器思路扩展为包含库存、调度、导航、测试与维护的整体系统。讨论还覆盖了双飞控冗余、太阳活动与导航异常、软件与硬件一体化测试、空域协同和监管沟通机制，说明其如何在美国形成商业化落地模型。后半段聚焦规模化：从年均百万次到目标每日百万次交付，强调制造、供应链和运营效率成为新瓶颈。节目认为成本下降到与道路配送可比后，自动化配送将重塑城市生活、供应结构和基础设施投资逻辑。"><meta property="article:published_time" content="2026-07-08T03:46:27.000Z"><meta property="article:tag" content="播客"><title>Zipline 的自动驾驶系统：1.4 亿英里，零事故 | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Zipline 的自动驾驶系统：1.4 亿英里，零事故","description":"节目回顾了 Zipline 从卢旺达医疗场景起步到成为全球最大商业级自动化飞行网络之一的演进。嘉宾围绕如何交付“生命线级”物流展开：为何先做医疗需求、为何选择在监管下推进、以及将单一飞行器思路扩展为包含库存、调度、导航、测试与维护的整体系统。讨论还覆盖了双飞控冗余、太阳活动与导航异常、软件与硬件一体化测试、空域协同和监管沟通机制，说明其如何在美国形成商业化落地模型。后半段聚焦规模化：从年均百万次到目标每日百万次交付，强调制造、供应链和运营效率成为新瓶颈。节目认为成本下降到与道路配送可比后，自动化配送将重塑城市生活、供应结构和基础设施投资逻辑。","datePublished":"2026-07-08T03:46:27.000Z","author":[{"@type":"Person","name":"Alfred Lin"},{"@type":"Person","name":"Keller Rinaudo Cliffton"},{"@type":"Person","name":"Eric Watson"},{"@type":"Person","name":"Pat Grady"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/training-data/inside-zipline-s-autonomous-system-140m-miles-zero-incidents/","isPartOf":{"@type":"PodcastSeries","name":"Training Data"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/training-data/">Training Data</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/07/08 11:46:27</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://sequoiacap.com/podcast/inside-ziplines-autonomous-system-140m-miles-zero-incidents/">原始节目</a> </div> <h1>Zipline 的自动驾驶系统：1.4 亿英里，零事故</h1> <p class="episode-summary">节目回顾了 Zipline 从卢旺达医疗场景起步到成为全球最大商业级自动化飞行网络之一的演进。嘉宾围绕如何交付“生命线级”物流展开：为何先做医疗需求、为何选择在监管下推进、以及将单一飞行器思路扩展为包含库存、调度、导航、测试与维护的整体系统。讨论还覆盖了双飞控冗余、太阳活动与导航异常、软件与硬件一体化测试、空域协同和监管沟通机制，说明其如何在美国形成商业化落地模型。后半段聚焦规模化：从年均百万次到目标每日百万次交付，强调制造、供应链和运营效率成为新瓶颈。节目认为成本下降到与道路配送可比后，自动化配送将重塑城市生活、供应结构和基础设施投资逻辑。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Alfred Lin</span> </div> <p class="person-description">本期播客主持人，负责推动话题并提问。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Keller Rinaudo Cliffton</span> </div> <p class="person-description">Zipline 联合创始人，负责系统化建设与增长战略。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Eric Watson</span> </div> <p class="person-description">Zipline 系统工程与安全负责人，讲解飞控安全与可靠性设计。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Pat Grady</span> </div> <p class="person-description">本期访谈的共创者之一，持续追问工程与增长关键问题。</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Elon Musk</span>  </div> <p class="person-description">节目中被提及其在工程组织中强调“反复质疑需求”与设计原则的观点。</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开场与起源背景">开场与起源背景</h2>
+<p><strong>Eric Watson</strong></p>
+<p>我还记得刚去卢旺达创业时，经常到医院和实验室拜访使用我们的医生与检验技师，直接问他们进展和反馈。那时我还是个刚起步的工程师，以为大家主要关心无人机本身，但得到的反馈却很朴素：患者24小时都可能出现问题，需要持续配送，为什么服务只有12小时？</p>
+<p><strong>Alfred Lin</strong></p>
+<p>尤其是运送挽救生命的血液时，服务时段太短风险更大。</p>
+<p><strong>Eric Watson</strong></p>
+<p>对，这就是关键洞见。虽然产品当时还不成熟，我们已经触达真实且重要的需求，所以出现了明显的产品市场契合。客户真正想要的是更稳定可用的服务，而不是更花哨的技术。</p>
+<h2 id="节目对话从硬件公司到系统公司">节目对话：从硬件公司到系统公司</h2>
+<p><strong>Alfred Lin</strong></p>
+<p>欢迎两位来到节目。你们在 Zipline 已经做了很长时间。Keller 是联合创始人，Eric 负责系统工程与安全。今天我们聊聊无人机世界、无人系统，以及你们在 LLM 出现前就进入硬件赛道的经历。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>很好。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们不喜欢自己被称为无人机公司，尽管你们现在可能是世界上规模最大的无人驾驶无人机公司。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>我们一直想做一家极度以客户为中心的公司。实际上我们的客户不在乎无人机本身，更不关心幕后技术。客户只在乎：能下载 App，选好商户与商品，然后按一下按钮五分钟左右收到东西。所以我们一开始就把体验放在第一位，而不是把注意力放在某个单一技术上。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>不过本节目讨论的就是技术。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>很高兴聊这个。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们2011年起步、2014年转向。这远早于 AI、机器人和大模型热潮。你们反而在这些技术到来前就搭好了轨道。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>那会是“搞机器人公司是最傻的事情”阶段。我23、24岁，和 Eric 也加入了队伍。我们想象一个自动化物流系统：更快、成本更低、接近零排放。很多投资人第一反应是‘这在美国合法吗？’，答案是当时并不合法。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>当时不允许超视距飞行（BVLOS）。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>而且在很多场景我们几乎不能飞。既然在美国违法，我们就转向更需要这类服务的市场。2016年在卢旺达起步，直接为医院和基层医疗机构输送输血。政府愿意与我们深度合作，帮助把它合法化。</p>
+<p><strong>Eric Watson</strong></p>
+<p>把它变成合法。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>是的，通过申请监管豁免。我们最初觉得把飞机做得很炫就够了，结果启动后发现第一年几乎是灾难。前八个月我们签了21家医院合同，却只服务了1家。</p>
+<p><strong>Eric Watson</strong></p>
+<p>那段时间我在卢旺达几乎没什么时间睡觉。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>美国这边也很苦。凌晨才会突然被叫醒，分发中心开机后系统全线崩溃。后来才意识到：真正难的不是飞行器，而是整体方案。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>也就是说，硬件本身只是15% 的复杂度。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>对。剩下的是库存管理、与民航监管协同、与国家医疗系统接入、下单与需求预测等配套系统。很多人看到的是看起来很酷的飞机，但真正让它像“神乎其神、可靠、24/7覆盖”的是整套物流系统。</p>
+<p><strong>Eric Watson</strong></p>
+<p>再回到24/7 的经验：一线反馈说用户在用血时不能等。于是我们先从12小时扩展到更长服务时段，最终逐步跑到全年无休。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>现在是全天候全年运营。到过圣诞节我都会打电话给各配送中心感谢和巡检。我们从1家医院扩到20家，再到500家，现在覆盖全球八个国家，5000个医疗设施，已经是地球上规模最大的商业级自动化系统之一。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>这个规模有多大？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>累计已超1.4亿次商业飞行里程。粗略算就是把车在美国开往太阳与返回很多遍的量级。</p>
+<p><strong>Eric Watson</strong></p>
+<p>美国有很多路。按比例算，大约每条路都能覆盖三十多遍。</p>
+<p><strong>Pat Grady</strong></p>
+<p>这是很惊人的规模。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>更关键是影响面。宾夕法尼亚大学的研究显示，借助 Zipline 在8个国家，产科死亡率下降了51%。不少场景每年能挽救约1万到1.2万人生命，而且规模在增长。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们和美国国务院的合作是怎样展开的？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>去年12月宣布了5.5亿美元合作，目标是把生命挽救能力扩展到更多已运营国家。美国关闭了 USAID 后，需要新的国际合作方式。策略上叫‘商业外交’，核心是把美国 AI 与机器人能力用于发展中世界，让对方在获得服务的同时形成就业与技术增长，而不是依赖低质量援助。</p>
+<h2 id="安全测试与系统可靠性">安全、测试与系统可靠性</h2>
+<p><strong>Pat Grady</strong></p>
+<p>你们已经运行10年规模最大系统，肯定踩过很多坑。相比在办公室写代码的工程师，这里会遇到哪些完全没想到的问题？</p>
+<p><strong>Eric Watson</strong></p>
+<p>我们最初主要配送救命物资。客户随时随地需要，天气变化也不能停。一个很不直观的点是‘太阳天气’：太阳活动会影响电离层，进而让 GPS 无线电信号快慢异常，导致导航偏差。我们因此把导航系统（GNSS）做得更强，也做了 GNSS 之外的冗余，坏境再恶劣也能安全飞。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>Eric 负责安全。你们这十年最大的安全经验是什么？尤其是你提到的计算冗余系统。</p>
+<p><strong>Eric Watson</strong></p>
+<p>关键经验是要假设系统里任何部件都可能故障。飞控电脑负责接收传感器数据并向执行机构下指令，但软件或连接器都可能出问题。因此我们做了双主控架构，两台飞控并行算出控制指令，再由第三个仲裁器实时监测健康状态，告诉全机该听谁。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>太阳辐射导致位反转（bit flip）也是我们必须考虑的。</p>
+<p><strong>Eric Watson</strong></p>
+<p>如果仲裁器坏了，主控仍会继续飞行，始终保持任务执行。我们曾在交付后出现主控轻微故障，自动切到备份并自行返航降落，完全安全。这样的冗余是我们做到2.5百万人次、1.4亿英里零事故的基础。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>这并不神秘，像空客 777 也有双飞控。区别在于成本。航空公司电脑可能贵到百万级，我们要把这些安全理念压缩到几十到几百美元的消费级供应链上。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你刚提到飞机只占15%，能展开讲讲其他85%的工程层级吗？比如避障检测与应对。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>HITL 是个好例子，简称 Hardware-In-The-Loop。核心问题是：为什么要测试？因为复杂系统不是一次写完就能上线，尤其是把百余人协作拼起来的场景。先在真实世界前把大量交互试出来。</p>
+<p><strong>Eric Watson</strong></p>
+<p>我们既做硬件测试、软件测试，也做系统级联调测试。测试场景有很多，目标不是证明‘暂时没坏’，而是故意把它推到极限，找到第一条断点。比如高温、潮湿、腐蚀、振动、紫外线等严苛环境下都必须验证。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>只为了给你个量级：飞机有700个由我们自研的关键组件，43个大型子组件。连着陆舱、飞控板、动力分配、控制器、电池、动力管理都得自己做，因为现成元件无法满足推重比等指标。</p>
+<p><strong>Eric Watson</strong></p>
+<p>很多汽车或航天公司会让供应商声明可靠性，但那意味着把命运外包给别人。我们是供应商自己，也就是自己能做到更快修复。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>你知道波音一次软件更新平均要多久吗？大概三年。我们需要的是飞快迭代和持续交付。</p>
+<p><strong>Eric Watson</strong></p>
+<p>对地面测试来说，我们做整机和子系统振动台、风洞、温控仓等试验。关键不是‘能不能活过测试’，而是先让它坏掉，直到看到系统边界。这样才知道下一步改哪里。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>我们会在49摄氏度高温和零下25度低温条件下测试，哪怕商业上你还没到那种极端，也要确认不会崩。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们还会在49摄氏度飞吗？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>会。高温和低温只是常见边界之一。过去的极端天气与生命线场景训练过度，让产品不会因为场景转移就失效。</p>
+<p><strong>Pat Grady</strong></p>
+<p>我很好奇你们如何处理这些交易：比如太热不该飞太冷也不该飞、暴雨也该不该飞。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>这正是我们最初血液投递场景带来的决定。只要是生命相关，就要尽可能保底；当太阳出来时，你要‘可以依赖’，这是和普通配送的心态完全不同。</p>
+<p><strong>Eric Watson</strong></p>
+<p>早期我们会冒更高风险去尝试救命任务，也有过险情。现在安全水平大幅提高，但早期事故像‘抛伞着陆’是最后兜底机制，我们也经历过。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>现在仍会很频繁吗？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>很少见。我们早期很常见，现在几乎是罕见事件。目标是做得比传统道路运输更安全。车若开1.4亿英里也会有大量事故，我们要以此为反例，持续追求更高安全边界。</p>
+<p><strong>Pat Grady</strong></p>
+<p>刚才说 1.4亿里程，你们也能到‘零事故’。这个口径听起来很有说服力。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>是的，每一架商业飞行器在寿命内都已经飞过百万英里。外界常误以为小型系统很娇气，但实际上比很多人想象得更耐用。</p>
+<h2 id="精度交付与客户体验">精度、交付与客户体验</h2>
+<p><strong>Pat Grady</strong></p>
+<p>我想问落地精度。看视频里飞机在百英尺高空，吊舱往下放货物，怎样做到风雨条件下仍准确？</p>
+<p><strong>Eric Watson</strong></p>
+<p>起飞高度大约100米，单靠主机是很难精确到位的。核心是‘吊舱下放’。主机先对准大致目标，吊舱再下落、感知环境、规避障碍并选点，最终以自身计算决定落点。</p>
+<p>这套逻辑会结合 GNSS、视觉和路径估计。比如桌面有饮料时，不会去直接砸在饮料上，而是选择更安全的落点。到地后舱门打开、货物放下，再回收吊舱、折叠后返航。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>吊舱内有自己的 NVIDIA GPU 和 AI 堆栈，不只知道‘我要投到哪里’，还会自己修正二维平面位置。好处之一是更安静。我们把噪音控制做得像树叶轻动一样，飞行器本体保持100米高度，近地只有很温和的下降舱通过。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>在美国商业化多久后才开始？技术从国内外测试到本地投放的节奏如何？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>我们大概用了六到八年，在2016年卢旺达上线商业服务，真正可大规模家庭配送的下一代服务在去年1月才在美国推出。也就是说从验证到商业扩展接近九年。</p>
+<p><strong>Eric Watson</strong></p>
+<p>在美国我们从2020年前后开始与 FAA 和监管机构深度沟通，不是等到2025年才‘一夜上线’。早期需要共享目标：安全与高效的空域整合。双方在规则框架和系统可验证性上反复对齐后才进入正式运行。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>那你们要管理这么多机群，系统工程量很大。</p>
+<p><strong>Eric Watson</strong></p>
+<p>是。我们把问题定义为基础设施层，而不是单机运输。要有网络化充电位点、订单和需求分布、航线天气和高峰预判，还要在需要时自动提醒人工介入。网络里的每一架都可自主飞行，但在关键时段仍有训练有素的监控人员。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>我们最初叫‘远程驾驶员’，后来改叫‘Fleet Commander’，因为一个人监管一架，太低效了。一个指挥员现在管理100架机。技术价值不在替代人，而是让人从重复操作转向系统策略层。</p>
+<p><strong>Pat Grady</strong></p>
+<p>当你们进入超大规模后，新问题是什么？</p>
+<p><strong>Eric Watson</strong></p>
+<p>当交付量从每年250万次增长到每天100万次，任何 10⁶ 分之一概率故障都可能每天发生。必须提前设计好：制造、维护、运营每个环节都要可扩展，否则会在高并发下被放大。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>从2014起步到2024年我们才累计第一个100万次交付；很快要从年规模转向日均100万次。目标被快速上提，意味着系统每一层都要重新拉高。</p>
+<p><strong>Eric Watson</strong></p>
+<p>对，我在前面说过，制造和维护是新瓶颈。现在的流程不足以支持百万级日常交付，所以我们要投资‘建造系统的系统’。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>美国最大的航空公司一天约5000架次航班。我们将在一个月内超过这个数量，达到每日100万次交付后，美国商业空域中的航行次数可能比现有航空公司总和高40到80倍。</p>
+<p>这会要求空中交通控制同步升级。汽车和地面道路已经是老体系，未来十倍级别的空中自治车辆需要新的管控模型。空域并不狭小，真正问题是我们能否把 AI 与自治能力写进控制系统，而不是停留在1950年代的方式。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们也在和 FAA 这边协作吗？</p>
+<p><strong>Eric Watson</strong></p>
+<p>是的。行业协同是关键。一家公司无法独自解决标准。我们推动飞行器互相广播状态、预警冲突，并与其他自治飞行体共享机制，配合监管和标准组织，把可复用的最佳实践形成通行标准。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>因为在很多国家我们都要从零搭建基础设施，所以也把空管软件一并给到民航机构。你可以把它理解为：先把基础配套全做出来，空管才能跟得上无人系统发展。</p>
+<p>美国许多空管系统仍是上世纪建成的，行业人才老龄化也很快，失事事故说明现有机制承压。很多岗位到退休年龄，补充不及时，这也是转型的外部压力。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们既做硬件，也做软件，属于高度垂直整合。和跨供应链公司相比，你们认为最大收益是什么？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>收益是可控和可迭代。操作、制造都在同一团队，软件和硬件都在同一栋楼里同一流程。出了问题可以当天从工程师桌边修，而不需要供应链三层追责。效率和执行速度几何级提升。</p>
+<p>这很痛苦，但也很有回报。很多公司先买现成零件再拼装，结果成本高、可靠性差。我们只能一项一项推倒重来：控制器、导航、电子、结构都要自研。</p>
+<p><strong>Eric Watson</strong></p>
+<p>我们确实看到这样：在汽车与摩托车这类成熟系统面前，想做可靠且低单价的物流无人机非常难。反复失败让我们逼着团队从零到一。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>办公室里固件、机械、自动驾驶、云、气动、控制、系统、制造都挨着。工厂三分钟步行距离。现场能看到每个零件如何进入总体系统，测试场也在旁边。</p>
+<p><strong>Eric Watson</strong></p>
+<p>在这套组织下，问题不会靠推诿解决。工程、制造、运营、运维在同一层次协作，任何故障都能立刻拉齐源头，‘坐下熬通宵’在这里比跨组织邮件链快太多。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>我们强调两个原则：第一，任何需求都要被挑战；第二，能删就删。Raptor 系列就是不断删掉不必要组件后的结果。删除一项看起来像‘降级’，但对复杂系统常常是提质。</p>
+<p><strong>Eric Watson</strong></p>
+<p>第一性原理思维在这里非常关键。Platform One 早期有可展开尾钩，结构复杂。我们把复杂度转移到地面系统，换成长达两厘米的小尾钩，甚至再次验证了‘少即是多’。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>这会带来反复失败：先不行、再推翻、再迭代。我们靠团队合力和硬核验收在几周内做出下一代样机，最后让新方案成功起降。</p>
+<h2 id="规模化落地商业模型与未来">规模化落地、商业模型与未来</h2>
+<p><strong>Pat Grady</strong></p>
+<p>你们现在讨论的是“送药、送血”之外的场景。是否有人会担心未来要送人类，而不仅是包裹？</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>安全、可靠、可测试是前提。要把物流基础设施做成像互联网那样的通用平台，规模会非常可观。我们必须保持谦逊，因为从单兵到基础设施的跨越非常硬。</p>
+<p>目前我们几乎每天24/7运行，已经接近5000架次。年底会到3万架次以上，并准备迈向100万架次/天。工厂产能和供应链扩张不是为了量，而是为了持续提速和超额增长。</p>
+<p>美国每天还有大约55亿次‘即时’配送，但依赖的是4000磅燃油车和大量骑手。以达拉斯样本推算，如果沿用同样消费行为，全国会变成550亿次。街道和人力供给显然撑不住。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>这个规模差异很大。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>对，所以我们认为这不是替代式需求，而是替代式增长。Uber 当年在旧金山被低估规模，现在已远超出租市场。Zipline 也会看到同样的跃迁：用户从‘偶尔下单’变成‘每天习惯性下单’，比如一位80岁的奶奶一年下单350次。</p>
+<p>我们也观察到养老院是强需求场景。许多人以为老年人不会用 App，但他们往往很会用支付与定位。iPhone、Apple ID、Apple Pay 对他们并不陌生。</p>
+<p>要服务这个体量，唯一路径是自动化。道路和城市交通不足以承载持续增长，未来要把效率转向空域，让地面回归人的生活环境。</p>
+<p>从单次成本看，过去成本是难题。2016年我们每单血液输送是30美元，实际到第一期约300美元。之后逐年降到120、75、40、28、18美元，现在美国境外长期路线大约12美元。</p>
+<p>这个夏天我们正在接近汽车配送成本以下。成本拐点意味着一个更深层变化：物流机器人的效率红利会快速向环境友好、安静、少污染和更低花费方向外溢。</p>
+<p>客户最常提到的不是炫技，而是‘不必给小费，知道每次多少钱’。透明定价和稳定服务比噱头更重要。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>你们这期内容非常完整。谢谢你们到场。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>最后补一句：硬件公司长期被低估。十年前它更像‘异类’，今天却常常是最有影响力的赛道之一。要做好硬件，不只是造机器，还要重建供应链与制造基础设施。</p>
+<p><strong>Alfred Lin</strong></p>
+<p>很好，带着‘科幻未来’的想象收尾吧。</p>
+<p><strong>Keller Rinaudo Cliffton</strong></p>
+<p>我想的是：把基础设施从‘被动修补’变成‘主动建设’，美国要把 AI 与机器人制造能力长期保持领先，我们也必须重建复杂制造与供应链能力。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

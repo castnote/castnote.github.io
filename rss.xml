@@ -6,11 +6,60 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>Dylan Patel of SemiAnalysis：为什么硬件-软件协同设计是 AI 的真实 100x</title>
+      <title>人工智能是否应该搬到太空？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/should-a-i-move-to-space/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/should-a-i-move-to-space/</guid>
+      <pubDate>Fri, 24 Jul 2026 10:00:33 GMT</pubDate>
+      <description>本期讨论以“人工智能是否应进入轨道数据中心”为核心。节目先从大量行业对卫星和空间通信的依赖入手，指出太空已成为独立基础设施体系。随后通过采访 Will Marshall、Blaise Aguera y Arcas 与 Travis Beals，分别追问 AI 是否本质上是“预测模型”、单一模型为何呈现多种内部声音，以及人类意识与自我建模的关系。节目进一步分析了 AI 计算增长对电力的长期压力，比较核能、太阳能等路线后，给出 Project Suncatcher 的设想：在轨放置轻量化、群体化卫星与太阳能供电系统，并通过激光链路处理和回传数据。最后，Will Marshall 回到其公司 Planet 的业务经验，解释高分辨率地球观测如何用于农业、应急、环保与安全场景，以及在公共透明度与敏感行动之间平衡的边界。整体围绕技术可行性、经济模型与伦理治理展开。</description>
+    </item>
+    <item>
+      <title>Factory 创始人 Matan Grinberg：软件将开始‘自行构建’的软件工厂到来</title>
+      <link>https://castnote.github.io/episodes/training-data/factory-s-matan-grinberg-the-coming-dark-factory-where-software-builds-itself/</link>
+      <guid>https://castnote.github.io/episodes/training-data/factory-s-matan-grinberg-the-coming-dark-factory-where-software-builds-itself/</guid>
+      <pubDate>Thu, 23 Jul 2026 23:50:05 GMT</pubDate>
+      <description>本期嘉宾 Matan Grinberg 回顾了 Factory 从 2023 年起步到 2025 年后转向成熟的过程，核心在于从追求“完全自主智能体”切换到贴合企业开发者工作流的 Droid CLI，并通过模型中立和可替换架构建立客户信任。对话中他强调了产品价值不在于单点模型，而在于模块化、测试验证和组织层面治理，解释了为什么要退潮性地调整路线、提前退款、保留可迁移资产，以及通过 Router 在任务级动态分配模型。节目还讨论了从 token 消耗到结果导向计费的行业演进、开放模型与闭源模型的博弈、以及公司级能力重塑：从人治、拍脑袋转向可量化的软件工厂方法，以便把工程资源更多放在高杠杆问题上。Matan 预计未来更多使用场景会从同步交互走向异步智能体执行。</description>
+    </item>
+    <item>
+      <title>Anthropic 的 Katelyn Lesse 与 Angela Jiang：构建生态而非围墙式园区</title>
+      <link>https://castnote.github.io/episodes/training-data/anthropic-s-katelyn-lesse-angela-jiang-building-an-ecosystem-not-a-walled-garden/</link>
+      <guid>https://castnote.github.io/episodes/training-data/anthropic-s-katelyn-lesse-angela-jiang-building-an-ecosystem-not-a-walled-garden/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:36:52 GMT</pubDate>
+      <description>节目围绕 Anthropic Platform 展开，主持人 Sonya Huang 与 Lauren Reeder 访谈平台负责人 Katelyn Lesse 与 Angela Jiang。嘉宾解释 Platform 同时服务内部与外部生态，目标是在内部提升发布速度与可靠性、外部增强开发者可建能力。讨论核心是平台抽象层的演进：从知识层（模型能力与标准化接口）到执行层（Managed Agents、基础设施与管理），再到协调层（策略编排）。他们强调“并非一次性封闭产品”，而是通过开放原语、connectors、MCP、标准化协议，帮助开发者组合出自己的形态。后半段聚焦上下文工程与成本治理：在模型能力提升后，用户重心从纯智能扩展转向智能、速度与成本的平衡，平台建议通过任务复杂度路由、token 分工、策略编排来提高效率。最终路线图倾向继续强化高阶策略能力与可组合性，让企业和开发者都能更低成本地复用 AI 系统。</description>
+    </item>
+    <item>
+      <title>你真的对青霉素过敏吗？（更新版）</title>
+      <link>https://castnote.github.io/episodes/freakonomics/are-you-really-allergic-to-penicillin-update/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/are-you-really-allergic-to-penicillin-update/</guid>
+      <pubDate>Fri, 17 Jul 2026 10:00:41 GMT</pubDate>
+      <description>本集首先指出大量美国人长期把“青霉素过敏”当作事实，但真实比例远低于自述。节目通过青霉素发现史与临床成本，解释免疫机制误识别为何普遍，重点拆解了“皮肤点刺—皮内测试—口服挑战”三步去标签流程，并讨论了被错误标记后在妊娠、围手术和普通感染治疗中的连锁后果。随后嘉宾从免疫学、卫生政策、诊断体系和药企与科研议程角度，说明过敏流行率上升的统计与诊断混淆，强调多数所谓过敏并非真阳性。节目最终建议公众不要凭童年记忆自我定型，应在专业评估下解除误标签，让治疗回归最合适药物与风险收益平衡。</description>
+    </item>
+    <item>
+      <title>如何像 Dick Cavett 一样开做脱口秀</title>
+      <link>https://castnote.github.io/episodes/freakonomics/how-to-host-a-talk-show-with-dick-cavett/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/how-to-host-a-talk-show-with-dick-cavett/</guid>
+      <pubDate>Thu, 09 Jul 2026 17:05:46 GMT</pubDate>
+      <description>本期节目中，Freakonomics 主持人 Stephen Dubner 与 Dick Cavett 讨论了从疫情期间独自录制到走向公开访谈的转变。Dubner 介绍了 Better in Person 的起源，指出他希望通过更亲密、以好奇心驱动的对话取代纯舞台化表演。对谈深入到 Cavett 的访谈哲学：如何即兴、如何倾听、为何不被提纲牵着走。双方还回看了他节目中的经典片段，包括与 Norman Mailer、Gore Vidal、Katharine Hepburn、Muhammad Ali、Groucho Marx 等人的高压对话。节目后半段转向电视体制与创作自由的关系、行业控制的副作用，以及长期主持所带来的心理压力与抑郁经历。</description>
+    </item>
+    <item>
+      <title>Zipline 的自动驾驶系统：1.4 亿英里，零事故</title>
+      <link>https://castnote.github.io/episodes/training-data/inside-zipline-s-autonomous-system-140m-miles-zero-incidents/</link>
+      <guid>https://castnote.github.io/episodes/training-data/inside-zipline-s-autonomous-system-140m-miles-zero-incidents/</guid>
+      <pubDate>Wed, 08 Jul 2026 03:46:27 GMT</pubDate>
+      <description>节目回顾了 Zipline 从卢旺达医疗场景起步到成为全球最大商业级自动化飞行网络之一的演进。嘉宾围绕如何交付“生命线级”物流展开：为何先做医疗需求、为何选择在监管下推进、以及将单一飞行器思路扩展为包含库存、调度、导航、测试与维护的整体系统。讨论还覆盖了双飞控冗余、太阳活动与导航异常、软件与硬件一体化测试、空域协同和监管沟通机制，说明其如何在美国形成商业化落地模型。后半段聚焦规模化：从年均百万次到目标每日百万次交付，强调制造、供应链和运营效率成为新瓶颈。节目认为成本下降到与道路配送可比后，自动化配送将重塑城市生活、供应结构和基础设施投资逻辑。</description>
+    </item>
+    <item>
+      <title>大学如何赢回公众信任？</title>
+      <link>https://castnote.github.io/episodes/freakonomics/can-universities-win-back-our-trust/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/can-universities-win-back-our-trust/</guid>
+      <pubDate>Fri, 03 Jul 2026 10:00:27 GMT</pubDate>
+      <description>节目围绕达特茅斯校长 Sian Beilock 讨论大学如何重建公众信任。她强调机构中立（institutional neutrality）与清晰使命是前提，主张招生公平、自由表达和透明治理并重，并解释恢复 SAT/ACT 与财务援助政策、用多元观点对话机制，如何提升入学公平和社区信任。讨论还涉及高校面对联邦政策压力的边界选择、校园言论秩序、领导班子建设与法务治理。后段延展到日常管理：从校长作息与资源配置，到农村医疗、AI 与心理健康项目（如 Evergreen）在学生支持中的作用，以及体育、领导力、时间稀缺下的组织取舍。节目总结认为大学要赢回信任，核心仍是教育与知识生产，同时让学生在多元社会中学会思辨与协作。</description>
+    </item>
+    <item>
+      <title>SemiAnalysis 的 Dylan Patel：为什么软硬件协同设计才是 AI 真正的 100 倍跃迁</title>
       <link>https://castnote.github.io/episodes/training-data/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ai-s-real-100x/</link>
       <guid>https://castnote.github.io/episodes/training-data/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ai-s-real-100x/</guid>
       <pubDate>Thu, 02 Jul 2026 23:50:53 GMT</pubDate>
-      <description>本期节目以 SemiAnalysis 创始人 Dylan Patel 的成长经历为起点，讲述他如何从家庭环境中的论坛参与者，经过线上匿名写作与职业波动，逐步转向半导体研究品牌建设，并借助持续公开研究建立行业口碑。节目重点解析 AI 推理基准体系变化：模型、软件和硬件持续快速迭代使传统一次性基准失效。Dylan 进一步解释 inference 成本-吞吐-延迟之间的权衡、软件硬件协同设计带来的非线性效率收益，以及大模型与数据中心扩张下的供应链与资本关系。访谈最后讨论了 TPU 与 GPU、Neocloud 与 hyperscaler、以及未来十年中基础设施多元化与执行速度竞争。节目结论是：AI 的优势不在单点突破，而在持续更新系统能力。</description>
+      <description>本期节目中，SemiAnalysis 创始人 Dylan Patel 与 Shaun Maguire、Sonya Huang 讨论 AI 时代的半导体、推理和数据中心格局。Dylan 回顾了自己从论坛、硬件维修、股票交易和会议网络中积累专业能力，并解释 SemiAnalysis 如何把技术深度与经济分析结合起来。对话重点覆盖 InferenceX 的持续推理基准测试、吞吐量与互动性的成本曲线、太空数据中心的长期可能性、每瓦智能提升、模型层、系统软件层和硬件层的共同优化，以及 NVIDIA、TPU、Trainium、Cerebras 和新云厂商在 AI 基础设施生态中的位置。节目还讨论了算力紧缺、数据中心建设、电力约束、资本支出、专用 ASIC 的局部最优风险，以及 Jensen Huang 推动多极 AI 生态的战略动机。</description>
     </item>
     <item>
       <title>Kent Beck 如何塑造科技行业</title>
@@ -64,15 +113,15 @@
     </item>
     <item>
       <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
-      <link>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
-      <guid>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
+      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
+      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
       <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
       <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
     </item>
     <item>
       <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
-      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
-      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
+      <link>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
+      <guid>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
       <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
       <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
     </item>
