@@ -23,7 +23,7 @@ const episodeCollection = defineCollection({
     transcript_source: z.string().optional(),
     source_language: z.string().default('en'),
     article_language: z.string().default('zh-CN'),
-    content_type: z.enum(['full_translation', 'summary', 'commentary', 'digest']).default('summary'),
+    content_type: z.enum(['full_translation', 'edited_reading_transcript', 'summary', 'commentary', 'digest']).default('summary'),
     rights_status: z.enum(['local_only', 'public_summary_only', 'public_full_authorized']),
     published_at: z.coerce.date(),
     tags: z.array(z.string()).default([])
