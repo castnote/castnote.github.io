@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>开放权重模型之争、Claire Stapleton 的 Google 回忆录与 Substack 反 slop 战</title>
+      <link>https://castnote.github.io/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/</link>
+      <guid>https://castnote.github.io/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/</guid>
+      <pubDate>Fri, 31 Jul 2026 11:00:00 GMT</pubDate>
+      <description>本期先从 Willie Nelson 反对得州数据中心的段子切入，转向 Silicon Valley 最近围绕 open weights 模型的公开信。Kevin Roose 与 Casey Newton 区分 open source 与 open weights，讨论 Jensen Huang、Microsoft、Meta、Mistral、Hugging Face、OpenAI、Google 与 Anthropic 在监管窗口中的不同激励，并把 Claude Fable、GPT-5.6 Seoul、Hugging Face 自动化攻击事件、Pacing the Frontier 公开信、中国模型与国际治理联系起来。中段 Kevin 采访前 Google 员工 Claire Stapleton，围绕她的新书《Don’t Be Evil》回顾 Google 早期理想主义、YouTube 平台治理、2018 年 Google Walkout、员工组织化和 AI 实验室理想主义。最后节目讨论 Substack 接入 Pangram AI 检测工具，分析 AI slop、误报、披露义务、订阅商业模式、平台成本、VC ghostwriter 与创作者对平台规则的依赖。</description>
+    </item>
+    <item>
       <title>人工智能是否应该搬到太空？</title>
       <link>https://castnote.github.io/episodes/freakonomics/should-a-i-move-to-space/</link>
       <guid>https://castnote.github.io/episodes/freakonomics/should-a-i-move-to-space/</guid>
@@ -311,18 +318,18 @@
       <description>本期节目聚焦俄乌战争中仍在持续运作的囚犯交换机制。节目先交代和平谈判受阻下，交换已成为双方维持有限合作的人道通道，并记录了乌克兰家庭对释放消息长期反复等待的现实。随后梳理了被释放乌克兰战俘面临的虐待创伤与回国后治疗压力，以及俄罗斯战俘在乌克兰营区的处境差异。内容进一步说明交换协商流程的保密性与不透明争议：尽管5月曾达成大规模交换，俄军仍有被送回前线作战、禁止投降的风险，双方公开数据仍不完整。节目指出，基辅的家庭抗议与协调组织的申诉反映，仍有大量乌方被扣留者，返回后如何适应生活与心理创伤，也成为交换后的长期挑战。</description>
     </item>
     <item>
-      <title>吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
-      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
-      <description>本期节目中，Andrew Huberman 与心理学家 Paul Eastwick 讨论吸引、择偶、约会应用、兼容性和长期关系的实证研究。Eastwick 解释了“配偶价值”和市场化择偶模型只适合描述初次接触的一部分情境；随着人们在小群体和共同活动中反复相处，个体化评价、共同故事和被理解的体验会显著改变吸引力。节目还讨论了性别差异的常见误解、男性社会支持网络、经济与年龄偏好、相似性的主观建构、社交媒体对替代伴侣的放大作用，以及性吸引和身体亲密在关系稳定中的重要性。整体结论强调，线下反复互动、共同社群、可靠支持和对伴侣独特性的感受，是形成和维持健康浪漫关系的重要条件。</description>
-    </item>
-    <item>
       <title>吸引力、契合度与浪漫关系的科学｜Paul Eastwick 博士</title>
       <link>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
       <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
       <description>本期 Huberman Lab 访谈 UC Davis 心理学教授 Paul Eastwick，围绕吸引力、伴侣选择、约会应用、兼容性和长期关系稳定性展开讨论。节目梳理了“市场价值”模型在初次相遇中的作用及其局限，解释为什么熟人相处会增加个人化偏好，让并非大众眼中最有吸引力的人也能形成强烈互相吸引。对话还讨论了依恋焦虑与回避、朋友和外界评价对关系的影响、约会软件筛选机制的缺陷、年龄与资源偏好的数据结果，以及身体亲密、共同活动、边界感和线下社交对稳定关系的重要性。</description>
+    </item>
+    <item>
+      <title>吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
+      <description>本期节目中，Andrew Huberman 与心理学家 Paul Eastwick 讨论吸引、择偶、约会应用、兼容性和长期关系的实证研究。Eastwick 解释了“配偶价值”和市场化择偶模型只适合描述初次接触的一部分情境；随着人们在小群体和共同活动中反复相处，个体化评价、共同故事和被理解的体验会显著改变吸引力。节目还讨论了性别差异的常见误解、男性社会支持网络、经济与年龄偏好、相似性的主观建构、社交媒体对替代伴侣的放大作用，以及性吸引和身体亲密在关系稳定中的重要性。整体结论强调，线下反复互动、共同社群、可靠支持和对伴侣独特性的感受，是形成和维持健康浪漫关系的重要条件。</description>
     </item>
     <item>
       <title>城市规划师、无限滚动与“公共物品”到底是什么？</title>

@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [开放权重模型之争、Claire Stapleton 的 Google 回忆录与 Substack 反 slop 战](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/): Hard Fork · 2026-07-31 ([Markdown](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight.md))
 - [人工智能是否应该搬到太空？](/episodes/freakonomics/should-a-i-move-to-space/): Freakonomics Radio · 2026-07-24 ([Markdown](/episodes/freakonomics/should-a-i-move-to-space.md))
 - [Factory 创始人 Matan Grinberg：软件将开始‘自行构建’的软件工厂到来](/episodes/training-data/factory-s-matan-grinberg-the-coming-dark-factory-where-software-builds-itself/): Training Data · 2026-07-23 ([Markdown](/episodes/training-data/factory-s-matan-grinberg-the-coming-dark-factory-where-software-builds-itself.md))
 - [Anthropic 的 Katelyn Lesse 与 Angela Jiang：构建生态而非围墙式园区](/episodes/training-data/anthropic-s-katelyn-lesse-angela-jiang-building-an-ecosystem-not-a-walled-garden/): Training Data · 2026-07-20 ([Markdown](/episodes/training-data/anthropic-s-katelyn-lesse-angela-jiang-building-an-ecosystem-not-a-walled-garden.md))
@@ -55,8 +56,8 @@
 - [金融行业中最“抗冲击”的职业路径 | LFTC](/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc/): Animal Spirits · 2026-06-22 ([Markdown](/episodes/animal-spirits/the-most-invincible-career-path-in-finance-lftc.md))
 - [首个重大 AI 安全事件即将到来：Zico Kolter 与 Matt Fredrikson（Gray Swan）](/episodes/latent-space/the-first-major-ai-breach-is-coming-zico-kolter-matt-fredrikson-gray-swan/): Latent Space · 2026-06-22 ([Markdown](/episodes/latent-space/the-first-major-ai-breach-is-coming-zico-kolter-matt-fredrikson-gray-swan.md))
 - [俄乌仍在谈判的最后几件事之一](/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj/): The Journal. · 2026-06-22 ([Markdown](/episodes/the-journal/inside-one-of-the-last-things-russia-and-ukraine-still-negotiate-on-wsj.md))
-- [吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士](/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/): Huberman Lab · 2026-06-22 ([Markdown](/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick.md))
 - [吸引力、契合度与浪漫关系的科学｜Paul Eastwick 博士](/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/): Huberman Lab · 2026-06-22 ([Markdown](/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick.md))
+- [吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士](/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/): Huberman Lab · 2026-06-22 ([Markdown](/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick.md))
 - [城市规划师、无限滚动与“公共物品”到底是什么？](/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good/): Planet Money · 2026-06-22 ([Markdown](/episodes/planet-money/an-urban-planner-infinite-scroll-and-what-is-a-public-good.md))
 - [Dr. Rachel Rubin：女性更年期与性健康中的真相：为何医生会漏掉关键信息](/episodes/diary-of-a-ceo/dr-rachel-rubin-the-truth-about-hrt-menopause-doctors-won-t-tell-women-dr-rachel-rubin/): The Diary Of A CEO · 2026-06-22 ([Markdown](/episodes/diary-of-a-ceo/dr-rachel-rubin-the-truth-about-hrt-menopause-doctors-won-t-tell-women-dr-rachel-rubin.md))
 - [自我与群体：《The One and the 99》的身份视角](/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26/): EconTalk · 2026-06-22 ([Markdown](/episodes/econtalk/the-self-the-crowd-and-social-contagion-with-luke-burgis-6-8-26.md))
