@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目围绕 ChatGPT Work 的诞生与落地展开，核心受访者 Akshay Nathan 介绍了从“代码化能力”向普通用户可用的智能工作流迁移的思路，以及在产品里如何平衡模型能力、隐私与可解释性。讨论内容包括 Work 的多模态入口、动作调用与自动化编排、记忆系统设计、参数和路由默认值策略、以及与既有生产力工具（如 Airtable、Notion）协作的路径。节目还涉及用户反馈与指标体系的变化：如何判断 AI 工具是否真的提升了执行效率、是否只是提升了“忙碌感”，并对组织与个人该如何定义可衡量目标做了探讨。采访中还提及了产品上线后的迭代机制、性能优化与团队规模扩张下的工程取舍。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/latent-space/codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="从 0 到 1000 万用户：打造 ChatGPT Work | 听阅"><meta property="og:description" content="本期节目围绕 ChatGPT Work 的诞生与落地展开，核心受访者 Akshay Nathan 介绍了从“代码化能力”向普通用户可用的智能工作流迁移的思路，以及在产品里如何平衡模型能力、隐私与可解释性。讨论内容包括 Work 的多模态入口、动作调用与自动化编排、记忆系统设计、参数和路由默认值策略、以及与既有生产力工具（如 Airtable、Notion）协作的路径。节目还涉及用户反馈与指标体系的变化：如何判断 AI 工具是否真的提升了执行效率、是否只是提升了“忙碌感”，并对组织与个人该如何定义可衡量目标做了探讨。采访中还提及了产品上线后的迭代机制、性能优化与团队规模扩张下的工程取舍。"><meta property="og:url" content="https://castnote.github.io/episodes/latent-space/codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="从 0 到 1000 万用户：打造 ChatGPT Work | 听阅"><meta name="twitter:description" content="本期节目围绕 ChatGPT Work 的诞生与落地展开，核心受访者 Akshay Nathan 介绍了从“代码化能力”向普通用户可用的智能工作流迁移的思路，以及在产品里如何平衡模型能力、隐私与可解释性。讨论内容包括 Work 的多模态入口、动作调用与自动化编排、记忆系统设计、参数和路由默认值策略、以及与既有生产力工具（如 Airtable、Notion）协作的路径。节目还涉及用户反馈与指标体系的变化：如何判断 AI 工具是否真的提升了执行效率、是否只是提升了“忙碌感”，并对组织与个人该如何定义可衡量目标做了探讨。采访中还提及了产品上线后的迭代机制、性能优化与团队规模扩张下的工程取舍。"><meta property="article:published_time" content="2026-07-28T15:26:30.000Z"><meta property="article:tag" content="播客"><title>从 0 到 1000 万用户：打造 ChatGPT Work | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"从 0 到 1000 万用户：打造 ChatGPT Work","description":"本期节目围绕 ChatGPT Work 的诞生与落地展开，核心受访者 Akshay Nathan 介绍了从“代码化能力”向普通用户可用的智能工作流迁移的思路，以及在产品里如何平衡模型能力、隐私与可解释性。讨论内容包括 Work 的多模态入口、动作调用与自动化编排、记忆系统设计、参数和路由默认值策略、以及与既有生产力工具（如 Airtable、Notion）协作的路径。节目还涉及用户反馈与指标体系的变化：如何判断 AI 工具是否真的提升了执行效率、是否只是提升了“忙碌感”，并对组织与个人该如何定义可衡量目标做了探讨。采访中还提及了产品上线后的迭代机制、性能优化与团队规模扩张下的工程取舍。","datePublished":"2026-07-28T15:26:30.000Z","author":[{"@type":"Person","name":"SPEAKER_02"},{"@type":"Person","name":"SPEAKER_00"},{"@type":"Person","name":"SPEAKER_01"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/latent-space/codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai/","isPartOf":{"@type":"PodcastSeries","name":"Latent Space"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/latent-space/">Latent Space</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/07/28 23:26:30</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.latent.space/p/chatgpt-work">原始节目</a> </div> <h1>从 0 到 1000 万用户：打造 ChatGPT Work</h1> <p class="episode-summary">本期节目围绕 ChatGPT Work 的诞生与落地展开，核心受访者 Akshay Nathan 介绍了从“代码化能力”向普通用户可用的智能工作流迁移的思路，以及在产品里如何平衡模型能力、隐私与可解释性。讨论内容包括 Work 的多模态入口、动作调用与自动化编排、记忆系统设计、参数和路由默认值策略、以及与既有生产力工具（如 Airtable、Notion）协作的路径。节目还涉及用户反馈与指标体系的变化：如何判断 AI 工具是否真的提升了执行效率、是否只是提升了“忙碌感”，并对组织与个人该如何定义可衡量目标做了探讨。采访中还提及了产品上线后的迭代机制、性能优化与团队规模扩张下的工程取舍。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">SPEAKER_02</span> </div> <p class="person-description">Latent Space 现场主持人之一，负责开场与节目的主导提问。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">SPEAKER_00</span> </div> <p class="person-description">Latent Space 共同主持人之一，围绕产品细节与实操体验持续追问。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">SPEAKER_01</span> </div> <p class="person-description">Akshay Nathan，OpenAI 的核心产品工程负责人，负责 ChatGPT Work 的主要推进。</p> </div> </div> </div> </section>  <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开场从-chatgpt-work-切入">开场：从 ChatGPT Work 切入</h2>
+<p><strong>SPEAKER_02</strong></p>
+<p>我们正在录音室里采访 OpenAI 的 Akshay。欢迎。谢谢。我们也有可靠的联合主持人 Vibu。</p>
+<p>你最近上线了 ChatGPT Work。你负责核心产品工程，这个过程走了很长时间。你提到从 Walrus 和 Airtable 那种无代码、低代码起步，我觉得很有意思。</p>
+<p>在我看来，ChatGPT Work 有点像‘超级应用里的超级应用’，说得更直白就是‘终极无代码’：你只需要写一段提示词就能开始。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这很有意思，我一直觉得职业生涯里很多想法绕着一个循环走：工程师能够通过代码做很多事情。如果能让更多人以更容易的方式获得这些能力，效果会很神奇。</p>
+<p>我以前在消费金融方向开始工作。后来在 LLM 之前，我们也尝试过用 AI 做自动化测试，但那时实现得并不优雅。之后我在 Airtable 工作了一段时间，核心想法很像：如果把数据库或数据库背后的基础能力交给更多人，会非常有价值。</p>
+<p>当时我还不确定，但现在看来，LM 的出现就像把缺失的一块拼好了。它让代码的魔力可以更广泛落地，而用户不需要理解底层细节。ChatGPT Work 和之前的探索，某种程度上就是这个愿景的体现。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>你刚加入 OpenAI 时，工作环境和现在相比有什么变化？我们从 ChatGPT、Codex App 到 ChatGPT Work，变化大不大？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>有意思的是，最值得关注的有些地方其实没变。我记得刚入职时团队大概 500 人，我担心的是它是不是还保留初创团队的活力。事实证明这种创业氛围和‘任何人都能从想法到上线’的文化反而更强。</p>
+<p>让我继续坚持的，是把前沿智能带给更多人的使命，做 AGI 之后再把它普及开来。技术路线不一定是线性的，肯定会有不同产品、不同实验成功失败切换，但愿景和使命并未改变。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>你负责过 Enterprise。很多人其实没用过 ChatGPT Enterprise。你从企业项目里带走了什么经验？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>企业里没有通用方案。早期我们接触客户时，大家都兴奋于把 AI 带进公司，组建了很多 AI 部署团队，预算也很大。</p>
+<p>一开始问他们‘你们想解决什么’，通常只会说有大量上下文和数据。追问具体场景后，答案却五花八门。这说明同一个模型在不同组织里，问题非常分散。</p>
+<p>问题不在于会不会用，而在于不知道从哪儿开始。关键是把产品带到用户所在的工作流里，先理解他们想解决的实际‘use case’，再教他们如何用 AI 获得杠杆。</p>
+<p>所以我会把它分成 go-to-market 与产品层面。前者负责触达和落地，后者负责引导体验：当用户面对电脑或手机时，产品本身要明确下一步怎么做、让他们不迷路。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>过去三年采用率上有哪些变化？现在是推理模型时代，这些年企业端‘黑箱’和不知道怎么用的问题还存在吗？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>更新非常大，用户规模从百人到百万、千万级都在加速。大家普遍理解“如何跟 AI 打交道”，但每次能力新增，新的能力边界又会带来一个十倍一百倍更大的新市场。很多人还没及时意识到。</p>
+<p>现在回答你问题：采用增长是实打实的，但机会更大。ChatGPT Work 的核心在于把这种潜力从早期开发者圈扩展到更广泛用户。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>那我们聊一口气切到 ChatGPT Work。一个月前才正式发布，背后是怎样的决策过程？是不是把多个‘超级应用’能力收口合并了？浏览器也被弃用了吗？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>是的，时间看起来很长，实际几个月。最关键的信号来自 Codecs 的发布和内部数据：非开发者在 OpenAI 内部的采用率出现拐点，我们在 UXR 里看到很多人无论是财务、市场、产品都在用 Codex 做真实工作。</p>
+<p>很多同事从“很神秘的工具”变成“我觉得自己像拥有超能力”。这说明 Codex 与 Agent 的能力已经不该只给开发者，用起来要像 ChatGPT 一样低门槛。</p>
+<p>我们要做的就是让这些已有的知识传递给更多人，所以最终形成了 ChatGPT Work 的合并与上线：同一套能力，服务更宽的用户。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>你把产品区分看法呢？是偏个人用户、企业还是工作场景？Codex 从 CLI、App 再到现在和 ChatGPT 的融合，如何定位？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>我们更偏‘生产力’，但不是狭义生产力。一个人可能在个人生活里做很多“像工作一样”的事情，Agent 都能帮助。比如有人丢了快递，我们用一张照片就能去周边平台匹配、定位包裹，给出线索。</p>
+<p>Codex 是一个很耐久的产品。我们不想让用户卡在某个 tab 或界面里找不到能力。理想是 desktop 的 Codex 能力在 work chat 里同样可用，反过来也成立。</p>
+<p>我们做了很多设计权衡：比如是否展示 git 状态、是否默认暴露 agent 的中间思路、sandbox 和安全边界如何设置。用户不应该被要求手动选择体验边界，系统应该做得更智能。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>这听起来很 AGI 呢，用户不希望在多个版本里挑选。请问 ChatGPT 旧 harness 与 ChatGPT Work 的 harness 到底一样吗？仅是界面差异，还是提示词级别甚至更深层不同？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>底层是共享的 harness。无论是在 chat 还是 work，我们都在同一套核心能力上做针对知识工作优化，比如 plugins、computer use、artifacts。UX 会按场景不同做不同呈现，但本体能力方向一致。</p>
+<p>你可以用一个查询在两个模式里试一遍，比如做退休计算器或表格。Codex 会偏向仓库工作流和 diff 展示；work 侧更像一站式执行，而非直接暴露底层文件编辑。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>你们的生产力团队除了产品化外，还有哪些分支？能不能再讲一遍现在的组织分工？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>除了生产力之外，我们还有核心 ChatGPT 团队、企业、基础设施、API 等。ChatGPT 不只是生产力，还承载搜索、写作、学习、图片等非常多的日常需求。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>你刚刚展示了 work 和 codex 两种模式切换，我这边也试了 5.6 的任务，放在后台跑了很久。你可以再给我讲讲两者的具体差别吗？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>最大的差别之一是 context。Codex 假设你在 git repo、会处理 diffs 和文件编辑；而 work 更像任务代理和知识工作入口，不一定要你理解所有开发细节。</p>
+<p>也有人会问为什么不完全分离为两个独立 app。答案是因为工作方式本身在持续变化，我们不希望给用户画死界线。先统一底层原语，比如 plugins，等成熟后再让体验自然扩展，而不是人为封锁。</p>
+<p>你可以把它理解为一个不断‘发散再收敛’的过程。Chat 主要优化延迟和对话体验，Codex 证明了无限环境下的能力；而 Work 需要平衡这两者，把同一个模型能力带到知识工作场景。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>那新模型层面的建议呢？我们经常被“该用哪个模型、怎么切换”困扰，尤其 5.6 到 5.7 参数很多。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>多数人先用默认模型即可，它对绝大多数场景已经很好。先别急着手动调参，先在真实任务里验证收益。如果在效率或结果质量上真的不够，再换配置。我们也在持续简化高级用户的切换成本。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>我还有个问题：你刚才讲‘目标模式’，能不能再解释一下？相比高质量模式，它更适合哪些场景？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这要看个体偏好和任务类型。互动本身有协作习惯差异。复杂、并行且难以提前定义的任务，可能更适合 Ultra 或多智能体；结构化、可验证推进的长期任务，也可以用 goal。大多数场景建议先默认，再决定是否加速或升级。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>我个人也很频繁地给它开子代理，尤其是深度研究时。理论上可以配置更便宜或更快的模型来做子任务，省时也省成本。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>对，方向没错。但我们不想让用户被‘太多开关’打断，所以尽量把参数简化为直观可理解的操作。你可以在对话里说出你的偏好，系统通常会帮你选路由。</p>
+<p>你看到的滑杆实际上把速度/成本与质量/深度这两个维度投影到一个控制上。默认通常是一个平衡点；如果你觉得模型跑太快或太慢，再往另一端微调即可。</p>
+<p>不过这背后也有默认值策略。比如很多人会一直用效率模式，或者只选某个模型，但默认并不是一成不变；我们希望它可以覆盖大多数场景，高手用到再自定义。</p>
+<h2 id="中段work-与-codex-的协作体验">中段：Work 与 Codex 的协作体验</h2>
+<p><strong>SPEAKER_02</strong></p>
+<p>有一些评论提到你们的产品里有类似‘展示思考过程’和高级视图，我在现场也看见很多细节。能说一下你们为什么要保留那么多透明信息吗？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>我们想平衡两个目标：一是让用户知道工具的能力边界，二是避免被信息轰炸。展示太多细节会认知负担大，但完全不展示又会让人不知道能做什么。我们目前采用“够用而不拥挤”的策略。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>那关于合作体验呢？同一份 artifact 在团队里共享是否有多用户方案？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>目前已经可以共享，协作方向正在持续迭代。更常见的场景是团队里有人把经验通过私聊式方式传来传去，我们还在把这种协作路径做成一等公民。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>你刚才提到的站点（sites）给我印象很深。它对很多人来说像是能输出 Markdown 的 HTML 工作区。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>Sites 最初也确实来自原型和协作测试，但它现在更多变成知识工作产物。以前财报可能是 ppt、表格，如今团队可以直接用 site 来汇总与协作，因为 HTML 的承载和可见性更灵活。</p>
+<p>在一个团队里，一个人做月度报告时，不必受限于某一个应用按钮结构，只要在同一页面就能持续演化，任何人都能补齐缺失字段。对于“更高带宽、少约束”的知识协作，这是很重要的。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>我当场演示了一个我自己的场景：一个棋盘类游戏的自动研究。通过自我博弈、参数搜索，自动生成一个可阅读的报告站点。它说明了自动研究确实能跑很久很长。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这类输出很典型。以前你可能会拿一大段文本，真正有价值的往往是它总结的指标和决策路径。长输出确实更完整，但也提醒我们继续优化可读性和摘要能力。</p>
+<p>我们希望 artifact 既支持展示细节，也能在不同用户能力层级下自动变得可用。对高级用户，更多信息有帮助；对第一次尝试者，默认视图要更简洁。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>我在现场体验到，很多时候人们更想直观看到产物能做什么，而不只是被动学习。你觉得在这个‘show vs teach’上，产品该怎么取舍？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这确实是核心课题。不同用户的需求差异非常大。我们试图基于采用路径来分层展示：新用户看到更少、老用户看到更多。不是按行业标签硬切，而是按当前任务成熟度动态调整。</p>
+<p>我更看重的是从“开发者”向“知识工作者”再向“任何人”的扩展。开发者是最早 adopter，已经验证了产品；下一阶段是所有工作者都能用这些原语提高生产力。</p>
+<h2 id="模型能力与工作习惯从自动化到可管理的流程">模型能力与工作习惯：从自动化到可管理的流程</h2>
+<p><strong>SPEAKER_00</strong></p>
+<p>给重度用户有什么建议？有人每天全量使用，有人只偶尔触发一次，大家之间差距大。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>第一条建议是先把想象力放大。技术进步很快，三个月前做不到的事今天可能已经很好地可用。你要持续更新自己对‘可做什么’的认知。</p>
+<p>第二条是输入越完整越好。你在本地电脑里的上下文、历史工作、文件、artifact 形成资产库，模型会在这些基础上给出更有质量的建议。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>尤其是 review 场景，经常有人担心版权与伦理。你会把 AI 用在哪个边界？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>我不会建议把完整的评审文本完全由 AI 直接发出去。更好的用法是用于搜集上下文、整理信息、做 agentic search。人还是要保留最后审核，判断语气、价值和合适程度。</p>
+<p>像 Slack 里消息量很大，模型会偶尔遗漏也会漏检关键内容，但人同样会遗漏。关键是把这种能力当成“发现遗漏、补充线索”的助手，而不是完全替代。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>我们内部也有类似做法，比如给项目配 secret 的自定义文件索引。经常会少点费工，但一旦模型找到历史已有内容，省下不少时间。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>我还见过团队成员做过自动化总结：把 Slack、文档、讨论的脉络定期抽取，汇总到一个共享频道。虽然有时它会‘讲得很有趣’地组织内容，但能暴露很多隐性信息，这是以前难以系统维护的。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>今天这个发布很成功，据说 1000 万用户里程碑也接近了。对你来说，100 万到 1000 万的变化是什么感受？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这是一个里程碑，也意味着我们把内部验证和长期愿景带到了更广泛用户。核心目标仍然是把“ChatGPT 的魔力”给到更多人，不只是让少量高意愿用户体验到。</p>
+<p>我们也没有一夜之间强推所有人到 Work，因为它是付费功能，目前还要通过教育、反馈、体验优化逐步推进。未来目标是让几乎所有 ChatGPT 用户在自己工作和生活中都能自然触达这条线。</p>
+<p>Codex 仍然会保留品牌和核心价值，我们会持续把软件开发体验做好。工作与对话并不是互斥关系，而是同一条产品路径上的不同入口。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>你刚才也提到过 OpenClaw 式的个人代理，我想问会不会逐步替代？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>我自己有过用 OpenClaw 管理家庭任务的经验，比如日程、健康、工作清单。后来发现 ChatGPT Work 的持久化环境和文件系统，其实能做更多相似用例，尤其是个人和工作交叉场景。</p>
+<p>但我不认为它会取代所有开源方案。更多是让这些灵感被更广泛的人群复用。我们会在可持续的前提下，把这种“个人代理”能力嵌入更大分发渠道。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>那我可以在 ChatGPT Work 里处理个人财务、健康类需求吗？比如预算、退休计划、健康信息整合。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>目前还不能托管你真实的现金和资产账户，但财务规划和预算类应用逻辑已经逐步覆盖。把所有信息接入后，你在一个入口就能问“我的退休/预算/健康情况”并得到可执行建议。</p>
+<p>传统金融 app 需要很多过滤器和界面来引导，Work 的价值是只要把数据连接上，你更像是在对一个统一的知识仓库提问，而不是在多个应用里反复搜索。</p>
+<h2 id="记忆系统与可扩展协作">记忆系统与可扩展协作</h2>
+<p><strong>SPEAKER_02</strong></p>
+<p>回到记忆和安全性。最近大家都在讨论 memory，像“Chad Gypsy 的新 memory 不够好”之类的反馈很多。你怎么看？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这确实是大问题。Samir 和研究团队做了大量改进，尤其在持续记忆方面。大家最认可的是，模型能更稳定地记住你是谁、你在做什么，这会显著改变体验。</p>
+<p>ChatGPT Work 天然继承了 ChatGPT 的记忆系统，默认会把会话上下文与长期记忆关联。关键不是只“记得”得多，而是能在对的时机、对的上下文里“想起来”。</p>
+<p>另一个方向是 Chronicle，这个功能会从电脑使用行为中学习，作为额外输入源。它是实验性功能，默认并非全量开启，但我建议大家试用，尤其适合长期检索和自动化洞察。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>从 Chat 走向 Work 的记忆机制，和项目协作里多个会话线程相比，有什么不同？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>你可能会认为 chat 是一次性对话、work 更像持续项目。我理解这个差异，但本质是同一套能力可以覆盖不同粒度。Chat 有大量短会话，Work 更偏长期、持续的任务序列。</p>
+<p>我个人在 ChatGPT 上也看到这些‘碎片化输入’会慢慢沉淀成稳定画像。所以问题在于如何把这种深度持续记忆拿进 Work，同时避免误召回和噪音。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>有时我们会问它能不能找到我们没想到的东西，它确实会有 false positive 或 miss。这个权衡你怎么看？</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>这个问题我不负责底层记忆模块，但可以肯定是两方面：一是记对了哪些事实，二是以合适情境提醒这些事实。检索准确率和干预策略都是开放问题，需要持续迭代。</p>
+<h2 id="效率衡量与组织管理">效率衡量与组织管理</h2>
+<p><strong>SPEAKER_00</strong></p>
+<p>最后一个大问题：生产力指标如何变化？你之前也说了大家做得快但可能没进步。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>衡量 productivity 更难。团队、个人、目标都不同，真正指标是“是否实现目标”。这意味着 AI 时代，token 数量或 PR 数这些旧指标会越来越弱。</p>
+<p>我建议先定义好目标、过程和标准，别被‘看起来很忙’误导。对经理来说，我最喜欢的比喻是 at-bats：看的是一段时间内从想法到执行、反馈、验证再迭代下一个想法的闭环质量。</p>
+<p><strong>SPEAKER_00</strong></p>
+<p>同意，很多团队加了大量 LLM 仪表盘，却没看到行为变化。很多情况下是混淆了‘动作’和‘进步’。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>正因为如此，组织里的每个成员都要明确‘要做成什么’。有了目标导向后，再看工具数据才有意义。</p>
+<p><strong>SPEAKER_02</strong></p>
+<p>今天的讨论很棒，我会把你这段‘motion 与 progress 的区别’放进稿件。谢谢你，也恭喜 ChatGPT Work 打到 1000 万。</p>
+<p><strong>SPEAKER_01</strong></p>
+<p>谢谢邀请。我们很高兴达到 1000 万用户，也会继续把产品往更有用、更易用的方向推进。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

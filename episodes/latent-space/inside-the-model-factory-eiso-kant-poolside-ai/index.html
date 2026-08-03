@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目请 Poolside 的 Eiso Kant 回顾了从早期研究到模型工厂建设的轨迹。主持人们先追问他为何会转向和坚持 LLM 方向，随后围绕他在 Sourced 时代的失败经验、后来重新转回这一赛道后的反思，讨论了模型规模、预训练与强化学习（RL）的权重，以及开放权重生态为何仍值得坚持。节目进一步拆解了 Poolside 的研发组织和训练实践：如何在有限算力下构建高效数据策略，如何把小团队训练流程标准化、复用并快速迭代，以及如何通过公开论文、开源代码和实验设置来支撑行业进步。最后讨论覆盖模型推理与效率、硬件与成本、候选安全策略、组织治理和招聘路径。嘉宾认为当前竞争的本质是时间，能保持高执行力和高自治的少数团队，更容易持续在模型迭代与产品化之间形成优势。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/latent-space/inside-the-model-factory-eiso-kant-poolside-ai/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="模型工厂内部——Eiso Kant，Poolside AI | 听阅"><meta property="og:description" content="本期节目请 Poolside 的 Eiso Kant 回顾了从早期研究到模型工厂建设的轨迹。主持人们先追问他为何会转向和坚持 LLM 方向，随后围绕他在 Sourced 时代的失败经验、后来重新转回这一赛道后的反思，讨论了模型规模、预训练与强化学习（RL）的权重，以及开放权重生态为何仍值得坚持。节目进一步拆解了 Poolside 的研发组织和训练实践：如何在有限算力下构建高效数据策略，如何把小团队训练流程标准化、复用并快速迭代，以及如何通过公开论文、开源代码和实验设置来支撑行业进步。最后讨论覆盖模型推理与效率、硬件与成本、候选安全策略、组织治理和招聘路径。嘉宾认为当前竞争的本质是时间，能保持高执行力和高自治的少数团队，更容易持续在模型迭代与产品化之间形成优势。"><meta property="og:url" content="https://castnote.github.io/episodes/latent-space/inside-the-model-factory-eiso-kant-poolside-ai/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="模型工厂内部——Eiso Kant，Poolside AI | 听阅"><meta name="twitter:description" content="本期节目请 Poolside 的 Eiso Kant 回顾了从早期研究到模型工厂建设的轨迹。主持人们先追问他为何会转向和坚持 LLM 方向，随后围绕他在 Sourced 时代的失败经验、后来重新转回这一赛道后的反思，讨论了模型规模、预训练与强化学习（RL）的权重，以及开放权重生态为何仍值得坚持。节目进一步拆解了 Poolside 的研发组织和训练实践：如何在有限算力下构建高效数据策略，如何把小团队训练流程标准化、复用并快速迭代，以及如何通过公开论文、开源代码和实验设置来支撑行业进步。最后讨论覆盖模型推理与效率、硬件与成本、候选安全策略、组织治理和招聘路径。嘉宾认为当前竞争的本质是时间，能保持高执行力和高自治的少数团队，更容易持续在模型迭代与产品化之间形成优势。"><meta property="article:published_time" content="2026-07-23T05:09:14.000Z"><meta property="article:tag" content="播客"><title>模型工厂内部——Eiso Kant，Poolside AI | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"模型工厂内部——Eiso Kant，Poolside AI","description":"本期节目请 Poolside 的 Eiso Kant 回顾了从早期研究到模型工厂建设的轨迹。主持人们先追问他为何会转向和坚持 LLM 方向，随后围绕他在 Sourced 时代的失败经验、后来重新转回这一赛道后的反思，讨论了模型规模、预训练与强化学习（RL）的权重，以及开放权重生态为何仍值得坚持。节目进一步拆解了 Poolside 的研发组织和训练实践：如何在有限算力下构建高效数据策略，如何把小团队训练流程标准化、复用并快速迭代，以及如何通过公开论文、开源代码和实验设置来支撑行业进步。最后讨论覆盖模型推理与效率、硬件与成本、候选安全策略、组织治理和招聘路径。嘉宾认为当前竞争的本质是时间，能保持高执行力和高自治的少数团队，更容易持续在模型迭代与产品化之间形成优势。","datePublished":"2026-07-23T05:09:14.000Z","author":[{"@type":"Person","name":"swyx"},{"@type":"Person","name":"Vibhu"},{"@type":"Person","name":"Eiso Kant"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/latent-space/inside-the-model-factory-eiso-kant-poolside-ai/","isPartOf":{"@type":"PodcastSeries","name":"Latent Space"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/latent-space/">Latent Space</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/07/23 13:09:14</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.latent.space/p/poolside">原始节目</a> </div> <h1>模型工厂内部——Eiso Kant，Poolside AI</h1> <p class="episode-summary">本期节目请 Poolside 的 Eiso Kant 回顾了从早期研究到模型工厂建设的轨迹。主持人们先追问他为何会转向和坚持 LLM 方向，随后围绕他在 Sourced 时代的失败经验、后来重新转回这一赛道后的反思，讨论了模型规模、预训练与强化学习（RL）的权重，以及开放权重生态为何仍值得坚持。节目进一步拆解了 Poolside 的研发组织和训练实践：如何在有限算力下构建高效数据策略，如何把小团队训练流程标准化、复用并快速迭代，以及如何通过公开论文、开源代码和实验设置来支撑行业进步。最后讨论覆盖模型推理与效率、硬件与成本、候选安全策略、组织治理和招聘路径。嘉宾认为当前竞争的本质是时间，能保持高执行力和高自治的少数团队，更容易持续在模型迭代与产品化之间形成优势。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">swyx</span> </div> <p class="person-description">Latent Space 主持人，负责开场并持续推进访谈节奏。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Vibhu</span> </div> <p class="person-description">Latent Space 联合主持人，负责追问并协助澄清技术细节。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Eiso Kant</span> </div> <p class="person-description">Poolside 的共同创始人兼 CEO，讲述其模型工厂和训练体系。</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Andrej Karpathy</span>  </div> <p class="person-description">AI 研究者，其观点影响了嘉宾职业选择。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Google</span>  </div> <p class="person-description">在大模型研究与基础设施领域持续推动相关标准与技术。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">OpenAI</span>  </div> <p class="person-description">行业领先公司，作为访谈中对比和参考对象。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Anthropic</span>  </div> <p class="person-description">访谈讨论安全与开放模型治理时的主要参考组织。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">NVIDIA</span>  </div> <p class="person-description">芯片与硬件供应商，深刻影响训练效率与成本结构。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">DeepSeek</span>  </div> <p class="person-description">被提及的技术对标对象之一。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Thinky</span>  </div> <p class="person-description">节目中用于规模与能力对比的模型示例。</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<p><strong>swyx</strong></p>
+<p>好吧，我们现在和来自 Poleside 的 Faisal Khan 以及 Gibu 一起在录音室里。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>给你发短信后，我意识到今天可能会因时差而带来一些有趣的经历，但我们就这么做吧。</p>
+<p><strong>swyx</strong></p>
+<p>我的意思是，我想我要告诉客人的是，他们实际上不需要准备那么多，因为如果你每天都在认真地努力，那么即使像你模糊记得的那样，对于很多并不每天都生活在你的世界中的观众来说也会是新的，对吧？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>事实上，我认为我是如何进入这个领域的并不明显。</p>
+<p><strong>Vibhu</strong></p>
+<p>莎士比亚。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>而且…出于某种原因，我读了这篇文章，然后我就陷入了学习有关 RNN 和 LSTM 的一切知识的困境，对吧？</p>
+<p><strong>swyx</strong></p>
+<p>是的，我想如果说有什么不同的话，那就是在过去的三年里，这已经变得更加真实了。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我对他们的发布感到很兴奋。</p>
+<p><strong>Vibhu</strong></p>
+<p>是的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>不，我很感激。</p>
+<p><strong>swyx</strong></p>
+<p>只是因为我们可能不会再回顾这个。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>所以问题是，你要在这里测试我的记忆力。</p>
+<p><strong>swyx</strong></p>
+<p>是的，这就是当你发布新型号时，Vibo 非常兴奋的原因之一。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>所以我想说，我们从公司早期就认为模型构建最终 90% 是工程。</p>
+<p><strong>Vibhu</strong></p>
+<p>我想我也只是想指出，所以就上下文而言，这就像一个月前一样。</p>
+<p><strong>swyx</strong></p>
+<p>是的，</p>
+<p><strong>Vibhu</strong></p>
+<p>所有这些东西，你知道，请阅读这里的报纸。</p>
+<p><strong>swyx</strong></p>
+<p>但我想，我热爱原则。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>好吧，我想说，好吧，实验是显而易见的，但我认为我最喜欢的事情之一是，我不知道它在这里哪里，但在早期，我仍然认为情况是这样的，实际上很多基础模型公司，人们准备他们的训练数据集，它们被打包，然后它们被复制到训练集群，分布在所有节点上，然后训练开始。</p>
+<p><strong>swyx</strong></p>
+<p>当您说 AWS 时，它并不是真正的 AWS。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>不，这是我们的内部，就像我们的基础设施一样运行。</p>
+<p><strong>swyx</strong></p>
+<p>是啊是啊。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>因此，一旦我们将数据转变为“我可以将数据流式传输到训练中”，您会突然意识到很多事情都解锁了。</p>
+<p><strong>swyx</strong></p>
+<p>是的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我不得不承认，就像池畔项目的第一年一样，我们花了一段时间才明白工程必须变得伟大，但我们还不明白这最终会支持良好的、严格的科学进步。</p>
+<p><strong>Vibhu</strong></p>
+<p>很多都很有趣。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，看，我们想推出更多。</p>
+<p><strong>Vibhu</strong></p>
+<p>这是另一个很酷的一面，对吗？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>顺便说一句，我还想澄清一下，我们的表现令人难以置信，就像我们充分利用了其他人发表的所有开放研究的事实一样。</p>
+<p><strong>swyx</strong></p>
+<p>你有一个最喜欢的或被低估的中国实验室想要大声喊出来吗？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，看，我想…我想，显然，最近每个人都在谈论 GLM 5.2 的 Zifu。</p>
+<p><strong>Vibhu</strong></p>
+<p>人们在建立基础模型时还看不到什么？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>好吧，看，这是一种过于简单化的说法，我总是用星号来表示它，因为它可能会在人们的头脑中产生一点错误。</p>
+<p><strong>swyx</strong></p>
+<p>是的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>这是我们发布的第一个模型，它开始为我们自己的工作做出有意义的贡献。</p>
+<p><strong>Vibhu</strong></p>
+<p>嗯嗯。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>现在我想问题是，以前我会认为那个巅峰是非常非常遥远的。</p>
+<p><strong>swyx</strong></p>
+<p>这主要是培训后吗？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的。</p>
+<p><strong>swyx</strong></p>
+<p>我们在预训练方面有什么改进吗？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>不。</p>
+<p><strong>swyx</strong></p>
+<p>我只是想介绍一下预训练，然后我们进行后训练。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>预训练还没有完成。</p>
+<p><strong>swyx</strong></p>
+<p>连训练中期都没有。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>这似乎是一个永无止境的问题，好吧，我想要这张桌子的使用手册，对吗？</p>
+<p><strong>Vibhu</strong></p>
+<p>我认为有能力从网络上概括更多。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>人们经常打的比方是，在强化学习阶段，你不会学到太多新知识。</p>
+<p><strong>Vibhu</strong></p>
+<p>这只是更好的数据，对吧？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>这是预训练的第二阶段，以一种非常愚蠢的方式来完成课程。</p>
+<p><strong>swyx</strong></p>
+<p>但最终您想要的是从令牌 0 到令牌 30 或 40 个趋势令牌的课程，这确实是模型学习的最佳课程。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我会确认，当我与一些研究人员交谈时，现在的焦点是预训练如何改变以及除了下一个令牌预测之外的下一个目标是什么。</p>
+<p><strong>swyx</strong></p>
+<p>我们有一些想法。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我的意思是，所以，就像…这是一个很好的方法。</p>
+<p><strong>swyx</strong></p>
+<p>喜欢，</p>
+<p><strong>Vibhu</strong></p>
+<p>你知道你在寻找什么。</p>
+<p><strong>swyx</strong></p>
+<p>这也是人们下注的事情，对吧？</p>
+<p><strong>Vibhu</strong></p>
+<p>我想，看，我想你，这也取决于你开始的时间，对吧？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>这很酷。</p>
+<p><strong>Vibhu</strong></p>
+<p>非常非常早。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>从当时的角度来看，我们知道封闭模型、开放人工智能人类是巨大的。</p>
+<p><strong>Vibhu</strong></p>
+<p>事实上，这件事上的日期是错误的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>所以这不是均匀的，我认为当时只有喇嘛在外面。</p>
+<p><strong>swyx</strong></p>
+<p>那就是</p>
+<p><strong>Eiso Kant</strong></p>
+<p>它，对吗？</p>
+<p><strong>swyx</strong></p>
+<p>但我同意。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我认为我们还没有正式宣布你们的新尺寸。</p>
+<p><strong>Vibhu</strong></p>
+<p>Laguna Small，180。总参数 1180 亿个，8B 活跃。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，我们把它放在这个吊舱里，</p>
+<p><strong>swyx</strong></p>
+<p>GTC，最后</p>
+<p><strong>Vibhu</strong></p>
+<p>年。</p>
+<p><strong>swyx</strong></p>
+<p>我认为 GPT-LSS 120B 是第一个，因为它是一个大型单 GPU，也就是 H100，对吗？</p>
+<p><strong>Vibhu</strong></p>
+<p>但我认为最让我兴奋的是这个模型希望向人们展示这个尺寸的可能性。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，他们认为，例如，今天的思维模型就像一万亿个参数。</p>
+<p><strong>swyx</strong></p>
+<p>是的，确实如此。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>但不知怎的，你不仅比 Dinky 更好，这就像这些基准之一，而且就像在某些基准上一样，比如陶凳，就像你实际上仍然是艺术一样。</p>
+<p><strong>swyx</strong></p>
+<p>看，我们正在做，我不确定我们是否是最先进的，我的意思是，Tao 3 银行，我还没有检查我们在排行榜上的位置，但我认为我们在我们的体重级别内，我很舒服地说，甚至在一些两倍大的重量级别中，我们可能是最先进的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我认为您之前提到的有趣的事情是您开始将大量实际使用转移到它上，对吧？</p>
+<p><strong>Vibhu</strong></p>
+<p>他们必须这样做，对吧？</p>
+<p><strong>swyx</strong></p>
+<p>不，你必须这样做。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>您如何看待像使用安全带一样构建它？</p>
+<p><strong>Vibhu</strong></p>
+<p>所以你需要做一些多线束训练。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>如果它是开源的，你可以查看源代码。</p>
+<p><strong>swyx</strong></p>
+<p>是的，但现在是时候了，对吧？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>今天刚买的。</p>
+<p><strong>swyx</strong></p>
+<p>我认为其中一部分是…还有一些令人惊奇的…我很兴奋。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>你知道，问题的一部分实际上就像是，模型与模型加线束相比要付出多少努力，对吧？</p>
+<p><strong>Vibhu</strong></p>
+<p>我认为当你向模型公司问这个问题时，我认为你可以将它分成两部分，就像安全带一样。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我的意思是，我认为当你说这是一场比赛时，有一个问题是你要比赛什么？</p>
+<p><strong>swyx</strong></p>
+<p>或者两者都不是。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>所以…我的意思是，另一种方法就是将其交给人工分析并让他们运行。</p>
+<p><strong>swyx</strong></p>
+<p>我们也将这样做。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>你是第一个提出来的。</p>
+<p><strong>swyx</strong></p>
+<p>是的，我认为他们很棒。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我觉得这实际上是一种垄断。</p>
+<p><strong>swyx</strong></p>
+<p>被打破。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是啊是啊。</p>
+<p><strong>swyx</strong></p>
+<p>这是非常正确的，我们需要它。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，明白了。</p>
+<p><strong>swyx</strong></p>
+<p>听着，我们实际上正在与他们非常密切地合作，因为我确实认为你必须关心。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>就主题而言，你们对 Hermes、OpenClaw、NanoClaw 等做了很多工作吗？</p>
+<p><strong>swyx</strong></p>
+<p>不过，我不得不说，我是 Pi 的忠实粉丝。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我忘了提到Pi。</p>
+<p><strong>swyx</strong></p>
+<p>这是因为我不，我有，允许我提出更强烈的意见。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我们开始看到这一点。</p>
+<p><strong>swyx</strong></p>
+<p>您也会在类似的前沿模型中看到这一点。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>代码解释器。</p>
+<p><strong>Vibhu</strong></p>
+<p>确切地。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>没有意见。</p>
+<p><strong>swyx</strong></p>
+<p>这实际上是我们正在进行并行工具调用的第一个模型，我们需要赶上。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，所以这就是朝着，比如，好吧，你如何为我的 Hermes 或我的 OpenCloud 使用池畔模型和 Laguna 模型，所有这些东西。</p>
+<p><strong>swyx</strong></p>
+<p>还要别的吗？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>所以我想说的是</p>
+<p><strong>Vibhu</strong></p>
+<p>…我们还没有对这些模型的视觉理解。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>他们非常致力于多模式，包括音频。</p>
+<p><strong>swyx</strong></p>
+<p>他们最先进的音频，多达一万亿个参数，最先进的音频，而且都是从头开始训练的，对吗？</p>
+<p><strong>Vibhu</strong></p>
+<p>感觉…对我来说，这是您需要从头开始跟踪的最有力的原因之一，因为您只是有一个不同的标记器。</p>
+<p><strong>swyx</strong></p>
+<p>我完全一致。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>它的名字也有点像，你知道，墨水，墨水，墨水。</p>
+<p><strong>Vibhu</strong></p>
+<p>是啊是啊。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>音频有什么难的？</p>
+<p><strong>swyx</strong></p>
+<p>这与什么无关……再说一遍，这一切都归结为焦点。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我要指出的是，DeepSeek OCR 是研究的一个分支，也就是说，你能不能……扔掉文本组织器，只留下视觉。</p>
+<p><strong>swyx</strong></p>
+<p>我内心的极客看着这些东西，就像，好吧，看看代码中的位数。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我要说的是，你知道，你可以看到一些关于人择的作品。</p>
+<p><strong>Vibhu</strong></p>
+<p>听着，在这方面，我认为 Anthropic，我的意思是，他们做了很多正确的事情，但我认为这种疯狂地专注于推动能力、扩大模型规模是我完全同意的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>好的。</p>
+<p><strong>Vibhu</strong></p>
+<p>所以新的媒介开始训练，它比昨天开始训练的上一个媒介要大得多。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>还有……你怎么知道提前几天？</p>
+<p><strong>swyx</strong></p>
+<p>正确的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我觉得这很有趣。</p>
+<p><strong>Vibhu</strong></p>
+<p>你意识到这并不多。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>不，不是。</p>
+<p><strong>Vibhu</strong></p>
+<p>钱不多。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，人们在 DeepSeq 上过度索引，接受了 500 万美元的培训，或者其他什么，对吧？</p>
+<p><strong>Vibhu</strong></p>
+<p>数据。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>他确实取笑人们说“小就是24B”之类的。</p>
+<p><strong>swyx</strong></p>
+<p>不，不，不。</p>
+<p><strong>Vibhu</strong></p>
+<p>我的意思是，我认为这也是…</p>
+<p><strong>Eiso Kant</strong></p>
+<p>好吧，你的小不是…我们都知道，对于任何基础模型公司来说，最困难的事情就是命名…我不想说我们也擅长于此。</p>
+<p><strong>Vibhu</strong></p>
+<p>因此，在公司成立之初，在我们成立之前，我们参加了一家非常大的大型科技公司的年会。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的。</p>
+<p><strong>Vibhu</strong></p>
+<p>你看，世界确实变了，对吧？</p>
+<p><strong>swyx</strong></p>
+<p>你对人类的说法和白宫的说法有更多的疑问吗？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>听着，我想…我会这样说。</p>
+<p><strong>swyx</strong></p>
+<p>像那样。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我喜欢那个。</p>
+<p><strong>swyx</strong></p>
+<p>您是否会在某个时刻改变您的观点？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>就像你做不到的那样，如果你板着脸坐着说，这可以以各种方式、形状或形式永远开放。</p>
+<p><strong>swyx</strong></p>
+<p>是的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我认为这是真的。</p>
+<p><strong>swyx</strong></p>
+<p>需要注意的是竞争，对吧？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>所以你不能采取单方面的安全措施，因为其他人只会比你更不安全。</p>
+<p><strong>swyx</strong></p>
+<p>是的，没错。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>暂停。</p>
+<p><strong>swyx</strong></p>
+<p>我认为我们最好谈论我们可以普遍同意的某些能力。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我认为比美国政府拥有更多权力的实体是 NVIDIA。</p>
+<p><strong>Vibhu</strong></p>
+<p>你可以把它交给台积电或者…</p>
+<p><strong>swyx</strong></p>
+<p>低于台积电。</p>
+<p><strong>Vibhu</strong></p>
+<p>实际上我认为它们受到监管，对吧？</p>
+<p><strong>swyx</strong></p>
+<p>好吧，但你知道，他们不是中国。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>看，我认为这个行业的存在是因为 NVIDIA 所做的事情。</p>
+<p><strong>swyx</strong></p>
+<p>差距似乎还在于监管者的专业知识，对吗？</p>
+<p><strong>Vibhu</strong></p>
+<p>好的。</p>
+<p><strong>swyx</strong></p>
+<p>是的，我会和 Etched 谈谈。</p>
+<p><strong>Vibhu</strong></p>
+<p>不，你看，我认为太空领域的更多创新是最酷的事情。</p>
+<p><strong>swyx</strong></p>
+<p>但是，是的，很酷。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>确切地。</p>
+<p><strong>Vibhu</strong></p>
+<p>那只是几年前的事，对吧？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>但我想，好吧，也许 NVFP4 就是这样。</p>
+<p><strong>swyx</strong></p>
+<p>就可能性而言，NVFP4 和 4 位之间仍然存在很大差异。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>有几个问题。</p>
+<p><strong>Vibhu</strong></p>
+<p>我有一个快速的。</p>
+<p><strong>swyx</strong></p>
+<p>还有很多东西需要挤出来。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>这是在所有轴上，就像一个模型推理多长时间的轴。</p>
+<p><strong>swyx</strong></p>
+<p>看，我认为这是我们现在不做的事情，因为我们也在构建这些模型。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>惊人的。</p>
+<p><strong>swyx</strong></p>
+<p>我的意思是，这很狂野，对吧？</p>
+<p><strong>Vibhu</strong></p>
+<p>你如何测量？</p>
+<p><strong>Eiso Kant</strong></p>
+<p>听着，我认为这是一个很好的问题。</p>
+<p><strong>Vibhu</strong></p>
+<p>但是，你知道，你很有资格这样做。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>最终，什么是代码、什么是软件、什么是工程，就是​​从对最终用户或一组最终用户有价值的东西（例如一个想法、一个额外的错误修复、一个功能）转向提供该价值。</p>
+<p><strong>swyx</strong></p>
+<p>好的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>一个人有多大的代理权？</p>
+<p><strong>swyx</strong></p>
+<p>我认为，协调高级机构人员非常困难，因为他们都想走自己的路。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>是的，但我认为组织中优秀领导者的概念是能够……将人们聚集在一起，就像一个共同的结果一样。</p>
+<p><strong>swyx</strong></p>
+<p>伟大的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我们正在公司招聘应用研究和工程方面的所有可能的职位。</p>
+<p><strong>swyx</strong></p>
+<p>并且能够发布，能够</p>
+<p><strong>Eiso Kant</strong></p>
+<p>开源该模型。</p>
+<p><strong>swyx</strong></p>
+<p>好的。</p>
+<p><strong>Eiso Kant</strong></p>
+<p>我从字面上读到了它。</p>
+<p><strong>swyx</strong></p>
+<p>感谢您设置此功能。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

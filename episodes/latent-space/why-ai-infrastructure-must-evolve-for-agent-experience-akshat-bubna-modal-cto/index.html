@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期节目邀请 Modal CTO Akshat Bubna 讨论 AI 基础设施为何需要从传统开发者视角转向面向代理（Agent）的体验。节目回顾了 Modal 从最初构建 runtime 的动因：Kubernetes 管理成本高、工作负载需要快速弹性扩缩、环境高度异构，因此平台选择以代码优先的原语、sandbox 与弹性调度为核心。对话还覆盖了可观察性、专用推理原语、dflash 与 block-based speculative decoding、Auto Endpoint、开源策略与多云调度、I/O 与网络能力（Overlay network、i6pn、eBPF、RDMA 预备链路）、CI 与自动化训练、以及权限与安全边界在 agent-native 时代的取舍。整体结论是：未来 AI 系统不是单点模型 API，而是围绕模型生命周期、工作流和基础设施栈的完整产品能力。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/latent-space/why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="为什么 AI 基础设施必须围绕 Agent Experience 演进：Modal CTO Akshat Bubna | 听阅"><meta property="og:description" content="本期节目邀请 Modal CTO Akshat Bubna 讨论 AI 基础设施为何需要从传统开发者视角转向面向代理（Agent）的体验。节目回顾了 Modal 从最初构建 runtime 的动因：Kubernetes 管理成本高、工作负载需要快速弹性扩缩、环境高度异构，因此平台选择以代码优先的原语、sandbox 与弹性调度为核心。对话还覆盖了可观察性、专用推理原语、dflash 与 block-based speculative decoding、Auto Endpoint、开源策略与多云调度、I/O 与网络能力（Overlay network、i6pn、eBPF、RDMA 预备链路）、CI 与自动化训练、以及权限与安全边界在 agent-native 时代的取舍。整体结论是：未来 AI 系统不是单点模型 API，而是围绕模型生命周期、工作流和基础设施栈的完整产品能力。"><meta property="og:url" content="https://castnote.github.io/episodes/latent-space/why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="为什么 AI 基础设施必须围绕 Agent Experience 演进：Modal CTO Akshat Bubna | 听阅"><meta name="twitter:description" content="本期节目邀请 Modal CTO Akshat Bubna 讨论 AI 基础设施为何需要从传统开发者视角转向面向代理（Agent）的体验。节目回顾了 Modal 从最初构建 runtime 的动因：Kubernetes 管理成本高、工作负载需要快速弹性扩缩、环境高度异构，因此平台选择以代码优先的原语、sandbox 与弹性调度为核心。对话还覆盖了可观察性、专用推理原语、dflash 与 block-based speculative decoding、Auto Endpoint、开源策略与多云调度、I/O 与网络能力（Overlay network、i6pn、eBPF、RDMA 预备链路）、CI 与自动化训练、以及权限与安全边界在 agent-native 时代的取舍。整体结论是：未来 AI 系统不是单点模型 API，而是围绕模型生命周期、工作流和基础设施栈的完整产品能力。"><meta property="article:published_time" content="2026-07-08T22:55:07.000Z"><meta property="article:tag" content="播客"><title>为什么 AI 基础设施必须围绕 Agent Experience 演进：Modal CTO Akshat Bubna | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-REWFNXH9KD');
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"为什么 AI 基础设施必须围绕 Agent Experience 演进：Modal CTO Akshat Bubna","description":"本期节目邀请 Modal CTO Akshat Bubna 讨论 AI 基础设施为何需要从传统开发者视角转向面向代理（Agent）的体验。节目回顾了 Modal 从最初构建 runtime 的动因：Kubernetes 管理成本高、工作负载需要快速弹性扩缩、环境高度异构，因此平台选择以代码优先的原语、sandbox 与弹性调度为核心。对话还覆盖了可观察性、专用推理原语、dflash 与 block-based speculative decoding、Auto Endpoint、开源策略与多云调度、I/O 与网络能力（Overlay network、i6pn、eBPF、RDMA 预备链路）、CI 与自动化训练、以及权限与安全边界在 agent-native 时代的取舍。整体结论是：未来 AI 系统不是单点模型 API，而是围绕模型生命周期、工作流和基础设施栈的完整产品能力。","datePublished":"2026-07-08T22:55:07.000Z","author":[{"@type":"Person","name":"Swyx"},{"@type":"Person","name":"Akshat Bubna"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/latent-space/why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto/","isPartOf":{"@type":"PodcastSeries","name":"Latent Space"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/latent-space/">Latent Space</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/07/09 06:55:07</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.latent.space/p/modal2026">原始节目</a> </div> <h1>为什么 AI 基础设施必须围绕 Agent Experience 演进：Modal CTO Akshat Bubna</h1> <p class="episode-summary">本期节目邀请 Modal CTO Akshat Bubna 讨论 AI 基础设施为何需要从传统开发者视角转向面向代理（Agent）的体验。节目回顾了 Modal 从最初构建 runtime 的动因：Kubernetes 管理成本高、工作负载需要快速弹性扩缩、环境高度异构，因此平台选择以代码优先的原语、sandbox 与弹性调度为核心。对话还覆盖了可观察性、专用推理原语、dflash 与 block-based speculative decoding、Auto Endpoint、开源策略与多云调度、I/O 与网络能力（Overlay network、i6pn、eBPF、RDMA 预备链路）、CI 与自动化训练、以及权限与安全边界在 agent-native 时代的取舍。整体结论是：未来 AI 系统不是单点模型 API，而是围绕模型生命周期、工作流和基础设施栈的完整产品能力。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Swyx</span> </div> <p class="person-description">Latent Space 播客主持人，负责引导访谈并聚焦 AI 基础设施与应用落地问题。</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Akshat Bubna</span> </div> <p class="person-description">Modal CTO，负责 Modal 云平台的运行时、推理与代理基础设施方向。</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">John Ousterhout</span>  </div> <p class="person-description">操作系统领域的学者与作者，在对话中被提及其对 RDMA 与系统设计的观点。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Brett Taylor</span>  </div> <p class="person-description">OpenAI 相关高管，节目中被提及其对 AI 语言化可能性的讨论。</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Eric</span>  </div> <p class="person-description">Modal 创始团队成员（CEO），在访谈中被提及其对初期产品方向的推动。</p> </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="起点与对话开场">起点与对话开场</h2>
+<p><strong>Swyx</strong></p>
+<p>我们今天邀请了 Modal 的 CTO Akshat Bubna，和 Vibu 一起做这期对谈，聊他们的 AI 基础设施方向。</p>
+<p>先恭喜你们这次活动，昨晚的派对组织得很棒。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>谢谢，这次派对确实很有气氛。现场不仅是照片和周边，连产品都被做成了展品，放在像罗丹雕塑那样的位置，挺有意思。</p>
+<p><strong>Swyx</strong></p>
+<p>你最早创业时并不仅是做单纯的 GPU 推理公司，对吧？能讲讲最初的思路吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的，和你们认识的第一步是通过投资人认识 Eric，也就是我们的 CEO。他当时就在思考一个问题：为什么工作流编排工具这么难用？核心原因是大多要跑在 Kubernetes 上。</p>
+<p><strong>Swyx</strong></p>
+<p>你当时还采访过 Eric，两年前在 Spotify 那时也聊过一些背景。后来我又看到你们的 serverless container 系列分享。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>最初我们想做的其实是一个更好的 runtime。它既能解决 ETL、任务队列这类 bursty processing，又是一个可以不断叠加新能力的基础原语。</p>
+<p><strong>Swyx</strong></p>
+<p>当时 A100 之类加速卡上来之前，早期你们就已经在构建框架了，之后 ChatGPT 爆发才真正放大市场。</p>
+<p>你觉得最关键的拦路石是什么？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>关键是当时几乎没有工具为这一类工作负载做开发者体验优化。它们更偏 Web server，扩缩容节奏慢，但我们的模型推理常常需要按流量快速拉升与收缩。</p>
+<p>而且环境差异很大：有时需要不同 accelerator，有时需要不同镜像。把这些差异放大后，就需要一个更贴近开发者和实际部署语义的平台。</p>
+<p><strong>Swyx</strong></p>
+<p>你们后来用了一个看似看起来像术语的名字？我记得你说到很喜欢它。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我们用的是把配置尽量放在代码里的 decorator 思路。这样可以减少 YAML 写法，也能让开发者把平台能力和自身代码自然地结合在一起。</p>
+<p><strong>Swyx</strong></p>
+<p>那会不会被说成是 DSL 的锁定？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我们把 DSL 定义在配置边界上，比如硬件和扩缩容，而业务逻辑仍由你的代码控制。你可以带入自己的代码仓库，不会被彻底锁死。</p>
+<p><strong>Swyx</strong></p>
+<p>如果今天再回看，哪些部分保持不变？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我认为核心是开发者体验仍然重要，但在代理时代它必须升级。因为代理可以接管大量原本人类要做的步骤，所以工具链要为 agent-native 场景设计。</p>
+<p>例如，不应该要求代理去读成百上千份 Kubernetes 文件并手改未 typed 的 YAML，而应该在 decorator 上做少量修改就能完成资源自配。</p>
+<p><strong>Swyx</strong></p>
+<p>这也是最近大家讨论的趋势：代码不再是人为逐段审阅的核心。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，很多时候更重要的是可观察性。我们把大量信息放到 CLI 和 dashboard，模型可以自助排查，但最后要有人类判断。</p>
+<p><strong>Swyx</strong></p>
+<p>所以有点像把代码当黑箱，用可观察输出判断下一步动作。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>没错，这也是我们推动 Agent Experience 的起点。Modal 从最初就强调 AI 应用原语，先覆盖推理、训练、批处理和 sandbox。</p>
+<p><strong>Swyx</strong></p>
+<p>我注意到你没有强调 web server，这部分是有意的吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>有意的。持续在线的大规模 Kubernetes 依然有用，但我们的差异化在于灵活伸缩、计算密集和专用工作负载，而不是通用常驻服务。</p>
+<p><strong>Swyx</strong></p>
+<p>你觉得现在和创业公司一起做最让你有共鸣的方向？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是和一线创业公司并行开发。很多公司和我们一起做产品原型并快速迭代，这种节奏让团队小而快。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到 Cognition 的 early 例子，给我讲讲第一周接触客户的感受。</p>
+<p>我第一次去认知公司时，现场就有人穿着 Modal 的服装、直接嵌入他们团队，通信延迟太高时我们不得不现场协同，这是一个很直接的产品验证时刻。</p>
+<p>听起来很典型：先做最基础能力，再慢慢演化成可扩展模型。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的，后来模型循环失败是我们很重要的学习点。早期在 2023 年前后我们做了 sandbox 和 loops API，但现有模型在多轮自我调用时会很快发散。</p>
+<p><strong>Swyx</strong></p>
+<p>我记得你说那种反馈是十几轮后就没有意义了。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，所以后来我们更关注收集失败样本，做 benchmark，再把行为约束写进技能和模板里，而不是只靠更大模型硬凑。</p>
+<p><strong>Swyx</strong></p>
+<p>那这条路线为何没立刻爆发？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>规模增长有一个滞后期。早期几年相对安静，直到最近 AI 工作流真正起量后，sandbox 的商业价值才被放大。</p>
+<p><strong>Swyx</strong></p>
+<p>你刚才提到早年在 hackathon 就有客户想要快速部署模型，这确实说明需求早就存在。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的，像 Suno 这类客户希望即时启动 GPU sandbox、随时停启，这就是我们看到的基础需求。后来需求规模变了，但本质没变。</p>
+<p><strong>Swyx</strong></p>
+<p>所以后来你们的重点从 data engineering 扩展到 inference 了吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。推理弹性是我们的主战场。我们服务很多自有模型企业，像 Suno、Runway、音频和生物计算团队，他们会把不同模型部署到不同区域，流量也很不可预测。</p>
+<p><strong>Swyx</strong></p>
+<p>这让我想到 autoscaling 必须跨 region 做得更细。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>确实如此。我们要同时兼顾模型冷启动、区域时间错位和突发流量，把扩缩容内嵌到平台层，而不是让用户自己拼。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到早期客户也包括持续学习方向，这类有长期作业的需求对你们来说是新机会吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>有。前沿客户已经在用我们的原语做 continual learning，但我们还在评估如何把它当成标准服务直接推出。</p>
+<h2 id="推理性能与可扩展能力">推理性能与可扩展能力</h2>
+<p><strong>Swyx</strong></p>
+<p>在你们推理方向上，最大的下一步原语是什麼？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>一开始我们避开了大量 LLM API 竞争，先聚焦那些自研模型的客户。后来发现 inference 本身差异很大，尤其在扩缩和延迟控制上。</p>
+<p>于是我们投入 dflash。它是 block-based speculative decoding（块级推测解码），把一个小 draft 模型先生成 token block，再由大模型进行验证。</p>
+<p><strong>Swyx</strong></p>
+<p>也就是说通过 draft 和 verify 分离提升吞吐？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。大多数加速器优化只带来百分比提升，而提高 acceptance length 能带来成倍加速。核心是在不损失质量的前提下减少阻塞。</p>
+<p><strong>Swyx</strong></p>
+<p>那成本是不是会更高？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>它是额外模型，但你可以把成本看成换来更高吞吐。我们把更多实现开源了，用户在实践里能更快权衡这个 trade-off。</p>
+<p><strong>Swyx</strong></p>
+<p>接下来你们说到用户可以从自动端点一键起步，能再展开吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>Auto Endpoint 是给不想一开始就写大量代码的团队。用户可从 UI 或 CLI 一步创建端点，默认带上我们长期优化的能力；需要时再导出完整代码做深度定制。</p>
+<p><strong>Swyx</strong></p>
+<p>听起来像既保留模板效率，也保留了代码自由。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。我们希望平台和能力都不成黑箱：先低门槛上线，再允许你在同一工作流里迭代、替换草稿模型和推理设置。</p>
+<p><strong>Swyx</strong></p>
+<p>你把很多优化贡献给开源社区，这和商业模型看起来是冲突的。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>不是冲突。我们把很多内核与调度相关优化上游到开源生态，比如与 SGLang 协作，既让社区受益，也让 Modal 在产品化层更具壁垒。</p>
+<p><strong>Swyx</strong></p>
+<p>你们是否真的会更擅长硬件层面，而不是纯推理框架层？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。硬件适配和调度能力是我们最擅长的赛道。再加上弹性：从 scale to zero 到 burst scaling，我们把“什么时候怎么用”做成平台策略。</p>
+<p><strong>Swyx</strong></p>
+<p>就连生产级推理最难也不是单纯算力，而是尾延迟和一次性投递。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。你还要保证请求至少执行一次，不能出现偶发丢任务。这里才是真正难、也是客户最在意的工程面。</p>
+<p><strong>Swyx</strong></p>
+<p>你认为平台下一步会覆盖哪些层？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我们从 data->training->inference 的链路往 agent lifecycle 延伸：持久化文件、后台 agent、sandbox 生命周期管理。</p>
+<p><strong>Swyx</strong></p>
+<p>你给过一个 Ramp Inspect 的案例。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，它的成功很大程度来自 snapshotting 与快速扩缩，让后台 agent 像产品化服务一样稳定响应。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到推理比例从 8:1 到 1:1 的拐点，这一判断很有意思。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是。代理工作流让 CPU 与 GPU 之间的比例更多交替，不能再只按纯 GPU 推理去设计基础设施。</p>
+<p><strong>Swyx</strong></p>
+<p>你们到底有自己的数据中心吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>没有。我们是多云能力提供方。靠 17 个云提供商构建容量池，再加可靠层，避免单点掉 GPU 影响客户。</p>
+<p><strong>Swyx</strong></p>
+<p>这很像一层全局调度层。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。我们可以在 EU、美国、澳大利亚等不同区域放置工作负载，兼顾数据本地性、时延和合规。</p>
+<h2 id="网络与沙箱能力">网络与沙箱能力</h2>
+<p><strong>Swyx</strong></p>
+<p>听起来这类定位对代理很重要，因为它也更依赖文件系统和 CPU。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>没错。我们把核心当成 compute、storage、networking 的组合层，再叠加对企业的高级能力。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到 networked sandbox，能再解释下具体形态？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>一个 sandbox 不再是单容器，而是一个容器 Pod，可以跑多个容器。我们还加入 sidecar 式能力，让你在 sandbox 内控制出站网络、网关和凭证注入。</p>
+<p><strong>Swyx</strong></p>
+<p>这会不会带来更强的多容器协同和安全控制？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。很多场景下需要跨节点互通，我们也做了这条路径。还有更底层的 overlay 与 egress 规则，默认支持安全策略。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到了一个名字叫 i6pn 的 overlay 网络。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>它是 IPv6 overlay，最初为了分布式训练开发，后来用户把它用于更多用法。加上 decorator 可以快速组建 GPU 集群并共享网络。</p>
+<p><strong>Swyx</strong></p>
+<p>结果出现了很多超预期使用方式。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，文档写得不一定全能覆盖真实创意。有些团队会自己找出更有意思的组合。</p>
+<p><strong>Swyx</strong></p>
+<p>你在 RDMA 上也下了不少功夫，我想确认下。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，我们的 overlay 主要用于 RDMA 握手前的底座。它不是强调加密隧道，而是把 TCP 连接控制得更高效、可管理。</p>
+<p><strong>Swyx</strong></p>
+<p>John Ousterhout 提过这类内核问题，我听上去很像他那套系统思维。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>系统视角确实是关键：在 KV cache、权重迁移和训练到推理链路里，移动数据成本往往决定延迟。</p>
+<p><strong>Swyx</strong></p>
+<p>你刚才说现在很多地方从 sidecar 转到 eBPF。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，eBPF 可以在内核层做更细粒度控制，减少外部开销。再配合模型可观测和策略引擎，网络治理更高效。</p>
+<p><strong>Swyx</strong></p>
+<p>那分布式训练里，最主要瓶颈是哪里？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>很多组织看到的是 cable 与互联问题，尤其跨数据中心。我们提供内部约 3Tb/s 的网络能力，目标是让多节点训练和推理之间切换更平滑。</p>
+<p><strong>Swyx</strong></p>
+<p>你不是强调大规模预训练，而是 post-training。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。现阶段用户更在意高质量的微调和后训练。即便有大集群，团队仍会做大量小规模实验，弹性同样关键。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到的 auto research 跑什么？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我们内部和客户都在做 agent 驱动的 sweep：自动化尝试配置、profiler 调优、选出更好的训练/推理参数，减少人工试错。</p>
+<p><strong>Swyx</strong></p>
+<p>你们团队里有人负责这一块也更像售前工程。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，有专门的推理优化与解决方案人员。技术能力与客户沟通要同步，不然工具再好也没法真正落地。</p>
+<p><strong>Swyx</strong></p>
+<p>所以你会看到更多围绕参数搜索、而不是架构级搜索的实际工作。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。大多数团队先把算力 spend 在高效超参搜索，而不是盲目做 architecture search。预算要花在可验证收益上，不是盲目撒钱。</p>
+<p><strong>Swyx</strong></p>
+<p>那对于不同垂直，客户会继续向更专业的方向用这套能力吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。我们看到很多生物计算、音视频、机器人、RAG 与自定义模型场景都会继续成长，不同垂直对 sandbox、文件系统和持久化要求差异很大。</p>
+<h2 id="商业化与安全边界">商业化与安全边界</h2>
+<p><strong>Swyx</strong></p>
+<p>你最近还提到持续学习、batch 与实时视频？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。除了高频实时推理，我们也在做面向 open model 的 post-training、区域路由和容错回退，特别是视频流和语音场景。</p>
+<p><strong>Swyx</strong></p>
+<p>你会继续把 API 能力收窄吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我们有意识地不把自己当成模型 API 门店。API 更容易吸引 hobbyist，但我们要服务的是构建产品的团队，提供完整的后端能力和控制面。</p>
+<p><strong>Swyx</strong></p>
+<p>那什么时候才算是产品而非单纯一个接口？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>当用户不仅调用模型，还把任务队列、持久化、权限、回放、调试和业务规则都封装到自己代码和后端时，才进入真正产品化。</p>
+<p><strong>Swyx</strong></p>
+<p>你刚才也说过选择进入更深层的公司，通常会有更高差异化。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是。那些愿意走到模型与推理细节的公司，通常愿意在 tokenization、采样策略、缓存层做自定义改造，才更容易形成壁垒。</p>
+<p><strong>Swyx</strong></p>
+<p>你给了 Suno 的例子很典型。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。Suno 自己不在 Modal 训练，但推理层是完全定制化的。我们要支持这类“模型结构差异很大”的工程需求。</p>
+<p><strong>Swyx</strong></p>
+<p>在视频方向你也看到 next tier 不只是更好的模型。</p>
+<p>对，我同样理解是模型+agent 的协作，能完成从 6 秒短视频到更长内容的生产链路。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。我们现在看到越来越多公司做视频代理，需要运行 ffmpeg、编辑器和更丰富的工具链，不只是单一生成。</p>
+<p><strong>Swyx</strong></p>
+<p>你刚才也看过 Gitpod 等 CI/CD 方向。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我们认为当 coding agent 数量变多后，CI 成本会显著上升。我们的价值在于减少重复 artifact 构建、提高环境预置效率。</p>
+<p><strong>Swyx</strong></p>
+<p>也就是把 prepare dependencies、snapshot/restore 这类放前置。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。这能让 on-demand compute 用得更高效，尤其对于长任务和重复流水线非常关键。</p>
+<p><strong>Swyx</strong></p>
+<p>关于 Gitpod 被收购、OpenAI 的那条线你怎么观察？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我看重它在安全边界和网络层的落地能力。不同组织会有不同方式给每个代理分配独立环境，这和我们要解决的问题很接近。</p>
+<p>关于 meta harness，我的理解是：它是一个额外抽象层。关键看它是否给到真正有助生产部署和权限控制的收益，不是名字新不新。</p>
+<p><strong>Swyx</strong></p>
+<p>那么你们在 managed 与自建之间会给企业什么建议？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>起步可用 managed，但规模大时需要更强控制面：文件持久化、网络边界、快照恢复、权限模型。我们认为这就是 Modal 要做的基础层。</p>
+<h2 id="未来视角与收尾">未来视角与收尾</h2>
+<p><strong>Swyx</strong></p>
+<p>从安全到权限，这一层你更偏向什么？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我坚持硬边界与软边界并存。代理可通过策略自动化执行，但关键动作仍要有可解释的控制，不可能完全放开一切权限。</p>
+<p><strong>Swyx</strong></p>
+<p>这和你说的 LLM-as-kernel 的设想是同一个方向吗？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>可以这么理解，它帮助我们想像未来，但不是放弃工程治理。先测试边界，再逐步扩大信任范围。</p>
+<p><strong>Swyx</strong></p>
+<p>你提到未来还会看到 batch、音频、multimodal 之外的更多领域？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是。我们还会继续服务机器人、drug discovery、实时语音/视频等方向，基础设施层要同时支撑不同形态工作负载。</p>
+<p><strong>Swyx</strong></p>
+<p>最后问一个应用问题：你们是否会考虑 on-prem 或 air-gapped 形态？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>目前主要是 cloud-first，不走纯私有部署。因为我们要依赖多云资源弹性，这是业务速度和规模上更现实的路径。</p>
+<p><strong>Swyx</strong></p>
+<p>但这也让你有更多“基础设施优先而非服务层”的选择空间。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。我们希望服务不仅仅绑定单一 LLM 入口，而是覆盖更广泛任务，比如后训练、音视频和更多 agent 工具链。</p>
+<p><strong>Swyx</strong></p>
+<p>你认为未来一两年，最重要的技术投资会继续在哪儿？</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>我会继续加强基础设施层：更快起步、可观测性、弹性容量管理，以及让企业级代理能在不重写全部基础设施的前提下快速迭代。</p>
+<p><strong>Swyx</strong></p>
+<p>在语言和开发体验上你给出一个更务实结论。</p>
+<p>Python 与 TypeScript 仍然是主流：前者支撑数据和 ML，后者更适合 agent tooling。也许最需要提升的是 English prompts。</p>
+<p>你也提到过虽然一直有人想要新语言，但效果未必显著。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对，市场上不断有人提议更适合 AI 的语言，但真正落地仍受制于生态和工程惯例。短期内，提示词和既有生态更关键。</p>
+<p><strong>Swyx</strong></p>
+<p>那今天这期我会总结一句：Modal 的核心仍是让构建生产代理更快，尤其在复杂基础设施下保持低摩擦。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>是的。我们持续把代理从开发者工具变成产品系统的一部分，下一步也是围绕可扩展、可观测和成本可控展开。</p>
+<p><strong>Swyx</strong></p>
+<p>你今天有提到 modal bench，也是在验证代理缺口对吧。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>对。我们会基于 benchmark 找到模型和代理的共性缺口，把反馈直接回填到 CLI、日志、快照和权限接口。</p>
+<p><strong>Swyx</strong></p>
+<p>这期聊得很充实，感谢你。</p>
+<p><strong>Akshat Bubna</strong></p>
+<p>谢谢，我想我们还还有很长的路要走。</p>
+<p><strong>Swyx</strong></p>
+<p>也感谢你加入，期待下次。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
