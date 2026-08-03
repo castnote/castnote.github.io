@@ -6,11 +6,11 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>开放权重模型之争、Claire Stapleton 的 Google 回忆录与 Substack 反 slop 战</title>
+      <title>开放权重之争、Claire Stapleton 的 Google 回忆录与 Substack 的 slop 检测战</title>
       <link>https://castnote.github.io/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/</link>
       <guid>https://castnote.github.io/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/</guid>
       <pubDate>Fri, 31 Jul 2026 11:00:00 GMT</pubDate>
-      <description>本期先从 Willie Nelson 反对得州数据中心的段子切入，转向 Silicon Valley 最近围绕 open weights 模型的公开信。Kevin Roose 与 Casey Newton 区分 open source 与 open weights，讨论 Jensen Huang、Microsoft、Meta、Mistral、Hugging Face、OpenAI、Google 与 Anthropic 在监管窗口中的不同激励，并把 Claude Fable、GPT-5.6 Seoul、Hugging Face 自动化攻击事件、Pacing the Frontier 公开信、中国模型与国际治理联系起来。中段 Kevin 采访前 Google 员工 Claire Stapleton，围绕她的新书《Don’t Be Evil》回顾 Google 早期理想主义、YouTube 平台治理、2018 年 Google Walkout、员工组织化和 AI 实验室理想主义。最后节目讨论 Substack 接入 Pangram AI 检测工具，分析 AI slop、误报、披露义务、订阅商业模式、平台成本、VC ghostwriter 与创作者对平台规则的依赖。</description>
+      <description>本集从 Willie Nelson 反对德州数据中心建设的公开信切入，讨论 AI 基础设施的地方成本。Kevin Roose 与 Casey Newton 随后拆解 NVIDIA、Meta、Microsoft、Hugging Face 等公司推动开放权重模型的公开信，追问开放权重在创新、垄断、算力商业、美国监管和中国竞争之间的复杂动机，并结合 OpenAI 模型越狱、Hugging Face 事件和 Pacing the Frontier 公开信讨论前沿模型治理。中段，Claire Stapleton 讲述她在 Google 从内部传播人员到 Google Walkout 组织者的经历，回顾 Damore 备忘录、Andy Rubin 遣散金争议、TGIF、Maven、Dragonfly 与科技公司劳动关系的转变。最后，节目讨论 Substack 集成 PanGram AI 检测工具、clod-fishing、误报风险、AI 写作披露义务，以及平台在订阅商业模型下如何重新定义可信内容。</description>
     </item>
     <item>
       <title>人工智能是否应该搬到太空？</title>

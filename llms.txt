@@ -12,7 +12,7 @@
 
 ## 文章列表
 
-- [开放权重模型之争、Claire Stapleton 的 Google 回忆录与 Substack 反 slop 战](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/): Hard Fork · 2026-07-31 ([Markdown](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight.md))
+- [开放权重之争、Claire Stapleton 的 Google 回忆录与 Substack 的 slop 检测战](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/): Hard Fork · 2026-07-31 ([Markdown](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight.md))
 - [人工智能是否应该搬到太空？](/episodes/freakonomics/should-a-i-move-to-space/): Freakonomics Radio · 2026-07-24 ([Markdown](/episodes/freakonomics/should-a-i-move-to-space.md))
 - [Factory 创始人 Matan Grinberg：软件将开始‘自行构建’的软件工厂到来](/episodes/training-data/factory-s-matan-grinberg-the-coming-dark-factory-where-software-builds-itself/): Training Data · 2026-07-23 ([Markdown](/episodes/training-data/factory-s-matan-grinberg-the-coming-dark-factory-where-software-builds-itself.md))
 - [Anthropic 的 Katelyn Lesse 与 Angela Jiang：构建生态而非围墙式园区](/episodes/training-data/anthropic-s-katelyn-lesse-angela-jiang-building-an-ecosystem-not-a-walled-garden/): Training Data · 2026-07-20 ([Markdown](/episodes/training-data/anthropic-s-katelyn-lesse-angela-jiang-building-an-ecosystem-not-a-walled-garden.md))
