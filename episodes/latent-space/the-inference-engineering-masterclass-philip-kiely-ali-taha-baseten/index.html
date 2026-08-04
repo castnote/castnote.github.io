@@ -1,105 +1,460 @@
-<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten | 听阅"><meta property="og:description" content="Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。"><meta property="og:url" content="https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten | 听阅"><meta name="twitter:description" content="Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。"><meta property="article:published_time" content="2026-08-03T21:44:03.000Z"><meta property="article:tag" content="播客"><title>推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="description" content="本期围绕推理工程展开，讨论长上下文请求进入 Baseten 后的缓存感知路由、prefill/decode 解耦、投机解码、专用部署、工具调用和结构化输出；随后延伸到新模型上线、量化质量、速度优化、Dynamo、PD 解耦、本地 AI 与数据中心推理差异、Rubin 和专用芯片、视频与音频生成，以及训练和推理逐渐合流后的持续学习循环。"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.18.2"><link rel="icon" type="image/svg+xml" href="/castnote-mark.svg"><link rel="canonical" href="https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/"><link rel="alternate" type="application/rss+xml" title="听阅 RSS" href="/rss.xml"><meta property="og:title" content="推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha | 听阅"><meta property="og:description" content="本期围绕推理工程展开，讨论长上下文请求进入 Baseten 后的缓存感知路由、prefill/decode 解耦、投机解码、专用部署、工具调用和结构化输出；随后延伸到新模型上线、量化质量、速度优化、Dynamo、PD 解耦、本地 AI 与数据中心推理差异、Rubin 和专用芯片、视频与音频生成，以及训练和推理逐渐合流后的持续学习循环。"><meta property="og:url" content="https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/"><meta property="og:type" content="article"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="听阅 CastNote"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha | 听阅"><meta name="twitter:description" content="本期围绕推理工程展开，讨论长上下文请求进入 Baseten 后的缓存感知路由、prefill/decode 解耦、投机解码、专用部署、工具调用和结构化输出；随后延伸到新模型上线、量化质量、速度优化、Dynamo、PD 解耦、本地 AI 与数据中心推理差异、Rubin 和专用芯片、视频与音频生成，以及训练和推理逐渐合流后的持续学习循环。"><meta property="article:published_time" content="2026-08-03T21:44:03.000Z"><meta property="article:tag" content="播客"><title>推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha | 听阅</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-REWFNXH9KD"></script><script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-REWFNXH9KD');
-    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten","description":"Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。","datePublished":"2026-08-03T21:44:03.000Z","author":[{"@type":"Person","name":"Swyx"},{"@type":"Person","name":"Philip Kiely"},{"@type":"Person","name":"Ali Taha"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/","isPartOf":{"@type":"PodcastSeries","name":"Latent Space"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/latent-space/">Latent Space</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/08/04 05:44:03</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.latent.space/p/inference-eng">原始节目</a> </div> <h1>推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten</h1> <p class="episode-summary">Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Swyx</span> </div> <p class="person-description">Latent Space 主持人</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Philip Kiely</span> </div> <p class="person-description">Baseten 推理工程相关负责人、Inference Engineering 一书作者</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Ali Taha</span> </div> <p class="person-description">Baseten 推理工程师，专注模型服务与视频扩散推理</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Noam Brown</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Andrew Lo</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Hao Tian</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Ethan He</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">David Holz</span>  </div>  </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
-<h2 id="一个超长请求是怎样被处理的">一个超长请求是怎样被处理的</h2>
-<p><strong>Swyx</strong></p>
-<p>我们先从一个有趣的问题开始：如果我把一个 20 万 token 的长请求发给 Baseten 的推理服务，查询会怎样经过 GPU、模型路由和负载均衡？我们平时看不到的那些环节，究竟发生了什么？</p>
-<p><strong>Philip Kiely</strong></p>
-<p>第一件事是问：你之前发过这个查询，或者至少发过其中一部分吗？我希望答案是发过，因为这样对我更容易，对你也更便宜。系统会做某种缓存感知路由，在多个副本中寻找既有可用预填充 worker、又已经缓存了部分输入的实例，从而跳过这 20 万个 token 中至少一部分的 prefill。</p>
-<p>如果请求真的有 20 万 token，很可能是代码、多轮 agent 任务之类的场景，通常应该能命中缓存。如果完全没有缓存，就必须把请求送到 prefill worker。对于部分模型，我们已经把 prefill 和 decode 解耦：一组 GPU 专门处理输入、生成 KV cache，再把它交给另一组 GPU 逐步生成输出。</p>
-<p>前面还可能有一个 speculator，也就是投机解码的小模型。假设这是编码请求，它的草稿 token 接受率会比较高；如果你其实是在让模型总结每一本《哈利·波特》，速度就会慢一些。最后输出会流式传回给你，并按用量计费。</p>
+    </script><link rel="stylesheet" href="/_astro/about.DkWbtS-0.css"></head> <body> <div class="site-shell"> <header class="site-banner"> <div class="banner-inner"> <a class="banner-brand" href="/">听阅</a> <nav class="banner-nav" aria-label="主导航"> <a class="banner-link is-active" href="/"> blog </a><a class="banner-link" href="/ebook/"> ebook </a><a class="banner-link" href="/rss.xml"> RSS </a> </nav> </div> </header> <main class="page">  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha","description":"本期围绕推理工程展开，讨论长上下文请求进入 Baseten 后的缓存感知路由、prefill/decode 解耦、投机解码、专用部署、工具调用和结构化输出；随后延伸到新模型上线、量化质量、速度优化、Dynamo、PD 解耦、本地 AI 与数据中心推理差异、Rubin 和专用芯片、视频与音频生成，以及训练和推理逐渐合流后的持续学习循环。","datePublished":"2026-08-03T21:44:03.000Z","author":[{"@type":"Person","name":"swyx"},{"@type":"Person","name":"Alessio Fanelli"},{"@type":"Person","name":"Philip Kiely"},{"@type":"Person","name":"Ali Taha"}],"publisher":{"@type":"Organization","name":"听阅 CastNote"},"mainEntityOfPage":"https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/","isPartOf":{"@type":"PodcastSeries","name":"Latent Space"},"inLanguage":"zh-CN"}</script> <article class="episode-article"> <header class="episode-header"> <div class="episode-meta"> <a href="/shows/latent-space/">Latent Space</a> <span class="meta-separator" aria-hidden="true">·</span> <span>2026/08/04 05:44:03</span> <span class="meta-separator" aria-hidden="true">·</span> <a href="https://www.latent.space/p/inference-eng">原始节目</a> </div> <h1>推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha</h1> <p class="episode-summary">本期围绕推理工程展开，讨论长上下文请求进入 Baseten 后的缓存感知路由、prefill/decode 解耦、投机解码、专用部署、工具调用和结构化输出；随后延伸到新模型上线、量化质量、速度优化、Dynamo、PD 解耦、本地 AI 与数据中心推理差异、Rubin 和专用芯片、视频与音频生成，以及训练和推理逐渐合流后的持续学习循环。</p> <div class="tag-list"> <a class="tag" href="/tags/%E6%92%AD%E5%AE%A2/"> 播客 </a> </div> </header> <section class="people-section" aria-labelledby="participants-title"> <h2 id="participants-title" class="sr-only">主持人和嘉宾</h2> <div class="people-group"> <h3>主持人</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">swyx</span> </div> <p class="person-description">Latent Space 主持人</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Alessio Fanelli</span> </div> <p class="person-description">Latent Space 主持人</p> </div> </div> </div> <div class="people-group"> <h3>嘉宾</h3> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Philip Kiely</span> </div> <p class="person-description">Baseten 推理工程师，《Inference Engineering》作者</p> </div><div class="person-item"> <div class="person-line"> <span class="person-name">Ali Taha</span> </div> <p class="person-description">Baseten 推理工程师</p> </div> </div> </div> </section> <section class="people-section" aria-labelledby="mentioned-people-title"> <h2 id="mentioned-people-title">提到的人物</h2> <div class="people-list"> <div class="person-item"> <div class="person-line"> <span class="person-name">Hao Tian</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Tri Dao</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Andrew Lo</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Kyle</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Ethan He</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Charlie</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">David Holz</span>  </div>  </div><div class="person-item"> <div class="person-line"> <span class="person-name">Martin Casado</span>  </div>  </div> </div> </section> <section class="episode-body"> <!-- generated by podcast_local/scripts/export_podread_articles.py -->
+<h2 id="开场与-waterloo-intern-的接力">开场与 Waterloo intern 的接力</h2>
+<p><strong>swyx</strong></p>
+<p>今天我们在演播室和 Philip Kiely 聊天。他是《Inference Engineering》的作者，也参与过 Baseten 以及我们之前做过的项目。Ali，欢迎你。很高兴见到你这位 Waterloo 实习生。</p>
+<p>你是什么时候把“Waterloo You intern”当作社交媒体账号名的？</p>
 <p><strong>Ali Taha</strong></p>
-<p>如果是公共模型 API，按 token 计费可能就是几分钱；但专属部署不是这样。高流量客户有时直接按小时租整台机器更划算，尤其是每小时要推送数百万 token 时。这样客户需要自己把这台机器尽量跑满，而我们则可以针对他们的流量做更具体的优化，比如训练专属的 speculative decoder。</p>
-<h2 id="工具调用与结构化输出">工具调用与结构化输出</h2>
-<p><strong>Swyx</strong></p>
-<p>工具调用到底只是生成 JSON，还是还要处理更多事情？</p>
-<p><strong>Ali Taha</strong></p>
-<p>如果模型的后训练不够好，或者为了加速推理而量化得不合适，它就可能很难正确读取 JSON 或完成工具调用。但这不需要一个特殊的 sandbox；模型只是输出建议，正常的专属部署就够了。真正难的是训练出非常特定的工具调用行为，以及正确处理一整套 JSON 输出。</p>
-<p>如果模型没有以规定方式结束工具请求，它可能既完成了工具调用和思考，又在还没看到工具结果时继续解码，于是直接把结果幻觉出来。这似乎是工具调用最棘手的地方，而不是 sandbox 本身。</p>
+<p>我记得是在三月中旬改的名。看到这个账号名空着，我就想，必须抢下来。</p>
 <p><strong>Philip Kiely</strong></p>
-<p>推理侧可以限制可能的输出。我们很早就发布过一种做法：建立状态机，用它把输出约束在特定格式内，也就是用语法或指定的输出格式保证结构正确。这不能保证模型一定选择调用正确的工具，也不能阻止它调用错误的工具，但至少能解决输出结构不合法的问题。MCP 本质上也只是另一种工具。</p>
-<p>我经常向别人解释，LLM 实际上什么都不能直接做，它只能提出下一步行动的建议。如果这些建议按照某种格式交给一个知道如何处理它们的系统，行动才会发生。agent loop 也可以在输出不正确时重试；小模型通常更容易在这里暴露质量差距。</p>
-<p><strong>Swyx</strong></p>
-<p>JSON 仍然占主流，但它不太适合流式解析：必须等到括号完整闭合，才能可靠地验证结构。文本转成 JSON 后，内容还可能很长，要同时包含日期、实体引用和来源。对大量实验结构化输出的人来说，这些细节会真正影响系统设计。</p>
-<h2 id="让新模型进入生产环境">让新模型进入生产环境</h2>
-<p><strong>Swyx</strong></p>
-<p>大家常说某个新模型一发布，Hugging Face、Fireworks 或 Baseten 就‘支持’了它。可从能把 token 生成出来，到拥有一个生产就绪的 API，中间究竟有多少工作？</p>
+<p>问题是，Ali 工作太出色了，应该不会再当实习生太久，所以我们得想想这个账号名以后交给谁，正式把火炬传下去。</p>
+<p><strong>swyx</strong></p>
+<p>可以把它传给下一位 Waterloo 毕业生——不对，应该是下一位 Waterloo 实习生。你得从 Waterloo 找一个实习生，让 Baseten 招到的那个人继承这个头衔。最好再办一场盛大的毕业典礼，正式更换账号名。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>你们显然很擅长办典礼，毕竟新书发布会办得很漂亮，也非常成功。不过在聊这些之前，先来个有趣的问题：假设我把一个 20 万 token 的长查询发进 Baseten 的推理系统，会发生什么？从 GPU、模型路由到负载均衡，背后这一整套流程是怎样的？</p>
 <p><strong>Philip Kiely</strong></p>
-<p>差别很大。开源推理引擎往往提前拿到权重，所以让模型跑起来并不难；但每家推理公司的栈都包含开源组件和自研部分，任意新架构都会带来新的适配工作。有时新旧模型很像，迁移会容易一些，但即便如此也要重新做量化、校准、speculator 训练、基础设施部署和测试。</p>
-<p>我们的模型通常希望以 NVFP4 运行，以充分利用 Blackwell。模型发布时一般不是这个格式，所以要重新量化并校准，确保没有智力退化。由于模型 API 开启了零数据留存，我们不知道客户的具体流量，只能根据代码和 agent 等常见场景寻找公共数据集，训练通用的 speculator。</p>
-<p>新架构还会增加运行时工作。DeepSeek 系列往往最难，因为架构变化更大胆；GLM 也引入了来自 DeepSeek 的稀疏注意力机制，我们必须在运行时中加入支持。开源实验室彼此借鉴组件，这正是生态有趣的地方。</p>
-<p><strong>Ali Taha</strong></p>
-<p>一个例子是给没有视觉能力的语言模型加视觉。不要改动主模型权重，而是冻结语言模型的‘大脑’和图像 encoder 的‘眼睛’，只训练一个很小的 projector，把视觉 token 对齐到语言模型能理解的空间。起初可以让模型描述山或人，但更有效的做法是给每张图配一组问题：图里有没有白人男性、右上角有没有鸟、有没有科学家等，让模型连续回答问题。这样它学到的不只是 caption，而是更完整的视觉理解。</p>
+<p>面对这么长的查询，我首先会问：你以前发过这个查询，或者至少发过其中一部分吗？我非常希望答案是“发过”，因为这样对我来说更容易，对你来说也更便宜。系统首先会做某种缓存感知路由：假设当前有多个实例、多个副本在运行你要调用的模型，我们会把请求送到既有可用 prefill worker、又尽可能已经缓存了输入的实例上，这样至少可以跳过这 20 万 token 中一部分的 prefill。</p>
+<p>如果你真的在处理 20 万 token，那很可能是在写代码，或者运行多轮 agent；这类场景通常应该能命中缓存。如果没有缓存，就只能把请求发给 prefill worker。至少在某些模型上，我们已经把 prefill 和 decode 解耦了：一组 GPU 专门处理输入并生成 KV cache，再把它交给另一组 GPU 来执行 decode，逐 token 生成输出。</p>
+<p>我们前面可能还会放一个 speculator model，也就是投机解码里的草稿模型。假设你确实是在写代码，它通常会有很高的草稿 token 接受率。但如果你其实是让我总结每一本《哈利·波特》，那它就会慢一些。最后，系统把输出流式传给你，按用量计费，可能收你几分钱，然后问一句：还要再发一个吗？</p>
+<p><strong>swyx</strong></p>
+<p>不过 Baseten 并不是按几分钱来收费的。</p>
 <p><strong>Philip Kiely</strong></p>
-<p>这种改造很有吸引力：没有图像输入时直接跳过 encoder，文本能力不会受影响；视觉 encoder 通常不到十亿参数，也不是系统的主要负担。最终可以把 Kimi 的视觉、GLM 的权重和 DeepSeek 的注意力组合成一个系统，这体现了开放源代码生态的力量。</p>
+<p>我说的是公共模型 API。如果你部署的是专用实例，那当然不是按几分钱算。</p>
+<p><strong>swyx</strong></p>
+<p>我当初和 Baseten 接触时，觉得它的一个关键差异就在这里：如果客户的流量非常大，直接按机器租用往往更合适，因为怎样把整台机器跑满，就由客户自己负责。</p>
 <p><strong>Ali Taha</strong></p>
-<p>有时还需要替换模型中的层。比如 Minimax M3 的某个 head 使用 full attention，会让 speculative decoding 变得很慢：序列中所有 token 都参与 O(N²) 的计算，KV cache 也很大。我们可以把它替换成使用 GQA 的层，再通过合适训练让接受率保持住。真正的难点仍然是训练：必须让新组件正确工作，训练和推理越来越密不可分。</p>
-<h2 id="循环输出质量与量化">循环输出、质量与量化</h2>
+<p>没错。如果每小时要推几百万个 token，按小时付费通常比按 token 付费便宜得多。</p>
+<p>至于什么时候应该切换到专用部署，我觉得可靠性是一个重要原因。客户可能有非常具体的使用场景，想让你专门为他们训练某些东西，比如针对他们自身流量定制一个 spec deck。这里的 spec deck 指的是 speculative decoding，也就是投机解码。</p>
+<p>大模型通常每次 forward pass 只生成一个 token。我们可以在它上面接一个很小的草稿模型，让它快速、激进地执行三次 forward pass，先预测出三个 token；然后让原来的大模型对这三个 token 一次性做一次 forward，检查预测是否正确，再接受或拒绝这些 token。这样就能提高 decode 速度。</p>
+<p>草稿模型是针对流量训练的。如果你一直在总结《哈利·波特》，我就可以专门用这些书训练它，几乎能保证三个 token 每次都被接受。但共享 endpoint 做不到这一点，因为我不知道你的请求是在写代码、总结小说，还是生成英文内容。书里第四章也提到过一个具体阈值；除此之外，还可以设置特定的 batch size 和并行方式。</p>
+<p><strong>swyx</strong></p>
+<p>这是一条很典型的探索路径：就像有人问“我在浏览器里输入 Google 之后发生了什么”。回到工具调用：它是不是只是在生成 JSON，还是还存在更多复杂性？</p>
 <p><strong>Ali Taha</strong></p>
-<p>模型上线后还要面对生产中的异常。我们曾遇到模型模式坍缩，连续输出同一个 token。现在 endpoint 如果发现同一个 token 连续出现四次以上，就会重新生成或重新处理请求。某些特殊字符需要排除，因为表格确实可能合法地连续输出很多横线；但像 S 这样的 token 在一些模型里会触发明显循环。</p>
-<p>这类问题往往不是权重或量化错误。同一组权重换一个推理引擎可能就不再复现，问题可能来自 backend kernel 的细微 race condition。甚至同一个模型放在不同集群上也不同：节点间互联速度不同，会不会暴露 KV cache 传输中的竞争条件。于是你必须判断到底是软件、权重还是硬件。即使 temperature 为零，硬件和并行执行也可能让结果不完全确定。</p>
-<p>GPU kernel 为了速度会重叠执行。如果同步 barrier 写错，某些线程就可能在数据写入前读取寄存器。没有像 Rust borrow checker 那样的机制替你消除这种问题，只能依靠极其充分的测试；而测试本身非常困难。</p>
+<p>如果模型的 post-training 做得不好，或者为了让推理更快而进行的量化影响了模型，它就可能很难正确读取 JSON 和处理工具调用。不过工具调用不需要自己的 sandbox，也不是模型借此逃出 sandbox；它完全可以运行在普通的专用部署里。现在工具调用最棘手的地方，似乎是不同公司想要的工具调用格式各不相同，而这是一件很敏感的训练问题。</p>
+<p>因为系统要处理各种 JSON 输出，如果模型没有以非常确定的方式结束请求，最后就可能出现一种情况：模型完成了工具调用和思考，却没有看到工具返回的结果，而是在继续 decode 的过程中把结果幻觉出来。就我看来，这比 sandbox 本身更像是工具调用的主要挑战。</p>
 <p><strong>Philip Kiely</strong></p>
-<p>大多数推理优化是无损的。KV caching 只是避免重复计算，speculation 中错误的草稿 token 也会被拒绝。主要的有损优化是量化，关键取决于数据格式、选择量化哪些层，以及如何校准量化权重来保留 outlier。长上下文也会影响服务设计：即使模型支持百万 token，也可以同时提供较短上下文的 API，让不需要长上下文的用户获得更好的性能。</p>
-<p>我理解的质量，是服务结果与模型理想的、全精度实现有多接近。纯推理优化的目标是在尽可能接近 100% fidelity 的前提下变快；内部标准是用户不应该分辨出我们的 API 和官方 API 的差异。量化不一定让结果真正变好，基准测试中的小幅上升通常只是非确定性带来的噪声。</p>
-<p><strong>Ali Taha</strong></p>
-<p>但量化不只是‘量得越多越差’。我们研究过如何判断哪些层应量化、哪些层应保留。图像模型里通常不量化 modulation 层和 out projection，因为前者关系到模型理解，后者关系到用户看到的输出。量化误差还可能相互抵消：量化更多层的版本，反而可能比只量化少数层的版本更接近原模型。</p>
-<p>因此我们用 KL divergence 比较量化模型和全精度模型的 logits 分布，而不只是看 benchmark 分数。如果目标 token 的概率分布更接近原模型，就更可能保持原模型行为。通过这种方法，某个量化版本可以比其他提供商多量化约 20% 的层，同时获得更高吞吐和更好的 fidelity。</p>
-<h2 id="速度从哪里来">速度从哪里来</h2>
+<p>这确实是训练侧的挑战。推理侧则可以限制可能生成的输出。我们差不多两年前就发布过一种解决方案：建立一个状态机，用它把输出约束在特定格式里，也就是通过类似 BNF grammar 的方式控制结果。在我们的推理系统里，用户指定输出格式，系统就能保证输出遵循这个结构。</p>
+<p>把这种方法用于工具调用，可以减少格式错误。当然，它仍然无法保证模型一定会调用正确的工具，或者一定会调用工具；但至少能解决输出结构的问题。MCP 也只是另一种工具，并没有什么特殊之处。模型本身其实什么都做不了，它只能提出“应该做什么”的建议。只有当这些建议以特定格式交给一个知道如何处理它们的系统时，动作才会真正发生。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>这套方法也不只适用于工具调用。在 agent loop 里，如果输出格式不对，或者推理和工具调用混在了一起，系统可以让模型说“我不知道该做什么，再试一次”，有时多试几轮就能成功。不过在训练层面，小模型有时更难做到这一点；把大模型直接换成小模型，并不会得到完全相同质量的输出。</p>
+<p><strong>swyx</strong></p>
+<p>我原本以为 JSON 迟早会被别的格式取代，因为 JSON 很难流式传输：括号必须先打开、最后还要闭合，所以在输出尚未完成时，很难一边接收一边解析或验证。人们因此发明过一些替代格式，像 TOML 或 YAML，但到现在 JSON 似乎仍然占主导地位。</p>
 <p><strong>Philip Kiely</strong></p>
-<p>推理优化的提升可以是数量级的，而不只是把每秒 70 token 提到 90。基准测试很难，因为硬件、系统负载、prompt、输入输出长度都会影响结果。还要区分吞吐意义上的 tokens per second 和延迟意义上的 tokens per second，后者更准确的名称其实是 inter-token latency。</p>
-<p>一个没有多少优化的超大模型，可能只有每秒 30 到 50 token。通过量化、speculator、缓存命中、prefill/decode 解耦、合适的硬件、较小 batch 和针对延迟调好的并行配置，可以达到 300 到 400 token；从最差提供商到最佳提供商，实际常见的是 4 到 6 倍，10 倍则是非常激进但并非完全不可能。相同硬件和 GPU 数量下，推理优化通常能带来 2 到 4 倍。</p>
+<p>JSON 输出通常并不长。工具调用还会包含参数，某些工具的参数确实可能很长，但我印象中，典型工具调用只占相对少量的 token。因此，投机解码通常很擅长处理这种格式化的 JSON，decode 会很快；在这种情况下，流式传输的价值可能也没那么大，当然也可能是我判断错了。</p>
 <p><strong>Ali Taha</strong></p>
-<p>提升大致可以这样叠加：从 BF16 到 NVFP4 带来接近两倍的收益，speculator 接近两倍，足够硬件和流量下的 prefill/decode 解耦再接近两倍，最新 kernel 和运行时还会增加两位数百分比。对真正熟悉这套工作的人来说，构建量化权重、训练 speculator，通常各需要几小时到几天。普通用户往往可以直接使用开源量化 checkpoint，或者使用提供商已经训练好的 spec 技术。</p>
-<h2 id="dynamo投机解码与本地-ai">Dynamo、投机解码与本地 AI</h2>
+<p>你还会受到模型要接入的软件约束。如果那套软件本来就是用 JSON 来完成工具调用，或者客户明确规定“我们的软件就是这样工作的，工具接口采用 JSON”，那么工具调用就必须遵循这个接口。</p>
+<h2 id="从结构化输出到模型支持">从结构化输出到模型支持</h2>
 <p><strong>Philip Kiely</strong></p>
-<p>NVIDIA 的 Dynamo 更像一个用于构建系统的开源工具包，而不是装上就自动提速的产品。它可以协调 KV cache 在集群和硬件之间移动，支持 KV 感知路由、KV offloading 以及 prefill/decode 解耦。它有默认配置，但本质是开发者工具；真正的基准仍应和生产环境中实际存在的最佳部署比较。</p>
-<p>Medusa、Eagle 等技术在书里主要是为了建立词汇和直觉。Medusa 已经比较老，但仍适合作为基线；现在还有更新的 speculative decoding 方法。更小的 speculator 通常约为十亿参数，或原模型的十六分之一。继续对 speculator 做 speculative decoding 在直觉上很诱人，但训练和部署复杂度会递归增加，而且小模型仍要和大模型争用同一套硬件资源。</p>
-<p>数据中心推理的目标是‘模型怎么装进去，再让它没那么慢’；本地 AI 的目标是‘怎么塞进我的硬件，再让它没那么笨’。本地生态在动态量化、剪枝、蒸馏和删层方面有很多经验。比如 TurboQuant 在 MacBook 这种内存带宽有限的设备上很有用，但在 B200 上，反量化和量化 kernel 的开销可能让它变慢。不同硬件的瓶颈不同，优化不能直接照搬。</p>
-<h2 id="并行化显存与-megakernel">并行化、显存与 megakernel</h2>
-<p><strong>Philip Kiely</strong></p>
-<p>Tensor parallelism 把模型切到多个 GPU 上，每一步都需要 all-gather 或 all-reduce，所以非常依赖 GPU 间的高速互联，通常更有利于降低延迟。Expert parallelism 适用于 MoE：把 expert 放到 GPU 上，复制很小的 router，让 token 在 expert 之间转移，通信更少，吞吐更高。两者可以组合使用；跨节点互联较慢时，才会用 pipeline parallelism 把不同层放到不同硬件上。</p>
+<p>你可以要求客户改软件，告诉他们这样更适合模型。不过如果只是网页训练，差别应该没那么大。至于输出更多 token 是否更赚钱，就要看你的商业模式了。</p>
+<p><strong>swyx</strong></p>
+<p>这确实取决于具体情况。作为一个长期处理 AI 生成内容的作者，我会尽量把纯文本转成 JSON 文本，哪怕那是很长的 JSON：里面要有日期、实体引用、引用来源等信息。真正大量实验结构化输出的人，必须认真处理这些问题。</p>
+<p>我们把视角往上移一层。你刚才提到，新模型供应商发布模型时，其实会有大量推理工程工作。比如之前已经支持 GLM-5、GLM-5.1，到了 GLM-5.2，或者发布 Kimi K3，难道还需要做很多事情吗？</p>
 <p><strong>Ali Taha</strong></p>
-<p>B200 每张 GPU 大约有 180GB 显存，八张就是约 1.44TB；NVFP4 每个参数约半个字节，所以八张卡可以放下约 800GB 级别的权重。H100 每张则只有约 80GB。显存不只要容纳权重，还要留给 KV cache。像 2.8 万亿参数、上下文又很长的模型，权重和 KV cache 会争夺空间，这也是 KV cache offloading 越来越重要的原因。</p>
-<p>Megakernel 的想法是把很多 kernel 融合起来，减少 launch overhead，但 fused kernel 不能消除 tensor parallelism 中必须发生的 GPU 间通信。要写出高度优化的 megakernel 很难；现实里，分别优化的 TRITON 或 Modular kernel 往往更快，因为各组件可以独立并行。随着新一代 GPU 在硬件层面做更多调度，megakernel 可能不再是最值得押注的方向。</p>
+<p>需要，工作量很大。很多人看到新模型发布后，会立刻说 Hugging Face、Fireworks、Baseten 都已经支持了它。可“支持模型”有两层含义：一种是能让模型吐出 token，另一种是提供生产就绪的 API。做到前者并不难，开源推理引擎通常还会提前拿到权重；但要做成生产服务，就完全是另一回事。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>而且不只是支持与否的问题。对消费者来说，这还会变成一场推理竞赛。Kimi K2.5 或 GLM-5.2 发布时，可能今天某家供应商是每秒 90 个 token，第二天另一家就变成 150 个。</p>
 <p><strong>Philip Kiely</strong></p>
-<p>硬件周期也越来越快、越来越复杂。从 Ampere 到 Hopper 再到 Blackwell，模型能否高效运行不仅取决于 CUDA kernel，还取决于 CPU-GPU、GPU-GPU 的互联和系统如何搬运 KV cache。展望 Rubin，KV offloading、KV 感知路由和解耦会更重要，推理工程会从单纯的 kernel 问题变成传统硬件基础设施与 kernel 的结合。</p>
-<p>这并不意味着 GPU 会立刻变成把权重烧死在芯片里的 ASIC。更准确地说，它在通用计算与专用硬件之间的光谱上向专业化移动。模型架构变化很快，完全为单个 checkpoint 制作芯片会很快过时；但如果训练成本是数千亿美元，拿其中一部分做模型专用 ASIC、换取超过 10% 的效率，也可能是合理的。企业还会长期使用已经验证、可靠、结果可预测的旧模型。</p>
-<h2 id="从语言模型到视频扩散">从语言模型到视频扩散</h2>
+<p>GLM-5.2 的那场竞赛，某种程度上是我先点燃的。我写了一篇关于它的文章，靠着排名第一获得了大约五十万次浏览，也让大家开始兴奋地讨论：还能不能把基准成绩再往前推一点。</p>
 <p><strong>Ali Taha</strong></p>
-<p>视频扩散和 LLM 的推理形态很不一样。视频请求通常一张 GPU 处理，不一定要做 batch 或模型分片；模型也小得多。但开源视频模型和闭源产品之间的质量差距仍然很大，媒体公司往往选择闭源服务，即使开源方案便宜一百倍也可能仍然不够便宜，因为完整项目的预算和质量要求更重要。需求少又会导致开源 checkpoint 少，形成鸡生蛋的问题。</p>
-<p>视频的核心瓶颈是 token 数量。以 16 帧每秒、4K 视频为例，五秒钟经过 latent 压缩后仍可能有约 3.5 万 token。full attention 的复杂度是平方增长，延长到十秒、二十秒就会迅速不可行。要么对整个视频做稀疏 attention，只让空间或时间上相关的 token 互相注意，但质量会下降；要么拥有巨量算力做全注意力；再或者转向自回归视频。</p>
-<p>自回归视频可以继承 LLM 的很多优化，包括 speculative decoding，也更容易生成很长的序列。但今天的自回归视频质量还很差。实际产品会把视频切成约七秒的片段，生成下一段时把上一段最后一帧作为条件；开源模型也能这样延长，但会逐段漂移，画面越来越暗或越来越糊。要做出好莱坞级别的长片，最终可能需要自回归模型，或者需要让全视频的扩散 attention 发生一次巨大跃迁。</p>
+<p>每家推理公司都有自己的专有技术栈，里面既有开源组件，也有内部开发的东西。面对任意一个新模型，总会出现一些新的适配工作。有时会比较幸运，比如 Kimi K2.5 到 Kimi 2.6 的变化就很相似；但即使如此，仍然要重新做量化。模型通常不是以 NVFP4 格式发布的，而我们希望把它转成 NVFP4，以充分兼容 Blackwell GPU。然后还要校准量化，确认没有让模型的智能出现退化。</p>
+<p>我们还要为新模型训练投机解码器。由于模型 API 采用零数据留存，我们不知道用户具体发送了什么流量，但知道哪些场景受欢迎，比如编程和智能体。因此可以使用能代表这些流量的公开数据集，训练通用的投机解码器。除此之外，还要把整套基础设施搭起来，加载模型、测试服务；而新架构往往还会带来更多工作。</p>
+<p>DeepSeek 系列通常最难适配，因为它们在架构上的创新最多。不过每个新模型多少都有自己的东西：Kimi K2 和 GLM-5.2 都涉及 DSA，也就是从 DeepSeek 引入的 DeepSeek Sparse Attention。不能因为它像别的模型，就直接复制粘贴；我们必须在运行时里加入对应支持。</p>
 <p><strong>Philip Kiely</strong></p>
-<p>扩散模型的 attention 可以双向进行，因此能够回头调整过去，让未来更合理；自回归模型只能向前，容易越走越偏。长远看，可能是两者结合：自回归负责推进序列，扩散负责在更大范围内保持一致性。视频中的左上角像素和右下角像素可能同样需要彼此关联，而文本没有这么强的空间依赖。</p>
-<p>语音则明显更接近自回归。做法可以是把一组波形加入词表，让语言模型输出代表波形的 token，再把它们还原成语音并流式播放。音乐可能需要双向 attention，因为押韵、节奏和结构有时要回头修改；大体上，我会把文本和语音归到自回归一侧，把图像和视频归到扩散一侧，虽然两边存在交叉。</p>
-<p><strong>Swyx</strong></p>
-<p>文本扩散也许不该被当作另一个更快的聊天模型来营销。它可以提供不同的 API：比如先给定诗歌的结构或一部电影的 storyboard，再让内容整体扩散到位。这样结尾可以关注开头，避免自回归路径依赖。它的优势不一定是 token 更快，而可能是能处理普通 chat response 做不到的全局一致性。</p>
-<h2 id="训练与推理正在合流">训练与推理正在合流</h2>
-<p><strong>Ali Taha</strong></p>
-<p>现在已经不能把训练和推理完全分开。推理用于训练，是因为强化学习等后训练需要大量 rollout；如果模型在新推理引擎上不受支持，只能退回旧引擎，rollout 就会很慢，整个训练管线都会被拖住。训练用于推理，则包括训练 speculator、Eagle head，以及让模型适应 NVFP4 等量化格式。</p>
-<p>有时直接做 PTQ 就够了，有时量化后质量太差，必须做后训练，让模型学会在 NVFP4 下仍输出相近的 logits。可以使用 SFT、量化感知训练，或把全精度模型和 NVFP4 模型放在一起做基于 logits 的蒸馏。推理工程师因此也必须熟悉训练技术和训练管线。</p>
+<p>这也很能说明开源模型实验室之间是怎样互相借鉴的。比如 GLM-5.2 本身没有视觉能力。团队有人研究能否给它加上视觉：视觉编码器把图像变成表示，再由投影器把表示映射到语言模型，最后才接上模型权重。最好不要改动语言模型权重，否则为了增加视觉能力，可能会让模型在别的任务上变笨。于是他们先只训练投影器，它只有几百万个参数。</p>
+<h2 id="给语言模型接上视觉">给语言模型接上视觉</h2>
 <p><strong>Philip Kiely</strong></p>
-<p>更长远地看，agent builder 会建立持续改进的闭环：产品产生 traces，系统从真实推理中学习，持续后训练，再 rollout、A/B 测试，得到更好的信号和模型。动态调整具体配置、speculator 和路由，理论上会胜过静态配置。训练与推理的统一正在加速。</p>
+<p>训练一开始很直观：给模型一张山的照片，问它“这座山里有什么”。这样只能得到最初的学习损失。语言模型的大脑和图像编码器的眼睛都是冻结的，真正要训练的是连接眼睛和大脑的投影器：把图像 token 对齐到语言模型能理解的空间。</p>
+<p>但只教模型描述图片，还不足以让它真正理解图像。后来他们让每张图片对应一组问题，比如“图片里有一位白人男性吗”“右上角有鸟吗”“里面有科学家吗”。模型必须连续回答一系列问题，而不是只生成一句描述。你能从训练曲线上看到它突然“顿悟”，这种把视觉能力改装进大型语言模型、而且能学到这种程度的过程，确实非常惊人。</p>
+<p>即使面对它表现不好的图片，它也往往抓住了更高层的语义。比如给它看史蒂芬·霍金的照片，问“这是谁”，它可能会回答“阿尔伯特·爱因斯坦”；虽然认错了人，但它知道这是一个男性科学家，做出过重要成就。</p>
+<p><strong>swyx</strong></p>
+<p>这和 Hao Tian 之前做的工作很接近。他是 LLaVA 论文的作者，那项工作对没做过视觉模型的人来说非常基础。CLIP 和 MetaCLIP 也有类似思路：从单纯给图片写 caption，进一步转向围绕图片构造问题，性能会好得多。</p>
 <p><strong>Ali Taha</strong></p>
-<p>我们已经让 GLM-5.2 参与优化自己的推理。它运行在我们的代码 harness 中，先对 GLM-5.2 做 forward pass，读取 profile trace，找出 SGLang 的瓶颈，再写出 GPU kernel；之后重新 profiling，反复迭代。那段时间里，GLM-5.2 实例上的一些 kernel 确实是由 GLM-5.2 写出来的。模型优化自身推理已经不是纯粹的科幻，只是还需要更多时间和更可靠的流程。</p>
-<h2 id="下一步系统与互联">下一步：系统与互联</h2>
+<p>真正令人兴奋的是，这个视觉改造项目虽然更像研究项目，MMLU Pro 大约做到 56%，还不是前沿水平，但它没有牺牲 GLM-5.2 原本的质量。没有图像输入时，模型的行为和以前完全一样；推理代码里直接跳过视觉编码器就行。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>所以对整体推理的影响应该很小？</p>
+<p><strong>Ali Taha</strong></p>
+<p>对。你只是增加了一个很小的视觉编码器，通常不到十亿个参数。视觉编码器之间的标准化程度没那么高，所以支持矩阵会稀疏一些，但它仍然只是整个系统中的很小一部分。最后得到的是一个同时拥有 Kimi 的视觉能力、GLM 的模型权重和 DeepSeek 注意力机制的模型。</p>
+<p>这正是开源的力量和美感：你可以把不同项目的组件组合起来，构成一个整体上比任何单一组件都更强的系统。</p>
+<h2 id="替换低效层与训练的关系">替换低效层与训练的关系</h2>
+<p><strong>swyx</strong></p>
+<p>以前大家还会做 Frankenstein merge，把不同模型的层直接拼在一起。现在还会有人这么做吗？</p>
 <p><strong>Philip Kiely</strong></p>
-<p>接下来模型会变大，硬件会变强，用户也会习惯当前速度并要求更快。更值得关注的是系统层：一个语音 agent 可能由三到五个模型组成，模型之间如何通信仍有大量工作；新的世界模型、speech-to-speech 和更多模态也会带来新的组合问题。基础设施是在短时间内为前所未有的需求搭起来的，长尾可靠性和下一个 10 倍、100 倍的 token 供给仍待解决。</p>
+<p>这和新模型刚发布时的适配工作有关。有时你确实必须替换某些部分。比如 Minimax M3 的 attention head 使用全注意力，于是会产生极其严重的瓶颈：自回归生成每个 token 时，都要对序列中的所有 token 做 O(N²) 的计算。它的 KV cache 也会非常大，因为注意力既不稀疏，也没有采用 top-K。</p>
+<p>所以我们可能会说：把这一层换成另一个采用 GQA 的模型中的对应层。只要进行适当训练，就能让它达到相同的接受率。把其他模型的层移植过来不仅可行，有时还是必要的；真正困难的是训练，尤其是如何确保新层被正确训练。这再次说明，训练和推理之间的结合越来越重要：想要快速推理，往往需要非常好的训练。</p>
+<h2 id="模型上线后的循环问题">模型上线后的循环问题</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>说到把模型做到完全生产就绪，在支持工作方面还有哪些事情？</p>
 <p><strong>Ali Taha</strong></p>
-<p>我给出的答案可能很无聊：更快的网络和芯片间通信。现在跨节点转移 KV cache，通常要先找到它，把它放进另一台机器的内存，再从那台机器的内存传进 GPU 的计算核心，中间有两段传输。如果未来网络足够快，可以直接在节点之间转移 KV cache、减少 HBM 压力，聚合服务的速度理论上可能提升接近两个数量级。</p>
-<h2 id="持续学习与-kv-cache">持续学习与 KV cache</h2>
-<p><strong>Swyx</strong></p>
-<p>如果系统应该从它处理过的一切中持续学习，推理会不会改变？是继续把内容放进 memory.md，再让它进入 KV cache，还是要重塑推理，让模型在推理时学习？</p>
-<p><strong>Ali Taha</strong></p>
-<p>持续学习可能有两条路。一条是把新知识写进权重，推理时不断读取新权重，或者读取和写入权重；另一条是压缩 KV cache。改变 MLP 权重中的事实很危险：你可以把一个事实改掉，但模型在需要基于它进行第二步推理时未必会使用新事实。比如我先告诉模型‘世界上最好的大学是 Waterloo’，再问它应该从 Waterloo 还是 MIT 招实习生，它可能仍然回答两者都很好。</p>
-<p>如果能让 KV cache 近乎无限，并在压缩时不丢失知识，就可以真正做持续学习。KV cache compaction 能把新知识保留在推理上下文中，同时不必改变模型权重。这样推理系统本身变化不大，只是多了一步更新 KV cache，speculator 也不需要因此改变。</p>
-<p><strong>Swyx</strong></p>
-<p>这次对话已经持续了两个小时，但仍然有很多内容没来得及展开。感谢你们分享这些细节；推理工程往往被简化成‘让 GPU 更快’，而今天谈到的其实是从模型适配、量化、路由，一直到互联、训练和持续学习的一整套系统工程。</p>
+<p>我们可以把模型测试得相当深入，但通常还是要尽快把它上线。上线后，很多其他人会继续测试，往往能发现一些很有意思的结果。比如 GLM-5.2 就短暂出现过模式坍缩：模型会反复输出同一个 token，然后陷入循环。</p>
+<p><strong>swyx</strong></p>
+<p>你说的模式坍缩，具体是指模型一直输出 SSSSS 之类的内容吗？这种情况有没有循环检测？</p>
 <p><strong>Philip Kiely</strong></p>
-<p>也谢谢邀请。希望一年后我们能回来，坦率地说清楚今天哪些判断错了。</p>
-<p><strong>Swyx</strong></p>
-<p>尤其是关于 megakernel 的判断，等着看大家会怎么回应。谢谢两位。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>
+<p>我们的 endpoint 会检测：如果模型连续四次以上输出完全相同的 token，就会终止这次生成并要求重试，或者重新处理请求。因为同一个 token 连续出现四次，基本就说明模型已经坍缩了。</p>
+<p><strong>swyx</strong></p>
+<p>如果我确实想让它输出一串重复字符，有办法关闭这个机制吗？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我记得应该有办法处理这种情况。比如模型要画表格时，可能确实需要输出十二个横线、再输出十二个横线。我们似乎只对某些 token 做循环检测，并排除特定的特殊字符。S 是最常见的触发对象，GLM-5.2 以及 DeepSeek-V3 之类的模型也出现过类似问题。</p>
+<p><strong>swyx</strong></p>
+<p>S 这个 token 有什么特别之处吗？而且这种坍缩只会在 temperature 为零时发生，还是其他温度也会发生？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>即使 temperature 是 0.9，也可能发生。这更像是推理软件问题，而不是模型本身的问题。NVIDIA 发布的新镜像如果包含最新的修复，我们把这些改动合并进来，问题有时就会消失；有时它只发生在 SGLang 这样的某个推理引擎里，换成 vLLM 就不会发生。</p>
+<p>所以它是一个极其非确定的软件问题，而不是权重出了问题。有人会说是量化做错了，但这说不通：完全相同的权重换一个推理引擎，就不会重复出现这个问题。后端使用的 kernel 还可能存在非常隐蔽的竞态条件。同一个模型部署在一个集群上从不出问题，换到另一个集群却会出问题，原因可能只是两个集群节点之间的互联速度不同。</p>
+<p>较慢的节点间互联暴露了这个竞态，另一个集群则没有。所以最后我们可能只能决定：这个模型不要部署在会暴露问题的集群上，改部署到另一个集群。但这也让人很难判断，究竟是软件、模型权重，还是硬件导致了问题。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>temperature 为零时仍然不是完全确定性的，这件事也和硬件有关。即使是相同模型，也不一定每次都得到完全相同的输出。</p>
+<p><strong>swyx</strong></p>
+<p>不过我对竞态条件还是有点惊讶。我原以为 PyTorch 的计算图至少能保证各项操作按正确顺序执行。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>你可以使用 PDL 这类优化，在前一个 kernel 结束之前就启动下一个 kernel。这样做是为了提高速度，会让执行发生少量重叠。也有可能是 kernel 自身存在竞态条件，比如缺少 barrier。设计 kernel 时，如果没有充分测试，就可能出现某些线程在其他线程写入寄存器之前，已经去读取那些数据。barrier 或同步逻辑一旦写错，就会发生这种情况。</p>
+<p><strong>swyx</strong></p>
+<p>听起来这有点像 Rust 用借用检查器保证内存安全。GPU 代码里没有类似的机制吗？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>GPU 编程毕竟还是在直接写代码。你需要的是更高层的语言，也许 Modular 想做的就是这件事。</p>
+<h2 id="如何守住模型质量">如何守住模型质量</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>前面讲了量化、训练专用投机解码器等步骤。你们如何判断量化程度和质量标准？</p>
+<p><strong>Ali Taha</strong></p>
+<p>大多数推理优化都是无损的。比如 KV cache 只是避免重复计算相同的值；投机解码中，草稿 token 如果错了就会被拒绝。主要的有损优化是量化，而质量主要取决于三件事：采用什么数据格式、选择量化模型的哪些部分和哪些层，以及是否对量化权重做充分校准，尽量保留所有离群值。</p>
+<p>长上下文也会影响服务表现。假设用户发来 20 万个 token 的请求，输入序列越长，就需要存储和处理越多信息。因此，即使模型支持很长的上下文，推理工程师也可以提供一个较短上下文长度的 API，同时提供完整长度的 API。用户不需要百万 token 上下文时，使用较短版本就能获得更好的性能。</p>
+<p>我理解的质量，是我们在多大程度上忠实地服务了原始模型。可以把模型的官方实现看作一个黄金标准：它应该完全按照设计运行；我们的质量，就是看实际服务离这个百分之百的模型保真度有多近。纯粹做推理优化时，目标是在尽可能接近这个保真度的同时，让模型运行得更快。</p>
+<p>我们内部的标准是，用户不应该分辨出我们的 API 和官方 API 之间的差别。Kimi 在供应商基准测试方面做得尤其好，他们还发布过实际的供应商 benchmark。</p>
+<p><strong>swyx</strong></p>
+<p>他们确实发布过供应商 benchmark，还点名批评过一些表现不好的供应商，其中好像包括 Amazon。后来也有模型供应商撤下了几个服务，并围绕这件事做了一整张对比图。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>如果我是消费者，使用 Amazon 的 endpoint 调用 Kimi，结果却很差，我不会说是 Amazon 把模型量化坏了，而会说 Kimi 很差。供应商当然会在意这一点，而且这种在意是有道理的。</p>
+<h2 id="量化并不只是简单压缩">量化并不只是简单压缩</h2>
+<p><strong>swyx</strong></p>
+<p>量化有没有可能带来改进？它是不是严格意义上总会更差？我总是在寻找反向的 scaling law：有些东西通常只会朝一个方向变化，但偶尔会反过来。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>从技术上说，量化是有损实现，速度会提升，但不代表结果一定更好。模型本身具有非确定性，所以 benchmark 分数即使偶尔提高，也要放在误差范围内看。那通常只是噪声，并不意味着模型真的变聪明了；目标仍然是让结果尽量接近原始模型的百分之百保真度。</p>
+<p><strong>Ali Taha</strong></p>
+<p>不过，确实有研究显示，精心设计的量化结果可能优于其他供应商的量化版本。我们有一项关于 GLM-5.2 的研究，结果比 NVIDIA 的量化版本好 20%。量化本质上是把数据从 16 bit 压缩到 4 bit，肯定会丢失一部分信息，关键在于尽量减少损失。</p>
+<p>因此，决定量化一个模型时，问题不是把所有层一股脑压缩，而是找出哪些层可以量化、哪些层最好保留。以视觉模型为例，我不会量化调制层，也不会量化输出投影层：输出投影是用户最终看到的部分，调制层则是模型用来感知或理解信息的部分。</p>
+<p>所以，量化更多层反而可能让结果更好。比如，一个模型量化了第 1、5、10 层，另一个模型只量化了第 1、2 层；完全有可能前一个模型的效果更好。</p>
+<h2 id="量化误差也可以相互抵消">量化误差也可以相互抵消</h2>
+<p><strong>Ali Taha</strong></p>
+<p>有些层的量化误差会彼此抵消，所以模型反而能跑得更好。Joshua 的数学证明里有一个验证器，可以预测哪些层的量化误差会抵消。采用这种数学量化方法后，模型的量化程度比另一家提供商高 20%，因为有更多层可以在 NVFP4 上运行，因此吞吐量提高了 20%，质量也更好。</p>
+<p>我们用 KL 散度来证明这一点，而不是只看基准测试分数：比较量化模型的 logits 分布和原始全精度模型的 logits 分布。如果量化模型在下一个 token 上的概率分布更接近原始模型，它大概率就会更忠实于原始模型。过去行业里似乎普遍认为，量化越多，损失越大，效果就越差；但这并不一定成立。量化本身不会改善模型，但误差可以抵消。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>这让我想到剪枝：你也可以把某些层剪掉。不过很有意思，我之前不知道这还是一整篇论文。</p>
+<p><strong>Ali Taha</strong></p>
+<p>这篇论文最初有 72 页，后来我们觉得不能这样发布，于是压缩成了 425 页。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>现在仍然有 39 页，内容非常扎实。我们已经聊过评测和这些方法，那么速度究竟还能提升多少？我想这大概是大家最关心的问题。你在文章里写过，官方 API 是每秒 70 个 token，而你们能推到 90 个。这样的提升算正常吗？</p>
+<h2 id="速度提升来自多层优化">速度提升来自多层优化</h2>
+<p><strong>Philip Kiely</strong></p>
+<p>推理工程之所以是一个长期有用的工程领域，是因为它和高度优化的领域很像。比如金融行业会用基点来衡量改进，哪怕只好了一点点也有价值，所以这里大概还有很长的路要走。Andrew Lo 有一篇论文，里面用很有意思的图展示了量化统计套利的分布如何从七十年代那种 20% 的差异逐渐收窄到 90% 的水平。我们现在正处在类似过程的早期。</p>
+<p>不过，基准测试很难，比较不同提供商的速度尤其难，因为变量太多：使用什么硬件、系统负载有多高、提示词的具体性质，以及输入和输出序列的长度，都会影响结果。但当你把这些改进叠加起来，最终看到的往往是倍数级提升。</p>
+<p>行业里最常用的指标是 TPS，也就是每秒 token 数，但这个名字其实起得不太好，因为它指代两件事：一是吞吐量，GPU 总共每秒输出多少 token；二是延迟，也就是生成相邻 token 之间要等多久。大多数人说 TPS 时真正关心的是后者，它应该叫 ITL，也就是 Inter-Token Latency，但我们一直没有这么叫。</p>
+<p>可以想象一下，一个没有太多优化的标准 API，要运行一个一万亿参数模型，可能只能达到每秒 30 到 50 个 token。我们的目标通常是把它推到十倍左右，当然不一定第一天就做到，而是通过不断叠加优化。如果有三项优化，每一项都能让性能翻倍，叠加起来就是 8 倍提升。这就是这个领域大致的量级：我们要让系统显著变快，而不是只从 70 提到 90。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>你的意思是，你们已经做到这种程度了吗？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>以每秒 30 到 40 个 token 作为合理基线，做到它的 10 倍是可能的。以 GLM-5.2 为例，如果不量化，甚至在 Hopper 上运行，30 到 40 个 token 每秒是合理基线。要达到 10 倍，就需要做出很多取舍：如果速度达到每秒 300 到 400 个 token，显然要用最好的硬件、经过优化的投机模型，并完成量化；同时还要有很高的缓存命中率，使用相对较小的 batch size，并把并行配置调到偏向延迟而不是吞吐量。</p>
+<p>但这确实可能做到。如果去 Artificial Analysis 或 OpenRouter，看最慢的提供商和最快的提供商之间的差距，往往能看到这样的范围。10 倍当然非常激进，更常见的可能是 4 到 6 倍，但真正让我们兴奋的是这种巨大的提升，而不是从每秒 70 个 token 提到 90 个。</p>
+<p><strong>Ali Taha</strong></p>
+<p>这也取决于硬件。如果你只在一台 H100 节点上部署模型，然后把模型分布到四台 B200 节点上，单纯增加硬件就能明显提速。若把硬件型号和 GPU 数量完全统一，那提升幅度就取决于推理优化，大约是 2 到 4 倍。这里有一部分看车本身，有一部分看司机是谁。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>如果把这 2 到 4 倍拆开来看，比如在单节点 B200 上运行 GLM-5.2，那么为了榨出最后一点性能，需要付出多少成本和精力？一般人应该怎么判断？</p>
+<p><strong>Ali Taha</strong></p>
+<p>Spectre 量化本身大约能带来 95% 的提升。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>这能把你带到什么程度？普通人做起来容易吗？假设我现在想把 GLM-5.2 的权重放到一台 B200 节点上，找到投机解码模型或已经量化的模型容易吗？需要投入多少工作？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>如果看我们叠加的几个 2 倍因素，从 BF16 到 NVFP4 并不是严格的 2 倍：从 16 位到 8 位大约提升 30% 到 40%，再往下还会有另一个 30% 到 40% 的乘法收益，所以大致接近 2 倍。投机解码大约再带来 2 倍；如果硬件足够、流量也足够，PD 解耦还能再带来约 2 倍。最后，采用最新 kernel 的更好运行时，还能增加两位数百分比的性能。整体就是这样叠起来的。</p>
+<p>对真正懂行的人来说，构建量化权重大概要几小时到几天，构建投机模型也是几小时到几天，PD 解耦的部署同样如此。不过你不需要亲自量化模型，通常总会有开源的量化 checkpoint；如果没有，NVIDIA 也会推一个出来。提供商一般也会训练自己的投机模型，你可以直接使用。</p>
+<p><strong>Ali Taha</strong></p>
+<p>比如 GLM-5.2 自带 MTP，也就是多 token 预测。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>多 token 预测。我先替你说出来，免得我自己说错。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>如果我们说错了，你们应该纠正我们。不过，它的多 token 预测可以用于自投机解码——这一点我不是完全确定，大概有六七成把握，但有人可以再核实。这里想说明的是，公司如果想从无服务器推理切换到自己租 GPU 部署，除了把模型放到 vLLM 后面，还需要采取哪些步骤，才能显著提速。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我一直在等你们提到 Dynamo，感觉它应该是用来比较的基线。</p>
+<p><strong>swyx</strong></p>
+<p>我会把 Dynamo 理解成一个构建工具包，而不是开箱即用的完整系统。我们说 KV 感知路由、KV offloading、PD 解耦时，Dynamo 本质上就是相关基础设施。Dynamo 是 NVIDIA 开源的库，我们和 Kyle 一起做过这部分工作。它支持不同的推理框架，而且某种程度上支持多种硬件。</p>
+<p><strong>Ali Taha</strong></p>
+<p>但它只是路由器，不是优化器。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>Dynamo 擅长的是在集群和硬件之间搬运信息。比如 KV cache 在一个地方，而你需要把它放到另一个地方，Dynamo 会协调 NCCL 来完成移动。它并不是让你 pip install Dynamo，马上就获得巨大的性能提升；更准确地说，它是一个开发者工具包，带有一组可以替换的默认配置。</p>
+<p>如果整个行业都按同样的标准部署这些组件，我觉得 Dynamo 可以作为可信的基线。但现实中还是要对照实际运行的系统来做基准测试。接下来我想再多聊一点 PD 解耦，因为在量化和投机解码之后，它大概是第三个重要的优化方向。</p>
+<h2 id="书里该收录哪些技术">书里该收录哪些技术</h2>
+<p><strong>swyx</strong></p>
+<p>我正想翻一下你们的书。比如第 5.2 节讲 Medusa，第 5.3 节讲 Eagle，第 5.4 节讲 Engram，5.5 节就是 disaggregation。你们当时是怎么决定收录什么、不收录什么的？毕竟还有很多其他技术，而且这些内容大概是一年半前写的，现在还都相关吗？</p>
+<p><strong>Ali Taha</strong></p>
+<p>Medusa 确实已经比较老了。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>但书里把它作为一个很好的基线：这是你应该了解的东西。我读那篇论文时就觉得，它的思路非常合理。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>写这本书时，我有两个目标。第一，是给读者建立一套理解整个领域的工作词汇；第二，是让读者对每种技术的工作方式形成直觉。就像我在 AI Engineer 的演讲里提到的，即使在我写书的时候，我把 Medusa 放进去，很大程度上也是为了帮助大家理解这个方向。</p>
+<p>当然，现在已经有了 DeFlash、DeSPARK，甚至还有比 Eagle 更新的技术，不过 Eagle 仍然非常常用。</p>
+<h2 id="在-speculative-decoding-上继续套-speculative-decoding">在 speculative decoding 上继续套 speculative decoding</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>还有 spec、spec、spec——也就是 speculative decoding。</p>
+<p>这是 Tri Dao 的一篇论文，基本上是在 speculative decoding 上再做 speculative decoding。这个想法几乎很难解释清楚。它似乎确实带来了不小的加速，但训练复杂度也很高。在我看来，它几乎和训练 GAN 一样复杂，需要非常微妙的平衡，而且很多时候你会……</p>
+<p>我本来也没想到它会特别依赖训练。直觉上看，就是训练一个 speculative decoder。</p>
+<p><strong>Ali Taha</strong></p>
+<p>对，听起来确实合理。speculative decoding 的整体思路，有点像把 iPhone 的自动预测功能用在一个普通模型上：先生成三个 token，然后对这三个 token 做一次 prefill，这样原始模型就省掉了三轮工作。</p>
+<p>但现在你的 speculative decoder 自己又在做三轮自回归生成。那为什么不直接使用一个更小的模型呢？</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>那 speculator 的规模是多少？比如 GLM 的情况呢？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>大概是十亿参数。</p>
+<p><strong>Ali Taha</strong></p>
+<p>Minimax 的情况呢？</p>
+<p>通常它只有原始模型的十六分之一左右，甚至可能就只有一层。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我觉得我们回办公室以后应该写一篇论文，就叫《Speculative speculative speculative decoding》。</p>
+<p><strong>Ali Taha</strong></p>
+<p>但问题是：你什么时候停下来？如果你能训练出 spec-spec decoding，比如让一个小模型准确预测中间那个 speculator 的预测，而中间的 speculator 又能预测原始目标模型的预测，那为什么不干脆直接使用最小的那个模型？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>这和路由问题有些相邻。speculator 的一个实际限制是：你必须在运行大模型的同一套硬件上运行这个小模型。这天然会带来编排和资源竞争问题。无限递归地叠加 speculator，不仅会增加训练过程的复杂度，也会让推理引擎本身的实现变得复杂。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>我在想，能不能对它做类似的蒸馏和剪枝？它归根结底也是一个模型。是不是可以蒸馏掉大量权重，再把 speculator 量化？不过这已经不在我的专业范围内了。</p>
+<h2 id="数据中心与本地-ai-的不同约束">数据中心与本地 AI 的不同约束</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>另一个问题是：这些讨论都是针对大型服务器工作负载的，对吧？如果我手上只有这台 MacBook，想让 Gemma 高效运行，情况会类似吗？还是说问题完全不同？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我几周前在 Cerebral Valley 的播客里聊过这个。数据中心和生产环境中的推理工程，与本地 AI 的推理工程，出发点是根本不同的约束和目标。做本地 AI 时，问题是：怎样把这个模型塞进我的硬件，然后让它没那么笨？而在数据中心，问题是：怎样加载这个模型，然后让它没那么慢？</p>
+<p>当然，我们也在乎模型别太笨，他们也在乎模型别太慢。但我认为，本地 AI 的推理工程生态其实有很多东西值得数据中心领域学习。他们在各种量化方法上都很专业，包括我们几乎不怎么接触的动态量化；他们还会做剪枝、蒸馏和移除层。</p>
+<p><strong>Ali Taha</strong></p>
+<p>这一点挺令人意外的，对吧？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>对。数据中心里基本没人真正做剪枝，毕竟我们没有必要为了把模型塞进一台笔记本而这么做。它们的技术未必适合直接搬到数据中心，因为我们的资源和目标不同；但他们解决问题的过程，以及这个领域的开放程度，都很值得欣赏。</p>
+<p><strong>Ali Taha</strong></p>
+<p>说到这一点，有些优化确实非常依赖硬件。比如你肯定听说过 TurboQuant，它在 X 上引起了很大关注。我们还在 Twitter 上做过一次深入分析：它到底是什么，怎么工作的，为什么好，或者为什么不好。后来它被应用到本地设备上，是因为 MacBook 这类设备的内存带宽非常慢。</p>
+<p>但如果把同样的东西放到 NVIDIA GPU、比如 B200 上，情况就完全不同了。TurboQuant 不会被采用。</p>
+<h2 id="从硬件规格到推理配置">从硬件规格到推理配置</h2>
+<p><strong>Ali Taha</strong></p>
+<p>如果用 FP4 量化，每个参数只占半个字节，那么一个 1.6 万亿参数的模型大约需要 800GB 显存。至于 H100，大家刚才猜 140GB，其实是 80GB。我做这行已经很久了，居然还记得 H100 的规格。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>说到 T4，我倒想讲讲当年想在 T4 上跑模型是什么感觉。让我意外的是，似乎没有更多人采用 Jamba。AI21 的 Jamba 会先明确选择一种硬件，再按照这套硬件设计模型的架构尺寸，最后把硬件吃满。这样做其实很合理，可不知为什么，大多数模型并没有这么做。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>训练阶段不是也会针对硬件做这件事吗？</p>
+<p><strong>Ali Taha</strong></p>
+<p>训练阶段确实会，比如决定数据并行和模型并行的配置。训练更像一道数学题：可以算出 FLOPS，再把它最大化。但推理不一样。你可以把两两组合的配置都跑一遍，用真实项目的相同流量测试，看看哪种配置的 TPM 或 TPS 最好，然后直接采用它。</p>
+<p>我不喜欢的是，你没法凭推理判断哪种配置一定性能最好，也不存在一种永远最优的配置。但目前看来，自动调优就是找到答案的办法。GPU kernel 也一样：设计好 kernel 和配置后，还要决定启动多少线程、使用多少共享内存，通常只能在旁边扫过一遍参数空间，用实测结果选出最好的组合。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>训练里确实有一部分工作是面向硬件的。比如 NVIDIA 的 Nemotron 模型在 Blackwell 上运行得特别好，这并不奇怪。但大多数开放实验室还是希望模型能在尽可能广泛的硬件上运行，而不是只针对某一块芯片，这样模型才更有用。</p>
+<h2 id="融合内核与通信开销">融合内核与通信开销</h2>
+<p><strong>swyx</strong></p>
+<p>趁这张图还在，我们再说一件事：all-gather 和 all-reduce 都很昂贵。硅谷最近有一个方向叫 mega-kernel，就是不断融合 kernel，把它们尽量合并起来。事情真的这么简单吗？</p>
+<p><strong>Ali Taha</strong></p>
+<p>融合 kernel 并不能消除所有问题。以张量并行为例，一个矩阵的一半在一块 GPU 上，另一半在另一块 GPU 上。如果下一步要做非线性运算，比如 attention 里的 softmax，就必须拿到完整的一行，知道 GPU2 和 GPU1 各自算出的部分结果。因此两块 GPU 还是要通信；即使 kernel 已经融合，内部的非线性操作也决定了通信无法凭空消失。</p>
+<p>坦白说，我对 mega-kernel 很悲观。它作为研究方向是有道理的，直觉上也很漂亮：既然启动一个 kernel 有开销，那就把更多东西融合进去，最好全部融合。但真正写出高度优化的 mega-kernel 极其困难。我接触过一些做融合 mega-kernel 的公司，很多时候它们最终并不会在生产环境运行这些 kernel，因为模块化 kernel 可以分别优化，还能彼此并行，实际反而更快。</p>
+<p>NVIDIA 最近公布 Rubin 的规格后，我看到其中一个设计似乎会大幅削弱 mega-kernel 的必要性。GPU 本身已经以一种让这类融合不再那么重要的方式设计出来了。如果这个判断成立，围绕 mega-kernel 的整条研究路线可能就不会继续成为主流。</p>
+<p><strong>swyx</strong></p>
+<p>你可以聊聊对 Rubin 的猜测。</p>
+<h2 id="rubin-时代的推理基础设施">Rubin 时代的推理基础设施</h2>
+<p><strong>Philip Kiely</strong></p>
+<p>我已经经历了三轮硬件发布周期：Ampere、Hopper 和 Blackwell。当然，我说的发布周期不只是硬件实际出货。硬件装进机架，到它真正适合做推理，中间还隔着很长时间。最初的 vLLM 和 SGLang，尤其是 vLLM，是针对 Ampere 写的，后来又必须为 Hopper 和 Blackwell 更新。每一轮硬件都让事情更快、更紧迫，同时也明显更复杂。</p>
+<p>展望 Rubin，我觉得 NVIDIA Dynamo 已经给出了很多技术线索，能提示哪些工作会变得重要。内存带宽仍然关键，这也是 Blackwell 强大的原因之一；但更大的变化是系统层面的思考。CPU 与 GPU 之间的互连、GPU 之间的互连，都会受到更多重视。Dynamo 的整个系统，都是围绕‘如何在需要的时候，把 KV cache 移动到需要它的地方’来设计的。</p>
+<p>所以在 Rubin 时代，KV cache offloading、KV 感知路由和计算与存储的解耦都会重要得多。推理工程不再只是 CUDA kernel 问题，也会变成非常传统的硬件基础设施问题。这正是我们长期建设的方向，也让我很兴奋：多个领域会发生碰撞，能够从 kernel 层一路推理到硬件层，再从硬件层反推回来，会非常有价值。</p>
+<p><strong>Ali Taha</strong></p>
+<p>我会把 Philip 的观点再推进一步：推理工程可能正在变成一个几乎纯粹的基础设施问题。无论是 prefill、decode、训练，还是 speculative decoding，底层 kernel 可能都不再是主要难点，因为 GPU 正越来越像 ASIC。你要做的是编排 GPU 上发生什么，而不是逐线程控制它。像 tile 这样的编程模型，就是在数据块层面工作，不再操心每个线程具体做什么，那部分已经由系统替你处理了。</p>
+<p><strong>swyx</strong></p>
+<p>所以，你是不是认为未来的 GPU 会越来越像 ASIC：你只需要启动它，它就会根据和其他组件的协作完成数据操作？</p>
+<p>ASIC 当然能在固定工作负载上提供更高性能，但 GPU 里的 G 代表 graphics，它仍然保持了很强的通用性。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我觉得这更像一条连续的光谱：一端是非常通用的计算，另一端是为一组特定模型权重打造的硬件，甚至把权重直接烧录进芯片。我们并不是要一路走到最极端，而是在这条光谱上朝着硬件专业化的方向移动。</p>
+<p><strong>Ali Taha</strong></p>
+<p>我对把权重烧进芯片本身也很悲观。模型还要微调、优化、量化，还会不断发布新的 checkpoint；如果权重烧死在芯片里，那块芯片一两个月后就可能失去用途。我真正想问的是：既然 NVIDIA 正把 GPU 推向越来越专业化的方向，为什么还会看好那些为 AI 开发专用 ASIC 的公司？相比 Ampere 或 T4，Rubin 几乎已经像 ASIC 了。</p>
+<p>不过，把 Rubin 直接叫作 ASIC 也确实有争议。它仍然是 GPU，仍然是通用的；我可以写 CUDA 控制它、改变它的操作。更准确的说法或许是：它在保留可编程性的同时，越来越朝专用化方向演进。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>关键还是要记住，硬件周期非常长。今天发布的一块芯片，设计工作可能在几年前就已经启动了。</p>
+<h2 id="芯片设计与模型工作负载">芯片设计与模型工作负载</h2>
+<p><strong>Philip Kiely</strong></p>
+<p>一块芯片如果今天发布，意味着它的设计流程其实在几年前就已经启动了。NVIDIA 在预测市场走向方面做得非常好，毕竟他们掌握的信息最多。但如果你看看那些公开的开源模型架构，它们或多或少已经和今天的架构相似，那么 Rubin 确实是第一块完全在这种模型世界里打造出来的芯片。你能从它的设计中看到，对未来工作负载形态的理解。</p>
+<p><strong>swyx</strong></p>
+<p>我可能不是直接回答这些问题的最佳人选，但这些问题非常合理，而且你刚才对 Rubin 的第一个问题，可能是我听过表述得最清楚的一次。我想借此为模型实验室垂直整合基础设施的做法辩护。比如 OpenAI 和 Broadcom 之类合作开发的 Jalapeño 芯片，这个方向完全说得通。</p>
+<p>Martin Casado 之前来节目时说过：如果一次训练要花 5000 亿或 1 万亿美元，那就拿出 500 亿做一块 ASIC，没关系。ASIC 带来的效率提升超过 10%，这笔账就划算。针对特定模型的芯片当然有意义。只是我觉得，你们似乎把注意力过度集中在 tile 这类东西上，而 ASIC 公司做的其实是更大范围的系统工程，涉及整个芯片的布局。</p>
+<p>想想看，要让推理快上 10 倍到 1000 倍，真正的瓶颈是什么？不是在现有 GPU 设计里重新排列一些东西就能解决的，关键在于互连。这些公司瞄准的是每秒 30 万个 token 的速度，他们可不是在做小打小闹的优化。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>你最近做了这么多 kernel 工程，却对其中很大一部分如此悲观，这一点让我觉得很有意思。</p>
+<p><strong>Ali Taha</strong></p>
+<p>我做得越多，越觉得它没有那么重要。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>模型一代代发布，这里还有另一个问题。从你们的视角看，今天是 GLM，明天是 Kimi、DeepSeek、MiniMax，还有其他模型；其中有些模型的做法完全不同。比如 Gemma 没有 encoder，Thinking Machines 最近的模型也采用了不同的思路。</p>
+<p><strong>Ali Taha</strong></p>
+<p>如果我们假设它们确实改动了部分架构，而不只是做后训练，那么每年都可能要花 500 亿美元为新模型打造 ASIC，然后把上一年的 ASIC 扔掉。</p>
+<p><strong>swyx</strong></p>
+<p>我根据一些二手信息，稍微不同意你对模型寿命的判断。现在仍然有人在使用 GPT-4，也有人在使用 Llama 3，虽然已经不是 Llama 2 了。只要一个模型经过验证、值得信赖，就不要随便更换；能用就别改。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>这不正是开源的承诺之一吗？围绕 GPT-4 的‘拯救 GPT-4’运动，不需要一直替 Llama 3 发起类似行动；只要某个地方还有一个可用的固定版本就够了。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>但到某个阶段，问题也会变成：一个模型如果已经足够强，继续使用它是否还有意义？</p>
+<p><strong>Ali Taha</strong></p>
+<p>这等于假设你不再需要更高的智能。</p>
+<p><strong>swyx</strong></p>
+<p>企业需要的往往是可靠性和可预测性。我是企业用户：这个模型经过验证和测试，已经获得 5000 个利益相关方的签字确认，每天运行一个批处理任务，而且结果稳定、可预测。我喜欢这样的结果。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>不过，如果模型越来越稀疏、更便宜、更好用，继续使用旧模型似乎也不合理。</p>
+<p><strong>Ali Taha</strong></p>
+<p>这不代表旧模型就不能用。假设由于某种原因，模型能力出现停滞，像 GLM 5 这样的模型仍然可能有大量潜力可以挖掘。</p>
+<h2 id="专用芯片的面积与取舍">专用芯片的面积与取舍</h2>
+<p><strong>swyx</strong></p>
+<p>我们时间不多了，但我还想确保把这张图讲清楚。把它和任何一张 Cerebras 的芯片示意图对比一下，你会发现芯片面积的分配完全不同。Etched 和 MatX 似乎还没有公开图表，但它们的芯片尺寸明显不同，也不是晶圆级设计。一个晶圆上大概能放几百块，或者更保守地说几十块；总之，面积分配差异非常真实。</p>
+<h2 id="超大模型的显存算术">超大模型的显存算术</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>在离开硬件之前，我还有两个快速问题。最新的 Kimi 模型非常大，有 3 万亿参数，放不进大多数单节点硬件。你需要 GB300。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>或者 AMD。其实就是简单的算术：用 NVFP4 表示时，2.8 万亿参数需要 1.4TB。每块 GB300 有 288GB，八块加起来才有足够空间容纳模型。</p>
+<p>而且 GPU 显存不能全部拿来放模型，还要给 KV cache 留空间。具体需要多少，取决于上下文长度等因素。当一个模型同时拥有大量参数和很长的上下文时，模型权重与 KV cache 就会争夺显存，这也是为什么随着模型变大，KV cache offloading 会变得更重要：空间实在太紧张了。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>Rubin 现在有 NVL72，也就是一个拥有 20TB 显存的机架？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>Blackwell 也有 NVL72，但不能想当然地认为推理一定会在这种系统上进行。全世界的 8 卡机架数量远多于 NVL72，所以实际部署时需要考虑现有硬件的普及程度。</p>
+<h2 id="硬件换代如何推动基础模型">硬件换代如何推动基础模型</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>我关于硬件的最后一个快速问题是：当新的预训练基础模型出现时，你们会注意到它们和硬件代际之间有什么关系吗？硬件可以更换，这本身就是效率提升两倍的来源之一。新模型出现时，它们往往会变得更大，而大家也会逐渐摸清硬件的上限。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>硬件能力确实会形成一种上限。比如 DeepSeek R1 发布时有 6710 亿参数，当时已经非常大，我认为这推动我们更快采用 Blackwell，并尽快掌握在 Blackwell 上提供服务的方法。对我来说，关键主要是模型规模，以及让架构和原生量化方式匹配目标硬件，比如 Nemotron 系列模型，或者 NVFP4。</p>
+<h2 id="视频扩散的推理瓶颈">视频扩散的推理瓶颈</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>我们一直在谈大语言模型，但你们在书里还讨论了更多内容。音频、视频，以及推理工程的另一面是什么？Ali，你在视频扩散方面投入很多。</p>
+<p><strong>Ali Taha</strong></p>
+<p>视频扩散模型的形态很不一样。很多关于自回归大语言模型的思考并不能直接套用到视频扩散上。比如它通常不做 batching，每个请求直接进入一块 GPU，在一块 GPU 上完成服务，也不需要做模型分片。模型规模也小得多；例如 1.2.2 是一个 200 亿参数模型，比最好的大语言模型小了好几个数量级。</p>
+<p>视频领域的开源模型和闭源模型之间也存在巨大差距。大语言模型方面，Kimi K3 几乎可以和 Mythos 或 GPT-5.5 相比，最好的开源模型与最好的闭源模型差距已经很小，过去可能是六个月，现在几乎追平了。但视频模型远不是这样：今天用 1.2.2 这类开源模型生成的视频，和 Kling 或 Veo 生成的效果相比，简直是天壤之别。</p>
+<p>所以媒体公司大多数时候仍会选择闭源模型。假设我告诉你，我能用一个模型生成一部完整的三小时电影，并优化到只收你 10 美元；而用闭源模型要花 1000 美元，也就是我便宜 100 倍。但 1000 美元对他们来说仍然是可以接受的，他们还是会用闭源模型来完成所有剪辑。这就形成了一个鸡和蛋的问题：需求少，领域里的创新就少，公开发布的开源 checkpoint 也少。曾经发布开源模型的实验室，比如 Kuaishou，最新模型也开始闭源；1.2.7 已经不是开源的，我们还停留在 1.2.0。</p>
+<p>视频模型尤其棘手的一点是 token 数量。要生成高质量视频，假设最低也要每秒 16 帧，再做一个 4K 视频。想象一下这个维度：比如《斯巴达 300》中的一段画面，先看五秒、每秒 16 帧，也就是 81 帧、4K 乘 720 的空间信息。压缩到 latent space 之后，仍然大约是 30 乘 50 乘 21 个 token。也就是说，仅仅五秒的视频，attention 就要处理 3.5 万个 token。</p>
+<p>因此 attention 会成为巨大的瓶颈。由于计算量按序列长度平方增长，把时长从 5 秒延长到 10 秒，成本不只是翻倍；再延长到 20 秒、30 秒，问题会迅速恶化。想在同样的计算时间里生成一分钟的高质量片段，几乎是不可能的，最终根本无法实际运行。所以接下来通常会朝两个方向发展。</p>
+<h2 id="视频注意力与长序列生成">视频注意力与长序列生成</h2>
+<p><strong>Ali Taha</strong></p>
+<p>如果你决定一次性对整段视频做注意力，就不得不采用稀疏注意力。回到那张视频图，左边是全注意力：Sparta 300 场景里的每一个 token 都关注其他所有 token，所以会出现数量惊人的注意力区域。右边则只让每个 token 关注排名靠前的 token，比如前 12.5%。</p>
+<p>这种局部性可以是空间上的，也可以是时间上的。比如代表王冠的 token，会关注头部和面部，也会关注其他帧以及前一帧里的头部。问题是，这会导致非常糟糕的视频质量。那篇文章的核心就是说明：你可以训练并完成所有这些优化，但质量仍然会有所损失。</p>
+<p>最后通常只有两条路：要么硬着头皮准备巨量算力，为了生成两分钟视频，在一百万个 token 上做全注意力；要么转向自回归视频。我觉得未来押注的方向会是自回归视频，但今天还没有真正优秀的开源自回归视频模型。</p>
+<p>如果你想生成一小时的电影，想看到视频模型生成好莱坞级别的作品，它们就必须是自回归的，才能突破五秒视频的限制；或者，算力必须出现某种惊人的跃迁，让我们能够高效地同时对数百万个 token 做全注意力。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>但即使是数百万个 token，注意力的复杂度也是二次的，很快就会遇到瓶颈。你能不能解释一下自回归的优缺点？我想到的一个问题是帧间一致性：自回归扩散生成十分钟后，可能已经把前面的内容忘掉了。</p>
+<p><strong>Ali Taha</strong></p>
+<p>就像自回归语言模型一样，自回归扩散模型也可以沿用我们前面讨论过的很多 LLM 优化，比如投机解码之类。如果模型质量足够高、规模也足够大，就没有理由不能逐 token 生成。</p>
+<p>缺点是，目前每一个自回归视频模型的质量都很差，真的很差。拿任何开放模型的 1.2 版本和其他自回归模型相比，你会看到前者生成的可能是猫狗打架，而自回归模型给出的结果几乎没法看。</p>
+<p>因此，生成长视频的解决方案就变成了：不用自回归模型。Grok Imagine 或 Grok Video 有一件事做得特别好，就是把七秒的片段拼接起来。先生成七秒，然后要求模型延长视频，再把两个片段接在一起。开源模型似乎还没有掌握他们使用的技巧，而且这些方法本来就是闭源的，我们不知道他们具体做了什么。</p>
+<p>目前最接近的办法，是取一段视频的最后一帧，把它和文本一起输入图像到视频模型，再要求模型生成接下来的五秒。这样可以不断逐帧延长，理论上生成很长的内容。但问题是会发生漂移：第一段视频之后，第二段质量更低，第三段更低，第四段还会继续下降。有时你甚至会看到，新片段只是稍微暗了一点。我们本来想做个 demo 展示这个现象，但效果糟糕到令人尴尬，最后决定不展示。</p>
+<p>我相信模型最终会做到，只是需要大幅扩展规模，并进一步转向高度自回归的架构。但在我看来，训练技术目前还没有清晰的答案。</p>
+<p><strong>swyx</strong></p>
+<p>对 Grok Imagine 感兴趣的人，可以去听我们和该团队 Ethan He 做的那期播客。他透露了一些线索，但还不足以让我们完整重构它的工作方式。我们聊到了记忆、更长的上下文以及相关问题。</p>
+<p><strong>Ali Taha</strong></p>
+<p>不过据我所知，它不是自回归的。业内目前似乎没有谁真正采用自回归视频。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>理解自回归模型和扩散模型差异的关键在于：扩散模型的注意力可以双向进行，而自回归模型只能沿序列向前。所以自回归模型会出现逐渐失控的情况。扩散模型可以反复遍历完整序列，调整过去的内容，让未来变得合理。</p>
+<p>如果要实现更长、更丰富的序列，可能需要把自回归和扩散结合起来，让两部分各自发挥所长。</p>
+<p><strong>Ali Taha</strong></p>
+<p>直觉上你能理解其中的原因。英语或其他文字语言是从左到右的：你可以流式输出 token，甚至流式输出思维链。人写东西时也是先写下来，再想下一步要生成什么，然后继续向前写。当然，写作时也可以回头编辑，但这种回头修改的需求没有想象中那么频繁。</p>
+<p>视频则没有这种顺序性。视频左上角的像素和右下角的像素，都需要彼此关注，才能理解视频质量应该是什么样子；文字不太需要这样。</p>
+<h2 id="音频音乐与双向生成">音频、音乐与双向生成</h2>
+<p><strong>Alessio Fanelli</strong></p>
+<p>音频是不是也有类似情况？大约一年前，音频语言模型、音频扩散模型和自回归模型之间似乎还存在取舍。即使音乐片段比较短，大多数音乐也有三到五分钟；从推理角度看，我们基本已经转向自回归了。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我不能代表音乐领域发言，但语音是自回归的。早在一年半以前的 Orpheus 架构里，做法就是把大量波形加入词表，让 LLM 输出代表这些波形的 token，然后据此构造语音，实现流式输出。</p>
+<p><strong>Ali Taha</strong></p>
+<p>但音频和视频面临的挑战并不完全相同，因为音频可以由一个生成一切的 LLM 驱动。音频仍然可以先生成一份 transcript，模型只需要完成文本到语音的转换。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>音乐方面，扩散和自回归之间曾经有过一段势均力敌的时期，可能各自还有更多优缺点。我只是想听听你的看法。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>你说到写作时回头编辑，我的编辑可能会告诉我，我其实应该更经常这么做。音乐或诗歌也可能需要双向注意力：比如有押韵结构时，你可能要回头改动前面的句子，才能为后面想要的韵脚做好铺垫。</p>
+<p>我会把这个影响问题大致分成两类：自回归模型有一套约束和技术，扩散模型也有另一套约束和技术。文本的输入和输出、语音输入和输出，我会归到自回归一侧；图像和视频则归到扩散一侧。这不是绝对的划分，两者存在重叠，但这是我使用的基本分类。</p>
+<p><strong>swyx</strong></p>
+<p>我应该指出，Nano Banana 和 GPT Image 已经被确认是自回归图像模型，对吧？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>它们采用的正是我们刚才说的这种混合方法。但在图像领域出现的这条路线，至少在开源世界还没有进入视频领域。</p>
+<p><strong>swyx</strong></p>
+<p>我猜应该不会太远了。如果这条路线确实可行，Qwen Image 团队正在尝试。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我非常期待 Qwen Image 3，希望他们能把它开源。</p>
+<h2 id="扩散式文本的另一种接口">扩散式文本的另一种接口</h2>
+<p><strong>swyx</strong></p>
+<p>文本扩散方面也已经有一些动向，虽然还不多。比如 Mercury，你主持过相关节目；还有 Diffusion Gemma，对吧？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>Diffusion Gemma 是开源的。SciencePod 最近也发布了一些使用扩散模型的虚拟细胞模型。</p>
+<p><strong>swyx</strong></p>
+<p>它们目前显然还处在便宜、快速生成 token 的阶段。但我觉得它们的营销方向不对。我以前就说过：你们不可能在其他 LLM 会采用的优化上胜出，但你们可以提供不同的 API，让用户以不同于聊天式一问一答的方式使用它。</p>
+<p>因为它是扩散模型，所以应该思考：文本扩散里的 classifier-free guidance 会是什么样？比如让模型生成一首诗，或者给出一个情节结构，让它逐渐扩散成形。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>没错。比如诗歌，你可能希望确保整首诗前后保持一致。我已经用 LLM 写过很多十四行诗了。</p>
+<h2 id="扩散文本与生成接口">扩散文本与生成接口</h2>
+<p><strong>Philip Kiely</strong></p>
+<p>过去它一直是我常用的基准测试之一。即使是现在的模型，也常常无法正确处理音节；如果能让模型跨越所有不同 token 建立注意力，就有可能把音节处理正确。</p>
+<p><strong>swyx</strong></p>
+<p>David Holz 曾经在 Midjourney 投资文本扩散。我不知道后来有没有成果，但这个想法是：先为一部长电影做故事板，再用普通的视频生成模型逐个生成场景。对于一个需要全局一致性的东西，让结尾能够关注开头，而且不受自回归路径依赖的影响，这个思路原则上是成立的，只是 API 和营销方式都应该不同。</p>
+<p><strong>Ali Taha</strong></p>
+<p>现在使用最广泛的开源或闭源模型里，有一些采用扩散方法。这是不是说明扩散模型其实很有潜力？</p>
+<p><strong>swyx</strong></p>
+<p>这有点像鸡和蛋的问题：如果只是给它更多规模呢？目前最大的扩散模型是什么？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我不认为它很大。我不记得具体参数量，但 Diffusion Gemma 不是一个大模型，可能只有二十几亿参数。你们其实还没有真正尝试过：没有给它更大的规模，就直接评价它，这不太公平。</p>
+<p><strong>Ali Taha</strong></p>
+<p>我的意思正是如此。按它的规模来看，Diffusion Gemma 的质量已经相当不错了。</p>
+<p><strong>swyx</strong></p>
+<p>这和视频模型面临的挑战有点像：你拿一个小模型去和规模大得多的模型比较。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>除非采用这样的架构：先用一个文本 backbone，再接上某种负责扩散解码的模块。你们刚才谈到过图像到文本的反向方向，我觉得反过来做，从文本到图像，也大致是直观可行的。</p>
+<p><strong>Ali Taha</strong></p>
+<p>我同意，我能理解这种可能性。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我们现在其实是在对研究方向做推测。不过可以用这个话题收束到你的演讲：过去推理工程就只是拿一个开放模型，让 GPU 全速运转，然后结束。那是早期阶段的工作。现在，推理越来越多地参与到后训练、训练和推理本身的闭环里。</p>
+<p><strong>Ali Taha</strong></p>
+<p>训练面向推理、推理服务训练，这两个方向都已经变成重要议题。所谓用推理服务训练，最明显的例子就是强化学习训练时需要不断做 rollout。如果 rollout 很慢，比如你使用 VLM 而不是 TRT-LLM，或者待训练的模型不受 TRT-LLM 支持，只能退回到更老的推理引擎，那么整个 rollout 就会变慢。你不希望在太偏离当前策略的 rollout 上训练，只能等它们完成，最终整个训练流水线都会被推理速度卡住。因此，我们用于推理优化的技术也会直接帮助训练。</p>
+<p>而训练面向推理，主要包括 speculative decoding 训练、Eagle 训练，以及有时需要进行的后训练。比如量化模型时，你可能想把它量化到 NVFP4。有时运气好，直接做 PTQ 就能工作；但有时量化到 NVFP4 后质量会糟糕得无法接受。这时就必须对模型做后训练，让它理解自己现在运行在 NVFP4 上，同时仍然输出和原模型相同的 logits。可以用普通 SFT、量化感知训练等方法。</p>
+<p>越来越多的做法是 NVIDIA 发布的量化感知蒸馏：同时建立一个 NVFP4 版本和一个全精度版本，然后根据两个模型的 logits 做蒸馏训练，让 NVFP4 模型学会尽量保持原模型的行为。现在，我们团队里的推理工程师越来越需要熟悉训练技术，也要能够独立编写训练流水线。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>听起来训练和推理正在合流。</p>
+<p><strong>Ali Taha</strong></p>
+<p>确实如此。如果把目标想成一个持续改进的系统，这件事听起来有点像玩笑，但其实已经在发生了。我认为几个月到几年之内，很多领先的智能体构建者都会在生产环境里真正跑起这样的循环：系统进行推理，再从推理结果中学习。</p>
+<p>我们长期以来就一直在从线上推理中学习，并动态调整系统。无论是调整具体配置，还是调整 speculative decoding 之类的机制，动态调整都可能胜过静态配置。你可以拿产品生成的 trace 持续做后训练，再部署出来做 A/B 测试，获得更好的信号、更好的模型和更好的产品。这个闭环非常有前景，构建它所需的技术和基础设施也在快速成熟，所以训练与推理的统一只会进一步加速。</p>
+<p><strong>swyx</strong></p>
+<p>我刚才其实是在笑，但并不是因为觉得这件事好笑。它是真的。AI Engineer World’s Fair 的一个大主题是‘从递归自我改进走向 AGI’，这大概就是粗略的口号。这样一来，我也不用再替你们把这件事说得像玩笑了。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>这还不完全是模型在优化自己的影响力，更像是模型能够阅读 SGLang 的文档，然后利用这些知识改进系统。</p>
+<p><strong>Ali Taha</strong></p>
+<p>但我们确实已经在 GLM-5.2 上看到这种现象。GLM-5.2 非常擅长编写 GPU kernel。我们内部曾经运行过一个 GLM-5.2 endpoint，把它接进 Claude Code 的 harness。工程师可以让它在 GLM-5.2 所在的节点上做一次前向计算，再拿到 profile trace，让它分析 SGLang 里的瓶颈 kernel。</p>
+<p>接着它会编写改进后的 kernel，我们再做一次 profiling。完成后，它会把镜像上传到我们的系统，我们把镜像拉下来，重复这个循环。于是有一段时间，GLM-5.2 的一些 GPU kernel，实际上就是由 GLM-5.2 写出来的；trace 和 kernel 都由作为驱动者的 GLM-5.2 引导。这个循环已经存在，只是还需要更多时间才能把它做得更完整。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>你觉得 GLM-5.2 是特别擅长优化自身，还是仅仅因为它是我们当时能用到的最佳代码模型？如果让它去优化 DeepSeek、Kimi 之类的模型，效果会一样好吗？</p>
+<p><strong>Ali Taha</strong></p>
+<p>也许问题在于，当它试图优化另一个模型时，会变得偏离策略。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>那又会造成什么实际损害？比如 DeepSeek？</p>
+<p><strong>swyx</strong></p>
+<p>无论如何，我不太相信会这样。但我们可以直接试试看。这个问题很有意思，而且你们的算力比我多，去做实验吧。</p>
+<h2 id="推理工程的下一步">推理工程的下一步</h2>
+<p><strong>swyx</strong></p>
+<p>还有哪些我们没谈到的推理工程趋势？你们离这个领域太近了，显然能看到其他人还不知道的东西。</p>
+<p><strong>Ali Taha</strong></p>
+<p>最明显的趋势是模型会变大，硬件会变强，而用户会习惯某种速度，然后要求更快。我更感兴趣的是系统层面的问题：我们仍然需要思考如何把多个模型组合起来。一个语音智能体可能涉及三到五个模型，以及这些模型之间的通信；新的模态也会不断出现，比如 Cosmos 这样的世界模型。端到端语音仍然没有完全成为现实，但已经越来越接近了。接下来会有很多新的模态需要围绕它们构建系统。</p>
+<p>另一个需要继续解决的问题，是如何在更大的规模上运营基础设施。整个行业的基础设施是在前所未有的需求激增下快速搭起来的，而需求还没有停止。因此，长尾可靠性仍然是问题，我们也要想办法获得下一个十倍、甚至一百倍的 token 产能。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我的答案可能很无聊：我认为关键就是更快的网络，以及更快的芯片间通信。现在看起来，内存越来越成为瓶颈，而我们又希望运行更大的模型。在大规模服务中，你必须把 KV cache 从一个节点传到另一个节点：先找到它的位置，把它传到另一台机器的内存，再从那台机器的内存传进 GPU，最后进入 GPU 的计算核心。这是一个两阶段传输，所以会非常受限。</p>
+<p>在一个理论上的理想世界里，如果网络足够快，就可以省掉中间的 HBM 步骤，直接把 KV cache 从一个节点传到另一个节点。做跨节点的聚合式服务时，这理论上能带来接近 100 倍的加速。我不了解让 NIC 变快究竟有哪些技术挑战，但它比 HBM 慢几个数量级，一定有其原因。如果有人能解决这个问题，……</p>
+<h2 id="推理中的持续学习">推理中的持续学习</h2>
+<p><strong>swyx</strong></p>
+<p>我想提一个关于持续学习的推理工程问题：如果系统的基本前提是，它应该从自己处理过的每一件事中学习，那推理方式需要改变吗？还是仍然把信息塞进 memory.md，再设法让它进入 KV cache，然后假设这套系统就能正常工作？我们应该怎样重塑推理，让模型在推理的同时学习？</p>
+<p><strong>Ali Taha</strong></p>
+<p>这里有两个可能的方向，我和 Charlie 曾经为此争论过。第一条路是让模型真正学习，把新知识不断写入权重。这样一来，推理系统就需要持续获取新的权重，或者至少持续读写权重。第二条路是做 KV cache 压缩。</p>
+<p><strong>swyx</strong></p>
+<p>如果只更新 LoRA 层，也可以走第二条路；这就是我们前面讲过的 engram 方法。</p>
+<p><strong>Ali Taha</strong></p>
+<p>没错。直接修改权重的问题在于，你只能修正一个事实，却不一定能让模型用这个新事实进行后续推理。比如你知道世界上最好的大学是滑铁卢大学，那么问模型“我应该从哪所大学招实习生”，它应该回答滑铁卢。但如果你让它先利用知识思考，再回答“我应该从滑铁卢大学还是 MIT 招实习生”，它可能只会说两所都不错。你明明刚刚把“滑铁卢最好”写进了知识库，它却没有把这个修改用于推理。</p>
+<p>这就是试图在模型权重的 MLP 中修改事实的根本问题。KV cache 压缩可以解决它。更准确地说，如果能像我们发表的 STILL 论文那样，让 KV cache 几乎无限扩展，并以不会丢失知识的方式压缩，就有可能真正实现持续学习。</p>
+<p>这也是我和 Charlie 那场争论的结果：我承认他的观点是对的，现在确实认为 KV cache 才是前进方向。这样一来，推理本身不会发生太大变化，因为推理时我们本来就在使用 KV cache；只是多一个更新 KV cache 的步骤，模型权重不变，推理时间和整体规格也不会有本质变化。</p>
+<p><strong>swyx</strong></p>
+<p>这是个出人意料的好答案。相关内容已经发在博客上了，文章比较新，大家可以去看看。</p>
+<h2 id="对话收束与未来判断">对话收束与未来判断</h2>
+<p><strong>swyx</strong></p>
+<p>这次聊天非常愉快，不知不觉已经聊了两个小时，很多话题甚至还没来得及展开。我们原本还想聊聊那本书，但大家已经知道这本书了，而且它无疑是 Baseten 历史上单位时间投资回报最高的事情。恭喜你们，也谢谢你们愿意分享这些内容。推理工程这个主题我们以前很少正面聊，能请你们来是件很难得的事。</p>
+<p><strong>Philip Kiely</strong></p>
+<p>太棒了，感谢邀请。希望一年之后，一切都已经发生变化，到时我们可以回来，逐条讲讲今天哪些判断是错的。</p>
+<p>我很期待关于 megakernels 的那段评论发布之后，看看大家会怎么回应。</p>
+<p><strong>Alessio Fanelli</strong></p>
+<p>看来我们要开始制造一些话题了。</p>
+<p><strong>Ali Taha</strong></p>
+<p>我是不是该先躲起来？</p>
+<p><strong>Philip Kiely</strong></p>
+<p>我知道自己可能会招来 megakernel 社区的追击。</p>
+<p>我很尊重你的一点是：你从来不怕去捅马蜂窝。</p>
+<p><strong>swyx</strong></p>
+<p>我倒不觉得这有多具争议性。总之，我们很快就会知道。谢谢两位今天来做客。</p> </section> </article>  </main> <footer class="site-footer"> <div class="footer-inner"> <a class="social-link" href="https://github.com/myvyang" aria-label="GitHub"> <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .85-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.91c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.07.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path> </svg>   </a><a class="social-link" href="https://github.com/myvyang" aria-label="X">  <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M13.78 10.47 21.2 2h-1.76l-6.44 7.35L7.86 2H2l7.78 11.12L2 22h1.76l6.8-7.76L16 22h5.86l-8.08-11.53Zm-2.41 2.75-.79-1.1L4.31 3.3h2.7l5.06 7.11.79 1.1 6.58 9.25h-2.7l-5.37-7.55Z"></path> </svg>  </a><a class="social-link" href="mailto:myvyang@gmail.com" aria-label="邮箱">   <svg aria-hidden="true" viewBox="0 0 24 24"> <path d="M4.75 5.5h14.5c.96 0 1.75.79 1.75 1.75v9.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 16.75v-9.5c0-.96.79-1.75 1.75-1.75Zm.06 1.5 6.07 5.02c.65.54 1.59.54 2.24 0L19.19 7H4.81Zm14.69 1.61-5.42 4.48a3.25 3.25 0 0 1-4.16 0L4.5 8.61v8.14c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.61Z"></path> </svg> </a> </div> </footer> </div> </body></html>

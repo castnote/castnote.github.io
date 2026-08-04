@@ -12,7 +12,7 @@
 
 ## 文章列表
 
-- [推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/): Latent Space · 2026-08-03 ([Markdown](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten.md))
+- [推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/): Latent Space · 2026-08-03 ([Markdown](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten.md))
 - [南希·格思里为何消失得无影无踪？](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace/): The Journal. · 2026-08-03 ([Markdown](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace.md))
 - [如何用好你的错误](/episodes/hidden-brain/making-the-most-of-your-mistakes/): Hidden Brain · 2026-08-03 ([Markdown](/episodes/hidden-brain/making-the-most-of-your-mistakes.md))
 - [免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/): Huberman Lab · 2026-08-03 ([Markdown](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel.md))

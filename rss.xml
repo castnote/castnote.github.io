@@ -6,11 +6,11 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
-      <title>推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten</title>
+      <title>推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha</title>
       <link>https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/</guid>
       <pubDate>Mon, 03 Aug 2026 21:44:03 GMT</pubDate>
-      <description>Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。</description>
+      <description>本期围绕推理工程展开，讨论长上下文请求进入 Baseten 后的缓存感知路由、prefill/decode 解耦、投机解码、专用部署、工具调用和结构化输出；随后延伸到新模型上线、量化质量、速度优化、Dynamo、PD 解耦、本地 AI 与数据中心推理差异、Rubin 和专用芯片、视频与音频生成，以及训练和推理逐渐合流后的持续学习循环。</description>
     </item>
     <item>
       <title>南希·格思里为何消失得无影无踪？</title>
