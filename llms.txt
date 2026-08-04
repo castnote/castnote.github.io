@@ -12,6 +12,13 @@
 
 ## 文章列表
 
+- [推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/): Latent Space · 2026-08-03 ([Markdown](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten.md))
+- [南希·格思里为何消失得无影无踪？](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace/): The Journal. · 2026-08-03 ([Markdown](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace.md))
+- [如何用好你的错误](/episodes/hidden-brain/making-the-most-of-your-mistakes/): Hidden Brain · 2026-08-03 ([Markdown](/episodes/hidden-brain/making-the-most-of-your-mistakes.md))
+- [免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/): Huberman Lab · 2026-08-03 ([Markdown](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel.md))
+- [钨市场正在警示一场即将到来的战争](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/): Odd Lots · 2026-08-03 ([Markdown](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war.md))
+- [Serena & Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮](/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/): How I Built This · 2026-08-03 ([Markdown](/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d.md))
+- [独处可能比你想象的更好](/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think/): The Happiness Lab · 2026-08-03 ([Markdown](/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think.md))
 - [无童泳池](/episodes/money-stuff/no-kiddie-pool/): Money Stuff: The Podcast · 2026-07-31 ([Markdown](/episodes/money-stuff/no-kiddie-pool.md))
 - [开放权重模型之争、Claire Stapleton 的 Google 回忆录与 Substack 的 Slop 风波](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight/): Hard Fork · 2026-07-31 ([Markdown](/episodes/hard-fork/open-model-wars-claire-stapleton-s-dishy-google-memoir-substack-s-slop-fight.md))
 - [在新一轮太空竞赛中，谁来制定规则？](/episodes/freakonomics/in-the-new-space-race-who-makes-the-rules/): Freakonomics Radio · 2026-07-31 ([Markdown](/episodes/freakonomics/in-the-new-space-race-who-makes-the-rules.md))
@@ -21,6 +28,7 @@
 - [雷·达里欧：我预见了2008年危机，并看见下一步走向](/episodes/diary-of-a-ceo/ray-dalio-i-predicted-the-2008-crash-i-know-what-comes-next/): The Diary Of A CEO · 2026-07-30 ([Markdown](/episodes/diary-of-a-ceo/ray-dalio-i-predicted-the-2008-crash-i-know-what-comes-next.md))
 - [斯坦顿岛问题（第四部分）：Wu Tang 与 Shaolin](/episodes/revisionist-history/the-staten-island-problem-part-4-wu-tang-vs-shaolin/): Revisionist History · 2026-07-30 ([Markdown](/episodes/revisionist-history/the-staten-island-problem-part-4-wu-tang-vs-shaolin.md))
 - [与 Hillel Wayne 的形式化方法访谈](/episodes/pragmatic-engineer/formal-methods-with-hillel-wayne/): The Pragmatic Engineer Podcast · 2026-07-29 ([Markdown](/episodes/pragmatic-engineer/formal-methods-with-hillel-wayne.md))
+- [加里·加拉格尔：美国内战、奴隶制、林肯、格兰特与李将军](/episodes/lex-fridman/gary-gallagher-american-civil-war-slavery-lincoln-grant-lee-lex-fridman-podcast-499/): Lex Fridman Podcast · 2026-07-28 ([Markdown](/episodes/lex-fridman/gary-gallagher-american-civil-war-slavery-lincoln-grant-lee-lex-fridman-podcast-499.md))
 - [信任需要证明：谁真正控制你的AI？](/episodes/smart-talks-ibm/trust-needs-proof-who-really-controls-your-ai/): Smart Talks with IBM · 2026-07-28 ([Markdown](/episodes/smart-talks-ibm/trust-needs-proof-who-really-controls-your-ai.md))
 - [从 0 到 1000 万用户：打造 ChatGPT Work](/episodes/latent-space/codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai/): Latent Space · 2026-07-28 ([Markdown](/episodes/latent-space/codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md))
 - [布兰科·米兰诺维奇：全球化之后是什么？](/episodes/odd-lots/branko-milanovic-on-what-comes-after-globalization/): Odd Lots · 2026-07-27 ([Markdown](/episodes/odd-lots/branko-milanovic-on-what-comes-after-globalization.md))
@@ -85,6 +93,7 @@
 - [Comcast 拆分、OpenAI 权衡推迟 IPO，以及 Buttigieg 遭针对](/episodes/pivot/comcast-splits-openai-weighs-ipo-delay-and-buttigieg-targeted/): Pivot · 2026-06-30 ([Markdown](/episodes/pivot/comcast-splits-openai-weighs-ipo-delay-and-buttigieg-targeted.md))
 - [生物医学发现的量子转向](/episodes/smart-talks-ibm/the-quantum-shift-in-biomedical-discovery/): Smart Talks with IBM · 2026-06-30 ([Markdown](/episodes/smart-talks-ibm/the-quantum-shift-in-biomedical-discovery.md))
 - [百度CFO：Baidu如何成为全栈AI玩家](/episodes/odd-lots/baidu-s-cfo-on-how-it-became-a-full-stack-ai-player/): Odd Lots · 2026-06-29 ([Markdown](/episodes/odd-lots/baidu-s-cfo-on-how-it-became-a-full-stack-ai-player.md))
+- [女性健身专家：关于饮食与运动，你真正需要知道什么？——Stephanie Estima 博士](/episodes/diary-of-a-ceo/women-s-fitness-expert-what-you-need-to-know-about-dieting-exercise-dr-stephanie-estima/): The Diary Of A CEO · 2026-06-29 ([Markdown](/episodes/diary-of-a-ceo/women-s-fitness-expert-what-you-need-to-know-about-dieting-exercise-dr-stephanie-estima.md))
 - [为什么“追求幸福”是个错误想法](/episodes/happiness-lab/why-the-pursuit-of-happiness-is-a-bad-idea/): The Happiness Lab · 2026-06-29 ([Markdown](/episodes/happiness-lab/why-the-pursuit-of-happiness-is-a-bad-idea.md))
 - [下一个重大突破可能是 AI 的在岗学习能力](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job/): Dwarkesh Podcast · 2026-06-26 ([Markdown](/episodes/dwarkesh/the-next-big-breakthrough-will-be-ais-learning-on-the-job.md))
 - [《每天》与《观点》：AI 如何改变孤独感与品味](/episodes/hard-fork/the-daily-and-the-opinions-how-a-i-is-changing-loneliness-and-taste/): Hard Fork · 2026-06-26 ([Markdown](/episodes/hard-fork/the-daily-and-the-opinions-how-a-i-is-changing-loneliness-and-taste.md))

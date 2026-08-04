@@ -6,6 +6,55 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>推理工程大师课：Philip Kiely 与 Ali Taha 谈 Baseten</title>
+      <link>https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/</link>
+      <guid>https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/</guid>
+      <pubDate>Mon, 03 Aug 2026 21:44:03 GMT</pubDate>
+      <description>Swyx 与 Baseten 的 Philip Kiely、Ali Taha 讨论推理工程的完整链路：长上下文请求的缓存感知路由、prefill/decode 解耦、工具调用、模型适配、量化、speculative decoding、并行化和 GPU 硬件演进，并延伸到本地 AI、视频扩散、训练与推理合流，以及用 KV cache 支持持续学习。</description>
+    </item>
+    <item>
+      <title>南希·格思里为何消失得无影无踪？</title>
+      <link>https://castnote.github.io/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace/</guid>
+      <pubDate>Mon, 03 Aug 2026 20:31:00 GMT</pubDate>
+      <description>本集调查南希·格思里在亚利桑那州图森家中失踪后，警方早期处置、FBI 与地方执法机构之间的分歧、赎金信、媒体围观和社交媒体噪音如何交织在一起，并梳理案件至今仍无明确进展的原因。</description>
+    </item>
+    <item>
+      <title>如何用好你的错误</title>
+      <link>https://castnote.github.io/episodes/hidden-brain/making-the-most-of-your-mistakes/</link>
+      <guid>https://castnote.github.io/episodes/hidden-brain/making-the-most-of-your-mistakes/</guid>
+      <pubDate>Mon, 03 Aug 2026 19:00:00 GMT</pubDate>
+      <description>本期讨论个人和组织如何理解错误与失败。Amy Edmondson 从医院用药错误研究谈到心理安全、复杂失败、基本失败和智能失败，说明为什么不能把所有失败都一概消除。后半段，John Dinsmore 结合听众关于分时度假、买房、家庭金钱观和债务压力的故事，分析乐观偏差、跨期折扣、滴灌定价、支出预测偏差、结构性力量和公平感如何影响财务决策。</description>
+    </item>
+    <item>
+      <title>免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>Andrew Huberman 与免疫学家 Max Krummel 讨论免疫系统如何作为身体的动态感知网络运作，涉及 T 细胞与胸腺、衰老与突变、睡眠和脑状态对免疫功能的影响、癌症免疫疗法、空间生物学、疫苗风险沟通、自身免疫性疾病，以及科学发现和公共科学传播。</description>
+    </item>
+    <item>
+      <title>钨市场正在警示一场即将到来的战争</title>
+      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
+    </item>
+    <item>
+      <title>Serena &amp; Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮</title>
+      <link>https://castnote.github.io/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/</link>
+      <guid>https://castnote.github.io/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/</guid>
+      <pubDate>Mon, 03 Aug 2026 07:10:00 GMT</pubDate>
+      <description>本期讲述 Serena &amp; Lily 的创建和融资历程：Lily Kanter 离开微软后在米尔谷经营婴童精品店，Serena Dugan 从心理学转向艺术和装饰设计，两人因婴儿房设计相识并共同创办 Serena &amp; Lily。品牌从婴儿床品目录起步，凭借独立零售渠道迅速拿到订单，又在现金不足、包装失败、扩品类和金融危机中转向直接面向消费者。随着销售额增长，她们经历多轮融资、投资人目标分歧、诉讼威胁和复杂优先权条款，最终通过多数股权收购重组资本结构，并在离开公司后回顾品牌、韧性与运气。</description>
+    </item>
+    <item>
+      <title>独处可能比你想象的更好</title>
+      <link>https://castnote.github.io/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think/</link>
+      <guid>https://castnote.github.io/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think/</guid>
+      <pubDate>Mon, 03 Aug 2026 04:01:00 GMT</pubDate>
+      <description>本期节目区分了孤独与独处，回顾孤独概念的历史变化，并介绍关于独处信念、文化差异、情绪调节和语言影响的研究。节目还通过作家 Emma Gannon 的经历，讨论如何把独处作为日常生活和创造力的一部分，同时承认慢性孤独仍需要社会支持与干预。</description>
+    </item>
+    <item>
       <title>无童泳池</title>
       <link>https://castnote.github.io/episodes/money-stuff/no-kiddie-pool/</link>
       <guid>https://castnote.github.io/episodes/money-stuff/no-kiddie-pool/</guid>
@@ -67,6 +116,13 @@
       <guid>https://castnote.github.io/episodes/pragmatic-engineer/formal-methods-with-hillel-wayne/</guid>
       <pubDate>Wed, 29 Jul 2026 16:22:31 GMT</pubDate>
       <description>本期节目聚焦“AI 时代软件工程是否还需要形式化验证”这一核心问题，由 Gergely Orosz 邀请 Hillel Wayne 深入讨论。他首先回顾了自己从软件工程入门到推动形式化方法研究的经历，并结合 Crossover Project 的背景说明软件是否属于传统工程的争议。对话随后进入实践层面：如何从规格说明进入证明、形式化方法在实际项目里的可行边界、以及与属性测试、测试驱动思路的关系。Hillel 讨论了工具在不同规模项目中的应用现实，并提到并发与分布式系统场景对可靠性要求更高、也更容易暴露验证难题。节目也分析了 AI 生成代码后，验证负担是否会下降或上升，以及开发者如何更务实地在高价值环节使用形式化技术。最终两位认为，形式化验证并不是唯一答案，但在关键系统里是重要补充，关键在于平衡投入与风险。</description>
+    </item>
+    <item>
+      <title>加里·加拉格尔：美国内战、奴隶制、林肯、格兰特与李将军</title>
+      <link>https://castnote.github.io/episodes/lex-fridman/gary-gallagher-american-civil-war-slavery-lincoln-grant-lee-lex-fridman-podcast-499/</link>
+      <guid>https://castnote.github.io/episodes/lex-fridman/gary-gallagher-american-civil-war-slavery-lincoln-grant-lee-lex-fridman-podcast-499/</guid>
+      <pubDate>Tue, 28 Jul 2026 20:02:17 GMT</pubDate>
+      <description>历史学家加里·加拉格尔讨论美国内战的成因、奴隶制与解放、林肯和格兰特的领导力、李将军的军事作用、关键战役、邦联记忆与重建，并比较内战时期的政治分裂与当代美国。</description>
     </item>
     <item>
       <title>信任需要证明：谁真正控制你的AI？</title>
@@ -516,6 +572,13 @@
       <guid>https://castnote.github.io/episodes/odd-lots/baidu-s-cfo-on-how-it-became-a-full-stack-ai-player/</guid>
       <pubDate>Mon, 29 Jun 2026 08:00:00 GMT</pubDate>
       <description>本期节目在香港Bloomberg Invest会议后访谈Baidu CFO Henry Hoo，围绕AI转型中的资本与组织决策展开讨论。节目重点在于他如何看待全栈布局中的优先级：认为在当前阶段云和应用是更直接的价值中枢，训练与推理需分开考量。Henry解释了Token预算如何用于研发效率与任务完成两条线，同时强调更开放的人才授权与Agent协作以降低组织摩擦。对财务而言，他详细说明了高增长下的“增长、投资密度、资本回报”三难关系，并给出云收入和现金流的最新表现。讨论也涉及模型安全、监管环境、开源生态与中国数据治理，再到Apollo Go机器人的市场化竞争、数字员工和每日活跃智能体（DAA）等商业化模型，最后延伸到芯片业务与生态建设。</description>
+    </item>
+    <item>
+      <title>女性健身专家：关于饮食与运动，你真正需要知道什么？——Stephanie Estima 博士</title>
+      <link>https://castnote.github.io/episodes/diary-of-a-ceo/women-s-fitness-expert-what-you-need-to-know-about-dieting-exercise-dr-stephanie-estima/</link>
+      <guid>https://castnote.github.io/episodes/diary-of-a-ceo/women-s-fitness-expert-what-you-need-to-know-about-dieting-exercise-dr-stephanie-estima/</guid>
+      <pubDate>Mon, 29 Jun 2026 05:00:00 GMT</pubDate>
+      <description>Stephanie Estima 博士结合临床经验和个人经历，讨论女性不应把变瘦作为唯一健身目标，介绍四种常见的健身状态，并围绕碳水、举重、长时间禁食、训练前后进食、盆底、力量与心肺训练、骨骼和结缔组织承载能力，以及部分补剂和恢复方式展开对话。</description>
     </item>
     <item>
       <title>为什么“追求幸福”是个错误想法</title>
