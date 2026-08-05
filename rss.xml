@@ -6,6 +6,41 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>人工智能领域的“诺查丹玛斯”错在哪里</title>
+      <link>https://castnote.github.io/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong/</guid>
+      <pubDate>Tue, 04 Aug 2026 20:24:00 GMT</pubDate>
+      <description>Leopold Aschenbrenner 曾凭借对人工智能未来的判断在硅谷声名鹊起，并创办 Situational Awareness 对冲基金。基金利用杠杆投资人工智能相关股票和私人公司，在 SK Hynix 等持仓下跌后遭遇保证金追缴，最终以折价向 Citadel 出售大部分资产以偿还贷款。节目还讨论了投资者为何追捧年轻的未来预测者，以及过度使用杠杆这一传统金融风险。</description>
+    </item>
+    <item>
+      <title>我们找到了一些互联网上最好的销售建议</title>
+      <link>https://castnote.github.io/episodes/my-first-million/we-found-the-internet-s-best-sales-advice/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/we-found-the-internet-s-best-sales-advice/</guid>
+      <pubDate>Tue, 04 Aug 2026 10:00:00 GMT</pubDate>
+      <description>Sam Parr 和 Shaan Puri 从 Hacker News 上的七条销售建议聊起，延伸到《影响力》里的互惠原则、Diet Coke 谈判故事、United Hatzalah 的志愿急救网络、Bernard Arnault 如何用幽默回应负面报道，以及《万智牌》如何靠收藏机制、稀缺性和核心玩家传播成长为孩之宝的重要业务。两人最后讨论了有些公司为何只能由特定的人做出来，并把 Dana White、Airbnb 和 Bryan Johnson 作为例子，谈到独特意志、长期热情、财富用途和身后名声。</description>
+    </item>
+    <item>
+      <title>RFK Jr. 与 Dana Bash 交锋、AI 的“侏罗纪公园时刻”和马斯克的中期选举资金</title>
+      <link>https://castnote.github.io/episodes/pivot/rfk-jr-s-bash-clash-ai-s-jurassic-park-moment-and-elon-s-midterm-millions/</link>
+      <guid>https://castnote.github.io/episodes/pivot/rfk-jr-s-bash-clash-ai-s-jurassic-park-moment-and-elon-s-midterm-millions/</guid>
+      <pubDate>Tue, 04 Aug 2026 10:00:00 GMT</pubDate>
+      <description>本期节目中，Kara Swisher 和 Scott Galloway 先介绍 Scott Free August 的代班嘉宾阵容，随后讨论 RFK Jr. 接受 Dana Bash 采访时围绕疫苗、自闭症和专家信任的争论，以及 Max Miller 相关指控引出的权力与保护责任。两人还分析大型科技公司财报、AI 代理越出测试环境带来的网络安全风险、马斯克计划投入中期选举的政治资金、特朗普政府围绕林肯纪念堂倒影池的内部争执，并在本周胜负中谈到哥伦比亚新闻学院、Paul Weiss、国际足联、电影《Wicker》和《奥德赛》，最后插入 Rosie O’Donnell 谈如何用喜剧回应特朗普的片段。</description>
+    </item>
+    <item>
+      <title>AI 市场震荡：Gavin Baker 谈算力、信贷与开源模型</title>
+      <link>https://castnote.github.io/episodes/invest-like-the-best/gavin-baker-ai-market-jitters-invest-like-the-best-ep-485/</link>
+      <guid>https://castnote.github.io/episodes/invest-like-the-best/gavin-baker-ai-market-jitters-invest-like-the-best-ep-485/</guid>
+      <pubDate>Tue, 04 Aug 2026 08:00:00 GMT</pubDate>
+      <description>Patrick O&apos;Shaughnessy 与 Gavin Baker 讨论 2026 年 7 月 AI 相关股票剧烈下跌背后的市场叙事与基本面，重点包括 GPU 现货价和长期合约重新定价、超大规模云服务商经营现金流、Meta 租用算力的误读、开源与开放权重模型对 token 结构和基础设施利润的影响、实际收益率和信用利差上升的风险，以及监管、数据中心叙事、SRAM 加速器和 SpaceX 算力业务等议题。</description>
+    </item>
+    <item>
+      <title>为什么血液、水和氦气都在短缺？</title>
+      <link>https://castnote.github.io/episodes/the-indicator/why-we-re-short-on-blood-water-and-helium/</link>
+      <guid>https://castnote.github.io/episodes/the-indicator/why-we-re-short-on-blood-water-and-helium/</guid>
+      <pubDate>Tue, 04 Aug 2026 07:00:00 GMT</pubDate>
+      <description>节目讨论美国血液供应危机、氦气供应因需求增长和地缘冲突受到的挤压，以及美国西部因积雪减少、农业用水和长期过度消费而加剧的水资源短缺。</description>
+    </item>
+    <item>
       <title>推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha</title>
       <link>https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/</link>
       <guid>https://castnote.github.io/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/</guid>
@@ -27,11 +62,11 @@
       <description>本期讨论个人和组织如何理解错误与失败。Amy Edmondson 从医院用药错误研究谈到心理安全、复杂失败、基本失败和智能失败，说明为什么不能把所有失败都一概消除。后半段，John Dinsmore 结合听众关于分时度假、买房、家庭金钱观和债务压力的故事，分析乐观偏差、跨期折扣、滴灌定价、支出预测偏差、结构性力量和公平感如何影响财务决策。</description>
     </item>
     <item>
-      <title>免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</guid>
-      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
-      <description>Andrew Huberman 与免疫学家 Max Krummel 讨论免疫系统如何作为身体的动态感知网络运作，涉及 T 细胞与胸腺、衰老与突变、睡眠和脑状态对免疫功能的影响、癌症免疫疗法、空间生物学、疫苗风险沟通、自身免疫性疾病，以及科学发现和公共科学传播。</description>
+      <title>更聪明的 AI 模型可能让算力价格上涨十倍</title>
+      <link>https://castnote.github.io/episodes/dwarkesh/why-smarter-ai-models-could-drive-up-compute-prices-10x/</link>
+      <guid>https://castnote.github.io/episodes/dwarkesh/why-smarter-ai-models-could-drive-up-compute-prices-10x/</guid>
+      <pubDate>Mon, 03 Aug 2026 17:32:13 GMT</pubDate>
+      <description>本期讨论 AI 模型能力和商业化速度提升后，实验室收入增长可能超过算力供给增长的情形，分析利润率、算力价格和推理算力占比的变化，以及高效模型、AI 应用和芯片供给可能受到的影响。</description>
     </item>
     <item>
       <title>钨市场正在警示一场即将到来的战争</title>
@@ -41,11 +76,25 @@
       <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
     </item>
     <item>
+      <title>免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>Andrew Huberman 与免疫学家 Max Krummel 讨论免疫系统如何作为身体的动态感知网络运作，涉及 T 细胞与胸腺、衰老与突变、睡眠和脑状态对免疫功能的影响、癌症免疫疗法、空间生物学、疫苗风险沟通、自身免疫性疾病，以及科学发现和公共科学传播。</description>
+    </item>
+    <item>
       <title>Serena &amp; Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮</title>
       <link>https://castnote.github.io/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/</link>
       <guid>https://castnote.github.io/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/</guid>
       <pubDate>Mon, 03 Aug 2026 07:10:00 GMT</pubDate>
       <description>本期讲述 Serena &amp; Lily 的创建和融资历程：Lily Kanter 离开微软后在米尔谷经营婴童精品店，Serena Dugan 从心理学转向艺术和装饰设计，两人因婴儿房设计相识并共同创办 Serena &amp; Lily。品牌从婴儿床品目录起步，凭借独立零售渠道迅速拿到订单，又在现金不足、包装失败、扩品类和金融危机中转向直接面向消费者。随着销售额增长，她们经历多轮融资、投资人目标分歧、诉讼威胁和复杂优先权条款，最终通过多数股权收购重组资本结构，并在离开公司后回顾品牌、韧性与运气。</description>
+    </item>
+    <item>
+      <title>皮特·布蒂吉格：美国梦已死，我们修复它的时间不多了</title>
+      <link>https://castnote.github.io/episodes/diary-of-a-ceo/secretary-pete-buttigieg-the-american-dream-is-dead-we-re-running-out-of-time-to-fix-it/</link>
+      <guid>https://castnote.github.io/episodes/diary-of-a-ceo/secretary-pete-buttigieg-the-american-dream-is-dead-we-re-running-out-of-time-to-fix-it/</guid>
+      <pubDate>Mon, 03 Aug 2026 05:00:00 GMT</pubDate>
+      <description>皮特·布蒂吉格谈到美国民主制度、经济不平等、美国梦的变化，以及特朗普为何能获得对现行制度失望的选民支持。他也讨论民主党的责任，并回应了自己是否可能参加 2028 年总统竞选。</description>
     </item>
     <item>
       <title>独处可能比你想象的更好</title>
@@ -354,6 +403,13 @@
       <guid>https://castnote.github.io/episodes/odd-lots/ny-governor-kathy-hochul-on-her-one-year-data-center-moratorium/</guid>
       <pubDate>Wed, 15 Jul 2026 08:00:00 GMT</pubDate>
       <description>本期节目围绕纽约州 Kathy Hochul 宣布的一年期数据中心建设暂停令展开，主机 Joe Wisenthal 与 Tracy Alloway 讨论该政策对 AI 产业、地方社区与投资环境的影响。Hochul 解释了暂停的核心目标：给公用事业监管留出时间、确立企业供电与社区回报规则、避免农村和能源薄弱地区承受过量外部成本，并通过 AI 审核过时法规提升治理效率。对话还涉及 AI 带来的就业转型，尤其是无人驾驶汽车等场景下司机就业替代风险，以及州政府如何推动培训与再就业。她进一步说明了能源布局中的多元策略，包括输电、核电、海上风电与基础设施建设，同时回应了房价、住房供应不足、医疗和税负上升等民生压力，强调数据中心政策必须与降低社会成本和扩大可负担住房并行推进。节目末尾，她指出纽约希望在吸引资本与保护社区之间建立可持续平衡。</description>
+    </item>
+    <item>
+      <title>伟大建筑师如何思考：与比亚克·英格尔斯对谈</title>
+      <link>https://castnote.github.io/episodes/freakonomics/how-a-great-architect-thinks-with-bjarke-ingels/</link>
+      <guid>https://castnote.github.io/episodes/freakonomics/how-a-great-architect-thinks-with-bjarke-ingels/</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:39 GMT</pubDate>
+      <description>Freakonomics Radio 主持人 Stephen Dubner 采访建筑师 Bjarke Ingels，谈论 BIG 事务所的创意协作、建筑行业的回报机制、竞赛与知识产权，以及“实用的乌托邦”这一设计思路。Ingels 还分享了布鲁克林高速公路改造方案、父母对其职业选择的影响、建筑与现实的关系，以及他对纽约、悉尼歌剧院和个人建筑传承的看法。</description>
     </item>
     <item>
       <title>为什么 AI 可能会让律师的工作更多</title>
@@ -801,18 +857,18 @@
       <description>本期节目聚焦俄乌战争中仍在持续运作的囚犯交换机制。节目先交代和平谈判受阻下，交换已成为双方维持有限合作的人道通道，并记录了乌克兰家庭对释放消息长期反复等待的现实。随后梳理了被释放乌克兰战俘面临的虐待创伤与回国后治疗压力，以及俄罗斯战俘在乌克兰营区的处境差异。内容进一步说明交换协商流程的保密性与不透明争议：尽管5月曾达成大规模交换，俄军仍有被送回前线作战、禁止投降的风险，双方公开数据仍不完整。节目指出，基辅的家庭抗议与协调组织的申诉反映，仍有大量乌方被扣留者，返回后如何适应生活与心理创伤，也成为交换后的长期挑战。</description>
     </item>
     <item>
-      <title>吸引力、契合度与浪漫关系的科学｜Paul Eastwick 博士</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
-      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
-      <description>本期 Huberman Lab 访谈 UC Davis 心理学教授 Paul Eastwick，围绕吸引力、伴侣选择、约会应用、兼容性和长期关系稳定性展开讨论。节目梳理了“市场价值”模型在初次相遇中的作用及其局限，解释为什么熟人相处会增加个人化偏好，让并非大众眼中最有吸引力的人也能形成强烈互相吸引。对话还讨论了依恋焦虑与回避、朋友和外界评价对关系的影响、约会软件筛选机制的缺陷、年龄与资源偏好的数据结果，以及身体亲密、共同活动、边界感和线下社交对稳定关系的重要性。</description>
-    </item>
-    <item>
       <title>吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士</title>
       <link>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
       <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
       <description>本期节目中，Andrew Huberman 与心理学家 Paul Eastwick 讨论吸引、择偶、约会应用、兼容性和长期关系的实证研究。Eastwick 解释了“配偶价值”和市场化择偶模型只适合描述初次接触的一部分情境；随着人们在小群体和共同活动中反复相处，个体化评价、共同故事和被理解的体验会显著改变吸引力。节目还讨论了性别差异的常见误解、男性社会支持网络、经济与年龄偏好、相似性的主观建构、社交媒体对替代伴侣的放大作用，以及性吸引和身体亲密在关系稳定中的重要性。整体结论强调，线下反复互动、共同社群、可靠支持和对伴侣独特性的感受，是形成和维持健康浪漫关系的重要条件。</description>
+    </item>
+    <item>
+      <title>吸引力、契合度与浪漫关系的科学｜Paul Eastwick 博士</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
+      <description>本期 Huberman Lab 访谈 UC Davis 心理学教授 Paul Eastwick，围绕吸引力、伴侣选择、约会应用、兼容性和长期关系稳定性展开讨论。节目梳理了“市场价值”模型在初次相遇中的作用及其局限，解释为什么熟人相处会增加个人化偏好，让并非大众眼中最有吸引力的人也能形成强烈互相吸引。对话还讨论了依恋焦虑与回避、朋友和外界评价对关系的影响、约会软件筛选机制的缺陷、年龄与资源偏好的数据结果，以及身体亲密、共同活动、边界感和线下社交对稳定关系的重要性。</description>
     </item>
     <item>
       <title>城市规划师、无限滚动与“公共物品”到底是什么？</title>
