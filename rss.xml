@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Chai Discovery 的苦涩教训：药物设计也是一个规模化问题</title>
+      <link>https://castnote.github.io/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem/</link>
+      <guid>https://castnote.github.io/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem/</guid>
+      <pubDate>Wed, 05 Aug 2026 03:46:35 GMT</pubDate>
+      <description>本期讨论 Chai Discovery 如何用 AI 将药物发现推进为更像工程的药物设计，回顾蛋白质折叠、扩散模型、抗体设计、模型评估、数据来源、商业模式和制药合作，并展望计算机辅助分子设计可能带来的行业变化。</description>
+    </item>
+    <item>
       <title>人工智能领域的“诺查丹玛斯”错在哪里</title>
       <link>https://castnote.github.io/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong/</link>
       <guid>https://castnote.github.io/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong/</guid>
@@ -69,18 +76,18 @@
       <description>本期讨论 AI 模型能力和商业化速度提升后，实验室收入增长可能超过算力供给增长的情形，分析利润率、算力价格和推理算力占比的变化，以及高效模型、AI 应用和芯片供给可能受到的影响。</description>
     </item>
     <item>
-      <title>钨市场正在警示一场即将到来的战争</title>
-      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
-      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
-      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
-    </item>
-    <item>
       <title>免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈</title>
       <link>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</guid>
       <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
       <description>Andrew Huberman 与免疫学家 Max Krummel 讨论免疫系统如何作为身体的动态感知网络运作，涉及 T 细胞与胸腺、衰老与突变、睡眠和脑状态对免疫功能的影响、癌症免疫疗法、空间生物学、疫苗风险沟通、自身免疫性疾病，以及科学发现和公共科学传播。</description>
+    </item>
+    <item>
+      <title>钨市场正在警示一场即将到来的战争</title>
+      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
     </item>
     <item>
       <title>Serena &amp; Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮</title>
@@ -857,18 +864,18 @@
       <description>本期节目聚焦俄乌战争中仍在持续运作的囚犯交换机制。节目先交代和平谈判受阻下，交换已成为双方维持有限合作的人道通道，并记录了乌克兰家庭对释放消息长期反复等待的现实。随后梳理了被释放乌克兰战俘面临的虐待创伤与回国后治疗压力，以及俄罗斯战俘在乌克兰营区的处境差异。内容进一步说明交换协商流程的保密性与不透明争议：尽管5月曾达成大规模交换，俄军仍有被送回前线作战、禁止投降的风险，双方公开数据仍不完整。节目指出，基辅的家庭抗议与协调组织的申诉反映，仍有大量乌方被扣留者，返回后如何适应生活与心理创伤，也成为交换后的长期挑战。</description>
     </item>
     <item>
-      <title>吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士</title>
-      <link>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
-      <guid>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
-      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
-      <description>本期节目中，Andrew Huberman 与心理学家 Paul Eastwick 讨论吸引、择偶、约会应用、兼容性和长期关系的实证研究。Eastwick 解释了“配偶价值”和市场化择偶模型只适合描述初次接触的一部分情境；随着人们在小群体和共同活动中反复相处，个体化评价、共同故事和被理解的体验会显著改变吸引力。节目还讨论了性别差异的常见误解、男性社会支持网络、经济与年龄偏好、相似性的主观建构、社交媒体对替代伴侣的放大作用，以及性吸引和身体亲密在关系稳定中的重要性。整体结论强调，线下反复互动、共同社群、可靠支持和对伴侣独特性的感受，是形成和维持健康浪漫关系的重要条件。</description>
-    </item>
-    <item>
       <title>吸引力、契合度与浪漫关系的科学｜Paul Eastwick 博士</title>
       <link>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
       <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
       <description>本期 Huberman Lab 访谈 UC Davis 心理学教授 Paul Eastwick，围绕吸引力、伴侣选择、约会应用、兼容性和长期关系稳定性展开讨论。节目梳理了“市场价值”模型在初次相遇中的作用及其局限，解释为什么熟人相处会增加个人化偏好，让并非大众眼中最有吸引力的人也能形成强烈互相吸引。对话还讨论了依恋焦虑与回避、朋友和外界评价对关系的影响、约会软件筛选机制的缺陷、年龄与资源偏好的数据结果，以及身体亲密、共同活动、边界感和线下社交对稳定关系的重要性。</description>
+    </item>
+    <item>
+      <title>吸引力、兼容性与浪漫关系的科学 | Paul Eastwick 博士</title>
+      <link>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</link>
+      <guid>https://castnote.github.io/episodes/huberman-lab/the-science-of-attraction-compatibility-romance-dr-paul-eastwick/</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:17 GMT</pubDate>
+      <description>本期节目中，Andrew Huberman 与心理学家 Paul Eastwick 讨论吸引、择偶、约会应用、兼容性和长期关系的实证研究。Eastwick 解释了“配偶价值”和市场化择偶模型只适合描述初次接触的一部分情境；随着人们在小群体和共同活动中反复相处，个体化评价、共同故事和被理解的体验会显著改变吸引力。节目还讨论了性别差异的常见误解、男性社会支持网络、经济与年龄偏好、相似性的主观建构、社交媒体对替代伴侣的放大作用，以及性吸引和身体亲密在关系稳定中的重要性。整体结论强调，线下反复互动、共同社群、可靠支持和对伴侣独特性的感受，是形成和维持健康浪漫关系的重要条件。</description>
     </item>
     <item>
       <title>城市规划师、无限滚动与“公共物品”到底是什么？</title>
