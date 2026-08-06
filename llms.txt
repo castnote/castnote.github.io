@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [第 62 期：人们不买新游戏](/episodes/business-of-video-games/episode-62-people-don-t-buy-new-games/): The Business of Video Games Podcast · 2026-08-06 ([Markdown](/episodes/business-of-video-games/episode-62-people-don-t-buy-new-games.md))
 - [Chai Discovery 的苦涩教训：药物设计也是一个规模化问题](/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem/): Training Data · 2026-08-05 ([Markdown](/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem.md))
 - [人工智能领域的“诺查丹玛斯”错在哪里](/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong/): The Journal. · 2026-08-04 ([Markdown](/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong.md))
 - [我们找到了一些互联网上最好的销售建议](/episodes/my-first-million/we-found-the-internet-s-best-sales-advice/): My First Million · 2026-08-04 ([Markdown](/episodes/my-first-million/we-found-the-internet-s-best-sales-advice.md))
