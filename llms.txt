@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [在 Silico 中思考：Goodfire CTO Dan Balsam 谈概念流形与每月 1000 美元的机器学习研究代理](/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a/): The Cognitive Revolution · 2026-08-08 ([Markdown](/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a.md))
 - [年长员工不退休，该不该强制他们退休？](/episodes/planet-money/older-workers-aren-t-retiring-should-they-be-forced-to/): Planet Money · 2026-08-07 ([Markdown](/episodes/planet-money/older-workers-aren-t-retiring-should-they-be-forced-to.md))
 - [第 62 期：人们不买新游戏](/episodes/business-of-video-games/episode-62-people-don-t-buy-new-games/): The Business of Video Games Podcast · 2026-08-06 ([Markdown](/episodes/business-of-video-games/episode-62-people-don-t-buy-new-games.md))
 - [Chai Discovery 的苦涩教训：药物设计也是一个规模化问题](/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem/): Training Data · 2026-08-05 ([Markdown](/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem.md))

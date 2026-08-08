@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>在 Silico 中思考：Goodfire CTO Dan Balsam 谈概念流形与每月 1000 美元的机器学习研究代理</title>
+      <link>https://castnote.github.io/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a/</link>
+      <guid>https://castnote.github.io/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a/</guid>
+      <pubDate>Sat, 08 Aug 2026 20:48:23 GMT</pubDate>
+      <description>本期对话围绕 Goodfire 的 Silico 机器学习研究平台展开，讨论预测性数据调试、块稀疏特征化器、概念流形、模型 steering、参数分解、开放权重模型的安全权衡，以及 AI 研究代理在可解释性、生命科学和安全研究中的应用。</description>
+    </item>
+    <item>
       <title>年长员工不退休，该不该强制他们退休？</title>
       <link>https://castnote.github.io/episodes/planet-money/older-workers-aren-t-retiring-should-they-be-forced-to/</link>
       <guid>https://castnote.github.io/episodes/planet-money/older-workers-aren-t-retiring-should-they-be-forced-to/</guid>
