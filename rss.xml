@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>预告：我们的城镇</title>
+      <link>https://castnote.github.io/episodes/odd-lots/introducing-our-town/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/introducing-our-town/</guid>
+      <pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate>
+      <description>这段预告介绍田纳西州盖恩斯伯勒：外来开发商及其右翼关联者在当地收购大片土地，并计划建设体现基督教生活方式的社区，引发镇民对土地争夺和社会实验的担忧与反抗。</description>
+    </item>
+    <item>
       <title>在 Silico 中思考：Goodfire CTO Dan Balsam 谈概念流形与每月 1000 美元的机器学习研究代理</title>
       <link>https://castnote.github.io/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a/</link>
       <guid>https://castnote.github.io/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a/</guid>
