@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [Y Combinator 首席执行官谈 AI 如何改变创业公司的方向](/episodes/the-journal/y-combinator-ceo-on-how-ai-is-changing-what-startups-build/): The Journal. · 2026-08-10 ([Markdown](/episodes/the-journal/y-combinator-ceo-on-how-ai-is-changing-what-startups-build.md))
 - [预告：我们的城镇](/episodes/odd-lots/introducing-our-town/): Odd Lots · 2026-08-09 ([Markdown](/episodes/odd-lots/introducing-our-town.md))
 - [在 Silico 中思考：Goodfire CTO Dan Balsam 谈概念流形与每月 1000 美元的机器学习研究代理](/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a/): The Cognitive Revolution · 2026-08-08 ([Markdown](/episodes/cognitive-revolution/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-a.md))
 - [年长员工不退休，该不该强制他们退休？](/episodes/planet-money/older-workers-aren-t-retiring-should-they-be-forced-to/): Planet Money · 2026-08-07 ([Markdown](/episodes/planet-money/older-workers-aren-t-retiring-should-they-be-forced-to.md))
