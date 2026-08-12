@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [为破解悬案，法国警方突破 DNA 隐私法律边界](/episodes/the-journal/to-solve-a-cold-case-french-police-bent-dna-privacy-law/): The Journal. · 2026-08-12 ([Markdown](/episodes/the-journal/to-solve-a-cold-case-french-police-bent-dna-privacy-law.md))
 - [贾里德·库什纳的阿尔巴尼亚困局：火烈鸟、争议土地与可卡因](/episodes/the-journal/jared-kushner-s-albania-headache-flamingos-contested-land-and-cocaine/): The Journal. · 2026-08-11 ([Markdown](/episodes/the-journal/jared-kushner-s-albania-headache-flamingos-contested-land-and-cocaine.md))
 - [Y Combinator 首席执行官谈 AI 如何改变创业公司的方向](/episodes/the-journal/y-combinator-ceo-on-how-ai-is-changing-what-startups-build/): The Journal. · 2026-08-10 ([Markdown](/episodes/the-journal/y-combinator-ceo-on-how-ai-is-changing-what-startups-build.md))
 - [预告：我们的城镇](/episodes/odd-lots/introducing-our-town/): Odd Lots · 2026-08-09 ([Markdown](/episodes/odd-lots/introducing-our-town.md))
@@ -28,8 +29,8 @@
 - [南希·格思里为何消失得无影无踪？](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace/): The Journal. · 2026-08-03 ([Markdown](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace.md))
 - [如何用好你的错误](/episodes/hidden-brain/making-the-most-of-your-mistakes/): Hidden Brain · 2026-08-03 ([Markdown](/episodes/hidden-brain/making-the-most-of-your-mistakes.md))
 - [更聪明的 AI 模型可能让算力价格上涨十倍](/episodes/dwarkesh/why-smarter-ai-models-could-drive-up-compute-prices-10x/): Dwarkesh Podcast · 2026-08-03 ([Markdown](/episodes/dwarkesh/why-smarter-ai-models-could-drive-up-compute-prices-10x.md))
-- [钨市场正在警示一场即将到来的战争](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/): Odd Lots · 2026-08-03 ([Markdown](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war.md))
 - [免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/): Huberman Lab · 2026-08-03 ([Markdown](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel.md))
+- [钨市场正在警示一场即将到来的战争](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/): Odd Lots · 2026-08-03 ([Markdown](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war.md))
 - [Serena & Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮](/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/): How I Built This · 2026-08-03 ([Markdown](/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d.md))
 - [皮特·布蒂吉格：美国梦已死，我们修复它的时间不多了](/episodes/diary-of-a-ceo/secretary-pete-buttigieg-the-american-dream-is-dead-we-re-running-out-of-time-to-fix-it/): The Diary Of A CEO · 2026-08-03 ([Markdown](/episodes/diary-of-a-ceo/secretary-pete-buttigieg-the-american-dream-is-dead-we-re-running-out-of-time-to-fix-it.md))
 - [独处可能比你想象的更好](/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think/): The Happiness Lab · 2026-08-03 ([Markdown](/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think.md))
@@ -164,8 +165,8 @@
 - [前沿 AI 的隐性瓶颈](/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp/): Latent Space · 2026-06-18 ([Markdown](/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp.md))
 - [GPU 神话：2026 年 AI 算力现状](/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban/): The MAD Podcast with Matt Turck · 2026-06-18 ([Markdown](/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban.md))
 - [新云浪潮：2026 年 AI 计算现状 | Stephen Balaban](/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/): The MAD Podcast with Matt Turck · 2026-06-18 ([Markdown](/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban.md))
-- [彻底重塑自己：MrBeast 方法的启示](/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/): My First Million · 2026-06-18 ([Markdown](/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method.md))
 - [如何创造出强大自我形象，让现实不得不顺从](/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/): My First Million · 2026-06-18 ([Markdown](/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey.md))
+- [彻底重塑自己：MrBeast 方法的启示](/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/): My First Million · 2026-06-18 ([Markdown](/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method.md))
 - [研究支持的拉伸方案：提升灵活性 | Huberman Lab Essentials](/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials/): Huberman Lab · 2026-06-18 ([Markdown](/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials.md))
 - [重塑英特尔与半导体供应链：与 Intel CEO Lip Bu Tan 的对话](/episodes/no-priors/re-engineering-the-semiconductor-supply-chain-with-intel-ceo-lip-bu-tan/): No Priors · 2026-06-18 ([Markdown](/episodes/no-priors/re-engineering-the-semiconductor-supply-chain-with-intel-ceo-lip-bu-tan.md))
 - [杰里米·格兰瑟姆：如何判断泡沫是否即将破裂 | Odd Lots](/episodes/odd-lots/jeremy-grantham-on-how-to-tell-if-a-bubble-s-about-to-burst-odd-lots/): Odd Lots · 2026-06-18 ([Markdown](/episodes/odd-lots/jeremy-grantham-on-how-to-tell-if-a-bubble-s-about-to-burst-odd-lots.md))

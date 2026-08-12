@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>为破解悬案，法国警方突破 DNA 隐私法律边界</title>
+      <link>https://castnote.github.io/episodes/the-journal/to-solve-a-cold-case-french-police-bent-dna-privacy-law/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/to-solve-a-cold-case-french-police-bent-dna-privacy-law/</guid>
+      <pubDate>Wed, 12 Aug 2026 19:34:00 GMT</pubDate>
+      <description>法国警方借助美国商业 DNA 数据库和遗传系谱学，追查了一起持续二十多年的连环性侵悬案，并最终确认嫌疑人。案件也引发了关于跨境使用 DNA 数据、个人隐私保护和证据合法性的争议。</description>
+    </item>
+    <item>
       <title>贾里德·库什纳的阿尔巴尼亚困局：火烈鸟、争议土地与可卡因</title>
       <link>https://castnote.github.io/episodes/the-journal/jared-kushner-s-albania-headache-flamingos-contested-land-and-cocaine/</link>
       <guid>https://castnote.github.io/episodes/the-journal/jared-kushner-s-albania-headache-flamingos-contested-land-and-cocaine/</guid>
@@ -118,18 +125,18 @@
       <description>本期讨论 AI 模型能力和商业化速度提升后，实验室收入增长可能超过算力供给增长的情形，分析利润率、算力价格和推理算力占比的变化，以及高效模型、AI 应用和芯片供给可能受到的影响。</description>
     </item>
     <item>
-      <title>钨市场正在警示一场即将到来的战争</title>
-      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
-      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
-      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
-    </item>
-    <item>
       <title>免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈</title>
       <link>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</guid>
       <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
       <description>Andrew Huberman 与免疫学家 Max Krummel 讨论免疫系统如何作为身体的动态感知网络运作，涉及 T 细胞与胸腺、衰老与突变、睡眠和脑状态对免疫功能的影响、癌症免疫疗法、空间生物学、疫苗风险沟通、自身免疫性疾病，以及科学发现和公共科学传播。</description>
+    </item>
+    <item>
+      <title>钨市场正在警示一场即将到来的战争</title>
+      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
     </item>
     <item>
       <title>Serena &amp; Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮</title>
@@ -1074,16 +1081,16 @@
       <description>本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。</description>
     </item>
     <item>
-      <title>彻底重塑自己：MrBeast 方法的启示</title>
-      <link>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</link>
-      <guid>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</guid>
+      <title>如何创造出强大自我形象，让现实不得不顺从</title>
+      <link>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</guid>
       <pubDate>Thu, 18 Jun 2026 12:18:12 GMT</pubDate>
       <description>节目以“重建自我身份”为主线，讨论创业者如何通过持续一致的内容与生活方式塑造品牌。主讲人先分析 Hannah Neilman 与 Ballerina Farms，指出高关注的关键不只是产品本身，而是围绕生活方式建立可识别叙事与社群。接着延展到从个人兴趣出发做内容生意的方法，强调“任务型内容”与“逃逸式生活方式”都能转化为产品机会，但都应以真实可执行的行动链支撑。全程穿插 World Cup 期间、市场转型、职业改变与自我叙事实例，强调先定义词汇与身份，再通过环境与行动系统执行。最后给出“game of more”框架：人们追求的不只是财富增长，而是更高层次的问题——你要的更多是什么，以及如何避免陷入模仿与伪装，最终实现以时间与价值为先的财务与人生自由。</description>
     </item>
     <item>
-      <title>如何创造出强大自我形象，让现实不得不顺从</title>
-      <link>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</link>
-      <guid>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</guid>
+      <title>彻底重塑自己：MrBeast 方法的启示</title>
+      <link>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</guid>
       <pubDate>Thu, 18 Jun 2026 12:18:12 GMT</pubDate>
       <description>节目以“重建自我身份”为主线，讨论创业者如何通过持续一致的内容与生活方式塑造品牌。主讲人先分析 Hannah Neilman 与 Ballerina Farms，指出高关注的关键不只是产品本身，而是围绕生活方式建立可识别叙事与社群。接着延展到从个人兴趣出发做内容生意的方法，强调“任务型内容”与“逃逸式生活方式”都能转化为产品机会，但都应以真实可执行的行动链支撑。全程穿插 World Cup 期间、市场转型、职业改变与自我叙事实例，强调先定义词汇与身份，再通过环境与行动系统执行。最后给出“game of more”框架：人们追求的不只是财富增长，而是更高层次的问题——你要的更多是什么，以及如何避免陷入模仿与伪装，最终实现以时间与价值为先的财务与人生自由。</description>
     </item>
