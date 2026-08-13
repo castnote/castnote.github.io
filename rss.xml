@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>他以为自己投资了 SpaceX，结果股票凭空消失</title>
+      <link>https://castnote.github.io/episodes/the-journal/he-thought-he-invested-in-spacex-then-his-shares-vanished/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/he-thought-he-invested-in-spacex-then-his-shares-vanished/</guid>
+      <pubDate>Thu, 13 Aug 2026 19:50:00 GMT</pubDate>
+      <description>本期调查讲述数据工程师 Ram Rupperedi 通过多层特殊目的载体投资 SpaceX，上市后却发现相关持仓早已被出售。节目梳理了 SPV 的层层转售结构、信息披露争议和监管灰区，以及其他投资者提出的类似投诉。</description>
+    </item>
+    <item>
       <title>为破解悬案，法国警方突破 DNA 隐私法律边界</title>
       <link>https://castnote.github.io/episodes/the-journal/to-solve-a-cold-case-french-police-bent-dna-privacy-law/</link>
       <guid>https://castnote.github.io/episodes/the-journal/to-solve-a-cold-case-french-police-bent-dna-privacy-law/</guid>
@@ -1081,16 +1088,16 @@
       <description>本期节目围绕 AI 时代的算力基础设施展开。主持人 Matt 与 Lambda 联合创始人兼 CTO Steven Balaban 讨论了为什么大规模 GPU 云服务不是单一商品：除了 GPU 租价，还包含土地、电力接口、数据中心设计、编排软件、存储和网络等复杂层。节目解释了 NeoCloud 市场中技术与融资如何共同形成壁垒、长期与短期租赁差异、算力利用率对盈利的决定作用，以及如何通过数据中心设计和供应链优化降低交付周期。双方还梳理了 Lambda 的起源与资金策略：从早期人脸识别和硬件项目到逐步 vertical integration 的 AI 云业务。后半段讨论了 neural software、AI agents 和 agentic 流程的未来，以及“one person, one GPU”的长期愿景。</description>
     </item>
     <item>
-      <title>如何创造出强大自我形象，让现实不得不顺从</title>
-      <link>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</link>
-      <guid>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</guid>
+      <title>彻底重塑自己：MrBeast 方法的启示</title>
+      <link>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</guid>
       <pubDate>Thu, 18 Jun 2026 12:18:12 GMT</pubDate>
       <description>节目以“重建自我身份”为主线，讨论创业者如何通过持续一致的内容与生活方式塑造品牌。主讲人先分析 Hannah Neilman 与 Ballerina Farms，指出高关注的关键不只是产品本身，而是围绕生活方式建立可识别叙事与社群。接着延展到从个人兴趣出发做内容生意的方法，强调“任务型内容”与“逃逸式生活方式”都能转化为产品机会，但都应以真实可执行的行动链支撑。全程穿插 World Cup 期间、市场转型、职业改变与自我叙事实例，强调先定义词汇与身份，再通过环境与行动系统执行。最后给出“game of more”框架：人们追求的不只是财富增长，而是更高层次的问题——你要的更多是什么，以及如何避免陷入模仿与伪装，最终实现以时间与价值为先的财务与人生自由。</description>
     </item>
     <item>
-      <title>彻底重塑自己：MrBeast 方法的启示</title>
-      <link>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</link>
-      <guid>https://castnote.github.io/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/</guid>
+      <title>如何创造出强大自我形象，让现实不得不顺从</title>
+      <link>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</link>
+      <guid>https://castnote.github.io/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/</guid>
       <pubDate>Thu, 18 Jun 2026 12:18:12 GMT</pubDate>
       <description>节目以“重建自我身份”为主线，讨论创业者如何通过持续一致的内容与生活方式塑造品牌。主讲人先分析 Hannah Neilman 与 Ballerina Farms，指出高关注的关键不只是产品本身，而是围绕生活方式建立可识别叙事与社群。接着延展到从个人兴趣出发做内容生意的方法，强调“任务型内容”与“逃逸式生活方式”都能转化为产品机会，但都应以真实可执行的行动链支撑。全程穿插 World Cup 期间、市场转型、职业改变与自我叙事实例，强调先定义词汇与身份，再通过环境与行动系统执行。最后给出“game of more”框架：人们追求的不只是财富增长，而是更高层次的问题——你要的更多是什么，以及如何避免陷入模仿与伪装，最终实现以时间与价值为先的财务与人生自由。</description>
     </item>
