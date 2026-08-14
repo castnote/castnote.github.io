@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>奥泽匹克如何改变我们的身体、心理与经济：Johann Hari 访谈</title>
+      <link>https://castnote.github.io/episodes/big-technology/best-of-big-technology-how-ozempic-changes-our-bodies-minds-and-economy-with-johann-hari/</link>
+      <guid>https://castnote.github.io/episodes/big-technology/best-of-big-technology-how-ozempic-changes-our-bodies-minds-and-economy-with-johann-hari/</guid>
+      <pubDate>Fri, 14 Aug 2026 21:00:00 GMT</pubDate>
+      <description>本期回放 Alex Kantrowitz 对作家 Johann Hari 的访谈，讨论 Ozempic、Wegovy、Mounjaro 等 GLP-1 类减重药如何通过增强饱腹感改变进食行为，也讨论超加工食品与肥胖危机的关系、药物对消费经济和食品行业的潜在冲击、药价与配制药房问题、停药后的体重反弹、体重设定点、大脑奖励系统、情绪和成瘾替代风险，以及儿童使用这类药物时需要权衡的肥胖风险与长期用药未知风险。</description>
+    </item>
+    <item>
       <title>他以为自己投资了 SpaceX，结果股票凭空消失</title>
       <link>https://castnote.github.io/episodes/the-journal/he-thought-he-invested-in-spacex-then-his-shares-vanished/</link>
       <guid>https://castnote.github.io/episodes/the-journal/he-thought-he-invested-in-spacex-then-his-shares-vanished/</guid>
@@ -729,15 +736,15 @@
     </item>
     <item>
       <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
-      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
-      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
+      <link>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
+      <guid>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
       <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
       <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
     </item>
     <item>
       <title>记忆与持续学习：Engram 的 Dan Biderman 与 Jessy Lin</title>
-      <link>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
-      <guid>https://castnote.github.io/episodes/training-data/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
+      <link>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</link>
+      <guid>https://castnote.github.io/episodes/sequoia-ai-ascent/memory-and-continual-learning-engram-s-dan-biderman-and-jessy-lin/</guid>
       <pubDate>Thu, 25 Jun 2026 21:51:34 GMT</pubDate>
       <description>本期节目邀请 Engram 联合创始人 Dan Biderman 和 Jessy Lin，讨论持续学习为何是 AI 的下一阶段基础能力。节目围绕一个核心命题展开：模型是否只能依赖外部检索与上下文窗口，还是应把公司与团队长期工作语境持续烙入权重。嘉宾认为只有把记忆、检索、系统工程和训练信号打通，才能在企业真实场景里降低 token 消耗并提高适配性。对话同时覆盖了“该内化还是外置”的边界、RAG 与权重更新的关系、缓存成本、以及未来个人化模型如何在隐私与效率之间取舍。</description>
     </item>
