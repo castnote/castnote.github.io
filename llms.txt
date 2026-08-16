@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [杀菌光能否阻止下一场大流行：500 美元远 UVC 灯具的科学与部署](/episodes/cognitive-revolution/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-s/): The Cognitive Revolution · 2026-08-16 ([Markdown](/episodes/cognitive-revolution/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-s.md))
 - [奥泽匹克如何改变我们的身体、心理与经济：Johann Hari 访谈](/episodes/big-technology/best-of-big-technology-how-ozempic-changes-our-bodies-minds-and-economy-with-johann-hari/): Big Technology Podcast · 2026-08-14 ([Markdown](/episodes/big-technology/best-of-big-technology-how-ozempic-changes-our-bodies-minds-and-economy-with-johann-hari.md))
 - [拿自己的寿险下注](/episodes/planet-money/you-bet-your-life-insurance/): Planet Money · 2026-08-14 ([Markdown](/episodes/planet-money/you-bet-your-life-insurance.md))
 - [他以为自己投资了 SpaceX，结果股票凭空消失](/episodes/the-journal/he-thought-he-invested-in-spacex-then-his-shares-vanished/): The Journal. · 2026-08-13 ([Markdown](/episodes/the-journal/he-thought-he-invested-in-spacex-then-his-shares-vanished.md))
@@ -32,8 +33,8 @@
 - [南希·格思里为何消失得无影无踪？](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace/): The Journal. · 2026-08-03 ([Markdown](/episodes/the-journal/how-did-nancy-guthrie-vanish-without-a-trace.md))
 - [如何用好你的错误](/episodes/hidden-brain/making-the-most-of-your-mistakes/): Hidden Brain · 2026-08-03 ([Markdown](/episodes/hidden-brain/making-the-most-of-your-mistakes.md))
 - [更聪明的 AI 模型可能让算力价格上涨十倍](/episodes/dwarkesh/why-smarter-ai-models-could-drive-up-compute-prices-10x/): Dwarkesh Podcast · 2026-08-03 ([Markdown](/episodes/dwarkesh/why-smarter-ai-models-could-drive-up-compute-prices-10x.md))
-- [免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/): Huberman Lab · 2026-08-03 ([Markdown](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel.md))
 - [钨市场正在警示一场即将到来的战争](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/): Odd Lots · 2026-08-03 ([Markdown](/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war.md))
+- [免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/): Huberman Lab · 2026-08-03 ([Markdown](/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel.md))
 - [Serena & Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮](/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d/): How I Built This · 2026-08-03 ([Markdown](/episodes/how-i-built-this/serena-lily-serena-dugan-and-lily-kanter-they-built-a-20m-brand-then-one-investor-almost-d.md))
 - [皮特·布蒂吉格：美国梦已死，我们修复它的时间不多了](/episodes/diary-of-a-ceo/secretary-pete-buttigieg-the-american-dream-is-dead-we-re-running-out-of-time-to-fix-it/): The Diary Of A CEO · 2026-08-03 ([Markdown](/episodes/diary-of-a-ceo/secretary-pete-buttigieg-the-american-dream-is-dead-we-re-running-out-of-time-to-fix-it.md))
 - [独处可能比你想象的更好](/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think/): The Happiness Lab · 2026-08-03 ([Markdown](/episodes/happiness-lab/why-being-alone-might-be-better-than-you-think.md))
