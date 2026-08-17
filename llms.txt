@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [阿片替代品正在助推成瘾危机](/episodes/the-journal/this-opioid-alternative-is-fueling-an-addiction-crisis/): The Journal. · 2026-08-17 ([Markdown](/episodes/the-journal/this-opioid-alternative-is-fueling-an-addiction-crisis.md))
 - [杀菌光能否阻止下一场大流行：500 美元远 UVC 灯具的科学与部署](/episodes/cognitive-revolution/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-s/): The Cognitive Revolution · 2026-08-16 ([Markdown](/episodes/cognitive-revolution/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-s.md))
 - [奥泽匹克如何改变我们的身体、心理与经济：Johann Hari 访谈](/episodes/big-technology/best-of-big-technology-how-ozempic-changes-our-bodies-minds-and-economy-with-johann-hari/): Big Technology Podcast · 2026-08-14 ([Markdown](/episodes/big-technology/best-of-big-technology-how-ozempic-changes-our-bodies-minds-and-economy-with-johann-hari.md))
 - [拿自己的寿险下注](/episodes/planet-money/you-bet-your-life-insurance/): Planet Money · 2026-08-14 ([Markdown](/episodes/planet-money/you-bet-your-life-insurance.md))
@@ -167,8 +168,8 @@
 - [谁有权选择“善终”？](/episodes/freakonomics/who-gets-to-choose-a-good-death/): Freakonomics Radio · 2026-06-19 ([Markdown](/episodes/freakonomics/who-gets-to-choose-a-good-death.md))
 - [输出最大化教授：Anjney Midha，AMP](/episodes/latent-space/the-professor-of-outputmaxxing-anjney-midha-amp/): Latent Space · 2026-06-18 ([Markdown](/episodes/latent-space/the-professor-of-outputmaxxing-anjney-midha-amp.md))
 - [前沿 AI 的隐性瓶颈](/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp/): Latent Space · 2026-06-18 ([Markdown](/episodes/latent-space/the-hidden-bottleneck-behind-frontier-ai-anjney-midha-amp.md))
-- [GPU 神话：2026 年 AI 算力现状](/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban/): The MAD Podcast with Matt Turck · 2026-06-18 ([Markdown](/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban.md))
 - [新云浪潮：2026 年 AI 计算现状 | Stephen Balaban](/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban/): The MAD Podcast with Matt Turck · 2026-06-18 ([Markdown](/episodes/mad-podcast/the-neocloud-boom-state-of-ai-compute-2026-stephen-balaban.md))
+- [GPU 神话：2026 年 AI 算力现状](/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban/): The MAD Podcast with Matt Turck · 2026-06-18 ([Markdown](/episodes/mad-podcast/the-gpu-myth-state-of-ai-compute-2026-stephen-balaban.md))
 - [彻底重塑自己：MrBeast 方法的启示](/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method/): My First Million · 2026-06-18 ([Markdown](/episodes/my-first-million/how-to-completely-reinvent-yourself-the-mrbeast-method.md))
 - [如何创造出强大自我形象，让现实不得不顺从](/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey/): My First Million · 2026-06-18 ([Markdown](/episodes/my-first-million/how-to-create-a-self-image-so-powerful-that-reality-has-to-obey.md))
 - [研究支持的拉伸方案：提升灵活性 | Huberman Lab Essentials](/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials/): Huberman Lab · 2026-06-18 ([Markdown](/episodes/huberman-lab/improve-flexibility-with-research-supported-stretching-protocols-huberman-lab-essentials.md))
