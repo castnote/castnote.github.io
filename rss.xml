@@ -6,6 +6,13 @@
     <description>用中文读播客。</description>
     <language>zh-CN</language>
     <item>
+      <title>Flock 摄像头为何遭遇反弹</title>
+      <link>https://castnote.github.io/episodes/the-journal/why-flock-cameras-are-facing-backlash/</link>
+      <guid>https://castnote.github.io/episodes/the-journal/why-flock-cameras-are-facing-backlash/</guid>
+      <pubDate>Thu, 20 Aug 2026 20:28:00 GMT</pubDate>
+      <description>本期节目讨论 Flock Safety 的人工智能车牌识别摄像头如何被用于破案，以及由此引发的隐私、误判、警方滥用和移民执法疑虑。节目还介绍了各地社区的抗议、法律挑战、停用措施，以及公司缩短数据保存期限和加强监管的回应。</description>
+    </item>
+    <item>
       <title>阿片替代品正在助推成瘾危机</title>
       <link>https://castnote.github.io/episodes/the-journal/this-opioid-alternative-is-fueling-an-addiction-crisis/</link>
       <guid>https://castnote.github.io/episodes/the-journal/this-opioid-alternative-is-fueling-an-addiction-crisis/</guid>
@@ -160,18 +167,18 @@
       <description>本期讨论 AI 模型能力和商业化速度提升后，实验室收入增长可能超过算力供给增长的情形，分析利润率、算力价格和推理算力占比的变化，以及高效模型、AI 应用和芯片供给可能受到的影响。</description>
     </item>
     <item>
-      <title>钨市场正在警示一场即将到来的战争</title>
-      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
-      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
-      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
-      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
-    </item>
-    <item>
       <title>免疫系统如何运作，以及如何改善它：Max Krummel 博士访谈</title>
       <link>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</link>
       <guid>https://castnote.github.io/episodes/huberman-lab/how-your-immune-system-works-how-to-improve-it-dr-max-krummel/</guid>
       <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
       <description>Andrew Huberman 与免疫学家 Max Krummel 讨论免疫系统如何作为身体的动态感知网络运作，涉及 T 细胞与胸腺、衰老与突变、睡眠和脑状态对免疫功能的影响、癌症免疫疗法、空间生物学、疫苗风险沟通、自身免疫性疾病，以及科学发现和公共科学传播。</description>
+    </item>
+    <item>
+      <title>钨市场正在警示一场即将到来的战争</title>
+      <link>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</link>
+      <guid>https://castnote.github.io/episodes/odd-lots/the-tungsten-market-is-warning-of-an-upcoming-war/</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>本期节目从乔找不到自己的钨方块谈起，讨论钨如何在战争周期中反复成为战略资产。David Fickling 介绍了澳大利亚 Dolphin 钨矿重启的历史背景、钨的高密度和高熔点在穿甲弹与弹片中的用途，以及碳化钨刀具、炼油催化剂、涡轮叶片和芯片制造等非军事需求。节目还讨论了中国在钨供应中的主导地位、缺乏期货市场导致融资困难、价格底线和战略储备政策，以及在关键矿产供应受限时的替代和重新勘探。</description>
     </item>
     <item>
       <title>Serena &amp; Lily：打造 2000 万美元品牌后，差点被一位投资人拖垮</title>
