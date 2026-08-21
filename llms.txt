@@ -12,6 +12,7 @@
 
 ## 文章列表
 
+- [谁决定大卖场卖什么？我们的桌游拿到了答案](/episodes/planet-money/who-decides-what-big-box-sells-our-game-got-us-answers/): Planet Money · 2026-08-21 ([Markdown](/episodes/planet-money/who-decides-what-big-box-sells-our-game-got-us-answers.md))
 - [Flock 摄像头为何遭遇反弹](/episodes/the-journal/why-flock-cameras-are-facing-backlash/): The Journal. · 2026-08-20 ([Markdown](/episodes/the-journal/why-flock-cameras-are-facing-backlash.md))
 - [阿片替代品正在助推成瘾危机](/episodes/the-journal/this-opioid-alternative-is-fueling-an-addiction-crisis/): The Journal. · 2026-08-17 ([Markdown](/episodes/the-journal/this-opioid-alternative-is-fueling-an-addiction-crisis.md))
 - [杀菌光能否阻止下一场大流行：500 美元远 UVC 灯具的科学与部署](/episodes/cognitive-revolution/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-s/): The Cognitive Revolution · 2026-08-16 ([Markdown](/episodes/cognitive-revolution/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-s.md))
@@ -27,8 +28,8 @@
 - [第 62 期：人们不买新游戏](/episodes/business-of-video-games/episode-62-people-don-t-buy-new-games/): The Business of Video Games Podcast · 2026-08-06 ([Markdown](/episodes/business-of-video-games/episode-62-people-don-t-buy-new-games.md))
 - [Chai Discovery 的苦涩教训：药物设计也是一个规模化问题](/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem/): Training Data · 2026-08-05 ([Markdown](/episodes/training-data/chai-discovery-s-bitter-lesson-drug-design-is-another-scaling-problem.md))
 - [人工智能领域的“诺查丹玛斯”错在哪里](/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong/): The Journal. · 2026-08-04 ([Markdown](/episodes/the-journal/how-the-nostradamus-of-ai-got-it-wrong.md))
-- [我们找到了一些互联网上最好的销售建议](/episodes/my-first-million/we-found-the-internet-s-best-sales-advice/): My First Million · 2026-08-04 ([Markdown](/episodes/my-first-million/we-found-the-internet-s-best-sales-advice.md))
 - [RFK Jr. 与 Dana Bash 交锋、AI 的“侏罗纪公园时刻”和马斯克的中期选举资金](/episodes/pivot/rfk-jr-s-bash-clash-ai-s-jurassic-park-moment-and-elon-s-midterm-millions/): Pivot · 2026-08-04 ([Markdown](/episodes/pivot/rfk-jr-s-bash-clash-ai-s-jurassic-park-moment-and-elon-s-midterm-millions.md))
+- [我们找到了一些互联网上最好的销售建议](/episodes/my-first-million/we-found-the-internet-s-best-sales-advice/): My First Million · 2026-08-04 ([Markdown](/episodes/my-first-million/we-found-the-internet-s-best-sales-advice.md))
 - [AI 市场震荡：Gavin Baker 谈算力、信贷与开源模型](/episodes/invest-like-the-best/gavin-baker-ai-market-jitters-invest-like-the-best-ep-485/): Invest Like the Best · 2026-08-04 ([Markdown](/episodes/invest-like-the-best/gavin-baker-ai-market-jitters-invest-like-the-best-ep-485.md))
 - [为什么血液、水和氦气都在短缺？](/episodes/the-indicator/why-we-re-short-on-blood-water-and-helium/): The Indicator from Planet Money · 2026-08-04 ([Markdown](/episodes/the-indicator/why-we-re-short-on-blood-water-and-helium.md))
 - [推理工程大师课：Baseten 的 Philip Kiely 与 Ali Taha](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten/): Latent Space · 2026-08-03 ([Markdown](/episodes/latent-space/the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten.md))
